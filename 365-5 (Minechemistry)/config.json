@@ -1,0 +1,27 @@
+{
+  "enabled": true,
+  "supportEU": true,
+  "supportRF": true,
+  "smoothAnimation": true,
+  "displayFormula": true,
+  "decomposer": {
+    "energyPerTick": 200,
+    "maxOutputPerTick": 8,
+    "energyCapacity": 100000
+  },
+  "synthesiser": {
+    "energyPerTick": 200,
+    "ticksPerOperation": 5,
+    "energyCapacity": 100000
+  },
+  "fission": {
+    "energyPerTick": 300,
+    "ticksPerOperation": 40,
+    "energyCapacity": 100000
+  },
+  "fusion": {
+    "energyPerTick": 300,
+    "ticksPerOperation": 40,
+    "energyCapacity": 100000
+  }
+}

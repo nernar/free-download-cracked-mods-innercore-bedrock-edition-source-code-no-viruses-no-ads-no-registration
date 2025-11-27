@@ -1,0 +1,6 @@
+{
+  "enabled":true,
+  "debug_mode": true,
+  "disable_leaves_shape": true,
+  "disable_wooden_tools": true
+}
