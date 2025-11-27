@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mini.cauldron",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "base",
+					"pivot": [0, 7, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{"origin": [-6, 0.1, -6], "size": [12, 10, 12], "uv": [0, 0]},
+						{"origin": [-6, 0.1, -6], "size": [12, 6, 12], "inflate": -0.1, "uv": [8, 22]},
+						{"origin": [-3, 7.1, -8], "size": [6, 2, 2], "inflate": -0.1, "pivot": [0, 0, 0], "rotation": [0, -90, 0], "uv": [48, 0]},
+						{"origin": [-3, 7.1, 6], "size": [6, 2, 2], "inflate": -0.1, "pivot": [0, 0, 0], "rotation": [0, -90, 0], "uv": [48, 0]},
+						{"origin": [10, -7, 3], "size": [2, 14, 2], "inflate": -0.1, "pivot": [0, 0, 0], "rotation": [-37.5, 0, -90], "uv": [0, 22]}
+					]
+				},
+				{
+					"name": "hand",
+					"pivot": [0, 0, 0]
+				}
+			]
+		}
+	]
+}

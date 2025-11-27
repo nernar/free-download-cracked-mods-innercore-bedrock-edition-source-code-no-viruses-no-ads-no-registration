@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.dune_maiden.move": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "position": [ 0.0, "Math.cos(query.life_time * 343.774) * 1.6", 0.0 ]
+        },
+		"dust_1": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 4000000, 0]
+		  }
+		},
+		"dust_2": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 2000000, 0]
+		  }
+		},
+		"dust_3": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 1000000, 0]
+		  }
+		}
+      }
+    }
+  }
+}

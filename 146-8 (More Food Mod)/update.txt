@@ -1,0 +1,20 @@
+v1.2-ru:
+- Добавлена экспериментальная интеграция с Forestry.
+- Добавлены новые предметы: Макароны с сыром, Вяленая говядина, Ветчина с маслом, Пончик с ванилью.
+- Изменена текстура огурца.
+- Теперь при разрушении каменной соли будет выпадать опыт.
+
+v1.2-en:
+- Added experimental integration with Forestry.
+- Added Macaroni and Cheese, Beef Jerky, Jambon-Beurre, Vanilla Donut.
+- Changed the texture of Cucumber.
+- You can now get experience from breaking Rock Salt.
+
+
+v1.2.1-ru:
+- Изменён id каменной соли для корректной интеграции с другими модами.
+- Добавлен сэндвич с запеченным сыром, сэндвич на завтрак, сосиска в тесте, бурбонское печенье.
+
+v1.2.1-en:
+- Changed rock salt's ID for correct integration with other mods.
+- Added Grilled Cheese Sandwich, Breakfast Sandwich, Sausage Roll, Bourbon Biscuit

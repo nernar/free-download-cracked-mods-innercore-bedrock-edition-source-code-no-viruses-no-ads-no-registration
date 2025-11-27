@@ -1,0 +1,25 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "bioplentia:lime_dye_from_tiny_cactus"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "priority": 1,
+    "ingredients": [
+      {
+        "item": "bioplentia:tiny_cactus"
+      }
+    ],
+    "result": {
+      "item": "minecraft:dye",
+      "data": 10,
+      "count": 2
+    }
+  }
+}

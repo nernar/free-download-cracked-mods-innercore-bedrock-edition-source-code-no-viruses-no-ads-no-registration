@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Vampirism resources",
+        "name": "Vampirism",
+        "uuid": "ed255055-b431-45df-940a-367d1af0c31a",
+        "version": [ 1, 0, 0 ],
+        "min_engine_version": [ 1, 13, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Vampirism",
+            "type": "resources",
+            "uuid": "2f41928f-630a-4c49-a53b-155c8ab4dea3",
+            "version": [ 1, 0, 0 ]
+        }
+    ]
+}

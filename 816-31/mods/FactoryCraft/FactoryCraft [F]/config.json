@@ -1,0 +1,8 @@
+{
+  "enabled":true,
+  "options":{
+    "light theme":false,
+    "liquid renders":true,
+    "enable beta content":false
+  }
+}

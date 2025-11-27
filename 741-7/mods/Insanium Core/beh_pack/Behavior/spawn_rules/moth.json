@@ -1,0 +1,52 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "bioplentia:moth",
+      "population_control": "ambient"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_underground": {},
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 4,
+          "adjust_for_weather": true
+        },
+        "minecraft:height_filter": {
+          "min": 0,
+          "max": 64
+        },
+        "minecraft:weight": {
+          "default": 10
+        },
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 5
+        },
+        "minecraft:density_limit": {
+          "surface": 7
+        },        
+        "minecraft:biome_filter": {
+          {
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "overworld"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "overworld_generation"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

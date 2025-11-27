@@ -1,0 +1,23 @@
+﻿## Comments can be added anywhere on a valid line by starting with '##'
+##
+## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
+## comment on the same line, use TABs.
+accessibility.disableTTS=Text To Speech disabled
+accessibility.enableTTS=Text To Speech enabled
+
+
+item.spawn_egg.entity.tinfinite:freddy.name=Freddy
+item.spawn_egg.entity.tinfinite:foxy.name=Foxy
+
+item.spawn_egg.entity.tinfinite:chica.name=Chica
+
+item.spawn_egg.entity.tinfinite:bonnie.name=Bonnie
+
+
+item.spawn_egg.entity.tinfinite:golden_freddy.name=Freddy Dorado
+
+
+item.tinfinite:cheese.name=Queso
+item.tinfinite:pizza.name=Pizza
+item.tinfinite:gaff.name=Garfio
+item.tinfinite:microphone.name=Microfono

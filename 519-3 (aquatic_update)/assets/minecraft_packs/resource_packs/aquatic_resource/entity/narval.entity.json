@@ -1,0 +1,28 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "lotr:narval",
+            "materials": {
+                "default": "salmon"
+            },
+            "textures": {
+                "default": "textures/entity/narval"
+            },
+            "geometry": {
+                "default": "geometry.narval"
+            },
+            "animations": {
+                "move": "animation.narval.move"
+            },
+            "animation_controllers": [
+                { "general": "controller.animation.dolphin.general" }
+            ],
+            "render_controllers": [ "controller.render.dolphin" ],
+            "spawn_egg": {
+                "base_color": "#778899",
+                "overlay_color": "#FFFFFF"
+            }
+        }
+    }
+}

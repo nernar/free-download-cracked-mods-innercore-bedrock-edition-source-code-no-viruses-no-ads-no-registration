@@ -1,0 +1,88 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "dungeoncraft:mummy",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "monster",
+          "zombie"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 2
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": false,
+        "can_path_over_water": true,
+        "can_pass_doors": false,
+        "avoid_damage_blocks": true,
+        "can_break_doors": true
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "speed_multiplier": 1,
+        "track_target": true
+      },
+      "minecraft:attack": {
+        "damage": 6
+      },
+      "minecraft:nameable": {},
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:health": {
+        "max": 20,
+        "value": 20
+      },
+      "minecraft:movement": {
+        "value": 0.5
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+				"priority": 2,
+				"entity_types": [
+					{
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "player"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "snowgolem"
+								},
+								{
+									"test": "is_family",
+									"subject": "other",
+									"value": "irongolem"
+								}
+							]
+						},
+						"max_dist": 8,
+						"attack_interval": 10
+					}
+				],
+				"attack_interval": 1,
+				"scan_interval": 10
+			},
+      "minecraft:physics": {}
+    },
+    "events": {
+      
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+"format_version": "1.13.0",
+"minecraft:entity": {
+"description": {
+"identifier": "twilightforest:lich_phantom",
+"is_spawnable": false,
+"is_summonable": false,
+"is_experimental": false
+},
+"component_groups": {
+"lich_pig": {
+"minecraft:transformation": {
+"into": "minecraft:pig",
+"delay": 0.0
+}
+},
+"lich_ender": {
+"minecraft:shooter": {
+"type": "lichender",
+"def": "twilightforest:lich_ender"
+},
+"minecraft:behavior.ranged_attack": {
+"priority": 1,
+"attack_interval_min": 1,
+"attack_interval_max": 3,
+"attack_radius": 64,
+"burst_shots": 1,
+"burst_interval": 0.25
+},
+"minecraft:timer": {
+"looping": false,
+"randomInterval": true,
+"time": [ 3.0, 5.0 ],
+"time_down_event": {
+"event": "minecraft:lich_ender",
+"target": "self"
+}
+}
+},
+"lich_fireball": {
+"minecraft:shooter": {
+"type": "lichfireball",
+"def": "twilightforest:lich_fireball"
+},
+"minecraft:behavior.ranged_attack": {
+"priority": 1,
+"attack_interval_min": 2,
+"attack_interval_max": 4,
+"attack_radius": 64,
+"burst_shots": 1,
+"burst_interval": 0.25
+},
+"minecraft:timer": {
+"looping": false,
+"randomInterval": true,
+"time": [ 5.0, 8.0 ],
+"time_down_event": {
+"event": "minecraft:lich_fireball",
+"target": "self"
+}
+}
+}
+},
+"components": {
+"minecraft:nameable": {
+},
+"minecraft:type_family": {
+"family": [ "lich", "boss", "monster" ]
+},
+"minecraft:breathable": {
+"total_supply": 15,
+"suffocate_time": 0,
+"breathes_water": true
+},
+"minecraft:health": {
+"value": 100,
+"max": 100
+},
+"minecraft:movement": {
+"value": 0.25
+},
+"minecraft:scale": {
+"value": 1.3
+},
+"minecraft:collision_box": {
+"width": 0.6,
+"height": 1.9
+},
+"minecraft:color": {
+"value": 7
+},
+"minecraft:follow_range": {
+"value": 64,
+"max": 64
+},
+"minecraft:fire_immune": true,
+"minecraft:equipment": {
+"table": "loot_tables/entities/lich_gear.json"
+},
+"minecraft:hurt_on_condition": {
+"damage_conditions": [
+{
+"filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+"cause": "lava",
+"damage_per_tick": 4
+}
+]
+},
+"minecraft:damage_sensor": {
+"triggers": {
+"cause": "all",
+"deals_damage": false
+}
+},
+"minecraft:timer": {
+"looping": false,
+"randomInterval": true,
+"time": 15.0,
+"time_down_event": {
+"event": "minecraft:lich_death",
+"target": "self"
+}
+},
+"minecraft:teleport": {
+"randomTeleports": true,
+"maxRandomTeleportTime": 30,
+"randomTeleportCube": [ 16, 8, 16 ],
+"targetDistance": 32,
+"target_teleport_chance": 0.05,
+"lightTeleportChance": 0.01
+},
+"minecraft:navigation.generic": {
+"can_path_over_water": true,
+"avoid_water": true,
+"avoid_damage_blocks": true,
+"can_walk": true
+},
+"minecraft:movement.basic": {
+},
+"minecraft:jump.static": {
+},
+"minecraft:can_climb": {
+},
+"minecraft:shooter": {
+"type": "lichender",
+"def": "twilightforest:lich_ender"
+},
+"minecraft:behavior.ranged_attack": {
+"priority": 1,
+"attack_interval_min": 1,
+"attack_interval_max": 3,
+"attack_radius": 64,
+"burst_shots": 1,
+"burst_interval": 0.25
+},
+"minecraft:behavior.hurt_by_target": {
+"priority": 2,
+"entity_types": {
+"filters": { 
+"all_of": [ 
+{ "test": "is_family", "subject": "other", "operator": "!=", "value": "lich" } 
+] 
+}
+}
+},
+"minecraft:behavior.nearest_attackable_target": {
+"priority": 3,
+"entity_types": [
+{
+"filters": {
+"any_of": [
+{ "test": "is_family", "subject": "other", "value": "snowgolem" },
+{ "test": "is_family", "subject": "other", "value": "irongolem" },
+{ "test": "is_family", "subject": "other", "value": "player" }
+]
+},
+"max_dist": 64
+}
+],
+"must_see": true
+},
+"minecraft:behavior.random_stroll": {
+"priority": 5,
+"speed_multiplier": 1.0
+},
+"minecraft:behavior.look_at_player": {
+"priority": 6,
+"look_distance": 8
+},
+"minecraft:behavior.random_look_around": {
+"priority": 6
+},
+"minecraft:physics": {
+},
+"minecraft:pushable": {
+"is_pushable": true,
+"is_pushable_by_piston": true
+}
+},
+"events": {
+"minecraft:entity_spawned": {
+"randomize": [
+{
+"weight": 50,
+"remove": { },
+"add": { "component_groups": [ "lich_ender" ] }
+},
+{
+"weight": 50,
+"remove": { },
+"add": { "component_groups": [ "lich_fireball" ] }
+}
+]
+},
+"minecraft:lich_death": {
+"add": { "component_groups": [ "lich_pig" ] }
+},
+"minecraft:lich_ender": {
+"remove": { "component_groups": [ "minecraft:lich_fireball" ] },
+"add": { "component_groups": [ "minecraft:lich_ender" ] }
+},
+"minecraft:lich_fireball": {
+"remove": { "component_groups": [ "minecraft:lich_ender" ] },
+"add": { "component_groups": [ "minecraft:lich_fireball" ] }
+}
+}
+}
+}

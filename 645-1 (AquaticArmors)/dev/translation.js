@@ -1,0 +1,18 @@
+Translation.addTranslation("Shiny Prismarine", {ru: "Сияющий Осколок Призмарина"});
+Translation.addTranslation("Blue Prismarine", {ru: "Синий Осколок Призмарина"});
+Translation.addTranslation("Red Prismarine", {ru: "Красный Осколок Призмарина"});
+Translation.addTranslation("Green Prismarine", {ru: "Зеленый Осколок Призмарина"});
+Translation.addTranslation("Blue Prismarine Helmet", {ru: "Синий Призмариновый Шлем"});
+Translation.addTranslation("Blue Prismarine Chestplate", {ru: "Синий Призмариновый Нагрудник"});
+Translation.addTranslation("Blue Prismarine Leggings", {ru: "Синие Призмариновые Поножи"});
+Translation.addTranslation("Blue Prismarine Boots", {ru: "Синие Призмариновые Ботинки"});
+Translation.addTranslation("Red Prismarine Helmet", {ru: "Красный Призмариновый Шлем"});
+Translation.addTranslation("Red Prismarine Chestplate", {ru: "Красный Призмариновый Нагрудник"});
+Translation.addTranslation("Red Prismarine Leggings", {ru: "Красные Призмариновые Поножи"});
+Translation.addTranslation("Red Prismarine Boots", {ru: "Красные Призмариновые Ботинки"});
+Translation.addTranslation("Green Prismarine Helmet", {ru: "Зеленый Призмариновый Шлем"});
+Translation.addTranslation("Green Prismarine Chestplate", {ru: "Зеленый Призмариновый Нагрудник"});
+Translation.addTranslation("Green Prismarine Leggings", {ru: "Зеленые Призмариновые Поножи"});
+Translation.addTranslation("Green Prismarine Boots", {ru: "Зеленые Призмариновые Ботинки"});
+Translation.addTranslation("Shards", {ru: "Осколки"});
+Translation.addTranslation("Armors", {ru: "Броня"});

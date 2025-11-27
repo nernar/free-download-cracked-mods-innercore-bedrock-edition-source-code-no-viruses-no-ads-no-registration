@@ -1,0 +1,100 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "raigen:grimstone_golem",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+    "components": {
+      "minecraft:fire_immune": false,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:type_family": {
+        "family": [ "monster", "golem" ]
+      },
+	  "minecraft:scale": {
+	    "value": 2.3
+	  },
+      "minecraft:collision_box": {
+        "width": 1.4,
+        "height": 3.8
+      },
+      "minecraft:health": {
+        "value": 400
+      },
+      "minecraft:movement": {
+        "value": 0.08
+      },
+      "minecraft:navigation.walk": {
+        "can_float": false,
+        "avoid_water": false,
+        "is_amphibious": true,
+        "avoid_damage_blocks": true
+      },
+	  "minecraft:hurt_when_wet": {
+	    "value": true
+	  },
+      "minecraft:movement.basic": {
+        
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:attack": {
+        "damage": 12
+	  },
+      "minecraft:balloonable": {
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "target_dist": 1.0,
+        "track_target": true
+      },
+      "minecraft:behavior.move_towards_target": {
+        "priority": 2,
+        "speed_multiplier": 0.9,
+        "within_radius": 32
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 4,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1,
+        "xz_dist": 16
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 1,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of" : [
+                {"test" : "is_family", "subject" : "other", "value" :  "player"},
+                {"test" : "is_family", "subject" : "other", "value" :  "villager"}
+              ]
+            },
+            "max_dist": 16
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:physics": {
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<translation,ru,The version of the modification Ex Nihilo Origin has been changed.>:Версия модификации Ex Nihilo Origin изменена.
+<text>:The version of the modification Ex Nihilo Origin has been changed.
+<translation,ru,This mod is important for gameplay>:Данный мод важен для геймплея
+<text>:This mod is important for gameplay
+<translation,ru,The version of the modification Recipe Viewer has been changed.>:Версия модификации Recipe Viewer изменена.
+<text>:The version of the modification Recipe Viewer has been changed.
+<translation,ru>:Изменение версии мода не желательна
+<text>:Changing the mod version is not desirable

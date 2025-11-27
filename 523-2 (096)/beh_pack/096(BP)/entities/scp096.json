@@ -1,0 +1,346 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "entity:scp096",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "minecraft:rage": {
+      
+        "minecraft:on_target_acquired": {},
+        "minecraft:behavior.summon_entity": {
+          "priority": 0,
+          "probability": 100.0,
+          "summon_choices": [
+            {
+              "weight": 1,
+              "cooldown_time": 100000.0,
+              "cast_duration": 30,
+              "start_sound_event": "plop",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 0.0,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 0,
+                  "entity_type": "",
+                  "entity_lifespan": 10.0,
+                  "size": 10.0,
+                  "sound_event": ""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "minecraft:scp096_adult": {
+           "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        }
+      },
+      "minecraft:scp096_angry": {
+            "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:angry": {
+    
+          "duration": 100000,
+          "broadcastAnger": true,
+          "broadcastRange": 20,
+    
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
+        },
+           "minecraft:on_target_acquired": {
+      
+        }
+      },
+          "minecraft:scp096_closed": {
+              "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:scp096_calm": {
+              "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        }
+      }
+    },
+    
+    "components": {
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": -1,
+        "breathesWater": true
+      },
+          "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "within_radius": 100,
+             "attack_interval": 1,
+          "entity_types": [
+            {
+              "filters": { "other_with_families": [ "scp096" ] },
+              "max_dist": 100
+            }
+          ],
+          "must_see": false
+        },
+        "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.move_indoors": {
+        "priority": 4,
+        "speed_multiplier": 9
+      },
+      "minecraft:behavior.restrict_open_door": {
+        "priority": 5
+      },
+      "minecraft:behavior.open_door": {
+        "priority": 6,
+        "close_door_after": false
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 1.85
+      },
+      "minecraft:behavior.random_sitting": {
+          "priority": 2,
+          "start_chance": 100,
+          "stop_chance": 0.2,
+          "cooldown": 2,
+          "min_sit_time": 15
+      },
+      "minecraft:lookat": {
+        "searchRadius": 100.0,
+        "setTarget": true,
+        "look_cooldown": 0,
+        "filters": {
+          "all_of": [
+            {
+              "subject": "other",
+              "test": "is_family",
+              "value": "player"
+            },
+            {
+              "test": "has_equipment",
+              "domain": "head",
+              "subject": "other",
+              "operator": "not",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.06
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:follow_range": {
+        "value": 100,
+        "max": 100
+      },
+        "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_open_doors": true,
+        "avoid_water": false,
+        "avoid_portals": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+  
+      "minecraft:type_family": {
+        "family": [ "scp096", "monster" ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/noloot.json"
+      },
+      "minecraft:damage_sensor": [
+       {
+         "deals_damage": true
+         }
+       ],
+     
+      "minecraft:health": {
+        "value": 500000,
+        "max": 500000
+      },
+      "minecraft:movement": {
+        "value": 0.05
+      },
+      "minecraft:attack": {
+        "damage": 10000000
+      },
+      "minecraft:knockback_resistance": {
+        "value": 2.0
+      },
+      "minecraft:break_blocks": {
+        "breakable_blocks": [
+          "bamboo",
+          "iron_door",
+          "diamond_block",
+          "iron_block",
+          "cobblestone",
+          "carved_pumpkin",
+          "gold_block",
+          "iron_ore",
+          "diamond_ore",
+          "gold_ore",
+          "leaves",
+          "leaves2",
+          "lit_pumpkin",
+          "melon_block",
+          "stone_brick",
+          "obsidian",
+          "concrete",
+          "redstone_block",
+          "bedrock",
+          "tnt",
+          "spruce_door",
+          "oak_door",
+          "birch_door",
+          "acacia_door",
+          "dark_oak_door",
+          "turtle_egg",
+          "wood_planks",
+          "brick_block",
+          "fence",
+          "redstone_wire",
+          "iron_bars",
+          "glass",
+          "glass_pane",
+          "coal_block",
+          "clay",
+          "andesite",
+          "anvil",
+          "concrete_powder",
+          "slab",
+          "wool",
+          "crafting_tabble",
+          "furnace",
+          "bed",
+          "log2",
+          "log",
+          "planks",
+          "ladder",
+          "scaffolding",
+          "trapdoor",
+          "iron_trapdoor",
+          "acacia_trapdoor",
+          "piston",
+          "water",
+          "planks_jungle",
+          "quartz_block",
+          "quartz",
+          "castus"
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "speed_multiplier": 9,
+        "track_target": true,
+        "reach_multiplier": 1.1
+      },
+     "minecraft:behavior.move_towards_restriction": {
+        "priority": 5
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 3
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 5
+      },
+      "minecraft:physics": {
+      }
+      
+    },
+
+
+    "events": {
+  
+     "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 95,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:scp096_adult",
+                "minecraft:scp096_calm"
+                      
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:on_calm": {
+        "remove": {
+          "component_groups": [
+            "minecraft:scp096_angry",
+                  "minecraft:rage"  
+   
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:scp096_calm",
+                "minecraft:scp096_closed"
+          ]
+        }
+      },
+      "minecraft:become_angry": {
+        "remove": {
+          "component_groups": [
+            "minecraft:scp096_calm",
+                "minecraft:scp096_closed"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:scp096_angry",
+                  "minecraft:rage"  
+        
+               
+   
+          ]
+        }
+      }
+    }
+  }
+}

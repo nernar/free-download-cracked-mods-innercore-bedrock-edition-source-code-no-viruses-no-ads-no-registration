@@ -1,0 +1,3282 @@
+{
+  "format_version": "1.11",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "walk",
+          "hu:icepullet",
+          "hu:forge",
+          "hu:sea_b",
+          "hu:icedragonboot",
+          "hu:firedragonboot",
+          "hu:lightningdragonboot",
+          "hu:icedragonsteelboot",
+          "hu:firedragonsteelboot",
+          "hu:lightningdragonsteelboot",
+          "hu:firedragonchestplate",
+          "hu:icedragonsteelchestplate",
+          "hu:icedragonchestplate",
+          "hu:firedragonsteelchestplate",
+          "hu:firedragonsteellegging",
+          "hu:lightningdragonchestplate",
+          "hu:icedragonsteellegging",
+          "hu:icedragonlegging",
+          "hu:lightningdragonsteellegging",
+          "hu:firedragonlegging",
+          "hu:lightningdragonlegging",
+          "hu:icedragonhelmet",
+          "hu:lightningdragonsteelhelmet",
+          "hu:lightningdragonsteelchestplate",
+          "hu:seachestplate",
+          "hu:lightningdragonhelmet",
+          "hu:firedragonhelmet",
+          "hu:icedragonsteelhelmet",
+          "hu:firedragonsteelhelmet",
+          "hu:seahelmet",
+          "hu:sealegging"
+        ]
+      },
+      "animations": {
+        "walk": "controller.animation.walk",
+        "hu:icepullet": "controller.animation.hu_icepullet",
+        "hu:forge": "controller.animation.hu_forge",
+        "hu:sea_b": "controller.animation.hu_sea_b",
+        "hu:icedragonboot": "controller.animation.hu_icedragonboot",
+        "hu:firedragonboot": "controller.animation.hu_firedragonboot",
+        "hu:lightningdragonboot": "controller.animation.hu_lightningdragonboot",
+        "hu:icedragonsteelboot": "controller.animation.hu_icedragonsteelboot",
+        "hu:firedragonsteelboot": "controller.animation.hu_firedragonsteelboot",
+        "hu:lightningdragonsteelboot": "controller.animation.hu_lightningdragonsteelboot",
+        "hu:firedragonchestplate": "controller.animation.hu_firedragonchestplate",
+        "hu:icedragonsteelchestplate": "controller.animation.hu_icedragonsteelchestplate",
+        "hu:icedragonchestplate": "controller.animation.hu_icedragonchestplate",
+        "hu:firedragonsteelchestplate": "controller.animation.hu_firedragonsteelchestplate",
+        "hu:firedragonsteellegging": "controller.animation.hu_firedragonsteellegging",
+        "hu:lightningdragonchestplate": "controller.animation.hu_lightningdragonchestplate",
+        "hu:icedragonsteellegging": "controller.animation.hu_icedragonsteellegging",
+        "hu:icedragonlegging": "controller.animation.hu_icedragonlegging",
+        "hu:lightningdragonsteellegging": "controller.animation.hu_lightningdragonsteellegging",
+        "hu:firedragonlegging": "controller.animation.hu_firedragonlegging",
+        "hu:lightningdragonlegging": "controller.animation.hu_lightningdragonlegging",
+        "hu:icedragonhelmet": "controller.animation.hu_icedragonhelmet",
+        "hu:lightningdragonsteelhelmet": "controller.animation.hu_lightningdragonsteelhelmet",
+        "hu:lightningdragonsteelchestplate": "controller.animation.hu_lightningdragonsteelchestplate",
+        "hu:seachestplate": "controller.animation.hu_seachestplate",
+        "hu:lightningdragonhelmet": "controller.animation.hu_lightningdragonhelmet",
+        "hu:firedragonhelmet": "controller.animation.hu_firedragonhelmet",
+        "hu:icedragonsteelhelmet": "controller.animation.hu_icedragonsteelhelmet",
+        "hu:firedragonsteelhelmet": "controller.animation.hu_firedragonsteelhelmet",
+        "hu:seahelmet": "controller.animation.hu_seahelmet",
+        "hu:sealegging": "controller.animation.hu_sealegging"
+      }
+    },
+    "component_groups": {
+      "pamobile:respawn": {
+        "minecraft:mark_variant": {
+          "value": 99999
+        },
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:attack": {
+          "damage": 1
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": [
+            "mining_fatigue",
+            "water_breathing"
+          ]
+        }
+      },
+      "ammo:1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "hu:dragonbonesword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonbonesword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonbonesword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:dragonbonerapier": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.2
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonbonerapier": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.3
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonbonerapier": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonsteelsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonsteelsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:lightningsteelsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:lightningdragonbonesword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonsteelrapier": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.3
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonsteelrapier": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.3
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonbonegreatsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:dragonbonegreatsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonbonegreatsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonsteelgreatsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonsteelgreatsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:dragonbonelongsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonbonelongsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonbonelongsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonsteellongsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonsteellongsword": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:dragonbonesaber": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonbonesaber": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonbonesaber": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonsteelsaber": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonsteelsaber": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:dragonbonebattleaxe": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "mining_fatigue",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "hu:firedragonbonebattleaxe": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "mining_fatigue",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "hu:icedragonbonebattleaxe": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "mining_fatigue",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "hu:firedragonsteelbattleaxe": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "mining_fatigue",
+              "duration": 60000,
+              "amplifier": 2,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "hu:icedragonsteelbattleaxe": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "mining_fatigue",
+              "duration": 60000,
+              "amplifier": 2,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "hu:dragonbonekatana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.2
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonbonekatana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonbonekatana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.2
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonsteelkatana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.2
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonsteelkatana": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icepullet_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "hu:icepullet",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "hu:forge_fire": {
+        "minecraft:spawn_entity": [
+          {
+            "min_wait_time": 0,
+            "max_wait_time": 0,
+            "single_use": true,
+            "spawn_entity": "hu:forge",
+            "num_to_spawn": 1
+          }
+        ]
+      },
+      "hu:sea_b_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonboot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonboot_event_play": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:lightningdragonboot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonsteelboot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonsteelboot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:lightningdragonsteelboot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonchestplate_event_play": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonsteelchestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonchestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonsteelchestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonsteellegging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:lightningdragonchestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonsteellegging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonlegging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:lightningdragonsteellegging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonlegging_event_play": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:lightningdragonlegging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonhelmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:lightningdragonsteelhelmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:lightningdragonsteelchestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:seachestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:lightningdragonhelmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonhelmet_event_play": {
+        "minecraft:health": {
+          "value": 22,
+          "max": 22
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:icedragonsteelhelmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:firedragonsteelhelmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "hu:seahelmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "water_breathing",
+              "duration": 60000,
+              "amplifier": 1,
+              "display_on_screen_animation": false
+            }
+          ]
+        }
+      },
+      "hu:sealegging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "player"
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {},
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:environment_sensor": [
+        {
+          "on_environment": {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "pamobile:refresh_player"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:dragonbonesword"
+                }
+              ]
+            },
+            "event": "hu:dragonbonesword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonbonesword"
+                }
+              ]
+            },
+            "event": "hu:firedragonbonesword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonbonesword"
+                }
+              ]
+            },
+            "event": "hu:icedragonbonesword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:dragonbonerapier"
+                }
+              ]
+            },
+            "event": "hu:dragonbonerapier_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonbonerapier"
+                }
+              ]
+            },
+            "event": "hu:firedragonbonerapier_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonbonerapier"
+                }
+              ]
+            },
+            "event": "hu:icedragonbonerapier_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonsteelsword"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteelsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonsteelsword"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteelsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:lightningsteelsword"
+                }
+              ]
+            },
+            "event": "hu:lightningsteelsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:lightningdragonbonesword"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonbonesword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonsteelrapier"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteelrapier_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonsteelrapier"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteelrapier_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonbonegreatsword"
+                }
+              ]
+            },
+            "event": "hu:firedragonbonegreatsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:dragonbonegreatsword"
+                }
+              ]
+            },
+            "event": "hu:dragonbonegreatsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonbonegreatsword"
+                }
+              ]
+            },
+            "event": "hu:icedragonbonegreatsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonsteelgreatsword"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteelgreatsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonsteelgreatsword"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteelgreatsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:dragonbonelongsword"
+                }
+              ]
+            },
+            "event": "hu:dragonbonelongsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonbonelongsword"
+                }
+              ]
+            },
+            "event": "hu:firedragonbonelongsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonbonelongsword"
+                }
+              ]
+            },
+            "event": "hu:icedragonbonelongsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonsteellongsword"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteellongsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonsteellongsword"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteellongsword_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:dragonbonesaber"
+                }
+              ]
+            },
+            "event": "hu:dragonbonesaber_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonbonesaber"
+                }
+              ]
+            },
+            "event": "hu:firedragonbonesaber_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonbonesaber"
+                }
+              ]
+            },
+            "event": "hu:icedragonbonesaber_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonsteelsaber"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteelsaber_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonsteelsaber"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteelsaber_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:dragonbonebattleaxe"
+                }
+              ]
+            },
+            "event": "hu:dragonbonebattleaxe_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonbonebattleaxe"
+                }
+              ]
+            },
+            "event": "hu:firedragonbonebattleaxe_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonbonebattleaxe"
+                }
+              ]
+            },
+            "event": "hu:icedragonbonebattleaxe_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonsteelbattleaxe"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteelbattleaxe_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonsteelbattleaxe"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteelbattleaxe_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:dragonbonekatana"
+                }
+              ]
+            },
+            "event": "hu:dragonbonekatana_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonbonekatana"
+                }
+              ]
+            },
+            "event": "hu:firedragonbonekatana_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonbonekatana"
+                }
+              ]
+            },
+            "event": "hu:icedragonbonekatana_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonsteelkatana"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteelkatana_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonsteelkatana"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteelkatana_event"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icepullet"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:forge"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "ammo:1"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:sea_b"
+                }
+              ]
+            },
+            "event": "hu:sea_b_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:sea_b"
+                }
+              ]
+            },
+            "event": "hu:sea_b_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonboot"
+                }
+              ]
+            },
+            "event": "hu:icedragonboot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:icedragonboot"
+                }
+              ]
+            },
+            "event": "hu:icedragonboot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonboot"
+                }
+              ]
+            },
+            "event": "hu:firedragonboot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:firedragonboot"
+                }
+              ]
+            },
+            "event": "hu:firedragonboot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:lightningdragonboot"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonboot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:lightningdragonboot"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonboot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonsteelboot"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteelboot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:icedragonsteelboot"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteelboot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonsteelboot"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteelboot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:firedragonsteelboot"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteelboot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:lightningdragonsteelboot"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonsteelboot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:lightningdragonsteelboot"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonsteelboot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonchestplate"
+                }
+              ]
+            },
+            "event": "hu:firedragonchestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:firedragonchestplate"
+                }
+              ]
+            },
+            "event": "hu:firedragonchestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonsteelchestplate"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteelchestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:icedragonsteelchestplate"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteelchestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonchestplate"
+                }
+              ]
+            },
+            "event": "hu:icedragonchestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:icedragonchestplate"
+                }
+              ]
+            },
+            "event": "hu:icedragonchestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonsteelchestplate"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteelchestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:firedragonsteelchestplate"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteelchestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonsteellegging"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteellegging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:firedragonsteellegging"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteellegging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:lightningdragonchestplate"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonchestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:lightningdragonchestplate"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonchestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonsteellegging"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteellegging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:icedragonsteellegging"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteellegging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonlegging"
+                }
+              ]
+            },
+            "event": "hu:icedragonlegging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:icedragonlegging"
+                }
+              ]
+            },
+            "event": "hu:icedragonlegging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:lightningdragonsteellegging"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonsteellegging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:lightningdragonsteellegging"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonsteellegging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonlegging"
+                }
+              ]
+            },
+            "event": "hu:firedragonlegging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:firedragonlegging"
+                }
+              ]
+            },
+            "event": "hu:firedragonlegging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:lightningdragonlegging"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonlegging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:lightningdragonlegging"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonlegging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonhelmet"
+                }
+              ]
+            },
+            "event": "hu:icedragonhelmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:icedragonhelmet"
+                }
+              ]
+            },
+            "event": "hu:icedragonhelmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:lightningdragonsteelhelmet"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonsteelhelmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:lightningdragonsteelhelmet"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonsteelhelmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:lightningdragonsteelchestplate"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonsteelchestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:lightningdragonsteelchestplate"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonsteelchestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:seachestplate"
+                }
+              ]
+            },
+            "event": "hu:seachestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:seachestplate"
+                }
+              ]
+            },
+            "event": "hu:seachestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:lightningdragonhelmet"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonhelmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:lightningdragonhelmet"
+                }
+              ]
+            },
+            "event": "hu:lightningdragonhelmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonhelmet"
+                }
+              ]
+            },
+            "event": "hu:firedragonhelmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:firedragonhelmet"
+                }
+              ]
+            },
+            "event": "hu:firedragonhelmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:icedragonsteelhelmet"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteelhelmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:icedragonsteelhelmet"
+                }
+              ]
+            },
+            "event": "hu:icedragonsteelhelmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:firedragonsteelhelmet"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteelhelmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:firedragonsteelhelmet"
+                }
+              ]
+            },
+            "event": "hu:firedragonsteelhelmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:seahelmet"
+                }
+              ]
+            },
+            "event": "hu:seahelmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:seahelmet"
+                }
+              ]
+            },
+            "event": "hu:seahelmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "hu:sealegging"
+                }
+              ]
+            },
+            "event": "hu:sealegging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "hu:sealegging"
+                }
+              ]
+            },
+            "event": "hu:sealegging_event_play"
+          }
+        }
+      ],
+      "minecraft:player.saturation": {
+        "value": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 4
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": -1,
+        "inhaleTime": 3.75,
+        "generatesBubbles": false
+      },
+      "minecraft:nameable": {
+        "alwaysShow": true,
+        "allowNameTagRenaming": false
+      },
+      "minecraft:physics": {},
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [
+              0.4,
+              -0.15,
+              0.04
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [
+              -0.4,
+              -0.15,
+              0.04
+            ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:scaffolding_climber": {}
+    },
+    "events": {
+      "pamobile:refresh_player": {
+        "add": {
+          "component_groups": [
+            "pamobile:respawn"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "hu:dragonbonesword",
+            "hu:firedragonbonesword",
+            "hu:icedragonbonesword",
+            "hu:dragonbonerapier",
+            "hu:firedragonbonerapier",
+            "hu:icedragonbonerapier",
+            "hu:firedragonsteelsword",
+            "hu:icedragonsteelsword",
+            "hu:lightningsteelsword",
+            "hu:lightningdragonbonesword",
+            "hu:firedragonsteelrapier",
+            "hu:icedragonsteelrapier",
+            "hu:firedragonbonegreatsword",
+            "hu:dragonbonegreatsword",
+            "hu:icedragonbonegreatsword",
+            "hu:firedragonsteelgreatsword",
+            "hu:icedragonsteelgreatsword",
+            "hu:dragonbonelongsword",
+            "hu:firedragonbonelongsword",
+            "hu:icedragonbonelongsword",
+            "hu:firedragonsteellongsword",
+            "hu:icedragonsteellongsword",
+            "hu:dragonbonesaber",
+            "hu:firedragonbonesaber",
+            "hu:icedragonbonesaber",
+            "hu:firedragonsteelsaber",
+            "hu:icedragonsteelsaber",
+            "hu:dragonbonebattleaxe",
+            "hu:firedragonbonebattleaxe",
+            "hu:icedragonbonebattleaxe",
+            "hu:firedragonsteelbattleaxe",
+            "hu:icedragonsteelbattleaxe",
+            "hu:dragonbonekatana",
+            "hu:firedragonbonekatana",
+            "hu:icedragonbonekatana",
+            "hu:firedragonsteelkatana",
+            "hu:icedragonsteelkatana",
+            "hu:sea_b_event_hold",
+            "hu:sea_b_event_play",
+            "hu:icedragonboot_event_hold",
+            "hu:icedragonboot_event_play",
+            "hu:firedragonboot_event_hold",
+            "hu:firedragonboot_event_play",
+            "hu:lightningdragonboot_event_hold",
+            "hu:lightningdragonboot_event_play",
+            "hu:icedragonsteelboot_event_hold",
+            "hu:icedragonsteelboot_event_play",
+            "hu:firedragonsteelboot_event_hold",
+            "hu:firedragonsteelboot_event_play",
+            "hu:lightningdragonsteelboot_event_hold",
+            "hu:lightningdragonsteelboot_event_play",
+            "hu:firedragonchestplate_event_hold",
+            "hu:firedragonchestplate_event_play",
+            "hu:icedragonsteelchestplate_event_hold",
+            "hu:icedragonsteelchestplate_event_play",
+            "hu:icedragonchestplate_event_hold",
+            "hu:icedragonchestplate_event_play",
+            "hu:firedragonsteelchestplate_event_hold",
+            "hu:firedragonsteelchestplate_event_play",
+            "hu:firedragonsteellegging_event_hold",
+            "hu:firedragonsteellegging_event_play",
+            "hu:lightningdragonchestplate_event_hold",
+            "hu:lightningdragonchestplate_event_play",
+            "hu:icedragonsteellegging_event_hold",
+            "hu:icedragonsteellegging_event_play",
+            "hu:icedragonlegging_event_hold",
+            "hu:icedragonlegging_event_play",
+            "hu:lightningdragonsteellegging_event_hold",
+            "hu:lightningdragonsteellegging_event_play",
+            "hu:firedragonlegging_event_hold",
+            "hu:firedragonlegging_event_play",
+            "hu:lightningdragonlegging_event_hold",
+            "hu:lightningdragonlegging_event_play",
+            "hu:icedragonhelmet_event_hold",
+            "hu:icedragonhelmet_event_play",
+            "hu:lightningdragonsteelhelmet_event_hold",
+            "hu:lightningdragonsteelhelmet_event_play",
+            "hu:lightningdragonsteelchestplate_event_hold",
+            "hu:lightningdragonsteelchestplate_event_play",
+            "hu:seachestplate_event_hold",
+            "hu:seachestplate_event_play",
+            "hu:lightningdragonhelmet_event_hold",
+            "hu:lightningdragonhelmet_event_play",
+            "hu:firedragonhelmet_event_hold",
+            "hu:firedragonhelmet_event_play",
+            "hu:icedragonsteelhelmet_event_hold",
+            "hu:icedragonsteelhelmet_event_play",
+            "hu:firedragonsteelhelmet_event_hold",
+            "hu:firedragonsteelhelmet_event_play",
+            "hu:seahelmet_event_hold",
+            "hu:seahelmet_event_play",
+            "hu:sealegging_event_hold",
+            "hu:sealegging_event_play"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "pamobile:respawn"
+          ]
+        },
+        "remove": {}
+      },
+      "ammo:1": {
+        "remove": {
+          "component_groups": [
+            "ammo:1"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "ammo:1"
+          ]
+        }
+      },
+      "ammo:2": {
+        "remove": {
+          "component_groups": [
+            "ammo:2"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "ammo:2"
+          ]
+        }
+      },
+      "hu:dragonbonesword_event": {
+        "add": {
+          "component_groups": [
+            "hu:dragonbonesword"
+          ]
+        }
+      },
+      "hu:firedragonbonesword_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonbonesword"
+          ]
+        }
+      },
+      "hu:icedragonbonesword_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonbonesword"
+          ]
+        }
+      },
+      "hu:dragonbonerapier_event": {
+        "add": {
+          "component_groups": [
+            "hu:dragonbonerapier"
+          ]
+        }
+      },
+      "hu:firedragonbonerapier_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonbonerapier"
+          ]
+        }
+      },
+      "hu:icedragonbonerapier_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonbonerapier"
+          ]
+        }
+      },
+      "hu:firedragonsteelsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteelsword"
+          ]
+        }
+      },
+      "hu:icedragonsteelsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteelsword"
+          ]
+        }
+      },
+      "hu:lightningsteelsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:lightningsteelsword"
+          ]
+        }
+      },
+      "hu:lightningdragonbonesword_event": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonbonesword"
+          ]
+        }
+      },
+      "hu:firedragonsteelrapier_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteelrapier"
+          ]
+        }
+      },
+      "hu:icedragonsteelrapier_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteelrapier"
+          ]
+        }
+      },
+      "hu:firedragonbonegreatsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonbonegreatsword"
+          ]
+        }
+      },
+      "hu:dragonbonegreatsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:dragonbonegreatsword"
+          ]
+        }
+      },
+      "hu:icedragonbonegreatsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonbonegreatsword"
+          ]
+        }
+      },
+      "hu:firedragonsteelgreatsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteelgreatsword"
+          ]
+        }
+      },
+      "hu:icedragonsteelgreatsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteelgreatsword"
+          ]
+        }
+      },
+      "hu:dragonbonelongsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:dragonbonelongsword"
+          ]
+        }
+      },
+      "hu:firedragonbonelongsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonbonelongsword"
+          ]
+        }
+      },
+      "hu:icedragonbonelongsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonbonelongsword"
+          ]
+        }
+      },
+      "hu:firedragonsteellongsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteellongsword"
+          ]
+        }
+      },
+      "hu:icedragonsteellongsword_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteellongsword"
+          ]
+        }
+      },
+      "hu:dragonbonesaber_event": {
+        "add": {
+          "component_groups": [
+            "hu:dragonbonesaber"
+          ]
+        }
+      },
+      "hu:firedragonbonesaber_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonbonesaber"
+          ]
+        }
+      },
+      "hu:icedragonbonesaber_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonbonesaber"
+          ]
+        }
+      },
+      "hu:firedragonsteelsaber_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteelsaber"
+          ]
+        }
+      },
+      "hu:icedragonsteelsaber_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteelsaber"
+          ]
+        }
+      },
+      "hu:dragonbonebattleaxe_event": {
+        "add": {
+          "component_groups": [
+            "hu:dragonbonebattleaxe"
+          ]
+        }
+      },
+      "hu:firedragonbonebattleaxe_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonbonebattleaxe"
+          ]
+        }
+      },
+      "hu:icedragonbonebattleaxe_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonbonebattleaxe"
+          ]
+        }
+      },
+      "hu:firedragonsteelbattleaxe_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteelbattleaxe"
+          ]
+        }
+      },
+      "hu:icedragonsteelbattleaxe_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteelbattleaxe"
+          ]
+        }
+      },
+      "hu:dragonbonekatana_event": {
+        "add": {
+          "component_groups": [
+            "hu:dragonbonekatana"
+          ]
+        }
+      },
+      "hu:firedragonbonekatana_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonbonekatana"
+          ]
+        }
+      },
+      "hu:icedragonbonekatana_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonbonekatana"
+          ]
+        }
+      },
+      "hu:firedragonsteelkatana_event": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteelkatana"
+          ]
+        }
+      },
+      "hu:icedragonsteelkatana_event": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteelkatana"
+          ]
+        }
+      },
+      "hu:icepullet_fire": {
+        "add": {
+          "component_groups": [
+            "hu:icepullet_fire"
+          ]
+        }
+      },
+      "hu:forge_fire": {
+        "add": {
+          "component_groups": [
+            "hu:forge_fire"
+          ]
+        }
+      },
+      "hu:sea_b_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:sea_b_event_hold"
+          ]
+        }
+      },
+      "hu:sea_b_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:sea_b_event_play"
+          ]
+        }
+      },
+      "hu:icedragonboot_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonboot_event_hold"
+          ]
+        }
+      },
+      "hu:icedragonboot_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonboot_event_play"
+          ]
+        }
+      },
+      "hu:firedragonboot_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonboot_event_hold"
+          ]
+        }
+      },
+      "hu:firedragonboot_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonboot_event_play"
+          ]
+        }
+      },
+      "hu:lightningdragonboot_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonboot_event_hold"
+          ]
+        }
+      },
+      "hu:lightningdragonboot_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonboot_event_play"
+          ]
+        }
+      },
+      "hu:icedragonsteelboot_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteelboot_event_hold"
+          ]
+        }
+      },
+      "hu:icedragonsteelboot_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteelboot_event_play"
+          ]
+        }
+      },
+      "hu:firedragonsteelboot_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteelboot_event_hold"
+          ]
+        }
+      },
+      "hu:firedragonsteelboot_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteelboot_event_play"
+          ]
+        }
+      },
+      "hu:lightningdragonsteelboot_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonsteelboot_event_hold"
+          ]
+        }
+      },
+      "hu:lightningdragonsteelboot_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonsteelboot_event_play"
+          ]
+        }
+      },
+      "hu:firedragonchestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonchestplate_event_hold"
+          ]
+        }
+      },
+      "hu:firedragonchestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonchestplate_event_play"
+          ]
+        }
+      },
+      "hu:icedragonsteelchestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteelchestplate_event_hold"
+          ]
+        }
+      },
+      "hu:icedragonsteelchestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteelchestplate_event_play"
+          ]
+        }
+      },
+      "hu:icedragonchestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonchestplate_event_hold"
+          ]
+        }
+      },
+      "hu:icedragonchestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonchestplate_event_play"
+          ]
+        }
+      },
+      "hu:firedragonsteelchestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteelchestplate_event_hold"
+          ]
+        }
+      },
+      "hu:firedragonsteelchestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteelchestplate_event_play"
+          ]
+        }
+      },
+      "hu:firedragonsteellegging_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteellegging_event_hold"
+          ]
+        }
+      },
+      "hu:firedragonsteellegging_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteellegging_event_play"
+          ]
+        }
+      },
+      "hu:lightningdragonchestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonchestplate_event_hold"
+          ]
+        }
+      },
+      "hu:lightningdragonchestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonchestplate_event_play"
+          ]
+        }
+      },
+      "hu:icedragonsteellegging_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteellegging_event_hold"
+          ]
+        }
+      },
+      "hu:icedragonsteellegging_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteellegging_event_play"
+          ]
+        }
+      },
+      "hu:icedragonlegging_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonlegging_event_hold"
+          ]
+        }
+      },
+      "hu:icedragonlegging_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonlegging_event_play"
+          ]
+        }
+      },
+      "hu:lightningdragonsteellegging_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonsteellegging_event_hold"
+          ]
+        }
+      },
+      "hu:lightningdragonsteellegging_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonsteellegging_event_play"
+          ]
+        }
+      },
+      "hu:firedragonlegging_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonlegging_event_hold"
+          ]
+        }
+      },
+      "hu:firedragonlegging_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonlegging_event_play"
+          ]
+        }
+      },
+      "hu:lightningdragonlegging_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonlegging_event_hold"
+          ]
+        }
+      },
+      "hu:lightningdragonlegging_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonlegging_event_play"
+          ]
+        }
+      },
+      "hu:icedragonhelmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonhelmet_event_hold"
+          ]
+        }
+      },
+      "hu:icedragonhelmet_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonhelmet_event_play"
+          ]
+        }
+      },
+      "hu:lightningdragonsteelhelmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonsteelhelmet_event_hold"
+          ]
+        }
+      },
+      "hu:lightningdragonsteelhelmet_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonsteelhelmet_event_play"
+          ]
+        }
+      },
+      "hu:lightningdragonsteelchestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonsteelchestplate_event_hold"
+          ]
+        }
+      },
+      "hu:lightningdragonsteelchestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonsteelchestplate_event_play"
+          ]
+        }
+      },
+      "hu:seachestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:seachestplate_event_hold"
+          ]
+        }
+      },
+      "hu:seachestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:seachestplate_event_play"
+          ]
+        }
+      },
+      "hu:lightningdragonhelmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonhelmet_event_hold"
+          ]
+        }
+      },
+      "hu:lightningdragonhelmet_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:lightningdragonhelmet_event_play"
+          ]
+        }
+      },
+      "hu:firedragonhelmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonhelmet_event_hold"
+          ]
+        }
+      },
+      "hu:firedragonhelmet_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonhelmet_event_play"
+          ]
+        }
+      },
+      "hu:icedragonsteelhelmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteelhelmet_event_hold"
+          ]
+        }
+      },
+      "hu:icedragonsteelhelmet_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:icedragonsteelhelmet_event_play"
+          ]
+        }
+      },
+      "hu:firedragonsteelhelmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteelhelmet_event_hold"
+          ]
+        }
+      },
+      "hu:firedragonsteelhelmet_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:firedragonsteelhelmet_event_play"
+          ]
+        }
+      },
+      "hu:seahelmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:seahelmet_event_hold"
+          ]
+        }
+      },
+      "hu:seahelmet_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:seahelmet_event_play"
+          ]
+        }
+      },
+      "hu:sealegging_event_hold": {
+        "add": {
+          "component_groups": [
+            "hu:sealegging_event_hold"
+          ]
+        }
+      },
+      "hu:sealegging_event_play": {
+        "add": {
+          "component_groups": [
+            "hu:sealegging_event_play"
+          ]
+        }
+      }
+    }
+  }
+}

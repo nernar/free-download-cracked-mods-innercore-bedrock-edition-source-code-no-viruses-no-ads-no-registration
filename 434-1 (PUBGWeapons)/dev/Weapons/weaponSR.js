@@ -1,0 +1,114 @@
+ShootLib.addGun({
+    id:"awm",
+    name:"Awm",
+    ammo:"ammoAwm",
+    accuracy:1,
+    recoil:29,
+    rate:2,
+    texture:{
+        name:"Awm",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.CLICK,
+    bullet:{
+        speed:20,
+        count:7,
+        damage:ShootLib.MAX_DAMAGE
+    },
+    fov:{
+        level:60,
+        link:"crosshair/scope4x"
+    },
+    sounds:{
+        shot:"AWM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/AWMReload.ogg"
+   }
+});
+
+ShootLib.addGun({
+    id:"kar98k",
+    name:"Kar98k",
+    ammo:"ammo7_62",
+    accuracy:2,
+    recoil:1,
+    rate:2,
+    texture:{
+        name:"Kar98k",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.CLICK,
+    bullet:{
+        speed:30,
+        count:5,
+        damage:18
+    },
+    fov:{
+        level:60,
+        link:"crosshair/scope4x"
+    },
+    sounds:{
+        shot:"AWM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/AWMReload.ogg"
+   }
+});
+
+ShootLib.addGun({
+    id:"m24",
+    name:"M24",
+    ammo:"ammo7_62",
+    accuracy:1,
+    recoil:1,
+    rate:2,
+    texture:{
+        name:"m24",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.CLICK,
+    bullet:{
+        speed:30,
+        count:7,
+        damage:19
+    },
+    fov:{
+        level:60,
+        link:"crosshair/scope4x"
+    },
+    sounds:{
+        shot:"AWM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/AWMReload.ogg"
+   }
+});
+
+ShootLib.addGun({
+    id:"win94",
+    name:"Win94",
+    ammo:"ammo_45Acp",
+    accuracy:3,
+    recoil:4,
+    rate:7,
+    texture:{
+        name:"win94",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.CLICK,
+    bullet:{
+        speed:30,
+        count:7,
+        damage:13.2
+    },
+    fov:{
+        level:55,
+    },
+    sounds:{
+        shot:"AWM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/AWMReload.ogg"
+   }
+});

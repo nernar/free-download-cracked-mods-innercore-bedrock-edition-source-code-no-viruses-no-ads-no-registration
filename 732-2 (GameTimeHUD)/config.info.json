@@ -1,0 +1,32 @@
+{
+    "description": {
+        "ru": "Настройки мода:",
+        "en": "Mod settings:"
+    },
+ "properties": {
+    "enabled": {
+      "name": {
+        "en": "Enable mod",
+        "ru": "Включить мод"},
+        "index": 0
+        },
+    "x": {
+      "name": {
+        "en": "Window X Position",
+        "ru": "Позиция окна по оси X"
+      },
+      "type": "SeekBar",
+      "min": 0,
+      "max": 1000
+    },
+    "y": {
+      "name": {
+        "en": "Window Y Position",
+        "ru": "Позиция окна по оси Y"
+      },
+      "type" : "SeekBar",
+      "min" : 0 ,
+      "max" : 500
+        }
+ }
+}

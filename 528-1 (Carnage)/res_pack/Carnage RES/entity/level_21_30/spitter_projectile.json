@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:spitter_projectile",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/level_21_30/projectiles/spitter"
+      },
+      "geometry": {
+        "default": "geometry.spitter_projectile"
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

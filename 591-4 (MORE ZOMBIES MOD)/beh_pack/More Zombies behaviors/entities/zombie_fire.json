@@ -1,0 +1,398 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ayrtown:fire",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+        "fire_power": {
+        "minecraft:timer": {
+	    "time": [9, 10],
+		"looping": true,
+		"time_down_event": {
+		"event": "remove_fire"
+		}
+	  },
+      "minecraft:trail": {
+        "block_type": "minecraft:fire"
+        }
+    },
+        "become_boss": {
+        "minecraft:transformation": {
+          "into": "ayrtown:boss",
+          "delay": 0.5
+        }
+      },
+      "minecraft:look_to_start_zombie_transformation": {
+        "minecraft:environment_sensor": {
+          "filters": {
+            "test": "is_underwater", "subject": "self", "operator": "==", "value": true
+          },
+          "event": "minecraft:start_transforming"
+        }
+      },
+      "minecraft:start_zombie_transformation": {
+        "minecraft:environment_sensor": {
+          "filters": {
+            "test": "is_underwater", "subject": "self", "operator": "==", "value": false
+          },
+          "event": "minecraft:stop_transforming"
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 30,
+          "time_down_event": {
+            "event": "minecraft:convert_to_zombie"
+          }
+        }
+      },
+
+      "minecraft:convert_to_zombie": {
+        "minecraft:transformation": {
+          "into": "minecraft:zombie<minecraft:as_adult>",
+          "transformation_sound": "convert_to_drowned",
+          "drop_equipment": true,
+          "delay": {
+            "value": 15
+          }
+        },
+        "minecraft:is_shaking": {
+        }
+      },
+
+      "minecraft:convert_to_baby_zombie": {
+        "minecraft:transformation": {
+          "into": "minecraft:zombie<minecraft:as_baby>",
+          "transformation_sound": "convert_to_drowned",
+          "drop_equipment": true,
+          "delay": {
+            "value": 15
+          }
+        },
+        "minecraft:is_shaking": {
+        }
+      },
+
+      "minecraft:zombie_fire_baby": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.53125
+        },
+        "minecraft:movement": {
+          "value": 0.35
+        }
+      },
+
+      "minecraft:zombie_fire_adult": {
+        "minecraft:movement": {
+          "value": 0.30
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "zombie"
+          ],
+          "seats": {
+            "position": [ 0.0, 1.1, -0.35 ],
+            "lock_rider_rotation": 0
+          }
+        },
+        "minecraft:behavior.mount_pathing": {
+          "priority": 2,
+          "speed_multiplier": 1.25,
+          "target_dist": 0.0,
+          "track_target": true
+        },
+        "minecraft:scale": {
+          "value": 1.0625
+        }
+      },
+
+      "minecraft:zombie_fire_jockey": {
+        "minecraft:behavior.find_mount": {
+          "priority": 1,
+          "within_radius": 16
+        }
+      }
+    },
+
+    "components": {
+        "minecraft:damage_sensor": {
+        "on_damage": {
+          "filters": { "test" :  "is_family", "subject" : "other", "value" :  "lightning"},
+          "event": "become_boss"
+        },
+        "deals_damage": false
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:nameable": {
+      },
+
+      // Zombie_fire Components
+      "minecraft:type_family": {
+        "family": [ "fire", "zombie", "undead", "monster" ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/fire.json"
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/entities/zombie_equipment.json"
+      },
+
+      "minecraft:health": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:attack": {
+        "damage": 6,
+        "effect_name": "wither",
+        "effect_duration": 10
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_break_doors": true,
+        "avoid_portals": false
+      },
+      "minecraft:annotation.break_door": {
+      },
+      "minecraft:movement.basic": {
+
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:environment_sensor": [
+        {
+          "filters": {
+            "test": "is_underwater",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          },
+          "event": "minecraft:start_transforming"
+        }
+      ],
+
+          "minecraft:on_target_escape": {
+          "event": "remove_fire",
+          "target": "self"
+      },
+      // Zombie_fire Behaviors
+          "minecraft:target_nearby_sensor": {
+          "inside_range": 5.0,
+          "on_inside_range": {
+            "event": "add_fire",
+            "target": "self"
+          }
+        },
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+          "speed_multiplier": 1.0,
+          "track_target": true,
+          "reach_multiplier": 0.8,
+          "speed_multiplier": 1
+      },
+      "minecraft:behavior.stomp_turtle_egg": {
+        "priority": 4,
+        "speed_multiplier": 1,
+        "search_range": 10,
+        "search_height": 3,
+        "goal_radius": 1.14,
+        "search_count": 4,
+        "interval": 20
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 5,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test": "is_family", "subject": "other", "operator": "!=", "value": "boss" }
+        }
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "within_radius": 25,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "is_family", "subject": "other", "value": "snowgolem" },
+                { "test": "is_family", "subject": "other", "value": "irongolem" }
+              ]
+            },
+            "max_dist": 35
+          },
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "villager" },
+                { "test": "is_family", "subject": "other", "value": "wandering_trader" }
+              ]
+            },
+            "max_dist": 35,
+            "must_see": false
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "baby_turtle" },
+                { "test": "in_water", "subject": "other", "operator": "!=", "value": true }
+              ]
+            },
+            "max_dist": 35
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:physics": {
+      }
+    },
+
+    "events": {
+        "add_fire": {
+        "remove": {
+        },
+        "add": {
+          "component_groups": [
+            "fire_power"
+          ]
+        }
+      },
+        "remove_fire": {
+        "remove": {
+          "component_groups": [
+            "fire_power"
+          ]
+        }
+      },
+        "become_boss": {
+        "remove": {
+        },
+        "add": {
+          "component_groups": [
+            "become_boss"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 9500,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_fire_adult"
+              ]
+            }
+          },
+          {
+            "weight": 425,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_fire_baby"
+              ]
+
+            }
+          },
+          {
+            "weight": 75,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_fire_baby",
+                "minecraft:zombie_fire_jockey"
+              ]
+
+            }
+          }
+        ]
+      },
+      "minecraft:start_transforming": {
+        "add": {
+          "component_groups": [
+            "minecraft:start_zombie_transformation"
+          ]
+        },
+        "remove": {
+          "component_groups": [ "minecraft:look_to_start_zombie_transformation" ]
+        }
+      },
+      "minecraft:stop_transforming": {
+        "add": {
+          "component_groups": [
+            "minecraft:look_to_start_zombie_transformation"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:start_zombie_transformation"
+          ]
+        }
+      },
+      "minecraft:convert_to_zombie": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "has_component",
+              "operator": "!=",
+              "value": "minecraft:is_baby"
+            },
+            "add": {
+              "component_groups": [ "minecraft:convert_to_zombie" ]
+            },
+            "remove": {
+              "component_groups": [ "minecraft:start_zombie_transformation" ]
+            }
+          },
+          {
+            "filters": {
+              "test": "has_component",
+              "value": "minecraft:is_baby"
+            },
+            "add": {
+              "component_groups": [ "minecraft:convert_to_baby_zombie" ]
+            },
+            "remove": {
+              "component_groups": [ "minecraft:start_zombie_transformation" ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

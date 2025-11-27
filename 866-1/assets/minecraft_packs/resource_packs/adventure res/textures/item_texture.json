@@ -1,0 +1,156 @@
+{
+	"resource_pack_name": "crook",
+	"texture_name": "atlas.items",
+	"texture_data": {
+
+"wooden_spear": {
+      "textures": "textures/items/spear/wooden_spear"
+    },
+"stone_spear": {
+      "textures": "textures/items/spear/stone_spear"
+    },
+"iron_spear": {
+      "textures": "textures/items/spear/iron_spear"
+    },
+"golden_spear": {
+      "textures": "textures/items/spear/golden_spear"
+    },
+
+"diamond_spear": {
+      "textures": "textures/items/spear/diamond_spear"
+    },
+"netherite_spear": {
+      "textures": "textures/items/spear/netherite_spear"
+    },
+"wooden_staff": {
+"textures": "textures/items/staff/wooden_staff"
+},
+"stone_staff": {
+"textures": "textures/items/staff/stone_staff"
+},
+"golden_staff": {
+"textures": "textures/items/staff/golden_staff"
+},
+"iron_staff": {
+"textures": "textures/items/staff/iron_staff"
+},
+"diamond_staff": {
+"textures": "textures/items/staff/diamond_staff"
+},
+"netherite_staff": {
+"textures": "textures/items/staff/netherite_staff"
+},
+
+"alchemical_tablee": {
+	"textures": "textures/items/alchemical_tablee"
+},
+"rpgstaff1": {
+	"textures": "textures/items/staff/rpgstaff1"
+		},
+"rpgstaff2": {
+	"textures": "textures/items/staff/rpgstaff2"
+		},
+"rpgstaff3": {
+	"textures": "textures/items/staff/rpgstaff3"
+		},
+
+"rpgbook1": {
+	"textures": "textures/items/book/rpgbook1"
+		},
+"rpgbook2": {
+	"textures": "textures/items/book/rpgbook2"
+		},
+"rpgbook3": {
+	"textures": "textures/items/book/rpgbook3"
+		},
+"rpgbook4": {
+	"textures": "textures/items/book/rpgbook4"
+		},
+"rpgbook5": {
+	"textures": "textures/items/book/rpgbook5"
+		},
+"rpgbook6": {
+	"textures": "textures/items/book/rpgbook6"
+		},
+"rpgbook7": {
+	"textures": "textures/items/book/rpgbook7"
+		},
+"rpgbook8": {
+	"textures": "textures/items/book/rpgbook8"
+		},
+"pili_antidote": {
+      "textures": "textures/items/pili_antidote"
+    },
+"pili_med1": {
+      "textures": "textures/items/pili_med1"
+    },
+"pili_med2": {
+      "textures": "textures/items/pili_med2"
+    },
+"vitamins": {
+      "textures": "textures/items/vitamins"
+    },
+"syringe": {
+      "textures": "textures/items/syringe"
+    },
+"syringe_with_adrenaline": {
+      "textures": "textures/items/syringe_with_adrenaline"
+    },
+
+"alchemical_dust": {
+	"textures": "textures/items/alchemical/alchemical_dust"
+		},
+"piliruna": {
+	"textures": "textures/items/alchemical/piliruna"
+		},
+"piliruna1": {
+	"textures": "textures/items/alchemical/piliruna1"
+		},
+"piliruna2": {
+	"textures": "textures/items/alchemical/piliruna2"
+		},
+"piliruna3": {
+	"textures": "textures/items/alchemical/piliruna3"
+		},
+"piliruna4": {
+	"textures": "textures/items/alchemical/piliruna4"
+		},
+"piliruna5": {
+	"textures": "textures/items/alchemical/piliruna5"
+		},
+"piliruna6": {
+	"textures": "textures/items/alchemical/piliruna6"
+		},
+"piliruna7": {
+	"textures": "textures/items/alchemical/piliruna7"
+		},
+"piliruna8": {
+	"textures": "textures/items/alchemical/piliruna8"
+		},
+"piliruna9": {
+	"textures": "textures/items/alchemical/piliruna9"
+		}
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

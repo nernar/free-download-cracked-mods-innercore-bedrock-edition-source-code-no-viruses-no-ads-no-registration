@@ -1,0 +1,27 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "bioplentia:shrubland_flowers_patch_feature"
+    },
+    "iterations": 10,
+    "coordinate_eval_order": "zyx",
+    "x": {
+      "extent": [ -8, 8 ],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [ -8, 8 ],
+      "distribution": "gaussian"
+    },
+    "y": {
+      "extent": [ -4, 4 ],
+      "distribution": "gaussian"
+    },
+    "project_input_to_floor": false,
+    "places_feature": "bioplentia:shrubland_flowers_feature"
+  }
+}

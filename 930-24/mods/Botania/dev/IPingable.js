@@ -1,0 +1,2 @@
+let IPingable = new Interface();
+

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "tinfinite:pizza"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      " a|a ",
+      " | "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:bread"
+      },
+      "a": {
+        "item": "minecraft:cooked_beef"
+      },
+      "|": {
+        "item": "tinifinite:cheese"
+      }
+    },
+    "result": {
+      "item": "tinfinite:pizza",
+        "data": 0
+    }
+  }
+}

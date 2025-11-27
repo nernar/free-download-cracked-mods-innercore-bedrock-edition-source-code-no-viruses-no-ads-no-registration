@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pili:iron_spear"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  b",
+      " a ",
+"a  "
+    ],
+    "key": {
+
+      "b": {
+        "item": "minecraft:iron_block"
+      },
+      "a": {
+        "item": "minecraft:stick"
+      }
+      
+    },
+    "result": {
+      "item": "pili:iron_spear"
+    }
+  }
+}

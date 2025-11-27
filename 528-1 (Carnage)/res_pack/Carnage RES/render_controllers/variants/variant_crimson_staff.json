@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.variant_crimson_staff": {
+	  "arrays": {
+        "materials": {
+          "Array.materials": [ "Material.default", "Material.invisible" ]
+        },
+	    "textures": {
+		  "Array.skins": [
+		    "Texture.phase_1",
+		    "Texture.phase_2",
+		    "Texture.phase_3",
+		    "Texture.phase_4",
+		    "Texture.phase_5",
+		    "Texture.phase_6"
+		  ]
+		}
+	  },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Array.materials[query.is_invisible]" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

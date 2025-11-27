@@ -1,0 +1,26 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "entity:demogorgon": {
+        "volume": 1.0,
+        "pitch": [ 0.95, 1.05 ],
+        "events": {
+          "ambient": "mob.demogorgon.idle",
+          "hurt": "mob.demogorgon.hurt",
+		  "plop": "mob.demogorgon.roar",
+          "death": "mob.demogorgon.death",
+          "step": {
+            "sound": "big.step",
+            "volume": 0.4,
+            "pitch": 1.0
+          },
+          "shoot": {
+            "sound": "mob.demogorgon.roar",
+            "volume": 1,
+        "pitch": [ 1.75, 1.85 ]
+          }
+        }
+      }
+    }
+  }
+}

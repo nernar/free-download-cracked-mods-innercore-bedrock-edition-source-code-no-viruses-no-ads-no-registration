@@ -1,0 +1,151 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "raigen:guard",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+	"component_groups": {
+	  "minecraft:calm": {
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 5.0, 10.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_charge_attack"
+		  }
+		},
+	    "minecraft:movement": {
+		  "value": 0.24
+		},
+		"minecraft:underwater_movement": {
+          "value": 0.24
+        }
+      },
+	  "minecraft:charge_attack": {
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 1.8, 2.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_calm"
+		  }
+		},
+	    "minecraft:movement": {
+		  "value": 0.32
+		},
+		"minecraft:underwater_movement": {
+          "value": 0.28
+        }
+      }
+	},
+	  
+    "components": {
+      "minecraft:fire_immune": false,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:type_family": {
+        "family": [ "villager" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:health": {
+        "value": 30,
+		"max": 30
+      },
+	  "minecraft:attack": {
+	    "damage": 7
+	  },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "track_target": true
+      },
+      "minecraft:behavior.move_towards_target": {
+        "priority": 1,
+        "speed_multiplier": 0.9,
+        "within_radius": 32
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test" :  "is_family", "subject" : "other", "value" :  "monster"},
+          "max_dist": 16
+        },
+        "must_see": false
+      },
+      "minecraft:navigation.walk": {
+        "can_float": true,
+		"is_amphibious": true,
+		"can_path_over_water": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:nameable": {},
+      "minecraft:balloonable": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 4,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+	  "minecraft:physics": {
+      }
+    },
+	
+	"events": {
+	  "minecraft:entity_spawned": {
+	    "add": {
+		  "component_groups": [
+		    "minecraft:calm"
+		  ]
+		}
+      },
+	  "minecraft:event_calm": {
+	    "add": {
+		  "component_groups": [
+		    "minecraft:calm"
+		  ]
+		},
+		"remove": {
+		  "component_groups": [
+		    "minecraft:charge_attack"
+		  ]
+		}
+	  },
+	  "minecraft:event_charge_attack": {
+	    "add": {
+		  "component_groups": [
+		    "minecraft:charge_attack"
+		  ]
+		},
+		"remove": {
+		  "component_groups": [
+		    "minecraft:calm"
+		  ]
+		}
+	  }
+	}
+  }
+}

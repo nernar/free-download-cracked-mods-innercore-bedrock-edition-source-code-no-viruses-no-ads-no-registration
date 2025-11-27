@@ -1,0 +1,31 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pili:iron_staff"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " bc",
+      " a ",
+"a  "
+    ],
+    "key": {
+
+      "a": {
+        "item": "minecraft:stick"
+      },
+      "b": {
+        "item": "minecraft:apple"
+      },
+      "c": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "pili:iron_staff"
+    }
+  }
+}

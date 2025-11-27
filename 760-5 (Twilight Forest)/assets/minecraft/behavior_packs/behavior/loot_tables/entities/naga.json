@@ -1,0 +1,18 @@
+{
+"pools": [
+{
+"rolls": 9,
+"entries": [
+{
+"type": "item",
+"name": "minecraft:item_naga_scale",
+"functions": [
+{ "function": "set_count", "count": { "min": 9, "max": 10 } },
+{ "function": "looting_enchant", "count": { "min": 9, "max": 14 } }
+]
+}
+]
+}
+/*此处做销毁*/
+]
+}

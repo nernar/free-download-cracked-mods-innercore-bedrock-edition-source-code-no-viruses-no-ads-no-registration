@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "about:dried_vines",
+      "category": "Items"
+    },
+    
+    "components": {
+      "minecraft:icon": {
+        "texture": "dried_vines"
+      },
+      "minecraft:display_name": {
+        "value": "tile.about:dried_vines.name"
+      },
+      "minecraft:block_placer": {
+        "block": "about:dried_vines",
+        "use_block_description": true
+      }
+    }
+  }
+}

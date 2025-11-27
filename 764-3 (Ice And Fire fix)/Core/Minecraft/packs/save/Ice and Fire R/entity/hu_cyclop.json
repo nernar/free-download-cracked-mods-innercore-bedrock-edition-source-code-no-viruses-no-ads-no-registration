@@ -1,0 +1,99 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "render_controllers": [
+        "controller.render.zombie"
+      ],
+      "enable_attachables": true,
+      "materials": {
+        "default": "zombie"
+      },
+      "geometry": {
+        "default": "geometry.hu_cyclop"
+      },
+      "animations": {
+        "use_item_progress": "animation.hu_cyclop.general_0",
+        "look_at_target_gliding": "animation.hu_cyclop.look_at_target_gliding",
+        "zombie_swimming": "animation.hu_cyclop.move",
+        "holding": "animation.hu_cyclop.holding",
+        "zombie_attack_bare_hand": "animation.hu_cyclop.zombie_attack_bare_hand",
+        "look_at_target_default": "animation.hu_cyclop.animation",
+        "riding.arms": "animation.hu_cyclop.arms",
+        "riding.legs": "animation.hu_cyclop.legs",
+        "humanoid_big_head": "animation.hu_cyclop.humanoid_big_head",
+        "attack.rotations": "animation.hu_cyclop.rotations",
+        "damage_nearby_mobs": "animation.hu_cyclop.attack_1",
+        "brandish_spear": "animation.hu_cyclop.brandish_spear",
+        "look_at_target_swimming": "animation.hu_cyclop.look_at_target_swimming",
+        "charging": "animation.hu_cyclop.animation",
+        "move": "animation.hu_cyclop.move",
+        "sneaking": "animation.hu_cyclop.sneaking",
+        "bob": "animation.hu_cyclop.bob",
+        "bow_and_arrow": "animation.hu_cyclop.bow_and_arrow",
+        "swimming": "animation.hu_cyclop.move"
+      },
+      "spawn_egg": {
+        "texture": "hu:cyclop",
+        "texture_index": 0
+      },
+      "identifier": "hu:cyclop",
+      "scripts": {
+        "pre_animation": [
+          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ]
+      },
+      "min_engine_version": "1.8.0",
+      "animation_controllers": [
+        {
+          "humanoid_baby_big_head": "controller.animation.humanoid.baby_big_head"
+        },
+        {
+          "look_at_target": "controller.animation.humanoid.look_at_target"
+        },
+        {
+          "move": "controller.animation.humanoid.move"
+        },
+        {
+          "riding": "controller.animation.humanoid.riding"
+        },
+        {
+          "holding": "controller.animation.humanoid.holding"
+        },
+        {
+          "brandish_spear": "controller.animation.humanoid.brandish_spear"
+        },
+        {
+          "charging": "controller.animation.humanoid.charging"
+        },
+        {
+          "attack": "controller.animation.humanoid.attack"
+        },
+        {
+          "sneaking": "controller.animation.humanoid.sneaking"
+        },
+        {
+          "bob": "controller.animation.humanoid.bob"
+        },
+        {
+          "damage_nearby_mobs": "controller.animation.humanoid.damage_nearby_mobs"
+        },
+        {
+          "bow_and_arrow": "controller.animation.humanoid.bow_and_arrow"
+        },
+        {
+          "use_item_progress": "controller.animation.humanoid.use_item_progress"
+        },
+        {
+          "zombie_attack_bare_hand": "controller.animation.zombie.attack_bare_hand"
+        },
+        {
+          "swimming": "controller.animation.zombie.swimming"
+        }
+      ],
+      "textures": {
+        "default": "textures/entity/pamobile/hu_cyclop"
+      }
+    }
+  }
+}

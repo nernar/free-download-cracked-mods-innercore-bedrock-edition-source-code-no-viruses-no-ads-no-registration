@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "guardian:monster_deep",
+      "materials": {
+        "default": "enderman",
+        "invisible": "enderman_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/guardian/monster_deep"
+      },
+      "geometry": {
+        "default": "geometry.monster.deep"
+      },
+      "animations": {
+        "move": "animation.squid.move",
+        "squid_rotate": "animation.squid.rotate"
+			},
+			"spawn_egg": {
+				"base_color": "#282828",
+				"overlay_color": "#679056"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          "squid_rotate"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ]
+      }
+    }
+  }
+}

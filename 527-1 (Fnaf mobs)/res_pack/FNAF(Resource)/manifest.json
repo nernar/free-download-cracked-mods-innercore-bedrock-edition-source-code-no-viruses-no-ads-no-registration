@@ -1,0 +1,17 @@
+{
+    "format_version": 1,
+    "header": {
+        "name": "FNAF Addon",
+        "description": "Addon By Fernan and Team Infinite Minds Twitter:@TInfiniteMinds @8Fernancraft",
+        "uuid": "9878b1c3-62d8-4729-9514-df4452199438",
+        "version": [0, 0, 1]
+    },
+    "modules": [
+        {
+            "description": " Addon By Fernan and Team Infinite Minds Twitter:@TInfiniteMinds @8Fernancraft ",
+            "type": "resources",
+            "uuid": "47076ca0-f657-4dbe-9002-792a3703f59c",
+            "version": [0, 0, 1]
+        }
+    ]
+}

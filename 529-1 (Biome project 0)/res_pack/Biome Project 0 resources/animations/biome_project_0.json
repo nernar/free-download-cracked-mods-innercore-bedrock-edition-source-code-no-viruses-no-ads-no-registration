@@ -1,0 +1,408 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.blaze_king.move": {
+      "loop": true,
+      "bones": {
+		"rings_2": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 8500000, 0]
+		  }
+		},
+		"rings_1": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 8500000, 0]
+		  }
+		},
+		"ring_1": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 8500000, 0]
+		  }
+		},
+		"ring_2": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 8500000, 0]
+		  }
+		},
+		"inferno_2": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 8500000, 8500000, 8500000 ]
+		  }
+		},
+        "moving_drill": {
+          "position": [ 0.0, "Math.cos(query.life_time * 343.774) * 4.6", 0.0 ]
+        }
+      }
+    },
+    "animation.blood_stone_golem.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.cactus_warrior.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.cactus_warrior_big.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] }
+      }
+    },
+    "animation.clam_warrior.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.coral_bound.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.crab_spider.move": {
+      "loop": true,
+      "bones": {
+        "left_leg_1": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "left_leg_2": { "rotation": [ 0, "variable.tcos0", 0 ] },
+        "left_leg_3": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "right_leg_1": { "rotation": [ 0, "variable.tcos0", 0 ] },
+        "right_leg_2": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "right_leg_3": { "rotation": [ 0, "variable.tcos0", 0 ] }
+      }
+    },
+    "animation.crab_coconut.move": {
+      "loop": true,
+      "bones": {
+        "left_leg_1": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "left_leg_2": { "rotation": [ 0, "variable.tcos0", 0 ] },
+        "left_leg_3": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "right_leg_1": { "rotation": [ 0, "variable.tcos0", 0 ] },
+        "right_leg_2": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "right_leg_3": { "rotation": [ 0, "variable.tcos0", 0 ] }
+      }
+    },
+    "animation.crab_dungeness.move": {
+      "loop": true,
+      "bones": {
+        "left_leg_1": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "left_leg_2": { "rotation": [ 0, "variable.tcos0", 0 ] },
+        "left_leg_3": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "right_leg_1": { "rotation": [ 0, "variable.tcos0", 0 ] },
+        "right_leg_2": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "right_leg_3": { "rotation": [ 0, "variable.tcos0", 0 ] }
+      }
+    },
+    "animation.crab_yeti.move": {
+      "loop": true,
+      "bones": {
+        "left_leg_1": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "left_leg_2": { "rotation": [ 0, "variable.tcos0", 0 ] },
+        "left_leg_3": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "right_leg_1": { "rotation": [ 0, "variable.tcos0", 0 ] },
+        "right_leg_2": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "right_leg_3": { "rotation": [ 0, "variable.tcos0", 0 ] }
+      }
+    },
+    "animation.eagle_staff.move": {
+      "loop": true,
+      "bones": {
+        "eagle_staff": {
+		  "rotation":{
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 8500000, 0]
+		  }
+		}
+      }
+    },
+    "animation.flower_trap.move": {
+      "loop": true,
+      "bones": {
+        "petal_n_1": { "rotation": [ "Math.cos(query.anim_time * 390 + 50) *  5.0", 0.0, 0.0 ] },
+        "petal_s_1": { "rotation": [ "Math.cos(query.anim_time * 390 + 50) *  5.0", 0.0, 0.0 ] },
+        "petal_e_1": { "rotation": [ 0, 0, "Math.cos(query.anim_time * 390 + 50) *  5.0" ] },
+        "petal_w_1": { "rotation": [ 0, 0, "Math.cos(query.anim_time * 390 + 50) *  5.0" ] }
+      }
+    },
+    "animation.headless.move": {
+      "loop": true,
+      "bones": {
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.hellraiser.move": {
+      "loop": true,
+      "bones": {
+		"ring_1": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, -8500000, 0]
+		  }
+		},
+		"ring_2": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 8500000, 0]
+		  }
+		},
+		"ring_3": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, -8500000, 0]
+		  }
+		},
+		"ring_4": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 8500000, 0]
+		  }
+		}
+      }
+    },
+    "animation.living_fossil.move": {
+      "loop": true,
+      "bones": {
+        "tail_1": { "rotation": [ 0, "variable.tcos0 * 1.4", 0 ] },
+        "tail_2": { "rotation": [ 0, "variable.tcos0 * 1.4", 0 ] },
+        "tail_3": { "rotation": [ 0, "variable.tcos0 * 1.4", 0 ] },
+        "tail_4": { "rotation": [ 0, "variable.tcos0 * 1.4", 0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.mummy.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+	  }
+	},
+    "animation.mummy_minion.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+	  }
+	},
+    "animation.nautilus.move": {
+      "loop": true,
+      "bones": {
+        "t8a": { "rotation": [ "Math.cos(query.anim_time * 390 + 90) *  -12.0", 0.0, 0.0 ] },
+        "t8b": { "rotation": [ "Math.cos(query.anim_time * 390 + 90) *  -12.0", 0.0, 0.0 ] },
+        "t1a": { "rotation": [ 0.0, "Math.cos(query.anim_time * 390 + 90) *  12.0", 0.0 ] },
+        "t1b": { "rotation": [ 0.0, "Math.cos(query.anim_time * 390 + 90) *  12.0", 0.0 ] },
+        "t2a": { "rotation": [ 0.0, "Math.cos(query.anim_time * 390 + 90) *  12.0", 0.0 ] },
+        "t2b": { "rotation": [ 0.0, "Math.cos(query.anim_time * 390 + 90) *  12.0", 0.0 ] },
+        "t3a": { "rotation": [ 0.0, "Math.cos(query.anim_time * 390 + 90) *  12.0", 0.0 ] },
+        "t3b": { "rotation": [ 0.0, "Math.cos(query.anim_time * 390 + 90) *  12.0", 0.0 ] },
+        "t4a": { "rotation": [ "Math.cos(query.anim_time * 390 + 90) *  -12.0", 0.0, 0.0 ] },
+        "t4b": { "rotation": [ "Math.cos(query.anim_time * 390 + 90) *  -12.0", 0.0, 0.0 ] },
+        "t5a": { "rotation": [ 0.0, "Math.cos(query.anim_time * 390 + 90) *  12.0", 0.0 ] },
+        "t5b": { "rotation": [ 0.0, "Math.cos(query.anim_time * 390 + 90) *  12.0", 0.0 ] },
+        "t6a": { "rotation": [ 0.0, "Math.cos(query.anim_time * 390 + 90) *  -12.0", 0.0 ] },
+        "t6b": { "rotation": [ 0.0, "Math.cos(query.anim_time * 390 + 90) *  -12.0", 0.0 ] },
+        "t7a": { "rotation": [ 0.0, "Math.cos(query.anim_time * 390 + 90) *  12.0", 0.0 ] },
+        "t7b": { "rotation": [ 0.0, "Math.cos(query.anim_time * 390 + 90) *  12.0", 0.0 ] }
+      }
+    },
+    "animation.nether_bound.move": {
+      "loop": true,
+      "bones": {
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.nether_creep.move": {
+      "loop": true,
+      "bones": {
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.pigman_brute.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.pigman_civilian.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.pigman_guardian.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.ray_manta.move": {
+      "loop": true,
+      "bones": {
+        "wing_left_1": { "rotation": [ 0.0, 0.0, "variable.tcos1" ] },
+        "wing_left_2": { "rotation": [ 0.0, 0.0, "variable.tcos1" ] },
+        "wing_right_1": { "rotation": [ 0.0, 0.0, "variable.tcos0" ] },
+        "wing_right_2": { "rotation": [ 0.0, 0.0, "variable.tcos0" ] }
+      }
+    },
+    "animation.sand_shark_beach.move": {
+      "loop": true,
+      "bones": {
+        "tail_1": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "tail_2": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "tail_3": { "rotation": [ 0, "variable.tcos1", 0 ] }
+      }
+    },
+    "animation.sand_shark_desert.move": {
+      "loop": true,
+      "bones": {
+        "tail_1": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "tail_2": { "rotation": [ 0, "variable.tcos1", 0 ] },
+        "tail_3": { "rotation": [ 0, "variable.tcos1", 0 ] }
+      }
+    },
+    "animation.scorpion.move": {
+      "loop": true,
+      "bones": {
+        "front_left_leg": { "rotation": [ 0.0, "variable.tcos1 * 1.4", 0.0 ] },
+        "front_right_leg": { "rotation": [ 0.0, "variable.tcos1 * 1.4", 0.0 ] },
+        "center_left_leg": { "rotation": [ 0.0, "variable.tcos1 * 1.4", 0.0 ] },
+        "center_right_leg": { "rotation": [ 0.0, "variable.tcos1 * 1.4", 0.0 ] },
+        "rear_left_leg": { "rotation": [ 0.0, "variable.tcos0 * 1.4", 0.0 ] },
+        "rear_right_leg": { "rotation": [ 0.0, "variable.tcos0 * 1.4", 0.0 ] }
+      }
+    },
+    "animation.severed.move": {
+      "loop": true,
+      "bones": {
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.skeleton_dusty.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.skeleton_pirate.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.skeleton_pirate_captain.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.tree_coconut.move": {
+      "loop": true,
+      "bones": {
+        "leaf_1": { "rotation": [ 0, 0, "-5 * Math.cos(query.life_time * 50)" ] },
+        "leaf_2": { "rotation": [ 0, 0, "5 * Math.cos(query.life_time * 50)" ] },
+        "leaf_3": { "rotation": [ "-5 * Math.cos(query.life_time * 50)", 0, 0 ] },
+        "leaf_4": { "rotation": [ 0, 0, "5 * Math.cos(query.life_time * 50)" ] },
+        "leaf_5": { "rotation": [ 0, 0, "-5 * Math.cos(query.life_time * 50)" ] }
+      }
+    },
+    "animation.trench_predator.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.unarmed.move": {
+      "loop": true,
+      "bones": {
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.undead_pharaoh.move": {
+      "loop": true,
+      "bones": {
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] },
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.under_crawler.move": {
+      "loop": true,
+      "bones": {
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.under_terranean.move": {
+      "loop": true,
+      "bones": {
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    },
+    "animation.vengeant_ashes.move": {
+      "loop": true,
+      "bones": {
+        "fade": { "rotation": [ "Math.cos(query.anim_time * 390 + 90) *  -12.0", 0.0, 0.0 ] }
+      }
+    },
+    "animation.vengeant_soul.move": {
+      "loop": true,
+      "bones": {
+        "fade": { "rotation": [ "Math.cos(query.anim_time * 390 + 90) *  -12.0", 0.0, 0.0 ] }
+      }
+    }
+  }
+}

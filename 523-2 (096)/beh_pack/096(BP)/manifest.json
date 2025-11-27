@@ -1,0 +1,30 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "Add-On by BendytheDemon18",
+        "name": "SCP",
+        "uuid": "98bd66e7-2b06-4c2a-a449-c76d235be107",
+        "version": [1, 8, 0],
+        "platform_locked": false,
+        "min_engine_version": [1, 8, 0],
+        "pack_scope": "world"
+    },
+    "modules": [
+        {
+            "description": "BendytheDemon18",
+            "type": "data",
+            "uuid": "5f6eb5d6-1fd8-4c63-8332-e0f8002523fd",
+            "version": [1, 8, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "d035bafb-2d8b-4140-a574-4c62be3d8582",
+            "version": [1, 8, 0]
+        }
+    ],
+    "metadata": {
+        "authors": [ "BendytheDemon18" ],
+        "url": "https://mobile.twitter.com/bendydemon18"
+    }
+}

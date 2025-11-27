@@ -1,0 +1,26 @@
+{
+    "id": "chapter2",
+    "name": {
+        "en": "Chapter 2: Advanced Usage",
+        "ru": "Chapter 2: Advanced Usage",
+        "zh": "第二章：进阶用法"
+    },
+    "icon": {
+        "id": "vblock:grass"
+    },
+    "quest": [
+        "main/chapter2/elements.json",
+        "main/chapter2/ref.json",
+        "main/chapter2/extra.json",
+        "main/chapter2/dependence.json",
+        "main/chapter2/bitmaps.json",
+        "main/chapter2/hidden.json",
+        "main/chapter2/group.json"
+    ],
+    "background": [null, 1],
+    "ref": {
+        "my_block_grass": {
+            "id": "vblock:grass"
+        }
+    }
+}

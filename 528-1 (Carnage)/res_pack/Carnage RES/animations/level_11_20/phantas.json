@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.phantas.move": {
+      "loop": true,
+      "bones": {
+        "all": { "position": [ 0.0, "Math.cos(global.life_time * 5.32) * 2", 0.0 ] }
+      }
+    }
+  }
+}

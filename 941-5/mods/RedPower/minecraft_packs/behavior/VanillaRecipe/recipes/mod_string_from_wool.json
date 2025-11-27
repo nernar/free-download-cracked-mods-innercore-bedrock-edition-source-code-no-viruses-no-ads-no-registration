@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "vanilla_recipe:string_from_wool"
+		},
+		"ingredients": [
+			{
+				"item": "minecraft:wool"
+			},
+			{
+				"item": "minecraft:item_wool_card"
+			}
+		],
+		"result": [
+			{
+				"item": "minecraft:string",
+				"count": 4
+			},
+			{
+				"item": "minecraft:item_wool_card"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		]
+	}
+}

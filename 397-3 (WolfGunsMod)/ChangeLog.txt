@@ -1,0 +1,36 @@
+[EN]:
+Update (v. 1.1):
+- The weapon workbench works from Eu energy (If there are no mods with this energy, redstone is used)
+- Added rifle base
+- Added assault rifle shop
+- Added AK-47
+- Added M16A4
+- Added a field in the "useOnlyRedstone" config file
+
+Release (v. 1):
+- Added PM
+- Added M9
+- Added SIGP226
+- Added Desert Eagle
+- added pistol shop
+- Added pistol base
+- Added weapons workbench
+
+
+[RU]:
+Обновление(v. 1.1):
+- Оруженйый верстак работает от енергии Eu(Если нет модов с данной енергией, используется редстоун)
+- Добавлена основа винтовки
+- Добавлен магазин штурмавой винтовки
+- Добавлен АК-47
+- Добавлен M16A4
+- Добавлено поле в конфиг-файл useOnlyRedstone
+
+Релиз(v. 1):
+- Добавлен ПМ 
+- Добавлен M9 
+- Добавлен SIGP226 
+- Добавлен Пустынный Орёл
+- обавлен пистолетный магазин
+- Добавлена основа пистолета
+- Добавлен оружейный верстак

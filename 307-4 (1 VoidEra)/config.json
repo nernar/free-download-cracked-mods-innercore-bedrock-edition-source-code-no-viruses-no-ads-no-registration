@@ -1,0 +1,15 @@
+{
+  "enabled":true,
+  "debug_mode":true,
+  "button_scale":60,
+  "void_tree_gen":{
+    "forest_and_plains":true,
+    "jungle":true,
+    "swamp":true
+  },
+  "iridium":{
+    "chance":99,
+    "minHeight":1,
+    "maxHeight":100
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "nether:cool_spider",
+      "materials": {
+        "default": "spider",
+        "invisible": "spider_invisible"
+      },
+      "textures": {
+        "default": "textures/entity/coolmar_spider/coolmar_spider"
+      },
+      "geometry": {
+        "default": "geometry.coolspider"
+      },
+      "animations": {   
+        "look_at_target": "animation.common.look_at_target",
+        "walk": "animation.coolspider.move"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.cool_spider.move" }
+      ],
+      "render_controllers": [ "controller.render.spider" ],
+      "spawn_egg": {
+        "overlay_color": "#0128128",
+        "base_color": "#211211211"
+      }
+    }
+  }
+}

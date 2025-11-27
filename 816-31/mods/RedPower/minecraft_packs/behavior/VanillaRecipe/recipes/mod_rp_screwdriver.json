@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "vanilla_recipe:rp_screwdriver"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A ",
+			" X"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:iron_ingot"
+			},
+			"X": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "minecraft:item_rp_screwdriver"
+		}
+	}
+}

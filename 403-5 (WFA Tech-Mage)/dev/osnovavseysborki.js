@@ -1,0 +1,2 @@
+IMPORT("#modpacker");
+ModPack.install({name: "WFA Tech-Mage 1.5.2", mods: [22, 402, 54, 119, 43, 52, 100, 40, 51, 280, 152, 363, 39, 143, 67, 62, 146, 74, 159, 338, 331, 339], icon: __dir__ + "mod_icon.jpg"});

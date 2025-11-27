@@ -1,0 +1,8 @@
+header.js 
+
+api/GithubAPI.js
+api/ParserAPI.js
+api/ModPackAPI.js
+api/ConfigAPI.js
+
+shared.js

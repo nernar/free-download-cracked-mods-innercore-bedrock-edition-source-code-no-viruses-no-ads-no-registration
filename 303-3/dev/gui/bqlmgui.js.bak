@@ -1,0 +1,30 @@
+var GUI_BAR_CLASSIC_SCALE = 7.9;
+
+var bqlmGui = new UI.AdaptiveWindow({
+    
+standart: {
+		inventory: {standart: true},
+		background: {standart: true}
+	},
+drawing: [
+        {type: "bitmap", x: 380, y: 80, bitmap: "icecream_machine_background", scale: GUI_BAR_CLASSIC_SCALE},
+       		{type: "bitmap", x: 447, y: -5, bitmap: "snow", scale:6.2} 
+	],
+	
+	elements: {
+		"progressScale": {type: "scale", x: 380, y: 80, direction: 3, value: 0.5, bitmap: "icecream_machine_scale", scale: GUI_BAR_CLASSIC_SCALE},
+		"burningScale": {type: "scale", x: 447, y: -5, direction: 1, value: 0.5, bitmap: "snowball", scale:6.2},
+		"slotSource": {type: "slot", x: 250, y: 55,bitmap:"Tislot",size:115},
+		"slotFuel": {type: "slot", x: 640, y: 55,bitmap:"Tislot",size:115},
+		"slotResult": {type: "slot", x: 435, y: 350,bitmap:"Tislot",size:130},
+	}
+});
+Callback.addCallback("LevelLoaded", function(){
+//UI.testUI(bqlmGuit);
+table.openAs(bqlmGUI);
+//Game.message("原作者为 射命丸政 和 梨木利亚");
+//Game.message("本mod由meowcat studio-pv糊移植，欢迎游玩");
+//Game.message("转发需经过作者的同意!作者qq:2351579300,作者新浪微博 小喵-pv糊，欢迎关注");
+});
+//。。。。 2018.10.25
+

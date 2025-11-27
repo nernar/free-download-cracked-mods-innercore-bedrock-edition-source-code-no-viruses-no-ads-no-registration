@@ -1,0 +1,24 @@
+{
+"format_version": 2,
+"header": {
+"uuid": "d18039c6-e69d-4b2d-8353-a545aa840441",
+"name": "Environmental",
+"version": [ 0, 0, 2 ],
+"description": "Environmental",
+"min_engine_version": [ 1, 13, 0 ]
+},
+"modules": [
+{
+"description": "Environmental",
+"version": [ 0, 0, 2 ],
+"uuid": "22bc7768-25e4-4c5f-9899-4243212adcd8",
+"type": "data"
+}
+],
+"dependencies": [
+{
+"uuid": "6f463e47-772e-4cbf-99d2-5ac07641a0c8",
+"version": [ 0, 0, 2 ]
+}
+]
+}

@@ -1,0 +1,2 @@
+let IManaBlock = new Interface();
+

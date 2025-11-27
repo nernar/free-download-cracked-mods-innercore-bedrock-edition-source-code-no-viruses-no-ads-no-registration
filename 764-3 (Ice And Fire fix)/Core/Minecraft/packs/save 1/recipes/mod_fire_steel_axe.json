@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:fire_steel_axe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AA#",
+      "AB#",
+      "#B#"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_dragon_steel_fire_ingot",
+        "data": 0
+      },
+      "B": {
+      "item": "minecraft:item_wither_bone",
+      "data": 0
+      }
+    },
+    "result": {
+      "item": "minecraft:item_dragon_axe_steel_fire",
+      "count": 1
+    }
+  }
+}

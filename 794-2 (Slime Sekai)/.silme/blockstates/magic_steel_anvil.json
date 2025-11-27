@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ttigraas:block/magic_steel_anvil"
+    },
+    "facing=east": {
+      "model": "ttigraas:block/magic_steel_anvil",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ttigraas:block/magic_steel_anvil",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ttigraas:block/magic_steel_anvil",
+      "y": 270
+    }
+  }
+}

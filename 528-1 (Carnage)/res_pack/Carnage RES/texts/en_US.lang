@@ -1,0 +1,369 @@
+﻿entity.raigen:goblin.name=Goblin
+item.spawn_egg.entity.raigen:goblin.name=Spawn Goblin §r§d§l§o::§r§b level 1 to 10
+
+entity.raigen:shroombit.name=Shroombit
+item.spawn_egg.entity.raigen:shroombit.name=Spawn Shroombit §r§d§l§o::§r§b level 1 to 10
+
+entity.raigen:wraith.name=Wraith
+item.spawn_egg.entity.raigen:wraith.name=Spawn Wraith §r§d§l§o::§r§b level 1 to 10
+
+entity.raigen:ramwolf.name=Ramwolf
+item.spawn_egg.entity.raigen:ramwolf.name=Spawn Ramwolf §r§d§l§o::§r§b level 1 to 10
+
+entity.raigen:bloodshed.name=Bloodshed
+item.spawn_egg.entity.raigen:bloodshed.name=Spawn Bloodshed §r§d§l§o::§r§b level 1 to 10
+
+entity.raigen:black_slime.name=Black slime
+item.spawn_egg.entity.raigen:black_slime.name=Spawn Black slime §r§d§l§o::§r§b level 1 to 10
+
+entity.raigen:blood_slime.name=Blood slime
+item.spawn_egg.entity.raigen:blood_slime.name=Spawn Blood slime §r§d§l§o::§r§b level 1 to 10
+
+entity.raigen:crawler.name=Crawler
+item.spawn_egg.entity.raigen:crawler.name=Spawn Crawler §r§d§l§o::§r§b level 1 to 10
+
+entity.raigen:hobgoblin.name=Hobgoblin
+item.spawn_egg.entity.raigen:hobgoblin.name=Spawn Hobgoblin §r§d§l§o::§r§b level 1 to 10
+
+entity.raigen:vained_time.name=Vained time
+item.spawn_egg.entity.raigen:vained_time.name=Spawn Vained time §r§d§l§o::§r§b level 1 to 10
+
+level 1 to 10///////////////////////////////////////////////////////////////////////////////
+
+entity.raigen:noir.name=Noir
+item.spawn_egg.entity.raigen:noir.name=Spawn Noir §r§d§l§o::§r§b level 11 to 20
+
+entity.raigen:cursed_spells.name=Cursed spells
+item.spawn_egg.entity.raigen:cursed_spells.name=Spawn Cursed spells §r§d§l§o::§r§b level 11 to 20
+
+entity.raigen:riptide.name=Riptide
+item.spawn_egg.entity.raigen:riptide.name=Spawn Riptide §r§d§l§o::§r§b level 11 to 20
+
+entity.raigen:black_water.name=Black water
+item.spawn_egg.entity.raigen:black_water.name=Spawn Black water §r§d§l§o::§r§b level 11 to 20
+
+entity.raigen:rotscade.name=Rotscade
+item.spawn_egg.entity.raigen:rotscade.name=Spawn Rotscade §r§d§l§o::§r§b level 11 to 20
+
+entity.raigen:dead_vele.name=Dead vele
+item.spawn_egg.entity.raigen:dead_vele.name=Spawn Dead vele §r§d§l§o::§r§b level 11 to 20
+
+entity.raigen:parakyte.name=Parakyte
+item.spawn_egg.entity.raigen:parakyte.name=Spawn Parakyte §r§d§l§o::§r§b level 11 to 20
+
+entity.raigen:phantas.name=Phantas
+item.spawn_egg.entity.raigen:phantas.name=Spawn Phantas §r§d§l§o::§r§b level 11 to 20
+
+entity.raigen:gargoyle.name=Gargoyle
+item.spawn_egg.entity.raigen:gargoyle.name=Spawn Gargoyle §r§d§l§o::§r§b level 11 to 20
+
+entity.raigen:hivale.name=Hivale
+item.spawn_egg.entity.raigen:hivale.name=Spawn Hivale §r§d§l§o::§r§b level 11 to 20
+
+level 11 to 20///////////////////////////////////////////////////////////////////////////////
+
+entity.raigen:dead_adventurers.name=Dead adventurers
+item.spawn_egg.entity.raigen:dead_adventurers.name=Spawn Dead adventurers §r§d§l§o::§r§b level 21 to 30
+
+entity.raigen:spitter.name=Spitter
+item.spawn_egg.entity.raigen:spitter.name=Spawn Spitter §r§d§l§o::§r§b level 21 to 30
+
+entity.raigen:hollow_ent.name=Hollow ent
+item.spawn_egg.entity.raigen:hollow_ent.name=Spawn Hollow ent §r§d§l§o::§r§b level 21 to 30
+
+entity.raigen:rotten_pumpkin.name=Rotten pumpkin
+item.spawn_egg.entity.raigen:rotten_pumpkin.name=Spawn Rotten pumpkin §r§d§l§o::§r§b level 21 to 30
+
+entity.raigen:black_snowman.name=Black snowman
+item.spawn_egg.entity.raigen:black_snowman.name=Spawn Black snowman §r§d§l§o::§r§b level 21 to 30
+
+entity.raigen:shadow.name=Shadow
+item.spawn_egg.entity.raigen:shadow.name=Spawn Shadow §r§d§l§o::§r§b level 21 to 30
+
+entity.raigen:undead_livestock.name=Undead livestock
+item.spawn_egg.entity.raigen:undead_livestock.name=Spawn Undead livestock §r§d§l§o::§r§b level 21 to 30
+
+entity.raigen:molt_zlato.name=Molt zlato
+item.spawn_egg.entity.raigen:molt_zlato.name=Spawn Molt zlato §r§d§l§o::§r§b level 21 to 30
+
+entity.raigen:solid_slime.name=Solid slime
+item.spawn_egg.entity.raigen:solid_slime.name=Spawn Solid slime §r§d§l§o::§r§b level 21 to 30
+
+entity.raigen:goblin_champion.name=Goblin champion
+item.spawn_egg.entity.raigen:goblin_champion.name=Spawn Goblin champion §r§d§l§o::§r§b level 21 to 30
+
+level 21 to 30///////////////////////////////////////////////////////////////////////////////
+
+entity.raigen:blood_stained.name=Blood-stained
+item.spawn_egg.entity.raigen:blood_stained.name=Spawn Blood-stained §r§d§l§o::§r§b level 31 to 40
+
+entity.raigen:land_leech.name=Land leech
+item.spawn_egg.entity.raigen:land_leech.name=Spawn Land leech §r§d§l§o::§r§b level 31 to 40
+
+entity.raigen:fire_maiden.name=Fire maiden
+item.spawn_egg.entity.raigen:fire_maiden.name=Spawn Fire maiden §r§d§l§o::§r§b level 31 to 40
+
+entity.raigen:fly_dragon.name=Fly dragon
+item.spawn_egg.entity.raigen:fly_dragon.name=Spawn Fly dragon §r§d§l§o::§r§b level 31 to 40
+
+entity.raigen:morgue_man.name=Morgue-man
+item.spawn_egg.entity.raigen:morgue_man.name=Spawn Morgue-man §r§d§l§o::§r§b level 31 to 40
+
+entity.raigen:biserpent.name=Biserpent
+item.spawn_egg.entity.raigen:biserpent.name=Spawn Biserpent §r§d§l§o::§r§b level 31 to 40
+
+entity.raigen:rootling.name=Rootling
+item.spawn_egg.entity.raigen:rootling.name=Spawn Rootling §r§d§l§o::§r§b level 31 to 40
+
+entity.raigen:lunarid.name=Lunarid
+item.spawn_egg.entity.raigen:lunarid.name=Spawn Lunarid §r§d§l§o::§r§b level 31 to 40
+
+entity.raigen:giant_scorpion.name=Giant scorpion
+item.spawn_egg.entity.raigen:giant_scorpion.name=Spawn Giant scorpion §r§d§l§o::§r§b level 31 to 40
+
+entity.raigen:moth_mother.name=Moth mother
+item.spawn_egg.entity.raigen:moth_mother.name=Spawn Moth mother §r§d§l§o::§r§b level 31 to 40
+
+level 31 to 40///////////////////////////////////////////////////////////////////////////////
+
+entity.raigen:moving_fungi.name=Moving fungi
+item.spawn_egg.entity.raigen:moving_fungi.name=Spawn Moving fungi §r§d§l§o::§r§b level 41 to 50
+
+entity.raigen:shellbit.name=Shellbit
+item.spawn_egg.entity.raigen:shellbit.name=Spawn Shellbit §r§d§l§o::§r§b level 41 to 50
+
+entity.raigen:terra_terror.name=Terra-terror
+item.spawn_egg.entity.raigen:terra_terror.name=Spawn Terra-terror §r§d§l§o::§r§b level 41 to 50
+
+entity.raigen:shroombie.name=Shroombie
+item.spawn_egg.entity.raigen:shroombie.name=Spawn Shroombie §r§d§l§o::§r§b level 41 to 50
+
+entity.raigen:white_lady.name=White lady
+item.spawn_egg.entity.raigen:white_lady.name=Spawn White lady §r§d§l§o::§r§b level 41 to 50
+
+entity.raigen:dusty_paladin.name=Dusty paladin
+item.spawn_egg.entity.raigen:dusty_paladin.name=Spawn Dusty paladin §r§d§l§o::§r§b level 41 to 50
+
+entity.raigen:shulker_warrior.name=Shulker warrior
+item.spawn_egg.entity.raigen:shulker_warrior.name=Spawn Shulker warrior §r§d§l§o::§r§b level 41 to 50
+
+entity.raigen:cursed_armor.name=Cursed armor
+item.spawn_egg.entity.raigen:cursed_armor.name=Spawn Cursed armor §r§d§l§o::§r§b level 41 to 50
+
+entity.raigen:vile_zombie.name=Vile zombie
+item.spawn_egg.entity.raigen:vile_zombie.name=Spawn Vile zombie §r§d§l§o::§r§b level 41 to 50
+
+entity.raigen:blitzir.name=Blitzir
+item.spawn_egg.entity.raigen:blitzir.name=Spawn Blitzir §r§d§l§o::§r§b level 41 to 50
+
+level 41 to 50///////////////////////////////////////////////////////////////////////////////
+
+entity.raigen:bloody_zombie.name=Bloody zombie
+item.spawn_egg.entity.raigen:bloody_zombie.name=Spawn Bloody zombie §r§d§l§o::§r§b level 51 to 60
+
+entity.raigen:corrupt_villager.name=Corrupt villager
+item.spawn_egg.entity.raigen:corrupt_villager.name=Spawn Corrupt villager §r§d§l§o::§r§b level 51 to 60
+
+entity.raigen:solar_warrior.name=Solar warrior
+item.spawn_egg.entity.raigen:solar_warrior.name=Spawn Solar warrior §r§d§l§o::§r§b level 51 to 60
+
+entity.raigen:reverse_body.name=Reverse body
+item.spawn_egg.entity.raigen:reverse_body.name=Spawn Reverse body §r§d§l§o::§r§b level 51 to 60
+
+entity.raigen:vicious_spider.name=Vicious spider
+item.spawn_egg.entity.raigen:vicious_spider.name=Spawn Vicious spider §r§d§l§o::§r§b level 51 to 60
+
+entity.raigen:bone_eater.name=Bone eater
+item.spawn_egg.entity.raigen:bone_eater.name=Spawn Bone eater §r§d§l§o::§r§b level 51 to 60
+
+entity.raigen:dune_maiden.name=Dune maiden
+item.spawn_egg.entity.raigen:dune_maiden.name=Spawn Dune maiden §r§d§l§o::§r§b level 51 to 60
+
+entity.raigen:land_shark.name=Land shark
+item.spawn_egg.entity.raigen:land_shark.name=Spawn Land shark §r§d§l§o::§r§b level 51 to 60
+
+entity.raigen:scarecrow.name=Scarecrow
+item.spawn_egg.entity.raigen:scarecrow.name=Spawn Scarecrow §r§d§l§o::§r§b level 51 to 60
+
+entity.raigen:grimstone_golem.name=Grimstone golem
+item.spawn_egg.entity.raigen:grimstone_golem.name=Spawn Grimstone golem §r§d§l§o::§r§b level 51 to 60
+
+level 51 to 60///////////////////////////////////////////////////////////////////////////////
+
+entity.raigen:graveraiser.name=Graveraiser
+item.spawn_egg.entity.raigen:graveraiser.name=Spawn Graveraiser §r§d§l§o::§r§b level 61 to 70
+
+entity.raigen:dullahan.name=Dullahan
+item.spawn_egg.entity.raigen:dullahan.name=Spawn Dullahan §r§d§l§o::§r§b level 61 to 70
+
+entity.raigen:deadhound.name=Deadhound
+item.spawn_egg.entity.raigen:deadhound.name=Spawn Deadhound §r§d§l§o::§r§b level 61 to 70
+
+entity.raigen:ivywake.name=Ivywake
+item.spawn_egg.entity.raigen:ivywake.name=Spawn Ivywake §r§d§l§o::§r§b level 61 to 70
+
+entity.raigen:shadow_maiden.name=Shadow maiden
+item.spawn_egg.entity.raigen:shadow_maiden.name=Spawn Shadow maiden §r§d§l§o::§r§b level 61 to 70
+
+entity.raigen:brutal_zombie.name=Brutal zombie
+item.spawn_egg.entity.raigen:brutal_zombie.name=Spawn Brutal zombie §r§d§l§o::§r§b level 61 to 70
+
+entity.raigen:cruel_slime.name=Cruel slime
+item.spawn_egg.entity.raigen:cruel_slime.name=Spawn Cruel slime §r§d§l§o::§r§b level 61 to 70
+
+entity.raigen:dreadman.name=Dreadman
+item.spawn_egg.entity.raigen:dreadman.name=Spawn Dreadman §r§d§l§o::§r§b level 61 to 70
+
+entity.raigen:irican.name=Irican
+item.spawn_egg.entity.raigen:irican.name=Spawn Irican §r§d§l§o::§r§b level 61 to 70
+
+entity.raigen:gravitite.name=Gravitite
+item.spawn_egg.entity.raigen:gravitite.name=Spawn Gravitite §r§d§l§o::§r§b level 61 to 70
+
+level 61 to 70///////////////////////////////////////////////////////////////////////////////
+
+entity.raigen:wood_crab.name=Wood crab
+item.spawn_egg.entity.raigen:wood_crab.name=Spawn Wood crab §r§d§l§o::§r§b level 71 to 80
+
+entity.raigen:moving_poison.name=Moving poison
+item.spawn_egg.entity.raigen:moving_poison.name=Spawn Moving poison §r§d§l§o::§r§b level 71 to 80
+
+entity.raigen:bird_brain.name=Bird-brain
+item.spawn_egg.entity.raigen:bird_brain.name=Spawn Bird-brain §r§d§l§o::§r§b level 71 to 80
+
+entity.raigen:headless_chicken.name=Headless chicken
+item.spawn_egg.entity.raigen:headless_chicken.name=Spawn Headless chicken §r§d§l§o::§r§b level 71 to 80
+
+entity.raigen:headless_horse.name=Headless horse
+item.spawn_egg.entity.raigen:headless_horse.name=Spawn Headless horse §r§d§l§o::§r§b level 71 to 80
+
+entity.raigen:minotaur.name=Minotaur
+item.spawn_egg.entity.raigen:minotaur.name=Spawn Minotaur §r§d§l§o::§r§b level 71 to 80
+
+entity.raigen:skinless_hand.name=Skinless hand
+item.spawn_egg.entity.raigen:skinless_hand.name=Spawn Skinless hand §r§d§l§o::§r§b level 71 to 80
+
+entity.raigen:stone_warrior.name=Stone warrior
+item.spawn_egg.entity.raigen:stone_warrior.name=Spawn Stone warrior §r§d§l§o::§r§b level 71 to 80
+
+entity.raigen:inferno.name=Inferno
+item.spawn_egg.entity.raigen:inferno.name=Spawn Inferno §r§d§l§o::§r§b level 71 to 80
+
+entity.raigen:wyvern_warrior.name=Wyvern warrior
+item.spawn_egg.entity.raigen:wyvern_warrior.name=Spawn Wyvern warrior §r§d§l§o::§r§b level 71 to 80
+
+level 71 to 80///////////////////////////////////////////////////////////////////////////////
+
+entity.raigen:cannibal.name=Cannibal
+item.spawn_egg.entity.raigen:cannibal.name=Spawn Cannibal §r§d§l§o::§r§b level 81 to 90
+
+entity.raigen:vanta_ray.name=Vanta ray
+item.spawn_egg.entity.raigen:vanta_ray.name=Spawn Vanta ray §r§d§l§o::§r§b level 81 to 90
+
+entity.raigen:stud_bark.name=Stud-bark
+item.spawn_egg.entity.raigen:stud_bark.name=Spawn Stud-bark §r§d§l§o::§r§b level 81 to 90
+
+entity.raigen:grass_chomper.name=Grass chomper
+item.spawn_egg.entity.raigen:grass_chomper.name=Spawn Grass chomper §r§d§l§o::§r§b level 81 to 90
+
+entity.raigen:tetrapede.name=Tetrapede
+item.spawn_egg.entity.raigen:tetrapede.name=Spawn Tetrapede §r§d§l§o::§r§b level 81 to 90
+
+entity.raigen:sentient_mucus.name=Sentient mucus
+item.spawn_egg.entity.raigen:sentient_mucus.name=Spawn Sentient mucus §r§d§l§o::§r§b level 81 to 90
+
+entity.raigen:iriditite.name=Iriditite
+item.spawn_egg.entity.raigen:iriditite.name=Spawn Iriditite §r§d§l§o::§r§b level 81 to 90
+
+entity.raigen:stone_ram.name=Stone ram
+item.spawn_egg.entity.raigen:stone_ram.name=Spawn Stone ram §r§d§l§o::§r§b level 81 to 90
+
+entity.raigen:trauerr.name=Trauerr
+item.spawn_egg.entity.raigen:trauerr.name=Spawn Trauerr §r§d§l§o::§r§b level 81 to 90
+
+entity.raigen:dragon_hearted.name=Dragon-hearted
+item.spawn_egg.entity.raigen:dragon_hearted.name=Spawn Dragon-hearted §r§d§l§o::§r§b level 81 to 90
+
+entity.raigen:maximum_dragon.name=Maximum dragon
+item.spawn_egg.entity.raigen:maximum_dragon.name=Spawn Maximum dragon §r§d§l§o::§r§b level 81 to 90
+
+level 81 to 90///////////////////////////////////////////////////////////////////////////////
+
+entity.raigen:skeleton_child.name=Skeleton child
+item.spawn_egg.entity.raigen:skeleton_child.name=Spawn Skeleton child §r§d§l§o::§r§b level 91 to 100
+
+entity.raigen:undead_barbarian.name=Undead barbarian
+item.spawn_egg.entity.raigen:undead_barbarian.name=Spawn Undead barbarian §r§d§l§o::§r§b level 91 to 100
+
+entity.raigen:shadow_ghast.name=Shadow ghast
+item.spawn_egg.entity.raigen:shadow_ghast.name=Spawn Shadow ghast §r§d§l§o::§r§b level 91 to 100
+
+entity.raigen:fertile_spider.name=Fertile spider
+item.spawn_egg.entity.raigen:fertile_spider.name=Spawn Fertile spider §r§d§l§o::§r§b level 91 to 100
+
+entity.raigen:bender.name=Bender
+item.spawn_egg.entity.raigen:bender.name=Spawn Bender §r§d§l§o::§r§b level 91 to 100
+
+entity.raigen:mother_crawler.name=Mother crawler
+item.spawn_egg.entity.raigen:mother_crawler.name=Spawn Mother crawler §r§d§l§o::§r§b level 91 to 100
+
+entity.raigen:corpse_crawler.name=Corpse-crawler
+item.spawn_egg.entity.raigen:corpse_crawler.name=Spawn Corpse-crawler §r§d§l§o::§r§b level 91 to 100
+
+entity.raigen:black_ice.name=Black ice
+item.spawn_egg.entity.raigen:black_ice.name=Spawn Black ice §r§d§l§o::§r§b level 91 to 100
+
+entity.raigen:mag_i.name=Mag-I
+item.spawn_egg.entity.raigen:mag_i.name=Spawn Mag-I §r§d§l§o::§r§b level 91 to 100
+
+entity.raigen:fate_master.name=Fate Master
+item.spawn_egg.entity.raigen:fate_master.name=Spawn Fate Master §r§d§l§o::§r§b level 91 to 100
+
+level 91 to 100///////////////////////////////////////////////////////////////////////////////
+
+entity.raigen:slab_combination.name=Slab combination
+item.spawn_egg.entity.raigen:slab_combination.name=Slab combination §r§d§l§o::§r§b Blocks
+
+entity.raigen:guard.name=Guard
+item.spawn_egg.entity.raigen:guard.name=Spawn Guard §r§d§l§o::§r§b NPCs
+
+entity.raigen:npc_male.name=NPC male
+item.spawn_egg.entity.raigen:npc_male.name=Spawn NPC male §r§d§l§o::§r§b NPCs
+
+entity.raigen:npc_female.name=NPC female
+item.spawn_egg.entity.raigen:npc_female.name=Spawn NPC female §r§d§l§o::§r§b NPCs
+
+entity.raigen:npc_male_child.name=NPC male child
+item.spawn_egg.entity.raigen:npc_male_child.name=Spawn NPC male child §r§d§l§o::§r§b NPCs
+
+entity.raigen:npc_female_child.name=NPC female child
+item.spawn_egg.entity.raigen:npc_female_child.name=Spawn NPC female child §r§d§l§o::§r§b NPCs
+
+entity.raigen:statue.name=Statue
+item.spawn_egg.entity.raigen:statue.name=Statue §r§d§l§o::§r§b Decorations
+
+entity.raigen:horse_wagon.name=Horse wagon
+item.spawn_egg.entity.raigen:horse_wagon.name=Horse wagon §r§d§l§o::§r§b Decorations
+
+entity.raigen:tentacle.name=Tentacle
+item.spawn_egg.entity.raigen:tentacle.name=Tentacle §r§d§l§o::§r§b Decorations
+
+entity.raigen:burner.name=Burner
+item.spawn_egg.entity.raigen:burner.name=Burner §r§d§l§o::§r§b Decorations
+
+entity.raigen:blitzir_ring.name=Blitzir ring
+item.spawn_egg.entity.raigen:blitzir_ring.name=Blitzir ring §r§d§l§o::§r§b Decorations
+
+entity.raigen:time_charge.name=Time charge
+item.spawn_egg.entity.raigen:time_charge.name=Chronic charge §r§d§l§o::§r§b Weapons
+
+entity.raigen:crimson_staff.name=Crimson staff
+item.spawn_egg.entity.raigen:crimson_staff.name=Crimson staff §r§d§l§o::§r§b Weapons §r§d§l§o::§r§d From "§dKO§6NO§2SU§9BA§d"
+
+entity.raigen:astral_axe.name=Astral axe
+item.spawn_egg.entity.raigen:astral_axe.name=Astral axe §r§d§l§o::§r§b Weapons
+
+entity.raigen:tempest_wand.name=Tempest wand
+item.spawn_egg.entity.raigen:tempest_wand.name=Tempest wand §r§d§l§o::§r§b Weapons
+
+action.interact.change=Change

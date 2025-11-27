@@ -1,0 +1,28 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pili:diamond_spear"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  b",
+      " a ",
+"a  "
+    ],
+    "key": {
+
+      "b": {
+        "item": "minecraft:diamond_block"
+      },
+      "a": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "pili:diamond_spear"
+    }
+  }
+}

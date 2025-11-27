@@ -1,0 +1,51 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "raigen:spitter_projectile",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.2,
+        "height": 0.2
+      },
+      "minecraft:projectile": {
+        "onHit": {
+          "impact_damage": {
+            "damage": 3,
+            "knockback": true,
+            "shouldbounce": true
+          },
+          "mob_effect": {
+            "effect": "nausea",
+            "durationeasy": 200,
+            "durationnormal": 200,
+            "durationhard": 200,
+            "amplifier": 5
+          },
+          "remove_on_hit": {
+          },
+          "particle_on_hit": {
+            "particle_type": "bubble",
+            "on_other_hit": true
+          }
+        },
+        "hitSound": "mob.slime.small",
+        "destroyOnHurt": true,
+        "critParticleOnHurt": true,
+        "power": 0.9,
+        "gravity": 0.01,
+        "uncertaintyBase": 16,
+        "uncertaintyMultiplier": 4,
+        "anchor": 1,
+        "offset": [ 0, 0, 0 ]
+      },
+      "minecraft:physics": {
+	  }
+    }
+  }
+}

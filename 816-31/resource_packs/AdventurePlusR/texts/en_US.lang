@@ -1,0 +1,93 @@
+Entity
+entity.guardian:beach_crab.name=Beach Crab
+entity.guardian:end_phantom.name=Endermare
+entity.guardian:king_blaze.name=King Blaze
+entity.guardian:red_phantom.name=Red Phantom
+entity.guardian:old_spider.name=Brown Spider
+entity.guardian:old_strider.name=Basalt Worm
+entity.guardian:zombiee_dev.name=Zombie Mojang
+entity.guardian:brute_enderman.name=Brute Enderman
+entity.guardian:white_enderman.name=White Enderman
+entity.guardian:monster_deep.name=Monster Deep Ocean
+entity.guardian:drowned_skeleton.name=Drowned Skeleton
+
+Spawn egg
+item.spawn_egg.entity.guardian:beach_crab.name=Spawn Beach Crab
+item.spawn_egg.entity.guardian:end_phantom.name=Spawn Endermare
+item.spawn_egg.entity.guardian:king_blaze.name=Spawn King Blaze
+item.spawn_egg.entity.guardian:old_spider.name=Spawn Brown Spider
+item.spawn_egg.entity.guardian:red_phantom.name=Spawn Red Phantom
+item.spawn_egg.entity.guardian:old_strider.name=Spawn Basalt Worm
+item.spawn_egg.entity.guardian:zombiee_dev.name=Spawn Zombie Mojang
+item.spawn_egg.entity.guardian:brute_enderman.name=Spawn Brute Enderman
+item.spawn_egg.entity.guardian:white_enderman.name=Spawn White Enderman
+item.spawn_egg.entity.guardian:monster_deep.name=Spawn Monster Deep Ocean
+item.spawn_egg.entity.guardian:drowned_skeleton.name=Spawn Drowned Skeleton
+
+Blocks
+tile.guardian:grave.name=Grave
+tile.guardian:red_rose.name=Red Rose
+item.guardian:red_rose=Red Rose
+tile.guardian:blue_rose.name=Blue Rose
+item.guardian:blue_rose=Blue Rose
+tile.guardian:stand_spyglass.name=Spyglass Stand
+tile.guardian:mini_cauldron.name=Piglin Cauldron
+tile.guardian:mini_cauldron_1.name=Piglin Cauldron
+tile.guardian:prismarine_mine.name=Prismarine Mine
+tile.guardian:head_white_enderman.name=White Enderman Head
+tile.guardian:head_brute_enderman.name=Brute Enderman Head
+
+Food
+item.guardian:salt_bread.name=Salt Bread
+item.guardian:honey_bread.name=Honey Bread
+item.guardian:sweet_cookie.name=Sweet Cookie
+item.guardian:meat_crab_raw.name=Raw Meat Crab
+item.guardian:hoglin_raw.name=Raw Meat Hoglin
+item.guardian:hoglin_cooked.name=Cooked Meat Hoglin
+item.guardian:meat_crab_cooked.name=Cooked Meat Crab
+item.guardian:salt_potato_baked.name=Salt Potato Baked
+item.guardian:chorus_fruit_stew.name=Chorus Fruit Stew
+
+item.guardian:husk_flesh.name=Husk Flesh
+item.guardian:stray_bone.name=Stray Bone
+item.guardian:wither_bone.name=Withered Bone
+item.guardian:drowned_flesh.name=Drowned Flesh
+item.guardian:old_spider_eye.name=Brown Spider Eye
+item.guardian:tuft_of_wool_goat.name=Tuft Of Wool Goat
+item.guardian:old_spider_eye_fermented.name=Fermented Brown Spider Eye
+
+Frame
+tile.guardian:frame_1.name=Frame
+tile.guardian:frame_dream.name=Frame Dream
+tile.guardian:frame_cyan_0.name=Frame Cyan
+tile.guardian:frame_nerkin.name=Frame Nerkin
+tile.guardian:frame_zloyxp.name=Frame ZloyXP
+tile.guardian:frame_systemzee.name=Frame SystemZee
+tile.guardian:frame_guardian.name=Frame Guardian Deep
+tile.guardian:frame_pumpkin_dax.name=Frame Pumpkin Dax
+tile.guardian:frame_mine_dragon.name=Frame Mine Dragon
+tile.guardian:frame_dream_guardian.name=Frame Dream Guardian
+tile.guardian:frame_gold_guardian.name=Frame Gold Guardian Deep
+
+Color Frame
+tile.guardian:frame_red.name=Red Frame
+tile.guardian:frame_lime.name=Lime Frame
+tile.guardian:frame_cyan.name=Cyan Frame
+tile.guardian:frame_blue.name=Blue Frame
+tile.guardian:frame_cyan.name=Cyan Frame
+tile.guardian:frame_gray.name=Gray Frame
+tile.guardian:frame_green.name=Green Frame
+tile.guardian:frame_black.name=Black Frame
+tile.guardian:frame_brown.name=Brown Frame
+tile.guardian:frame_yellow.name=Yellow Frame
+tile.guardian:frame_silver.name=Light Gray Frame
+tile.guardian:frame_light_blue.name=Light Blue Frame
+
+Tools and Armors
+item.guardian:goat_boots=Goat Boots
+item.guardian:copper_helmet=Copper Helmet
+item.guardian:viking_helmet=Viking Helmet
+item.guardian:copper_pickaxe=Copper Pickaxe
+item.guardian:goat_chestplate=Goat Chestplate
+item.guardian:turtle_chestplate=Turtle Chestplate
+item.guardian:copper_chestplate=Copper Chestplate

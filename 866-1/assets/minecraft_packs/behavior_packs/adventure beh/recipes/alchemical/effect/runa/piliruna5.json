@@ -1,0 +1,46 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pili:piliruna5"
+		},
+		"tags": [
+			"pili_craft"
+		],
+		"pattern": [
+			"aaa",
+   "aba",
+"aaa"
+		],
+		"key": {
+			"b": {
+				"item": "pili:piliruna"
+},
+"a": {
+"item": "minecraft:potion:28"
+}
+		},
+		"result": {
+			"item": "pili:piliruna5"
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

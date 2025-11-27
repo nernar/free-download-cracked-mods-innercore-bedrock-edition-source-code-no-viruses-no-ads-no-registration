@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:flare_projectile",
+      "materials": {
+	    "default": "glow",
+		"invisible": "glow_glass_blender"
+	  },
+      "textures": {
+        "default": "textures/level_81_90/projectiles/flare"
+      },
+      "geometry": {
+        "default": "geometry.flare_projectile"
+      },
+      "render_controllers": [ "controller.render.glow" ]
+    }
+  }
+}

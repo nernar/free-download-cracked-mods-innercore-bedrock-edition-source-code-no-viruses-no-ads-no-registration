@@ -1,0 +1,17 @@
+{
+   "format_version" : 1,
+   "header" : {
+      "description" : "§cBy §Mac Aaris§r, §o§b§r. §eTHIS MODS ADDS SOME MORE ZOMBIES IN THE GAME.👻👻👻👽👽👽.",
+      "name" : "More Zombies §a§l§o::§r§b RES",
+      "uuid" : "2cc875e0-1759-4d41-902b-f39ef85d9548",
+      "version" : [ 1, 0, 0 ]
+   },
+   "modules" : [
+      {
+         "description" : "§bBy Mac Aaris. §9THIS MOD ADDS SOME MORE ZOMBIES IN THE GAME👻👻👻👽👽👽!",
+         "type" : "resources",
+         "uuid" : "e40a80d0-17c3-43c6-8921-9979e4b63beb",
+         "version" : [ 1, 0, 0 ]
+      }
+   ]
+}

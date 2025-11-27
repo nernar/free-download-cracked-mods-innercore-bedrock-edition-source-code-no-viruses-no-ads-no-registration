@@ -1,0 +1,31 @@
+//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+      "controller.render.bioplentia.glow_squid": {
+        "geometry": "Geometry.GeometryDefault",
+        "materials": [
+          { "*": "Material.MaterialDefault" },
+          { "body": "Material.MaterialEmissive" },
+          { "tentacle1": "Material.MaterialEmissive" },
+          { "tentacle2": "Material.MaterialEmissive" },
+          { "tentacle3": "Material.MaterialEmissive" },
+          { "tentacle4": "Material.MaterialEmissive" },
+          { "tentacle5": "Material.MaterialEmissive" },
+          { "tentacle6": "Material.MaterialEmissive" },
+          { "tentacle7": "Material.MaterialEmissive" },
+          { "tentacle8": "Material.MaterialEmissive" }
+        ],
+        "textures": [ "Texture.TextureDefault" ],
+        "overlay_color": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": "variable.glow_alpha"
+        }
+      }
+    }
+  }
+  

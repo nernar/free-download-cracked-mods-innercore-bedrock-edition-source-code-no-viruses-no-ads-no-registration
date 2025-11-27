@@ -1,0 +1,65 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+   "controller.animation.butterfly.root": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+         "animations": [
+           "flying",
+           "pollen",
+           "move"
+         ]
+       }
+     }
+   },
+   "controller.animation.butterfly.pollen": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "dripping": "query.is_powered"
+            }
+          ]
+        },
+        "dripping": {
+          "particle_effects": [
+            {
+              "effect": "pollen_falling"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_powered"
+             }
+           ]
+         }
+       }
+     },
+		"controller.animation.butterfly.move" : {
+			"initial_state" : "flying",
+			"states" : {
+				"flying" : {
+					"animations" : [ "flying" ],
+					"transitions" : [
+						{
+							"resting" : "query.is_resting"
+						}
+					]
+				},
+				"resting" : {
+					"animations" : [ "resting" ],
+					"transitions" : [
+						{
+							"flying" : "!query.is_resting"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "aether:aechor_grown",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:difficulty_filter": {
+          "min": "easy",
+          "max": "hard"
+        },
+        "minecraft:weight": {
+          "default": 30
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 3
+        },
+        "minecraft:permute_type": [
+          {
+            "weight": 55
+          },
+          {
+            "weight": 50,
+            "entity_type":  "aether:aechor_plant"
+          }
+        ],
+        "minecraft:biome_filter": { 
+          "test": "has_biome_tag", "operator":"==", "value": "aether_plains"   
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+
+
+Callback.addCallback("ItemDispensed", function(itemCoor, item, dispenser, slot) {
+
+    Game.message("tuto");
+
+    Game.message("item " + Item.getName(item.id) + " dispensed");
+
+    let tile = convertItemToBlockId(item.id);
+
+    Game.message("tile =" + tile + " dispensed");
+
+    if (placeableBlocks.includes(tile)){
+
+        Game.message(getName(item.id) + " is a tile");
+
+        let x = dispenser.x; 
+        let y = dispenser.y;     
+        let z = dispenser.z; 
+
+        var direction = World.getBlockData(x, y, z); // 0 = Sud, 1 = Vest, 2 = Nord, 3 = Est
+
+        Game.message("direction: " + direction);
+
+        let tileEntity = World.getTileEntity(x, y, z);
+        
+        if (tileEntity != null) {
+
+            let item_d = tileEntity.container.getSlot(slot);
+
+            if (item_d.id == item.id && item_d.count > 0) {
+                tileEntity.container.setSlot(slot, item_d.id, item_d.count - 1, item_d.data);
+            }
+        }
+        
+        switch (direction) {
+            case 0:
+                z += 1;
+                break;
+            case 1:
+                x -= 1;
+                break;
+            case 2: 
+                z -= 1;
+                break;
+            case 3:
+                x += 1;
+                break;
+        }
+
+        World.setBlock(x, y, z, tile, direction); 
+        Game.message("Attempting to place block ID: " + tile + " at coordinates: " + x + ", " + y + ", " + z);
+        Game.message("Current slot item ID: " + item_d.id + " with count: " + item_d.count);
+
+        return true;
+    }
+});

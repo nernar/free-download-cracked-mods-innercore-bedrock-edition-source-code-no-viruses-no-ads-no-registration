@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:burner",
+      "materials": {
+	    "default": "glow",
+		"invisible": "glow_glass_blender"
+	  },
+      "textures": {
+        "variant_0": "textures/map/decor/burner/variant_0",
+        "variant_1": "textures/map/decor/burner/variant_1",
+        "variant_2": "textures/map/decor/burner/variant_2",
+        "variant_3": "textures/map/decor/burner/variant_3",
+        "variant_4": "textures/map/decor/burner/variant_4"
+      },
+      "geometry": {
+        "default": "geometry.burner"
+      },
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 166
+      },
+      "render_controllers": [ "controller.render.variant_burner" ]
+    }
+  }
+}

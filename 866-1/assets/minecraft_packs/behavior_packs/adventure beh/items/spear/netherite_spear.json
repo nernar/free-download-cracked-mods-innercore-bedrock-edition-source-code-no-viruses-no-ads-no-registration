@@ -1,0 +1,128 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pili:netherite_spear",
+			"category": "equipment"
+		},
+		"components": { 
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "netherite_spear"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+"minecraft:enchantable": {
+				"value": 30,
+				"slot": "sword"
+			},
+			"minecraft:durability": {
+				"max_durability": 2678
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"pili:netherite_spear",
+							"minecraft:netherite_ingot"
+						],
+						"repair_amount": 500
+					}
+				]
+			},
+	"minecraft:damage": 0,
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "pili:netherite_spears"
+				}
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:allow_off_hand": false,
+			"minecraft:foil": false,
+			"minecraft:render_offsets": "tools"
+		},
+		"events": {
+			"pili:netherite_spears": {
+				"randomize": [
+{
+		"weight": 100, "swing": {},		
+		"sequence":[{
+"damage": {
+"type": "magic",
+"amount": 9, 
+"target":"other"
+				       }},{
+"damage": {"type": "magic","amount": 1}     
+			}]},
+{
+		"weight": 100, "swing": {},		
+		"sequence":[{
+"damage": {
+"type": "magic",
+"amount": 10, 
+"target":"other"
+				       }},{
+"damage": {"type": "magic","amount": 1}     
+			}]},
+{
+		"weight": 100, "swing": {},		
+		"sequence":[{
+"damage": {
+"type": "magic",
+"amount": 11, 
+"target":"other"
+				       }},{
+"damage": {"type": "magic","amount": 1}     
+			}]},
+{
+		"weight": 100, "swing": {},		
+		"sequence":[{
+"damage": {
+"type": "magic",
+"amount": 12, 
+"target":"other"
+				       }},{
+"damage": {"type": "magic","amount": 1}     
+			}]},
+{
+		"weight": 100, "swing": {},		
+		"sequence":[{
+"damage": {
+"type": "magic",
+"amount": 13, 
+"target":"other"
+				       }},{
+"damage": {"type": "magic","amount": 1}     
+			}]},
+
+
+{
+		"weight": 20, "swing": {},		
+		"sequence":[{
+"damage": {
+"type": "magic",
+"amount": 50, 
+"target":"other"
+				       }},{
+"damage": {"type": "magic","amount": 1}     
+			}]}
+			
+			
+
+]
+			},
+
+
+
+			"s": {
+				"damage": {
+					"type": "magic",
+					"amount": 1,
+					"target": "self"
+				}
+			}
+		}
+	}
+}

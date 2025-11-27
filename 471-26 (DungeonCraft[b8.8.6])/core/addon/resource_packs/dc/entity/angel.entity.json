@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+        "description": {
+			"identifier": "dungeoncraft:angel",
+            "materials": {"default": "dungeon_entity"},
+            "textures": {"default": "textures/entity/angel.png"},
+            "render_controllers": ["controller.render.default"],
+            "geometry": {"default": "geometry.angel"},
+            "animations": {
+                "default": "animation.angel.default",
+                "move": "animation.angel.move"
+            },
+            "animation_controllers": [
+                {"default": "controller.animation.angel.all"},
+                {"move": "controller.animation.angel.all"}
+            ],
+            "enable_attachables": true
+        }
+    }
+}

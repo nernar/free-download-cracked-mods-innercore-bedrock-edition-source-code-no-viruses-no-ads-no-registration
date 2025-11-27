@@ -1,0 +1,26 @@
+{
+    "description": {
+        "ru": "    Настройки мода:",
+        "en": "    Mod settings:"
+    },
+ "properties": {
+        "enabled": {
+            "name": {"en": "Enable mod", "ru": "Включить мод"},
+            "index": 0
+        },
+        "Hiring": {
+            "index": 1,
+            "displayIf": "enabled"
+        },
+        "Hiring.typePress": {
+            "name": {"en": "When you click on the crop block", "ru": "Нажать на блок урожая"},
+            "description": {
+                "ru": "Авто посадка происходит, если:",
+                "en": "Auto planting occurs:"
+            }
+        },
+        "Hiring.typeDestroy":{
+        "name": {"en": "if you break a crop block", "ru": "Сломать блок урожая"}
+        }
+ }
+}

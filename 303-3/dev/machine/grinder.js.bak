@@ -1,0 +1,230 @@
+//IDRegistry.genBlockID("coffeeworkshop$grinder");
+//Block.createBlock("coffeeworkshop$grinder", [
+//{name: "火力研磨器", texture: [["wood", 0],["wood", 0],["anvil_base", 0]], inCreative: false},{name: "火力研磨器", texture: [["wood", 0],["wood", 0],["anvil_base", 0]], inCreative: true}]);
+
+
+IDRegistry.genItemID("coffeeworkshop$grinder");
+Item.createItem("coffeeworkshop$grinder", "火力研磨器", {name:"mo"}, {inTech: true,stack: 64});
+Recipes.addShaped({id: ItemID.coffeeworkshop$grinder, count: 1, data: 0}, [
+"xxx",
+"asa",
+"xrx"
+], [ 'x', 17, 0, 'a', 265, 0,'s',1,0,'r',61,0]);
+
+var isCompleteNon = function(a){
+if (a === BlockID.coffeeworkshop$kbqn){return true;}
+else if (a === BlockID.coffeeworkshop$nt){return true;}
+else if (a === BlockID.coffeeworkshop$mk){return true;}
+else if (a === BlockID.coffeeworkshop$jtmqd){return true;}
+else if (a === BlockID.coffeeworkshop$ms){return true;}
+else if (a === BlockID.coffeeworkshop$hkf){return true;}
+else if (a === BlockID.coffeeworkshop$rekeke){return true;}
+else if (a === BlockID.coffeeworkshop$xnkeke){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecarrot_0){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecarrot_1){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecarrot_2){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecarrot_3){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecarrot_4){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecarrot_5){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecarrot_6){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecheese_0){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecheese_1){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecheese_2){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecheese_3){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecheese_4){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecheese_5){return true;}
+else if (a === BlockID.coffeeworkshop$Cakecheese_6){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeredvelvet_0){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeredvelvet_1){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeredvelvet_2){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeredvelvet_3){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeredvelvet_4){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeredvelvet_5){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeredvelvet_6){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeschwarzwald_0){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeschwarzwald_1){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeschwarzwald_2){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeschwarzwald_3){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeschwarzwald_4){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeschwarzwald_5){return true;}
+else if (a === BlockID.coffeeworkshop$Cakeschwarzwald_6){return true;}
+else if (a === BlockID.coffeeworkshop$Cakesponge_0){return true;}
+else if (a === BlockID.coffeeworkshop$Cakesponge_1){return true;}
+else if (a === BlockID.coffeeworkshop$Cakesponge_2){return true;}
+else if (a === BlockID.coffeeworkshop$Cakesponge_3){return true;}
+else if (a === BlockID.coffeeworkshop$Cakesponge_4){return true;}
+else if (a === BlockID.coffeeworkshop$Cakesponge_5){return true;}
+else if (a === BlockID.coffeeworkshop$Cakesponge_6){return true;}
+else if (a === BlockID.coffeeworkshop$Cakespongechocolate_0){return true;}
+else if (a === BlockID.coffeeworkshop$Cakespongechocolate_1){return true;}
+else if (a === BlockID.coffeeworkshop$Cakespongechocolate_2){return true;}
+else if (a === BlockID.coffeeworkshop$Cakespongechocolate_3){return true;}
+else if (a === BlockID.coffeeworkshop$Cakespongechocolate_4){return true;}
+else if (a === BlockID.coffeeworkshop$Cakespongechocolate_5){return true;}
+else if (a === BlockID.coffeeworkshop$Cakespongechocolate_6){return true;}
+else if (a === BlockID.coffeeworkshop$tiramisu_0){return true;}
+else if (a === BlockID.coffeeworkshop$tiramisu_1){return true;}
+else if (a === BlockID.coffeeworkshop$tiramisu_2){return true;}
+else if (a === BlockID.coffeeworkshop$tiramisu_3){return true;}
+else if (a === BlockID.coffeeworkshop$tiramisu_4){return true;}
+else if (a === BlockID.coffeeworkshop$tiramisu_5){return true;}
+else if (a === BlockID.coffeeworkshop$tiramisu_6){return true;}
+else if (a === BlockID.coffeeworkshop$grinder0){return true;}
+else if (a === BlockID.coffeeworkshop$grinder1){return true;}
+else if (a === BlockID.coffeeworkshop$grinder2){return true;}
+else if (a === BlockID.coffeeworkshop$grinder3){return true;}
+else if (a === BlockID.coffeeworkshop$bqlm0){return true;}
+else if (a === BlockID.coffeeworkshop$bqlm1){return true;}
+else if (a === BlockID.coffeeworkshop$bqlm2){return true;}
+else if (a === BlockID.coffeeworkshop$bqlm3){return true;}
+else if (a === BlockID.coffeeworkshop$cfm0){return true;}
+else if (a === BlockID.coffeeworkshop$cfm1){return true;}
+else if (a === BlockID.coffeeworkshop$cfm2){return true;}
+else if (a === BlockID.coffeeworkshop$cfm3){return true;}
+};
+
+var bundBlockToItem = function(itemid,blockid,en){
+Block.registerDropFunction(blockid, function(c, d, e, a, b){
+ return [[itemid,1,0]];
+});
+Item.registerUseFunction(itemid, function(coords, item, tile){
+	var place = coords.relative;
+	if(World.getBlockID(place.x, place.y, place.z) === 0){
+		World.setBlock(place.x, place.y, place.z, blockid);
+		if (en === true){World.addTileEntity(place.x, place.y, place.z);}
+		Player.setCarriedItem(itemid, item.count - 1, item.data);
+	}
+});
+
+};
+
+//bundBlockToItem(ItemID.coffeeworkshop$grinder,BlockID.coffeeworkshop$grinder,true);
+
+function grindModel(id){
+var render = new ICRender.Model();
+ var model =   BlockRenderer.createModel();
+    
+ model.addBox (0,13/16,0,1,15/16,1,[["wood", 0], ["wood", 0],
+["oak", 0], ["oak", 0],
+["oak", 0], ["oak", 0]]);
+model.addBox (0, 0, 0, 1,2/16, 1,[["wood", 0], ["wood", 0],
+["oak", 0], ["oak", 0],
+["oak", 0], ["oak", 0]]);
+model.addBox (1/16, 2/16, 1/16, 15/16,14/16, 15/16,[["anvil_base", 0], ["anvil_base", 0],
+["grinder", 0], ["anvil_base", 0],
+["anvil_base", 0], ["anvil_base", 0]]);
+render.addEntry(model);
+
+BlockRenderer.setStaticICRender(id, -1, render);
+ }
+ //grindModel(BlockID.coffeeworkshop$grinder);
+
+var grind = function (a){
+if(a===ItemID.coffeeworkshop$Cb){return ItemID.coffeeworkshop$coffeepowder;}
+else if(a===ItemID.coffeeworkshop$Cocoabean){return ItemID.coffeeworkshop$Cocoapowder;}
+else if(a===ItemID.coffeeworkshop$Cocoapowder){return ItemID.coffeeworkshop$Cocoabatter;}
+else if(a===ItemID.coffeeworkshop$Chocolatebar){return ItemID.coffeeworkshop$Chocolatechip;}
+else if(a===174){return ItemID.coffeeworkshop$ice_slag;}
+else if(a===79){return ItemID.coffeeworkshop$ice_slag;}
+else if(a===295){return ItemID.coffeeworkshop$flour;}
+else{return false;}
+};
+var grinderModel = [
+[0,13/16,0,1,15/16,1,[["wood", 0], ["wood", 0],
+["oak", 0], ["oak", 0],
+["oak", 0], ["oak", 0]]],
+[0, 0, 0, 1,2/16, 1,[["wood", 0], ["wood", 0],
+["oak", 0], ["oak", 0],
+["oak", 0], ["oak", 0]]],
+[1/16, 2/16, 1/16, 15/16,14/16, 15/16,[["anvil_base", 0], ["anvil_base", 0],
+["grinder", 0], ["anvil_base", 0],
+["anvil_base", 0], ["anvil_base", 0]]]
+];
+
+directionBlockAPI.creatBlock("coffeeworkshop$grinder","火力研磨器",false);
+directionBlockAPI.bundItem(ItemID.coffeeworkshop$grinder,"coffeeworkshop$grinder",true);
+directionBlockAPI.createModel("coffeeworkshop$grinder",grinderModel);
+for (var grindi = 0;grindi <= 3;grindi += 1){
+TileEntity.registerPrototype(BlockID["coffeeworkshop$grinder" + grindi], {
+
+     defaultValues: {
+         progress:0,
+		burn:0,
+		burnmax:0
+},
+     tick:function(){
+        var that = this;
+     var slotFuel = that.container.getSlot("slotFuel");
+     var slotSource = that.container.getSlot("slotSource");
+         var slotResult= that.container.getSlot("slotResult");
+         var burn = Recipes.getFuelBurnDuration(slotFuel.id, slotFuel.data);
+   this.container.setScale("burningScale", this.data.burn / this.data.burnmax || 0);
+		this.container.setScale("progressScale", this.data.progress / 160);
+   if(slotFuel.count < 1)
+{
+that.container.clearSlot("slotFuel");
+}
+if(slotSource.count < 1)
+{
+that.container.clearSlot("slotSource");
+}
+     if ( that.data.burn === 0){
+        if(burn && slotFuel.count >= 1){
+               that.data.burn += burn;
+           that.data.burnmax = burn;
+            if(LiquidRegistry.getItemLiquid(slotFuel.id, slotFuel.data)){
+					var empty = LiquidRegistry.getEmptyItem(slotFuel.id, slotFuel.data);
+					slotFuel.id = empty.id;
+					slotFuel.data = empty.data;
+              }
+           else{ that.container.setSlot("slotFuel", slotFuel.id, slotFuel.count-1, 0);
+        }
+           }
+       }
+       else if (that.data.burn >= 1){
+           that.data.burn -= 1;
+           if(!grind(slotSource.id)){
+              if(that.data.progress >= 1){
+                  that.data.progress -= 1;
+               }
+            }
+            else{
+                 if(that.data.progress <= 159){
+                     that.data.progress += 1
+                     }
+                 else if(that.data.progress === 160){
+                     that.changeItem();
+                     }
+           }
+           }
+           if(that.data.burn === 0 && that.data.progress >= 1){
+               that.data.progress -= 1;
+               }
+   
+     },
+     changeItem :function(){
+         var that = this;
+     var slotFuel = that.container.getSlot("slotFuel");
+     var slotSource = that.container.getSlot("slotSource");
+     var slotResult= that.container.getSlot("slotResult");
+      if(!slotResult.id){
+         that.container.setSlot("slotSource", slotSource.id, slotSource.count-1, 0);
+         that.container.setSlot("slotResult", grind(slotSource.id), 1, 0);
+         that.data.progress = 0;
+         }
+         else if(slotResult.id === grind(slotSource.id)){
+             that.container.setSlot("slotSource", slotSource.id, slotSource.count-1, 0);
+             that.container.setSlot("slotResult", slotResult.id, slotResult.count+1, 0);
+             that.data.progress = 0;
+             }
+     },
+     click:function(){
+//Game.message(World.getBlockData(this.x, this.y, this.z));
+    },
+    getGuiScreen: function(){
+    return grinderGui; 
+}
+});
+}
+
+//长风破浪回有时，直挂云帆济沧海。 2018.10.20

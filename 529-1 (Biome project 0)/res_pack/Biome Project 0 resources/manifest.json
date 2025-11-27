@@ -1,0 +1,17 @@
+{
+   "format_version" : 1,
+   "header" : {
+      "description" : "§cBy §aCodanRaigen21§r, §o§b@real_cr21§r. §eSupport and follow me on twitter for more great add-ons!",
+      "name" : "Biome: Project 0 §a§l§o::§r§b RES",
+      "uuid" : "2cc875e0-1759-4d41-902b-f39ef85d9548",
+      "version" : [ 1, 0, 0 ]
+   },
+   "modules" : [
+      {
+         "description" : "§bBy CodanRaigen21, @real_cr21. §9Support and follow me on twitter for more great add-ons!",
+         "type" : "resources",
+         "uuid" : "e40a80d0-17c3-43c6-8921-9979e4b63beb",
+         "version" : [ 1, 0, 0 ]
+      }
+   ]
+}

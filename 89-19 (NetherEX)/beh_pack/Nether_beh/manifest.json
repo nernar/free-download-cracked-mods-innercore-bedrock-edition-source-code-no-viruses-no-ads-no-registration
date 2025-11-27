@@ -1,0 +1,24 @@
+{
+"format_version": 1,
+"header": {
+"uuid": "d0194e6d-1110-4f38-b117-d9b74d520f98",
+"name": "Nether",
+"version": [ 0, 0, 1 ],
+"description": "Nether Mobs",
+"min_engine_version": [ 1, 11, 0 ]
+},
+"modules": [
+{
+"description": "Nether Mobs",
+"version": [ 0, 0, 2],
+"uuid": "22bc7768-25e4-4c5f-9899-4243212adcd8",
+"type": "data"
+}
+],
+"dependencies": [
+{
+"uuid": "af580ca2-85da-4e27-a28f-77b271c2609a",
+"version": [ 0, 0, 2 ]
+}
+]
+}

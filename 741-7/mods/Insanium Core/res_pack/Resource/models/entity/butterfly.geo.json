@@ -1,0 +1,50 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bioplentia.entity.butterfly",
+				"texture_width": 64,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 3, 2],
+					"rotation": [89.99998, 0, 0],
+					"cubes": [
+						{"origin": [0, 0, 1], "size": [1, 5, 1], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "rightwing",
+					"pivot": [0, 2.5, 2],
+					"cubes": [
+						{"origin": [-6, 3, -1], "size": [6, 0, 9], "uv": [0, 5]}
+					]
+				},
+				{
+					"name": "leftwing",
+					"pivot": [1, 2.5, 2],
+					"cubes": [
+						{"origin": [0, 3, -1], "size": [7, 0, 9], "uv": [0, 5], "mirror": true}
+					]
+				},
+				{
+					"name": "antennae",
+					"pivot": [0, 2.5, 0],
+					"cubes": [
+						{"origin": [-1, 2.5, -2], "size": [1, 0, 2], "uv": [4, 0]},
+						{"origin": [1, 2.5, -2], "size": [1, 0, 2], "uv": [4, 0]}
+					]
+				}
+			]
+		}
+	]
+}

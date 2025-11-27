@@ -1,0 +1,32 @@
+{
+  "lib/ScalesRPG.js":{
+    "class_name":"ScalesRPG.js",
+    "links":[
+      "4"
+    ]
+  },
+  "launcher.js":{
+    "class_name":"launcher.js",
+    "links":[
+      "2"
+    ]
+  },
+  "lib/EntityState.js":{
+    "class_name":"EntityState.js",
+    "links":[
+      "3"
+    ]
+  },
+  "lib/ThirstLib.js":{
+    "class_name":"ThirstLib.js",
+    "links":[
+      "5"
+    ]
+  },
+  "main.js":{
+    "class_name":"main.js",
+    "links":[
+      "1"
+    ]
+  }
+}

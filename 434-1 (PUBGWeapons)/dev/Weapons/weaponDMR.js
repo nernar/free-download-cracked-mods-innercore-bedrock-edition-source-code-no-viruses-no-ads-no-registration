@@ -1,0 +1,115 @@
+ShootLib.addGun({
+    id:"mini14",
+    name:"Mini-14",
+    ammo:"ammo5_56",
+    accuracy:3,
+    recoil:1,
+    rate:3,
+    texture:{
+        name:"Mini-14",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.CLICK,
+    bullet:{
+        speed:14,
+        count:30,
+        damage:11
+    },
+    fov:{
+        level:60,
+        link:"crosshair/scope4x"
+    },
+    sounds:{
+        shot:"AKM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/AWMReload.ogg"
+   }
+});
+
+ShootLib.addGun({
+    id:"sks",
+    name:"SKS",
+    ammo:"ammo7_62",
+    accuracy:4,
+    recoil:5,
+    rate:6,
+    texture:{
+        name:"sks",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.CLICK,
+    bullet:{
+        speed:20,
+        count:20,
+        damage:10.6
+    },
+    fov:{
+        level:60,
+        link:"crosshair/scope4x"
+    },
+    sounds:{
+        shot:"AWM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/AWMReload.ogg"
+   }
+});
+
+ShootLib.addGun({
+    id:"slr",
+    name:"SLR",
+    ammo:"ammo7_62",
+    accuracy:4,
+    recoil:6,
+    rate:6,
+    texture:{
+        name:"slr",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.CLICK,
+    bullet:{
+        speed:20,
+        count:20,
+        damage:11.6
+    },
+    fov:{
+        level:60,
+        link:"crosshair/scope4x"
+    },
+    sounds:{
+        shot:"AWM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/AWMReload.ogg"
+   }
+});
+
+ShootLib.addGun({
+    id:"vss",
+    name:"VSS",
+    ammo:"ammo9mm",
+    accuracy:8,
+    recoil:6,
+    rate:8,
+    texture:{
+        name:"vss",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.TOUCH,
+    bullet:{
+        speed:30,
+        count:20,
+        damage:18
+    },
+    fov:{
+        level:10,
+        link:"crosshair/dragunov"
+    },
+    sounds:{
+        shot:"AWM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/AWMReload.ogg"
+   }
+});

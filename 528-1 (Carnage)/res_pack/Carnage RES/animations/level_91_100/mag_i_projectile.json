@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.mag_i_projectile.move": {
+      "loop": true,
+      "bones": {
+		"projectile": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 4000000, 4000000, 4000000]
+		  }
+		}
+      }
+    }
+  }
+}

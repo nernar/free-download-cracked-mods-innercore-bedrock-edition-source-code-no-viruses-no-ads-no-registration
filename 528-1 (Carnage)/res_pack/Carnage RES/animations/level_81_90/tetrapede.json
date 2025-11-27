@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.tetrapede.move": {
+      "loop": true,
+      "bones": {
+        "right_1": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "right_2": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "right_3": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "right_4": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "right_5": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "right_6": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "right_7": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "right_8": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "left_1": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "left_2": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "left_3": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "left_4": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "left_5": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "left_6": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "left_7": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] },
+        "left_8": { "rotation": [ 0.0, 0.0, "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23" ] }
+      }
+    }
+  }
+}

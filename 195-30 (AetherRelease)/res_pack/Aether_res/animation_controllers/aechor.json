@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.aechor.idle" : {
+            "initial_state" : "default",
+            "states" : {
+                "default" : {
+                    "animations" : [ "move", "look_at_target" ]
+                 }
+             }
+         }
+     }
+ }
+

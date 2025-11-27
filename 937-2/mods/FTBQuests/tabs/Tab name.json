@@ -1,0 +1,15 @@
+{
+	"type": "tab",
+	"name": "Tab name",
+	"identifier": "Tab name",
+	"item": {
+		"id": -251,
+		"count": 1,
+		"data": 0
+	},
+	"isLeft": true,
+	"quests": [
+		"quests/Quest name_Tab name.json",
+		"quests/Quest name_1_Tab name.json"
+	]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "ttigraas:custom/gobta_kobochi_with_shealth",
+  "textures": {
+    "0": "ttigraas:blocks/gobta_kobochi_with_shealth_texture",
+    "particle": "ttigraas:items/magicsteelsword"
+  }
+}

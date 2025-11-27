@@ -1,0 +1,28 @@
+Translation.addTranslation("Clay Crucible Model", {zh:"未烧制的坩埚"});
+Translation.addTranslation("Crucible", {zh:"坩埚"});
+Translation.addTranslation("Sieve", {zh:"筛子"});
+Translation.addTranslation("Wooden Bucket", {zh:"木桶"});
+Translation.addTranslation("Screen", {zh:"丝网"});
+Translation.addTranslation("Silkworm", {zh:"蚕"});
+Translation.addTranslation("Baked Silkworm", {zh:"烤蚕"});
+Translation.addTranslation("Iron Debris", {zh:"破碎铁矿石"});
+Translation.addTranslation("Gold Debris", {zh:"破碎金矿石"});
+Translation.addTranslation("Iron Slag", {zh:"粉碎铁矿石"});
+Translation.addTranslation("Gold Slag", {zh:"粉碎金矿石"});
+Translation.addTranslation("Iron Dust", {zh:"粉状铁矿石"});
+Translation.addTranslation("Gold Dust", {zh:"粉状金矿石"});
+Translation.addTranslation("Grass Seed", {zh:"牧草种子"});
+Translation.addTranslation("Stone Tablet", {zh:"石子"});
+Translation.addTranslation("Dust", {zh:"尘土"});
+Translation.addTranslation("Wooden Hammer", {zh:"木锤"});
+Translation.addTranslation("Stone Hammer", {zh:"石锤"});
+Translation.addTranslation("Iron Hammer", {zh:"铁锤"});
+Translation.addTranslation("Gold Hammer", {zh:"金锤"});
+Translation.addTranslation("Diamond Hammer", {zh:"钻石锤"});
+Translation.addTranslation("Wooden Hook", {zh:"木钩"});
+Translation.addTranslation("Bone Hook", {zh:"骨制钩子"});
+Translation.addTranslation("Iron Hook", {zh:"铁制钩子"});
+Translation.addTranslation("Iron Stick", {zh:"铁棒"});
+Translation.addTranslation("Iron Gravel", {zh:"铁砂砾"});
+Translation.addTranslation("Gold Gravel", {zh:"黄金砂砾"});
+Translation.addTranslation("Block", {zh:"寄生树叶"})

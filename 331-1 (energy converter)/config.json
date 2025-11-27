@@ -1,0 +1,5 @@
+{
+  "enabled":true,
+  "BridgeBuffer":10000,
+  "LossRate":0
+}

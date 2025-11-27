@@ -1,0 +1,89 @@
+Entity
+entity.guardian:red_phantom.name=Красный фантом	#
+entity.guardian:king_blaze.name=Король ифтрит	#
+entity.guardian:old_spider.name=Коричневый паук	#
+entity.guardian:end_phantom.name=Кошмар Края	#
+entity.guardian:beach_crab.name=Пляжный краб	#
+entity.guardian:zombiee_dev.name=Зомби великий	#
+entity.guardian:monster_deep.name=Монстр морских глубин	#
+entity.guardian:white_enderman.name=Белый странник края	#
+entity.guardian:old_strider.name=Червь базальтовых дельт	#
+entity.guardian:brute_enderman.name=Бронированый странник края	#
+entity.guardian:drowned_skeleton.name=Скелет утопленника	#
+
+Spawn_egg
+item.spawn_egg.entity.guardian:old_spider.name=Яйцо призыва коричневого паука	#
+item.spawn_egg.entity.guardian:beach_crab.name=Яйцо призыва пляжного краба	#
+item.spawn_egg.entity.guardian:king_blaze.name=Яйцо призыва короля ифрита	#
+item.spawn_egg.entity.guardian:red_phantom.name=Яйцо призыва красного фантома	#
+item.spawn_egg.entity.guardian:end_phantom.name=Яйцо призыва кошмара края	#
+item.spawn_egg.entity.guardian:zombiee_dev.name=Яйцо призыва великова зомби	#
+item.spawn_egg.entity.guardian:drowned_skeleton.name=Яйцо призыва скелета утопленника	#
+item.spawn_egg.entity.guardian:monster_deep.name=Яйцо призыва монстра морских глубин	#
+item.spawn_egg.entity.guardian:white_enderman.name=Яйцо призыва белого странника края	#
+item.spawn_egg.entity.guardian:old_strider.name=Яйцо призыва червя базальтовых дельт	#
+item.spawn_egg.entity.guardian:brute_enderman.name=Яйцо призыва бронированного странника края	#
+
+Blocks
+tile.guardian:grave.name=Могила	#
+tile.guardian:blue_rose.name=Синия роза	#
+tile.guardian:red_rose.name=Красная роза	#
+tile.guardian:mini_cauldron.name=Казан пиглина	#
+tile.guardian:mini_cauldron_1.name=Пустой казан пиглина	#
+tile.guardian:prismarine_mine.name=Призмариновая мина	#
+tile.guardian:stand_spyglass.name=Подставка с подзорной трубой	#
+tile.guardian:head_white_enderman.name=Голова белого странника края	#
+tile.guardian:head_brute_enderman.name=Голова бронированного странника края	#
+
+Food
+item.guardian:stray_bone.name=Зимняя кость	#
+item.guardian:wither_bone.name=Обугленная кость	#
+item.guardian:meat_crab_raw.name=Клешня с мясом	#
+item.guardian:sweet_cookie.name=Сладкое печенье	#
+item.guardian:honey_bread.name=Медовый хлеб	#
+item.guardian:salt_bread.name=Хлеб с солью	#
+item.guardian:husk_flesh.name=Сухая плоть	#
+item.guardian:drowned_flesh.name=Утопленная плоть	#
+item.guardian:hoglin_raw.name=Сырое мясо хоглина	#
+item.guardian:hoglin_cooked.name=Жареное мясо хоглина	#
+item.guardian:old_spider_eye.name=Глаз коричневого паука	#
+item.guardian:chorus_fruit_stew.name=Рагу из плода коруса	#
+item.guardian:meat_crab_cooked.name=Жареная клешня с мясом	#
+item.guardian:tuft_of_wool_goat.name=Клочок козлиной шерсти	#
+item.guardian:salt_potato_baked.name=Подсоленая печеная картошка 	#
+item.guardian:old_spider_eye_fermented.name=Маринованый глаз коричневого паука	#
+
+item.guardian:blue_rose=Синяя роза	#
+item.guardian:red_rose=Красная роза	#
+
+tile.guardian:frame_1.name=Паспорту	#
+tile.guardian:frame_cyan_0.name=Паспорту "Циан"	#
+tile.guardian:frame_dream.name=Паспорту "Дрим"	#
+tile.guardian:frame_nerkin.name=Паспорту "Неркин"	#
+tile.guardian:frame_zloyxp.name=Паспорту "ZloyXP.MP4"	#
+tile.guardian:frame_mine_dragon.name=Паспорту "Mine Dragon"	#
+tile.guardian:frame_pumpkin_dax.name=Паспорту "тыковка-Дакс"	#
+tile.guardian:frame_guardian.name=Паспорту "Стражем Глубин"	#
+tile.guardian:frame_systemzee.name=Паспорту "SystemZee"	#
+tile.guardian:frame_dream_guardian.name=Паспорту "Страж Глубин" в форме дрима	#
+tile.guardian:frame_gold_guardian.name=Позолоченое паспорту "Стражем Глубин"	#
+
+tile.guardian:frame_gray.name=Серая паспорту	#
+tile.guardian:frame_lime.name=Лаймовая паспорту	#
+tile.guardian:frame_yellow.name=Жёлтая паспорту	#
+tile.guardian:frame_red.name=Красная паспорту	#
+tile.guardian:frame_black.name=Черная паспорту	#
+tile.guardian:frame_blue.name=Синия паспорту	#
+tile.guardian:frame_green.name=Зеленая паспорту	#
+tile.guardian:frame_silver.name=Светло-cерая паспорту	#
+tile.guardian:frame_light_blue.name=Голубая паспорту	#
+tile.guardian:frame_cyan.name=Берюзовая паспорту	#
+tile.guardian:frame_brown.name=Коричневая паспорту	#
+
+item.guardian:copper_helmet=Медный шлем	#
+item.guardian:copper_chestplate=Медная кираса	#
+item.guardian:viking_helmet=Шлем викинга	#
+item.guardian:copper_pickaxe=Медная кирка	#
+item.guardian:turtle_chestplate=Черепашья кираса	#
+item.guardian:goat_chestplate=Шуба из козлиного меха	#
+item.guardian:goat_boots=Ботинки из козлиного меха	#

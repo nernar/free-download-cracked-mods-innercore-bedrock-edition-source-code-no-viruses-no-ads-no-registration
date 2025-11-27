@@ -1,0 +1,54 @@
+tile.pili:alchemical_table.name=Алхимический столик
+
+item.pili:alchemical_tablee=Алхимический столик
+
+item.pili:alchemical_dust=Алхимическая пыль
+item.pili:piliruna=Алхимическая руна
+item.pili:piliruna1=Руна защиты от огня
+item.pili:piliruna2=Руна невидимости
+item.pili:piliruna3=Руна прыжков
+item.pili:piliruna4=Руна ночного зрения
+item.pili:piliruna5=Руна регенерации
+item.pili:piliruna6=Руна плавного падения
+item.pili:piliruna7=Руна силы 
+item.pili:piliruna8=Руна скорости
+item.pili:piliruna9=Руна подводного дыхания
+
+
+
+item.pili:pili_antidote.name=Антидот
+item.pili:pili_med1=Маленькая аптечка
+item.pili:pili_med2=Большая аптечка
+item.pili:syringe_with_adrenaline.name=Шприц адреналина
+item.pili:syringe=Шприц
+item.pili:vitamins.name=Витамины
+
+item.pili:rpgbook1=Заклинание огня
+item.pili:rpgbook2=Заклинание отравления
+item.pili:rpgbook3=Заклинание искушения
+item.pili:rpgbook4=Заклинание молнии
+item.pili:rpgbook5=Заклинание замедления
+item.pili:rpgbook6=Заклинание взрыва
+item.pili:rpgbook7=Заклинание телепортации
+item.pili:rpgbook8=Заклинание левитации
+
+
+item.pili:rpgstaff1=Посох ученика
+item.pili:rpgstaff2=Посох волшебника
+item.pili:rpgstaff3=Посох архимага
+
+item.pili:wooden_spear=Деревянное копьё 4-8 урона
+item.pili:stone_spear=Каменное копьё 5-9 урона
+item.pili:iron_spear=Железное копьё 6-10 урона
+item.pili:golden_spear=Золотое копьё 7-11 урона
+item.pili:diamond_spear=Алмазное копьё 8-12 урона
+item.pili:netherite_spear=Незеритовое копьё 9-13 урона
+
+item.pili:wooden_staff=Деревянный посох
+item.pili:stone_staff=Каменный посох
+item.pili:golden_staff=Золотой посох
+item.pili:iron_staff=Железный посох
+item.pili:diamond_staff=Алмазный посох
+item.pili:netherite_staff=Незеритовый посох
+
+

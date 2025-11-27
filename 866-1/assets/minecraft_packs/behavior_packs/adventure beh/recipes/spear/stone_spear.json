@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pili:stone_spear"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  b",
+      " a ",
+"a  "
+    ],
+    "key": {
+
+      "b": {
+        "item": "minecraft:stone:0"
+      },
+      "a": {
+        "item": "minecraft:stick"
+      }
+     
+    },
+    "result": {
+      "item": "pili:stone_spear"
+    }
+  }
+}

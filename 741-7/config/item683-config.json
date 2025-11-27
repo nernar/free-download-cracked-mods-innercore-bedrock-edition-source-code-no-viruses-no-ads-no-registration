@@ -1,0 +1,20 @@
+{
+  "leaves":{
+    "enabled":true,
+    "rich_model":false,
+    "density":1,
+    "variant_count":2
+  },
+  "grass":{
+    "enabled":true,
+    "density":1,
+    "variant_count":2,
+    "ignore_top_block":true
+  },
+  "reed":{
+    "enabled":true,
+    "density":1,
+    "variant_count":2
+  },
+  "enabled":true
+}

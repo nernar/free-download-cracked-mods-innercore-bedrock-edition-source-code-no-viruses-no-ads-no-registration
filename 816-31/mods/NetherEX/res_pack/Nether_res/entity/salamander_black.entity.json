@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "nether:salamander_black",
+      "materials": { "default": "salamander_black" },
+      "textures": { "default": "textures/entity/salamander/black_salamander" },
+      "geometry": { "default": "geometry.salamander_old" }, 
+      "animations": {    
+        "move": "animation.salamander.move",  
+      },
+      "animation_controllers": [  
+        { "move": "controller.animation.salamander.move" },  
+      ], 
+      "render_controllers": [ "controller.render.default" ],
+       "spawn_egg": {
+        "overlay_color": "#255690",
+        "base_color": "#000000"
+      }
+    }
+  }
+}

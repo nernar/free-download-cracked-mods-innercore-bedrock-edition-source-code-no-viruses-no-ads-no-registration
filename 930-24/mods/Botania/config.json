@@ -1,0 +1,56 @@
+{
+	"Common": {
+		"blockBreakingParticles": {
+			"enabled": true,
+			"toolEnabled": true
+		},
+		"manaSpreaders": {
+			"silent": false,
+			"traceTime": 400
+		},
+		"harvestLevels": {
+			"weightLens": 2,
+			"boreLens": 3
+		},
+		"gardenOfGlass": {
+			"spawnWithLexicon": true,
+			"islandScaleMultiplier": 8
+		},
+		"chargeAnimation": true,
+		"flowerBindingForceCheck": true,
+		"enderPickpocket": true,
+		"manaEnchanter": true,
+		"manaFluxfield": true,
+		"relics": true,
+		"invertMagnetRing": false,
+		"worldgen": true
+	},
+	"Client": {
+		"rendering": {
+			"fancySkybox": {
+				"enabled": true,
+				"normalWorlds": false
+			},
+			"lexicon": {
+				"rotatingItems": true,
+				"render_3d": true
+			},
+			"shaders": true,
+			"boundBlockWireframe": true,
+			"accessories": true,
+			"manaBarHeight": 29,
+			"staticFloaters": false
+		},
+		"particles": {
+			"powerSystem": false,
+			"staticWandBeam": false,
+			"flowerFrequency": 0.75,
+			"elvenPortal": true
+		},
+		"seasonalFeatures": true,
+		"debugInfo": true,
+		"references": true,
+		"splashes": true
+	},
+	"enabled": true
+}

@@ -1,0 +1,8 @@
+{
+    "enabled": true,
+    "baseCost": 45,
+    "costFactor": 1.0,
+    "curseFactor": 3.0,
+    "treasureFactor": 4.0,
+    "floatingBookPower": 1.0
+}

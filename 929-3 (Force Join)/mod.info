@@ -1,0 +1,7 @@
+{
+	"name": "Force Join",
+	"version": "1.0",
+	"author": "Nernar",
+	"description": "Join to servers with any mods and on any version",
+	"clientOnly": true
+}

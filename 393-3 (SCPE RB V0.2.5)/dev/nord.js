@@ -1,0 +1,27 @@
+IDRegistry.genItemID("ancientNordBattleaxe");
+Item.createItem("ancientNordBattleaxe", "Ancient Nord battle axe", {name: "ancientNordBattleaxe", meta: 0}, {stack: 1});
+Item.setToolRender(ItemID.ancientNordBattleaxe, true);
+ToolAPI.addToolMaterial("ancientNordBattleaxe", {durability: 700, level: 3, efficiency: 2, damage: 8, enchantability: 14});
+ToolAPI.setTool(ItemID.ancientNordBattleaxe, "ancientNordBattleaxe", ToolType.sword);
+IDRegistry.genItemID("ancientNordWaraxe");
+Item.createItem("ancientNordWaraxe", "Ancient Nord war axe", {name: "ancientNordWaraxe", meta: 0}, {stack: 1});
+Item.setToolRender(ItemID.ancientNordWaraxe, true);
+ToolAPI.addToolMaterial("ancientNordWaraxe", {durability: 700, level: 3, efficiency: 2, damage: 8, enchantability: 14});
+ToolAPI.setTool(ItemID.ancientNordWaraxe, "ancientNordWaraxe", ToolType.sword);
+IDRegistry.genItemID("ancientNordGreatsword");
+Item.createItem("ancientNordGreatsword", "Ancient Nord great sword", {name: "ancientNordGreatsword", meta: 0}, {stack: 1});
+Item.setToolRender(ItemID.ancientNordGreatsword, true);
+ToolAPI.addToolMaterial("ancientNordGreatsword", {durability: 700, level: 3, efficiency: 2, damage: 8, enchantability: 14});
+ToolAPI.setTool(ItemID.ancientNordGreatsword, "ancientNordGreatsword", ToolType.sword);
+IDRegistry.genItemID("ancientNordSword");
+Item.createItem("ancientNordSword", "Ancient Nord sword", {name: "ancientNordSword", meta: 0}, {stack: 1});
+Item.setToolRender(ItemID.ancientNordSword, true);
+ToolAPI.addToolMaterial("ancientNordSword", {durability: 700, level: 3, efficiency: 2, damage: 8, enchantability: 14});
+ToolAPI.setTool(ItemID.ancientNordSword, "ancientNordSword", ToolType.sword);
+IDRegistry.genItemID("ancientNordArrow");
+Item.createItem("ancientNordArrow", "Ancient Nord arrow", {name: "ancientNordArrow", meta: 0}, {stack: 64});
+IDRegistry.genItemID("ancientNordBow");
+Item.createItem("ancientNordBow", "Ancient Nord bow", {name: "ancientNordBow", meta: 0}, {stack: 1});
+ShootLib.addGun({id: "ancientNordBow", name: "Ancient Nord bow", ammo: "ancientNordArrow", accuracy: 1, recoil: 3, rate: 1, texture: {name: "ancientNordBow", meta: 0}, shotType: ShotType.NORMAL, buttonType: ButtonType.TOUCH, bullet: {speed: 10, count: 1, entity: Native.EntityType.ARROW, damage: 5}, fov: {level: 5}, sounds: {shot: "BowShoot.ogg", empty: "BowGun.ogg", reload: "reload/BowReload.ogg"}});
+ShootLib.addAmmo({id: "ancientNordArrow", name: "Ancient Nord arrow", texture: {name: "ancientNordArrow", meta: 0}});
+

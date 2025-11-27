@@ -1,0 +1,6 @@
+{
+  "name": "Short commands",
+  "author": "uhmDenis",
+  "version": "1.0 done",
+  "description": "Добавляет короткие версии команд:\n//gm0 | //gm1 - переключает режимы игры.\n//cl - чистит инвентарь.\n//cleff - чистит эффекты.\n//h - выводит всё это\nСоздатель мода - uhmDenis"
+}

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "vanilla_recipe:gem_ruby"
+		},
+		"ingredients": [
+			{
+				"item": "minecraft:block_block_ruby"
+			}
+		],
+		"result": {
+			"item": "minecraft:item_gem_ruby",
+			"count": 9
+		},
+		"tags": [
+			"crafting_table"
+		]
+	}
+}

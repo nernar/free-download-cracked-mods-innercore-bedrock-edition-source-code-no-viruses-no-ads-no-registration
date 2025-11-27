@@ -1,0 +1,49 @@
+{
+"format_version": "1.13.0",
+"minecraft:entity": {
+"description": {
+"identifier": "twilightforest:flame",
+"is_spawnable": false,
+"is_summonable": false,
+"is_experimental": false,
+"runtime_identifier": "minecraft:small_fireball"
+},
+"components": {
+"minecraft:collision_box": {
+"width": 0.0,
+"height": 0.0
+},
+"minecraft:projectile": {
+"on_hit": {
+"impact_damage": {
+"damage": 3,
+"knockback": false,
+"catch_fire": true,
+"semi_random_diff_damage": false
+},
+"catch_fire": {
+"fire_affected_by_griefing": true
+},
+"remove_on_hit": { 
+}
+},
+"power": 1.6,
+"gravity": 0.00,
+"inertia": 1,
+"liquid_inertia": 1,
+"uncertainty_base": 0,
+"uncertainty_multiplier": 0,
+"anchor": 1,
+"offset": [ 0, -0.1, 0 ],
+"semi_random_diff_damage": true,
+"reflect_on_hurt": true
+},
+"minecraft:physics": {
+},
+"minecraft:pushable": {
+"is_pushable": true,
+"is_pushable_by_piston": true
+}
+}
+}
+}

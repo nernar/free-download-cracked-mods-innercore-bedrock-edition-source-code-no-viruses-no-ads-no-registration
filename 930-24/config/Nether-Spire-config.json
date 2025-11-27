@@ -1,0 +1,10 @@
+{
+  "enabled":true,
+  "spawn_enemy_limit":3,
+  "dimensional_explodes":true,
+  "animated_deteriorate":false,
+  "ignore_leaved_players":false,
+  "expensive_craft":false,
+  "preserve_stealing_gold":false,
+  "obsidian_spire":false
+}

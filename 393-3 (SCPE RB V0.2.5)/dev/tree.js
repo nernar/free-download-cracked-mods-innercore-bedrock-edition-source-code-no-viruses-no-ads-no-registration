@@ -1,0 +1,28 @@
+IDRegistry.genBlockID("EldergleamTreeWood");
+Block.createBlock("EldergleamTreeWood", [{name: "Eldergleam tree wood", texture: [["EldergleamTreeWood1", 0], ["EldergleamTreeWood1", 0], ["EldergleamTreeWood", 0], ["EldergleamTreeWood", 0], ["EldergleamTreeWood", 0], ["EldergleamTreeWood", 0]], inCreative: true}]);
+ToolAPI.registerBlockMaterial(BlockID.EldergleamTreeWood, "wood");
+IDRegistry.genBlockID("GildergreenWood");
+Block.createBlock("GildergreenWood", [{name: "Gildergreen wood", texture: [["GildergreenWood1", 0], ["GildergreenWood1", 0], ["GildergreenWood", 0], ["GildergreenWood", 0], ["GildergreenWood", 0], ["GildergreenWood", 0]], inCreative: true}]);
+ToolAPI.registerBlockMaterial(BlockID.GildergreenWood, "wood");
+IDRegistry.genBlockID("SleepingTreeWood");
+Block.createBlock("SleepingTreeWood", [{name: "Sleeping tree wood", texture: [["SleepingTreeWood1", 0], ["SleepingTreeWood1", 0], ["SleepingTreeWood", 0], ["SleepingTreeWood", 0], ["SleepingTreeWood", 0], ["SleepingTreeWood", 0]], inCreative: true}]);
+ToolAPI.registerBlockMaterial(BlockID.SleepingTreeWood, "wood");
+IDRegistry.genBlockID("EldergleamTreeFoliage");
+Block.createBlock("EldergleamTreeFoliage", [{name: "Eldergleam tree foliage", texture: [["EldergleamTreeFoliage", 0]], inCreative: true}]);
+ToolAPI.registerBlockMaterial(BlockID.EldergleamTreeFoliage, "plant");
+IDRegistry.genBlockID("GildergreenFoliage");
+Block.createBlock("GildergreenFoliage", [{name: "Gildergreen foliage", texture: [["GildergreenFoliage", 0]], inCreative: true}]);
+ToolAPI.registerBlockMaterial(BlockID.GildergreenFoliage, "plant");
+IDRegistry.genBlockID("SleepingTreeFoliage");
+Block.createBlock("SleepingTreeFoliage", [{name: "Sleeping tree foliage", texture: [["SleepingTreeFoliage", 0]], inCreative: true}]);
+ToolAPI.registerBlockMaterial(BlockID.SleepingTreeFoliage, "plant");
+IDRegistry.genBlockID("EldergleamTreePlaks");
+Block.createBlock("EldergleamTreePlaks", [{name: "Eldergleam tree planks", texture: [["EldergleamTreePlaks", 0]], inCreative: true}]);
+ToolAPI.registerBlockMaterial(BlockID.EldergleamTreePlaks, "wood");
+IDRegistry.genBlockID("GildergreenPlaks");
+Block.createBlock("GildergreenPlaks", [{name: "Gildergreen planks", texture: [["GildergreenPlaks", 0]], inCreative: true}]);
+ToolAPI.registerBlockMaterial(BlockID.GildergreenPlaks, "wood");
+IDRegistry.genBlockID("SleepingTreePlaks");
+Block.createBlock("SleepingTreePlaks", [{name: "Sleeping tree planks", texture: [["SleepingTreePlaks", 0]], inCreative: true}]);
+ToolAPI.registerBlockMaterial(BlockID.SleepingTreePlaks, "wood");
+

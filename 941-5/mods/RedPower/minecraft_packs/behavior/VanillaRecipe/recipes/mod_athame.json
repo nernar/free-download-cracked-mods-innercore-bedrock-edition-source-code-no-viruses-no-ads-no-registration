@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "vanilla_recipe:athame"
+		},
+		"pattern": [
+			"X",
+			"#"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:item_ingot_silver"
+			},
+			"#": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "minecraft:item_athame"
+		},
+		"tags": [
+			"crafting_table"
+		]
+	}
+}

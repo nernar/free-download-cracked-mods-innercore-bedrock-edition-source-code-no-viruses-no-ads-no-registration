@@ -1,0 +1,23 @@
+//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+    "format_version": "1.13.0",
+    "minecraft:scatter_feature": {
+      "description": {
+        "identifier": "bioplentia:shattered_taiga_bushes_feature"
+      },
+      "iterations": 5,
+      "x": {
+        "distribution": "uniform",
+        "extent": [ -8, 8 ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [ -8, 8 ]
+      },
+      "coordinate_eval_order": "zyx",
+      "places_feature": "bioplentia:oak_bush_feature"
+    }
+  }

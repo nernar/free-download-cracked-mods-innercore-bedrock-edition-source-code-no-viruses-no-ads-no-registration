@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "about:lush_mossy_stone_feature"
+    },
+    "count": 20,
+    "places_block": "about:lush_mossy_stone",
+    "may_replace": [
+      "about:mossy_stone"
+    ]
+  }
+}

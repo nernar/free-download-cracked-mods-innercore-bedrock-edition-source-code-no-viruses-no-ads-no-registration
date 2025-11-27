@@ -1,0 +1,18 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "about:stick_from_dried_vines"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "about:dried_vines"
+      }
+    ],
+    "result": {
+      "item": "minecraft:stick"
+    }
+  }
+}

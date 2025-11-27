@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.tempest_wand.move": {
+      "loop": true,
+      "bones": {
+		"tempest_wand": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 9000000, 0]
+		  }
+		}
+      }
+    }
+  }
+}

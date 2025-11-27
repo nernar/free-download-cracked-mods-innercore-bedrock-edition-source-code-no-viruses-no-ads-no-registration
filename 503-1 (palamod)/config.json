@@ -1,0 +1,38 @@
+{
+  "enabled":true,
+  "fast_mode":true,
+  "CollisionShape":true,
+  "resolution":128,
+  "color":"BLACK",
+  "ItemListLine":6,
+  "ButtonPosX":936,
+  "ButtonPosY":0,
+  "OreGen":{
+    "Paladium Ore":{
+      "count":2,
+      "size":8,
+      "minY":"bedrock",
+      "maxY":11
+    },
+    "titane":{
+      "count":2,
+      "size":8,
+      "minY":"bedrock",
+      "maxY":13
+    },
+    "Amethyst Ore":{
+      "count":3,
+      "size":6,
+      "minY":"15",
+      "maxY":14
+    },
+    "BerryGen":{
+      "xp":{
+        "count":0,
+        "size":0,
+        "minY":0,
+        "maxY":0
+      }
+    }
+  }
+}

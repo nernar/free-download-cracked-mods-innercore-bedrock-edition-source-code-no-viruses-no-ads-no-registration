@@ -1,0 +1,141 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "raigen:flower_trap",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+	"component_groups": {
+	  "minecraft:variant_0": {
+	    "minecraft:variant": {
+		  "value": 0
+		}
+	  },
+	  "minecraft:variant_1": {
+	    "minecraft:variant": {
+		  "value": 1
+		}
+	  },
+	  "minecraft:variant_2": {
+	    "minecraft:variant": {
+		  "value": 2
+		}
+	  },
+	  "minecraft:variant_3": {
+	    "minecraft:variant": {
+		  "value": 3
+		}
+	  },
+	  "minecraft:variant_4": {
+	    "minecraft:variant": {
+		  "value": 4
+		}
+	  },
+	  "minecraft:variant_5": {
+	    "minecraft:variant": {
+		  "value": 5
+		}
+	  }
+	},
+	
+    "components": {
+      "minecraft:fire_immune": false,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:health": {
+        "value": 3,
+        "max": 3
+      },
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 0.3
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/biome_project_0/flower_trap.json"
+      },
+      "minecraft:type_family": {
+        "family": [ "inanimate" ]
+      },
+      "minecraft:fall_damage": {
+        "value": 0.0
+      },
+      "minecraft:shooter": {
+        "def": "raigen:poison_projectile"
+      },
+      "minecraft:scale": {
+        "value": 1.2
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 1,
+        "attack_interval_min": 5,
+        "attack_interval_max": 15,
+        "attack_radius": 10
+      },
+	  "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 10
+          }
+        ],
+        "must_see": false
+      },
+      "minecraft:physics": {
+      }
+    },
+	
+	"events": {
+	  "minecraft:entity_spawned": {
+	    "sequence": [
+		  {
+            "randomize": [
+              {
+                "weight": 1,
+                "sequence": [
+                  {
+                    "randomize": [
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:variant_0" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:variant_1" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:variant_2" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:variant_3" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:variant_4" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:variant_5" ] }
+                      }
+					]
+				  }
+				]
+			  }
+			]
+		  }
+		]
+	  }
+	}
+  }
+}

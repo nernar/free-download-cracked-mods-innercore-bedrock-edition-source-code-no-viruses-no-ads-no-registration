@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:statue",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/map/decor/statue"
+      },
+      "geometry": {
+        "default": "geometry.statue"
+      },
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 164
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Environmental",
+        "description": "DansTS",
+        "uuid": "d0a870d7-60b8-4563-a3e8-196ec2a90090",
+        "version": [0, 0, 2 ],
+        "min_engine_version": [ 1, 13, 0 ]
+    },
+    "modules": [
+        {
+            "description": " DansTS ",
+            "type": "resources",
+            "uuid": "af580ca2-85da-4e27-a28f-77b271c2609a",
+            "version": [0, 0, 2 ]
+        }
+      ],
+    "dependencies": [
+    {
+      "uuid": "756b12ff-6a74-46e4-bb2d-753743c4fee6",
+      "version": [ 0, 0, 2 ] 
+    } 
+  ]
+}

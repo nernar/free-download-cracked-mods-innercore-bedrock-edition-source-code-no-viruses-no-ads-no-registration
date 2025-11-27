@@ -1,0 +1,9 @@
+[
+	{
+		"symbol": "_ZN6Logger5errorEPKcS1_z",
+		"callback": "Logger::error",
+		"args": ["const char"],
+		"lib": "innercore",
+		"legacyListener": false
+	}
+]

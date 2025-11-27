@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:moth_mother_projectile",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/level_31_40/projectiles/moth_mother"
+      },
+      "geometry": {
+        "default": "geometry.moth_mother_projectile"
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

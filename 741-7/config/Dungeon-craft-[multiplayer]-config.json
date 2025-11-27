@@ -1,0 +1,14 @@
+{
+  "enabled":true,
+  "debug":{
+    "enabled":false,
+    "command":false,
+    "log":false,
+    "numberOfLines":16000,
+    "prohibitedItems":false
+  },
+  "game":{
+    "particles":true,
+    "particlesCount":30
+  }
+}

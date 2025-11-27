@@ -1,0 +1,18 @@
+Translation.addTranslation("Flour", {ru: "Мука"});
+Translation.addTranslation("Bow stick", {ru: ""});
+Translation.addTranslation("Bow rope", {ru: ""});
+Translation.addTranslation("Vegetable fiber", {ru: ""});
+Translation.addTranslation("Remelting mold", {ru: ""});
+Translation.addTranslation("Roasting mold for remelting", {ru: ""});
+Translation.addTranslation("Iron ore", {ru: ""});
+Translation.addTranslation("Molten iron", {ru: ""});
+Translation.addTranslation("Molten iron ingot", {ru: ""});
+Translation.addTranslation("Molten iron nugget", {ru: ""});
+Translation.addTranslation("Iron mail", {ru: ""});
+Translation.addTranslation("Iron blade", {ru: ""});
+Translation.addTranslation("Iron guard", {ru: ""});
+Translation.addTranslation("Iron hilt", {ru: ""});
+Translation.addTranslation("Iron axe head", {ru: ""});
+Translation.addTranslation("Iron hoe head", {ru: ""});
+Translation.addTranslation("Iron pickaxe head", {ru: ""});
+Translation.addTranslation("Iron shovel head", {ru: ""});

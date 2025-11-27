@@ -1,0 +1,10 @@
+{
+  "enabled":true,
+  "Resources":{
+    "GreenLeaf":2,
+    "Cobblestone":1,
+    "IronIngot":1,
+    "GoldIngot":1,
+    "Diamond":1
+  }
+}

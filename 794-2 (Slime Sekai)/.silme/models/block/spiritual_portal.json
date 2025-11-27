@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ttigraas:blocks/spiritual_portal",
+    "up": "ttigraas:blocks/spiritual_portal",
+    "north": "ttigraas:blocks/spiritual_portal",
+    "east": "ttigraas:blocks/spiritual_portal",
+    "south": "ttigraas:blocks/spiritual_portal",
+    "west": "ttigraas:blocks/spiritual_portal",
+    "particle": "ttigraas:blocks/spiritual_portal"
+  }
+}

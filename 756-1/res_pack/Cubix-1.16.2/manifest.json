@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Converted Using Resource Pack Converter!\nCreated by Antti662",
+        "name": "Cubix-1.16.2",
+        "uuid": "8cca38f5-221d-4560-8cf8-bcd31f5bf7c8",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            16,
+            2
+        ]
+    },
+    "modules": [
+        {
+            "description": "Converted Using Resource Pack Converter!\nCreated by Antti662",
+            "type": "resources",
+            "uuid": "e35a7532-ec2d-4b4d-9d97-4923ddd5a647",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

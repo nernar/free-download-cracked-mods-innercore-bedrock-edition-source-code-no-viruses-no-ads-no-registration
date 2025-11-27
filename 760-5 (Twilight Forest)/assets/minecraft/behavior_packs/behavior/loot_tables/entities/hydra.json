@@ -1,0 +1,32 @@
+{
+"pools": [
+{
+"rolls": 1,
+"entries": [
+{
+"type": "item",
+"name": "twilightforest:hydra_chop",
+"functions": [
+{ "function": "set_count", "count": { "min": 0, "max": 25 } },
+{ "function": "looting_enchant", "count": { "min": 0, "max": 35 } }
+]
+}
+]
+},
+/*此处做销毁*/
+{
+"rolls": 1,
+"entries": [
+{
+"type": "item",
+"name": "minecraft:item_fieryblood",
+"functions": [
+{ "function": "set_count", "count": { "min": 0, "max": 6 } },
+{ "function": "looting_enchant", "count": { "min": 0, "max": 10 } }
+]
+}
+]
+}
+/*此处做销毁*/
+]
+}

@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<body> <script>
+ (function () {
+/*
+BUILD INFO:
+  dir: dev
+  target: main.js
+  files: 13
+*/
+
+
+
+// file: registerIDs.js
+
+importLib("core", "*");
+importLib("energylib", "*");
+importLib("ToolType", "*");
+core.item("steelIngot");
+core.item("steelSword");
+core.item("steelPickaxe");
+core.item("steelShovel");
+core.item("steelAxe");
+core.item("steelHoe");
+core.item("steelChestplate");
+core.item("steelHelmet");
+core.item("steelLeggings");
+core.item("steelBoots");
+core.block("steelBlock");
+core.item("uranIngot");
+core.item("uranSword");
+core.item("uranPickaxe");
+core.item("uranShovel");
+core.item("uranAxe");
+core.item("uranHoe");
+core.item("uranChestplate");
+core.item("uranHelmet");
+core.item("uranLeggings");
+core.item("uranBoots");
+core.block("uranBlock");
+core.block("uranOre");
+core.item("swinIngot");
+core.item("swinSword");
+core.item("swinPickaxe");
+core.item("swinShovel");
+core.item("swinAxe");
+core.item("swinHoe");
+core.item("swinChestplate");
+core.item("swinHelmet");
+core.item("swinLeggings");
+core.item("swinBoots");
+core.block("swinBlock");
+core.block("swinOre");
+core.item("sapCrystal");
+core.item("sapSword");
+core.item("sapPickaxe");
+core.item("sapShovel");
+core.item("sapAxe");
+core.item("sapHoe");
+core.block("sapBlock");
+core.item("sapChestplate");
+core.item("sapHelmet");
+core.item("sapLeggings");
+core.item("sapBoots");
+core.block("sapOre");
+core.item("adamantiteIngot");
+core.item("adamantiteSword");
+core.item("adamantitePickaxe");
+core.item("adamantiteShovel");
+core.item("adamantiteAxe");
+core.item("adamantiteHoe");
+core.block("adamantiteOre");
+core.block("adamantiteBlock");
+core.item("steelHelmet");
+core.item("steelChestplate");
+core.item("steelLeggings");
+core.item("steelBoots");
+core.item("swinHelmet");
+core.item("swinChestplate");
+core.item("swinLeggings");
+core.item("swinBoots");
+core.item("uranHelmet");
+core.item("uranChestplate");
+core.item("uranLeggings");
+core.item("uranBoots");
+core.item("sapHelmet");
+core.item("sapChestplate");
+core.item("sapLeggings");
+core.item("sapBoots");
+core.item("adHelmet");
+core.item("adChestplate");
+core.item("adLeggings");
+core.item("adBoots");
+core.item("mufril");
+core.block("mufrilOre");
+core.item("mufrilSword");
+core.item("mufrilPickaxe");
+core.item("mufrilShovel");
+core.item("mufrilAxe");
+core.item("mufrilHoe");
+core.block("mufrilBlock");
+core.item("mufrilHelmet");
+core.item("mufrilChestplate");
+core.item("mufrilLeggings");
+core.item("mufrilBoots");
+core.item("ametistIngot");
+core.item("ametistSword");
+core.item("ametistPickaxe");
+core.item("ametistShovel");
+core.item("ametistAxe");
+core.item("ametistHoe");
+core.block("ametistOre");
+core.block("ametistBlock");
+core.item("ametistHelmet");
+core.item("ametistChestplate");
+core.item("ametistLeggings");
+core.item("ametistBoots");
+
+core.block("ametistOre");
+core.block("ametistBlock");
+	
+Block.createBlock("ametistOre", [
+{name: "ametist ore", texture:[["ametistOre", 0]], inCreative:true}
+]);
+Block.createBlock("ametistBlock", [
+{name: "ametist block", texture:[["ametisBlock", 0]], inCreative: true}
+]);
+	
+core.setOre("ametist", {r:"аметист", e:"аметистовая", m:"аметистовые"}, 6, 600, 4, {rds: 30, rtn: 4, ct: 1}, {drb: 200, eff: 14, ench: 32, damage: 3, lev: 3, lvla: 4, blockDrop: false});
+
+
+
+
+// file: panels.js
+
+//улучшеная: ✔, гибридная: ✔, резонирующая: ✔, индустриальная: ✔
+core.item("solarModule");
+Item.createItem("solarModule", "солнечный эллемент", {name: "module"}, {});
+core.item("advancedCorpuse");
+Item.createItem("advancedCorpuse", "пластина улучшенной панели", {name: "corpyse"});
+core.item("advancedSolarTop");
+Item.createItem("advancedSolarTop", "крыша улучшеной солнечной панели", {name: "top"});
+core.block("advancedSolarPilar");
+Block.createBlock("advancedSolarPilar", [
+{name: "улучшенная солнечная панель", texture: [["solar_side", 0], ["solar_top", 0], ["solar_side", 0], ["solar_side", 0], ["solar_side", 0], ["solar_side", 0]], inCreative: true}
+]);
+
+function addSolarPilar(moduleId, moduleName, moduleTexture, moduleData, corpyseId, corpyseName, corpyseTexture, corpyseData, topId, topName, topTexture, topData, pilarId, pilarName, PTT, PTTD, PTS, PTSD){
+	core.item(moduleId);
+	core.item(corpyseId);
+	core.item(topId);
+	core.block(pilarId);
+	Item.createItem(moduleId, moduleName, {name: moduleTexture, data: moduleData});
+	Item.createItem(corpyseId, corpyseName, {name: corpyseTexture, data: corpyseData});
+	Item.createItem(topId, topName, {name: topTexture, data: topData});
+	Block.createBlock(pilarId, [
+	{name: pilarName, texture: [[PTS, PTSD], [PTT, PTTD], [PTS, PTSD], [PTS, PTSD], [PTS, PTSD], [PTS, PTSD]], inCreative: true}
+	]);
+}
+
+addSolarPilar("GybridModule", "модуль гибридной солнечной панели", "module", 1, "GybridCorpyse", "корпус гибдидной солнечной панели", "corpyse", 1, "Gtop", "гибридная солнечная пластина","top",1, "gybridPilar", "гибриданая солнечная панель", "top", 1, "gybridSide", 0);
+addSolarPilar("RezonModule", "модуль резонирующей панели", "module", 2, "rezonCorpyse", "корпус резонирующей панели", "corpyse", 2, "Rtop", "резонирующая солнечная пластина","top", 2, "rezonPilar", "резонирующая солнечная панель", "top", 2, "rezonSide", 0);
+addSolarPilar("industrialModule", "модуль индустриальной панели", "module", 3, "indCorpyse", "корпус индустриальной панели", "corpyse", 3, "Itop", "индустриальная солнечная пластина","top", 3, "indPilar", "индустриальная солнечная панель", "top", 3, "indSide", 0);
+
+Callback.addCallback("LevelLoaded", function(){
+	Recipes.addShaped({id: ItemID.solarModule, count: 1, data: 0}, [
+	"lll",
+	"prp",
+	"ppp"
+	], ["l", 351, 4, "p", ItemID.advancedCorpuse, 0, "r", 331, 0]);
+	Recipes.addShaped({id: ItemID.advancedCorpuse, count: 1, data: 0}, [
+	"sss",
+	"sss",
+	"sss"
+	], ["s", ItemID.steelIngot, 0]);
+	Recipes.addShaped({id: ItemID.advancedSolarTop, count: 1, data: 0}, [
+	"ppp",
+	"pcp",
+	"ppp"
+	], ["p", ItemID.solarModule, 0, "c", ItemID.advancedCorpuse, 0]);
+	Recipes.addShaped({id: BlockID.advancedSolarPilar, count: 1, data: 0}, [
+	"dtd",
+	"ppp",
+	"ppp"
+	], ["d", 331, 0, "t", ItemID.advancedSolarTop, 0, "p", ItemID.advancedCorpuse, 0]);
+	Recipes.addShaped({id: ItemID.GybridModule, count: 1, data: 0}, [
+	"uuu",
+	"prp",
+	"ppp"
+	], ["u", ItemID.uranIngot, 0, "r", 331, 0, "p", ItemID.GybridCorpyse, 0]);
+	Recipes.addShaped({id: ItemID.GybridCorpyse, count: 1, data: 0}, [
+	"uuu",
+	"uuu",
+	"uuu"
+	], ["u", ItemID.uranIngot, 0]);
+	Recipes.addShaped({id: ItemID.Gtop, count: 1, data: 0}, [
+	"mmm",
+	"mcm",
+	"mmm"
+	], ["m", ItemID.GybridCorpyse, 0, "c", ItemID.GybridCorpyse, 0]);
+	Recipes.addShaped({id: BlockID.gybridPilar, count: 1, data: 0}, [
+	"rtr",
+	"ccc",
+	"ccc"
+	], ["r", 331, 0, "t", ItemID.top, 1, "c", ItemID.GybridCorpyse, 0]);
+	Recipes.addShaped({id: ItemID.RezonModule, count: 1, data: 0}, [
+	"ooo",
+	"crc",
+	"ccc"
+	], ["o", 49, 0, "с", ItemID.rezonCorpyse, 0, "r", 331, 0]);
+	Recipes.addShaped({id: ItemID.rezonCorpyse, count: 1, data: 0}, [
+	"ooo",
+	"oyo",
+	"ooo"
+	], ["o", 49, 0, "y", ItemID.uranIngot, 0]);
+	Recipes.addShaped({id: ItemID.Rtop, count: 1, data: 0}, [
+	"mmm",
+	"crc",
+	"ccc"
+	], ["m", ItemID.RezonModule, 0, "c", ItemID.rezonCorpyse, 0, "r", 331, 0]);
+	Recipes.addShaped({id: BlockID.rezonPilar, count: 1, data: 0}, [
+	"rtr",
+	"ccc",
+	"ccc"
+	], ["r", 331, 0, "t", ItemID.top, 2, "c", ItemID.rezonCorpyse, 0]);
+	Recipes.addShaped({id: ItemID.industrialModule, count: 1, data: 0}, [
+	"ccc",
+	"prp",
+	"ppp"
+	], ["p", ItemID.indCorpyse, 0, "r", 331, 0, "c", 263, 0]);
+	Recipes.addShaped({id: ItemID.indCorpyse, count: 1, data: 0}, [
+	"sss",
+	"iii",
+	"www",
+	], ["s", ItemID.steelIngot, 0, "i", 265, 0, "w", ItemID.swinIngot, 0]);
+	Recipes.addShaped({id: ItemID.Itop, count: 1, data: 0}, [
+	"mmm",
+	"ccc",
+	"ccc"
+	], ["m", ItemID.indModule, 0, "c", ItemID.indCoropyse, 0]);
+	Recipes.addShaped({id: BlockID.indPilar, count: 1, data: 0}, [
+	"rtr",
+	"ccc",
+	"ccc"
+	], ["c", ItemID.indCoropyse, 0, "r", 331, 0, "t", ItemID.top, 3]);
+	
+});
+
+
+
+
+// file: items&blocks.js
+
+Item.createItem("steelIngot", "стальной слиток", {name: "steelIngot", data: 0}, {stack: 1});
+Item.createItem("steelSword", "стальной меч", {name: "steelSword", data: 0}, {stack: 1});
+Item.createItem("steelPickaxe", "стальная кирка", {name: "steelPickaxe", data: 0}, {stack: 1});
+Item.createItem("steelShovel", "стальная лопата", {name: "steelShovel", data: 0}, {stack: 1});
+Item.createItem("steelAxe", "стальной топор", {name: "steelAxe", data: 0}, {stack: 1});
+Item.createItem("steelHoe", "стальная мотыга", {name: "steelHoe", data: 0}, {stack: 1});
+/*Block.createBlock("steelBlock", [
+{name: "стальной блок", textures: [["steelBlock", 0]], inCreative: true}
+]);*/
+Item.createItem("swinIngot", "свинцовый слиток", {name: "swinIngot", data: 0});
+Item.createItem("swinSword", "свинцовый меч", {name: "swinSword", data: 0}, {stack: 1});
+Item.createItem("swinPickaxe", "свинцовая кирка", {name: "swinPickaxe", data: 0}, {stack: 1});
+Item.createItem("swinShovel", "свинцовая лопата", {name: "swinShovel", data: 0}, {stack: 1});
+Item.createItem("swinAxe", "свинцовый топор", {name: "swinAxe", data: 0}, {stack: 1});
+Item.createItem("swinHoe", "свинцовая мотыга", {name: "swinHoe", data: 0}, {stack: 1});
+Block.createBlock("swinBlock", [
+{name: "свинцовая руда", textures: [["swin_ore", 0]], inCreative: true}
+]);
+Block.createBlock("swinOre", [
+{name: "свинцовый блок", textures: [["swin_block", 0]], inCreative: true}
+]);
+Item.createItem("uranIngot", "урановый слиток", {name: "uranIngot", data: 0});
+Item.createItem("uranSword", "урановый меч", {name: "uranSword", data: 0}, {stack: 1});
+Item.createItem("uranPickaxe", "урановая кирка", {name: "uranPickaxe", data: 0}, {stack: 1});
+Item.createItem("uranShovel", "урановая лопата", {name: "uranShovel", data: 0}, {stack: 1});
+Item.createItem("uranAxe", "урановый топо", {name: "uranAxe", data: 0}, {stack: 1});
+Item.createItem("uranHoe", "урановая мотыга", {name: "uranHoe", data: 0}, {stack: 1});
+Block.createBlock("uranOre", [
+{name: "урановая руда", textures: [["uran_ore", 0]], inCreative: true}
+]);
+Block.createBlock("uranBlock", [
+{name: "урановый блок", textures: [["uran_block", 0]], inCreative: true}
+]);
+Item.createItem("sapCrystal", "сапфир", {name: "sapCrystal", data: 0});
+Item.createItem("sapSword", "сапфировый меч", {name: "sapSword", data: 0}, {stack: 1});
+Item.createItem("sapPickaxe", "сапфировая кирка", {name: "sapPickaxe", data: 0}, {stack: 1});
+Item.createItem("sapShovel", "сапфировая лопата", {name: "sapShovel", data: 0}, {stack: 1});
+Item.createItem("sapAxe", "сапфировый топор", {name: "sapAxe", data: 0}, {stack: 1});
+Item.createItem("sapHoe", "сапфировая мотыга", {name: "sapHoe", data: 0}, {stack: 1});
+Block.createBlock("sapOre", [
+{name: "сапфировая руда", textures: [["sap_ore", 0]], inCreative: true}
+]);
+Block.createBlock("sapBlock", [
+{name: "сапфировый блок", textures: [["sap_block", 0]], inCreative: true},
+]);
+Item.createItem("adamantiteIngot", "адамантитовый слиток", {name: "adamantiteIngot", data: 0}, {isTech: false});
+Item.createItem("adamantiteSword", "адамантитовый меч", {name: "adamantiteSword", data: 0}, {stack: 1, isTech: false});
+Item.createItem("adamantitePickaxe", "адамантитовая кирка", {name: "adamantitePickaxe", data: 0}, {stack: 1, isTech: false});
+Item.createItem("adamantiteShovel", "адамантитовая лопата", {name: "adamantiteShovel", data: 0}, {stack: 1, isTech: false});
+Item.createItem("adamantiteAxe", "адаманитовый топор", {name: "adamantiteAxe", data: 0}, {stack: 1, isTech: false});
+Item.createItem("adamantiteHoe", "адамантитовая мотыга", {name: "adamantiteHoe", data: 0}, {stack: 1, isTech: false});
+Block.createBlock("adamantiteOre", [
+{name: "адамантитовая руда", textures:[["adamantiteOre", 0]], inCreative: true}
+]);
+Block.createBlock("adamantiteBlock", [
+{name: "адамантитовый блок", textures: [["adamantiteBlock", 0]], inCreative: true}
+]);
+Item.createItem("mufril", "мифрил", {name: "mufril"});
+Item.createItem("mufrilSword", "мифриловый меч", {name: "mufrilSword"}, {stack: 1});
+Item.createItem("mufrilPickaxe", "мифриловая кирка", {name: "mufrilPickaxe"}, {stack: 1});
+Item.createItem("mufrilShovel", "мифриловая лопата", {name: "mufrilShovel"}, {stack: 1});
+Item.createItem("mufrilAxe", "мифриловый топор", {name: "mufrilAxe"}, {stack: 1});
+Item.createItem("mufrilHoe", "мифриловая мотыга", {name: "mufrilHoe"}, {stack: 1});
+Block.createBlock("mufrilOre", [
+{name: "мифриловая руда", textures:[["mufril", 0]], inCreative: true}
+]);
+Block.createBlock("mufrilBlock", [
+{name: "мифриловый блок", textures: [["mufril", 1]], inCreative: true}
+]);
+
+
+
+
+// file: generation.js
+
+Callback.addCallback("GenerateChunkUnderground", function(chunkX, chunkZ){
+ for (var i = 0; i < 10; i++){
+  var coords = GenerationUtils.randomCoords(chunkX, chunkZ, 10, 64);
+  if (Math.random() < 1/21) GenerationUtils.genMinable(coords.x, coords.y, coords.z, {
+   id: BlockID.swinOre,
+   data: 0,
+   size: 4,
+   ratio: .4,
+   checkerTile: 1,
+   checkerMode: true
+  });
+ }
+});
+
+Callback.addCallback("GenerateChunkUnderground", function(chunkX, chunkZ){
+ for (var i = 0; i < 20; i++){
+  var coords = GenerationUtils.randomCoords(chunkX, chunkZ, 10, 64);
+  if (Math.random() < 1/22) GenerationUtils.genMinable(coords.x, coords.y, coords.z, {
+   id: BlockID.uranOre,
+   data: 0,
+   size: 4,
+   ratio: .4,
+   checkerTile: 1,
+   checkerMode: true
+  });
+ }
+});
+
+Callback.addCallback("GenerateChunkUnderground", function(chunkX, chunkZ){
+ for (var i = 0; i < 30; i++){
+  var coords = GenerationUtils.randomCoords(chunkX, chunkZ, 10, 64);
+  if (Math.random() < 1/40) GenerationUtils.genMinable(coords.x, coords.y, coords.z, {
+   id: BlockID.sapOre,
+   data: 0,
+   size: 4,
+   ratio: .4,
+   checkerTile: 1,
+   checkerMode: true
+  });
+ }
+});
+
+Callback.addCallback("GenerateChunkUnderground", function(chunkX, chunkZ){
+	for(var i = 0; i < 20; i++){
+		var coords = GenerationUtils.randomCoords(chunkX, chunkZ, 10, 64);
+		if(Math.random() > 1/22) GenerationUtils.genMinable(coords.x, coords.y, coords.z, {
+			id: BlockID.adamantiteOre,
+			data: 0,
+			size: 1,
+			ratio: .4,
+			checkerTile: 1,
+			checkerModel: true
+		});
+	}
+});
+
+Callback.addCallback("GenerateChunkUnderground", function(chunkX, chunkZ){
+	for(var i = 0; i < 30; i++){
+		var coords = GenerationUtils.randomCoords(chunkX, chunkZ, 10, 64);
+		if(Math.random() > 1/31) GenerationUtils.genMinable(coords.x, coords.y, coords.z, {
+			id: BlockID.mufrilOre,
+			data: 0,
+			size: 3,
+			ratio: .4,
+			checkerTile: 1,
+			checkerModel: false
+		});
+	}
+});
+
+
+
+
+// file: tools.js
+
+
+ToolAPI.addToolMaterial("steel", {durability: 220, level: 3, efficiency: 3, damage: 2, enchmentability: 9});
+ToolAPI.setTool(ItemID.steelSword, "steel", ToolType.sword);
+ToolAPI.setTool(ItemID.steelPickaxe, "steel", ToolType.pickaxe);
+ToolAPI.setTool(ItemID.steelShovel, "steel", ToolType.shovel);
+ToolAPI.setTool(ItemID.steelAxe, "steel", ToolType.axe);
+ToolAPI.setTool(ItemID.steelHoe, "steel", ToolType.hoe);
+ToolAPI.addToolMaterial("uran", {durability: 400, level: 5, efficiency: 6, damage: 3, enchantability: 18});
+ToolAPI.setTool(ItemID.uranSword, "uran", ToolType.sword);
+ToolAPI.setTool(ItemID.uranPickaxe, "uran", ToolType.pickaxe);
+ToolAPI.setTool(ItemID.uranShovel, "uran", ToolType.shovel);
+ToolAPI.setTool(ItemID.uranAxe, "uran", ToolType.axe);
+ToolAPI.setTool(ItemID.uranHoe, "uran", ToolType.hoe);
+ToolAPI.addToolMaterial("swin", {durability: 600, level: 3, efficiency: 4, damage: 4, enchantability: 26});
+ToolAPI.setTool(ItemID.swinSword, "swin", ToolType.sword);
+ToolAPI.setTool(ItemID.swinPickaxe, "swin", ToolType.pickaxe);
+ToolAPI.setTool(ItemID.swinShovel, "swin", ToolType.shovel);
+ToolAPI.setTool(ItemID.swinAxe, "swin", ToolType.axe);
+ToolAPI.setTool(ItemID.swinHoe, "swin", ToolType.hoe);
+ToolAPI.addToolMaterial("sap", {durability: 666, level: 5, efficiency: 8, damage: 6, enchamentabilily: 32});
+ToolAPI.setTool(ItemID.sapSword, "sap", ToolType.sword);
+ToolAPI.setTool(ItemID.sapPickaxe, "sap", ToolType.pickaxe);
+ToolAPI.setTool(ItemID.sapShovel, "sap", ToolType.shovel);
+ToolAPI.setTool(ItemID.sapAxe, "sap", ToolType.axe);
+ToolAPI.setTool(ItemID.sapHoe, "sap", ToolType.hoe);
+ToolAPI.addToolMaterial("adamant", {durability: 1000, level: 5, efficiency: 9, damage: 4, enchamentability: 20});
+ToolAPI.setTool(ItemID.adamantiteSword, "adamant", ToolType.sword);
+ToolAPI.setTool(ItemID.adamantitePickaxe, "adamant", ToolType.pickaxe);
+ToolAPI.setTool(ItemID.adamantiteShovel, "adamant", ToolType.shovel);
+ToolAPI.setTool(ItemID.adamantiteAxe, "adamant", ToolType.axe);
+ToolAPI.setTool(ItemID.adamantiteHoe, "adamant", ToolType.hoe);
+ToolAPI.addToolMaterial("mufril", {durability: 400, level: 3, effeciency: 11, damage: 2, enchamentability: 9});
+ToolAPI.setTool(ItemID.mufrilSword, "mufril", ToolType.sword);
+ToolAPI.setTool(ItemID.mufrilPickaxe, "mufril", ToolType.pickaxe);
+ToolAPI.setTool(ItemID.mufrilShovel, "mufril", ToolType.shovel);
+ToolAPI.setTool(ItemID.mufrilAxe, "mufril", ToolType.axe);
+ToolAPI.setTool(ItemID.mufrilHoe, "mufril", ToolType.hoe);
+
+ToolAPI.registerBlockMaterial(BlockID.steelBlock, "stone", 2, true);
+ToolAPI.registerBlockMaterial(BlockID.uranOre, "stone", 3, true);
+ToolAPI.registerBlockMaterial(BlockID.uranBlock, "stone", 3, true);
+ToolAPI.registerBlockMaterial(BlockID.swinOre, "stone", 2, true);
+ToolAPI.registerBlockMaterial(BlockID.swinBlock, "stone", 2, true);
+ToolAPI.registerBlockMaterial(BlockID.sapOre, "stone", 4, true);
+ToolAPI.registerBlockMaterial(BlockID.sapBlock, "stone", 4, true);
+ToolAPI.registerBlockMaterial(BlockID.adamantiteOre, "stone", 4, true);
+ToolAPI.registerBlockMaterial(BlockID.adamantiteBlock, "stone", 4, true);
+ToolAPI.registerBlockMaterial(BlockID.mufrilOre, "stone", 3, true);
+ToolAPI.registerBlockMaterial(BlockID.mufrilBlock, "stone", 3, true);
+
+Block.setDestroyLevel("steelBlock", 2);
+Block.setDestroyLevel("uranOre", 3);
+Block.setDestroyLevel("uranBlock", 3);
+Block.setDestroyLevel("swinOre", 2);
+Block.setDestroyLevel("swinBlock", 2);
+Block.setDestroyLevel("sapOre", 4);
+Block.setDestroyLevel("sapBlock", 5);
+Block.setDestroyLevel("adamantiteOre", 5);
+Block.setDestroyLevel("adamantiteBlock", 4);
+
+
+
+
+// file: recipes.js
+
+Callback.addCallback("PostLoaded", function(){
+	Recipes.addShaped({id: ItemID.steelSword, count: 1, data: 0}, [
+	" x ",
+	" x ",
+	" s "
+	], ["x", ItemID.steelIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.steelPickaxe, count:1, data: 0}, [
+	"xxx",
+	" s ",
+	" s "
+	], ["x", ItemID.steelIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.steelShovel, count: 1, data: 0}, [
+	" x ",
+	" s ",
+	" s "
+	], ["x", ItemID.steelIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.steelAxe, count: 1, data: 0}, [
+	"xx ",
+	"xs ",
+	" s "
+	], ["x", ItemID.steelIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.steelHoe, count: 1, data: 0}, [
+	"xx ",
+	" s ",
+	" s "
+	], ["x", ItemID.steelIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.steelChestplate, count: 1, data: 0}, [
+	"x x",
+	"xxx",
+	"xxx"
+	], ["x", ItemID.steelIngot, 0]);
+	Recipes.addShaped({id: ItemID.steelHelmet, count: 1, data: 0}, [
+	"xxx",
+	"x x",
+	"   ",
+	], ["x", ItemID.steelIngot, 0]);
+	Recipes.addShaped({id:ItemID.steelLeggings, count: 1, data: 0}, [
+	"xxx",
+	"x x",
+	"x x"
+	], ["x", ItemID.steelIngot, 0]);
+	Recipes.addShaped({id: ItemID.steelBoots, count: 1, data: 0}, [
+	"   ",
+	"x x",
+	"x x"
+	], ["x", ItemID.steelIngot, 0]);
+	Recipes.addFurnace(265, ItemID.steelIngot, 0);
+	Recipes.addShaped({id: BlockID.steelBlock, count: 1, data: 0}, [
+	"xxx",
+	"xxx",
+	"xxx"
+	], ["x", ItemID.steelIngot, 0]);
+	Recipes.addFurnace(BlockID.uranOre, ItemID.uranIngot, 0);
+	Recipes.addShaped({id: ItemID.uranSword, count: 1, data: 0}, [
+	" x ",
+	" x ",
+	" s "
+	], ["x", ItemID.uranIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.uranPickaxe, count: 1, data: 0}, [
+	"xxx",
+	" s ",
+	" s "
+	], ["x", ItemID.uranIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.uranShovel, count: 1, data: 0}, [
+ " x ",
+ " s ",
+ " s "
+	], ["x", ItemID.uranIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.uranAxe, count: 1, data: 0}, [
+	"xx ",
+	"xs ",
+	" s ",
+	], ["x", ItemID.uranIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.uranHoe, count: 1, data: 0}, [
+	"xx ",
+	" s ",
+	" s "
+	], ["x", ItemID.uranIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.uranChestplate, count: 1, data: 0}, [
+	"x x",
+	"xxx",
+	"xxx"
+	], ["x", ItemID.uranIngot, 0]);
+	Recipes.addShaped({id: ItemID.uranHelmet, count: 1, data: 0}, [
+	"xxx",
+	"x x",
+	"  "
+	], ["x", ItemID.uranIngot, 0]);
+	Recipes.addShaped({id: ItemID.uranLeggings, count: 1, data: 0}, [
+	"xxx",
+	"x x",
+	"x x"
+	], ["x", ItemID.uranIngot, 0]);
+	Recipes.addShaped({id: ItemID.uranBoots, count: 1, data: 0}, [
+	"   ",
+	"x x",
+	"x x"
+	], ["x", ItemID.uranIngot, 0]);
+	Recipes.addShaped({id: BlockID.uranBlock, count: 1, data: 0}, [
+	"xxx",
+	"xxx",
+	"xxx"
+	], ["x", ItemID.uranIngot, 0]);
+	Recipes.addShaped({id: ItemID.uranIngot, count: 9, data: 0}, [
+	"   ",
+	" x ",
+	"   "
+	], ["x", BlockID.uranBlock, 0]);
+	Recipes.addFurnace(BlockID.swinBlock, ItemID.swinIngot, 0);
+	Recipes.addShaped({id: ItemID.swinSword, count: 1, data: 0}, [
+	" x ",
+	" x ",
+	" s "
+	], ["x", ItemID.swinIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.swinPickaxe, count: 1, data: 0}, [
+	"xxx",
+	" s ",
+	" s "
+	], ["x", ItemID.swinIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.swinAxe, count: 1, data: 0}, [
+	"xx ",
+	" s ",
+	" s "
+	], ["x", ItemID.swinIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.swinShovel, count: 1, data: 0}, [
+	" x ",
+	" s ",
+	" s "
+	], ["x", ItemID.swinIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.swinChestplate, count: 1, data: 0}, [
+	"x x",
+	"xxx",
+	"xxx"
+	], ["x", ItemID.swinIngot, 0]);
+	Recipes.addShaped({id: ItemID.swinHelmet, count: 1, data: 0}, [
+	"xxx",
+	"x x",
+	"   "
+	], ["x", ItemID.swinIngot, 0]);
+	Recipes.addShaped({id: ItemID.swinLeggings, count: 1, data: 0}, [
+	"xxx",
+	"x x",
+	"x x"
+	], ["x", ItemID.swinIngot, 0]);
+	Recipes.addShaped({id: ItemID.swinBoots, count: 1, data: 0}, [
+	"  ",
+	"x x",
+	"x x"
+	], ["x", ItemID.swinIngot, 0]);
+	Recipes.addShaped({id: ItemID.sapSword, count: 1, data: 0}, [
+	" x ",
+	" x ",
+	" s "
+	], ["x", ItemID.sapCrystal, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.sapPickaxe, count: 1, data: 0}, [
+	"xxx",
+	" s ",
+	" s "
+	], ["x", ItemID.sapCrystal, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.sapShovel, count: 1, data: 0}, [
+	" x ",
+	" s ",
+	" s "
+	], ["x", ItemID.sapCrystal, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.sapAxe, count: 1, data: 0}, [
+	"xx ",
+	"xs ",
+	" s "
+	], ["x", ItemID.sapCrystal, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.sapHoe, count: 1, data: 0}, [
+	"xx ",
+	" s ",
+	" s "
+	], ["x", ItemID.sapCrystal, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.sapChestplate, count: 1, data: 0}, [
+	"x x",
+	"xxx",
+	"xxx"
+	], ["x", ItemID.sapCrystal, 0]);
+	Recipes.addShaped({id: ItemID.sapHelmet, count: 1, data: 0}, [
+	"xxx",
+	"x x",
+	"   "
+	], ["x", ItemID.sapCrystal, 0]);
+	Recipes.addShaped({id: ItemID.sapLeggings, count: 1, data: 0}, [
+	"xxx",
+	"x x",
+	"x x"
+	], ["x", ItemID.sapCrystal, 0]);
+	Recipes.addShaped({id: ItemID.sapBoots, count: 1, data: 0}, [
+	"   ",
+	"x x",
+	"x x"
+	], ["x", ItemID.sapCrystal, 0]);
+	Recipes.addFurnace(BlockID.adamantiteOre, ItemID.adamantiteIngot, 0);
+	Recipes.addShaped({id: ItemID.adamantiteSword, count: 1, data: 0}, [
+	" x ",
+	" x ",
+	" s "
+	], ["x", ItemID.adamantiteIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.adamantitePickaxe, count: 1, data: 0}, [
+	"xxx",
+	" s ",
+	" s "
+	], ["x", ItemID.adamantiteIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.adamantiteShovel, count: 1, data: 0}, [
+	" x ",
+	" s ",
+	" s "
+	], ["x", ItemID.adamantiteIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.adamantiteHoe, count: 1, data: 0}, [
+	" xx",
+	" s ",
+	" s "
+	], ["x", ItemID.adamantiteIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: BlockID.sapBlock, count: 1, data: 0}, [
+	"xxx",
+	"xxx",
+	"xxx"
+	], ["x", ItemID.sapCrystal, 0]);
+	Recipes.addShaped({id: ItemID.adamantiteAxe, count: 1, data: 0}, [
+	"xx ",
+	"xs ",
+	" s "
+	], ["x", ItemID.adamantiteIngot, 0, "s", 280, 0]);
+	Recipes.addShaped({id: BlockID.adamantiteBlock, count: 1, data: 0}, [
+	"xxx",
+	"xxx",
+	"xxx"
+	], ["x", ItemID.adamantiteIngot, 0]);
+	Recipes.addShaped({id: ItemID.steelIngot, count: 9, data: 0}, [
+	"x ",
+	"   ",
+	"   "
+	], ["x", BlockID.steelBlock, 0]);
+	Recipes.addShaped({id: ItemID.swinIngot, count: 9, data: 0}, [
+	"x  ",
+	"   ",
+	"   "
+	], ["x", BlockID.swinBlock, 0]);
+	Recipes.addShaped({id: ItemID.uranIngot, count: 9, data: 0}, [
+	"x  ",
+	"   ",
+	"   "
+	], ["x", BlockID.uranBlock, 0]);
+	Recipes.addShaped({id: ItemID.sapCrystal, count: 9, data: 0}, [
+	"x  ",
+	"   ",
+	"   "
+	], ["x", BlockID.sapBlock, 0]);
+	Recipes.addShaped({id: ItemID.mufrilSword, count: 1, data: 0}, [
+	" x ",
+	" x ",
+	" s "
+	], ["x", ItemID.mufril, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.mufrilPickaxe, count: 1, data: 0}, [
+	"xxx",
+	" s ",
+	" s "
+	], ["x", ItemID.mufril, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.mufrilShovel, count: 1, data: 0}, [
+	" x ",
+	" s ",
+	" s "
+	], ["x", ItemID.mufril, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.mufrilAxe, count: 1, data: 0}, [
+	"xx ",
+	"xs ",
+	" s "
+	], ["x", ItemID.mufril, 0, "s", 280, 0]);
+	Recipes.addShaped({id: ItemID.mufrilHoe, count: 1, data: 0}, [
+	"xx ",
+	" s ",
+	" s "
+	], ["x", ItemID.mufril, 0, "s", 280, 0]);
+	Recipes.addShaped({id: BlockID.mufrilBlock, count: 1, data: 0}, [
+	"xxx",
+	"xxx",
+	"xxx"
+	], ["x", ItemID.mufril, 0]);
+	Recipes.addShaped({id: ItemID.mufril, count: 9, data: 0}, [
+	"x  ",
+	"   ",
+	"   "
+	], ["x", BlockID.mufrilBlock, 0]);
+	Recipes.addShaped({id: ItemID.mufrilHelmet, count: 1, data: 0}, [
+	"xxx",
+	"x x",
+	"   "
+	], ["x", ItemID.mufril, 0]);
+	Recipes.addShaped({id: ItemID.mufrilChestplate, count: 1, data: 0}, [
+	"x x",
+	"xxx",
+	"xxx"
+	], ["x", ItemID.mufril, 0]);
+	Recipes.addShaped({id: ItemID.mufrilLeggings, count: 1, data: 0}, [
+	"xxx",
+	"x x",
+	"x x"
+	], ["x", ItemID.mufril, 0]);
+	Recipes.addShaped({id: ItemID.mufrilBoots, count: 1, data: 0}, [
+	"   ",
+	"x x",
+	"x x"
+	], ["x", ItemID.mufril, 0]);
+	Recipes.addFurnace(BlockID.ametistOre, ItemID.ametistIngot, 0);
+});
+
+
+
+
+// file: tick.js
+
+Block.setDestroyTime("steelBlock", 10.0);
+Block.setDestroyTime("uranOre", 10.0);
+Block.setDestroyTime("uranBlock", 11.0);
+Block.setDestroyTime("swinOre", 10.0);
+Block.setDestroyTime("swinBlock", 11.0);
+Block.setDestroyTime("sapOre", 20.0);
+Block.setDestroyTime("sapBlock", 20.0);
+Block.setDestroyTime("adamantiteOre", 20.0);
+Block.setDestroyTime("mufrilOre", 10.0);
+Block.setDestroyTime("mufrilBlock", 30.0);
+
+
+
+
+
+// file: dropFunction.js
+
+var TYPE_PICKAXES = ["ItemID.sapPickaxe", "ItemID.swinPickaxe", "ItemID.steelPickaxe", "ItemID.uranPickaxe", 257, 278];
+var stone = Block.createSpecialType({
+	base:1,
+	solid:true
+}, "stone");
+Block.registerDropFunction("steelBlock", function(cords, id, data, level){
+if(level > 1){
+	return [[BlockID.steelBlock, 1, 0]];
+}
+	return [];
+}, stone);
+Block.registerDropFunction("swinOre", function(cords, id, data, level){
+	if(level > 1){
+		return [[BlockID.swinOre, 1, 0]];
+	}
+		return [];
+}, stone);
+Block.registerDropFunction("swinBlock", function(cords, id, data, level){
+	if(level > 1){
+		return [[BlockID.swinBlock, 1, 0]];
+	}
+		return [];
+}, stone);
+Block.registerDropFunction("uranOre", function(cords, id, data, level){
+	if(level > 2){
+		return [[BlockID.uranOre, 1, 0]];
+	}
+		return [];
+}, stone);
+Block.registerDropFunction("uranBlock", function(cordsшо, id, data, level){
+	if(level > 2){
+		return [[BlockID.uranBlock, 1, 0]];
+	}
+		return [];
+}, stone);
+Block.registerDropFunction("sapOre", function(cords, id, data, level){
+	if(level > 3){
+	 return [[ItemID.sapCrystal, 2, 0]];
+	}
+		return [];
+}, stone);
+Block.registerDropFunction("sapBlock", function(cords, id, data, level){
+	if(level > 3){
+		return [[BlockID.sapBlock, 1, 0]];
+	}
+		return [];
+}, stone);
+Block.registerDropFunction("adamantiteOre", function(coords, id, data, level){
+	if(level > 3){
+		return [[id, 1, 0]];
+	}
+	return [];
+}, stone);
+Block.registerDropFunction("adamantiteBlock", function(coords, id, data, level){
+	if(level > 3){
+		return [[id, 1, 0]];
+	}
+	return [];
+});
+Block.registerDropFunction("mufrilOre", function(coords, id, data, level){
+	if(level > 2){
+		return [[ItemID.mufril, 1, 0]];
+	}
+	return [];
+});
+Block.registerDropFunction("mufrilBlock", function(coords, id, data, level){
+	if(level > 2){
+		return [[id, 1, 0]];
+	}
+	return [];
+});
+
+
+
+
+// file: window.js
+
+var GUI_BAR_STANDART_SCALE = 5.2;
+var window = new UI.StandartWindow({
+  standart: {
+    header: {text: {text: "хранилище улучшенной солнечной панели"}},
+    inventory: {standart: true},
+    background: {standart: true}
+  },
+ drawing: [
+ {type: "bitmap", x: 530, y: 300, bitmap: "background", scale: GUI_BAR_STANDART_SCALE},
+],
+elements: {
+	"Myscale":{x: 560 + GUI_BAR_STANDART_SCALE * 4, y: 300, direction: 0, value: 0.5, bitmap: "scale", scale: GUI_BAR_STANDART_SCALE},
+	"text1":{type: "text", x: 642, y: 142, width: 350, height: 70, text: "0/"},
+	"text2":{type: "text", x: 642, y: 192, width: 350, height: 70, text: "30000"}
+}
+});
+
+
+
+
+// file: energy.js
+
+//api//////////////////////////////////
+var EU = EnergyTypeRegistry.assureEnergyType("Eu", 1);
+var MachineRegistry = {
+	machineIDs: {},
+
+	isMachine: function(id){
+		return this.machineIDs[id];
+	},
+
+	registerPrototype: function(id, Prototype){
+		// register render
+		ICRender.getGroup("ic-wire").add(id, -1);
+		// register ID
+		this.machineIDs[id] = true;
+		// setup energy value
+		if (Prototype.defaultValues){
+			Prototype.defaultValues.energy = 0;
+		}
+		else{
+			Prototype.defaultValues = {
+				energy: 0
+			};
+		}
+		// copy functions
+		if(!Prototype.getEnergyStorage){
+			Prototype.getEnergyStorage = function(){
+				return 0;
+			};
+		}
+		ToolAPI.registerBlockMaterial(id, "stone");
+		Block.setDestroyTime(id, 3);
+		TileEntity.registerPrototype(id, Prototype);
+		EnergyTileRegistry.addEnergyTypeForId(id, EU);
+	},
+
+	// standart functions
+	getMachineDrop: function(coords, blockID, level, standartDrop){
+		var item = Player.getCarriedItem();
+		if(item.id==ItemID.wrench){
+			ToolAPI.breakCarriedTool(10);
+			World.setBlock(coords.x, coords.y, coords.z, 0);
+			if(Math.random() < 0.8){return [[blockID, 1, 0]];}
+			return [[standartDrop || blockID, 1, 0]];
+		}
+		if(item.id==ItemID.electricWrench && item.data + 500 <= Item.getMaxDamage(item.id)){
+			Player.setCarriedItem(item.id, 1, item.data + 500);
+			World.setBlock(coords.x, coords.y, coords.z, 0);
+			return [[blockID, 1, 0]];
+		}
+		if(level > 0){
+			return [[standartDrop || blockID, 1, 0]];
+		}
+		return [];
+	},
+	
+	basicEnergyReceiveFunc: function(type, src){
+		var energyNeed = this.getEnergyStorage() - this.data.energy;
+		this.data.energy += src.getAll(energyNeed);
+	}
+};
+
+
+function setupWireRender(id, width, groupName, preventSelfAdd) {
+    var render = new ICRender.Model();
+    BlockRenderer.setStaticICRender(id, 0, render);
+   
+    var boxes = [
+        {side: [1, 0, 0], box: [0.5 + width / 2, 0.5 - width / 2, 0.5 - width / 2, 1, 0.5 + width / 2, 0.5 + width / 2]},
+        {side: [-1, 0, 0], box: [0, 0.5 - width / 2, 0.5 - width / 2, 0.5 - width / 2, 0.5 + width / 2, 0.5 + width / 2]},
+        {side: [0, 1, 0], box: [0.5 - width / 2, 0.5 + width / 2, 0.5 - width / 2, 0.5 + width / 2, 1, 0.5 + width / 2]},
+        {side: [0, -1, 0], box: [0.5 - width / 2, 0, 0.5 - width / 2, 0.5 + width / 2, 0.5 - width / 2, 0.5 + width / 2]},
+        {side: [0, 0, 1], box: [0.5 - width / 2, 0.5 - width / 2, 0.5 + width / 2, 0.5 + width / 2, 0.5 + width / 2, 1]},
+        {side: [0, 0, -1], box: [0.5 - width / 2, 0.5 - width / 2, 0, 0.5 + width / 2, 0.5 + width / 2, 0.5 - width / 2]},
+    ];
+   
+    var group = ICRender.getGroup(groupName);
+    if (!preventSelfAdd) {
+        group.add(id, -1);
+    }
+   
+    for (var i in boxes) {
+        var box = boxes[i];
+       
+        var model = BlockRenderer.createModel();
+        model.addBox(box.box[0], box.box[1], box.box[2], box.box[3], box.box[4], box.box[5], id, 0);
+       
+        render.addEntry(model).asCondition(box.side[0], box.side[1], box.side[2], group, 0);
+    }
+   
+    var model = BlockRenderer.createModel();
+    model.addBox(0.5 - width / 2, 0.5 - width / 2, 0.5 - width / 2, 0.5 + width / 2, 0.5 + width / 2, 0.5 + width / 2, id, 0);
+    render.addEntry(model);
+    
+    width = Math.max(width, 0.5);
+    Block.setBlockShape(id, {x: 0.5 - width/2, y: 0.5 - width/2, z: 0.5 - width/2}, {x: 0.5 + width/2, y: 0.5 + width/2, z: 0.5 + width/2});
+}
+
+function setupBlockAsWire(id) {
+	EU.registerWire(id);
+}
+///api//////////////////////////////////
+///////////////blocks///////////////////
+core.block("wire");
+ core.block("generatorRF");
+ 
+ Block.createBlock("wire", [
+ {name: "провод", texture: [["conduct", 0]], inCreative: true}
+ ], EU.getWireSpecialType());
+ 
+IDRegistry.genBlockID("panel");
+Block.createBlock("panel", [
+{name: "солнечная панель", texture: [["panel_top", 0], ["panel_size", 0],["panel_size", 0],["panel_size", 0],["panel_size", 0],["panel_size", 0],["panel_size", 0]], inCreative: true}
+]);
+//////////////////blocks/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+//////////////////render//////////////////////////////
+var LoL = new ICRender.Model();
+BlockRenderer.setStaticICRender(BlockID.panel, -1, LoL);
+var panel = BlockRenderer.createModel();
+
+panel.addBox(0.8, 0, 0.8, 0.2, 0.1, 0.2, "panel_size", 0);//пластина
+panel.addBox(0.6, 0.1, 0.6, 0.4, 0.7, 0.4, "panel_size", 0);//ножка
+panel.addBox(0.8, 0.7, 0.8, 0.2, 0.8, 0.2, "panel_size", 0);//крыша
+//panel.addBox(0.7, 0.4, 0.7, 0.3, 0.5, 0.3, "panel_size", 0);//второе кольцо
+//panel.addBox(0.8, 0.9, 0.8, 0.2, 1, 0.2, "panel_size", 0);//завершающая пластина
+panel.addBox(0.8, 0.8, 0.8, 0.2, 0.9, 0.2, "panel_top", 0);//слой с верху
+
+LoL.addEntry(panel);
+//////////////////render//////////////////////////////////////////////////
+setupBlockAsWire(BlockID.wire);
+setupWireRender(BlockID.wire, 3/8, "ic-wire");
+
+MachineRegistry.registerPrototype(BlockID.panel, {
+	isGenerator: function() {
+		return true;
+	},
+
+	energyTick: function(type, src){
+		if(World.getLightLevel(this.x, this.y + 1, this.z) == 15){
+			src.add(2);
+		}else{
+			src.add(0);
+		}
+	}
+});
+EnergyTileRegistry.addEnergyTypeForId(BlockID.panel, EU);
+MachineRegistry.registerPrototype(BlockID.advancedSolarPilar, {
+	isStorage: true,
+	isGenerator:function(){
+		return true;
+	},
+	energyTick:function(type, src){
+		if(World.getLightLevel(this.x, this.y + 1, this.z) == 15){
+			src.add(5);
+		}else{
+			src.add(0);
+		}
+	},
+	getEnergyStorage:function(){
+		return 30000;
+	},
+	getGuiScreen:function(){
+		return window;
+	},
+	tick: function(){
+		var energyStorage = this.getEnergyStorage();
+		this.container.setScale("Myscale", this.data.energy / energyStorage);
+		this.container.setText("text1", parseInt(this.data.energy) + "/");
+		this.container.setText("text2", energyStorage + "");
+		}
+});
+EnergyTileRegistry.addEnergyTypeForId(BlockID.advancedSolarPilar, EU);
+MachineRegistry.registerPrototype(BlockID.gybridPilar, {
+	
+	isGenerator:function(){
+		return true;
+	},
+	energyTick:function(type, src){
+		if(World.getLightLevel(this.x, this.y+1, this.z) == 15){
+			src.add(10);
+		}else{
+			src.add(0);
+		}
+	}
+});
+EnergyTileRegistry.addEnergyTypeForId(BlockID.gybridPilar, EU);
+MachineRegistry.registerPrototype(BlockID.rezonPilar, {
+	isGenerator:function(){
+		return true;
+	},
+	energyTick:function(type, src){
+		if(World.getLightLevel(this.x, this.y+1, this.z) == 15){
+			src.add(20);
+		}else{
+			src.add(0);
+		}
+	}
+});
+EnergyTileRegistry.addEnergyTypeForId(BlockID.rezonPilar, EU);
+MachineRegistry.registerPrototype(BlockID.indPilar, {
+	isGenerator:function(){return true;},
+	energyTick:function(type, src){
+		if(World.getLightLevel(this.x, this.y+1, this.z) == 15){
+		src.add(25);
+	}else{
+		src.add(0);
+	}
+	}
+});
+EnergyTileRegistry.addEnergyTypeForId(BlockID.indPilar, EU);
+
+
+
+
+// file: MachineRecipes.js
+
+var MachineRecipeRegistry = {
+	recipeData: {},
+	
+	registerRecipesFor: function(name, data, validateKeys){
+		if(validateKeys){
+			var newData = {};
+			for(var key in data){
+				var newKey = key;
+				if(key.split(":").length < 2){
+					newKey = eval(key);
+				}
+				newData[newKey] = data[key];
+			}
+			data = newData;
+		}
+		this.recipeData[name] = data;
+	},
+	
+	addRecipeFor: function(name, source, result){
+		this.requireRecipesFor(name, true)[source] = result;
+	},
+	
+	requireRecipesFor: function(name, createIfNotFound){
+		if(!this.recipeData[name] && createIfNotFound){
+			this.recipeData[name] = {};
+		}
+		return this.recipeData[name];
+	},
+	
+	getRecipeResult: function(name, key1, key2){
+		var data = this.requireRecipesFor(name);
+		if(data){
+			return data[key1] || data[key1+":"+key2];
+		}
+	}
+};
+
+
+
+
+// file: panelsRenderer.js
+
+//улучшенная: ✅
+var upd = new ICRender.Model();
+BlockRenderer.setStaticICRender(BlockID.advancedSolarPilar, -1, upd);
+var update = BlockRenderer.createModel();
+
+update.addBox(0.8, 0, 0.8, 0.2, 0.1, 0.2, "usp_bottom", 0);//пластина
+update.addBox(0.6, 0.1, 0.6, 0.4, 0.5, 0.4, "solar_side", 0);//ножка
+update.addBox(0.9, 0.5, 0.9, 0.1, 0.6, 0.1, "solar_side", 0);//крыша
+update.addBox(0.8, 0.4, 0.8, 0.2, 0.5, 0.2, "solar_side", 0);//кольцо1
+update.addBox(0.7, 0.3, 0.7, 0.3, 0.4, 0.3, "solar_side", 0);//кольцо2
+update.addBox(0.9, 0.6, 0.9, 0.1, 0.7, 0.1, "solar_top", 0);//датчики солнца
+
+upd.addEntry(update);
+
+//гибридная
+var gybr = new ICRender.Model();
+BlockRenderer.setStaticICRender(BlockID.gybridPilar, -1, gybr);
+var gybrid = BlockRenderer.createModel();
+
+gybrid.addBox(0.8, 0, 0.8, 0.2, 0.1, 0.2, "qsp_bottom", 0);//пластина
+gybrid.addBox(0.6, 0.1, 0.6, 0.4, 0.5, 0.4, "corpyse", 1);//ножка
+gybrid.addBox(0.9, 0.5, 0.9, 0.1, 0.6, 0.1, "corpyse", 1);//крыша
+gybrid.addBox(0.8, 0.4, 0.8, 0.2, 0.5, 0.2, "corpyse", 1);//кольцо1
+gybrid.addBox(0.7, 0.3, 0.7, 0.3, 0.4, 0.3, "corpyse", 1);//кольцо2
+gybrid.addBox(0.9, 0.6, 0.9, 0.1, 0.7, 0.1, "top", 1);//датчики солнца
+
+gybr.addEntry(gybrid);
+
+//резонирующая
+
+var rez = new ICRender.Model();
+BlockRenderer.setStaticICRender(BlockID.rezonPilar, -1, rez);
+var rezon = BlockRenderer.createModel();
+
+rezon.addBox(0.8, 0, 0.8, 0.2, 0.1, 0.2, "qsp_bottom", 0);//пластина
+rezon.addBox(0.6, 0.1, 0.6, 0.4, 0.5, 0.4, "corpyse", 2);//ножка
+rezon.addBox(0.9, 0.5, 0.9, 0.1, 0.6, 0.1, "corpyse", 2);//крыша
+rezon.addBox(0.8, 0.4, 0.8, 0.2, 0.5, 0.2, "corpyse", 2);//кольцо1
+rezon.addBox(0.7, 0.3, 0.7, 0.3, 0.4, 0.3, "corpyse", 2);//кольцо2
+rezon.addBox(0.9, 0.6, 0.9, 0.1, 0.7, 0.1, "top", 3);//датчики солнца
+
+rez.addEntry(rezon);
+
+//индустриальная
+
+var ind = new ICRender.Model();
+BlockRenderer.setStaticICRender(BlockID.indPilar, -1, ind);
+var industrial = BlockRenderer.createModel();
+
+industrial.addBox(0.8, 0, 0.8, 0.2, 0.1, 0.2, "qsp_bottom", 0);//пластина
+industrial.addBox(0.6, 0.1, 0.6, 0.4, 0.5, 0.4, "corpyse", 3);//ножка
+industrial.addBox(0.9, 0.5, 0.9, 0.1, 0.6, 0.1, "corpyse", 3);//крыша
+industrial.addBox(0.8, 0.4, 0.8, 0.2, 0.5, 0.2, "corpyse", 3);//кольцо1
+industrial.addBox(0.7, 0.3, 0.7, 0.3, 0.4, 0.3, "corpyse", 3);//кольцо2
+industrial.addBox(0.9, 0.6, 0.9, 0.1, 0.7, 0.1, "top", 3);//датчики солнца
+
+ind.addEntry(industrial);
+
+
+
+
+// file: armor.js
+
+Item.createArmorItem("steelHelmet", "стальной шлем", {name: "steelHelmet"}, {armor: 2, durability: 100, texture: "images/armor/steel_0.png", type: "helmet"});
+Item.createArmorItem("steelChestplate", "стальной нагрудник", {name: "steelChestplate"}, {armor: 3, durability: 100, texture: "images/armor/steel_0.png", type: "chestplate"});
+Item.createArmorItem("steelLeggings", "стальные поножи", {name: "steelLeggings"}, {armor: 2, durability: 100, texture: "images/armor/steel_1.png", type: "leggings"});
+Item.createArmorItem("steelBoots", "стальные боты", {name:  "steelBoots"}, {armor: 1, durability: 100, texture: "images/armor/steel_0.png", type: "boots"});
+
+Item.createArmorItem("swinHelmet", "свинцовый шлем", {name: "swinHelmet"}, {armor: 2, durability: 120, texture: "images/armor/swin_0.png", type: "helmet"});
+Item.createArmorItem("swinChestplate", "свинцовый нагрудник", {name: "swinChestplate"}, {armor: 4, durability: 120, texture: "images/armor/swin_0.png", type: "chestplate"});
+Item.createArmorItem("swinLeggings", "свинцовые поножи", {name: "swinLeggings"}, {armor: 2, durability: 120, texture: "images/armor/swin_1.png", type: "leggings"});
+Item.createArmorItem("swinBoots", "свинцовые боты", {name: "swinBoots"}, {armor: 1, durability: 120, texture: "images/armor/swin_0.png", type: "boots"});
+
+Item.createArmorItem("uranHelmet", "урановый шлем", {name: "uranHelmet"}, {armor: 3, durability: 500, texture: "images/armor/uran_0.png", type: "helmet"});
+Item.createArmorItem("uranChestplate", "урановый нагрудник", {name: "uranChestplate"}, {armor: 5, durability: 500, texture: "images/armor/uran_0.png", type: "chestplate"});
+Item.createArmorItem("uranLeggings", "урановые поножи", {name: "uranLeggings"}, {armor: 4, durability: 500, texture: "images/armor/uran_1.png", type: "leggings"});
+Item.createArmorItem("uranBoots", "урановые боты", {name: "uranBoots"}, {armor: 2, durability: 500, texture: "images/armor/uran_0.png", type: "boots"});
+
+Item.createArmorItem("sapHelmet", "сапфировый шлем", {name: "sapHelmet"}, {armor: 3, durability: 1000, texture: "images/armor/sap_0.png", type: "helmet"});
+Item.createArmorItem("sapChestplate", "сапфировый нагрудник", {name: "sapChestplate"}, {armor: 6, durability: 1000, texture: "images/armor/sap_0.png", type: "chestplate"});
+Item.createArmorItem("sapLeggings", "сапфировые поножи", {name: "sapLeggings"}, {armor: 4, durability: 1000, texture: "images/armor/sap_1.png", type: "leggings"});
+Item.createArmorItem("sapBoots", "сапфировые боты", {name: "sapBoots"}, {armor: 3, durability: 1000, texture: "images/armor/sap_0.png", type: "boots"});
+
+Item.createArmorItem("adHelmet", "адамантитовый шлем", {name: "adHelmet"}, {armor: 2, durability: 301, texture: "images/armor/adamantite_0.png", type: "helmet"});
+Item.createArmorItem("adChestplate", "адамантитовый нагрудник", {name: "adChestplate"}, {armor: 6, durability: 301, texture: "images/armor/adamantite_0.png", type: "chestplate"});
+Item.createArmorItem("adLeggings", "адамантитовые поножи", {name: "adLeggings"}, {armor: 2, durability: 301, texture: "images/armor/adamantite_1.png", type: "leggings"});
+Item.createArmorItem("adBoots", "адамантитовые боты", {name: "adBoots"}, {armor: 1, durability: 301, texture: "images/armor/adamantite_0.png", type: "boots"});
+
+Item.createArmorItem("mufrilHelmet", "мифриловый шлем", {name: "mufril", data: 1}, {armor: 2, durability: 200, texture: "images/armor/mufril_10.png", type: "helmet"});
+Item.createArmorItem("mufrilChestplate", "мифриловый нагрудник", {name: "mufril", data: 2}, {armor: 4, durability: 200, texture: "images/armor/mufril_10.png", type: "chestplate"});
+Item.createArmorItem("mufrilLeggings", "мифриловые поножи", {name: "mufril", data: 3}, {armor: 3, durability: 200, texture: "images/armor/mufril_20.png", type: "leggings"});
+Item.createArmorItem("mufrilBoots", "мифриловые боты", {name: "mufril", data: 4}, {armor: 1, durability: 200, texture: "images/armor/mufril_10.png", type: "boots"});
+
+
+
+
+
+})();alert('$$$FINISHED$$$');
+</script> </body>

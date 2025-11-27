@@ -1,0 +1,2 @@
+let IWandable = new Interface();
+

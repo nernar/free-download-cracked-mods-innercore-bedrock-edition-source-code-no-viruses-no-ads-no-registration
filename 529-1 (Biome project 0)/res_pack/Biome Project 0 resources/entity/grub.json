@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:grub",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/biome_project_0/grub"
+      },
+      "geometry": {
+        "default": "geometry.grub"
+      },
+      "spawn_egg": {
+        "texture": "biome_project_0",
+        "texture_index": 14
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

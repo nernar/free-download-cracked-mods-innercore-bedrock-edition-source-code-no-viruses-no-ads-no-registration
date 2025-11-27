@@ -1,0 +1,101 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pili:iron_staff",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+	"minecraft:damage": 6,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "pili:iron_staff"
+				}
+			},
+"minecraft:cooldown": {
+				"category": "pili:iron_staff",
+				"duration": 1
+			},
+			"minecraft:creative_category": {
+				"parent": "equipment"
+			},
+			"minecraft:enchantable": {
+				"value": 22,
+				"slot": "sword"
+			},
+"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"pili:iron_staff",
+							"minecraft:iron_ingot"
+						],
+						"repair_amount": 50
+					}
+				]
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:icon": {
+				"texture": "iron_staff"
+			},
+			"minecraft:durability": {
+				"max_durability": 252,
+				"damage_chance": {
+					"min": 1,
+					"max": 1
+				}
+			},
+"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "dmg"
+				}
+			}
+		},
+
+		"events": {
+"dmg": {
+				"damage": {
+					"type": "durability",
+					"amount": 1,
+					"target": "self"
+				}
+			},
+			"pili:iron_staff": {
+				"shoot": {
+					"projectile": "pili:iron_spell",
+					"launch_power": 3
+				},
+				"damage": {
+					"type": "magic",
+					"amount": 1,
+					"target": "self"
+				},
+		
+				"run_command": {
+					"command": [
+						"playsound block.lantern.break @a ~~~"
+					]
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+{
+    "shared": {
+        "name": "gregtech",
+		"include": [
+			"shared_headers"
+		]
+    },
+
+    "depends": [
+		"c++shared",
+    	"minecraftpe",
+    	"innercore",
+		"nativejs"
+	]
+}

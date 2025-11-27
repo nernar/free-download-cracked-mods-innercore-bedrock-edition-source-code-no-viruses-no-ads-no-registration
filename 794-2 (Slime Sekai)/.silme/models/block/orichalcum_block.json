@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ttigraas:blocks/orichalcum_block",
+    "up": "ttigraas:blocks/orichalcum_block",
+    "north": "ttigraas:blocks/orichalcum_block",
+    "east": "ttigraas:blocks/orichalcum_block",
+    "south": "ttigraas:blocks/orichalcum_block",
+    "west": "ttigraas:blocks/orichalcum_block",
+    "particle": "ttigraas:blocks/orichalcum_block"
+  }
+}

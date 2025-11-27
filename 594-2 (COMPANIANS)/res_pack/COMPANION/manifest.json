@@ -1,0 +1,18 @@
+{
+   "format_version" : 1,
+   "header" : {
+      "description" : "A Fake Players Add-on",
+      "name" : "Fake Players Texture",
+      "platform_locked" : false,
+      "uuid" : "c1c77e6d-f49c-3def-88e0-ce045327e9e5",
+      "version" : [ 0, 0, 1 ]
+   },
+   "modules" : [
+      {
+         "description" : "Fake Players Texture",
+         "type" : "resources",
+         "uuid" : "d02a9dca-c0a7-3ca0-9501-c1954337c6a5",
+         "version" : [ 0, 0, 1 ]
+      }
+   ]
+}

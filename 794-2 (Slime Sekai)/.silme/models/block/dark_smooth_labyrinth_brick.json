@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ttigraas:blocks/darksmoothlaby",
+    "up": "ttigraas:blocks/darksmoothlaby",
+    "north": "ttigraas:blocks/darksmoothlaby",
+    "east": "ttigraas:blocks/darksmoothlaby",
+    "south": "ttigraas:blocks/darksmoothlaby",
+    "west": "ttigraas:blocks/darksmoothlaby",
+    "particle": "ttigraas:blocks/darksmoothlaby"
+  }
+}

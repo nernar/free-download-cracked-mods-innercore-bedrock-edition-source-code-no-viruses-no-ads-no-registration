@@ -1,0 +1,1 @@
+alert("Проверка...")alert("industrial craft, forestry pe...")alert("Модпак WFA успешно установлен.")

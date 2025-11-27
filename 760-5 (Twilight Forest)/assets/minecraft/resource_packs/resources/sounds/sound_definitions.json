@@ -1,0 +1,65 @@
+{
+"mob.hydra.hurt": {
+"category": "hostile",
+"sounds": [
+"sounds/hydra/hurt0",
+"sounds/hydra/hurt1",
+"sounds/hydra/hurt2",
+"sounds/hydra/hurt3"
+]
+},
+"mob.hydra.death": {
+"category": "hostile",
+"sounds": [
+"sounds/hydra/death0"
+]
+},
+"mob.hydra.growl": {
+"category": "hostile",
+"sounds": [
+"sounds/hydra/growl0",
+"sounds/hydra/growl1",
+"sounds/hydra/growl2"
+]
+},
+"mob.hydra.roar": {
+"category": "hostile",
+"sounds": [
+"sounds/hydra/roar0",
+"sounds/hydra/roar1"
+]
+},
+"mob.hydra.warn": {
+"category": "hostile",
+"sounds": [
+"sounds/hydra/warn0"
+]
+},
+"mob.naga.hiss": {
+"category": "hostile",
+"sounds": [
+"sounds/hydra/hiss0",
+"sounds/hydra/hiss1",
+"sounds/hydra/hiss2"
+]
+},
+"mob.naga.hurt": {
+"category": "hostile",
+"sounds": [
+"sounds/hydra/hurt0",
+"sounds/hydra/hurt1",
+"sounds/hydra/hurt2"
+]
+},
+"mob.naga.rattle": {
+"category": "hostile",
+"sounds": [
+"sounds/hydra/rattle0",
+"sounds/hydra/rattle1"
+]
+}
+/*此处做销毁*/
+}
+
+
+

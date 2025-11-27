@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.crimson_staff.move": {
+      "loop": true,
+      "bones": {
+		"ikalawa": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, -4000000, 0]
+		  }
+		},
+		"ikatlo": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, -4000000, 0]
+		  }
+		},
+		"ikaapat": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 9000000, 0]
+		  }
+		}
+      }
+    }
+  }
+}

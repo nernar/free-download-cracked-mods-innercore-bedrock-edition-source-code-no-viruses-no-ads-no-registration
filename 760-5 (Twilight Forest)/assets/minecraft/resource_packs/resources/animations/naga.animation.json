@@ -1,0 +1,23 @@
+{
+"format_version": "1.8.0",
+"animations": {
+"animation.naga.general": {
+"loop": true,
+"bones": {
+"head": { 
+"rotation": [ "query.target_x_rotation", "query.target_y_rotation", 0.0 ] 
+},
+"body": { 
+"rotation": [ "query.head_x_rotation(0)", "query.head_y_rotation(0)", 0.0 ]
+}
+}
+},
+"animation.naga.action": {
+"loop": true,
+"bones": {
+//暂无
+}
+}
+/*此处做销毁*/
+}
+}

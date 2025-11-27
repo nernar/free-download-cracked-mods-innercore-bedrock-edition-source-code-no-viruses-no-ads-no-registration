@@ -1,0 +1,17 @@
+{
+	"properties": {
+		"enabled": {
+			"name": {"en": "Enable mod", "ru": "Включить мод"}
+		},
+		"increase_tree_destroy_time": {
+			"name": {
+				"en": "Increase tree destroy time",
+				"ru": "Увеличивать время ломания дерева"
+			},
+			"description": {
+				"en": "Tree destroy time will depend on its size",
+				"ru": "Время ломания дерева будет зависеть от его размера."
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"format_version": 1,
+	"header": {
+		"description": "main resources pack",
+		"name": "main",
+		"uuid": "85b4ee6e-c263-4c5c-8399-1b4baf4a10fe",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"description": "main resources pack",
+			"type": "resources",
+			"uuid": "731f7d1d-2094-4a1c-9b09-80efbf963239",
+			"version": [1, 0, 0]
+		}
+	],
+	"metadata": {
+		"authors": [
+			"@Lapis_256"
+		],
+		"url": "https://twitter.com/Lapis_256"
+	}
+}

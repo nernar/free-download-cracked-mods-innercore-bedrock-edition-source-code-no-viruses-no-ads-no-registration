@@ -1,0 +1,10 @@
+{
+    "shared": {
+        "name": "server-fixed",
+		"include": []
+    },
+
+    "depends": [
+    	"innercore"
+	]
+}

@@ -1,0 +1,41 @@
+ModAPI.addAPICallback("ICore", function(){
+  Decomposer.addRecipe(ItemID.ingotCopper, -1, {Cu: 16});
+  Decomposer.addRecipe(ItemID.ingotTin, -1, {Sn: 16});
+  Decomposer.addRecipe(ItemID.ingotSilver, -1, {Ag: 16});
+  Decomposer.addRecipe(ItemID.ingotLead, -1, {Pb: 16});
+  Decomposer.addRecipe(ItemID.ingotSteel, -1, {Fe: 15, C: 1});
+  Decomposer.addRecipe(ItemID.ingotBronze, -1, {Cu: 12, Sn: 4});
+  Synthesiser.addRecipe({id: ItemID.ingotCopper}, "INGOT", [["Cu", 16]]);
+  Synthesiser.addRecipe({id: ItemID.ingotTin}, "INGOT", [["Sn", 16]]);
+  Synthesiser.addRecipe({id: ItemID.ingotSilver}, "INGOT", [["Ag", 16]]);
+  Synthesiser.addRecipe({id: ItemID.ingotLead}, "INGOT", [["Pb", 16]]);
+  Synthesiser.addRecipe({id: ItemID.ingotSteel}, "INGOT", [["Fe", 15], ["C", 1]]);
+  Synthesiser.addRecipe({id: ItemID.ingotBronze}, "INGOT", [["Cu", 12], ["Sn", 4]]);
+});
+
+ModAPI.addAPICallback("ForestryAPI", function(){
+  Decomposer.addRecipe(ItemID.ingotCopper, -1, {Cu: 16});
+  Decomposer.addRecipe(ItemID.ingotTin, -1, {Sn: 16});
+  Decomposer.addRecipe(ItemID.ingotBronze, -1, {Cu: 12, Sn: 4});
+  Decomposer.addRecipe(ItemID.apatite, -1, {Ca: 5, phosphate: 4, Cl: 1});
+  Synthesiser.addRecipe({id: ItemID.ingotCopper}, "INGOT", [["Cu", 16]]);
+  Synthesiser.addRecipe({id: ItemID.ingotTin}, "INGOT", [["Sn", 16]]);
+  Synthesiser.addRecipe({id: ItemID.ingotBronze}, "INGOT", [["Cu", 12], ["Sn", 4]]);
+  Synthesiser.addRecipe({id: ItemID.apatite}, "OBSIDIAN", [["Ca", 5], ["phosphate", 4], ["Cl", 1]]);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 0}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], null, ["blackPigment", 1], null, ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 1}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], null, ["redPigment", 1], null, ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 2}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], null, ["greenPigment", 1], null, ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 3}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], null, ["tannicacid", 1], null, ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 4}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], null, ["lazurite", 1], null, ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 5}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], null, ["purplePigment", 1], null, ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 6}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], ["whitePigment", 1], null, ["lightbluePigment", 1], ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 7}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], ["whitePigment", 1], ["whitePigment", 1], ["blackPigment", 1], ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 8}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], ["whitePigment", 1], null, ["blackPigment", 1], ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 9}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], ["whitePigment", 1], null, ["redPigment", 1], ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 10}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], null, ["limePigment", 1], null, ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 11}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], null, ["yellowPigment", 1], null, ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 12}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], null, ["lightbluePigment", 1], null, ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 13}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], ["lightbluePigment", 1], null, ["redPigment", 1], ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 14}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], null, ["orangePigment", 1], null, ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+  Synthesiser.addRecipe({id: BlockID.forestryGlass, data: 15}, "GLASS", [["siliconDioxide", 4], null, ["siliconDioxide", 4], null, ["whitePigment", 1], null, ["siliconDioxide", 4], null, ["siliconDioxide", 4]], true);
+});

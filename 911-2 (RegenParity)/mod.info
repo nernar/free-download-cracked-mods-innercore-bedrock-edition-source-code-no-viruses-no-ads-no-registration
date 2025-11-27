@@ -1,0 +1,7 @@
+{
+    "name": "Regen Parity",
+    "author": "visualstudiodan",
+    "version": "1.0",
+    "description": "The mod that improves the mechanics of player's natural regeneration by making it work exactly the same way as in Minecraft: Java Edition",
+    "clientside": false
+}

@@ -1,0 +1,6 @@
+{
+	"name":"Home",
+	"author":" TGCompany",
+	"version": "0.2",
+	"description": "Скрипт на установку дома, напишите /sethome для установки и /home для возврата"
+}

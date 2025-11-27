@@ -1,0 +1,16 @@
+{
+  "type": "futurepack:research_shaped",
+  "group": "futurepack",
+  "pattern": [
+    "C C",
+    "C C"
+  ],
+  "key": {
+    "C": {
+      "item": "futurepack:composite_metal"
+    }
+  },
+  "result": {
+    "item": "futurepack:composite_boots"
+  }
+}

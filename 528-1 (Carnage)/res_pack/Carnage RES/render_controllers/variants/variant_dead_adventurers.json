@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.variant_dead_adventurers": {
+	  "arrays": {
+	    "textures": {
+		  "Array.skins": [
+		    "Texture.shield_zombie",
+		    "Texture.shield_skeleton",
+		    "Texture.hammer_zombie",
+		    "Texture.hammer_skeleton",
+		    "Texture.spear_zombie",
+		    "Texture.spear_skeleton",
+		    "Texture.sword_zombie",
+		    "Texture.sword_skeleton"
+		  ]
+		}
+	  },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

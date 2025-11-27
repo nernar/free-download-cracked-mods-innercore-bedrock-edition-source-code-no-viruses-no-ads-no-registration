@@ -1,0 +1,65 @@
+{
+"format_version": "1.12.0",
+"minecraft:entity": {
+"description": {
+"identifier": "twilightforest:lich_fireball",
+"is_spawnable": false,
+"is_summonable": false,
+"is_experimental": false,
+"runtime_identifier": "minecraft:small_fireball"
+},
+"component_groups": {
+"触发执行": {
+"minecraft:explode": {
+"filter": "player",
+"fuse_length": 0,
+"fuse_lit": true,
+"breaks_blocks": false,
+"power": 4
+}
+}
+},
+"components": {
+"minecraft:collision_box": {
+"width": 0.0,
+"height": 0.0
+},
+"minecraft:projectile": {
+"on_hit": {
+"filter": "player",
+"definition_event": {
+"affect_projectile": true,
+"filter": "player",
+"event_trigger": {
+"event": "minecraft:explode",
+"target": "self"
+}
+}
+},
+"power": 1.8,
+"gravity": 0.00,
+"inertia": 1,
+"liquid_inertia": 1,
+"uncertainty_base": 0,
+"uncertainty_multiplier": 0,
+"anchor": 1,
+"offset": [ 0, 0.0, 0 ],
+"reflect_on_hurt": true
+},
+"minecraft:physics": {
+"has_gravity": false,
+"has_collision": true
+},
+"minecraft:pushable": {
+"is_pushable": true,
+"is_pushable_by_piston": true
+}
+},
+"events": {
+"minecraft:explode": {
+"add": { "component_groups": [ "触发执行" ] }
+}
+/*此处做销毁*/
+}
+}
+}

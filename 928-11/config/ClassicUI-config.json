@@ -1,0 +1,14 @@
+{
+  "enabled":true,
+  "vanilla_slots":false,
+  "max_scale":2,
+  "legacy_copy":false,
+  "disable_auto_type_ui":false,
+  "center_block_name":true,
+  "standart_config":{
+    "x":0,
+    "y":0,
+    "scale":0,
+    "theme":"super_classic"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+        "identifier": "pili:alchemical_table"
+      },
+      "components": {
+	"minecraft:creative_category": {
+				"category": "construction"
+			},
+
+         
+        "minecraft:destroy_time": 0.2,
+"minecraft:crafting_table": {
+           "grid_size": 3,
+"custom_description": "alchemical table",
+"crafting_tags": ["pili_craft"]}
+        
+      }
+      
+   }
+}

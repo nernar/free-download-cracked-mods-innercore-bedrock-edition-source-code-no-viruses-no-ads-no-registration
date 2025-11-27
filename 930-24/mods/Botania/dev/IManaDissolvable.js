@@ -1,0 +1,2 @@
+let IManaDissolvable = new Interface();
+

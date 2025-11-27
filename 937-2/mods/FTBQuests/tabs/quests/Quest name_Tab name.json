@@ -1,0 +1,32 @@
+{
+	"type": "quest",
+	"item": {
+		"id": "VanillaBlockID.gilded_blackstone",
+		"count": 1,
+		"data": 0
+	},
+	"identifier": "Quest name",
+	"name": "Quest name",
+	"x": 60,
+	"y": 60,
+	"size": 100,
+	"dialog": {
+		"input": [],
+		"output": [],
+		"give_item": true,
+		"title": "Quest name",
+		"description": "Quest description"
+	},
+	"description": "Quest description",
+	"give": [
+		{
+			"type": "recipe",
+			"items": [],
+			"block": {
+				"id": "VanillaBlockID.stone",
+				"data": 0
+			}
+		}
+	],
+	"lines": []
+}

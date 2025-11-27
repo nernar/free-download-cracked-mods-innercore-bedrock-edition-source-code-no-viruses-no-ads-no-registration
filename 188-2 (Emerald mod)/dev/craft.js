@@ -1,0 +1,20 @@
+Recipes.addShaped({id: ItemID.emerald_sword, count: 1, data: 0}, ["a", "a", "b"], ["a", 388, 0, "b", 280, 0]);
+Recipes.addShaped({id: ItemID.emerald_pickaxe, count: 1, data: 0}, ["aaa", " b", " b"], ["a", 388, 0, "b", 280, 0]);
+Recipes.addShaped({id: ItemID.emerald_axe, count: 1, data: 0}, ["aa", "ab", " b"], ["a", 388, 0, "b", 280, 0]);
+Recipes.addShaped({id: ItemID.emerald_shovel, count: 1, data: 0}, ["a", "b", "b"], ["a", 388, 0, "b", 280, 0]);
+Recipes.addShaped({id: ItemID.emerald_hoe, count: 1, data: 0}, ["aa", " b", " b"], ["a", 388, 0, "b", 280, 0]);
+Recipes.addShaped({id: ItemID.big_emerald_sword, count: 1, data: 0}, [" aa", "aba", "ca "], ["a", 388, 0, "b", 133, 0, "c", 280, 0]);
+Recipes.addShaped({id: ItemID.emerald_khopesh, count: 1, data: 0}, ["a  ", " a ", "b  "], ["a", 388, 0, "b", ItemID.emerald_sword, 0]);
+Recipes.addShaped({id: ItemID.emerald_battleaxe, count: 1, data: 0}, ["aaa", "aba", " b "], ["a", 388, 0, "b", 280, 0]);
+Recipes.addShaped({id: ItemID.emerald_cake_item, count: 1, data: 0}, ["aaa", "bcb", "ddd"], ["a", 325, 1, "b", ItemID.emerald_seeds, 0, "c", 344, 0, "d", 296, 0]);
+Recipes.addShaped({id: ItemID.emerald_helmet, count: 1, data: 0}, ["aaa", "a a", ""], ["a", 388, 0]);
+Recipes.addShaped({id: ItemID.emerald_chestplate, count: 1, data: 0}, ["a a", "aaa", "aaa"], ["a", 388, 0]);
+Recipes.addShaped({id: ItemID.emerald_leggings, count: 1, data: 0}, ["aaa", "a a", "a a"], ["a", 388, 0]);
+Recipes.addShaped({id: ItemID.emerald_boots, count: 1, data: 0}, ["", "a a", "a a"], ["a", 388, 0]);
+Recipes.addShaped({id: ItemID.emerald_potion, count: 1, data: 0}, ["abc", "ded", " f "], ["a", 466, 0, "b", ItemID.emerald_dust, 0, "c", ItemID.emerald_apple, 0, "d", 280, 0, "e", 388, 0, "f", 374, 0]);
+Recipes.addShapeless({id: ItemID.emerald_katana, count: 1, data: 0}, [{id: ItemID.emerald_sword, data: 0}, {id: 388, data: 0}]);
+Recipes.addShapeless({id: ItemID.emerald_splash_potion, count: 1, data: 0}, [{id: ItemID.emerald_potion, data: 0}, {id: 289, data: 0}]);
+Recipes.addShapeless({id: ItemID.emerald_apple, count: 3, data: 0}, [{id: 260, data: 0}, {id: 388, data: 0}]);
+Recipes.addShapeless({id: ItemID.emerald_seeds, count: 3, data: 0}, [{id: 388, data: 0}]);
+Recipes.addShapeless({id: ItemID.emerald_dust, count: 4, data: 0}, [{id: 388, data: 0}]);
+

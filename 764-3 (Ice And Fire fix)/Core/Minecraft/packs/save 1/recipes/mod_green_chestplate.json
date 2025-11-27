@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:green_chestplate"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "AAA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_scale_green",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "iaf:green_chestplate",
+      "count": 1
+    }
+  }
+}

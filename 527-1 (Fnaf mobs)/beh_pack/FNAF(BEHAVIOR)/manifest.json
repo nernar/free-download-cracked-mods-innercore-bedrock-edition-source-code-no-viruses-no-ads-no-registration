@@ -1,0 +1,23 @@
+{
+    "format_version": 1,
+    "header": {
+        "name": "FNAF Addon",
+        "description": "by Fernan and Team Infinite Minds Twitter:@8Fernancraft @TInfiniteMinds",
+        "uuid": "5ea2520f-c6ca-4bf8-be9b-d6eaec2a6c2d",
+        "version": [0, 0, 1]
+    },
+    "modules": [
+        {
+            "description": "by Fernan and Team Infinite Minds Twitter:@8Fernancraft @TInfiniteMinds",
+            "type": "data",
+            "uuid": "fd6066a5-958c-4717-b9df-a6e55fa27892" ,
+            "version": [0, 0, 1]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "2f38e0f1-44eb-4407-a0a6-dcc322479a4c",
+            "version": [0, 0, 1]
+        }
+    ]
+}

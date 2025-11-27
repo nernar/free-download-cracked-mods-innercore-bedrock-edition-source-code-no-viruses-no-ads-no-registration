@@ -1,0 +1,45 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pili:alchemical_dust"
+		},
+		"tags": [
+			"pili_craft"
+		],
+		"pattern": [
+			" a ",
+   "bcd"
+		],
+		"key": {
+			"a": {
+				"item": "minecraft:redstone"
+},
+"b": {
+"item": "minecraft:coal:1"
+},
+"c": {
+"item": "minecraft:gunpowder"
+},
+"d": {
+"item": "minecraft:gold_nugget"
+}
+		},
+		"result": {
+			"item": "pili:alchemical_dust",
+"count": 2
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

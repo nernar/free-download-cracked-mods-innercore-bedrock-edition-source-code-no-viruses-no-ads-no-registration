@@ -1,0 +1,46 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "adventure craft BEH",
+		"description": "§dby Piligrim",
+		"uuid": "0250301a-ce15-11ec-9d64-0242ac120002",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			16,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "02503286-ce15-11ec-9d64-0242ac120002",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"1.8.3"
+			]
+		}
+	},
+	"dependencies": [
+		{
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "da87bcec-ce14-11ec-9d64-0242ac120002"
+		}
+	]
+}

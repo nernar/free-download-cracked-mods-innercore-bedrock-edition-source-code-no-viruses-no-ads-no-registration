@@ -1,0 +1,51 @@
+tile.pili:alchemical_table.name=Alchemical table
+
+item.pili:alchemical_dust=Alchemical dust
+item.pili:piliruna=Alchemical runa
+item.pili:alchemical_tablee=Alchemical table
+
+item.pili:piliruna1=Runa of fire resistance
+item.pili:piliruna2=Runa of invisible
+item.pili:piliruna3=Runa of leaping
+item.pili:piliruna4=Runa of night vision
+item.pili:piliruna5=Runa of regeneration
+item.pili:piliruna6=Runa of slow falling
+item.pili:piliruna7=Runa of strength 
+item.pili:piliruna8=Runa of speed
+item.pili:piliruna9=Runa of water breathing
+
+
+item.pili:pili_antidote.name=Antidote
+item.pili:pili_med1=Small med-kit
+item.pili:pili_med2=Big med-kit
+item.pili:syringe_with_adrenaline.name=Syringe with adrenaline
+item.pili:syringe=Syringe
+item.pili:vitamins.name=Vitamins
+item.pili:rpgbook1=Fire spell book
+item.pili:rpgbook2=Poison spell book
+item.pili:rpgbook3=Wither spell book
+item.pili:rpgbook4=lightning spell book
+item.pili:rpgbook5=Slow spell book
+item.pili:rpgbook6=Explosion spell book
+item.pili:rpgbook7=Teleportation spell book
+item.pili:rpgbook8=Levitation spell book
+
+
+item.pili:rpgstaff1=Staff of the Apprentice
+item.pili:rpgstaff2=Wizard Staff
+item.pili:rpgstaff3=Staff of the Archmage
+
+item.pili:wooden_staff=Wooden staff
+item.pili:stone_staff=Stone staff
+item.pili:golden_staff=Golden staff
+item.pili:iron_staff=Iron staff
+item.pili:diamond_staff=Diamond staff
+item.pili:netherite_staff=Netherite staff
+
+item.pili:wooden_spear=Wooden spear 4-8 dmg
+item.pili:stone_spear=Stone spear 5-9 dmg
+item.pili:iron_spear=Iron spear 6-10 dmg
+item.pili:golden_spear=Golden spear 7-11 dmg
+item.pili:diamond_spear=Diamond spear 8-12 dmg
+item.pili:netherite_spear=Netherite spear 9-13 dmg
+

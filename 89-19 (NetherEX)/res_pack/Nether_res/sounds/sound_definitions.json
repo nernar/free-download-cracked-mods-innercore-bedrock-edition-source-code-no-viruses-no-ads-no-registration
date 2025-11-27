@@ -1,0 +1,123 @@
+{
+    "mob.salamander_black.attack": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/salamander/salamander_hurt",
+                "volume": 0.25
+            }
+        ]
+    }, 
+    "mob.salamander_black.death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/salamander/salamander_death",
+                "volume": 0.28
+            }
+        ]
+    },
+    "mob.salamander_orange.attack": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/salamander/salamander_hurt",
+                "volume": 0.25
+            }
+        ]
+    },
+    "mob.salamander_orange.death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/salamander/salamander_death",
+                "volume": 0.28
+            }
+        ]
+    },
+        "mob.snake.say": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/snake/say1",
+                "volume": 1.1
+            },
+            {
+                "name": "sounds/snake/say2",
+                "volume": 10.94
+            }
+        ]
+    },
+    "mob.ember_normal.hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/ember/ember_hurt",
+                "volume": 0.25
+            }
+        ]
+    },
+    "mob.ember_normal.death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/ember/ember_death",
+                "volume": 0.28
+            }
+        ]
+    },
+    "mob.mogus_brown.hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/mogus/mogus_hurt1",
+                "volume": 0.25
+            }
+        ]
+    },
+    "mob.mogus_brown.death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/mogus/mogus_death",
+                "volume": 0.28
+            }
+        ]
+    },
+    "mob.mogus_white.hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/mogus/mogus_hurt2",
+                "volume": 0.25
+            }
+        ]
+    },
+    "mob.mogus_white.death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/mogus/mogus_death",
+                "volume": 0.28
+            }
+        ]
+    },
+    "mob.mogus_red.hurt": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/mogus/mogus_hurt1",
+                "volume": 0.25
+            }
+        ]
+    },
+    "mob.mogus_red.death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/mogus/mogus_death",
+                "volume": 0.28
+            }
+        ]
+    },
+}

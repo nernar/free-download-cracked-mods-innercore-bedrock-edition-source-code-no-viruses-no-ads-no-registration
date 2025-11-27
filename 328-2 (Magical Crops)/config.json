@@ -1,0 +1,19 @@
+{
+  "particle":{
+    "furnace":true,
+    "crops":true
+  },
+  "ores_options":{
+    "generate_nether":true,
+    "generate_end":true,
+    "generate_overworld":true
+  },
+  "enabled":true,
+  "monsters_options":{
+    "monsters_dropping":true,
+    "chance_animals_dropping":0.1,
+    "animals_dropping":true,
+    "chance_monsters_dropping":0.1,
+    "boss_dropping":true
+  }
+}

@@ -1,0 +1,2 @@
+let IManaItem = new Interface();
+

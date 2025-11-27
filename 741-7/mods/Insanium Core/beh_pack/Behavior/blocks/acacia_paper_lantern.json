@@ -1,0 +1,38 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bioplentia:acacia_paper_lantern",
+      "aliases": [
+        "bioplentia:acacia_lantern"
+      ]
+
+    },
+    "components": {
+		"minecraft:material_instances": {
+	 	  "*": {
+				"texture": "acacia_paper_lantern",
+				"render_method": "opaque"
+			}
+    	},
+      "minecraft:geometry": "geometry.core.block.cube",
+      "minecraft:destroy_time": 1.0,
+      "minecraft:immovable": false,
+      "minecraft:explosion_resistance": 2,
+      "minecraft:loot": "loot_tables/blocks/acacia_paper_lantern.json",
+      "minecraft:rotation": [ 0, 0, 0 ],
+      "minecraft:block_light_emission": 0.5,
+      "minecraft:map_color": "#fffdf9",
+      "minecraft:flammable": {
+        "flame_odds": 20,
+        "burn_odds": 15
+      },
+  	   "tag:wood": {}
+    },
+    "events": {
+    }
+  }
+}

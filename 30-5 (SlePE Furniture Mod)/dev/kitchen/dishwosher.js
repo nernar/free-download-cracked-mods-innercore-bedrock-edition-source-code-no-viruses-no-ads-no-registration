@@ -1,0 +1,16 @@
+IDRegistry.genItemID("dishwosher");
+Item.createItem("dishwosher", "Dishwasher", {name: "dishWasher", meta: 0}, {stack: 64});
+Translation.addTranslation("Dishwasher", {ru: "Посудомоечная машина"});
+Recipes.addShaped({id: ItemID.dishwosher, count: 1, data: 0}, ["qvq", "vqv", "vqv"], ["q",155,0]);
+var dishwosherModel = ModelAPI.newArray();
+dishwosherModel.addBoxByID("body", 0/16, 0/16, 0/16, 16/16, 15/16, 14/16, 155);
+dishwosherModel.addBoxByID("door", 2/16, 1/16, 14/16, 14/16, 12/16, 15/16, 155);
+dishwosherModel.addBoxByID("hand0", 6/16, 10/16, 15/16, 7/16, 11/16, 16/16, 159,15);
+dishwosherModel.addBoxByID("hand1", 9/16, 10/16, 15/16, 10/16, 11/16, 16/16, 159,15);
+dishwosherModel.addBoxByID("hand2", 6/16, 10/16, 16/16, 10/16, 11/16, 16.5/16, 159,15);
+dishwosherModel.addBoxByID("button0", 7/16, 13/16, 14/16, 8/16, 14/16, 14.5/16, 1);
+dishwosherModel.addBoxByID("button1", 9/16, 13/16, 14/16, 10/16, 14/16, 14.5/16, 1);
+dishwosherModel.addBoxByID("button2", 11/16, 13/16, 14/16, 12/16, 14/16, 14.5/16, 35,14);
+dishwosherModel.addBoxByID("button3", 13/16, 13/16, 14/16, 14/16, 14/16, 14.5/16, 35,5);
+dishwosherModel.addBoxByID("top", 0/16, 15/16, 0/16, 16/16, 16/16, 16/16, 159,9);
+Furniture.placeUnifiedEntity(BlockID.stoneFurniture, ItemID.dishwosher,dishwosherModel,{});

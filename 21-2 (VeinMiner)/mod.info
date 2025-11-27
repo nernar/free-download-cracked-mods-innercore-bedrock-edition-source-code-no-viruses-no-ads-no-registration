@@ -1,0 +1,6 @@
+{
+	"name":"VeinMiner",
+	"author":"MrCreeperCowboy",
+	"version": "v2.0",
+	"description": "A mod to help mine veins of ores by mining blocks of the same type in a chain reaction, giving you the blocks at the end."
+}

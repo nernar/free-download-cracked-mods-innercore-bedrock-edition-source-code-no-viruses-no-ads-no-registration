@@ -1,0 +1,168 @@
+{
+"format_version": "1.13.0",
+"minecraft:entity": {
+"description": {
+"identifier": "twilightforest:firebeetle",
+"is_spawnable": true,
+"is_summonable": true,
+"is_experimental": false
+},
+"component_groups": {
+"火焰吞吐": {
+"minecraft:shooter": {
+"type": "flame",
+"def": "twilightforest:flame"
+},
+"minecraft:behavior.ranged_attack": {
+"priority": 1,
+"attack_interval_min": 2,
+"attack_interval_max": 4,
+"charge_charged_trigger": 0.0,
+"charge_shoot_trigger": 2.0,
+"attack_radius": 32,
+"burst_shots": 24,
+"burst_interval": 0.25
+},
+"minecraft:timer": {
+"looping": false,
+"time": [ 5.0, 8.0 ],
+"time_down_event": {
+"event": "近战攻击",
+"target": "self"
+}
+}
+},
+"自由搏击": {
+"minecraft:attack": {
+"damage": 3
+},
+"minecraft:behavior.melee_attack": {
+"priority": 1,
+"reach_multiplier": 1,
+"speed_multiplier": 1.0,
+"track_target": true
+},
+"minecraft:timer": {
+"looping": false,
+"time": [ 5.0, 8.0 ],
+"time_down_event": {
+"event": "远程攻击",
+"target": "self"
+}
+}
+}
+},
+"components": {
+"minecraft:nameable": {
+},
+"minecraft:type_family": {
+"family": [ "firebeetle", "monster", "boss" ] 
+},
+"minecraft:breathable": {
+"total_supply": 15,
+"suffocate_time": 0
+},
+"minecraft:health": {
+"value": 25,
+"max": 25
+},
+"minecraft:movement": {
+"value": 0.25
+},
+"minecraft:underwater_movement": {
+"value": 0.25
+},
+"minecraft:collision_box": {
+"width": 0.5,
+"height": 0.8
+},
+"minecraft:follow_range": {
+"value": 32,
+"max": 32
+},
+"minecraft:navigation.generic": {
+"can_path_over_water": true,
+"avoid_water": true,
+"avoid_damage_blocks": true,
+"can_walk": true
+},
+"minecraft:movement.basic": {
+},
+"minecraft:jump.static": {
+},
+"minecraft:can_climb": {
+},
+"minecraft:behavior.random_stroll": {
+"priority": 5,
+"speed_multiplier": 1.0
+},
+"minecraft:behavior.hurt_by_target": {
+"priority": 2,
+"entity_types": {
+"filters": { 
+"all_of": [ 
+{ "test": "is_family", "subject": "other", "operator": "!=", "value": "firebeetle" } 
+] 
+}
+}
+},
+"minecraft:behavior.look_at_target": {
+"priority": 5
+},
+"minecraft:behavior.look_at_player": {
+"priority": 6,
+"look_distance": 8
+},
+"minecraft:behavior.random_look_around": {
+"priority": 7
+},
+"minecraft:behavior.nearest_attackable_target": {
+"priority": 3,
+"entity_types": [
+{
+"filters": {
+"any_of": [
+{ "test": "is_family", "subject": "other", "value": "snowgolem" },
+{ "test": "is_family", "subject": "other", "value": "irongolem" },
+{ "test": "is_family", "subject": "other", "value": "player" }
+]
+},
+"max_dist": 32
+}
+],
+"must_see": true
+},
+"minecraft:physics": {
+},
+"minecraft:pushable": {
+"is_pushable": false,
+"is_pushable_by_piston": false
+}
+},
+"events": {
+"minecraft:entity_spawned": {
+"randomize": [
+{
+"weight": 50,
+"remove": { },
+"add": { "component_groups": [ "火焰吞吐" ] }
+},
+{
+"weight": 50,
+"remove": { },
+"add": { "component_groups": [ "自由搏击" ] }
+}
+]
+},
+"近战攻击": {
+"remove": { "component_groups": [ "火焰吞吐" ] },
+"add": { "component_groups": [ "自由搏击" ] }
+}, 
+"远程攻击": {
+"remove": { "component_groups": [ "自由搏击" ] },
+"add": { "component_groups": [ "火焰吞吐" ] }
+}
+/*此处做销毁*/
+}
+}
+}

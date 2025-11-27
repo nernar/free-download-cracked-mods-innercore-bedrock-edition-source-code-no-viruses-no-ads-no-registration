@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"geometry.flame_projectile": {
+		"texturewidth": 32,
+		"textureheight": 32,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 2,
+		"visible_bounds_offset": [0, 1, 0],
+		"bones": [
+			{
+				"name": "projectile",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-1, 3, -7], "size": [0, 8, 4], "uv": [0, 0]},
+					{"origin": [-3, 3, -5], "size": [4, 8, 0], "uv": [0, 12]},
+					{"origin": [5, 7, 2], "size": [0, 8, 4], "uv": [0, 0]},
+					{"origin": [3, 7, 4], "size": [4, 8, 0], "uv": [0, 12]},
+					{"origin": [3, 13, -5], "size": [0, 8, 4], "uv": [0, 0]},
+					{"origin": [1, 13, -3], "size": [4, 8, 0], "uv": [0, 12]},
+					{"origin": [-9, 5, 3], "size": [4, 8, 0], "uv": [0, 12]},
+					{"origin": [-7, 5, 1], "size": [0, 8, 4], "uv": [0, 0]},
+					{"origin": [-6, 9, 0], "size": [4, 8, 0], "uv": [0, 12]},
+					{"origin": [-4, 9, -2], "size": [0, 8, 4], "uv": [0, 0]},
+					{"origin": [3, 1, -1], "size": [4, 8, 0], "uv": [0, 12]},
+					{"origin": [5, 1, -3], "size": [0, 8, 4], "uv": [0, 0]},
+					{"origin": [-1, 3, 7], "size": [4, 8, 0], "uv": [0, 12]},
+					{"origin": [1, 3, 5], "size": [0, 8, 4], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

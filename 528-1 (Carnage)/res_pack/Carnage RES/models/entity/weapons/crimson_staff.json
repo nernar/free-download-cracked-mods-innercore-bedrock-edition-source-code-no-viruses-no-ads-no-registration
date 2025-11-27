@@ -1,0 +1,51 @@
+{
+	"format_version": "1.8.0",
+	"geometry.crimson_staff": {
+		"texturewidth": 512,
+		"textureheight": 512,
+		"visible_bounds_width": 8,
+		"visible_bounds_height": 8,
+		"visible_bounds_offset": [0, 4, 0],
+		"bones": [
+			{
+				"name": "ikalawa",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-64, 128, -64], "size": [128, 0, 128], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "ikatlo",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-48, 96, -48], "size": [96, 0, 96], "uv": [0, 128]}
+				]
+			},
+			{
+				"name": "ikaapat",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-4, 0, -4], "size": [8, 140, 8], "uv": [384, 128]}
+				]
+			},
+			{
+				"name": "ikalima",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-16, 80, -16], "size": [32, 0, 32], "uv": [0, 276]},
+					{"origin": [-16, 70, -16], "size": [32, 0, 32], "uv": [128, 276]},
+					{"origin": [-16, 90, -16], "size": [32, 0, 32], "uv": [256, 276]},
+					{"origin": [-16, 100, -16], "size": [32, 0, 32], "uv": [384, 276]},
+					{"origin": [-16, 120, -16], "size": [32, 0, 32], "uv": [384, 340]},
+					{"origin": [-16, 110, -16], "size": [32, 0, 32], "uv": [128, 308]},
+					{"origin": [-16, 40, -16], "size": [32, 0, 32], "uv": [256, 308]},
+					{"origin": [-16, 50, -16], "size": [32, 0, 32], "uv": [384, 308]},
+					{"origin": [-16, 60, -16], "size": [32, 0, 32], "uv": [0, 340]},
+					{"origin": [-16, 10, -16], "size": [32, 0, 32], "uv": [128, 340]},
+					{"origin": [-16, 20, -16], "size": [32, 0, 32], "uv": [256, 340]},
+					{"origin": [-16, 30, -16], "size": [32, 0, 32], "uv": [0, 308]}
+				]
+			}
+		]
+	}
+}

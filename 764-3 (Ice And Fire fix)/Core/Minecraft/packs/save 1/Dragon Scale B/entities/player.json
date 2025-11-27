@@ -1,0 +1,3062 @@
+{
+  "format_version": "1.11",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "walk",
+          "iaf:black_helmet",
+          "iaf:amythest_helmet",
+          "iaf:blue_helmet",
+          "iaf:green_helmet",
+          "iaf:copper_helmet",
+          "iaf:bronze_helmet",
+          "iaf:electric_helmet",
+          "iaf:gray_helmet",
+          "iaf:red_helmet",
+          "iaf:silver_helmet",
+          "iaf:sapphire_helmet",
+          "iaf:white_helmet",
+          "iaf:black_chestplate",
+          "iaf:amythest_chestplate",
+          "iaf:green_chestplate",
+          "iaf:blue_chestplate",
+          "iaf:bronze_chestplate",
+          "iaf:copper_chestplate",
+          "iaf:electric_chestplate",
+          "iaf:gray_chestplate",
+          "iaf:silver_chestplate",
+          "iaf:sapphire_chestplate",
+          "iaf:white_chestplate",
+          "iaf:black_leggings",
+          "iaf:amythest_legging",
+          "iaf:red_chestplate",
+          "iaf:blue_legging",
+          "iaf:green_legging",
+          "iaf:bronze_legging",
+          "iaf:copper_legging",
+          "iaf:electric_legging",
+          "iaf:gray_legging",
+          "iaf:red_legging",
+          "iaf:white_legging",
+          "iaf:sapphire_legging",
+          "iaf:silver_legging",
+          "iaf:black_boot",
+          "iaf:amythest_boot",
+          "iaf:blue_boot",
+          "iaf:green_boot",
+          "iaf:bronze_boot",
+          "iaf:silver_boot",
+          "iaf:white_boot",
+          "iaf:copper_boot",
+          "iaf:electric_boot",
+          "iaf:sapphire_boot",
+          "iaf:gray_boot",
+          "iaf:red_boot"
+        ]
+      },
+      "animations": {
+        "walk": "controller.animation.walk",
+        "iaf:black_helmet": "controller.animation.iaf_black_helmet",
+        "iaf:amythest_helmet": "controller.animation.iaf_amythest_helmet",
+        "iaf:blue_helmet": "controller.animation.iaf_blue_helmet",
+        "iaf:green_helmet": "controller.animation.iaf_green_helmet",
+        "iaf:copper_helmet": "controller.animation.iaf_copper_helmet",
+        "iaf:bronze_helmet": "controller.animation.iaf_bronze_helmet",
+        "iaf:electric_helmet": "controller.animation.iaf_electric_helmet",
+        "iaf:gray_helmet": "controller.animation.iaf_gray_helmet",
+        "iaf:red_helmet": "controller.animation.iaf_red_helmet",
+        "iaf:silver_helmet": "controller.animation.iaf_silver_helmet",
+        "iaf:sapphire_helmet": "controller.animation.iaf_sapphire_helmet",
+        "iaf:white_helmet": "controller.animation.iaf_white_helmet",
+        "iaf:black_chestplate": "controller.animation.iaf_black_chestplate",
+        "iaf:amythest_chestplate": "controller.animation.iaf_amythest_chestplate",
+        "iaf:green_chestplate": "controller.animation.iaf_green_chestplate",
+        "iaf:blue_chestplate": "controller.animation.iaf_blue_chestplate",
+        "iaf:bronze_chestplate": "controller.animation.iaf_bronze_chestplate",
+        "iaf:copper_chestplate": "controller.animation.iaf_copper_chestplate",
+        "iaf:electric_chestplate": "controller.animation.iaf_electric_chestplate",
+        "iaf:gray_chestplate": "controller.animation.iaf_gray_chestplate",
+        "iaf:silver_chestplate": "controller.animation.iaf_silver_chestplate",
+        "iaf:sapphire_chestplate": "controller.animation.iaf_sapphire_chestplate",
+        "iaf:white_chestplate": "controller.animation.iaf_white_chestplate",
+        "iaf:black_leggings": "controller.animation.iaf_black_leggings",
+        "iaf:amythest_legging": "controller.animation.iaf_amythest_legging",
+        "iaf:red_chestplate": "controller.animation.iaf_red_chestplate",
+        "iaf:blue_legging": "controller.animation.iaf_blue_legging",
+        "iaf:green_legging": "controller.animation.iaf_green_legging",
+        "iaf:bronze_legging": "controller.animation.iaf_bronze_legging",
+        "iaf:copper_legging": "controller.animation.iaf_copper_legging",
+        "iaf:electric_legging": "controller.animation.iaf_electric_legging",
+        "iaf:gray_legging": "controller.animation.iaf_gray_legging",
+        "iaf:red_legging": "controller.animation.iaf_red_legging",
+        "iaf:white_legging": "controller.animation.iaf_white_legging",
+        "iaf:sapphire_legging": "controller.animation.iaf_sapphire_legging",
+        "iaf:silver_legging": "controller.animation.iaf_silver_legging",
+        "iaf:black_boot": "controller.animation.iaf_black_boot",
+        "iaf:amythest_boot": "controller.animation.iaf_amythest_boot",
+        "iaf:blue_boot": "controller.animation.iaf_blue_boot",
+        "iaf:green_boot": "controller.animation.iaf_green_boot",
+        "iaf:bronze_boot": "controller.animation.iaf_bronze_boot",
+        "iaf:silver_boot": "controller.animation.iaf_silver_boot",
+        "iaf:white_boot": "controller.animation.iaf_white_boot",
+        "iaf:copper_boot": "controller.animation.iaf_copper_boot",
+        "iaf:electric_boot": "controller.animation.iaf_electric_boot",
+        "iaf:sapphire_boot": "controller.animation.iaf_sapphire_boot",
+        "iaf:gray_boot": "controller.animation.iaf_gray_boot",
+        "iaf:red_boot": "controller.animation.iaf_red_boot"
+      }
+    },
+    "component_groups": {
+      "pamobile:respawn": {
+        "minecraft:mark_variant": {
+          "value": 99999
+        },
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:attack": {
+          "damage": 1
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": []
+        }
+      },
+      "ammo:1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "iaf:black_helmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:amythest_helmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:blue_helmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:green_helmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:copper_helmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:bronze_helmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:electric_helmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:gray_helmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:red_helmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:silver_helmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:sapphire_helmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:white_helmet_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:black_chestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:amythest_chestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:green_chestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:blue_chestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:bronze_chestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:copper_chestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:electric_chestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:gray_chestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:silver_chestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:sapphire_chestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:white_chestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:black_leggings_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:amythest_legging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:red_chestplate_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:blue_legging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:green_legging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:bronze_legging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:copper_legging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:electric_legging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:gray_legging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:red_legging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:white_legging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:sapphire_legging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:silver_legging_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:black_boot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:amythest_boot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:blue_boot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:green_boot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:bronze_boot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:silver_boot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:white_boot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:copper_boot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:electric_boot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:sapphire_boot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:gray_boot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      },
+      "iaf:red_boot_event_play": {
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:spell_effects": {
+          "add_effects": []
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "player"
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {},
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:environment_sensor": [
+        {
+          "on_environment": {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "player"
+                }
+              ]
+            },
+            "event": "pamobile:refresh_player"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:black_helmet"
+                }
+              ]
+            },
+            "event": "iaf:black_helmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:black_helmet"
+                }
+              ]
+            },
+            "event": "iaf:black_helmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:amythest_helmet"
+                }
+              ]
+            },
+            "event": "iaf:amythest_helmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:amythest_helmet"
+                }
+              ]
+            },
+            "event": "iaf:amythest_helmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:blue_helmet"
+                }
+              ]
+            },
+            "event": "iaf:blue_helmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:blue_helmet"
+                }
+              ]
+            },
+            "event": "iaf:blue_helmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:green_helmet"
+                }
+              ]
+            },
+            "event": "iaf:green_helmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:green_helmet"
+                }
+              ]
+            },
+            "event": "iaf:green_helmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:copper_helmet"
+                }
+              ]
+            },
+            "event": "iaf:copper_helmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:copper_helmet"
+                }
+              ]
+            },
+            "event": "iaf:copper_helmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:bronze_helmet"
+                }
+              ]
+            },
+            "event": "iaf:bronze_helmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:bronze_helmet"
+                }
+              ]
+            },
+            "event": "iaf:bronze_helmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:electric_helmet"
+                }
+              ]
+            },
+            "event": "iaf:electric_helmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:electric_helmet"
+                }
+              ]
+            },
+            "event": "iaf:electric_helmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:gray_helmet"
+                }
+              ]
+            },
+            "event": "iaf:gray_helmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:gray_helmet"
+                }
+              ]
+            },
+            "event": "iaf:gray_helmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:red_helmet"
+                }
+              ]
+            },
+            "event": "iaf:red_helmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:red_helmet"
+                }
+              ]
+            },
+            "event": "iaf:red_helmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:silver_helmet"
+                }
+              ]
+            },
+            "event": "iaf:silver_helmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:silver_helmet"
+                }
+              ]
+            },
+            "event": "iaf:silver_helmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:sapphire_helmet"
+                }
+              ]
+            },
+            "event": "iaf:sapphire_helmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:sapphire_helmet"
+                }
+              ]
+            },
+            "event": "iaf:sapphire_helmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:white_helmet"
+                }
+              ]
+            },
+            "event": "iaf:white_helmet_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:white_helmet"
+                }
+              ]
+            },
+            "event": "iaf:white_helmet_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:black_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:black_chestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:black_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:black_chestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:amythest_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:amythest_chestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:amythest_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:amythest_chestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:green_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:green_chestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:green_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:green_chestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:blue_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:blue_chestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:blue_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:blue_chestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:bronze_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:bronze_chestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:bronze_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:bronze_chestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:copper_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:copper_chestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:copper_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:copper_chestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:electric_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:electric_chestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:electric_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:electric_chestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:gray_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:gray_chestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:gray_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:gray_chestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:silver_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:silver_chestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:silver_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:silver_chestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:sapphire_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:sapphire_chestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:sapphire_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:sapphire_chestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:white_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:white_chestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:white_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:white_chestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:black_leggings"
+                }
+              ]
+            },
+            "event": "iaf:black_leggings_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:black_leggings"
+                }
+              ]
+            },
+            "event": "iaf:black_leggings_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:amythest_legging"
+                }
+              ]
+            },
+            "event": "iaf:amythest_legging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:amythest_legging"
+                }
+              ]
+            },
+            "event": "iaf:amythest_legging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:red_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:red_chestplate_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:red_chestplate"
+                }
+              ]
+            },
+            "event": "iaf:red_chestplate_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:blue_legging"
+                }
+              ]
+            },
+            "event": "iaf:blue_legging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:blue_legging"
+                }
+              ]
+            },
+            "event": "iaf:blue_legging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:green_legging"
+                }
+              ]
+            },
+            "event": "iaf:green_legging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:green_legging"
+                }
+              ]
+            },
+            "event": "iaf:green_legging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:bronze_legging"
+                }
+              ]
+            },
+            "event": "iaf:bronze_legging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:bronze_legging"
+                }
+              ]
+            },
+            "event": "iaf:bronze_legging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:copper_legging"
+                }
+              ]
+            },
+            "event": "iaf:copper_legging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:copper_legging"
+                }
+              ]
+            },
+            "event": "iaf:copper_legging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:electric_legging"
+                }
+              ]
+            },
+            "event": "iaf:electric_legging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:electric_legging"
+                }
+              ]
+            },
+            "event": "iaf:electric_legging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:gray_legging"
+                }
+              ]
+            },
+            "event": "iaf:gray_legging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:gray_legging"
+                }
+              ]
+            },
+            "event": "iaf:gray_legging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:red_legging"
+                }
+              ]
+            },
+            "event": "iaf:red_legging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:red_legging"
+                }
+              ]
+            },
+            "event": "iaf:red_legging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:white_legging"
+                }
+              ]
+            },
+            "event": "iaf:white_legging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:white_legging"
+                }
+              ]
+            },
+            "event": "iaf:white_legging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:sapphire_legging"
+                }
+              ]
+            },
+            "event": "iaf:sapphire_legging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:sapphire_legging"
+                }
+              ]
+            },
+            "event": "iaf:sapphire_legging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:silver_legging"
+                }
+              ]
+            },
+            "event": "iaf:silver_legging_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:silver_legging"
+                }
+              ]
+            },
+            "event": "iaf:silver_legging_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:black_boot"
+                }
+              ]
+            },
+            "event": "iaf:black_boot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:black_boot"
+                }
+              ]
+            },
+            "event": "iaf:black_boot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:amythest_boot"
+                }
+              ]
+            },
+            "event": "iaf:amythest_boot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:amythest_boot"
+                }
+              ]
+            },
+            "event": "iaf:amythest_boot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:blue_boot"
+                }
+              ]
+            },
+            "event": "iaf:blue_boot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:blue_boot"
+                }
+              ]
+            },
+            "event": "iaf:blue_boot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:green_boot"
+                }
+              ]
+            },
+            "event": "iaf:green_boot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:green_boot"
+                }
+              ]
+            },
+            "event": "iaf:green_boot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:bronze_boot"
+                }
+              ]
+            },
+            "event": "iaf:bronze_boot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:bronze_boot"
+                }
+              ]
+            },
+            "event": "iaf:bronze_boot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:silver_boot"
+                }
+              ]
+            },
+            "event": "iaf:silver_boot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:silver_boot"
+                }
+              ]
+            },
+            "event": "iaf:silver_boot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:white_boot"
+                }
+              ]
+            },
+            "event": "iaf:white_boot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:white_boot"
+                }
+              ]
+            },
+            "event": "iaf:white_boot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:copper_boot"
+                }
+              ]
+            },
+            "event": "iaf:copper_boot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:copper_boot"
+                }
+              ]
+            },
+            "event": "iaf:copper_boot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:electric_boot"
+                }
+              ]
+            },
+            "event": "iaf:electric_boot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:electric_boot"
+                }
+              ]
+            },
+            "event": "iaf:electric_boot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:sapphire_boot"
+                }
+              ]
+            },
+            "event": "iaf:sapphire_boot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:sapphire_boot"
+                }
+              ]
+            },
+            "event": "iaf:sapphire_boot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:gray_boot"
+                }
+              ]
+            },
+            "event": "iaf:gray_boot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:gray_boot"
+                }
+              ]
+            },
+            "event": "iaf:gray_boot_event_play"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "hand",
+                  "value": "iaf:red_boot"
+                }
+              ]
+            },
+            "event": "iaf:red_boot_event_hold"
+          }
+        },
+        {
+          "on_environment": {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_equipment",
+                  "subject": "self",
+                  "domain": "head",
+                  "value": "iaf:red_boot"
+                }
+              ]
+            },
+            "event": "iaf:red_boot_event_play"
+          }
+        }
+      ],
+      "minecraft:player.saturation": {
+        "value": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 4
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": -1,
+        "inhaleTime": 3.75,
+        "generatesBubbles": false
+      },
+      "minecraft:nameable": {
+        "alwaysShow": true,
+        "allowNameTagRenaming": false
+      },
+      "minecraft:physics": {},
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [
+              0.4,
+              -0.15,
+              0.04
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [
+              -0.4,
+              -0.15,
+              0.04
+            ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:scaffolding_climber": {}
+    },
+    "events": {
+      "pamobile:refresh_player": {
+        "add": {
+          "component_groups": [
+            "pamobile:respawn"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "iaf:black_helmet_event_hold",
+            "iaf:black_helmet_event_play",
+            "iaf:amythest_helmet_event_hold",
+            "iaf:amythest_helmet_event_play",
+            "iaf:blue_helmet_event_hold",
+            "iaf:blue_helmet_event_play",
+            "iaf:green_helmet_event_hold",
+            "iaf:green_helmet_event_play",
+            "iaf:copper_helmet_event_hold",
+            "iaf:copper_helmet_event_play",
+            "iaf:bronze_helmet_event_hold",
+            "iaf:bronze_helmet_event_play",
+            "iaf:electric_helmet_event_hold",
+            "iaf:electric_helmet_event_play",
+            "iaf:gray_helmet_event_hold",
+            "iaf:gray_helmet_event_play",
+            "iaf:red_helmet_event_hold",
+            "iaf:red_helmet_event_play",
+            "iaf:silver_helmet_event_hold",
+            "iaf:silver_helmet_event_play",
+            "iaf:sapphire_helmet_event_hold",
+            "iaf:sapphire_helmet_event_play",
+            "iaf:white_helmet_event_hold",
+            "iaf:white_helmet_event_play",
+            "iaf:black_chestplate_event_hold",
+            "iaf:black_chestplate_event_play",
+            "iaf:amythest_chestplate_event_hold",
+            "iaf:amythest_chestplate_event_play",
+            "iaf:green_chestplate_event_hold",
+            "iaf:green_chestplate_event_play",
+            "iaf:blue_chestplate_event_hold",
+            "iaf:blue_chestplate_event_play",
+            "iaf:bronze_chestplate_event_hold",
+            "iaf:bronze_chestplate_event_play",
+            "iaf:copper_chestplate_event_hold",
+            "iaf:copper_chestplate_event_play",
+            "iaf:electric_chestplate_event_hold",
+            "iaf:electric_chestplate_event_play",
+            "iaf:gray_chestplate_event_hold",
+            "iaf:gray_chestplate_event_play",
+            "iaf:silver_chestplate_event_hold",
+            "iaf:silver_chestplate_event_play",
+            "iaf:sapphire_chestplate_event_hold",
+            "iaf:sapphire_chestplate_event_play",
+            "iaf:white_chestplate_event_hold",
+            "iaf:white_chestplate_event_play",
+            "iaf:black_leggings_event_hold",
+            "iaf:black_leggings_event_play",
+            "iaf:amythest_legging_event_hold",
+            "iaf:amythest_legging_event_play",
+            "iaf:red_chestplate_event_hold",
+            "iaf:red_chestplate_event_play",
+            "iaf:blue_legging_event_hold",
+            "iaf:blue_legging_event_play",
+            "iaf:green_legging_event_hold",
+            "iaf:green_legging_event_play",
+            "iaf:bronze_legging_event_hold",
+            "iaf:bronze_legging_event_play",
+            "iaf:copper_legging_event_hold",
+            "iaf:copper_legging_event_play",
+            "iaf:electric_legging_event_hold",
+            "iaf:electric_legging_event_play",
+            "iaf:gray_legging_event_hold",
+            "iaf:gray_legging_event_play",
+            "iaf:red_legging_event_hold",
+            "iaf:red_legging_event_play",
+            "iaf:white_legging_event_hold",
+            "iaf:white_legging_event_play",
+            "iaf:sapphire_legging_event_hold",
+            "iaf:sapphire_legging_event_play",
+            "iaf:silver_legging_event_hold",
+            "iaf:silver_legging_event_play",
+            "iaf:black_boot_event_hold",
+            "iaf:black_boot_event_play",
+            "iaf:amythest_boot_event_hold",
+            "iaf:amythest_boot_event_play",
+            "iaf:blue_boot_event_hold",
+            "iaf:blue_boot_event_play",
+            "iaf:green_boot_event_hold",
+            "iaf:green_boot_event_play",
+            "iaf:bronze_boot_event_hold",
+            "iaf:bronze_boot_event_play",
+            "iaf:silver_boot_event_hold",
+            "iaf:silver_boot_event_play",
+            "iaf:white_boot_event_hold",
+            "iaf:white_boot_event_play",
+            "iaf:copper_boot_event_hold",
+            "iaf:copper_boot_event_play",
+            "iaf:electric_boot_event_hold",
+            "iaf:electric_boot_event_play",
+            "iaf:sapphire_boot_event_hold",
+            "iaf:sapphire_boot_event_play",
+            "iaf:gray_boot_event_hold",
+            "iaf:gray_boot_event_play",
+            "iaf:red_boot_event_hold",
+            "iaf:red_boot_event_play"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "pamobile:respawn"
+          ]
+        },
+        "remove": {}
+      },
+      "ammo:1": {
+        "remove": {
+          "component_groups": [
+            "ammo:1"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "ammo:1"
+          ]
+        }
+      },
+      "ammo:2": {
+        "remove": {
+          "component_groups": [
+            "ammo:2"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "ammo:2"
+          ]
+        }
+      },
+      "iaf:black_helmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:black_helmet_event_hold"
+          ]
+        }
+      },
+      "iaf:black_helmet_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:black_helmet_event_play"
+          ]
+        }
+      },
+      "iaf:amythest_helmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:amythest_helmet_event_hold"
+          ]
+        }
+      },
+      "iaf:amythest_helmet_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:amythest_helmet_event_play"
+          ]
+        }
+      },
+      "iaf:blue_helmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:blue_helmet_event_hold"
+          ]
+        }
+      },
+      "iaf:blue_helmet_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:blue_helmet_event_play"
+          ]
+        }
+      },
+      "iaf:green_helmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:green_helmet_event_hold"
+          ]
+        }
+      },
+      "iaf:green_helmet_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:green_helmet_event_play"
+          ]
+        }
+      },
+      "iaf:copper_helmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:copper_helmet_event_hold"
+          ]
+        }
+      },
+      "iaf:copper_helmet_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:copper_helmet_event_play"
+          ]
+        }
+      },
+      "iaf:bronze_helmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:bronze_helmet_event_hold"
+          ]
+        }
+      },
+      "iaf:bronze_helmet_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:bronze_helmet_event_play"
+          ]
+        }
+      },
+      "iaf:electric_helmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:electric_helmet_event_hold"
+          ]
+        }
+      },
+      "iaf:electric_helmet_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:electric_helmet_event_play"
+          ]
+        }
+      },
+      "iaf:gray_helmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:gray_helmet_event_hold"
+          ]
+        }
+      },
+      "iaf:gray_helmet_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:gray_helmet_event_play"
+          ]
+        }
+      },
+      "iaf:red_helmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:red_helmet_event_hold"
+          ]
+        }
+      },
+      "iaf:red_helmet_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:red_helmet_event_play"
+          ]
+        }
+      },
+      "iaf:silver_helmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:silver_helmet_event_hold"
+          ]
+        }
+      },
+      "iaf:silver_helmet_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:silver_helmet_event_play"
+          ]
+        }
+      },
+      "iaf:sapphire_helmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:sapphire_helmet_event_hold"
+          ]
+        }
+      },
+      "iaf:sapphire_helmet_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:sapphire_helmet_event_play"
+          ]
+        }
+      },
+      "iaf:white_helmet_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:white_helmet_event_hold"
+          ]
+        }
+      },
+      "iaf:white_helmet_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:white_helmet_event_play"
+          ]
+        }
+      },
+      "iaf:black_chestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:black_chestplate_event_hold"
+          ]
+        }
+      },
+      "iaf:black_chestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:black_chestplate_event_play"
+          ]
+        }
+      },
+      "iaf:amythest_chestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:amythest_chestplate_event_hold"
+          ]
+        }
+      },
+      "iaf:amythest_chestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:amythest_chestplate_event_play"
+          ]
+        }
+      },
+      "iaf:green_chestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:green_chestplate_event_hold"
+          ]
+        }
+      },
+      "iaf:green_chestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:green_chestplate_event_play"
+          ]
+        }
+      },
+      "iaf:blue_chestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:blue_chestplate_event_hold"
+          ]
+        }
+      },
+      "iaf:blue_chestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:blue_chestplate_event_play"
+          ]
+        }
+      },
+      "iaf:bronze_chestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:bronze_chestplate_event_hold"
+          ]
+        }
+      },
+      "iaf:bronze_chestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:bronze_chestplate_event_play"
+          ]
+        }
+      },
+      "iaf:copper_chestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:copper_chestplate_event_hold"
+          ]
+        }
+      },
+      "iaf:copper_chestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:copper_chestplate_event_play"
+          ]
+        }
+      },
+      "iaf:electric_chestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:electric_chestplate_event_hold"
+          ]
+        }
+      },
+      "iaf:electric_chestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:electric_chestplate_event_play"
+          ]
+        }
+      },
+      "iaf:gray_chestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:gray_chestplate_event_hold"
+          ]
+        }
+      },
+      "iaf:gray_chestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:gray_chestplate_event_play"
+          ]
+        }
+      },
+      "iaf:silver_chestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:silver_chestplate_event_hold"
+          ]
+        }
+      },
+      "iaf:silver_chestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:silver_chestplate_event_play"
+          ]
+        }
+      },
+      "iaf:sapphire_chestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:sapphire_chestplate_event_hold"
+          ]
+        }
+      },
+      "iaf:sapphire_chestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:sapphire_chestplate_event_play"
+          ]
+        }
+      },
+      "iaf:white_chestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:white_chestplate_event_hold"
+          ]
+        }
+      },
+      "iaf:white_chestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:white_chestplate_event_play"
+          ]
+        }
+      },
+      "iaf:black_leggings_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:black_leggings_event_hold"
+          ]
+        }
+      },
+      "iaf:black_leggings_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:black_leggings_event_play"
+          ]
+        }
+      },
+      "iaf:amythest_legging_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:amythest_legging_event_hold"
+          ]
+        }
+      },
+      "iaf:amythest_legging_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:amythest_legging_event_play"
+          ]
+        }
+      },
+      "iaf:red_chestplate_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:red_chestplate_event_hold"
+          ]
+        }
+      },
+      "iaf:red_chestplate_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:red_chestplate_event_play"
+          ]
+        }
+      },
+      "iaf:blue_legging_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:blue_legging_event_hold"
+          ]
+        }
+      },
+      "iaf:blue_legging_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:blue_legging_event_play"
+          ]
+        }
+      },
+      "iaf:green_legging_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:green_legging_event_hold"
+          ]
+        }
+      },
+      "iaf:green_legging_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:green_legging_event_play"
+          ]
+        }
+      },
+      "iaf:bronze_legging_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:bronze_legging_event_hold"
+          ]
+        }
+      },
+      "iaf:bronze_legging_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:bronze_legging_event_play"
+          ]
+        }
+      },
+      "iaf:copper_legging_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:copper_legging_event_hold"
+          ]
+        }
+      },
+      "iaf:copper_legging_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:copper_legging_event_play"
+          ]
+        }
+      },
+      "iaf:electric_legging_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:electric_legging_event_hold"
+          ]
+        }
+      },
+      "iaf:electric_legging_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:electric_legging_event_play"
+          ]
+        }
+      },
+      "iaf:gray_legging_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:gray_legging_event_hold"
+          ]
+        }
+      },
+      "iaf:gray_legging_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:gray_legging_event_play"
+          ]
+        }
+      },
+      "iaf:red_legging_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:red_legging_event_hold"
+          ]
+        }
+      },
+      "iaf:red_legging_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:red_legging_event_play"
+          ]
+        }
+      },
+      "iaf:white_legging_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:white_legging_event_hold"
+          ]
+        }
+      },
+      "iaf:white_legging_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:white_legging_event_play"
+          ]
+        }
+      },
+      "iaf:sapphire_legging_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:sapphire_legging_event_hold"
+          ]
+        }
+      },
+      "iaf:sapphire_legging_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:sapphire_legging_event_play"
+          ]
+        }
+      },
+      "iaf:silver_legging_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:silver_legging_event_hold"
+          ]
+        }
+      },
+      "iaf:silver_legging_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:silver_legging_event_play"
+          ]
+        }
+      },
+      "iaf:black_boot_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:black_boot_event_hold"
+          ]
+        }
+      },
+      "iaf:black_boot_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:black_boot_event_play"
+          ]
+        }
+      },
+      "iaf:amythest_boot_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:amythest_boot_event_hold"
+          ]
+        }
+      },
+      "iaf:amythest_boot_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:amythest_boot_event_play"
+          ]
+        }
+      },
+      "iaf:blue_boot_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:blue_boot_event_hold"
+          ]
+        }
+      },
+      "iaf:blue_boot_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:blue_boot_event_play"
+          ]
+        }
+      },
+      "iaf:green_boot_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:green_boot_event_hold"
+          ]
+        }
+      },
+      "iaf:green_boot_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:green_boot_event_play"
+          ]
+        }
+      },
+      "iaf:bronze_boot_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:bronze_boot_event_hold"
+          ]
+        }
+      },
+      "iaf:bronze_boot_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:bronze_boot_event_play"
+          ]
+        }
+      },
+      "iaf:silver_boot_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:silver_boot_event_hold"
+          ]
+        }
+      },
+      "iaf:silver_boot_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:silver_boot_event_play"
+          ]
+        }
+      },
+      "iaf:white_boot_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:white_boot_event_hold"
+          ]
+        }
+      },
+      "iaf:white_boot_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:white_boot_event_play"
+          ]
+        }
+      },
+      "iaf:copper_boot_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:copper_boot_event_hold"
+          ]
+        }
+      },
+      "iaf:copper_boot_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:copper_boot_event_play"
+          ]
+        }
+      },
+      "iaf:electric_boot_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:electric_boot_event_hold"
+          ]
+        }
+      },
+      "iaf:electric_boot_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:electric_boot_event_play"
+          ]
+        }
+      },
+      "iaf:sapphire_boot_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:sapphire_boot_event_hold"
+          ]
+        }
+      },
+      "iaf:sapphire_boot_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:sapphire_boot_event_play"
+          ]
+        }
+      },
+      "iaf:gray_boot_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:gray_boot_event_hold"
+          ]
+        }
+      },
+      "iaf:gray_boot_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:gray_boot_event_play"
+          ]
+        }
+      },
+      "iaf:red_boot_event_hold": {
+        "add": {
+          "component_groups": [
+            "iaf:red_boot_event_hold"
+          ]
+        }
+      },
+      "iaf:red_boot_event_play": {
+        "add": {
+          "component_groups": [
+            "iaf:red_boot_event_play"
+          ]
+        }
+      }
+    }
+  }
+}

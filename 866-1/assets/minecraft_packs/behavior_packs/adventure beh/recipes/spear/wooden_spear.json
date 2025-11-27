@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pili:wooden_spear"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "  b",
+      " a ",
+"a  "
+    ],
+    "key": {
+
+      "b": {
+        "item": "minecraft:log"
+      },
+      "a": {
+        "item": "minecraft:stick"
+      }
+      
+    },
+    "result": {
+      "item": "pili:wooden_spear"
+    }
+  }
+}

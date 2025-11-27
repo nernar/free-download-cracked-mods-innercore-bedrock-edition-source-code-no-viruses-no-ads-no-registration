@@ -1,0 +1,94 @@
+{
+	"mob.portal.portal": {
+		"category": "hostile",
+		"sounds": [
+			{
+				"name": "sounds/cursed_spells/say",
+				"volume": 0.9
+			}
+		]
+	},
+	"mob.black_water.fill": {
+		"category": "hostile",
+		"sounds": [
+			{
+				"name": "sounds/black_water/fill1",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/black_water/fill2",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/black_water/fill3",
+				"volume": 0.9
+			}
+		]
+	},
+	"mob.black_water.empty": {
+		"category": "hostile",
+		"sounds": [
+			{
+				"name": "sounds/black_water/empty1",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/black_water/empty2",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/black_water/empty3",
+				"volume": 0.9
+			}
+		]
+	},
+	"mob.corpse_crawler.say": {
+		"category": "hostile",
+		"sounds": [
+			{
+				"name": "sounds/corpse_crawler/corpse_crawler_1",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/corpse_crawler/corpse_crawler_2",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/corpse_crawler/corpse_crawler_3",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/corpse_crawler/corpse_crawler_4",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/corpse_crawler/corpse_crawler_5",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/corpse_crawler/corpse_crawler_6",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/corpse_crawler/corpse_crawler_7",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/corpse_crawler/corpse_crawler_8",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/corpse_crawler/corpse_crawler_9",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/corpse_crawler/corpse_crawler_10",
+				"volume": 0.9
+			},
+			{
+				"name": "sounds/corpse_crawler/corpse_crawler_11",
+				"volume": 0.9
+			}
+		]
+	}
+}

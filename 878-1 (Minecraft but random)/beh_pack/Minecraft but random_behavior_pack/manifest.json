@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "Minecraft but random. by IsaacFG",
+    "name": "Minecraft but random",
+    "uuid": "f56f4939-3bcd-4aea-aa91-f30837eccbfa",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Minecraft but random. by IsaacFG",
+      "type": "data",
+      "uuid": "6be0388c-a670-45df-9b4a-41398925d031",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "5d7a7343-8ac0-4b2e-9b39-4cc7bb33d2ac",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

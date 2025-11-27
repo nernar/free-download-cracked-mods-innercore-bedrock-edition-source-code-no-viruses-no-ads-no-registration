@@ -1,0 +1,57 @@
+{
+	"format_version": "1.8.0",
+	"geometry.gravitite": {
+		"texturewidth": 256,
+		"textureheight": 256,
+		"visible_bounds_width": 5,
+		"visible_bounds_height": 1,
+		"visible_bounds_offset": [0, 0.5, 0],
+		"bones": [
+			{
+				"name": "ring",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-8, 16, -43], "size": [16, 16, 86], "uv": [0, 0]},
+					{"origin": [-43, 16, -8], "size": [86, 16, 16], "uv": [0, 102]}
+				]
+			},
+			{
+				"name": "znfnst",
+				"parent": "ring",
+				"pivot": [0, 24, 0],
+				"rotation": [0, -45, 0],
+				"cubes": [
+					{"origin": [-8, 16, -43], "size": [16, 16, 86], "uv": [0, 0]},
+					{"origin": [-43, 16, -8], "size": [86, 16, 16], "uv": [0, 102]}
+				]
+			},
+			{
+				"name": "evawevtg",
+				"parent": "ring",
+				"pivot": [0, 24, 0],
+				"rotation": [0, -22.5, 0],
+				"cubes": [
+					{"origin": [-8, 16, -43], "size": [16, 16, 86], "uv": [0, 0]},
+					{"origin": [-43, 16, -8], "size": [86, 16, 16], "uv": [0, 102]}
+				]
+			},
+			{
+				"name": "erverw",
+				"parent": "ring",
+				"pivot": [0, 24, 0],
+				"rotation": [0, 22.5, 0],
+				"cubes": [
+					{"origin": [-8, 16, -43], "size": [16, 16, 86], "uv": [0, 0]},
+					{"origin": [-43, 16, -8], "size": [86, 16, 16], "uv": [0, 102]}
+				]
+			},
+			{
+				"name": "main",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-8, 16, -8], "size": [16, 16, 16], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

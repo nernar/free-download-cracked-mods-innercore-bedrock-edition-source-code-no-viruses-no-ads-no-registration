@@ -1,0 +1,45 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pili:pili_med2",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "pili_med2"
+			},
+
+		"minecraft:foil": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 10
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:can_destroy_in_creative": false,
+		"minecraft:on_use": {
+				"on_use": {
+					"event": "pili_med2"
+				}
+			},
+"minecraft:cooldown": {
+				"category": "pili_med2",
+				"duration": 2
+			}
+		},
+		"events": {
+			"pili_med2": {
+				"damage": {
+					"type": "none",
+					"amount": 1,
+					"target": "self"
+				},
+					"run_command": {
+					"command": [
+							"effect @s instant_health 1 3 true", "function pili_med"
+					]
+				}
+			}
+		}
+	}
+}

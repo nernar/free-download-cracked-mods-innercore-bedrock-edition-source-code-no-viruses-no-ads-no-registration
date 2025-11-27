@@ -1,0 +1,25 @@
+IDRegistry.genItemID("armor1");
+Item.createArmorItem("armor1", "armor 1", {name: "armor_fire", meta: 4}, {type: "helmet", armor: 7, durability: 6993, texture: "armor/armor1.png"});
+Translation.addTranslation("armor 1", {ru: "\u043e\u0433\u043d\u0435\u043d\u044b\u0439 \u0448\u043b\u0435\u043c"});
+IDRegistry.genItemID("armor2");
+Item.createArmorItem("armor2", "armor 2", {name: "armor_fire", meta: 3}, {type: "chestplate", armor: 10, durability: 9102, texture: "armor/armor1.png"});
+Translation.addTranslation("armor 2", {ru: "\u043e\u0433\u043d\u0435\u043d\u043d\u044b\u0439 \u043d\u0430\u0433\u0440\u0443\u0434\u043d\u0438\u043a"});
+IDRegistry.genItemID("armor3");
+Item.createArmorItem("armor3", "armor 3", {name: "armor_fire", meta: 2}, {type: "leggings", armor: 9, durability: 8103, texture: "armor/armor2.png"});
+Translation.addTranslation("armor 3", {ru: "\u043e\u0433\u043d\u0435\u043d\u043d\u044b\u0435 \u043f\u043e\u043d\u043e\u0436\u0438"});
+IDRegistry.genItemID("armor4");
+Item.createArmorItem("armor4", "armor 4", {name: "armor_fire", meta: 1}, {type: "boots", armor: 6, durability: 6438, texture: "armor/armor1.png"});
+Translation.addTranslation("armor 4", {ru: "\u043e\u0433\u043d\u0435\u043d\u044b\u0435 \u0431\u043e\u0442\u0438\u043d\u043a\u0438"});
+IDRegistry.genItemID("armor5");
+Item.createArmorItem("armor5", "armor 5", {name: "armor", meta: 1}, {type: "helmet", armor: 5, durability: 2775, texture: "armor/armor4.png"});
+Translation.addTranslation("armor 5", {ru: "\u0431\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u044b\u0439 \u0448\u043b\u0435\u043c"});
+IDRegistry.genItemID("armor6");
+Item.createArmorItem("armor6", "armor 6", {name: "armor", meta: 2}, {type: "chestplate", armor: 8, durability: 4440, texture: "armor/armor4.png"});
+Translation.addTranslation("armor 6", {ru: "\u0431\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u044b\u0439 \u043d\u0430\u0433\u0440\u0443\u0434\u043d\u0438\u043a"});
+IDRegistry.genItemID("armor7");
+Item.createArmorItem("armor7", "armor 7", {name: "armor", meta: 3}, {type: "leggings", armor: 7, durability: 3885, texture: "armor/armor3.png"});
+Translation.addTranslation("armor 7", {ru: "\u0431\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u044b\u0435 \u043f\u043e\u043d\u043e\u0436\u0438"});
+IDRegistry.genItemID("armor8");
+Item.createArmorItem("armor8", "armor 8", {name: "armor", meta: 4}, {type: "boots", armor: 4, durability: 2220, texture: "armor/armor4.png"});
+Translation.addTranslation("armor 8", {ru: "\u0431\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u044b\u0439 \u0431\u043e\u0442\u0438\u043d\u043a\u0438"});
+

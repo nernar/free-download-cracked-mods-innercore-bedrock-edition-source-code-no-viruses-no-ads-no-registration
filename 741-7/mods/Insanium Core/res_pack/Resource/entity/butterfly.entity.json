@@ -1,0 +1,59 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "bioplentia:butterfly",
+      "materials": { 
+        "MaterialDefault": "entity_alphatest"
+      },
+      "textures": {
+        /*
+         Types:
+         + Menelaus blue morpho
+         + cabbage white
+         + green hairstreak
+         + cloudless sulphur
+         + julia 
+         + purpleimperium
+         + red admiral
+        */
+        "Texture0": "textures/entity/butterfly/menelaus_blue_morpho",
+        "Texture1": "textures/entity/butterfly/cabbage_white",
+        "Texture2": "textures/entity/butterfly/green_hairstreak",
+        "Texture3": "textures/entity/butterfly/cloudless_sulphur",
+        "Texture4": "textures/entity/butterfly/julia",
+        "Texture5": "textures/entity/butterfly/purple_emperor",
+        "Texture6": "textures/entity/butterfly/red_admiral"
+      },
+      "geometry": {
+        "GeometryDefault": "geometry.bioplentia.entity.butterfly"
+      },
+      
+	   "animations": {
+        "butterfly_root_controller": "controller.animation.butterfly.root",
+        "move": "controller.animation.butterfly.move",
+        "pollen": "controller.animation.butterfly.pollen",
+
+        "flying": "animation.butterfly.flying",
+        "resting": "animation.butterfly.resting"
+      },
+      "scripts": {
+        "animate": [
+          "butterfly_root_controller"
+        ]
+      },
+      "particle_effects": {
+        "pollen_falling": "bioplentia:falling_polen_particle"
+      },
+
+      "render_controllers": [ "controller.render.bioplentia.butterfly" ],
+      "spawn_egg": {
+         "base_color": "#0x83baa8",
+         "overlay_color": "#0xd4ead4"
+      }
+    }
+  }
+}

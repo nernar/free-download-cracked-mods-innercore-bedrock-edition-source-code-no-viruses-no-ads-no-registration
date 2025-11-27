@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+		"lib": [
+			"ESNext"
+		],
+		"strict": false,
+    	"skipLibCheck": true,
+		"outFile": "../main.js",
+		"newLine": "LF"
+	},
+	"include": [
+		"header.ts",
+		"api/enchants.ts",
+		"api/logic.ts",
+		"block/decoration.ts",
+		"block/table.ts",
+		"item/book.ts",
+		"item/upgrade.ts"
+  	],
+	"files": [
+		"../../../_MODULE_/android-declarations.d.ts",
+		"../../../_MODULE_/android.d.ts",
+		"../../../_MODULE_/core-engine.d.ts",
+		"../../../_MODULE_/additional.d.ts",
+		"../../../My-Lib/BookModel.d.ts"
+	]
+}

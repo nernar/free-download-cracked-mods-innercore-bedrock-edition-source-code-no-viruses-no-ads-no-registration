@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "vanilla_recipe:marble_brick"
+		},
+		"pattern": [
+			"XX",
+			"XX"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:block_rp_marble"
+			}
+		},
+		"result": {
+			"item": "minecraft:block_marble_brick",
+			"data": 0,
+			"count": 4
+		},
+		"tags": [
+			"crafting_table"
+		]
+	}
+}

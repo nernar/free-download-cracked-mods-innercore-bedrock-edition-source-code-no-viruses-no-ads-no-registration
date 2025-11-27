@@ -1,0 +1,9 @@
+{
+    "better-foliage": {
+        "leaves": [
+            {"texture": "terrain-atlas/fulrostleaves_0.png"},
+            {"texture": "terrain-atlas/glacileaves_0.png"},
+            {"texture": "terrain-atlas/paletreeleaves_0.png"}
+        ]
+    }
+}

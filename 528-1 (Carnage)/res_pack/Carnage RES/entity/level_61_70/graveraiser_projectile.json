@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:graveraiser_projectile",
+      "materials": {
+	    "default": "glow",
+	    "invisible": "glow_glass_blender"
+	  },
+      "textures": {
+        "default": "textures/level_61_70/projectiles/graveraiser"
+      },
+      "geometry": {
+        "default": "geometry.graveraiser_projectile"
+      },
+      "render_controllers": [ "controller.render.glow" ]
+    }
+  }
+}

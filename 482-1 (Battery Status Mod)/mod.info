@@ -1,0 +1,6 @@
+{
+  "name": "Battery Status Mod",
+  "author": "darpa",
+  "version": "1.0",
+  "description": "At the top left of the screen, a battery status GUI is displayed\n\nВ левом верхнем углу экрана отображается GUI состояния батареи."
+}

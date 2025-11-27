@@ -1,0 +1,32 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pili:vitamins"
+    },
+
+    "tags": [ "pili_craft" ],
+    "pattern": [
+      "ab",
+      "cd"
+    ],
+    "key": {
+      "a": {
+        "item": "minecraft:carrot"
+      },
+ "b": {
+        "item": "minecraft:potato"
+      },
+ "c": {
+        "item": "minecraft:sugar"
+      },
+ "d": {
+        "item": "minecraft:apple"
+      }
+
+},
+    "result": {
+      "item": "pili:vitamins"
+    }
+  }
+}

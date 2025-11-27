@@ -1,0 +1,168 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "head_white_enderman": {
+      "textures": [
+       "textures/blocks/head_white_enderman"
+     ]
+   },
+    "stand_spyglass": {
+      "textures": [
+       "textures/blocks/stand_spyglass"
+     ]
+   },
+    "chest_deep": {
+      "textures": [
+       "textures/blocks/chest_deep"
+     ]
+   },
+    "grave": {
+      "textures": [
+       "textures/blocks/grave"
+     ]
+   },
+    "prismarine_mine": {
+      "textures": [
+       "textures/blocks/prismarine_mine"
+     ]
+   },
+    "frame_guardian": {
+      "textures": [
+       "textures/blocks/frame/frame_guardian"
+     ]
+   },
+    "frame_gold_guardian": {
+      "textures": [
+       "textures/blocks/frame/frame_gold_guardian"
+     ]
+   },
+    "frame_pumpkin_dax": {
+      "textures": [
+       "textures/blocks/frame/frame_pumpkin_dax"
+     ]
+   },
+    "frame_zloyxp": {
+      "textures": [
+       "textures/blocks/frame/frame_zloyxp"
+     ]
+   },
+    "frame_mine_dragon": {
+      "textures": [
+       "textures/blocks/frame/frame_mine_dragon"
+     ]
+   },
+    "frame_nerkin": {
+      "textures": [
+       "textures/blocks/frame/frame_nerkin"
+     ]
+   },
+    "frame_systemzee": {
+      "textures": [
+       "textures/blocks/frame/frame_systemzee"
+     ]
+   },
+    "frame_dream_guardian": {
+      "textures": [
+       "textures/blocks/frame/frame_dream_guardian"
+     ]
+   },
+    "frame_dream": {
+      "textures": [
+       "textures/blocks/frame/frame_dream"
+     ]
+   },
+    "frame_1": {
+      "textures": [
+       "textures/blocks/frame/frame_1"
+     ]
+   },
+    "frame_red": {
+      "textures": [
+       "textures/blocks/frame/frame_red"
+     ]
+   },
+    "frame_silver": {
+      "textures": [
+       "textures/blocks/frame/frame_silver"
+     ]
+   },
+    "frame_brown": {
+      "textures": [
+       "textures/blocks/frame/frame_brown"
+     ]
+   },
+    "frame_cyan_0": {
+      "textures": [
+       "textures/blocks/frame/frame_cyan_0"
+     ]
+   },
+    "frame_green": {
+      "textures": [
+       "textures/blocks/frame/frame_green"
+     ]
+   },
+    "frame_black": {
+      "textures": [
+       "textures/blocks/frame/frame_black"
+     ]
+   },
+    "frame_cyan": {
+      "textures": [
+       "textures/blocks/frame/frame_cyan"
+     ]
+   },
+    "frame_lime": {
+      "textures": [
+       "textures/blocks/frame/frame_lime"
+     ]
+   },
+    "frame_light_blue": {
+      "textures": [
+       "textures/blocks/frame/frame_light_blue"
+     ]
+   },
+    "frame_blue": {
+      "textures": [
+       "textures/blocks/frame/frame_blue"
+     ]
+   },
+    "frame_yellow": {
+      "textures": [
+       "textures/blocks/frame/frame_yellow"
+     ]
+   },
+    "frame_gray": {
+      "textures": [
+       "textures/blocks/frame/frame_gray"
+     ]
+   },
+    "head_brute_enderman": {
+      "textures": [
+       "textures/blocks/head_brute_enderman"
+     ]
+   },
+    "red_rose": {
+      "textures": [
+       "textures/blocks/red_rose"
+     ]
+   },
+    "blue_rose": {
+      "textures": [
+       "textures/blocks/blue_rose"
+     ]
+   },
+    "mini_cauldron_1": {
+      "textures": [
+       "textures/blocks/mini_cauldron_1"
+     ]
+   },
+    "mini_cauldron": {
+      "textures": [
+       "textures/blocks/mini_cauldron"
+       ]
+    }
+  }
+}

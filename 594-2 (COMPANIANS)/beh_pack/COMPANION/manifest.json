@@ -1,0 +1,24 @@
+{
+   "dependencies" : [
+      {
+         "uuid" : "c1c77e6d-f49c-3def-88e0-ce045327e9e5",
+         "version" : [ 0, 0, 1 ]
+      }
+   ],
+   "format_version" : 1,
+   "header" : {
+      "description" : "A Fake Players Add-on",
+      "name" : "Fake Players Behavior",
+      "platform_locked" : false,
+      "uuid" : "d4ba2daa-55c9-3539-8abc-cb49e9d16207",
+      "version" : [ 0, 0, 1 ]
+   },
+   "modules" : [
+      {
+         "description" : "Fake Players Behavior",
+         "type" : "data",
+         "uuid" : "705fa023-6b2d-3348-9a0d-4fc9d740e347",
+         "version" : [ 0, 0, 1 ]
+      }
+   ]
+}

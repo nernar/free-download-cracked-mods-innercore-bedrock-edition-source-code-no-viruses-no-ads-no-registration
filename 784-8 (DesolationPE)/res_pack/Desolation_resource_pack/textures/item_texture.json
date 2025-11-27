@@ -1,0 +1,12 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "desolation:burned_skeleton": {
+      "textures": "textures/items/desolation_burned_skeleton"
+    },
+    "desolation:burned": {
+      "textures": "textures/items/desolation_burned"
+    }
+  }
+}

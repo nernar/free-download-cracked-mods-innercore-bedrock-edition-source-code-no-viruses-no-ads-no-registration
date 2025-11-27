@@ -1,0 +1,1 @@
+Recipes.addFurnace(367, 334, 0)

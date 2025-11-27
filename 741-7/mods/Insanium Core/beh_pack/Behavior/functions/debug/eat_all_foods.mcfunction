@@ -1,0 +1,42 @@
+give @s[name="r4isen19"] apple
+give @s[name="r4isen19"] baked_potato
+give @s[name="r4isen19"] beetroot
+give @s[name="r4isen19"] beetroot_soup
+give @s[name="r4isen19"] bread
+give @s[name="r4isen19"] carrot
+give @s[name="r4isen19"] chorus_fruit
+give @s[name="r4isen19"] cooked_chicken
+give @s[name="r4isen19"] cooked_cod
+give @s[name="r4isen19"] cooked_mutton
+give @s[name="r4isen19"] cooked_porkchop
+give @s[name="r4isen19"] cooked_rabbit
+give @s[name="r4isen19"] cooked_salmon
+give @s[name="r4isen19"] cookie
+give @s[name="r4isen19"] dried_kelp
+give @s[name="r4isen19"] enchanted_golden_apple
+give @s[name="r4isen19"] golden_apple
+give @s[name="r4isen19"] golden_carrot
+give @s[name="r4isen19"] honey_bottle
+give @s[name="r4isen19"] melon_slice
+give @s[name="r4isen19"] mushroom_stew
+give @s[name="r4isen19"] poisonous_potato
+give @s[name="r4isen19"] potato
+give @s[name="r4isen19"] pufferfish
+give @s[name="r4isen19"] pumpkin_pie
+give @s[name="r4isen19"] rabbit_stew
+
+give @s[name="r4isen19"] beef
+give @s[name="r4isen19"] chicken
+give @s[name="r4isen19"] cod
+give @s[name="r4isen19"] mutton
+give @s[name="r4isen19"] porkchop
+give @s[name="r4isen19"] rabbit
+give @s[name="r4isen19"] salmon
+
+give @s[name="r4isen19"] rotten_flesh
+give @s[name="r4isen19"] spider_eye
+give @s[name="r4isen19"] cooked_beef
+give @s[name="r4isen19"] suspicious_stew
+give @s[name="r4isen19"] sweet_berries
+give @s[name="r4isen19"] tropical_fish 
+tellraw @s {"rawtext":[{"text":"Given 39 different food items to self"}]}

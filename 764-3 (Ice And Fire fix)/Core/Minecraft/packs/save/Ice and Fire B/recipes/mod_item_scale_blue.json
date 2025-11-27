@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:item_scale_blue"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A",
+      "",
+      ""
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:block_dragon_scale_ice",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "minecraft:item_scale_blue",
+      "count": 9
+    }
+  }
+}

@@ -1,0 +1,55 @@
+ShootLib.addGun({
+    id:"dp28",
+    name:"DP-28",
+    ammo:"ammo7_62",
+    accuracy:7,
+    recoil:4,
+    rate:7,
+    texture:{
+        name:"dp28",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.TOUCH,
+    bullet:{
+        speed:13,
+        count:47,
+        damage:10.5
+    },
+    fov:{
+        level:10
+    },
+    sounds:{
+        shot:"AKM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/MP44Reload.ogg"
+    }
+});
+
+ShootLib.addGun({
+    id:"m249",
+    name:"M249",
+    ammo:"ammo5_56",
+    accuracy:9,
+    recoil:5,
+    rate:8,
+    texture:{
+        name:"m249",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.TOUCH,
+    bullet:{
+        speed:18,
+        count:100,
+        damage:9
+    },
+    fov:{
+        level:10
+    },
+    sounds:{
+        shot:"AKM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/MP44Reload.ogg"
+    }
+});

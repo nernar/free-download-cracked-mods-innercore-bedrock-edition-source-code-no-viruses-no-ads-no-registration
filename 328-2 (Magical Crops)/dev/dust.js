@@ -1,0 +1,20 @@
+var stone_type = Block.createSpecialType({base: 1, solid: true, destroytime: 6, explosionres: 3}, "stone_type");
+IDRegistry.genBlockID("dustMinicio");
+Block.createBlock("dustMinicio", [{name: "Minicio Block", texture: [["dustMinicio", 0]], inCreative: true}], stone_type);
+ToolAPI.registerBlockMaterial(BlockID.dustMinicio, "stone", 2, true);
+IDRegistry.genBlockID("dustAccio");
+Block.createBlock("dustAccio", [{name: "Accio Block", texture: [["dustAccio", 0]], inCreative: true}], stone_type);
+ToolAPI.registerBlockMaterial(BlockID.dustAccio, "stone", 2, true);
+IDRegistry.genBlockID("dustCrucio");
+Block.createBlock("dustCrucio", [{name: "Crucio Block", texture: [["dustCrucio", 0]], inCreative: true}], stone_type);
+ToolAPI.registerBlockMaterial(BlockID.crucio, "stone", 2, true);
+IDRegistry.genBlockID("dustImperio");
+Block.createBlock("dustImperio", [{name: "Imperio Block", texture: [["dustImperio", 0]], inCreative: true}], stone_type);
+ToolAPI.registerBlockMaterial(BlockID.dustImperio, "stone", 2, true);
+IDRegistry.genBlockID("dustZivicio");
+Block.createBlock("dustZivicio", [{name: "Zivicio Block", texture: [["dustZivicio", 0]], inCreative: true}], stone_type);
+ToolAPI.registerBlockMaterial(BlockID.dustZivicio, "stone", 2, true);
+IDRegistry.genBlockID("dustUltimate");
+Block.createBlock("dustUltimate", [{name: "Mass Zivicio Block", texture: [["dustUltimate", 0]], inCreative: true}], stone_type);
+ToolAPI.registerBlockMaterial(BlockID.dustUltimate, "stone", 2, true);
+

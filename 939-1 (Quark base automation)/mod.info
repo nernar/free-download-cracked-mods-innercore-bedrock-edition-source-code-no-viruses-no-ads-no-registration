@@ -1,0 +1,9 @@
+{
+  "name": "Quark base automation",
+  "author": "pupedo",
+  "version": "0.0.1",
+  "description": "Bedrok port of the Java mod Quark but for now there is only the base automation:
+  -chute
+  -Feeding Trough(work only with wheat, carots and seed, on cows, pigs, chickens)
+  -and the ability to breed by throwing items(work only with wheat, carots and seed, on cows, pigs, chickens)"
+}

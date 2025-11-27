@@ -1,0 +1,5 @@
+ConfigureMultiplayer({
+  inClientOnly: false
+})
+
+Launch()

@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "VanillaRecipe",
+		"name": "VanillaRecipe",
+		"uuid": "1ed4e130-2c3f-ca17-cb6a-c9ba1271bb69",
+		"version": [
+			0,
+			0,
+			3
+		],
+		"min_engine_version": [
+			1,
+			16,
+			0
+		]
+	},
+	"modules": [
+		{
+			"description": "VanillaRecipe",
+			"type": "data",
+			"uuid": "177ea446-8fe7-61e4-31b9-8f718c2a1c49",
+			"version": [
+				0,
+				0,
+				3
+			]
+		}
+	]
+}

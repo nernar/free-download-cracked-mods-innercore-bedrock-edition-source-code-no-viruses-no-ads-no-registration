@@ -1,0 +1,18 @@
+{
+   "format_version" : 1,
+   "header" : {
+      "description" : "More zombies options on the game",
+      "name" : "More Zombies RP",
+      "platform_locked" : false,
+      "uuid" : "c1c77e6d-f49c-3def-88e0-ce045327e9e1",
+      "version" : [ 0, 0, 1 ]
+   },
+   "modules" : [
+      {
+         "description" : "More Zombies RP",
+         "type" : "resources",
+         "uuid" : "d02a9dca-c0a7-3ca0-9501-c1954337c6a1",
+         "version" : [ 0, 0, 1 ]
+      }
+   ]
+}

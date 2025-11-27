@@ -1,0 +1,107 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "raigen:hellraiser",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+    "components": {
+      "minecraft:fire_immune": true,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:type_family": {
+        "family": [ "monster" ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:collision_box": {
+        "width": 0.4,
+        "height": 6.0
+      },
+      "minecraft:attack": {
+        "damage": 10
+      },
+
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:navigation.walk": {
+        "can_float": true
+      },
+      "minecraft:movement.basic": {
+
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/biome_project_0/hellraiser.json"
+      },
+
+      "minecraft:health": {
+        "value": 40,
+        "max": 40
+      },
+      "minecraft:hurt_when_wet": {
+        "value": true
+      },
+	  
+      "minecraft:behavior.random_stroll": {
+        "priority": 5,
+        "speed_multiplier": 1
+      },
+	  "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+	  "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 48
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "max_dist": 3,
+        "speed_multiplier": 1,
+        "random_stop_interval": 2.0,
+        "track_target": true
+      },
+      "minecraft:shooter": {
+        "type": "largefireball",
+        "def": "minecraft:fireball"
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 1,
+        "attack_interval_min": 3,
+        "attack_interval_max": 4,
+        "charge_charged_trigger": 0.0,
+        "charge_shoot_trigger": 4.0,
+        "attack_radius": 20,
+        "burst_shots": 5,
+        "burst_interval": 0.3
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 1,
+        "look_distance": 8
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 6
+      },
+      "minecraft:physics": {
+      }
+    }
+  }
+}

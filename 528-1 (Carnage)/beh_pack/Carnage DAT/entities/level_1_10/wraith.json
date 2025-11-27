@@ -1,0 +1,153 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "raigen:wraith",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+	"component_groups": {
+	  "minecraft:appear": {
+	    "minecraft:scale": {
+		  "value": 1.0
+		},
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 5.0, 10.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_disappear"
+		  }
+		}
+	  },
+	  "minecraft:disappear": {
+	    "minecraft:scale": {
+		  "value": 0.000000000000000001
+		},
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 3.0, 9.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_appear"
+		  }
+		}
+	  }
+	},
+	
+    "components": {
+      "minecraft:fire_immune": false,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:type_family": {
+        "family": [ "monster" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+	  "minecraft:movement": {
+	    "value": 0.23
+	  },
+      "minecraft:health": {
+        "value": 24,
+		"max": 24
+      },
+      "minecraft:attack": {
+        "damage": 3,
+        "effect_name": "blindness",
+        "effect_duration": 5
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "track_target": true
+      },
+      "minecraft:behavior.move_towards_target": {
+        "priority": 1,
+        "speed_multiplier": 0.9,
+        "within_radius": 32
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+          "max_dist": 16
+        },
+        "must_see": true
+      },
+      "minecraft:navigation.walk": {
+        "can_float": true,
+		"is_amphibious": false,
+		"can_path_over_water": true,
+        "avoid_water": false,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:behavior.break_door": {
+        "priority": 1
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:nameable": {},
+      "minecraft:balloonable": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 4,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+	  "minecraft:physics": {
+      }
+    },
+	
+	"events": {
+	  "minecraft:entity_spawned": {
+	    "add": {
+		  "component_groups": [
+		    "minecraft:appear"
+		  ]
+		}
+	  },
+	  "minecraft:event_appear": {
+	    "add": {
+		  "component_groups": [
+		    "minecraft:appear"
+		  ]
+		},
+		"remove": {
+		  "component_groups": [
+		    "minecraft:disappear"
+		  ]
+		}
+	  },
+	  "minecraft:event_disappear": {
+	    "add": {
+		  "component_groups": [
+		    "minecraft:disappear"
+		  ]
+		},
+		"remove": {
+		  "component_groups": [
+		    "minecraft:appear"
+		  ]
+		}
+	  }
+	}
+  }
+}

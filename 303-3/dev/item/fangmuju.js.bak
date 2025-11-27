@@ -1,0 +1,22 @@
+Recipes.addShaped({id: ItemID.coffeeworkshop$Cakemodelsquare, count: 1, data: 0}, [
+"x x",
+" a ",
+"x x"
+], [ 'x', 265, 0, 'a',148 , 0]);
+
+Recipes.addShaped({id: ItemID.coffeeworkshop$Brownieraw, count: 1, data: 0}, [
+"xab",
+"bcd",
+"e"
+], [ 'x', ItemID.coffeeworkshop$Cakemodelsquare, 0, 'a',353 , 0,'b',344,0,'c',ItemID.coffeeworkshop$Butter,0,'d',ItemID.coffeeworkshop$cream_milk,0,'e',ItemID.coffeeworkshop$Cocoapowder,0]);
+fastAo(ItemID.coffeeworkshop$Brownieraw,ItemID.coffeeworkshop$Browniemodel,ItemID.coffeeworkshop$Brownie);
+Recipes.addShaped({id: ItemID.coffeeworkshop$tiramisu_model, count: 1, data: 0}, [
+"xab",
+"bcd",
+"e"
+], [ 'x', ItemID.coffeeworkshop$Cakemodelsquare, 0, 'a',ItemID.coffeeworkshop$Cakesponge , 0,'b',ItemID.coffeeworkshop$Cheese,0,'c',ItemID.coffeeworkshop$espresso,0,'d',ItemID.coffeeworkshop$cream_milk,0,'e',ItemID.coffeeworkshop$Cocoapowder,0]);
+Recipes.addShaped({id: ItemID.coffeeworkshop$tiramisu, count: 1, data: 0}, [
+"x"
+], [ 'x', ItemID.coffeeworkshop$tiramisu_model,0]);
+
+//fastAo(ItemID.coffeeworkshop$Brownieraw,ItemID.coffeeworkshop$Browniemodel,ItemID.coffeeworkshop$Brownie);

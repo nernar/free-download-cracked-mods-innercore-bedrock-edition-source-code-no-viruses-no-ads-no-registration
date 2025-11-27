@@ -1,0 +1,31 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "bioplentia:cherry_berries",
+      "category": "nature"
+    },
+
+    "components": {
+	  "minecraft:icon": {
+	    "texture": "cherry_berries"
+	   },
+      "minecraft:display_name": {
+        "value": "item.bioplentia:cherry_berries.name"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.crop"
+      },
+      "minecraft:use_duration": 16,
+      "minecraft:max_stack_size": 16,
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation_modifier": "normal",
+        "is_meat":  false
+      }
+    }
+  }
+}

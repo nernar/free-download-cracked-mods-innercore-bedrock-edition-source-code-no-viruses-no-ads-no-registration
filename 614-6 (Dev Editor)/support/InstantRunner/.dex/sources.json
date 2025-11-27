@@ -1,0 +1,17 @@
+{
+  "main.js":{
+    "links":[
+      "f64fe3a192b1b09e33993348fd76b",
+      "d0868be968c8467a9a578a5355e713e",
+      "a237ff5dfbbfd6dfbd9ab298543e1",
+      "d9f4fe671817a417533eb5dfb549768"
+    ],
+    "class_name":"main.js"
+  },
+  "launcher.js":{
+    "links":[
+      "dfd2714f77f8ec62bf3f7b9aec57d5"
+    ],
+    "class_name":"launcher.js"
+  }
+}

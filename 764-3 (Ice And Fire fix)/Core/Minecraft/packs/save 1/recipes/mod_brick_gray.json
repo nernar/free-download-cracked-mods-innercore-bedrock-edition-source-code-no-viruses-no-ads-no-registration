@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:brick_gray"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BAB",
+      "ABA",
+      "BAB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:stonebrick",
+        "data": 0
+      },
+      "B": {
+      "item": "minecraft:block_dragon_scale_gray",
+      "data": 0
+      }
+    },
+    "result": {
+      "item": "minecraft:block_dragon_forg_fire_brick",
+      "count": 2
+    }
+  }
+}

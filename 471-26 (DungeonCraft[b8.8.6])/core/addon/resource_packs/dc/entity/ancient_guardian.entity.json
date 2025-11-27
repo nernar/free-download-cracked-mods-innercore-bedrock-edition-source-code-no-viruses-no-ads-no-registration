@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+        "description": {
+			"identifier": "dungeoncraft:ancient_guardian",
+            "materials": {"default": "ancient_guardian"},
+            "textures": {"default": "textures/entity/ancient_guardian.png"},
+            "render_controllers": ["controller.render.default"],
+            "geometry": {"default": "geometry.ancient_guardian"},
+            "animations": {
+                "move": "animation.ancient_guardian.move"
+            },
+            "animation_controllers": [
+                {"move": "controller.animation.ancient_guardian.move"}
+            ],
+            "enable_attachables": true
+        }
+    }
+}

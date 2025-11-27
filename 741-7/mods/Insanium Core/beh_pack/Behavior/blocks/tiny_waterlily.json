@@ -1,0 +1,59 @@
+//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+        "identifier": "bioplentia:tiny_waterlily"
+      },
+      "components": {
+      "minecraft:material_instances": {
+        "*": {
+         "texture": "tiny_waterlily",
+         "render_method": "alpha_test",
+         "ambient_occlusion": false,
+         "face_dimming": true
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+             "minecraft:water"
+            ],
+            "allowed_faces": [
+              "up"
+            ]
+          }
+        ]
+      },
+      "minecraft:pick_collision": {
+        "size": [ 15, 1, 15 ],
+        "origin": [ -8, 0, -8 ]
+      },
+      "minecraft:entity_collision": {
+        "origin": [ -8, 0, -8 ],
+        "size": [ 15, 1, 15 ]
+      },
+      "minecraft:breakonpush": true,
+      "minecraft:breathability": "air",
+      "minecraft:geometry": "geometry.core.block.lily_pad",
+      "minecraft:destroy_time": 0.4,
+      "minecraft:immovable": false,
+      "minecraft:explosion_resistance": 1,
+      "minecraft:loot": "loot_tables/blocks/tiny_waterlily.json",
+      "minecraft:rotation": [ 0, 0, 0 ],
+      "minecraft:block_light_absorption": 0.2,
+      "minecraft:block_light_emission": 0.1,
+      "minecraft:map_color": "#4A8F28",
+      "minecraft:flammable": {
+       "flame_odds": 100,
+       "burn_odds": 60
+      },
+      "tag:plants": {}
+      },
+      "events": {
+      }
+    }
+  }

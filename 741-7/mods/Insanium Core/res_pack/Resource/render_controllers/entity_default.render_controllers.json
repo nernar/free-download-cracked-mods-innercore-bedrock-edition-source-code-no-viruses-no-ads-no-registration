@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.core.entity_default": {
+      "geometry": "Geometry.GeometryDefault",
+      "materials": [ { "*": "Material.MaterialDefault" } ],
+      "textures": [ "Texture.TextureDefault" ]
+    }
+  }
+}

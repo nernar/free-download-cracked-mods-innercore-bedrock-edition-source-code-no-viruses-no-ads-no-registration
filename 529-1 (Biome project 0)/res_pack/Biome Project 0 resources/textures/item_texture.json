@@ -1,0 +1,63 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "biome_project_0": {
+      "textures": [
+        "textures/biome_project_0/spawn/blaze_king", //0
+        "textures/biome_project_0/spawn/blood_stone_golem", //1
+        "textures/biome_project_0/spawn/cactus_warrior", //2
+        "textures/biome_project_0/spawn/cactus_warrior_big", //3
+        "textures/biome_project_0/spawn/clam_warrior", //4
+        "textures/biome_project_0/spawn/coral_bound", //5
+        "textures/biome_project_0/spawn/crab_arctic_spider", //6
+        "textures/biome_project_0/spawn/crab_coconut", //7
+        "textures/biome_project_0/spawn/crab_dungeness", //8
+        "textures/biome_project_0/spawn/crab_japanese_spider", //9
+        "textures/biome_project_0/spawn/crab_yeti", //10
+        "textures/biome_project_0/spawn/eagle_staff", //11
+        "textures/biome_project_0/spawn/false_cactus", //12
+        "textures/biome_project_0/spawn/flower_trap", //13
+        "textures/biome_project_0/spawn/grub", //14
+        "textures/biome_project_0/spawn/headless", //15
+        "textures/biome_project_0/spawn/hellraiser", //16
+        "textures/biome_project_0/spawn/living_fossil", //17
+        "textures/biome_project_0/spawn/manta_ray", //18
+        "textures/biome_project_0/spawn/mummy", //19
+        "textures/biome_project_0/spawn/mummy_minion", //20
+        "textures/biome_project_0/spawn/nautilus", //21
+        "textures/biome_project_0/spawn/nether_bound", //22
+        "textures/biome_project_0/spawn/nether_creep", //23
+        "textures/biome_project_0/spawn/parasite", //24
+        "textures/biome_project_0/spawn/pigman_brute", //25
+        "textures/biome_project_0/spawn/pigman_civilian", //26
+        "textures/biome_project_0/spawn/pigman_guardian", //27
+        "textures/biome_project_0/spawn/redstone_cutlass", //28
+        "textures/biome_project_0/spawn/sand_shark_beach", //29
+        "textures/biome_project_0/spawn/sand_shark_desert", //30
+        "textures/biome_project_0/spawn/scorpion_black", //31
+        "textures/biome_project_0/spawn/scorpion_cyan", //32
+        "textures/biome_project_0/spawn/scorpion_green", //33
+        "textures/biome_project_0/spawn/scorpion_yellow", //34
+        "textures/biome_project_0/spawn/sea_shells", //35
+        "textures/biome_project_0/spawn/severed", //36
+        "textures/biome_project_0/spawn/skeleton_dusty", //37
+        "textures/biome_project_0/spawn/skeleton_pirate", //38
+        "textures/biome_project_0/spawn/skeleton_pirate_captain", //39
+        "textures/biome_project_0/spawn/toxic_head", //40
+        "textures/biome_project_0/spawn/tree_coconut_e", //41
+        "textures/biome_project_0/spawn/tree_coconut_n", //42
+        "textures/biome_project_0/spawn/tree_coconut_s", //43
+        "textures/biome_project_0/spawn/tree_coconut_w", //44
+        "textures/biome_project_0/spawn/trench_predator", //45
+        "textures/biome_project_0/spawn/unarmed", //46
+        "textures/biome_project_0/spawn/undead_head", //47
+        "textures/biome_project_0/spawn/undead_pharaoh", //48
+        "textures/biome_project_0/spawn/under_crawler", //49
+        "textures/biome_project_0/spawn/under_terranean", //50
+        "textures/biome_project_0/spawn/vengeant_ashes", //51
+        "textures/biome_project_0/spawn/vengeant_soul" //52
+      ]
+    }
+  }
+}

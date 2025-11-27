@@ -1,0 +1,2 @@
+let IManaUsingItem = new Interface();
+

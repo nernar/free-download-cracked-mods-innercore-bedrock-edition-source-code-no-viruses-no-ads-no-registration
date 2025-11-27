@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+        "description": {
+			"identifier": "dungeoncraft:ghost",
+            "materials": {"default": "dungeon_entity"},
+            "textures": {"default": "textures/entity/ghost.png"},
+            "render_controllers": ["controller.render.default"],
+            "geometry": {"default": "geometry.ghost"},
+            "animations": {
+                "move": "animation.ghost.move",
+                "attack": "animation.ghost.attack",
+                "default": "animation.ghost.default"
+            },
+            "animation_controllers": [
+                {"move": "controller.animation.ghost.move"},
+                {"attack": "controller.animation.ghost.attack"},
+                {"default": "controller.animation.ghost.default"}
+            ],
+            "enable_attachables": true
+        }
+    }
+}

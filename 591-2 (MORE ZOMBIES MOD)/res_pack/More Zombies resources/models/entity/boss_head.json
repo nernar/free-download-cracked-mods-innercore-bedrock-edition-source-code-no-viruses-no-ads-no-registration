@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "geometry.zombie.boss.head": {
+    "visible_bounds_width": 1.5,
+    "visible_bounds_height": 2.5,
+    "visible_bounds_offset": [ 0, 1.25, 0 ],
+    "texturewidth": 64,
+    "textureheight": 32,
+    "bones": [
+      {
+        "name": "body",
+        "pivot": [ 0.0, 24.0, 0.0 ],
+        "cubes": [
+          {
+            "origin": [ -0.6, 0.0, 0.0 ],
+            "size": [ 8, 8, 8 ],
+            "uv": [ 0, 0 ]
+          }
+        ],
+        "mirror": false
+      }
+    ]
+  }
+}

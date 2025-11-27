@@ -1,0 +1,30 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "DansTS",
+    "name": "Desolation",
+    "uuid": "7831cecf-4aaa-4079-9360-0b99b44ed730",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "DansTS",
+      "type": "resources",
+      "uuid": "c4bd4061-5b12-482b-8634-b9d192f6f5ab",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

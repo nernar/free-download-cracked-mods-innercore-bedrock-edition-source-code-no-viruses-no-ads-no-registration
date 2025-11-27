@@ -1,0 +1,25 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "§cBy §aCodanRaigen21§r, §o§b@real_cr21§r. §eSupport and follow me on twitter for more great add-ons!",
+        "name": "§4Carnage §a§l§o::§r§c DAT",
+        "uuid": "e9abb320-64d5-4b6a-9da0-96423e4e0918",
+		"min_engine_version": [1, 8, 0],
+        "version": [1, 0, 0]
+    },
+	"mi_engine_version": [1, 8, 0],
+    "modules": [
+        {
+            "description": "§cBy §aCodanRaigen21§r, §o§b@real_cr21§r. §eSupport and follow me on twitter for more great add-ons!",
+            "type": "data",
+            "uuid": "0fe75dd5-41fe-4ca7-ac9a-2261421d3b68",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "af779c52-1eb9-462f-a3b2-735ecf719196",
+            "version": [1, 0, 0]
+        }
+    ]
+}

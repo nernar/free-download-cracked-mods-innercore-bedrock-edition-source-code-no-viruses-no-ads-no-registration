@@ -1,0 +1,30 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "§bSupport Twilight Forest by §aXD HMDT",
+    "name": "§9Scepter Zombie",
+    "uuid": "e9145702-4d5d-4aaf-98b1-4a3f3a394c0b",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "§bSupport Twilight Forest by §aXD HMDT",
+      "type": "resources",
+      "uuid": "cd41597a-57ed-491e-ad09-284034fb72fa",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0-beta.1",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "raigen:trench_predator",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {},
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 7,
+          "adjust_for_weather": false
+        },
+        "minecraft:difficulty_filter": {           
+          "min": "easy",           
+          "max": "hard"         
+        }, 
+        "minecraft:weight": {
+          "default": 190
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 2
+        },
+    
+        "minecraft:biome_filter": {
+          "any_of": [
+            { "test": "has_biome_tag", "operator":"==", "value": "beach" },
+            { "test": "has_biome_tag", "operator":"==", "value": "ocean" }
+          ]
+        }
+      }
+    ]
+  }
+}

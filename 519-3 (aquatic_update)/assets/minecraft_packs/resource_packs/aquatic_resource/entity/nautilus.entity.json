@@ -1,0 +1,28 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "lotr:nautilus",
+            "materials": {
+                "default": "salmon"
+            },
+            "textures": {
+                "default": "textures/entity/nautilus"
+            },
+            "geometry": {
+                "default": "geometry.nautilus"
+            },
+            "animations": {
+                "move": "animation.nautilus.move"
+            },
+            "animation_controllers": [
+                { "general": "controller.animation.dolphin.general" }
+            ],
+            "render_controllers": [ "controller.render.dolphin" ],
+            "spawn_egg": {
+                "base_color": "#D8D2C7",
+                "overlay_color": "#A8472F"
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+Recipes.addShaped({id: ItemID.coffeeworkshop$Cakemodel, count: 1, data: 0}, [
+" x ",
+"xax",
+" x "
+], [ 'x', 265, 0, 'a',148 , 0]);
+
+var fastAo = function(a,b,c){
+Recipes.addShaped({id: c, count: 1, data: 0}, [
+"b"
+], [ 'b',b, 0],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(ItemID.coffeeworkshop$Cakemodel, 1);
+//Player.addItemToInventory(325, 1);
+});
+Recipes.addFurnace(a,b,0);
+};
+
+Recipes.addShaped({id: ItemID.coffeeworkshop$Cakespongechocolateraw, count: 1, data: 0}, [
+"abc",
+"ccb",
+"def"
+], [ 'a', ItemID.coffeeworkshop$Cakemodel, 0, 'b',353, 0,'c',344,0,'d',325,1,'e',ItemID.coffeeworkshop$flour,0,'f',ItemID.coffeeworkshop$Cocoabatter,0],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(ItemID.coffeeworkshop$Cakemodel, 1);
+Player.addItemToInventory(325, 1);
+});
+fastAo(ItemID.coffeeworkshop$Cakespongechocolateraw,ItemID.coffeeworkshop$Cakespongechocolatemodel,ItemID.coffeeworkshop$Cakespongechocolate);
+
+Recipes.addShaped({id: ItemID.coffeeworkshop$Cakespongeraw, count: 1, data: 0}, [
+"abc",
+"ccb",
+"dee"
+], [ 'a', ItemID.coffeeworkshop$Cakemodel, 0, 'b',353, 0,'c',344,0,'d',325,1,'e',ItemID.coffeeworkshop$flour,0,'f',ItemID.coffeeworkshop$Cocoabatter,0],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(ItemID.coffeeworkshop$Cakemodel, 1);
+Player.addItemToInventory(325, 1);
+});
+fastAo(ItemID.coffeeworkshop$Cakespongeraw,ItemID.coffeeworkshop$Cakespongemodel,ItemID.coffeeworkshop$Cakesponge);
+Recipes.addShaped({id: ItemID.coffeeworkshop$Cakeredvelvetraw, count: 1, data: 0}, [
+"abc",
+"ccg",
+"def"
+], [ 'a', ItemID.coffeeworkshop$Cakemodel, 0, 'b',353, 0,'c',344,0,'d',325,1,'e',ItemID.coffeeworkshop$flour,0,'f',ItemID.coffeeworkshop$Cocoabatter,0,'g',351,1],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(ItemID.coffeeworkshop$Cakemodel, 1);
+Player.addItemToInventory(325, 1);
+});
+fastAo(ItemID.coffeeworkshop$Cakeredvelvetraw,ItemID.coffeeworkshop$Cakeredvelvetmodel,ItemID.coffeeworkshop$Cakeredvelvet);
+Recipes.addShaped({id: ItemID.coffeeworkshop$Cakecarrotraw, count: 1, data: 0}, [
+"abc",
+"cbg",
+"def"
+], [ 'a', ItemID.coffeeworkshop$Cakemodel, 0, 'b',353, 0,'c',344,0,'d',325,1,'e',ItemID.coffeeworkshop$flour,0,'f',ItemID.coffeeworkshop$Cocoabatter,0,'g',391,0],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(ItemID.coffeeworkshop$Cakemodel, 1);
+Player.addItemToInventory(325, 1);
+});
+fastAo(ItemID.coffeeworkshop$Cakecarrotraw,ItemID.coffeeworkshop$Cakecarrotmodel,ItemID.coffeeworkshop$Cakecarrot);
+Recipes.addShaped({id: ItemID.coffeeworkshop$Cakecheeseraw, count: 1, data: 0}, [
+"abg",
+"ccb",
+"deg"
+], [ 'a', ItemID.coffeeworkshop$Cakemodel, 0, 'b',353, 0,'c',344,0,'d',325,1,'e',ItemID.coffeeworkshop$flour,0,'f',ItemID.coffeeworkshop$Cocoabatter,0,'g',ItemID.coffeeworkshop$Cheese,0],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(ItemID.coffeeworkshop$Cakemodel, 1);
+Player.addItemToInventory(325, 1);
+});
+fastAo(ItemID.coffeeworkshop$Cakecheeseraw,ItemID.coffeeworkshop$Cakecheesemodel,ItemID.coffeeworkshop$Cakecheese);
+//????????? 2018.10.26

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pili:pili_antidote",
+      "category": "Nature"
+    },
+    "components": {
+
+      "minecraft:icon": "pili_antidote",
+      "minecraft:use_animation": "drink",
+      "minecraft:render_offsets": "potion"
+    }
+  }
+}

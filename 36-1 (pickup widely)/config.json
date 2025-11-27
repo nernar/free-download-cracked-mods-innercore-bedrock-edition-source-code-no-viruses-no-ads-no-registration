@@ -1,0 +1,12 @@
+{
+  "enabled":true,
+  "target":{
+    "drop_item":true,
+    "experience_orb":true
+  },
+  "param":{
+    "radius":8,
+    "speed":0.2
+  },
+  "refresh":true
+}

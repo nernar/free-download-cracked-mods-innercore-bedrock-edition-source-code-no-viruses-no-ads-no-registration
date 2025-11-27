@@ -1,0 +1,7 @@
+{
+	"name": "GetEffects",
+	"author": "NaKeR",
+	"version": "1.0",
+	"description": "Blocks are giving effects. Thats all.",
+	"clientOnly": false
+}

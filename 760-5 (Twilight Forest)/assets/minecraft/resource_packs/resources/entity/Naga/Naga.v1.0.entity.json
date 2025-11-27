@@ -1,0 +1,35 @@
+{
+"format_version": "1.8.0",
+"minecraft:client_entity": {
+"description": {
+"identifier": "twilightforest:naga",
+"materials": {
+"default": "naga"
+},
+"geometry": {
+"default": "geometry.naga"
+},
+"textures": {
+"default": "textures/model/nagahead"
+},
+"spawn_egg": {
+"texture": "egg_naga"
+},
+"scripts": {
+"pre_animation": [
+"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+"variable.tcos1 = -variable.tcos0;"
+]
+},
+"animations": {
+"general": "animation.naga.general",
+"action": "animation.naga.action"
+},
+"animation_controllers": [
+{ "general": "controller.animation.naga.general" },
+{ "action": "controller.animation.naga.action" }
+],
+"render_controllers": [ "controller.render.naga" ]
+}
+}
+}

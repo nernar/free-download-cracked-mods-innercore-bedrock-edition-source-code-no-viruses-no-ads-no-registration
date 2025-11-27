@@ -1,0 +1,117 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "resource_pack_name": "bioplentia",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    //Block Icons (A-Z)
+    "acacia_paper_lantern": {
+      "textures": "textures/blocks/acacia_paper_lantern"
+    },
+    "aloe_vera": {
+      "textures": "textures/blocks/aloe_vera"
+    },
+        "black_lotus": {
+      "textures": "textures/blocks/black_lotus"
+    },
+    "blue_lavender": {
+      "textures": "textures/blocks/blue_lavender"
+    },
+    "dried_vines": {
+      "textures": "textures/blocks/dried_vines"
+    },
+    "fluorescent_tallgrass": {
+      "textures": "textures/blocks/fluorescent_tallgrass"
+    },
+    "birch_paper_lantern": {
+      "textures": "textures/blocks/birch_paper_lantern"
+    },
+    "bluebells": {
+      "textures": "textures/blocks/bluebells"
+    },
+    "cattail": {
+      "textures": "textures/blocks/cattail"
+    },
+    "cherry_paper_lantern": {
+      "textures": "textures/blocks/cherry_paper_lantern"
+    },
+    "cherry_planks": {
+      "textures": "textures/blocks/cherry_planks"
+    },
+    "cherry_log": {
+      "textures": "textures/blocks/log_cherry_top"
+    },
+    "cherry_wood": {
+      "textures": "textures/blocks/log_cherry"
+    },
+    "daisy_red": {
+      "textures": "textures/blocks/daisy_red"
+    },
+    "daisy_white": {
+      "textures": "textures/blocks/daisy_white"
+    },
+    "dark_oak_paper_lantern": {
+      "textures": "textures/blocks/dark_oak_paper_lantern"
+    },
+    "dead_grass": {
+      "textures": "textures/blocks/dead_grass"
+    },
+    "jungle_paper_lantern": {
+      "textures": "textures/blocks/jungle_paper_lantern"
+    },
+    "mistletoe": {
+      "textures": "textures/blocks/mistletoe"
+    },
+    "oak_paper_lantern": {
+      "textures": "textures/blocks/oak_paper_lantern"
+    },
+    "pink_cherry_leaves": {
+      "textures": "textures/blocks/pink_cherry_leaves"
+    },
+    "roots": {
+      "textures": "textures/blocks/roots"
+    },
+    "scoria": {
+      "textures": "textures/blocks/scoria"
+    },
+    "spruce_paper_lantern": {
+      "textures": "textures/blocks/spruce_paper_lantern"
+    },
+    "stripped_cherry_log": {
+      "textures": "textures/blocks/stripped_cherry_log_top"
+    },
+    "stripped_cherry_wood": {
+      "textures": "textures/blocks/stripped_cherry_log"
+    },
+    "tiny_cactus": {
+      "textures": "textures/blocks/tiny_cactus"
+    },
+    "tiny_waterlily": {
+      "textures": "textures/blocks/tiny_waterlily_carried"
+    },
+    "vanilla_vine": {
+      "textures": "textures/blocks/vanilla_vine"
+    },
+    "white_cherry_leaves": {
+      "textures": "textures/blocks/white_cherry_leaves"
+    },
+    //Items Icons (A-Z)
+    "cherry_berries": {
+      "textures": "textures/items/cherry_berries"
+    },
+    "frog_foot_cooked": {
+      "textures": "textures/items/frog_foot_cooked"
+    },
+    "frog_foot_raw": {
+      "textures": "textures/items/frog_foot"
+    },
+
+    "snail_shell": {
+      "textures": "textures/items/snail_shell"
+    },
+    "vanilla_sticks": {
+      "textures": "textures/items/vanilla_sticks"
+    }
+  }
+}

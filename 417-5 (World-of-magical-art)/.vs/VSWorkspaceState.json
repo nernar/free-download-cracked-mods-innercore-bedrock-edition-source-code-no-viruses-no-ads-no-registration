@@ -1,0 +1,18 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\assets",
+    "\\assets\\models\\blocks",
+    "\\assets\\textures",
+    "\\assets\\textures\\items-opaque",
+    "\\assets\\textures\\particle-atlas",
+    "\\dev",
+    "\\dev\\engine",
+    "\\dev\\engine\\client",
+    "\\dev\\game",
+    "\\dev\\game\\item",
+    "\\dev\\game\\item\\wand"
+  ],
+  "SelectedNode": "\\dev\\game\\item\\wand\\wand_lightning.js",
+  "PreviewInSolutionExplorer": false
+}

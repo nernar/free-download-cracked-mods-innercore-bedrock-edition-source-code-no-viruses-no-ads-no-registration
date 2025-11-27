@@ -1,0 +1,8 @@
+{
+  "parent": "ttigraas:custom/demon_steel_block",
+  "textures": {
+    "all": "ttigraas:blocks/demon_steel_block",
+    "particle": "ttigraas:blocks/demon_steel_block",
+    "0": "ttigraas:blocks/demon_steel_block"
+  }
+}

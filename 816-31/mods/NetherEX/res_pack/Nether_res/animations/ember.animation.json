@@ -1,0 +1,19 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.ember_normal.move": {
+            "animation_length": 1.78,
+            "bones": {
+                "body": {
+                    "position": {
+                        "0.0": [0, 0, 0],
+                        "0.4833": [0, 3, 0],
+                        "1.0": [0, 1, 0],
+                        "1.4833": [0, -2, 0],
+                        "1.7667": [0, 0, 0]
+                    }
+                }
+            }
+        }
+    }
+}

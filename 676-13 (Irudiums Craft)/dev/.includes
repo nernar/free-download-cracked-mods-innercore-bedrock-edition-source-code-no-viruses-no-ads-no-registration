@@ -1,0 +1,16 @@
+blocks/irumidium_block.js
+ingots/irumidium_ingot.js
+powder.js
+ores/ores.js
+armors/armor.js
+tool/item.js
+tool/pix.js
+ingots/ingots_upgread.js
+blocks/irumidium_block_upgr.js
+ingots/nagetts.js
+groups.js
+
+crafts/furnace.js
+crafts/shaped.js
+
+

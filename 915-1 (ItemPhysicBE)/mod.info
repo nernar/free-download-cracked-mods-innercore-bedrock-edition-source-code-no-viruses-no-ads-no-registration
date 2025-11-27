@@ -1,0 +1,7 @@
+{
+    "name": "Item Physic",
+    "author": "visualstudiodan",
+    "version": "1.0",
+    "description": "The mod that enhances the animation of dropped items",
+    "clientside": true
+}

@@ -1,0 +1,11 @@
+Translation.addTranslation("Plastic", {ru:"Пластик"});
+Translation.addTranslation("Liquid Plastic", {ru:"Жидкий Пластик"});
+Translation.addTranslation("Pickaxe Form", {ru:"Форма для кирки"});
+Translation.addTranslation("Sword Form", {ru:"Форма для меча"});
+Translation.addTranslation("Hammer", {ru:"Молот"});
+Translation.addTranslation("Plastic Pickaxe", {ru:"Пластиковая кирка"});
+Translation.addTranslation("Plastic Sword", {ru:"Пластиковый меч"});
+Translation.addTranslation("Recycle Machine", {ru:"Переработчик"});
+Translation.addTranslation("Plastic Block", {ru:"Пластиковый блок"});
+Translation.addTranslation("Tool Bench", {ru:"Верстак инструментов"});
+Translation.addTranslation("Bomb", {ru:"Бомба"});

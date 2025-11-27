@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.bird_brain.move": {
+      "loop": true,
+      "bones": {
+        "qwervev": { "rotation": [ "Math.sin(query.life_time * 360.0 + 0) * 11.5 + 23", 0, 0 ] },
+        "earvaerver": { "rotation": [ "Math.sin(query.life_time * 360.0 + 57) * 11.5 + 23", 0, 0 ] },
+        "ebrab": { "rotation": [ "Math.sin(query.life_time * 360.0 + 115) * 11.5 + 23", 0, 0 ] },
+        "srtth": { "rotation": [ "Math.sin(query.life_time * 360.0 + 172) * 11.5 + 23", 0, 0 ] },
+        "eyhtyh": { "rotation": [ "Math.sin(query.life_time * 360.0 + 229) * 11.5 + 23", 0, 0 ] },
+        "rerfew": { "rotation": [ "Math.sin(query.life_time * 360.0 + 286) * 11.5 + 23", 0, 0 ] }
+      }
+    }
+  }
+}

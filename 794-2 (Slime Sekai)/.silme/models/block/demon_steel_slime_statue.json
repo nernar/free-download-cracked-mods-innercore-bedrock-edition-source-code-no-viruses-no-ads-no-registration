@@ -1,0 +1,9 @@
+{
+  "parent": "ttigraas:custom/slime_statue",
+  "textures": {
+    "all": "ttigraas:blocks/demon_steel_slime",
+    "particle": "ttigraas:blocks/demon_steel_slime",
+    "0": "ttigraas:blocks/demon_steel_block",
+    "1": "ttigraas:blocks/demon_steel_slime"
+  }
+}

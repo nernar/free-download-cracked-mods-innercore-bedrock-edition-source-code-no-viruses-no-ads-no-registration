@@ -1,0 +1,35 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "bioplentia:acacia_paper_lantern_recipe"
+    },
+
+    "tags": [ "crafting_table" ],
+
+    "pattern": [
+      "#P#",
+      "PTP",
+      "#P#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:planks",
+        "data": 4
+      },
+      "P": {
+        "item": "minecraft:paper"
+      },
+      "T": {
+        "item": "minecraft:torch"
+      }
+    },
+    "result": {
+      "item": "bioplentia:acacia_paper_lantern",
+      "count": 2
+    }
+  }
+}

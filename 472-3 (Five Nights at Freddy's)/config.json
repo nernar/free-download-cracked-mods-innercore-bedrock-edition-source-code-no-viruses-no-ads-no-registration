@@ -1,0 +1,6 @@
+{
+  "enabled":true,
+  "interface":{
+    "hide_tablet_button":true
+  }
+}

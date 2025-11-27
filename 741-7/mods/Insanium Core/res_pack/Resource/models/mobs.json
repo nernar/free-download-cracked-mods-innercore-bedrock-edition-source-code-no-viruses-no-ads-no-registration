@@ -1,0 +1,90 @@
+// Bedrock Live Zekic8768
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.boat",
+				"texture_width": 128,
+				"texture_height": 64,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "front",
+					"pivot": [5, 20, 0.5],
+					"rotation": [0, -90, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-3.5, 21, 19.5], "size": [16, 6, 2], "uv": [0, 27]},
+						{"origin": [9.5, 21, -10.5], "size": [3, 6, 2], "uv": [0, 19]},
+						{"origin": [-3.5, 21, -10.5], "size": [3, 6, 2], "uv": [0, 19]},
+						{"origin": [1.5, 21, -14.5], "size": [6, 6, 2], "uv": [0, 19]},
+						{"origin": [-0.5, 21, -12.5], "size": [2, 6, 2], "uv": [0, 27]},
+						{"origin": [7.5, 21, -12.5], "size": [2, 6, 2], "uv": [0, 27]},
+						{"origin": [4.5, 26, 18.5], "size": [1, 31, 1], "uv": [102, 0]},
+						{"origin": [5, 35, -47.5], "size": [0, 21, 18], "pivot": [5, 18, -5], "rotation": [0, 180, 0], "uv": [92, 25], "mirror": false},
+						{"origin": [4.5, 42.5, -22.5], "size": [1, 19, 1], "pivot": [5, 18, -5], "rotation": [-90, 0, 0], "uv": [102, 0], "mirror": false}
+					]
+				},
+				{
+					"name": "bottom",
+					"pivot": [0, 18, 0],
+					"rotation": [90, 0, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-14, 10, 0], "size": [28, 16, 3], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "back",
+					"pivot": [30, 24, 22],
+					"rotation": [90, 180, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [44, -3, 16], "size": [2, 10, 3], "uv": [3, 3]},
+						{"origin": [42, -1, 17], "size": [2, 6, 3], "uv": [1, 5]}
+					]
+				},
+				{
+					"name": "right",
+					"pivot": [0, 24, -9],
+					"rotation": [0, -180, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-14, 21, -10], "size": [28, 6, 2], "uv": [0, 35]}
+					]
+				},
+				{
+					"name": "left",
+					"pivot": [0, 24, 9],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-14, 21, 8], "size": [28, 6, 2], "uv": [0, 43]}
+					]
+				},
+				{
+					"name": "paddle_left",
+					"pivot": [-2.5, 28, 9],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-3.5, 27, 3.5], "size": [2, 2, 18], "uv": [62, 0]},
+						{"origin": [-2.51, 26, 17.5], "size": [1, 6, 7], "uv": [62, 0]}
+					]
+				},
+				{
+					"name": "paddle_right",
+					"pivot": [-2.5, 28, -9],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-3.5, 27, -14.5], "size": [2, 2, 18], "uv": [62, 20]},
+						{"origin": [-3.49, 26, -0.5], "size": [1, 6, 7], "uv": [62, 20]}
+					]
+				}
+			]
+		}
+	]
+}
+// Bedrock Live Zekic8768

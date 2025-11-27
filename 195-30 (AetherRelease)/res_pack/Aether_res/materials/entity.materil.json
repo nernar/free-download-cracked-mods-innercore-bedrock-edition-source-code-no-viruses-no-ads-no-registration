@@ -1,0 +1,8 @@
+{
+  "materials": {
+    "version": "1.0.0",
+"swet_blue:entity_alphatest": { 
+ "+states": [ "Blending" ] 
+    }
+  }
+}

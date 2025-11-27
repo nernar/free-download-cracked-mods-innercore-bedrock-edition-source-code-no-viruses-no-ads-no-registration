@@ -1,0 +1,72 @@
+{
+	"format_version": "1.10.0",
+	"geometry.iron_chestplate": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 3.5,
+		"visible_bounds_offset": [0, 1.25, 0],
+		"bones": [
+			{
+				"name": "waist",
+				"pivot": [0, 12, 0]
+			},
+			{
+				"name": "body",
+				"parent": "waist",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [0, 0], "inflate": 0.7}
+				]
+			},
+			{
+				"name": "3dchest",
+				"parent": "body",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-1, 20.5, -3.3], "size": [2, 2, 1], "uv": [32, 19]}
+				]
+			},
+			{
+				"name": "rightArm",
+				"parent": "body",
+				"pivot": [-5, 22, 0],
+				"cubes": [
+					{"origin": [-8, 12, -2], "size": [4, 12, 4], "uv": [24, 0], "inflate": 0.65}
+				]
+			},
+			{
+				"name": "rightItem",
+				"parent": "rightArm",
+				"pivot": [-6, 15, 1]
+			},
+			{
+				"name": "3darm",
+				"parent": "rightArm",
+				"pivot": [-5, 22, 0],
+				"cubes": [
+					{"origin": [-6.5, 19.95, -3], "size": [1, 5, 6], "uv": [0, 20]},
+					{"origin": [-9, 18.95, -3], "size": [3.5, 1, 6], "uv": [0, 20]}
+				]
+			},
+			{
+				"name": "leftArm",
+				"parent": "body",
+				"pivot": [5, 22, 0],
+				"mirror": true,
+				"cubes": [
+					{"origin": [4, 12, -2], "size": [4, 12, 4], "uv": [24, 0], "inflate": 0.65}
+				]
+			},
+			{
+				"name": "3darm2",
+				"parent": "leftArm",
+				"pivot": [-5, 22, 0],
+				"cubes": [
+					{"origin": [5.5, 19.95, -3], "size": [1, 5, 6], "uv": [0, 20]},
+					{"origin": [5.5, 18.95, -3], "size": [3.5, 1, 6], "uv": [0, 20]}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,84 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "about:dried_vines",
+      "properties": {
+        "about:stage": [ 0, 1, 2, 3 ],
+        "about:growing": [ true, false ]
+      }
+    },
+    
+    "components":{
+      "minecraft:loot": "loot_tables/blocks/dried_vines.json",
+      "minecraft:destroy_time": 0,
+      "minecraft:explosion_resistance": 0,
+      "minecraft:block_light_absorption": 1,
+      "minecraft:breakonpush": true,
+      "minecraft:entity_collision": false,
+      "minecraft:pick_collision": {
+        "origin": [ -4, 0, -4 ],
+        "size": [ 8, 16, 8 ]
+      },
+      "minecraft:geometry": "geometry.cross",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "dried_vines",
+          "render_method": "alpha_test",
+          "ambient_occlusion": false,
+          "face_dimming": true
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              "about:dried_vines",
+              "leaves",
+              "leaves2"
+            ],
+            "allowed_faces": [ "down" ]
+          }
+        ]
+      },
+      "minecraft:random_ticking": {
+        "on_tick": {
+          "event": "about:growth",
+          "condition": "query.block_property('about:growing') == true"
+        }
+      },
+      "tag:plant": {}
+    },
+    
+    "events": {
+      "about:growth": {
+        "randomize": [
+          {
+            "weight": 95,
+            "sequence": [
+              {
+                "condition": "query.block_property('about:stage') == 3",
+                "run_command": {
+                  "command": [
+                    "setblock ~~-1~ about:dried_vines 0 keep"
+                  ]
+                }
+              },
+              {
+                "set_block_property": {
+                  "about:stage": "query.block_property('about:stage') < 3 ? query.block_property ('about:stage') + 1 : 0"
+                }
+              }
+            ]
+          },
+          {
+            "weight": 5,
+            "set_block_property": {
+              "about:growing": false
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aether:kirrid",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/kirrid/kirrid"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.kirrid.move"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.kirrid.move" }  
+      ],
+      "geometry": {
+        "default": "geometry.Kirrid"
+      },
+      "render_controllers": [ "controller.render.base" ],
+       "spawn_egg": {
+        "overlay_color": "#750130",
+        "base_color": "#255250205"
+      }
+    }
+  }
+}

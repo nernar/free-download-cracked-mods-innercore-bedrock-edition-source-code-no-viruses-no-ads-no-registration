@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "raigen:solid_water_projectile",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.2,
+        "height": 0.2
+      },
+      "minecraft:projectile": {
+        "onHit": {
+          "impact_damage": {
+            "damage": 1,
+            "knockback": false
+          },
+          "remove_on_hit": {
+          },
+          "particle_on_hit": {
+            "particle_type": "bubble",
+            "on_other_hit": true
+          }
+        },
+        "hitSound": "mob.slime.small",
+        "destroyOnHurt": true,
+        "critParticleOnHurt": true,
+        "power": 1.0,
+        "gravity": 0.000000001,
+        "uncertaintyBase": 16,
+        "uncertaintyMultiplier": 4,
+        "offset": [ 0, 0, 0 ]
+      },
+      "minecraft:physics": {
+	  }
+    }
+  }
+}

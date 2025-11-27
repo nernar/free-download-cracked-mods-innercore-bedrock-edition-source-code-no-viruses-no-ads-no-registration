@@ -1,0 +1,33 @@
+{
+   "format_version": 2,
+    "header": {
+       "description": "",
+       "name": "Insanium Reality",
+	    "uuid": "c00df69b-f3bf-484a-8f0b-8573562d8860",
+       "version": [ 1, 1, 0 ],
+       "min_engine_version": [ 1, 16, 100 ]
+    }, 
+    "modules": [
+       {
+          "description": "v1.16.201-1.1.0_2021.02.15",
+          "type": "data",
+	       "uuid": "3272824f-1918-45bf-97d0-7568ba5dea0d",
+          "version": [ 1, 1, 0 ]
+       }
+    ],
+    "metadata": {
+     "authors": [ "Hunabis" ]
+    },
+    "dependencies": [
+      //resources
+      {
+          "uuid": "1da2eed4-967f-4438-89ad-0a0e1ee18fe4",
+          "version": [ 1, 1, 0 ] 
+      },
+      //mAPI
+      {
+          "uuid": "3a63ad51-f718-4e72-a957-bd3f295e1577",
+          "version": [ 1, 0, 0 ]
+      }
+   ]
+}

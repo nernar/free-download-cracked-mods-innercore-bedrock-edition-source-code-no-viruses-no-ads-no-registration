@@ -1,0 +1,59 @@
+importLib("directionBlock", "*");
+importLib("chancejs", "*");
+
+//IMPORT("RecipeViewer");
+
+
+var BLOCK_TYPE_STONE = Block.createSpecialType({
+ base: 1,
+ solid: true,
+ destroytime: 2,
+ explosionres: 2
+}, "stone");
+var BLOCK_TYPE_LEAF = Block.createSpecialType({
+ base: 31,
+ solid: true,
+ destroytime: 2,
+ explosionres: 2
+});
+var BLOCK_TYPE_TI=Block.createSpecialType({
+	base: 50,
+ solid: true
+});
+var GROUND_TILES = {
+	2: true,
+	3 : true
+};
+
+var MobEffect = Native.PotionEffect;
+var Enchantment = Native.Enchantment;
+var BlockSide = Native.BlockSide;
+var EntityType = Native.EntityType;
+
+Callback.addCallback("LevelLoaded", function(){
+//UI.testUI(bqlmGuit);
+//print(typeof RecipeViewer,"#FFA703");
+
+print(chance.integer({ min: -20, max: 20 }),"#FFA703");
+//Game.message("提示:在ic模组设置界面可以关闭display_guide选项可以隐藏咖啡杯悬浮窗。");
+//Game.message("Tips:You can touch the display_guide button in icmod settings.");
+//Game.message("本mod由meowcat studio-pv糊移植，欢迎游玩");
+//Game.message("转发需经过作者的同意!作者qq:2351579300,作者新浪微博 小喵-pv糊，欢迎关注");
+});
+var furnaceList={};
+var addFurnace=function(a,b,data){
+Recipes.addFurnace(a,b,data);
+if(furnaceList[b])furnaceList[b].push(a);
+else furnaceList[b]=[a];
+};
+
+
+/*追回来的
+                是梦想
+    追不回来的
+                是我们的青春
+     遥不可及的
+                不是梦想
+                而是无药可救的人心
+      2018.9.29
+*/

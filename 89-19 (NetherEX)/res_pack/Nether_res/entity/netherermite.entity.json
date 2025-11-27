@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "nether:nethermite",
+      "materials": { "default": "endermite" },
+      "textures": {
+        "default": "textures/entity/nethermite"
+      },
+      "geometry": {
+        "default": "geometry.nethermite_old"
+      },
+      "animations": {
+        "move": "animation.endermite.move"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.endermite.move" }
+      ],
+      "render_controllers": [ "controller.render.endermite" ],
+      "spawn_egg": {
+        "overlay_color": "#255690",
+        "base_color": "#13900"
+      }
+    }
+  }
+}

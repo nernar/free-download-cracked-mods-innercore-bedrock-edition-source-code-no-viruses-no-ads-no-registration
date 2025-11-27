@@ -1,0 +1,22 @@
+{
+  "main.js":{
+    "links":[
+      "1",
+      "2",
+      "3"
+    ],
+    "class_name":"main.js"
+  },
+  "launcher.js":{
+    "links":[
+      "4"
+    ],
+    "class_name":"launcher.js"
+  },
+  "lib/energylib.js":{
+    "links":[
+      "5"
+    ],
+    "class_name":"energylib.js"
+  }
+}

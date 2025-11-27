@@ -1,0 +1,50 @@
+{
+	"format_version": "1.8.0",
+	"geometry.moving_poison": {
+		"texturewidth": 32,
+		"textureheight": 16,
+		"visible_bounds_width": 1,
+		"visible_bounds_height": 1,
+		"visible_bounds_offset": [0, 0.5, 0],
+		"bones": [
+			{
+				"name": "body",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-3, 2, -3], "size": [6, 6, 6], "uv": [0, 0]},
+					{"origin": [-1, 8, -1], "size": [2, 1, 2], "uv": [24, 8]}
+				]
+			},
+			{
+				"name": "left_leg",
+				"mirror": true,
+				"pivot": [0, 2, 0],
+				"cubes": [
+					{"origin": [1, 0, -1], "size": [2, 2, 2], "uv": [24, 4]}
+				]
+			},
+			{
+				"name": "right_leg",
+				"pivot": [0, 2, 0],
+				"cubes": [
+					{"origin": [-3, 0, -1], "size": [2, 2, 2], "uv": [24, 4]}
+				]
+			},
+			{
+				"name": "left_arm",
+				"mirror": true,
+				"pivot": [0, 6, 0],
+				"cubes": [
+					{"origin": [3, 2, -1], "size": [2, 4, 2], "uv": [18, 0]}
+				]
+			},
+			{
+				"name": "right_arm",
+				"pivot": [0, 6, 0],
+				"cubes": [
+					{"origin": [-5, 2, -1], "size": [2, 4, 2], "uv": [18, 0]}
+				]
+			}
+		]
+	}
+}

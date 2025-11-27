@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.shroombit.move": {
+      "loop": true,
+      "bones": {
+        "front_left_leg": { "rotation": [ 0.0, "variable.tcos1 * 1.4", 0.0 ] },
+        "front_right_leg": { "rotation": [ 0.0, "variable.tcos1 * 1.4", 0.0 ] },
+        "rear_left_leg": { "rotation": [ 0.0, "variable.tcos0 * 1.4", 0.0 ] },
+        "rear_right_leg": { "rotation": [ 0.0, "variable.tcos0 * 1.4", 0.0 ] }
+      }
+    }
+  }
+}

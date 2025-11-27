@@ -1,0 +1,142 @@
+{
+      "entities": {
+      "guardian:white_enderman": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.endermen.idle",
+          "hurt": "mob.endermen.hit",
+          "death": "mob.endermen.death",
+          "mad": "mob.endermen.scream",
+          "stare": {
+            "sound": "mob.endermen.stare",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "guardian:beach_crab": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "step": {
+            "sound": "mob.spider.step",
+            "volume": 0.35,
+            "pitch": [ 0.9, 1.1 ]
+          }
+        }
+      },
+      "guardian:old_spider": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.spider.say",
+          "hurt": "mob.spider.say",
+          "death": "mob.spider.death",
+          "step": {
+            "sound": "mob.spider.step",
+            "volume": 0.35,
+            "pitch": [ 0.9, 1.1 ]
+          }
+        }
+      },
+      "guardian:old_strider": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.strider.idle",
+          "hurt": "mob.strider.hurt",
+          "death": "mob.strider.death",
+          "step": {
+            "sound": "mob.strider.step",
+            "volume": 0.25,
+            "pitch": 1.0
+          },
+          "step_lava": {
+            "sound": "mob.strider.step_lava",
+            "volume": 0.2,
+            "pitch": 1.0
+          },
+          "eat": "mob.strider.eat",
+          "tempt": "mob.strider.tempt",
+          "panic": "mob.strider.panic"
+        }
+      }
+    },
+      "guardian:drowned_skeleton": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.skeleton.say",
+          "hurt": {
+            "sound": "mob.skeleton.hurt",
+            "volume": 0.7
+          },
+          "death": "mob.skeleton.death",
+          "step": {
+            "sound": "mob.skeleton.step",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "guardian:zombiee_dev": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
+      },
+      "guardian:brute_enderman": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.endermen.idle",
+          "hurt": "mob.endermen.hit",
+          "death": "mob.endermen.death",
+          "mad": "mob.endermen.scream",
+          "stare": {
+            "sound": "mob.endermen.stare",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "guardian:red_phantom": {
+        "volume": 10.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.phantom.idle",
+          "hurt": "mob.phantom.hurt",
+          "death": "mob.phantom.death",
+          "attack": "mob.phantom.bite",
+          "swoop": {
+            "sound": "mob.phantom.swoop",
+            "pitch": [ 0.95, 1.05 ]
+         }
+      }
+   },
+      "guardian:end_phantom": {
+        "volume": 10.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.phantom.idle",
+          "hurt": "mob.phantom.hurt",
+          "death": "mob.phantom.death",
+          "attack": "mob.phantom.bite",
+          "swoop": {
+            "sound": "mob.phantom.swoop",
+            "pitch": [ 0.95, 1.05 ]
+        }
+      }
+    }
+  }
+}
+

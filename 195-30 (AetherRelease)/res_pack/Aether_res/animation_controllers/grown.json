@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.aechor_grown.idle" : {
+            "initial_state" : "default",
+            "states" : {
+                "default" : {
+                    "animations" : [ "move", "look_at_target" ]
+                 }
+             }
+         }
+    }
+} 

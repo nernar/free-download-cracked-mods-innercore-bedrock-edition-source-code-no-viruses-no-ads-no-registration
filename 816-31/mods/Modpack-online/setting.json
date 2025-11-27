@@ -1,0 +1,18 @@
+{
+	"description": {
+		"title": "Настройки",
+		"message_update": {
+			"type": "boolean",
+			"text": "Система оповещений(вкл/выкл)"
+		},
+		"defender": {
+			"type": "boolean",
+			"text": "Loader Defender(вкл/выкл)"
+		}
+	},
+	"setting": {
+		"message_update": "true",
+		"undefined": 0,
+		"defender": "true"
+	}
+}

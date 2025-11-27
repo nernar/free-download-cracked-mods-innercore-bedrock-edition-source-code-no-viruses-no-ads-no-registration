@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:ice_scale_hel"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "A#A",
+      "###"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_scale_blue",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "hu:icedragonhelmet",
+      "count": 1
+    }
+  }
+}

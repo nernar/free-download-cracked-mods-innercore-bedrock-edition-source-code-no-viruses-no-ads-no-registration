@@ -1,0 +1,10 @@
+{
+  "shared": {
+    "name": "flatworld",
+    "include": []
+  },
+  "depends": [
+    "innercore",
+    "nativejs"
+  ]
+}

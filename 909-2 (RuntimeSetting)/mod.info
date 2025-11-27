@@ -1,0 +1,6 @@
+{
+	"name":"Runtime Setting",
+	"author":"Reider ___",
+	"version": "release 1.0.1",
+	"description": "Runtime Setting - мод библиотека, для настройки модов в реальном времени, без выхода из игры."
+}

@@ -1,0 +1,76 @@
+// (c) Raisenくん- 2021
+{
+  "anim_beat_alpha_01": {
+    "anim_type": "alpha",
+    "easing": "linear",
+    "duration": 2.0,
+    "from": 0.6,
+    "to": 1,
+    "next": "@progress.anim_beat_alpha_02"
+  },
+  "anim_beat_alpha_02": {
+    "anim_type": "alpha",
+    "easing": "linear",
+    "duration": 2.0,
+    "from": 1,
+    "to": 0.6,
+    "next": "@progress.anim_beat_alpha_01"
+  },
+
+  "addon_load_icon_anim": {
+    "anim_type": "flip_book",
+    "initial_uv": [ 0, 0 ],
+    "frame_count": 8,
+    "frame_step": 300,
+    "fps": 10,
+    "reversible": false,
+    "easing": "linear"
+  },
+  "addon_load_icon": {
+    "type": "image",
+    "layer": 31,
+    "texture": "textures/advancement/ui/piston",
+    "size": [ 18, 30 ],
+    "uv_size": [ 300, 466 ],
+    "uv": "@progress.addon_load_icon_anim",
+    "disable_anim_fast_forward": false
+  },
+
+  "addon_loading_info": {
+    "type": "panel",
+    "anchor_to": "bottom_middle",
+    "anchor_from": "bottom_middle",
+    "size": [ "60%", "100%c" ],
+    "controls": [
+      {
+        "content_description": {
+          "type": "label",
+          "color": "$body_text_color",
+          "offset": [ 0, -15 ],
+          "size": [ "100%", "default" ],
+          "text": "[ Loading AdvancementPack (add-on) ]",
+          "text_alignment": "center",
+          "localize": true,
+          "alpha": "@progress.anim_beat_alpha_01"
+        }
+      }
+    ]
+  },
+
+  "world_convert_modal_progress_screen_content": {
+    "type": "panel",
+    "layer": 3,
+    "controls": [
+      { "title_panel_content@common_art.title_panel_content": {
+          "$splash_text_visible": false,
+          "layer": -2 }},
+      { "world_modal_progress_panel@progress.world_modal_progress_panel": {} },
+      { "popup_dialog_factory@progress.popup_dialog_factory": {} },
+      { "addon_loading_info@progress.addon_loading_info": {} },
+      { "addon_load_icon@progress.addon_load_icon": {
+          "anchor_to": "top_right",
+          "anchor_from": "top_right",
+          "offset": [ -15, 15 ]  }}
+    ]
+  }
+}

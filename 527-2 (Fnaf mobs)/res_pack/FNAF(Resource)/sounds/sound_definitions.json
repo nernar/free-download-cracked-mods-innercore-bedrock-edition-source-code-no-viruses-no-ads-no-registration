@@ -1,0 +1,70 @@
+{
+	"mob.animatronic.attack": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/fnaf/attack",
+				"volume": 0.2
+			},
+			{
+				"name": "sounds/fnaf/attack2",
+				"volume": 0.2
+			}
+		]
+	},
+
+	"mob.animatronic.death": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/fnaf/attack",
+				"volume": 0.2
+			},
+			{
+				"name": "sounds/fnaf/attack2",
+				"volume": 0.2
+			}
+		]
+	},
+	"mob.goldenfreddy.attack": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/goldenfreddy/attack",
+				"volume": 0.2
+			},
+			{
+				"name": "sounds/goldenfreddy/attack2",
+				"volume": 0.2
+			}
+		]
+	},
+
+	"mob.goldenfreddy.death": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/goldenfreddy/attack2",
+				"volume": 0.2
+			},
+			{
+				"name": "sounds/goldenfreddy/attack2",
+				"volume": 0.2
+			}
+		]
+	},
+
+	"mob.snake.say": {
+		"category": "neutral",
+		"sounds": [
+			{
+				"name": "sounds/snake/say1",
+				"volume": 1.1
+			},
+			{
+				"name": "sounds/snake/say2",
+				"volume": 10.94
+			}
+		]
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.grass_chomper.move": {
+      "loop": true,
+      "bones": {
+        "jaw": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+//<background,canExit=false>
+
+<translation,ru,keys.title>:Тестовый заголовок
+<translation,en,keys.title>:Test title
+<translation,en,Button 2>:Кнопка 2
+
+<title>:keys.title
+
+<text,en>:Test description
+<text,ru>:Тестовое сообщение
+
+<button,keys.title>:alert("Нажатие 1")
+
+<title>:Button 2
+
+<button,keys.title>:alert("Нажатие 2")
+
+<print>:Сообщение
+
+<setdefaultlang,en>

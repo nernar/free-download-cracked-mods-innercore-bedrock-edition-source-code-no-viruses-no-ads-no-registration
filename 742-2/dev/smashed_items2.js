@@ -1,0 +1,1 @@
+smashedItem(VanillaItemID['sugar_cane'], ModItemID.raw_sticky_sugar_cane, 'VanillaItemID', VanillaBlockID.flowing_water, false)

@@ -1,0 +1,16 @@
+Tool.createAllPart("Wooden");
+Tool.createAllPart("Stone");
+Tool.createAllPart("Iron", true);
+Tool.createAllPart("Flint");
+Tool.createAllPart("Cactus");
+Tool.createAllPart("Bone");
+Tool.createAllPart("Obsidian");
+Tool.createAllPart("Netherrack");
+Tool.createAllPart("Slime");
+Tool.createAllPart("Paper");
+Tool.createAllPart("Cobalt", true);
+Tool.createAllPart("Ardite", true);
+Tool.createAllPart("Manyullyn", true);
+Tool.createAllPart("Copper", true);
+Tool.createAllPart("Bronze", true);
+Tool.createAllPart("Alumite", true);

@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:vicious_spider_projectile",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/level_51_60/projectiles/vicious_spider"
+      },
+      "geometry": {
+        "default": "geometry.vicious_spider_projectile"
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

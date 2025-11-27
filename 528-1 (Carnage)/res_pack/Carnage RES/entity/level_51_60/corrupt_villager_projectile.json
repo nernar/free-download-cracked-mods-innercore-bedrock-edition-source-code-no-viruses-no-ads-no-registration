@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:corrupt_villager_projectile",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/level_51_60/projectiles/corrupt_villager"
+      },
+      "geometry": {
+        "default": "geometry.corrupt_villager_projectile"
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

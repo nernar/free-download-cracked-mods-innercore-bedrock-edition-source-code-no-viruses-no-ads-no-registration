@@ -1,0 +1,93 @@
+//Bedrock Live Axl
+{
+	"format_version": "1.10.0",
+	"geometry.squid1": {
+		"texturewidth": 64,
+		"textureheight": 32,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 4,
+		"visible_bounds_offset": [0, 0, 0],
+		"bones": [
+			{
+				"name": "body",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-4, -6, -4], "size": [8, 17, 8], "uv": [0, 0]},
+					{"origin": [-5, -5, -2], "size": [1, 4, 4], "uv": [32, 0]},
+					{"origin": [4, -5, -2], "size": [1, 4, 4], "uv": [32, 0], "mirror": true},
+					{"origin": [4, 2, 0], "size": [5, 9, 0], "uv": [50, 0], "mirror": true},
+					{"origin": [-9, 2, 0], "size": [5, 9, 0], "uv": [50, 0]},
+					{"origin": [1, -23, -0.5], "size": [1, 17, 1], "uv": [42, 0]},
+					{"origin": [-2, -23, -0.5], "size": [1, 17, 1], "uv": [42, 0], "mirror": true},
+					{"origin": [1, -28, -1.5], "size": [1, 5, 3], "uv": [42, 18]},
+					{"origin": [-2, -28, -1.5], "size": [1, 5, 3], "uv": [42, 18], "mirror": true}
+				]
+			},
+			{
+				"name": "tentacle1",
+				"parent": "body",
+				"pivot": [5, -7, 0],
+				"cubes": [
+					{"origin": [4, -19.5, -1], "size": [2, 14, 2], "uv": [32, 8]}
+				]
+			},
+			{
+				"name": "tentacle2",
+				"parent": "body",
+				"pivot": [4.5, -7, 2.5],
+				"cubes": [
+					{"origin": [3, -19, 3], "size": [2, 14, 2], "uv": [32, 8]}
+				]
+			},
+			{
+				"name": "tentacle3",
+				"parent": "body",
+				"pivot": [0, -7, 5],
+				"cubes": [
+					{"origin": [-1, -19.5, 4], "size": [2, 14, 2], "uv": [32, 8]}
+				]
+			},
+			{
+				"name": "tentacle4",
+				"parent": "body",
+				"pivot": [-3.5, -7, 3.5],
+				"cubes": [
+					{"origin": [-5, -19, 3], "size": [2, 14, 2], "uv": [32, 8]}
+				]
+			},
+			{
+				"name": "tentacle5",
+				"parent": "body",
+				"pivot": [-5, -7, 0],
+				"cubes": [
+					{"origin": [-6, -19.5, -1], "size": [2, 14, 2], "uv": [32, 8]}
+				]
+			},
+			{
+				"name": "tentacle6",
+				"parent": "body",
+				"pivot": [-3.5, -7, -3.5],
+				"cubes": [
+					{"origin": [-5, -19, -5], "size": [2, 14, 2], "uv": [32, 8]}
+				]
+			},
+			{
+				"name": "tentacle7",
+				"parent": "body",
+				"pivot": [0, -7, -5],
+				"cubes": [
+					{"origin": [-1, -19.5, -6], "size": [2, 14, 2], "uv": [32, 8]}
+				]
+			},
+			{
+				"name": "tentacle8",
+				"parent": "body",
+				"pivot": [3.5, -7, -3.5],
+				"cubes": [
+					{"origin": [3, -19, -5], "size": [2, 14, 2], "uv": [32, 8]}
+				]
+			}
+		]
+	}
+}
+//Bedrock Live Axl

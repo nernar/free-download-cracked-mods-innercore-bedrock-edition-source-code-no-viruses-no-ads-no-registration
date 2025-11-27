@@ -1,0 +1,17 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "",
+        "name": "§aEasy Craft",
+        "uuid": "4d24808a-23d7-40c4-9925-9c4d8941b550",
+        "version": [1, 0, 0]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "resources",
+            "uuid": "395d5ca9-bd68-4597-8e6c-f3cd4f45091e",
+            "version": [1, 0, 0]
+        }
+    ]
+}

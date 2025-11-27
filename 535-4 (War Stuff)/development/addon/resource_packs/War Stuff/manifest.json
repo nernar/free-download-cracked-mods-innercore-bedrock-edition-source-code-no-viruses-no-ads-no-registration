@@ -1,0 +1,17 @@
+{
+  "format_version": 1,
+    "header": {
+      "name": "§lWar Stuff§r",
+      "description": "By §6NILTER§r",
+      "uuid": "f97d3914-6b6d-4067-9087-7a838013bf01",
+      "version": [1, 0, 0],
+      "min_engine_version": [1, 10, 0]
+    },
+    "modules": [
+      {
+        "version": [1, 0, 0],
+        "uuid": "cc3f135a-2526-4995-a282-26626ae87404",
+        "type": "resources"
+      }
+    ]
+}

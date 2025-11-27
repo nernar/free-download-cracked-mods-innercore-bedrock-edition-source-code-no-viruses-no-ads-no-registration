@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "raigen:gravitite_projectile",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.2,
+        "height": 0.2
+      },
+      "minecraft:projectile": {
+        "onHit": {
+          "impact_damage": {
+            "damage": 1,
+            "knockback": true
+          },
+          "mob_effect": {
+            "effect": "levitation",
+            "durationeasy": 100,
+            "durationnormal": 100,
+            "durationhard": 100,
+            "amplifier": 3
+          },
+          "remove_on_hit": {
+          },
+          "particle_on_hit": {
+            "particle_type": "evaporation",
+            "on_other_hit": true
+          }
+        },
+        "hitSound": "bullet.hit",
+        "destroyOnHurt": true,
+        "critParticleOnHurt": true,
+        "power": 1.5,
+        "gravity": 0.000000000000000001,
+        "uncertaintyBase": 16,
+        "uncertaintyMultiplier": 4,
+        "anchor": 1,
+        "offset": [ 0, 0, 0 ]
+      },
+      "minecraft:physics": {
+	  }
+    }
+  }
+}

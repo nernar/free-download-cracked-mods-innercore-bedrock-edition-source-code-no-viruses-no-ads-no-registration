@@ -1,0 +1,27 @@
+﻿ //en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bioplentia:jungle_paper_lantern",
+			"category": "construction"
+		},
+		"components": {
+			"minecraft:stacked_by_data": true,
+			"minecraft:block_placer": {
+				"block": "bioplentia:jungle_paper_lantern"
+		   },
+         "minecraft:display_name": {
+          "value": "tile.bioplentia:jungle_paper_lantern.name"
+         },
+			"minecraft:fuel": {
+				"duration": 5
+			},
+		   "minecraft:icon": {
+				"texture": "jungle_paper_lantern"
+			} 
+		}
+	}
+}

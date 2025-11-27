@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:fire_steel_boo"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "A#A",
+      "A#A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_dragon_steel_fire_ingot",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "hu:firedragonsteelboot",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,29 @@
+// (c) Raisenくん- 2021 / (c) LukasPAH
+{
+  "messages_text/text": {
+    "bindings": [
+      {
+        "binding_name": "#text"
+      },
+      {
+        "binding_type": "view",
+        "source_property_name": "(not (#text > 'adv'))",
+        "target_property_name": "#visible"
+      }
+    ]
+  },
+
+  "messages_stack_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "$scrolling_content_anchor_from": "bottom_left",
+    "$scrolling_content_anchor_to": "bottom_left",
+    "factory": {
+      "name": "messages_factory",
+      "max_children_size": -1,
+      "control_ids": {
+        "chat_screen_messages": "chat_screen_messages@chat.message_tts_wrapper"
+      }
+    }
+  }
+}

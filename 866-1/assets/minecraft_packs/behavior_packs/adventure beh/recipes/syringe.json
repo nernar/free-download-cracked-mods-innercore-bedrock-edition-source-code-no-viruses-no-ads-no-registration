@@ -1,0 +1,27 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pili:syringe"
+    },
+
+    "tags": [ "pili_craft" ],
+    "pattern": [
+      "a  ",
+      " b ",
+"  a"
+    ],
+    "key": {
+      "a": {
+        "item": "minecraft:iron_nugget"
+      },
+ "b": {
+        "item": "minecraft:glass:0"
+      }
+
+},
+    "result": {
+      "item": "pili:syringe"
+    }
+  }
+}

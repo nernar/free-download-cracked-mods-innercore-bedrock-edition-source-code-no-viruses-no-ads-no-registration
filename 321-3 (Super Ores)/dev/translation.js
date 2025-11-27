@@ -1,0 +1,13 @@
+Translation.addTranslation("Super Ores", { ru: "Супер Руды" });
+Translation.addTranslation("Super Coal Ore", { ru: "Супер Угольная Руда" });
+Translation.addTranslation("Super Iron Ore", { ru: "Супер Железная Руда" });
+Translation.addTranslation("Super Gold Ore", { ru: "Супер Золотая Руда" });
+Translation.addTranslation("Super Lapis Ore", { ru: "Супер Лазуритовая Руда" });
+Translation.addTranslation("Super Redstone Ore", { ru: "Супер Красная Руда" });
+Translation.addTranslation("Super Emerald Ore", { ru: "Супер Изумрудная Руда" });
+Translation.addTranslation("Super Diamond Ore", { ru: "Супер Алмазная Руда" });
+Translation.addTranslation("Super Quartz Ore", { ru: "Супер Кварцная Руда" });
+Translation.addTranslation("Super Copper Ore", { ru: "Супер Медная Руда" });
+Translation.addTranslation("Super Iridium Ore", { ru: "Супер Иридиевая Руда" });
+Translation.addTranslation("Super Tin Ore", { ru: "Супер Оловянная Руда" });
+Translation.addTranslation("Super Uranium Ore", { ru: "Супер Урановая Руда" });

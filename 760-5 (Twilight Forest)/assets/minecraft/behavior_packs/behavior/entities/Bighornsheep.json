@@ -1,0 +1,335 @@
+{
+"format_version": "1.13.0",
+"minecraft:entity": {
+"description": {
+"identifier": "twilightforest:bighorn_sheep",
+"is_spawnable": true,
+"is_summonable": true,
+"is_experimental": false
+},
+"component_groups": {
+"宝贝": {
+"minecraft:is_baby": {
+},
+"minecraft:scale": {
+"value": 0.5
+},
+"minecraft:ageable": {
+"duration": 1200,
+"feed_items": "wheat",
+"grow_up": {
+"event": "成长",
+"target": "self"
+}
+},
+"minecraft:behavior.follow_parent": {
+"priority": 6,
+"speed_multiplier": 1.1
+}
+},
+"掉落羊毛": {
+"minecraft:loot": {
+"table": "loot_tables/entities/sheep_sheared.json"
+}
+},
+"掉落物品": {
+"minecraft:loot": {
+"table": "loot_tables/entities/sheep.json"
+}
+},
+"不可描述": {
+"minecraft:behavior.breed": {
+"priority": 3,
+"speed_multiplier": 1.0
+},
+"minecraft:breedable": {
+"require_tame": false,
+"breed_items": "wheat",
+"breeds_with": {
+"mate_type": "twilightforest:bighorn_sheep",
+"baby_type": "twilightforest:bighorn_sheep"
+}
+}
+},
+"染色": {
+"minecraft:is_dyeable": {
+"interact_text": "action.interact.dye"
+}
+},
+"裁剪": {
+"minecraft:is_sheared": {
+}
+},
+"白色": {
+"minecraft:color": {
+"value": 0
+}
+},
+"橙色": {
+"minecraft:color": {
+"value": 1
+}
+},
+"黄色": {
+"minecraft:color": {
+"value": 4
+}
+},
+"粉红": {
+"minecraft:color": {
+"value": 6
+}
+},
+"灰色": {
+"minecraft:color": {
+"value": 7
+}
+},
+"蓝色": {
+"minecraft:color": {
+"value": 11
+}
+},
+"棕色": {
+"minecraft:color": {
+"value": 12
+}
+},
+"绿色": {
+"minecraft:color": {
+"value": 13
+}
+},
+"红色": {
+"minecraft:color": {
+"value": 13
+}
+},
+"栓绳": {
+"minecraft:behavior.move_towards_restriction": {
+"priority": 2,
+"speed_multiplier": 1.0
+}
+}
+},
+"components": {
+"minecraft:nameable": {
+},
+"minecraft:type_family": {
+"family": [ "sheep" ]
+},
+"minecraft:breathable": {
+"total_supply": 15,
+"suffocate_time": 0
+},
+"minecraft:health": {
+"value": 8,
+"max": 8
+},
+"minecraft:movement": {
+"value": 0.25
+},
+"minecraft:scale": {
+"value": 1.0
+},
+"minecraft:collision_box": {
+"width": 0.8,
+"height": 1.3
+},
+"minecraft:balloonable": {
+"mass": 0.75
+},
+"minecraft:navigation.generic": {
+"can_path_over_water": true,
+"avoid_water": true,
+"can_walk": true
+},
+"minecraft:movement.basic": {
+},
+"minecraft:jump.static": {
+},
+"minecraft:can_climb": {
+},
+"minecraft:hurt_on_condition": {
+"damage_conditions": [
+{
+"filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+"cause": "lava",
+"damage_per_tick": 4
+}
+]
+},
+"minecraft:interact": [
+{
+"cooldown": 2.5,
+"use_item": false,
+"hurt_item": 1,
+"spawn_items": { "table": "loot_tables/entities/sheep_shear.json" },
+"play_sounds": "shear",
+"interact_text": "action.interact.shear",
+"on_interact": {
+"filters": {
+"all_of": [
+{ "test": "has_equipment", "subject": "other", "domain": "hand", "value": "shears" },
+{ "test": "is_family", "subject": "other", "value": "player" },
+{ "test": "has_component", "operator": "!=", "value": "minecraft:is_baby" },
+{ "test": "has_component", "value": "minecraft:is_dyeable" }
+]
+},
+"event": "羊毛裁剪",
+"target": "self"
+}
+}
+],
+"minecraft:behavior.random_stroll": {
+"priority": 7,
+"speed_multiplier": 1.0
+},
+"minecraft:behavior.mount_pathing": {
+"priority": 2,
+"speed_multiplier": 1.5,
+"target_dist": 0.0,
+"track_target": true
+},
+"minecraft:behavior.follow_parent": {
+"priority": 5,
+"speed_multiplier": 1.1
+},
+"minecraft:behavior.float": {
+"priority": 0
+},
+"minecraft:behavior.tempt": {
+"priority": 4,
+"speed_multiplier": 1.25,
+"items": [ "wheat" ]
+},
+"minecraft:behavior.panic": {
+"priority": 1,
+"speed_multiplier": 1.25
+},
+"minecraft:behavior.look_at_player": {
+"priority": 8,
+"look_distance": 6.0,
+"probability": 0.02
+},
+"minecraft:behavior.random_look_around": {
+"priority": 9
+},
+"minecraft:behavior.eat_block": {
+"priority": 6,
+"on_eat": {
+"event": "啃草",
+"target": "self"
+}
+},
+"minecraft:leashable": {
+"soft_distance": 4.0,
+"hard_distance": 6.0,
+"max_distance": 10.0,
+"on_leash": {
+"event": "拴住",
+"target": "self"
+},
+"on_unleash": {
+"event": "栓开",
+"target": "self"
+}
+},
+"minecraft:physics": {
+},
+"minecraft:pushable": {
+"is_pushable": true,
+"is_pushable_by_piston": true
+}
+},
+"events": {
+"minecraft:entity_spawned": {
+"sequence": [
+{
+"randomize": [
+{
+"weight": 95,
+"remove": { },
+"add": { "component_groups": [ "不可描述", "掉落物品", "染色" ] }
+},
+{
+"weight": 25,
+"remove": { },
+"add": { "component_groups": [ "宝贝", "染色" ] }
+}
+]
+},
+/*此处做区域*/
+{
+"randomize": [
+{
+"weight": 80000,
+"add": { "component_groups": [ "白色" ] }
+},
+{
+"weight": 5000,
+"add": { "component_groups": [ "橙色" ] }
+},
+{
+"weight": 5000,
+"add": { "component_groups": [ "黄色" ] }
+},
+{
+"weight": 3000,
+"add": { "component_groups": [ "粉红" ] }
+},
+{
+"weight": 5000,
+"add": { "component_groups": [ "灰色" ] }
+},
+{
+"weight": 5000,
+"add": { "component_groups": [ "蓝色" ] }
+},
+{
+"weight": 5000,
+"add": { "component_groups": [ "棕色" ] }
+},
+{
+"weight": 180,
+"add": { "component_groups": [ "红色" ] }
+}
+]
+}
+]
+},
+"minecraft:entity_born": {
+"remove": { },
+"add": { "component_groups": [ "宝贝", "染色" ] }
+},
+"成长": {
+"remove": { "component_groups": [ "宝贝" ] },
+"add": { "component_groups": [ "不可描述", "掉落物品" ] }
+},
+"羊毛裁剪": {
+"remove": { "component_groups": [ "染色", "掉落物品" ] },
+"add": { "component_groups": [ "裁剪", "羊毛掉落" ] }
+},
+"啃草": {
+"sequence":[
+{ 
+"remove": { "component_groups": [ "裁剪" ] },
+"add": { "component_groups": [ "染色" ] }
+},
+{
+"filters": { "test": "has_component", "subject": "other", "operator": "!=", "value": "minecraft:is_baby" },
+"add": { "component_groups": [ "掉落物品" ] },
+"remove": { "component_groups": [ "羊毛掉落" ] }
+}
+]
+},
+"拴住": {
+"add": { "component_groups": [ "栓绳" ] }
+},
+"栓开": {
+"remove": { "component_groups": [ "栓绳" ] }
+}
+/*此处做销毁*/
+}
+}
+}

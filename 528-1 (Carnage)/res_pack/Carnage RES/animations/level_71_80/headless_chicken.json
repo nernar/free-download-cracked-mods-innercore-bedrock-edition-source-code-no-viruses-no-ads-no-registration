@@ -1,0 +1,12 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.headless_chicken.move": {
+      "loop": true,
+      "bones": {
+        "left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    }
+  }
+}

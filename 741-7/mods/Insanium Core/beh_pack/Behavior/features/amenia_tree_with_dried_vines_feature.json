@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "about:amenia_tree_with_dried_vines_feature"
+    },
+    "early_out": "first_failure",
+    "features": [
+      "about:amenia_tree_feature",
+      "about:scatter_dried_vines_feature"
+    ]
+  }
+}

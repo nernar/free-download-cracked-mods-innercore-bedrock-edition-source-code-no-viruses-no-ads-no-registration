@@ -1,0 +1,6 @@
+<===Midlet Core===>
+
+Это небольшое ядро которое используется во всем модах SWcorp
+
+MachineRegistry - from IC²
+Others - SWCorp

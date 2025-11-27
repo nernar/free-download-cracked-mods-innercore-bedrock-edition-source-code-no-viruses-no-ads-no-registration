@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:land_leech",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/level_31_40/land_leech"
+      },
+      "geometry": {
+        "default": "geometry.land_leech"
+      },
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 88
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

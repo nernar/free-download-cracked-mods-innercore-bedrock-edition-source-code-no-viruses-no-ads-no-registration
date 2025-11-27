@@ -1,0 +1,163 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ayrtown:guy",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+        "minecraft:zombie_baby": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.5
+        },
+        "minecraft:movement": {
+          "value": 0.35
+        }
+      },
+
+      "minecraft:zombie_adult": {
+        "minecraft:movement": {
+          "value": 0.25
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "zombie"
+          ],
+          "seats": {
+            "position": [ 0.0, 1.1, -0.35 ],
+            "lock_rider_rotation": 0
+          }
+        },
+        "minecraft:behavior.mount_pathing": {
+          "priority": 2,
+          "speed_multiplier": 1.25,
+          "target_dist": 0.0,
+          "track_target": true
+         }
+        }
+      },
+       
+    "components": {
+      "minecraft:nameable": {
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 2.0
+      },
+      "minecraft:attack": {
+        "damage": 3
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/zombie.json"
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "avoid_sun": false,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:fire_immune": false,
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test": "is_family", "subject": "other", "operator": "!=", "value": "boss" }
+        }
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": { 
+                "any_of": [
+                  { "test" : "is_family", "subject" : "other", "value" : "undead"},
+                  { "test" : "is_family", "subject" : "other", "value" : "boss"},
+                  { "test" : "is_family", "subject" : "other", "value" : "zombie_villager"},
+                  { "test" : "is_family", "subject" : "other", "value" : "zombie_pigman"},
+                  { "test" : "is_family", "subject" : "other", "value" : "illager"},
+				  { "test" : "is_family", "subject" : "other", "value" : "vex"}
+                ]
+            },
+            "max_dist": 8,
+            "walk_speed_multiplier": 0.9,
+            "sprint_speed_multiplier": 1.2
+          }
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 4,
+        "target_dist": 1.2,
+        "speed_multiplier": 1.25,
+        "track_target": true
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 5,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "look_distance": 8
+      },
+        "minecraft:behavior.offer_flower": {
+        "priority": 2
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 6
+      },
+      "minecraft:type_family": {
+        "family": [ "guy", "neutro", "undead" ]
+      },
+      "minecraft:physics": {
+      }
+    },
+
+    "events": {
+        "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 70,
+            "remove": {},
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_adult"
+              ]
+            }
+          },
+          {
+            "weight": 30,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_baby"
+              ]
+            }
+          }
+        ]
+      },
+      "null": {
+
+      }
+    }
+  }
+}

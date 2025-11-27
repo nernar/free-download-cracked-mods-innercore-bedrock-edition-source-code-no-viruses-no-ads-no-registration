@@ -1,0 +1,70 @@
+ModAPI.addAPICallback("GuideAPI", function(api){ 
+const GuideAPI = api.GuideAPI; 
+const GuideHelper = api.GuideHelper; 
+const PageControllers = api.PageControllers; 
+
+IDRegistry.genItemID("cryptoGuide"); 
+Item.createItem("cryptoGuide", "Crypto-Currency Prices", {name: "crypto_guide", meta: 0}, {stack: 1}); 
+Recipes.addShaped({id:ItemID.cryptoGuide,count:1,data:0},["ab"],['a',340,0,'b',ItemID.dollar,0]);
+
+GuideAPI.registerGuide("guideCrypto", { 
+item: ItemID.cryptoGuide, 
+debug: false, 
+textures: { 
+background: "crypto_guide_background", 
+nextLink: "next_page", 
+preLink: "pre_page", 
+close: "close", 
+}, 
+pages: { 
+"default": { 
+left: { 
+controller: PageControllers.BASIC_PAGE, 
+elements: [
+{text: "Crypto-Currency Prices", size: 22, bold: true},
+{text: "", size: 5},
+{text: "Marscoin - 54 USD", size: 18},
+{text: "Mooncoin - 42 USD", size: 18},
+{text: "Bitcoin - 34 USD", size: 18},
+{text: "Ethereum - 28 USD", size: 18},
+{text: "Concoin - 26 USD", size: 18},
+{text: "Arkcoin - 25 USD", size: 18},
+{text: "Wondercoin - 23 USD", size: 18},
+{text: "Cosmocash - 22 USD", size: 18},
+{text: "Augur - 20 USD", size: 18},
+{text: "Lisk - 19 USD", size: 18},
+{text: "Firecoin - 17 USD", size: 18},
+{text: "Zerocash - 15 USD", size: 18},
+{text: "Dashcoin - 14 USD", size: 18},
+{text: "Monero - 12 USD", size: 18},
+{text: "Ripple - 11 USD", size: 18},
+{text: "Windcoin - 7 USD", size: 18},
+{text: "Litecoin - 4 USD", size: 18},
+{text: "Dogecoin - 3 USD", size: 18},
+{text: "Buzcoin - 2 USD", size: 18},
+{text: "Peercoin - 1 USD", size: 18},
+] 
+}, 
+right: { 
+controller: PageControllers.BASIC_PAGE, 
+elements: [
+{text: "Shop Prices", size: 22, bold: true},
+{text: "", size: 5},
+{text: "Diamond - 24 USD", size: 18},
+{text: "Emerald - 26 USD", size: 18},
+{text: "Iron Ingot - 6 USD", size: 18},
+{text: "Gold Ingot - 18 USD", size: 18},
+{text: "Lapis Lazuri - 4 USD", size: 18},
+{text: "Redstone Dust - 3 USD", size: 18},
+{text: "Quartz - 4 USD", size: 18},
+{text: "Coal - 1 USD", size: 18},
+{text: "Saddle - 36 USD", size: 18},
+{text: "Nametag - 26 USD", size: 18},
+{text: "Dragon's Breath - 48 USD", size: 18},
+{text: "Elytra - 62 USD", size: 18},
+] 
+}
+}
+}
+}); 
+});

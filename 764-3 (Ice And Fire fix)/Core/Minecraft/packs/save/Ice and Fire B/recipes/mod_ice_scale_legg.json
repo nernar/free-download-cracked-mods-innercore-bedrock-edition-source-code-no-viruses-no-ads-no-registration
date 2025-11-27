@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hu:icedragonlegging"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "A#A",
+      "A#A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_scale_blue",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "hu:ice_scale_legg",
+      "count": 1
+    }
+  }
+}

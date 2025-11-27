@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:sentient_mucus",
+      "materials": {
+	    "default": "glass"
+	  },
+      "textures": {
+        "variant_0": "textures/level_81_90/sentient_mucus/variant_0",
+        "variant_1": "textures/level_81_90/sentient_mucus/variant_1",
+        "variant_2": "textures/level_81_90/sentient_mucus/variant_2",
+        "variant_3": "textures/level_81_90/sentient_mucus/variant_3",
+        "variant_4": "textures/level_81_90/sentient_mucus/variant_4"
+      },
+      "geometry": {
+        "default": "geometry.sentient_mucus"
+      },
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 142
+      },
+      "render_controllers": [ "controller.render.variant_sentient_mucus" ]
+    }
+  }
+}

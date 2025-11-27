@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "clientOnly": false,
+  "stableMode": true,
+  "opacity": 0.5,
+  "sortId": "asc(id)",
+  "information": {
+    "alwaysOpen": false,
+    "x": 0,
+    "y": 80,
+    "width": 80
+  },
+  "inventory": {
+    "x": 80,
+    "y": 40,
+    "width": 320
+  }
+}

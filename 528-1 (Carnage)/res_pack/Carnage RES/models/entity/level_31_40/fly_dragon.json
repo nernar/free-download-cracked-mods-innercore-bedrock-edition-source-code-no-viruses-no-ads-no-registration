@@ -1,0 +1,82 @@
+{
+	"format_version": "1.8.0",
+	"geometry.fly_dragon": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 1,
+		"visible_bounds_offset": [0, 0.5, 0],
+		"bones": [
+			{
+				"name": "body",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-2, 22, -8], "size": [4, 4, 16], "uv": [0, 0]},
+					{"origin": [-1.5, 22.5, 8], "size": [3, 3, 12], "uv": [26, 26]}
+				]
+			},
+			{
+				"name": "head",
+				"pivot": [0, 24, -8],
+				"cubes": [
+					{"origin": [-4.5, 23, -11], "size": [4, 4, 4], "uv": [0, 0], "mirror": true},
+					{"origin": [0.5, 23, -11], "size": [4, 4, 4], "uv": [0, 0]},
+					{"origin": [-1, 21, -12], "size": [2, 4, 5], "uv": [40, 11]}
+				]
+			},
+			{
+				"name": "left_legs",
+				"pivot": [2, 22, -1.5],
+				"rotation": [0, 0, 45],
+				"mirror": true,
+				"cubes": [
+					{"origin": [2, 18, -4], "size": [4, 4, 5], "uv": [24, 7]}
+				]
+			},
+			{
+				"name": "right_legs",
+				"pivot": [-2, 22, -1.5],
+				"rotation": [0, 0, -45],
+				"cubes": [
+					{"origin": [-6, 18, -4], "size": [4, 4, 5], "uv": [24, 7]}
+				]
+			},
+			{
+				"name": "left_wings",
+				"pivot": [2, 26, -4],
+				"rotation": [0, -5, 0],
+				"mirror": true,
+				"cubes": [
+					{"origin": [2, 25, -4], "size": [20, 1, 5], "uv": [0, 20]}
+				]
+			},
+			{
+				"name": "eagqvefb",
+				"parent": "left_wings",
+				"pivot": [2, 26, 1],
+				"rotation": [0, -10, 0],
+				"mirror": true,
+				"cubes": [
+					{"origin": [2, 25, 1], "size": [14, 1, 5], "uv": [0, 26]}
+				]
+			},
+			{
+				"name": "right_wings",
+				"pivot": [-2, 26, -4],
+				"rotation": [0, 5, 0],
+				"cubes": [
+					{"origin": [-22, 25, -4], "size": [20, 1, 5], "uv": [0, 20]}
+				]
+			},
+			{
+				"name": "srnntnytfn",
+				"parent": "right_wings",
+				"pivot": [-2, 26, 1],
+				"rotation": [0, 5, 0],
+				"cubes": [
+					{"origin": [-16, 25, 1], "size": [14, 1, 5], "uv": [0, 26]}
+				]
+			}
+		]
+	}
+}

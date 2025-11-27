@@ -1,0 +1,16 @@
+{
+  "enabled":true,
+  "solar_panel_helmet":{
+    "output":32,
+    "gen_day":1,
+    "storage":32000
+  },
+  "solar_panel_boots":{
+    "output":32,
+    "gen_day":1,
+    "gen_night":1,
+    "storage":32000
+  },
+  "simple_asp_recipe":false,
+  "hard_recipes":true
+}

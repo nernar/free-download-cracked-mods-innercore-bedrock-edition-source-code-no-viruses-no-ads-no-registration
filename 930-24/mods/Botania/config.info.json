@@ -1,0 +1,760 @@
+{
+	"Common.blockBreakingParticles": {
+		"name": {
+			"ru": "blockBreakingParticles.toolEnabled"
+		},
+		"index": 19
+	},
+	"Common.blockBreakingParticles.enabled": {
+		"name": {
+			"ru": "Частицы разрушения блоков"
+		},
+		"index": 18,
+		"description": {
+			"ru": "Set this to false to remove the block breaking particles from the flowers and other items in the mod."
+		}
+	},
+	"Common.blockBreakingParticles.toolEnabled": {
+		"name": {
+			"ru": "blockBreakingParticles.toolEnabled"
+		},
+		"index": 19,
+		"description": {
+			"ru": "Set this to false to remove the block breaking particles from the Terra Shatterer, as there can be a good amount in higher levels."
+		}
+	},
+	"Common.manaSpreaders": {
+		"name": {
+			"ru": "manaSpreaders.traceTime"
+		},
+		"index": 21
+	},
+	"Common.manaSpreaders.silent": {
+		"name": {
+			"ru": "Беззвучные распространители маны"
+		},
+		"index": 20,
+		"description": {
+			"ru": "Set this to true to disable the mana spreader shooting sound"
+		}
+	},
+	"Common.manaSpreaders.traceTime": {
+		"name": {
+			"ru": "manaSpreaders.traceTime"
+		},
+		"index": 21,
+		"description": {
+			"ru": "How many ticks into the future will mana spreaders attempt to predict where mana bursts go? Setting this lower will improve spreader performance, but will cause them to not fire at targets that are too far away.\nRange: > 1"
+		},
+		"type": "SeekBar",
+		"min": 1,
+		"max": 1.7976931348623157e+308
+	},
+	"Common.harvestLevels": {
+		"name": {
+			"ru": "harvestLevels.boreLens"
+		},
+		"index": 23
+	},
+	"Common.harvestLevels.weightLens": {
+		"name": {
+			"ru": "harvestLevels.weightLens"
+		},
+		"index": 22,
+		"description": {
+			"ru": "The harvest level of the Mana Lens: Weight. 3 is diamond level. Defaults to 2 (iron level)\nRange: > 0"
+		},
+		"type": "SeekBar",
+		"min": 0,
+		"max": 1.7976931348623157e+308
+	},
+	"Common.harvestLevels.boreLens": {
+		"name": {
+			"ru": "harvestLevels.boreLens"
+		},
+		"index": 23,
+		"description": {
+			"ru": "The harvest level of the Mana Lens: Bore. 3 is diamond level. Defaults to 3\nRange: > 0"
+		},
+		"type": "SeekBar",
+		"min": 0,
+		"max": 1.7976931348623157e+308
+	},
+	"Common": {
+		"name": {
+			"ru": "Common.worldgen"
+		},
+		"index": 33
+	},
+	"Common.chargeAnimation": {
+		"name": {
+			"ru": "Common.chargeAnimation"
+		},
+		"index": 24,
+		"description": {
+			"ru": "Set this to false to disable the animation when an item is charging on top of a mana pool"
+		}
+	},
+	"Common.flowerBindingForceCheck": {
+		"name": {
+			"ru": "Common.flowerBindingForceCheck"
+		},
+		"index": 25,
+		"description": {
+			"ru": "Turn this off ONLY IF you're on an extremely large world with an exaggerated count of Mana Spreaders/Mana Pools and are experiencing TPS lag. This toggles whether flowers are strict with their checking for connecting to pools/spreaders or just check whenever possible."
+		}
+	},
+	"Common.enderPickpocket": {
+		"name": {
+			"ru": "Common.enderPickpocket"
+		},
+		"index": 26,
+		"description": {
+			"ru": "Set to false to disable the ability for the Hand of Ender to pickpocket other players' ender chests"
+		}
+	},
+	"Common.manaEnchanter": {
+		"name": {
+			"ru": "Common.manaEnchanter"
+		},
+		"index": 27,
+		"description": {
+			"ru": "Set this to false to disable the Mana Enchanter. Since some people find it OP or something. This only disables the entry and creation. Old ones that are already in the world will stay."
+		}
+	},
+	"Common.manaFluxfield": {
+		"name": {
+			"ru": "Common.manaFluxfield"
+		},
+		"index": 28,
+		"description": {
+			"ru": "Set this to false to disable the Mana Fluxfield (generates FE from mana). This only disables the entry and creation. Old ones that are already in the world will stay."
+		}
+	},
+	"Common.relics": {
+		"name": {
+			"ru": "Common.relics"
+		},
+		"index": 29,
+		"description": {
+			"ru": "Set this to false to disable the Relic System. This only disables the entries, drops and achievements. Old ones that are already in the world will stay."
+		}
+	},
+	"Common.invertMagnetRing": {
+		"name": {
+			"ru": "Common.invertMagnetRing"
+		},
+		"index": 30,
+		"description": {
+			"ru": "Set this to true to invert the Ring of Magnetization's controls (from shift to stop to shift to work)"
+		}
+	},
+	"Common.gardenOfGlass": {
+		"name": {
+			"ru": "gardenOfGlass.islandScaleMultiplier"
+		},
+		"index": 32
+	},
+	"Common.gardenOfGlass.spawnWithLexicon": {
+		"name": {
+			"ru": "gardenOfGlass.spawnWithLexicon"
+		},
+		"index": 31,
+		"description": {
+			"ru": "Set this to false to disable spawning with a Lexica Botania in Garden of Glass worlds, if you are modifying the modpack's progression to not start with Botania."
+		}
+	},
+	"Common.gardenOfGlass.islandScaleMultiplier": {
+		"name": {
+			"ru": "gardenOfGlass.islandScaleMultiplier"
+		},
+		"index": 32,
+		"description": {
+			"ru": "The multiplier for island distances for multiplayer Garden of Glass worlds.\nIslands are placed on a grid with 256 blocks between points, with the spawn island always being placed on 256, 256.\nBy default, the scale is 8, putting each island on points separated by 2048 blocks.\nValues below 4 (1024 block spacing) are not recommended due to Nether portal collisions.\nRange: < 512"
+		},
+		"type": "SeekBar",
+		"min": 1,
+		"max": 512
+	},
+	"Common.worldgen": {
+		"name": {
+			"ru": "Common.worldgen"
+		},
+		"index": 33,
+		"description": {
+			"ru": "Set this to false to disable mystical flower and mushroom worldgen. More fine-tuned customization should be done with datapacks."
+		}
+	},
+	"Client.rendering": {
+		"name": {
+			"ru": "rendering.staticFloaters"
+		},
+		"index": 5
+	},
+	"Client.rendering.shaders": {
+		"name": {
+			"ru": "rendering.shaders"
+		},
+		"index": 1,
+		"description": {
+			"ru": "Set this to false to disable the use of shaders for some of the mod's renders. (Requires game restart)"
+		}
+	},
+	"Client.rendering.boundBlockWireframe": {
+		"name": {
+			"ru": "rendering.boundBlockWireframe"
+		},
+		"index": 2,
+		"description": {
+			"ru": "Set this to false to disable the wireframe when looking a block bound to something (spreaders, flowers, etc)."
+		}
+	},
+	"Client.rendering.accessories": {
+		"name": {
+			"ru": "rendering.accessories"
+		},
+		"index": 3,
+		"description": {
+			"ru": "Set this to false to disable rendering of accessories in the player."
+		}
+	},
+	"Client.rendering.manaBarHeight": {
+		"name": {
+			"ru": "rendering.manaBarHeight"
+		},
+		"index": 4,
+		"description": {
+			"ru": "The height of the mana display bar in above the XP bar. You can change this if you have a mod that changes where the XP bar is.\nRange: > 0"
+		},
+		"type": "SeekBar",
+		"min": 0,
+		"max": 1.7976931348623157e+308
+	},
+	"Client.rendering.staticFloaters": {
+		"name": {
+			"ru": "rendering.staticFloaters"
+		},
+		"index": 5,
+		"description": {
+			"ru": "Set this to true if you use lots of floating flowers and are experiencing rendering lag. Will disable the floating flowers' animations and render them statically for a major performance boost. Hit F3+A in-world after toggling this."
+		}
+	},
+	"Client.rendering.fancySkybox": {
+		"name": {
+			"ru": "Красивое небо в других мирах"
+		},
+		"index": 7
+	},
+	"Client.rendering.fancySkybox.enabled": {
+		"name": {
+			"ru": "fancySkybox.enabled"
+		},
+		"index": 6,
+		"description": {
+			"ru": "Set this to false to disable the fancy skybox in Garden of Glass"
+		}
+	},
+	"Client.rendering.fancySkybox.normalWorlds": {
+		"name": {
+			"ru": "Красивое небо в других мирах"
+		},
+		"index": 7,
+		"description": {
+			"ru": "Set this to true to enable the fancy skybox in non Garden of Glass worlds. (Does not require Garden of Glass loaded to use, needs 'fancySkybox.enabled' to be true as well)"
+		}
+	},
+	"Client.rendering.lexicon": {
+		"name": {
+			"ru": "lexicon.render_3d"
+		},
+		"index": 9
+	},
+	"Client.rendering.lexicon.rotatingItems": {
+		"name": {
+			"ru": "lexicon.rotatingItems"
+		},
+		"index": 8,
+		"description": {
+			"ru": "Set this to false to disable the rotating items in the petal and rune entries in the Lexica Botania."
+		}
+	},
+	"Client.rendering.lexicon.render_3d": {
+		"name": {
+			"ru": "lexicon.render_3d"
+		},
+		"index": 9,
+		"description": {
+			"ru": "Set this to false to disable the animated 3D render for the Lexica Botania."
+		}
+	},
+	"Client.particles": {
+		"name": {
+			"ru": "particles.elvenPortal"
+		},
+		"index": 13
+	},
+	"Client.particles.powerSystem": {
+		"name": {
+			"ru": "particles.powerSystem"
+		},
+		"index": 10,
+		"description": {
+			"ru": "Set this to true to set the power system's particles to be a lot more subtle. Good for low-end systems, if the particles are causing lag."
+		}
+	},
+	"Client.particles.staticWandBeam": {
+		"name": {
+			"ru": "particles.staticWandBeam"
+		},
+		"index": 11,
+		"description": {
+			"ru": "Set this to true to use a static wand beam that shows every single position of the burst, similar to the way it used to work on old Botania versions. Warning: Disabled by default because it may be laggy."
+		}
+	},
+	"Client.particles.flowerFrequency": {
+		"name": {
+			"ru": "particles.flowerFrequency"
+		},
+		"index": 12,
+		"description": {
+			"ru": "The frequency in which particles spawn from normal (worldgen) mystical flowers\nRange: > 5e-324"
+		},
+		"type": "SeekBar",
+		"min": 5e-324,
+		"max": 1.7976931348623157e+308
+	},
+	"Client.particles.elvenPortal": {
+		"name": {
+			"ru": "particles.elvenPortal"
+		},
+		"index": 13,
+		"description": {
+			"ru": "Set this to false to disable the particles in the elven portal."
+		}
+	},
+	"Client": {
+		"name": {
+			"ru": "Client.splashes"
+		},
+		"index": 17
+	},
+	"Client.seasonalFeatures": {
+		"name": {
+			"ru": "Client.seasonalFeatures"
+		},
+		"index": 14,
+		"description": {
+			"ru": "Set this to false to disable seasonal features, such as halloween and christmas."
+		}
+	},
+	"Client.debugInfo": {
+		"name": {
+			"ru": "Client.debugInfo"
+		},
+		"index": 15,
+		"description": {
+			"ru": "Set to false to disable Botania's messages in the F3 debug screen"
+		}
+	},
+	"Client.references": {
+		"name": {
+			"ru": "Client.references"
+		},
+		"index": 16,
+		"description": {
+			"ru": "Set this to false to disable the references in the flower tooltips. (You monster D:)"
+		}
+	},
+	"Client.splashes": {
+		"name": {
+			"ru": "Client.splashes"
+		},
+		"index": 17,
+		"description": {
+			"ru": "Set this to false to disable Botania's splashes in the main menu."
+		}
+	},
+	"properties": {
+		"enabled": {
+			"name": {
+				"en": "enabled"
+			},
+			"index": 0
+		},
+		"Client.rendering": {
+			"name": {
+				"ru": "rendering.staticFloaters"
+			},
+			"index": 5
+		},
+		"Client.rendering.shaders": {
+			"name": {
+				"ru": "rendering.shaders"
+			},
+			"description": {
+				"ru": "Set this to false to disable the use of shaders for some of the mod's renders. (Requires game restart)"
+			},
+			"index": 1
+		},
+		"Client.rendering.boundBlockWireframe": {
+			"name": {
+				"ru": "rendering.boundBlockWireframe"
+			},
+			"description": {
+				"ru": "Set this to false to disable the wireframe when looking a block bound to something (spreaders, flowers, etc)."
+			},
+			"index": 2
+		},
+		"Client.rendering.accessories": {
+			"name": {
+				"ru": "rendering.accessories"
+			},
+			"description": {
+				"ru": "Set this to false to disable rendering of accessories in the player."
+			},
+			"index": 3
+		},
+		"Client.rendering.manaBarHeight": {
+			"name": {
+				"ru": "rendering.manaBarHeight"
+			},
+			"description": {
+				"ru": "The height of the mana display bar in above the XP bar. You can change this if you have a mod that changes where the XP bar is.\nRange: > 0"
+			},
+			"index": 4,
+			"type": "SeekBar",
+			"min": 0,
+			"max": 1.7976931348623157e+308
+		},
+		"Client.rendering.staticFloaters": {
+			"name": {
+				"ru": "rendering.staticFloaters"
+			},
+			"description": {
+				"ru": "Set this to true if you use lots of floating flowers and are experiencing rendering lag. Will disable the floating flowers' animations and render them statically for a major performance boost. Hit F3+A in-world after toggling this."
+			},
+			"index": 5
+		},
+		"Client.rendering.fancySkybox": {
+			"name": {
+				"ru": "Красивое небо в других мирах"
+			},
+			"index": 7
+		},
+		"Client.rendering.fancySkybox.enabled": {
+			"name": {
+				"ru": "fancySkybox.enabled"
+			},
+			"description": {
+				"ru": "Set this to false to disable the fancy skybox in Garden of Glass"
+			},
+			"index": 6
+		},
+		"Client.rendering.fancySkybox.normalWorlds": {
+			"name": {
+				"ru": "Красивое небо в других мирах"
+			},
+			"description": {
+				"ru": "Set this to true to enable the fancy skybox in non Garden of Glass worlds. (Does not require Garden of Glass loaded to use, needs 'fancySkybox.enabled' to be true as well)"
+			},
+			"index": 7
+		},
+		"Client.rendering.lexicon": {
+			"name": {
+				"ru": "lexicon.render_3d"
+			},
+			"index": 9
+		},
+		"Client.rendering.lexicon.rotatingItems": {
+			"name": {
+				"ru": "lexicon.rotatingItems"
+			},
+			"description": {
+				"ru": "Set this to false to disable the rotating items in the petal and rune entries in the Lexica Botania."
+			},
+			"index": 8
+		},
+		"Client.rendering.lexicon.render_3d": {
+			"name": {
+				"ru": "lexicon.render_3d"
+			},
+			"description": {
+				"ru": "Set this to false to disable the animated 3D render for the Lexica Botania."
+			},
+			"index": 9
+		},
+		"Client.particles": {
+			"name": {
+				"ru": "particles.elvenPortal"
+			},
+			"index": 13
+		},
+		"Client.particles.powerSystem": {
+			"name": {
+				"ru": "particles.powerSystem"
+			},
+			"description": {
+				"ru": "Set this to true to set the power system's particles to be a lot more subtle. Good for low-end systems, if the particles are causing lag."
+			},
+			"index": 10
+		},
+		"Client.particles.staticWandBeam": {
+			"name": {
+				"ru": "particles.staticWandBeam"
+			},
+			"description": {
+				"ru": "Set this to true to use a static wand beam that shows every single position of the burst, similar to the way it used to work on old Botania versions. Warning: Disabled by default because it may be laggy."
+			},
+			"index": 11
+		},
+		"Client.particles.flowerFrequency": {
+			"name": {
+				"ru": "particles.flowerFrequency"
+			},
+			"description": {
+				"ru": "The frequency in which particles spawn from normal (worldgen) mystical flowers\nRange: > 5e-324"
+			},
+			"index": 12,
+			"type": "SeekBar",
+			"min": 5e-324,
+			"max": 1.7976931348623157e+308
+		},
+		"Client.particles.elvenPortal": {
+			"name": {
+				"ru": "particles.elvenPortal"
+			},
+			"description": {
+				"ru": "Set this to false to disable the particles in the elven portal."
+			},
+			"index": 13
+		},
+		"Client": {
+			"name": {
+				"ru": "Client.splashes"
+			},
+			"index": 17
+		},
+		"Client.seasonalFeatures": {
+			"name": {
+				"ru": "Client.seasonalFeatures"
+			},
+			"description": {
+				"ru": "Set this to false to disable seasonal features, such as halloween and christmas."
+			},
+			"index": 14
+		},
+		"Client.debugInfo": {
+			"name": {
+				"ru": "Client.debugInfo"
+			},
+			"description": {
+				"ru": "Set to false to disable Botania's messages in the F3 debug screen"
+			},
+			"index": 15
+		},
+		"Client.references": {
+			"name": {
+				"ru": "Client.references"
+			},
+			"description": {
+				"ru": "Set this to false to disable the references in the flower tooltips. (You monster D:)"
+			},
+			"index": 16
+		},
+		"Client.splashes": {
+			"name": {
+				"ru": "Client.splashes"
+			},
+			"description": {
+				"ru": "Set this to false to disable Botania's splashes in the main menu."
+			},
+			"index": 17
+		},
+		"Common.blockBreakingParticles": {
+			"name": {
+				"ru": "blockBreakingParticles.toolEnabled"
+			},
+			"index": 19
+		},
+		"Common.blockBreakingParticles.enabled": {
+			"name": {
+				"ru": "Частицы разрушения блоков"
+			},
+			"description": {
+				"ru": "Set this to false to remove the block breaking particles from the flowers and other items in the mod."
+			},
+			"index": 18
+		},
+		"Common.blockBreakingParticles.toolEnabled": {
+			"name": {
+				"ru": "blockBreakingParticles.toolEnabled"
+			},
+			"description": {
+				"ru": "Set this to false to remove the block breaking particles from the Terra Shatterer, as there can be a good amount in higher levels."
+			},
+			"index": 19
+		},
+		"Common.manaSpreaders": {
+			"name": {
+				"ru": "manaSpreaders.traceTime"
+			},
+			"index": 21
+		},
+		"Common.manaSpreaders.silent": {
+			"name": {
+				"ru": "Беззвучные распространители маны"
+			},
+			"description": {
+				"ru": "Set this to true to disable the mana spreader shooting sound"
+			},
+			"index": 20
+		},
+		"Common.manaSpreaders.traceTime": {
+			"name": {
+				"ru": "manaSpreaders.traceTime"
+			},
+			"description": {
+				"ru": "How many ticks into the future will mana spreaders attempt to predict where mana bursts go? Setting this lower will improve spreader performance, but will cause them to not fire at targets that are too far away.\nRange: > 1"
+			},
+			"index": 21,
+			"type": "SeekBar",
+			"min": 1,
+			"max": 1.7976931348623157e+308
+		},
+		"Common.harvestLevels": {
+			"name": {
+				"ru": "harvestLevels.boreLens"
+			},
+			"index": 23
+		},
+		"Common.harvestLevels.weightLens": {
+			"name": {
+				"ru": "harvestLevels.weightLens"
+			},
+			"description": {
+				"ru": "The harvest level of the Mana Lens: Weight. 3 is diamond level. Defaults to 2 (iron level)\nRange: > 0"
+			},
+			"index": 22,
+			"type": "SeekBar",
+			"min": 0,
+			"max": 1.7976931348623157e+308
+		},
+		"Common.harvestLevels.boreLens": {
+			"name": {
+				"ru": "harvestLevels.boreLens"
+			},
+			"description": {
+				"ru": "The harvest level of the Mana Lens: Bore. 3 is diamond level. Defaults to 3\nRange: > 0"
+			},
+			"index": 23,
+			"type": "SeekBar",
+			"min": 0,
+			"max": 1.7976931348623157e+308
+		},
+		"Common": {
+			"name": {
+				"ru": "Common.worldgen"
+			},
+			"index": 33
+		},
+		"Common.chargeAnimation": {
+			"name": {
+				"ru": "Common.chargeAnimation"
+			},
+			"description": {
+				"ru": "Set this to false to disable the animation when an item is charging on top of a mana pool"
+			},
+			"index": 24
+		},
+		"Common.flowerBindingForceCheck": {
+			"name": {
+				"ru": "Common.flowerBindingForceCheck"
+			},
+			"description": {
+				"ru": "Turn this off ONLY IF you're on an extremely large world with an exaggerated count of Mana Spreaders/Mana Pools and are experiencing TPS lag. This toggles whether flowers are strict with their checking for connecting to pools/spreaders or just check whenever possible."
+			},
+			"index": 25
+		},
+		"Common.enderPickpocket": {
+			"name": {
+				"ru": "Common.enderPickpocket"
+			},
+			"description": {
+				"ru": "Set to false to disable the ability for the Hand of Ender to pickpocket other players' ender chests"
+			},
+			"index": 26
+		},
+		"Common.manaEnchanter": {
+			"name": {
+				"ru": "Common.manaEnchanter"
+			},
+			"description": {
+				"ru": "Set this to false to disable the Mana Enchanter. Since some people find it OP or something. This only disables the entry and creation. Old ones that are already in the world will stay."
+			},
+			"index": 27
+		},
+		"Common.manaFluxfield": {
+			"name": {
+				"ru": "Common.manaFluxfield"
+			},
+			"description": {
+				"ru": "Set this to false to disable the Mana Fluxfield (generates FE from mana). This only disables the entry and creation. Old ones that are already in the world will stay."
+			},
+			"index": 28
+		},
+		"Common.relics": {
+			"name": {
+				"ru": "Common.relics"
+			},
+			"description": {
+				"ru": "Set this to false to disable the Relic System. This only disables the entries, drops and achievements. Old ones that are already in the world will stay."
+			},
+			"index": 29
+		},
+		"Common.invertMagnetRing": {
+			"name": {
+				"ru": "Common.invertMagnetRing"
+			},
+			"description": {
+				"ru": "Set this to true to invert the Ring of Magnetization's controls (from shift to stop to shift to work)"
+			},
+			"index": 30
+		},
+		"Common.gardenOfGlass": {
+			"name": {
+				"ru": "gardenOfGlass.islandScaleMultiplier"
+			},
+			"index": 32
+		},
+		"Common.gardenOfGlass.spawnWithLexicon": {
+			"name": {
+				"ru": "gardenOfGlass.spawnWithLexicon"
+			},
+			"description": {
+				"ru": "Set this to false to disable spawning with a Lexica Botania in Garden of Glass worlds, if you are modifying the modpack's progression to not start with Botania."
+			},
+			"index": 31
+		},
+		"Common.gardenOfGlass.islandScaleMultiplier": {
+			"name": {
+				"ru": "gardenOfGlass.islandScaleMultiplier"
+			},
+			"description": {
+				"ru": "The multiplier for island distances for multiplayer Garden of Glass worlds.\nIslands are placed on a grid with 256 blocks between points, with the spawn island always being placed on 256, 256.\nBy default, the scale is 8, putting each island on points separated by 2048 blocks.\nValues below 4 (1024 block spacing) are not recommended due to Nether portal collisions.\nRange: < 512"
+			},
+			"index": 32,
+			"type": "SeekBar",
+			"min": 1,
+			"max": 512
+		},
+		"Common.worldgen": {
+			"name": {
+				"ru": "Common.worldgen"
+			},
+			"description": {
+				"ru": "Set this to false to disable mystical flower and mushroom worldgen. More fine-tuned customization should be done with datapacks."
+			},
+			"index": 33
+		}
+	}
+}

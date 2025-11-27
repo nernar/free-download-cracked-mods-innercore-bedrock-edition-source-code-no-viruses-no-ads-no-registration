@@ -1,0 +1,20 @@
+{
+"format_version": "1.8.0",
+"animation_controllers": {
+"controller.animation.naga.general": {
+"states": {
+"default": {
+"animations": [ { "general": [] } ]
+}
+}
+},
+"controller.animation.naga.action": {
+"states": {
+"default": {
+"animations": [ { "action": [ ] } ]
+}
+}
+}
+/*此处做销毁*/
+}
+}

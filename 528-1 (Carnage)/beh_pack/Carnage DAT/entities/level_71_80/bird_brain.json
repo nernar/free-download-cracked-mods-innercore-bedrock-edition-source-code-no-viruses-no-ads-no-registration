@@ -1,0 +1,80 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "raigen:bird_brain",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "runtime_identifier": "minecraft:bat"
+    },
+
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "bat", "monster" ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.8,
+        "height": 0.8
+      },
+      "minecraft:fall_damage": {
+        "value": 0.0
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:navigation.float": {
+        "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "track_target": true
+      },
+      "minecraft:behavior.move_towards_target": {
+        "priority": 1,
+        "speed_multiplier": 0.9,
+        "within_radius": 32
+      },
+	  "minecraft:attack": {
+	    "damage": 2,
+		"effect_name": "weakness",
+		"effect_duration": 30
+	  },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+          "max_dist": 20
+        },
+        "must_see": true
+      },
+      "minecraft:behavior.float_wander": {
+        "xz_dist": 10,
+        "y_dist": 7,
+        "y_offset": -2.0,
+        "random_reselect": true,
+        "float_duration": [ 0.1, 0.35 ]
+      },
+      "minecraft:can_fly": {
+      },
+      "minecraft:health": {
+        "value": 8
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:physics": {
+      }
+    }
+  }
+}

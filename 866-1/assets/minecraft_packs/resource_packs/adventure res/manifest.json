@@ -1,0 +1,36 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "Adventure craft RES",
+		"description": "by Piligrim",
+		"uuid": "da87bcec-ce14-11ec-9d64-0242ac120002",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			13,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "da87c08e-ce14-11ec-9d64-0242ac120002",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"1.8.3"
+			]
+		}
+	}
+}

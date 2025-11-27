@@ -1,0 +1,361 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ayrtown:evocator",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+        "become_boss": {
+        "minecraft:transformation": {
+          "into": "ayrtown:boss",
+          "delay": 0.5
+        }
+      },
+      "minecraft:zombie_evocator_baby": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.53125
+        },
+        "minecraft:movement": {
+          "value": 0.39
+      },
+      "minecraft:attack": {
+        "damage": 3,
+        "effect_name": "blindness",
+        "effect_duration": 3
+        }
+      },
+      "minecraft:zombie_evocator_baby2": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.53125
+        },
+        "minecraft:movement": {
+          "value": 0.39
+      },
+      "minecraft:attack": {
+        "damage": 3,
+        "effect_name": "hunger",
+        "effect_duration": 30
+        }
+      },
+        "minecraft:zombie_evocator_adult": {
+        "minecraft:movement": {
+          "value": 0.35
+        },
+        "minecraft:attack": {
+        "damage": 6,
+        "effect_name": "blindness",
+        "effect_duration": 5
+      },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "zombie"
+          ],
+          "seats": {
+            "position": [ 0.0, 1.1, -0.35 ],
+            "lock_rider_rotation": 0
+          }
+        },
+        "minecraft:behavior.mount_pathing": {
+          "priority": 2,
+          "speed_multiplier": 1.25,
+          "target_dist": 0.0,
+          "track_target": true
+        },
+        "minecraft:behavior.summon_entity": {
+        "priority": 2,
+
+        "summon_choices": [
+          {
+            "min_activation_range": 0.0,
+            "max_activation_range": 4.0,
+            "cooldown_time": 5.0,
+            "weight": 3,
+            "cast_duration": 2.0,
+            "particle_color": "#FF664D59",
+            "start_sound_event": "cast.spell",
+            "sequence": [
+              {
+                "shape": "circle",
+                "target": "self",
+                "base_delay": 0.2,
+                "delay_per_summon": 0.0,
+                "num_entities_spawned": 2,
+                "entity_type": "ayrtown:mini",
+                "size": 1.5,
+                "entity_lifespan": 8.1,
+                "sound_event": "prepare.attack"
+              },
+              {
+                "shape": "circle",
+                "target": "self",
+                "base_delay": 0.2,
+                "delay_per_summon": 0.0,
+                "num_entities_spawned": 3,
+                "entity_type": "ayrtown:mini",
+                "size": 2.5,
+                "entity_lifespan": 8.1
+              }
+            ]
+          },
+          {
+            "min_activation_range": 3.0,
+            "weight": 3,
+            "cooldown_time": 5.0,
+            "cast_duration": 2.0,
+            "particle_color": "#FF664D59",
+            "start_sound_event": "cast.spell",
+            "sequence": [
+              {
+                "shape": "line",
+                "target": "self",
+                "base_delay": 0.2,
+                "delay_per_summon": 0.05,
+                "num_entities_spawned": 4,
+                "entity_type": "ayrtown:mini",
+                "size": 10,
+                "entity_lifespan": 8.1
+              }
+            ]
+          },
+          {
+            "weight": 1,
+            "cooldown_time": 17.0,
+            "cast_duration": 5.0,
+            "particle_color": "#FFB3B3CC",
+            "sequence": [
+              {
+                "shape": "circle",
+                "target": "self",
+                "base_delay": 2.0,
+                "num_entities_spawned": 3,
+                "entity_type": "ayrtown:teleport",
+                "summon_cap": 8,
+                "summon_cap_radius": 10.0,
+                "size": 1.0,
+                "sound_event": "prepare.summon"
+              }
+            ]
+          }
+        ]
+      },
+        "minecraft:behavior.send_event": {
+        "priority": 3,
+        "event_choices": [
+          {
+            "min_activation_range": 0.0,
+            "max_activation_range": 16.0,
+            "cooldown_time": 5.0,
+            "cast_duration": 3.0,
+            "particle_color": "#FFB38033",
+            "weight": 3,
+            "filters": { 
+                "all_of": [
+                { "test": "is_family", "subject": "other", "value": "wolf" },
+                { "test": "has_component", "subject": "other", "operator": "!=", "value": "minecraft:is_tamed" }
+                ] 
+            },
+            "start_sound_event": "cast.spell",
+            "sequence": [
+              {
+                "base_delay": 2.0,
+                "event": "Bad_Wolf",
+                "sound_event": "prepare.wololo"
+              }
+            ]
+          }
+        ]
+      },
+        "minecraft:scale": {
+          "value": 1.0625
+        }
+      },
+      "minecraft:raid_configuration": {
+        "minecraft:dweller": {
+          "dwelling_type": "village",
+          "dweller_role": "hostile",
+          "update_interval_base": 60,
+          "update_interval_variant": 40,
+          "can_find_poi": false,
+          "can_migrate": false,
+          "first_founding_reward": 0
+        },
+        "minecraft:behavior.move_to_village": {
+          "priority": 6,
+          "speed_multiplier": 1.0
+        }
+      }
+    },
+    "components": {
+        "minecraft:damage_sensor": {
+        "on_damage": {
+          "filters": { "test" :  "is_family", "subject" : "other", "value" :  "lightning"},
+          "event": "become_boss"
+        },
+        "deals_damage": false
+      },
+      "minecraft:type_family": {
+        "family": [ "evocator", "undead", "zombie" ]
+      },
+
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/zombie.json"
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/entities/zombie_equipment.json"
+      },
+      "minecraft:health": {
+        "value": 44,
+        "max": 44
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.95
+      },
+      "minecraft:movement": {
+        "value": 0.40
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "can_pass_doors": true,
+        "can_open_doors": true,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 8,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "entity_types": [
+          {
+            "filters": {  
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "snowgolem"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "irongolem"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "wandering_trader"}
+                ] 
+            },
+            "max_dist": 20
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "villager" },
+                { "test": "has_component", "subject": "other", "operator": "!=", "value": "minecraft:is_baby" }
+              ]
+            },
+            "max_dist": 20
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 4,
+        "target_dist": 1.2,
+        "speed_multiplier": 0.75,
+        "track_target": true
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 9,
+        "look_distance": 3.0,
+        "probability": 1.0
+      },
+        "minecraft:behavior.random_stroll": {
+        "priority": 5,
+        "speed_multiplier": 0.75
+      },
+      "minecraft:behavior.look_at_entity": {
+        "priority": 10,
+        "look_distance": 8.0,
+        "filters": { "test" :  "is_family", "subject" : "other", "value" :  "mob" }
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test": "is_family", "subject": "other", "operator": "!=", "value": "boss" }
+        }
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:follow_range": {
+        "value": 64
+      }
+    },
+    "events": {
+        "become_boss": {
+        "remove": {
+        },
+        "add": {
+          "component_groups": [
+            "become_boss"
+          ]
+        }
+      },
+        "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 15,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_evocator_baby2"
+              ]
+            }
+          },
+          {
+            "weight": 15,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_evocator_baby"
+              ]
+
+            }
+          },
+          {
+            "weight": 70,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:zombie_evocator_adult"
+              ]
+
+            }
+          }
+        ]
+      },
+      "minecraft:spawn_for_raid": {
+        "add": {
+          "component_groups": [
+            "minecraft:raid_configuration"
+          ]
+        }
+      }
+    }
+  }
+}

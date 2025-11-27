@@ -1,0 +1,35 @@
+{
+	"themes": {
+		"empty": {
+			"slot": "classic_slot",
+			"invSlot": "classic_slot",
+			"selected_slot": "_selection",
+			"selected_invSlot": "_selection",
+			"frame": "classic_frame_bg_light",
+			"frame_scale": 3,
+			"icon_scale": 0.65,
+			"color_inventory": "#000000",
+			"color_title": "#000000",
+			"prototype": {
+				"customConfigs": {
+					"default": {
+						"padding_y": 475
+					},
+					"configs": [
+						["keyValue", "slider", "Padding y", "padding_y", 0, 500, 5, ""]
+					]
+				},
+				"update": [
+					"let cont = group.getWindowContent('header');",
+					"const padding = config.padding_y||475;",
+					"cont.drawing[1].y += padding;",
+					"cont.drawing[1].height -= padding",
+					"cont.elements['default-close-button'].y += padding;",
+					"cont.drawing[2].text = ''",
+					"group.setWindowContent('inventory', cont);"
+				]
+			}
+		}
+	},
+	"configs": {}
+}

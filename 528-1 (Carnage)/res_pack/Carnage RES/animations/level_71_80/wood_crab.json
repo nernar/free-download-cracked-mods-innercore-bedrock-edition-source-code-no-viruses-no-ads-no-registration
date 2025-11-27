@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.wood_crab.move": {
+      "loop": true,
+      "bones": {
+        "left_leg_1": { "rotation": [ 0.0, "variable.tcos1", 0.0 ] },
+        "left_leg_2": { "rotation": [ 0.0, "variable.tcos0", 0.0 ] },
+        "left_leg_3": { "rotation": [ 0.0, "variable.tcos1", 0.0 ] },
+        "right_leg_1": { "rotation": [ 0.0, "variable.tcos0", 0.0 ] },
+        "right_leg_2": { "rotation": [ 0.0, "variable.tcos1", 0.0 ] },
+        "right_leg_3": { "rotation": [ 0.0, "variable.tcos0", 0.0 ] }
+      }
+    }
+  }
+}

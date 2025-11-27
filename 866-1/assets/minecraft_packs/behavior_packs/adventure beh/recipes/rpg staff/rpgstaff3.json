@@ -1,0 +1,28 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pili:rpgstaff3"
+    },
+
+    
+    "tags": [ "pili_craft" ],
+    "pattern": [
+      "bbb",
+      "bab",
+"bbb"
+    ],
+    "key": {
+
+      "a": {
+        "item": "pili:rpgstaff2"
+      },
+      "b": {
+        "item": "minecraft:redstone_ore"
+      }
+    },
+    "result": {
+      "item": "pili:rpgstaff3"
+    }
+  }
+}

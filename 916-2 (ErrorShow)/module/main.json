@@ -1,0 +1,10 @@
+{
+	"name": "ErrorShow",
+	"version": 1,
+	"min_api_version": 320,
+
+	"preloader": "preloader.js",
+	"code": "main.js",
+	"inits": "inits.json",
+	"hooks": "hooks.json"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "ttigraas:custom/dragon_knuckles",
+  "textures": {
+    "1": "ttigraas:blocks/dragon_knuckles",
+    "particle": "ttigraas:items/orichalcum_ingot"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ttigraas:block/glowing_labyrinth_brick"
+    },
+    "facing=east": {
+      "model": "ttigraas:block/glowing_labyrinth_brick",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ttigraas:block/glowing_labyrinth_brick",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ttigraas:block/glowing_labyrinth_brick",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "main.js":{
+    "links":[
+      "1"
+    ],
+    "class_name":"main.js"
+  },
+  "launcher.js":{
+    "links":[
+      "2"
+    ],
+    "class_name":"launcher.js"
+  },
+  "lib/VanillaSlots.js":{
+    "links":[
+      "3"
+    ],
+    "class_name":"VanillaSlots.js"
+  },
+  "lib/Retention.js":{
+    "links":[
+      "4"
+    ],
+    "class_name":"Retention.js"
+  },
+  "lib/RuntimeConfig.js":{
+    "links":[
+      "5"
+    ],
+    "class_name":"RuntimeConfig.js"
+  }
+}

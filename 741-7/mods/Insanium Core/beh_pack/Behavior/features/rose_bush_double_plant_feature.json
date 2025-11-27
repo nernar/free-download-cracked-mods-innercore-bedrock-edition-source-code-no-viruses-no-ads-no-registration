@@ -1,0 +1,16 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.13.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "bioplentia:rose_bush_double_plant_feature"
+    },
+    "early_out": "first_failure",
+    "features": [
+      "bioplentia:rose_bush_double_plant_lower_feature",
+      "bioplentia:fixup_rose_bush_double_plant_upper_position_feature"
+    ]
+  }
+}

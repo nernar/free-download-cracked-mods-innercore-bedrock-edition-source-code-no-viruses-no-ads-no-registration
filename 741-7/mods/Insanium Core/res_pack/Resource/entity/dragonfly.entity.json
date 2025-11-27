@@ -1,0 +1,37 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "bioplentia:dragonfly",
+      "materials": { 
+        "MaterialDefault": "entity_alphatest"
+      },
+      "textures": {
+        "Texture0": "textures/entity/dragonfly/blue",
+		  "Texture1": "textures/entity/dragonfly/green",
+		  "Texture2": "textures/entity/dragonfly/red"
+      },
+      "geometry": {
+        "GeometryDefault": "geometry.bioplentia.entity.dragonfly"
+      },
+      "animations": {
+        "flying": "animation.dragonfly.flying",
+        "dragonfly_root_controller": "controller.animation.dragonfly.root"
+      },      
+
+      "scripts": {
+        "animate": [
+          "dragonfly_root_controller"
+        ]
+      },
+      "render_controllers": [ "controller.render.bioplentia.dragonfly" ],
+      "spawn_egg": {
+        "base_color": "#0x3d704d",
+	     "overlay_color": "#0x89bf7a"
+      }
+    }
+  }
+}

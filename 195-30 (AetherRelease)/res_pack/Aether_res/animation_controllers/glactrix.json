@@ -1,0 +1,13 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers" : {  
+        "controller.animation.glactrix.general" : {
+            "initial_state" : "default",
+            "states" : {
+                "default" : {
+                   "animations" : [ {"move": "query.modified_move_speed"}, "look_at_target" ]
+                }
+            }
+        }
+    }
+}

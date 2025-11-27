@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "vanilla_recipe:fine_iron_wire"
+		},
+		"ingredients": [
+			{
+				"item": "minecraft:iron_ingot"
+			},
+			{
+				"item": "minecraft:item_diamond_drawplate"
+			}
+		],
+		"result": [
+			{
+				"item": "minecraft:item_fine_iron_wire"
+			},
+			{
+				"item": "minecraft:item_diamond_drawplate"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		]
+	}
+}

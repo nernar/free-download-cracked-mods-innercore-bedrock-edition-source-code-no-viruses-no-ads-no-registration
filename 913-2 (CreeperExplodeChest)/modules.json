@@ -1,0 +1,9 @@
+[
+	{
+		"type": "github",
+		"user": "Reider745",
+		"repository": "libs",
+		"directory": "creeper_animation",
+		"main": "main.json"
+	}
+]

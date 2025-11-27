@@ -1,0 +1,203 @@
+{
+"format_version": "1.13.0",
+"minecraft:entity": {
+"description": {
+"identifier": "twilightforest:hydra",
+"is_spawnable": true,
+"is_summonable": true,
+"is_experimental": false
+},
+"component_groups": {
+"火焰喷吐": {
+"minecraft:shooter": {
+"def": "twilightforest:flame"
+},
+"minecraft:behavior.ranged_attack": {
+"priority": 1,
+"attack_interval_min": 3,
+"attack_interval_max": 5,
+"charge_charged_trigger": 0.0,
+"charge_shoot_trigger": 3.0,
+"attack_radius": 70,
+"burst_shots": 24,
+"burst_interval": 0.25
+},
+"minecraft:timer": {
+"looping": false,
+"randomInterval": true,
+"time": [ 5.0, 8.0 ],
+"time_down_event": {
+"event": "转换能力",
+"target": "self"
+}
+}
+},
+"基础属性": {
+"minecraft:breathable": {
+"total_supply": 15,
+"suffocate_time": 0,
+"breathes_water": true
+},
+"minecraft:health": {
+"value": 360,
+"max": 360
+}
+},
+"速度属性": {
+"minecraft:movement": {
+"value": 0.0
+},
+"minecraft:underwater_movement": {
+"value": 0.0
+},
+"minecraft:knockback_resistance": {
+"value": 100,
+"max": 100
+}
+},
+"碰撞属性": {
+"minecraft:scale": {
+"value": 1.5
+},
+"minecraft:collision_box": {
+"width": 3.0,
+"height": 4.0
+},
+"minecraft:fall_damage": {
+"value": 0.0
+},
+"minecraft:follow_range": {
+"value": 150,
+"max": 150
+}
+},
+"免疫属性": {
+"minecraft:fire_immune": true
+}
+/*此处做结束*/
+},
+"components": {
+"minecraft:nameable": {
+},
+"minecraft:type_family": {
+"family": [ "hydra", "monster", "boss" ]
+},
+"minecraft:loot": {
+"table": "loot_tables/entities/hydra.json"
+},
+"minecraft:boss": {
+"should_darken_sky": false,
+"name": " §l§3Hydra",
+"hud_range": 125
+},
+"minecraft:navigation.generic": {
+"can_path_over_water": true,
+"avoid_water": true,
+"avoid_damage_blocks": true,
+"can_walk": true
+},
+"minecraft:movement.basic": {
+},
+"minecraft:jump.static": {
+},
+"minecraft:can_climb": {
+},
+"minecraft:behavior.random_stroll": {
+"priority": 5,
+"speed_multiplier": 0.5
+},
+"minecraft:behavior.hurt_by_target": {
+"priority": 2
+},
+"minecraft:behavior.look_at_target": {
+"priority": 5
+},
+"minecraft:behavior.look_at_player": {
+"priority": 6,
+"look_distance": 8
+},
+"minecraft:behavior.random_look_around": {
+"priority": 2
+},
+"minecraft:behavior.nearest_attackable_target": {
+"priority": 3,
+"entity_types": [
+{
+"filters": { "test": "is_family", "subject": "other", "value": "player" },
+"max_dist": 70
+},
+{
+"filters": {
+"all_of": [
+{ "test": "is_family", "subject": "other", "operator": "!=", "value": "hydra" },
+{ "test": "is_family", "subject": "other", "operator": "!=", "value": "inanimate" }
+]
+},
+"max_dist": 70
+}
+],
+"must_see": true
+},
+"minecraft:physics": {
+},
+"minecraft:pushable": {
+"is_pushable": false,
+"is_pushable_by_piston": false
+}
+},
+"events": {
+"minecraft:entity_spawned": {
+"remove": { "component_groups": [ ] },
+"add": { "component_groups": [ "火焰喷吐", "基础属性", "速度属性", "碰撞属性", "免疫属性" ] }
+},
+"冷却时间": {
+"remove": { "component_groups": [ ] },
+"add": { "component_groups": [ "火焰喷吐", "基础属性", "速度属性", "碰撞属性", "免疫属性" ] }
+},
+"转换能力": {
+"sequence": [ 
+{ 
+"randomize": [ 
+{
+"weight": 1,
+"sequence": [ 
+{
+"randomize": [ 
+{
+"weight": 70,
+"remove": { "component_groups": [ ] }, 
+"add": { "component_groups": [ "火焰喷吐" ] }
+},
+{
+"weight": 85,
+"remove": { "component_groups": [ ] },
+"add": { "component_groups": [ "火焰喷吐" ] }
+},
+{
+"weight": 70,
+"remove": { "component_groups": [ ] },
+"add": { "component_groups": [ "火焰喷吐" ] }
+}
+/*此处做区域*/
+]
+}
+]
+}
+/*此处做区域*/
+]
+}
+]
+}
+/*此处做销毁*/
+}
+}
+}
+
+
+
+
+
+
+
+
+

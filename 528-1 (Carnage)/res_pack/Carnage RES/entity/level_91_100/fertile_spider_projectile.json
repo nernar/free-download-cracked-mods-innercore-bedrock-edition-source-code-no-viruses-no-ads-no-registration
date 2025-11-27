@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:fertile_spider_projectile",
+      "materials": {
+	    "default": "glow",
+		"invisible": "glow_glass_blender"
+	  },
+      "textures": {
+        "default": "textures/level_91_100/projectiles/fertile_spider"
+      },
+      "geometry": {
+        "default": "geometry.fertile_spider_projectile"
+      },
+      "render_controllers": [ "controller.render.glow" ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+UIbuttons.setButton(ItemID.fieryC, "button_skill_resistance");

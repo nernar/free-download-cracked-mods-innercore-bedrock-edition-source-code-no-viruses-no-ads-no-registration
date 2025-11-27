@@ -1,0 +1,2 @@
+let ICustomApothecaryColor = new Interface();
+

@@ -1,0 +1,654 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ayrtown:alex",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+        "become_zombie": {
+        "minecraft:transformation": {
+          "into": "ayrtown:alex_zombie"
+        }
+      },
+        "se_alimentar": {
+        "minecraft:timer": {
+	    "time": [4, 5],
+		"looping": true,
+		"time_down_event": {
+		"event": "remover"
+		  }
+		},
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/alimentos.json",
+          "slot_drop_chance": [
+            {
+              "slot": "slot.weapon.mainhand",
+              "drop_chance": 1.0
+            }
+          ]
+        }
+      },
+        "player_solitario": {
+          "minecraft:behavior.ranged_attack": {
+          "attack_interval_min": 1,
+          "attack_interval_max": 2,
+          "attack_radius": 15
+        },
+        "minecraft:shooter": {
+          "type": "Arrow",
+          "def": "minecraft:arrow"
+        },
+        "minecraft:tameable": {
+          "probability": 100,
+          "tameItems": [ "gold_nugget", "iron_nugget" ],
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test": "is_family", "subject": "other", "operator": "!=", "value": "fake" }
+         }
+        }
+      },
+        "player_domado": {
+        "minecraft:is_tamed": {
+        },
+          "minecraft:behavior.ranged_attack": {
+          "attack_interval_min": 1,
+          "attack_interval_max": 2,
+          "attack_radius": 15
+        },
+        "minecraft:shooter": {
+          "type": "Arrow",
+          "def": "minecraft:arrow"
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 6,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 2
+        },
+        "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test": "is_family", "subject": "other", "operator": "!=", "value": "player" }
+        }
+      },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+          }
+        },
+        ///Fim De batalha
+        "recuperar_vida": {
+        "minecraft:timer": {
+	    "time": [5, 7],
+		"looping": true,
+		"time_down_event": {
+		"event": "recuperar_vida"
+		  }
+		}
+	  },
+	///Beber Pocao
+	  "beber_pocao": {
+        "minecraft:is_saddled": {
+        },
+        "minecraft:timer": {
+	    "time": [2.0, 2.0],
+		"looping": true,
+		"time_down_event": {
+		"event": "remover"
+		  }
+		}
+	  },
+        ///Equipamento Modo De Ataque
+        "equipamento": {
+          "minecraft:equipment": {
+          "table": "loot_tables/entities/skeleton_gear.json"
+         }
+        }
+      },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "player", "fake" ]
+      },
+        "minecraft:nameable": {
+        "alwaysShow": true,
+        "allowNameTagRenaming": true
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "can_pass_doors": true,
+        "can_open_doors": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+        "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [ 0.4, 1.59, 0.04 ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [ -0.4, 1.59, 0.04 ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+        "minecraft:economy_trade_table": {
+        "display_name": "skin.Standard.Alex",
+        "table": "trading/economy_trades/fletcher_trades.json",
+        "new_screen": true
+      },
+      "minecraft:health": {
+        "value": 80,
+        "max": 90
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:attack": {
+        "damage": 2
+      },
+        "minecraft:healable": {
+        "items": [
+          {
+            "item": "porkchop",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_porkchop",
+            "heal_amount": 8
+          },
+          {
+            "item": "fish",
+            "heal_amount": 2
+          },
+          {
+            "item": "salmon",
+            "heal_amount": 2
+          },
+          {
+            "item": "clownfish",
+            "heal_amount": 1
+          },
+          {
+            "item": "pufferfish",
+            "heal_amount": 1
+          },
+          {
+            "item": "cooked_fish",
+            "heal_amount": 5
+          },
+          {
+            "item": "cooked_salmon",
+            "heal_amount": 6
+          },
+          {
+            "item": "beef",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_beef",
+            "heal_amount": 8
+          },
+          {
+            "item": "chicken",
+            "heal_amount": 2
+          },
+          {
+            "item": "cooked_chicken",
+            "heal_amount": 6
+          },
+          {
+            "item": "muttonRaw",
+            "heal_amount": 2
+          },
+          {
+            "item": "muttonCooked",
+            "heal_amount": 6
+          },
+          {
+            "item": "rotten_flesh",
+            "heal_amount": 4
+          },
+          {
+            "item": "melon",
+            "heal_amount": 3
+          },
+          {
+            "item": "speckled_melon",
+            "heal_amount": 5
+          },
+          {
+            "item": "apple",
+            "heal_amount": 3
+          },
+          {
+            "item": "baked_potato",
+            "heal_amount": 5
+          },
+          {
+            "item": "potato",
+            "heal_amount": 3
+          },
+          {
+            "item": "carrot",
+            "heal_amount": 3
+          },
+          {
+            "item": "golden_carrot",
+            "heal_amount": 5
+          },
+          {
+            "item": "golden_apple",
+            "heal_amount": 10
+          },
+          {
+            "item": "appleEnchanted",
+            "heal_amount": 10
+          },
+          {
+            "item": "rabbit",
+            "heal_amount": 3
+          },
+          {
+            "item": "cooked_rabbit",
+            "heal_amount": 5
+          },
+          {
+            "item": "rabbit_stew",
+            "heal_amount": 4
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/fake_friend.json"
+      },
+      "minecraft:shareables": {
+        "all_items": true,
+        "all_items_max_amount": 1,
+        "items": [
+          { "item": "minecraft:apple", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:appleEnchanted", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:baked_potato", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:beef", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:beetroot", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:beetroot_soup", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:bread", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:carrot", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:chicken", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:chorus_fruit", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:clownfish", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:cooked_beef", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:cooked_chicken", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:cooked_fish", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:cooked_porkchop", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:cooked_rabbit", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:cooked_salmon", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:cookie", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:dried_kelp", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:fish", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:golden_apple", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:golden_carrot", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:melon", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:mushroom_stew", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:muttonCooked", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:muttonRaw", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:poisonous_potato", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:porkchop", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:potato", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:pufferfish", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:pumpkin_pie", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:rabbit", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:rabbit_stew", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:rotten_flesh", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:salmon", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:spider_eye", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:sweet_berries", "priority": 0, "max_amount": 1 },
+          { "item": "minecraft:suspicious_stew", "priority": 0, "max_amount": 1 }
+        ]
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+          "minecraft:behavior.avoid_mob_type": {
+          "priority": 5,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "creeper"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "ravager"}
+                ]
+              },
+              "max_dist": 10,
+              "walk_speed_multiplier": 1.2,
+              "sprint_speed_multiplier": 1.4
+            }
+          ]
+        },
+          "minecraft:behavior.trade_interest": {
+          "priority": 3,
+          "within_radius": 6.0,
+          "interest_time": 45.0,
+          "remove_item_time": 1.0,
+          "carried_item_switch_time": 2.0,
+          "cooldown": 2.0
+      },
+      "minecraft:behavior.pickup_items": {
+        "priority": 11,
+        "max_dist": 5,
+        "goal_radius": 2,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.eat_carried_item": {
+        "priority": 12,
+        "delay_before_eating": 4
+      },
+      "minecraft:behavior.random_look_around_and_sit": {
+        "priority": 12,
+        "min_look_count": 2,
+        "max_look_count": 5,
+        "min_look_time": 80,
+        "max_look_time": 100,
+        "probability": 0.001
+      },
+      "minecraft:behavior.raid_garden": {
+        "priority": 12,
+        "blocks": [
+          "minecraft:sweet_berry_bush"
+        ],
+        "speed_multiplier": 1.2,
+        "search_range": 12,
+        "search_height": 2,
+        "goal_radius": 0.8,
+        "max_to_eat": 0,
+        "initial_eat_delay": 2
+      },
+        "minecraft:timer": {
+	    "time": [100, 200],
+		"looping": false,
+		"time_down_event": {
+		"event": "recuperar_vida"
+		  }
+		},
+          "minecraft:on_target_escape": {
+          "event": "recuperar_vida",
+          "target": "self"
+      },
+          "minecraft:target_nearby_sensor": {
+          "inside_range": 10.0,
+          "on_inside_range": {
+            "event": "equipar",
+            "target": "self"
+            }
+        },
+          "minecraft:damage_sensor": [
+        {
+          "on_damage": {
+            "filters": {
+			  "any_of": [
+			    {"test": "is_family", "subject": "other", "value": "zombie"},
+			    {"test": "is_family", "subject": "other", "value": "husk"}
+			  ],
+			  "all_of": [
+			    {"test": "has_damage", "value": "fatal"}
+			  ]
+            },
+            "event": "become_zombie"
+          }
+        }
+      ],
+          "minecraft:behavior.avoid_mob_type": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "creeper"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "ravager"}
+                ]
+              },
+              "max_dist": 10,
+              "walk_speed_multiplier": 1.2,
+              "sprint_speed_multiplier": 1.4
+            }
+          ]
+        },
+        "minecraft:behavior.drink_potion": {
+        "priority": 1,
+        "speed_modifier": 0.1,
+        "potions": [
+          {
+            "id": 22,
+            "chance": 1.0,
+            "filters": {
+              "any_of": [
+
+                { "test": "has_component", "subject": "self", "value": "minecraft:is_saddled" }
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 13,
+        "speed_multiplier": 0.8
+      },
+        "minecraft:behavior.enderman_leave_block": {
+        "priority": 8
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 14,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 15
+      },
+        "minecraft:behavior.move_through_village": {
+        "priority": 3,
+        "speed_multiplier": 0.6,
+        "only_at_night": true
+      },
+        "minecraft:behavior.restrict_open_door": {
+        "priority": 5
+      },
+      "minecraft:behavior.open_door": {
+        "priority": 6,
+        "close_door_after": true
+      },
+        "minecraft:behavior.trade_with_player": {
+        "priority": 1
+      },
+        "minecraft:behavior.nearest_prioritized_attackable_target": {
+        "priority": 2,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "slime"
+            },
+            "max_dist": 16
+          },
+          {
+              "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "phantom"
+            },
+            "max_dist": 16
+          },
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "zombie"
+            },
+            "max_dist": 16
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "skeleton"
+                },
+                {
+                  "test": "in_water",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": true
+                }
+              ]
+            },
+            "max_dist": 16
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:balloonable": {
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+        }
+      },
+
+    
+    "events": {
+        "become_zombie": {
+        "add": {
+          "component_groups": [
+            "become_zombie"
+          ]
+        }
+      },
+        "minecraft:entity_transformed": {
+        "remove": {
+        },
+        "add": {
+          "component_groups": [
+            "player_solitario",
+            "equipamento"
+          ]
+        }
+      },
+        "minecraft:spawn_from_village": {
+        "remove": {
+        },
+        "add": {
+          "component_groups": [
+            "player_solitario",
+            "equipamento"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "remove": {
+        },
+        "add": {
+          "component_groups": [
+            "player_solitario",
+            "equipamento"
+          ]
+        }
+      },
+        "recuperar_vida": {
+        "randomize": [
+          {
+            "weight": 50,
+            "add": {
+              "component_groups": [
+                "se_alimentar"
+              ]
+            }
+          },
+          {
+            "weight": 50,
+            "add": {
+              "component_groups": [
+                "beber_pocao"
+              ]
+            }
+          }
+        ]
+      },
+        "equipar": {
+        "remove": {
+          "component_groups": [
+            "equipamento"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "equipamento"
+          ]
+        }
+      },
+      "minecraft:on_tame": {
+        "remove": {
+          "component_groups": [
+            "player_solitario"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "player_domado"
+          ]
+        }
+      },
+      "remover": {
+        "remove": {
+          "component_groups": [
+            "beber_pocao",
+            "se_alimentar"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

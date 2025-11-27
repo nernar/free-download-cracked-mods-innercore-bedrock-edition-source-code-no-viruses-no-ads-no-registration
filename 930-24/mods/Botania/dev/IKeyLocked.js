@@ -1,0 +1,2 @@
+let IKeyLocked = new Interface();
+

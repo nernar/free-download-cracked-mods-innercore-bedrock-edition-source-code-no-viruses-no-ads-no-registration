@@ -1,0 +1,27 @@
+{
+    "enabled": true,
+    "spectral_solar_panel": {
+        "generation_day": 32768,
+        "generation_night": 20000,
+        "output": 32768,
+        "energy_storage": 1000000000
+    },
+    "singular_solar_panel": {
+        "generation_day": 262144,
+        "generation_night": 196608,
+        "output": 262144,
+        "energy_storage": 1000000000
+    },
+    "light-absorbing_solar_panel": {
+        "generation_day": 1048576,
+        "generation_night": 1048576,
+        "output": 1048576,
+        "energy_storage": 1000000000
+    },
+    "photonic_solar_panel": {
+        "generation_day": 1000000000,
+        "generation_night": 1000000000,
+        "output": 1000000000,
+        "energy_storage": 1000000000
+    }
+}

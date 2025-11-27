@@ -1,0 +1,27 @@
+[
+	{
+		"path": "Schematic_home_0.struct",
+		"name": "Schematic_home_0",
+		"type": "DungeonUtility"
+	},
+	{
+		"path": "Schematic_home_1.struct",
+		"name": "Schematic_home_1",
+		"type": "DungeonUtility"
+	},
+	{
+		"path": "Schematic_home_2.struct",
+		"name": "Schematic_home_2",
+		"type": "DungeonUtility"
+	},
+	{
+		"path": "Schematic_industrial_home_0.struct",
+		"name": "Schematic_industrial_home_0",
+		"type": "DungeonUtility"
+	},
+	{
+		"path": "Schematic_wood_0.struct",
+		"name": "Schematic_wood_0",
+		"type": "DungeonUtility"
+}
+]

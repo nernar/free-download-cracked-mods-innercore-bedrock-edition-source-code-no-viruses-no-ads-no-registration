@@ -1,0 +1,10 @@
+{
+  "configGenerated":true,
+  "constants":{
+    "DEPOSITES_SIZE":16,
+    "DEBUG_CHANCE":9600
+  },
+  "test":false,
+  "debug":false,
+  "enabled":true
+}

@@ -1,0 +1,338 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pili:rpgstaff3",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "equipment"
+			},
+   "minecraft:max_stack_size": 1,
+   "minecraft:damage": 10,
+			"minecraft:hand_equipped": true,
+    "minecraft:durability": {
+				"max_durability": 700,
+				"damage_chance": {
+					"min": 1,
+					"max": 1
+				}
+			},
+"minecraft:creative_category": {
+				"parent": "equipment"
+			},
+			"minecraft:enchantable": {
+				"value": 22,
+				"slot": "sword"
+			},
+"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"pili:rpgstaff3",
+							"minecraft:gold_ingot"
+						],
+						"repair_amount": 50
+					}
+				]
+			},
+			"minecraft:icon": {
+				"texture": "rpgstaff3"
+			},
+	"minecraft:on_use": {
+				"on_use": {
+					"event": "rpgstaff3"
+				}
+			},
+"minecraft:cooldown": {
+				"category": "rpgstaff3",
+				"duration": 0.25
+			},
+"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "dmg"
+				}
+			}
+		},
+		"events": {
+"dmg": {
+				"damage": {
+					"type": "durability",
+					"amount": 1,
+					"target": "self"
+				}
+			},
+			"spell1":    {
+	"sequence": [{
+				"shoot": {
+					"projectile": "pili:rpgspelll1",
+					"launch_power": 3
+			          	},
+	"damage": {
+					"type": "magic",
+					"amount": 1,
+					"target": "self"
+				},
+"run_command": {
+					"command": [
+						"playsound block.lantern.break @a ~~~"
+					]
+				}
+             }]
+             },
+"spell2":    {
+	"sequence": [{
+				"shoot": {
+					"projectile": "pili:rpgspelll2",
+					"launch_power": 3
+			          	},
+"damage": {
+					"type": "magic",
+					"amount": 1,
+					"target": "self"
+				},
+"run_command": {
+					"command": [
+						"playsound block.lantern.break @a ~~~"
+					]
+				}
+             }]
+             },
+"spell3":    {
+	"sequence": [{
+				"shoot": {
+					"projectile": "pili:rpgspelll3",
+					"launch_power": 3
+			          	},
+"damage": {
+					"type": "magic",
+					"amount": 1,
+					"target": "self"
+				},
+"run_command": {
+					"command": [
+						"playsound block.lantern.break @a ~~~"
+					]
+				}
+             }]
+             },
+"spell4":    {
+	"sequence": [{
+				"shoot": {
+					"projectile": "pili:rpgspelll4",
+					"launch_power": 3
+			          	},
+"damage": {
+					"type": "magic",
+					"amount": 1,
+					"target": "self"
+				},
+"run_command": {
+					"command": [
+						"playsound block.lantern.break @a ~~~"
+					]
+				}
+             }]
+             },
+"spell5":    {
+	"sequence": [{
+				"shoot": {
+					"projectile": "pili:rpgspelll5",
+					"launch_power": 3
+			          	},
+"damage": {
+					"type": "magic",
+					"amount": 1,
+					"target": "self"
+				},
+"run_command": {
+					"command": [
+						"playsound block.lantern.break @a ~~~"
+					]
+				}
+             }]
+             },
+"spell6":    {
+	"sequence": [{
+				"shoot": {
+					"projectile": "pili:rpgspelll6",
+					"launch_power": 3
+			          	},
+"damage": {
+					"type": "magic",
+					"amount": 1,
+					"target": "self"
+				},
+"run_command": {
+					"command": [
+						"playsound block.lantern.break @a ~~~"
+					]
+				}
+             }]
+             },
+
+
+"spell7":    {
+	"sequence": [{
+				"shoot": {
+					"projectile": "minecraft:ender_pearl",
+					"launch_power": 3
+			          	},
+"damage": {
+					"type": "magic",
+					"amount": 1,
+					"target": "self"
+				},
+"run_command": {
+					"command": [
+						"playsound block.lantern.break @a ~~~"
+					]
+				}
+             }]
+             },
+
+"spell8":    {
+	"sequence": [{
+				"shoot": {
+					"projectile": "pili:rpgspelll8",
+					"launch_power": 3
+			          	},
+"damage": {
+					"type": "magic",
+					"amount": 1,
+					"target": "self"
+				},
+"run_command": {
+					"command": [
+						"playsound block.lantern.break @a ~~~"
+					]
+				}
+             }]
+             },
+
+
+	"rpgstaff3": {
+				"sequence": [
+					{
+						"condition": "query.get_equipped_item_name('off_hand') == 'rpgbook1'",
+						"trigger": {
+							"event": "spell1"
+						}
+					},
+{
+						"condition": "query.get_equipped_item_name('off_hand') == 'rpgbook2'",
+						"trigger": {
+							"event": "spell2"
+						}
+					},
+{
+						"condition": "query.get_equipped_item_name('off_hand') == 'rpgbook3'",
+						"trigger": {
+							"event": "spell3"
+						}
+					},
+{
+						"condition": "query.get_equipped_item_name('off_hand') == 'rpgbook4'",
+						"trigger": {
+							"event": "spell4"
+						}
+					},
+{
+						"condition": "query.get_equipped_item_name('off_hand') == 'rpgbook5'",
+						"trigger": {
+							"event": "spell5"
+						}
+					},
+{
+						"condition": "query.get_equipped_item_name('off_hand') == 'rpgbook6'",
+						"trigger": {
+							"event": "spell6"
+						}
+					},
+{
+						"condition": "query.get_equipped_item_name('off_hand') == 'rpgbook7'",
+						"trigger": {
+							"event": "spell7"
+						}
+					},
+{
+						"condition": "query.get_equipped_item_name('off_hand') == 'rpgbook8'",
+						"trigger": {
+							"event": "spell8"
+						}
+					}
+
+				]
+			}
+
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pili:netherite_spear"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ab"
+    ],
+    "key": {
+
+      "a": {
+        "item": "pili:diamond_spear"
+      },
+      "b": {
+        "item": "minecraft:netherite_ingot"
+      }
+    },
+    "result": {
+      "item": "pili:netherite_spear"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+"format_version": "1.8.0",
+"minecraft:client_entity": {
+"description": {
+"identifier": "twilightforest:hydra",
+"materials": {
+"default": "hydra"
+},
+"geometry": {
+"default": "geometry.hydra"
+},
+"textures": {
+"default": "textures/model/hydra4"
+},
+"spawn_egg": {
+"texture": "egg_hydra"
+},
+"scripts": {
+"pre_animation": [
+"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+"variable.tcos1 = -variable.tcos0;"
+]
+},
+"animations": {
+"general": "animation.hydra.general",
+"action": "animation.hydra.action"
+},
+"animation_controllers": [
+{ "general": "controller.animation.hydra.general" },
+{ "action": "controller.animation.hydra.action" }
+],
+"render_controllers": [ "controller.render.hydra" ]
+}
+/*此处做销毁*/
+}
+}

@@ -1,0 +1,41 @@
+// (c) Raisenくん- 2021
+{
+   "format_version":"1.10.0",
+   "animation_controllers":{
+      "controller.animation.adv.flexibleTest":{
+         "states":{
+            "on_detect":{
+               "transitions":[
+                  { "yes":"q.get_equipped_item_name == 'muttonCooked' && q.main_hand_item_use_duration > 0.9" },
+                  { "no":"q.get_equipped_item_name != 'muttonCooked'" }
+                ]
+            },
+            "yes":{"transitions":[{ "on_detect":"(1.0)" }],"on_entry":["/execute @s[tag=!innit] ~~~ say eaten","/tag @s add innit"]},
+            "no":{"transitions":[{ "on_detect":"(1.0)" }],"on_entry":["/execute @s[tag=innit] ~~~ say no","/tag @s remove innit"]}
+         }
+      },
+      
+      "controller.animation.adv.structureTest":{
+         "states":{
+            "on_detect":{
+               "transitions":[
+                  { "bastion":"q.biome_has_any_tag('bastion')" },
+                  { "bastionremnant":"q.biome_has_any_tag('bastionremnant')" },
+                  { "bastion_remnant":"q.biome_has_any_tag('bastion_remnant')" },
+                  { "nether_fortress":"q.biome_has_any_tag('nether_fortress')" },
+                  { "fortress":"q.biome_has_any_tag('fortress')" },
+                  { "netherfortress":"q.biome_has_any_tag('netherfortress')" },
+                  { "stronghold":"q.biome_has_any_tag('stronghold')" }
+                ]
+            },
+            "bastion":{"transitions":[{ "on_detect":"!q.biome_has_any_tag('bastion')" }],"on_entry":["/say structure:[bastion]"]},
+            "bastionremnant":{"transitions":[{ "on_detect":"!q.biome_has_any_tag('bastionremnant')" }],"on_entry":["/say structure:[bastionremnant]"]},
+            "bastion_remnant":{"transitions":[{ "on_detect":"!q.biome_has_any_tag('bastion_remnant')" }],"on_entry":["/say structure:[bastion_remnant]"]},
+            "nether_fortress":{"transitions":[{ "on_detect":"!q.biome_has_any_tag('nether_fortress')" }],"on_entry":["/say structure:[nether_fortress]"]},
+            "fortress":{"transitions":[{ "on_detect":"!q.biome_has_any_tag('fortress')" }],"on_entry":["/say structure:[fortress]"]},
+            "netherfortress":{"transitions":[{ "on_detect":"!q.biome_has_any_tag('netherfortress')" }],"on_entry":["/say structure:[netherfortress]"]},
+            "stronghold":{"transitions":[{ "on_detect":"!q.biome_has_any_tag('stronghold')" }],"on_entry":["/say structure:[stronghold]"]}
+         }
+      }
+   }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "futurepack:research_shaped",
+  "group": "futurepack",
+  "pattern": [
+    "C C",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "futurepack:composite_metal"
+    }
+  },
+  "result": {
+    "item": "futurepack:composite_chestplate"
+  }
+}

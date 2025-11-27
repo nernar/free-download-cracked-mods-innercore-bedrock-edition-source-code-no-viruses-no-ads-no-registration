@@ -1,0 +1,17 @@
+[
+{
+  "modid": "cdaftermath",
+  "name": "Crafting Dead Aftermath",
+  "description": "Crafting Dead Aftermath is a mod based of off DayZ, Rust and The Walking Dead.",
+  "version": "",
+  "mcversion": "1.6.4",
+  "logoFile": "",
+  "url": "http://craftingdead.com",
+  "updateUrl": "",
+  "authors": ["F3RULLO14"],
+  "credits": "Made by Ferullo Gaming",
+  "parent": "",
+  "screenshots": [],
+  "dependencies": ["CDAftermathCore"]
+}
+]

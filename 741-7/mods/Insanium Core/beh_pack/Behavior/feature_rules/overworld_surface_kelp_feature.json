@@ -1,0 +1,112 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "minecraft:overworld_surface_kelp_feature",
+      "places_feature": "minecraft:kelp_feature"
+    },
+    "conditions": {
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+       //fix gen in default biomes and caves
+       //bug: 1.1.0_dev #01
+       {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "overworld"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "overworld_generation"
+            }
+          ]
+        },
+        // (overworld && !ocean) || (ocean && (warm || (frozen && monster)))
+        {
+          "any_of": [
+            {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "operator": "==",
+                      "value": "overworld"
+                    },
+                    {
+                      "test": "has_biome_tag",
+                      "operator": "==",
+                      "value": "overworld_generation"
+                    }
+                  ]
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "!=",
+                  "value": "ocean"
+                }
+              ]
+            },
+            {
+              "all_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "ocean"
+                },
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "operator": "==",
+                      "value": "warm"
+                    },
+                    {
+                      // frozen_ocean should receive this kelp feature, but legacy_frozen_ocean
+                      // should not. The only distinguishing tag between the two is "monster",
+                      // which is only present on frozen_ocean
+                      "all_of": [
+                        {
+                          "test": "has_biome_tag",
+                          "operator": "==",
+                          "value": "frozen"
+                        },
+                        {
+                          "test": "has_biome_tag",
+                          "operator": "==",
+                          "value": "monster"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 120,
+      "scatter_chance": "variable.is_legacy ? 0.0 : 100.0",
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [ 0, "query.heightmap(variable.worldx, variable.worldz) * 2" ]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      }
+    }
+  }
+}

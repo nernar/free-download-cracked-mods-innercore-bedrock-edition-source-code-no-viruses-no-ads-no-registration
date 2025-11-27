@@ -1,0 +1,56 @@
+{
+  "mob.demogorgon.idle": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/demogorgon/idle1",
+      "sounds/mob/demogorgon/idle2"
+   
+    ]
+  },
+  "big.step": {
+    "category": "neutral",
+	"max_distance": 100.0,
+    "sounds": [
+      "sounds/mob/demogorgon/step1",
+	  "sounds/mob/demogorgon/step2",
+	  "sounds/mob/demogorgon/step3"
+    ]
+  },
+  "mob.demogorgon.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/demogorgon/hurt1",
+      "sounds/mob/demogorgon/hurt2"
+      
+    ]
+  },
+   "mob.demogorgon.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/demogorgon/death"
+
+    ]
+  },
+  "mob.demogorgon.roar": {
+    "category": "hostile",
+    "min_distance": 2.0,
+    "sounds": [
+      {
+        "name": "sounds/mob/demogorgon/roar",
+        "volume": 0.75
+      
+      }
+    ]
+  },
+  "mob.demogorgon.roarbaby": {
+    "category": "hostile",
+    "min_distance": 2.0,
+    "sounds": [
+      {
+        "name": "sounds/mob/demogorgon/roarbaby",
+        "volume": 0.75
+      
+      }
+    ]
+  }
+}

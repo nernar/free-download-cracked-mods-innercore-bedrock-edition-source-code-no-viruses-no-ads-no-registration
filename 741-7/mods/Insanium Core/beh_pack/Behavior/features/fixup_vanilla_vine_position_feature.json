@@ -1,0 +1,17 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "bioplentia:fixup_vanilla_vine_position_feature"
+    },
+    "iterations": 1,
+    "x": 0,
+    "y": 1,
+    "z": 0,
+    "project_input_to_floor": false,
+    "places_feature": "bioplentia:vanilla_vine_upper_feature"
+  }
+}

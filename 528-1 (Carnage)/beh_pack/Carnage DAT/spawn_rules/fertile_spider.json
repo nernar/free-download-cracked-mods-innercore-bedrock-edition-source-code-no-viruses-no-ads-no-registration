@@ -1,0 +1,53 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "raigen:fertile_spider",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_underground": {},
+        "minecraft:weight": {
+          "default": 800
+        },
+        "minecraft:difficulty_filter": {
+          "min": "normal",
+          "max": "hard"
+        },
+
+        "minecraft:biome_filter": { 
+          "test": "has_biome_tag", "operator":"==", "value": "jungle"
+		}
+      },
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:weight": {
+          "default": 800
+        },
+        "minecraft:difficulty_filter": {
+          "min": "normal",
+          "max": "hard"
+        },
+
+        "minecraft:biome_filter": { 
+          "test": "has_biome_tag", "operator":"==", "value": "swamp"
+		}
+      },
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:weight": {
+          "default": 800
+        },
+        "minecraft:difficulty_filter": {
+          "min": "normal",
+          "max": "hard"
+        },
+
+        "minecraft:biome_filter": { 
+          "test": "has_biome_tag", "operator":"==", "value": "taiga"
+		}
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bioplentia:tiny_cactus"
+    },
+    "components": {
+    "minecraft:material_instances": {
+      "*": {
+       "texture": "tiny_cactus",
+       "render_method": "alpha_test",
+	     "ambient_occlusion": false,
+		   "face_dimming": true
+      }
+    },
+		"minecraft:placement_filter": {
+		  "conditions": [
+			{
+				"block_filter": [
+				 "minecraft:sand"
+				],
+			   "allowed_faces": [
+				  "up"
+				]
+			 }
+		  ]
+		},
+		"minecraft:pick_collision": {
+			"size": [ 4, 7, 4 ],
+  		"origin": [ -2, 0, -2 ]
+  	},
+    "minecraft:entity_collision": {
+			"size": [ 4, 4, 4 ],
+  		"origin": [ -2, 0, -2 ]
+    },
+		"minecraft:breakonpush": true,
+		"minecraft:breathability": "air",
+      "minecraft:geometry": "geometry.core.block.cross",
+      "minecraft:destroy_time": 0.2,
+      "minecraft:immovable": false,
+      "minecraft:explosion_resistance": 1,
+      "minecraft:loot": "loot_tables/blocks/tiny_cactus.json",
+      "minecraft:rotation": [ 0, 0, 0 ],
+      "minecraft:block_light_absorption": 0.2,
+      "minecraft:block_light_emission": 0.1,
+      "minecraft:map_color": "#6e9e36",
+      "minecraft:flammable": {
+        "flame_odds": 60,
+        "burn_odds": 30
+      },
+      "minecraft:on_step_on": {
+        "event": "bioplentia:block_damage",
+        "target": "self"
+      },
+      "tag:plants": {}
+    },
+    "events": {
+     "bioplentia:block_damage": {
+       "damage": {
+         "amount": 1,
+         "target": "other",
+         "type": "contact"
+        }
+      }
+    }
+  }
+}

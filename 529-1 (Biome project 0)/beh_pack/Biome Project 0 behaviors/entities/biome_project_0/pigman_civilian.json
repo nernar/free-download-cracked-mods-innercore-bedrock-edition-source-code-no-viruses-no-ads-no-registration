@@ -1,0 +1,119 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "raigen:pigman_civilian",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+    "component_groups": {
+      "minecraft:become_zombie": {
+        "minecraft:transformation": {
+          "into": "minecraft:zombie_pigman"
+        }
+      }
+	},
+	
+    "components": {
+      "minecraft:fire_immune": false,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:type_family": {
+        "family": [ "pigman" ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+      },
+      "minecraft:damage_sensor": [
+        {
+          "on_damage": {
+            "filters": {
+			  "any_of": [
+			    {"test": "is_family", "subject": "other", "value": "zombie_pigman"}
+			  ],
+			  "all_of": [
+			    {"test": "has_damage", "value": "fatal"}
+			  ]
+            },
+            "event": "minecraft:event_become_zombie"
+          }
+        }
+      ],
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/biome_project_0/pigman_civilian.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:movement": {
+        "value": 0.23
+      },
+      "minecraft:navigation.walk": {
+        "can_float": true,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": { 
+                "any_of": [
+                  { "test" : "is_family", "subject" : "other", "value" : "zombie"},
+                  { "test" : "is_family", "subject" : "other", "value" : "zombie_villager"},
+                  { "test" : "is_family", "subject" : "other", "value" : "zombie_pigman"},
+                  { "test" : "is_family", "subject" : "other", "value" : "illager"},
+				  { "test" : "is_family", "subject" : "other", "value" : "vex"}
+                ]
+            },
+            "max_dist": 8,
+            "walk_speed_multiplier": 0.6,
+            "sprint_speed_multiplier": 0.6
+          }
+        ]
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 7,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 4,
+        "speed_multiplier": 0.6
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 1,
+        "look_distance": 8,
+        "probability": 0.02
+      },
+	    "minecraft:physics": {
+      }
+    },
+	
+    "events":{
+	  "minecraft:event_become_zombie": {
+	    "add": {
+		  "component_groups": [
+		    "minecraft:become_zombie"
+		  ]
+		}
+	  }
+	}
+  }
+}

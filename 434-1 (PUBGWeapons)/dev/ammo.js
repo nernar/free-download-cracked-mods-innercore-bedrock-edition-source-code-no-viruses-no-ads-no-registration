@@ -1,0 +1,2 @@
+ShootLib.addAmmos([{id: "ammo7_62", name: "7.62", texture: {name: "7.62", meta: 0}}, {id: "ammo5_56", name: "5.56", texture: {name: "5.56", meta: 0}}, {id: "ammo9mm", name: "9mm", texture: {name: "9mm", meta: 0}}, {id: "ammo45Acp", name: ".45ACP", texture: {name: "45Acp", meta: 0}}, {id: "ammo20", name: "20 Cells", texture: {name: "20cells", meta: 0}}, {id: "ammoFlare", name: "Flare", texture: {name: "ammoFlare", meta: 0}}, {id: "ammoAwm", name: ".300 Magnum", texture: {name: "300Magnum", meta: 0}}]);
+

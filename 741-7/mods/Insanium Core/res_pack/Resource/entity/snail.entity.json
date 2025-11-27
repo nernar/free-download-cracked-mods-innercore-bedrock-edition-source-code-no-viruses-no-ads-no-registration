@@ -1,0 +1,27 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "bioplentia:snail",
+      "materials": {
+        "MaterialDefault": "entity_alphatest"
+      },
+      "textures": {
+        "TextureDefault": "textures/entity/snail"
+      },
+      "geometry": {
+        "GeometryDefault": "geometry.bioplentia.entity.snail"
+      },
+
+      "render_controllers": [ "controller.render.core.entity_default" ],
+	   "enable_attachables": false,
+      "spawn_egg": {
+        "base_color": "#0x936539",
+        "overlay_color": "#0xf29f52"
+      }
+    }
+  }
+}

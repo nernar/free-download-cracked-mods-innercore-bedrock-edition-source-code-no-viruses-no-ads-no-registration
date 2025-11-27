@@ -1,0 +1,5 @@
+{
+    "test_material:entity_alphatest_custom": {
+        "fragmentShader": "./test_material.fragment"
+    }
+}

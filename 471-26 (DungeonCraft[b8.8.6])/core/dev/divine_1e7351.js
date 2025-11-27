@@ -1,0 +1,21 @@
+IDRegistry.genItemID("divine_helmet");
+Item.createArmorItem("divine_helmet", "dc.item.divine_helmet", {name: "divine_helmet", meta: 0}, {type: "helmet", armor: 5, durability: 2775, texture: "armor/divine_0.png"});
+IDRegistry.genItemID("divine_chestplate");
+Item.createArmorItem("divine_chestplate", "dc.item.divine_chestplate", {name: "divine_chestplate", meta: 0}, {type: "chestplate", armor: 8, durability: 4440, texture: "armor/divine_0.png"});
+IDRegistry.genItemID("divine_leggings");
+Item.createArmorItem("divine_leggings", "dc.item.divine_leggings", {name: "divine_leggings", meta: 0}, {type: "leggings", armor: 7, durability: 3885, texture: "armor/divine_1.png"});
+IDRegistry.genItemID("divine_boots");
+Item.createArmorItem("divine_boots", "dc.item.divine_boots", {name: "divine_boots", meta: 0}, {type: "boots", armor: 4, durability: 2220, texture: "armor/divine_0.png"});
+Item.addCreativeGroup("helmet", Translation.translate("dc.tab.helmet"), [ItemID.divine_helmet]);
+Item.addCreativeGroup("chestplate", Translation.translate("dc.tab.chestplate"), [ItemID.divine_chestplate]);
+Item.addCreativeGroup("leggings", Translation.translate("dc.tab.leggings"), [ItemID.divine_leggings]);
+Item.addCreativeGroup("boots", Translation.translate("dc.tab.boots"), [ItemID.divine_boots]);
+Item.setEnchantType(ItemID.divine_helmet, Native.EnchantType.helmet, 14);
+Item.setEnchantType(ItemID.divine_chestplate, Native.EnchantType.chestplate, 14);
+Item.setEnchantType(ItemID.divine_leggings, Native.EnchantType.leggings, 14);
+Item.setEnchantType(ItemID.divine_boots, Native.EnchantType.boots, 14);
+Item.addRepairItemIds(ItemID.divine_helmet, [ItemID.god_ingot]);
+Item.addRepairItemIds(ItemID.divine_chestplate, [ItemID.god_ingot]);
+Item.addRepairItemIds(ItemID.divine_leggings, [ItemID.god_ingot]);
+Item.addRepairItemIds(ItemID.divine_boots, [ItemID.god_ingot]);
+

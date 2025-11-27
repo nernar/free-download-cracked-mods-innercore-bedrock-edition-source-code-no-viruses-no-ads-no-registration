@@ -1,0 +1,29 @@
+//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+      "description": {
+        "identifier": "bioplentia:coniferous_forest_surface_mushrooms_feature",
+        "places_feature": "minecraft:legacy:small_mushrooms_feature"
+      },
+      "conditions": {
+        "placement_pass": "surface_pass",
+        "minecraft:biome_filter": [
+          {
+            "test": "has_biome_tag",
+            "operator": "==",
+            "value": "coniferous_forest"
+          }
+        ]
+      },
+      "distribution": {
+        "iterations": 20,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    }
+  }
+  

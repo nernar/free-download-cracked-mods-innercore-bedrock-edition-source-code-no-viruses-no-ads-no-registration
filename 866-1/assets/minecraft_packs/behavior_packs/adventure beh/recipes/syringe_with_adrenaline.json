@@ -1,0 +1,27 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pili:syringe_with_adrenaline"
+    },
+
+    "tags": [ "pili_craft" ],
+    "pattern": [
+      "aaa",
+      "aba",
+"aaa"
+    ],
+    "key": {
+      "a": {
+        "item": "minecraft:sugar"
+      },
+ "b": {
+        "item": "pili:syringe"
+      }
+
+},
+    "result": {
+      "item": "pili:syringe_with_adrenaline"
+    }
+  }
+}

@@ -1,0 +1,222 @@
+{
+	"file_path": "C:\\Users\\magnu\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Rocks+\\feature_rules\\fossil1_feature_rule.json",
+	"file_type": "feature_rule",
+	"format_version": 1,
+	"file_uuid": "01ab2e52_7937_42e4_8497_0611609f8cb6",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.13.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:feature_rules": {
+						"description": {
+							"identifier": "minecraft:fossil1_feature_rule",
+							"places_feature": "minecraft:fossil1_feature_mcstructure"
+						},
+						"conditions": {
+							"placement_pass": "surface_pass",
+							"minecraft:biome_filter": [
+								{
+									"all_of": [
+										{
+											"test": "has_biome_tag",
+											"operator": "!=",
+											"value": "ocean"
+										},
+										{
+											"test": "has_biome_tag",
+											"operator": "!=",
+											"value": "river"
+										},
+										{
+											"test": "has_biome_tag",
+											"operator": "!=",
+											"value": "lakes"
+										},
+										{
+											"any_of": [
+												{
+													"test": "has_biome_tag",
+													"operator": "==",
+													"value": "overworld"
+												},
+												{
+													"test": "has_biome_tag",
+													"operator": "==",
+													"value": "overworld_generation"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						"distribution": {
+							"iterations": 1,
+							"scatter_chance": "1/5",
+							"x": {
+								"distribution": "uniform",
+								"extent": [
+									0,
+									16
+								]
+							},
+							"y": "query.heightmap(variable.worldx, variable.worldz) + 0",
+							"z": {
+								"distribution": "uniform",
+								"extent": [
+									0,
+									16
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:feature_rules",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "minecraft:fossil1_feature_rule",
+							"places_feature": "minecraft:fossil1_feature_mcstructure"
+						}
+					},
+					{
+						"key": "conditions",
+						"is_minified": true,
+						"children": {
+							"placement_pass": "surface_pass",
+							"minecraft:biome_filter": [
+								{
+									"all_of": [
+										{
+											"test": "has_biome_tag",
+											"operator": "!=",
+											"value": "ocean"
+										},
+										{
+											"test": "has_biome_tag",
+											"operator": "!=",
+											"value": "river"
+										},
+										{
+											"test": "has_biome_tag",
+											"operator": "!=",
+											"value": "lakes"
+										},
+										{
+											"any_of": [
+												{
+													"test": "has_biome_tag",
+													"operator": "==",
+													"value": "overworld"
+												},
+												{
+													"test": "has_biome_tag",
+													"operator": "==",
+													"value": "overworld_generation"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "minecraft:fossil1_feature_rule",
+								"places_feature": "minecraft:fossil1_feature_mcstructure"
+							},
+							"conditions": {
+								"placement_pass": "surface_pass",
+								"minecraft:biome_filter": [
+									{
+										"all_of": [
+											{
+												"test": "has_biome_tag",
+												"operator": "!=",
+												"value": "ocean"
+											},
+											{
+												"test": "has_biome_tag",
+												"operator": "!=",
+												"value": "river"
+											},
+											{
+												"test": "has_biome_tag",
+												"operator": "!=",
+												"value": "lakes"
+											},
+											{
+												"any_of": [
+													{
+														"test": "has_biome_tag",
+														"operator": "==",
+														"value": "overworld"
+													},
+													{
+														"test": "has_biome_tag",
+														"operator": "==",
+														"value": "overworld_generation"
+													}
+												]
+											}
+										]
+									}
+								]
+							},
+							"distribution": {
+								"iterations": 1,
+								"scatter_chance": "1/5",
+								"x": {
+									"distribution": "uniform",
+									"extent": [
+										0,
+										16
+									]
+								},
+								"y": "query.heightmap(variable.worldx, variable.worldz) + 0",
+								"z": {
+									"distribution": "uniform",
+									"extent": [
+										0,
+										16
+									]
+								}
+							}
+						},
+						"key": "distribution",
+						"is_minified": true,
+						"children": {
+							"iterations": 1,
+							"scatter_chance": "1/5",
+							"x": {
+								"distribution": "uniform",
+								"extent": [
+									0,
+									16
+								]
+							},
+							"y": "query.heightmap(variable.worldx, variable.worldz) + 0",
+							"z": {
+								"distribution": "uniform",
+								"extent": [
+									0,
+									16
+								]
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

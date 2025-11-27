@@ -1,0 +1,24 @@
+{
+  "identifier": "geometry.crucible_lava",
+  "customCollision": true,
+  "extendsObject": "geometry.crucible",
+  "boxes": [
+    {
+      "position": {
+        "x": 2,
+        "y": 4,
+        "z": 2
+      },
+      "size": {
+        "x": 12,
+        "y": 11,
+        "z": 12
+      },
+      "block": {
+        "identifier": 10,
+        "data": 0
+      },
+      "shape": false
+    }
+  ]
+}

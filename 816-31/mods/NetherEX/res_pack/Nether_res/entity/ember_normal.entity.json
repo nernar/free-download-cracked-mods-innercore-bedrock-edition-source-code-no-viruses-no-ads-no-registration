@@ -1,0 +1,33 @@
+{
+"format_version": "1.8.0",
+"minecraft:client_entity": {
+"description": {
+"identifier": "nether:ember_normal",
+"materials": { "default": "bat" },
+"textures": {
+"default": "textures/entity/ember/b"
+},
+"geometry": {
+"default": "geometry.ember"
+},
+"scripts": {
+"scale": "0.35"
+},
+"animations": {
+"resting": "animation.bat.resting",
+"flying": "animation.ember_normal.move"
+},
+"animation_controllers": [
+{ "move": "controller.animation.ember_normal.move" }
+],
+"particle_effects": {
+"minecraft":"fire"
+},
+"render_controllers": [ "controller.render.bat" ],
+"spawn_egg": {
+"overlay_color": "#2551400",
+"base_color": "#255690"
+}
+}
+}
+}

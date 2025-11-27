@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pili:syringe_with_adrenaline",
+      "category": "Nature"
+    },
+    "components": {
+
+      "minecraft:icon": "syringe_with_adrenaline",
+      "minecraft:use_animation": "drink",
+      "minecraft:render_offsets": "potion"
+    }
+  }
+}

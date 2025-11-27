@@ -1,0 +1,9 @@
+{
+  "enabled":true,
+  "Landslide":{
+    "Fall":true,
+    "Build":true,
+    "Destroy":true
+  },
+  "Collapse":true
+}

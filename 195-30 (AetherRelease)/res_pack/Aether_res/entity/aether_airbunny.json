@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aether:airbunny",
+      "materials": { "default": "entity_alphatest" },
+       "textures": {
+        "default": "textures/entity/aerbunny/aether_airbunny"
+      },
+      "geometry": {
+        "default": "geometry.airbunny"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.airbunny.general"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.airbunny.general" }  
+      ],
+      "render_controllers": [
+        "controller.render.base"
+      ],
+      "spawn_egg": {
+        "texture": "aether_airbunny",
+        "texture_index": 0
+      }
+    }
+  }
+}

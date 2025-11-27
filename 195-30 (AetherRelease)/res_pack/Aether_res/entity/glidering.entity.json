@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aether:glidering",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/glitterwing/glitterwing"
+      },
+      "animations": {  
+        "move": "animation.glidering.fly",
+        "scale": "animation.glidering.scale"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.glidering.fly" },
+        { "scale": "controller.animation.glidering.scale" }
+      ],
+      "geometry": {
+        "default": "geometry.glidering"
+      },
+      "render_controllers": [ "controller.render.base" ],
+       "spawn_egg": {
+        "overlay_color": "#750130",
+        "base_color": "#0128128"
+      }
+    }
+  }
+}

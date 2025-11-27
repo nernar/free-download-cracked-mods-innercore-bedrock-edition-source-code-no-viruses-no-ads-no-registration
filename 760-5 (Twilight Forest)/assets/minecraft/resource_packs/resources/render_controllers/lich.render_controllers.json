@@ -1,0 +1,18 @@
+{
+"format_version": "1.8.0",
+"render_controllers": {
+"controller.render.lich": {
+"geometry": "Geometry.default",
+"materials": [ { "*": "Material.default" } ],
+"materials": [ 
+{ "*": "Material.default" }, 
+{ "shield1*": "Material.shield1" }, 
+{ "shield2*": "Material.shield2" },
+{ "shield3*": "Material.shield3" },
+{ "shield4*": "Material.shield4" },
+{ "shield5*": "Material.shield5" }
+],
+"textures": [ "Texture.default" ]
+}
+}
+}

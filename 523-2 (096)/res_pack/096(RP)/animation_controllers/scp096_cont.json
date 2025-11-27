@@ -1,0 +1,98 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+
+    "controller.animation.scp096.general": {
+      "states": {
+        "default": {
+          "animations": [
+            { "scp096_general": [] },
+            { "look_at_target": [] }
+          ]
+        }
+      }
+    },
+    "controller.animation.scp096.general": {
+      "states": {
+        "default": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            { "scp096_general": [] },
+            { "look_at_target": [] }
+          ],
+          "transitions": [
+            { "casting": "query.is_casting" }
+          ]
+        },
+        "casting": {
+          "animations": [
+            { "casting": [] }
+          ],
+          "particle_effects": [
+            {
+              "effect": "spell",
+              "locator": "left_hand"
+            },
+            {
+              "effect": "spell",
+              "locator": "right_hand"
+	    }
+          ],
+          "transitions": [
+            { "default": "!query.is_casting" }
+          ]
+        }
+      }
+    },
+    "controller.animation.scp096.attack_bare_hand": {
+      "states": {
+        "default": {
+          "transitions": [ 
+            { "is_bare_hand": "variable.is_holding_left != 1.0" }
+          ]
+        },
+        "is_bare_hand": {
+          "animations": [ { "attack_bare_hand": [] } ],
+          "transitions": [ 
+            { "default": "variable.is_holding_left == 1.0" }
+          ]
+        }
+      }
+    },
+    
+    "controller.animation.scp096.move": {
+      "states": {
+        "default": {
+          "parameters": [ "query.modified_move_speed" ],
+          "animations": [
+            {
+              "move": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.demogorgon.baby": {
+      "states": {
+        "baby": {
+          "parameters": [ "query.is_baby" ],
+          "animations": [
+            {
+              "baby_transform": [
+                {
+                  "0.0": 0.0,
+                  "1.0": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

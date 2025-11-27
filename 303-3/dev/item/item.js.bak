@@ -1,0 +1,252 @@
+var setfood = function ( item , cn ,stack,food) {
+	IDRegistry.genItemID("coffeeworkshop$"+item);
+    Item.createFoodItem("coffeeworkshop$"+item, cn, {name:item}, {inTech: true,stack:stack,food:food});
+};
+
+var fastAo = function(a,b,c){
+Recipes.addShaped({id: c, count: 1, data: 0}, [
+"b"
+], [ 'b',b, 0],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(ItemID.coffeeworkshop$Cakemodel, 1);
+//Player.addItemToInventory(325, 1);
+});
+machine.ovenMachine.registerRecipe(a,b,0);
+};
+
+
+IDRegistry.genBlockID("machineBlockBasic");
+Block.createBlock("machineBlockBasic", [
+	{name: "Machine Block", texture: [["machine_top", 0]], inCreative: true}
+], "opaque");
+ToolAPI.registerBlockMaterial(BlockID.machineBlockBasic, "stone", 1, true);
+Block.setDestroyLevel("machineBlockBasic", 1);
+Block.setDestroyTime(BlockID.machineBlockBasic, 3);
+
+IDRegistry.genItemID("plateIron");
+Item.createItem("plateIron", "Iron Plate", {name: "plate_iron"});
+
+IDRegistry.genItemID("coffeeworkshop$Rawc");
+Item.createItem("coffeeworkshop$Rawc", "咖啡生豆", {name:"rawc"}, {inTech: true,stack: 64});
+Recipes.addShaped({id: ItemID.coffeeworkshop$Rawc, count: 1, data: 0}, [
+"Xa"
+], [ 'X', ItemID.coffeeworkshop$Sc, 0,'a',325,8],function(api, field, result){for(var i in field){
+		//if(field[i].id){
+			//energy += ChargeItemRegistry.getEnergyFrom(field[i], 10000000, 3, true);
+		//}
+		api.decreaseFieldSlot(i);
+	}
+  // Player.addItemToInventory(ItemID.coffeeworkshop$mixing_bowl, 1);
+Player.addItemToInventory(325, 0);
+});
+
+IDRegistry.genItemID("coffeeworkshop$Cb");
+Item.createItem("coffeeworkshop$Cb", "烘培咖啡豆", {name:"cb"}, {inTech: true,stack: 64});
+addFurnace(ItemID.coffeeworkshop$Rawc,ItemID.coffeeworkshop$Cb,0);
+IDRegistry.genItemID("coffeeworkshop$Cocoabean");
+Item.createItem("coffeeworkshop$Cocoabean", "烘培可可豆", {name:"cocoabean"}, {inTech: true,stack: 64});
+addFurnace(351,ItemID.coffeeworkshop$Cocoabean,0);
+IDRegistry.genItemID("butter");
+Item.createItem("butter", "黄油", {name:"butter"}, {inTech: true,stack: 64});
+setfood("baguette","法棍",64,6);
+Item.setUseAnimation(ItemID.coffeeworkshop$baguette, 1);
+
+IDRegistry.genItemID("coffeeworkshop$Brownie");
+Item.createItem("coffeeworkshop$Brownie", "布朗尼", {name:"brownie"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Brownieraw");
+Item.createItem("coffeeworkshop$Brownieraw", "布朗尼蛋糕糊", {name:"brownieraw"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Browniemodel");
+Item.createItem("coffeeworkshop$Browniemodel", "布朗尼模具", {name:"browniemodel"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakecarrot");
+Item.createItem("coffeeworkshop$Cakecarrot", "胡萝卜蛋糕", {name:"cakecarrot"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakecarrotmodel");
+Item.createItem("coffeeworkshop$Cakecarrotmodel", "胡萝卜蛋糕模具", {name:"cakecarrotmodel"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakecarrotraw");
+Item.createItem("coffeeworkshop$Cakecarrotraw", "胡萝卜蛋糕糊", {name:"cakecarrotraw"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakecheese");
+Item.createItem("coffeeworkshop$Cakecheese", "芝士蛋糕", {name:"cakecheese"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakecheesemodel");
+Item.createItem("coffeeworkshop$Cakecheesemodel", "芝士蛋糕模具", {name:"cakecheesemodel"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakecheeseraw");
+Item.createItem("coffeeworkshop$Cakecheeseraw", "芝士蛋糕糊", {name:"cakecheeseraw"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakesponge");
+Item.createItem("coffeeworkshop$Cakesponge", "海绵蛋糕", {name:"cakesponge"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakespongemodel");
+Item.createItem("coffeeworkshop$Cakespongemodel", "海绵蛋糕模具", {name:"cakespongemodel"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakespongeraw");
+Item.createItem("coffeeworkshop$Cakespongeraw", "海绵蛋糕糊", {name:"cakespongeraw"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakeredvelvet");
+Item.createItem("coffeeworkshop$Cakeredvelvet", "红丝绒蛋糕", {name:"cakeredvelvet"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakeredvelvetmodel");
+Item.createItem("coffeeworkshop$Cakeredvelvetmodel", "红丝绒蛋糕模具", {name:"cakeredvelvetmodel"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakeredvelvetraw");
+Item.createItem("coffeeworkshop$Cakeredvelvetraw", "红丝绒蛋糕糊", {name:"cakeredvelvetraw"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakeschwarzwald");
+Item.createItem("coffeeworkshop$Cakeschwarzwald", "黑森林蛋糕", {name:"cakeschwarzwald"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakemodel");
+Item.createItem("coffeeworkshop$Cakemodel", "圆形蛋糕模具", {name:"cakemodel"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakemodelsquare");
+Item.createItem("coffeeworkshop$Cakemodelsquare", "方形蛋糕模具", {name:"cakemodelsquare"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakespongechocolate");
+Item.createItem("coffeeworkshop$Cakespongechocolate", "巧克力海绵蛋糕", {name:"cakespongechocolate"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakespongechocolatemodel");
+Item.createItem("coffeeworkshop$Cakespongechocolatemodel", "巧克力海绵蛋糕模具", {name:"cakespongechocolatemodel"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cakespongechocolateraw");
+Item.createItem("coffeeworkshop$Cakespongechocolateraw", "巧克力海绵蛋糕糊", {name:"cakespongechocolateraw"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("cheese");
+Item.createItem("cheese", "奶酪", {name:"cheese"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Chocolatebar");
+Item.createItem("coffeeworkshop$Chocolatebar", "巧克力板", {name:"chocolatebar"}, {inTech: true,stack: 64});
+Recipes.addShaped({id: ItemID.coffeeworkshop$Chocolatebar, count: 1, data: 0}, [
+"aa",
+"c"
+], [ 'a',ItemID.coffeeworkshop$Cocoabatter , 0, 'c',353,0],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+//Player.addItemToInventory(325, 2);
+//Player.addItemToInventory(ItemID.coffeeworkshop$mkhx, 1);
+});
+IDRegistry.genItemID("coffeeworkshop$Chocolatechip");
+Item.createItem("coffeeworkshop$Chocolatechip", "巧克力碎", {name:"chocolatechip"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cocoabatter");
+Item.createItem("coffeeworkshop$Cocoabatter", "可可糊", {name:"cocoabatter"}, {inTech: true,stack: 64});
+IDRegistry.genItemID("coffeeworkshop$Cocoapowder");
+Item.createItem("coffeeworkshop$Cocoapowder", "可可粉", {name:"cocoapowder"}, {inTech: true,stack: 64});
+//DRegistry.genItemID("coffeeworkshop$Chopowder");
+//Item.createItem("coffeeworkshop$Chopowder", "巧克力粉", {name:"coffeepowder"}, {inTech: true,stack: 64});
+//再这么下去我会累死的，所以改下格式
+var setItem = function ( item , cn ) {
+if(item==="dough"||item==="cheese"||item==="butter"||item==="flour"||item==="yeast"||item==="mixing_bowl"){
+	IDRegistry.genItemID(item);
+    Item.createItem(item, cn, {name:item}, {inTech: true,stack: 64});
+}
+else{
+	IDRegistry.genItemID("coffeeworkshop$"+item);
+    Item.createItem("coffeeworkshop$"+item, cn, {name:item}, {inTech: true,stack: 64});
+}
+};
+
+var setfood1 = function ( item , cn ,stack,food) {
+	IDRegistry.genItemID("coffeeworkshop$"+item);
+    Item.createFoodItem("coffeeworkshop$"+item, cn, {name:item}, {inTech: true,stack: stack,food:food});
+    Recipes.addShaped({id: ItemID["coffeeworkshop$cookie_" + item], count: 1, data: 0}, [
+"xa"
+], [ 'x', ItemID["coffeeworkshop$"+item], 0, 'a', 357, 0]);
+};
+setItem("coffeepowder","咖啡粉");
+setfood("cookie_icecream_apple","苹果饼干圣代",64,5);
+Item.setUseAnimation(ItemID.coffeeworkshop$cookie_icecream_apple, 1);
+setfood("cookie_icecream_berry","混合莓果饼干圣代",64,5);
+Item.setUseAnimation(ItemID.coffeeworkshop$cookie_icecream_berry, 1);
+setfood("cookie_icecream_coffee","咖啡饼干圣代",64,5);
+Item.setUseAnimation(ItemID.coffeeworkshop$cookie_icecream_coffee, 1);
+setfood("cookie_icecream_lemon","柠檬饼干圣代",64,5);
+Item.setUseAnimation(ItemID.coffeeworkshop$cookie_icecream_lemon, 1);
+setfood("cookie_icecream_melon","西瓜饼干圣代",64,5);
+Item.setUseAnimation(ItemID.coffeeworkshop$cookie_icecream_melon, 1);
+setfood("cookie_icecream_vanilla","香草饼干圣代",64,5);
+Item.setUseAnimation(ItemID.coffeeworkshop$cookie_icecream_vanilla, 1);
+setItem("cream_milk","鲜奶油");
+Recipes.addShaped({id: ItemID.coffeeworkshop$cream_milk, count: 1, data: 0}, [
+"aa",
+"c"
+], [ 'a', 325, 1, 'c',353,0],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(325, 2);
+//Player.addItemToInventory(ItemID.coffeeworkshop$mkhx, 1);
+});
+setItem("cream_chocolate","巧克力奶油");
+setItem("cream_coffee","咖啡奶油");
+setItem("cream_apple","苹果奶油");
+setItem("cream_berry","混合莓果奶油");
+setItem("cream_lemon","柠檬奶油");
+setItem("cream_melon","西瓜奶油");
+var fastAddr = function(a,d,c){
+Recipes.addShaped({id: c, count: 1, data: 0}, [
+"a",
+"c"
+], [ 'a', a, 0, 'c',d,0]);
+};
+fastAddr(ItemID.coffeeworkshop$cream_milk,360,ItemID.coffeeworkshop$cream_melon);
+fastAddr(ItemID.coffeeworkshop$cream_milk,ItemID.coffeeworkshop$Cocoapowder,ItemID.coffeeworkshop$cream_chocolate);
+fastAddr(ItemID.coffeeworkshop$cream_milk,260,ItemID.coffeeworkshop$cream_apple);
+fastAddr(ItemID.coffeeworkshop$cream_milk,ItemID.coffeeworkshop$coffeepowder,ItemID.coffeeworkshop$cream_coffee);
+setItem("croissant","可颂");
+setItem("croissant_chocolate","巧克力可颂");
+setItem("croissant_raw","可颂面团");
+addFurnace(ItemID.coffeeworkshop$croissant_raw,ItemID.coffeeworkshop$croissant,0);
+
+Recipes.addShaped({id: ItemID.coffeeworkshop$croissant_raw, count: 2, data: 0}, [
+"xa",
+"sr"
+], [ 'x', ItemID.dough, 0, 'a', ItemID.butter, 0,'s',344,0,'r',353,0]);
+
+setItem("croissant_chocolate_raw","巧克力可颂面团");
+
+Recipes.addShaped({id: ItemID.coffeeworkshop$croissant_chocolate_raw, count: 2, data: 0}, [
+"xa",
+"srh"
+], [ 'x', ItemID.dough, 0, 'a', ItemID.butter, 0,'s',344,0,'r',353,0,'h',ItemID.coffeeworkshop$Chocolatebar,0]);
+
+setItem("d_bar","D型战斗军粮");
+setItem("dough","面团");
+Recipes.addShaped({id: ItemID.dough, count: 1, data: 0}, [
+"a",
+"cc"
+], [ 'a', 325, 8, 'c',ItemID.coffeeworkshop$flour,0],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(325, 1);
+//Player.addItemToInventory(ItemID.coffeeworkshop$mkhx, 1);
+});
+
+
+setItem("dough_baguette","法棍面团");
+addFurnace(ItemID.coffeeworkshop$dough_baguette,ItemID.coffeeworkshop$baguette,0);
+Recipes.addShaped({id: ItemID.coffeeworkshop$dough_baguette, count: 1, data: 0}, [
+"xx"
+], [ 'x', ItemID.dough, 0]);
+
+
+setItem("dough_cookie","曲奇面团");
+addFurnace(ItemID.coffeeworkshop$dough_cookie,357,0);
+Recipes.addShaped({id: ItemID.coffeeworkshop$dough_cookie, count: 1, data: 0}, [
+"xa"
+], [ 'x', ItemID.dough, 0, 'a', ItemID.coffeeworkshop$Chocolatechip,0]);
+
+setItem("flour","面粉");
+setItem("ice_slag","冰渣");
+setfood1("icecream_apple","苹果冰淇淋",64,1);
+Item.setUseAnimation(ItemID.coffeeworkshop$icecream_apple, 1);
+setfood1("icecream_berry","混合莓果冰淇淋",64,1);
+Item.setUseAnimation(ItemID.coffeeworkshop$icecream_berry, 1);
+setfood("icecream_chocolate","巧克力冰淇淋",64,1);
+Item.setUseAnimation(ItemID.coffeeworkshop$icecream_chocolate, 1);
+setfood1("icecream_coffee","咖啡冰淇淋",64,1);
+Item.setUseAnimation(ItemID.coffeeworkshop$icecream_coffee, 1);
+setfood1("icecream_lemon","柠檬冰淇淋",64,1);
+Item.setUseAnimation(ItemID.coffeeworkshop$icecream_lemon, 1);
+setfood1("icecream_melon","西瓜冰淇淋",64,1);
+Item.setUseAnimation(ItemID.coffeeworkshop$icecream_melon, 1);
+setfood1("icecream_vanilla","香草冰淇淋",64,1);
+Item.setUseAnimation(ItemID.coffeeworkshop$icecream_vanilla, 1);
+setItem("milk_foam","奶泡");
+setItem("mixing_bowl","搅拌盆");
+setItem("muffin","玛芬");
+setItem("muffin_raw","玛芬蛋糕糊");
+addFurnace(ItemID.coffeeworkshop$muffin_raw,ItemID.coffeeworkshop$muffin,0);
+setItem("muffin_berry","混合莓果玛芬");
+setItem("muffin_berry_raw","混合莓果玛芬蛋糕糊");
+addFurnace(ItemID.coffeeworkshop$muffin_berry_raw,ItemID.coffeeworkshop$muffin_berry,0);
+setItem("muffin_chocolate","巧克力玛芬");
+setItem("muffin_chocolate_raw","巧克力玛芬蛋糕糊");
+addFurnace(ItemID.coffeeworkshop$muffin_chocolate_raw,ItemID.coffeeworkshop$muffin_chocolate,0);
+setItem("tiramisu","提拉米苏");
+setItem("tiramisu_model","提拉米苏模具");
+setItem("yeast","酵母");
+
+
+//累死我了
+//天若有情天亦老，人间正道是沧桑 2018.10.20

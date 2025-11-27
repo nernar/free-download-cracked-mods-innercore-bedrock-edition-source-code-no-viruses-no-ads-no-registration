@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.glidering.fly" : {
+            "initial_state" : "default",
+            "states" : {
+                "default" : {
+                    "animations" : [ "move" ]
+                 }
+             }
+         },
+         "controller.animation.glidering.scale" : {
+            "initial_state" : "default",
+            "states" : {
+                "default" : {
+                    "animations" : [ "scale" ]
+                }
+            }
+        }
+     }
+ }
+

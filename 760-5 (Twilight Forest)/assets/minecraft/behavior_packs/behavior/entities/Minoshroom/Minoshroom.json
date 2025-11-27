@@ -1,0 +1,198 @@
+{
+"format_version": "1.13.0",
+"minecraft:entity": {
+"description": {
+"identifier": "twilightforest:minoshroom",
+"is_spawnable": true,
+"is_summonable": true,
+"is_experimental": false
+},
+"component_groups": {
+"基础状态": {
+"minecraft:attack": {
+"damage": 5
+},
+"minecraft:behavior.melee_attack": {
+"priority": 3,
+"reach_multiplier": 3,
+"speed_multiplier": 1.0,
+"track_target": false
+},
+"minecraft:timer": {
+"looping": false,
+"randomInterval": true,
+"time": [ 5.0, 8.0 ],
+"time_down_event": {
+"event": "§l§4Minoshroom",
+"target": "self"
+}
+}
+},
+"狂野冲撞": {
+"minecraft:attack": {
+"damage": 7
+},
+"minecraft:behavior.melee_attack": {
+"priority": 3,
+"reach_multiplier": 4,
+"speed_multiplier": 1.0,
+"track_target": true
+},
+"minecraft:movement": {
+"value": 0.5
+},
+"minecraft:knockback_resistance": {
+"value": 100,
+"max": 100
+},
+"minecraft:timer": {
+"looping": false,
+"randomInterval": true,
+"time": [ 5.0, 8.0 ],
+"time_down_event": {
+"event": "冷却时间",
+"target": "self"
+}
+}
+}
+},
+"components": {
+"minecraft:nameable": {
+},
+"minecraft:type_family": {
+"family": [ "minoshroom", "monster", "boss" ]
+},
+"minecraft:boss": {
+"should_darken_sky": false,
+"name": "§l§4Minoshroom",
+"hud_range": 125
+},
+"minecraft:breathable": {
+"total_supply": 15,
+"suffocate_time": 0
+},
+"minecraft:health": {
+"value": 120,
+"max": 120
+},
+"minecraft:movement": {
+"value": 0.25
+},
+"minecraft:underwater_movement": {
+"value": 0.25
+},
+"minecraft:knockback_resistance": {
+"value": 0.0,
+"max": 0.0
+},
+"minecraft:scale": {
+"value": 1.0
+},
+"minecraft:collision_box": {
+"width": 0.8,
+"height": 2.3
+},
+"minecraft:follow_range": {
+"value": 64,
+"max": 64
+},
+"minecraft:loot": {
+"table": "loot_tables/entities/minoshroom.json"
+},
+"minecraft:equipment": {
+"table": "loot_tables/entities/minoshroom_gear.json"
+},
+"minecraft:navigation.generic": {
+"can_path_over_water": true,
+"avoid_water": true,
+"avoid_damage_blocks": true,
+"can_walk": true
+},
+"minecraft:movement.basic": {
+},
+"minecraft:jump.static": {
+},
+"minecraft:can_climb": {
+},
+"minecraft:behavior.random_stroll": {
+"priority": 5,
+"speed_multiplier": 1.0
+},
+"minecraft:behavior.hurt_by_target": {
+"priority": 2
+},
+"minecraft:behavior.look_at_target": {
+"priority": 5
+},
+"minecraft:behavior.look_at_player": {
+"priority": 6,
+"look_distance": 8
+},
+"minecraft:behavior.random_look_around": {
+"priority": 7
+},
+"minecraft:behavior.nearest_attackable_target": {
+"priority": 3,
+"entity_types": [
+{
+"filters": { "test": "is_family", "subject": "other", "value":  "player" },
+"max_dist": 64
+},
+{
+"filters": { 
+"all_of": [ 
+{ "test": "is_family", "subject": "other", "operator": "!=", "value": "minoshroom" },
+{ "test": "is_family", "subject": "other", "value": "player" }
+]
+},
+"max_dist": 64
+}
+],
+"must_see": true
+},
+"minecraft:physics": {
+},
+"minecraft:pushable": {
+"is_pushable": true,
+"is_pushable_by_piston": true
+}
+},
+"events": {
+"minecraft:entity_spawned": {
+"remove": { "component_groups": [ "狂野冲撞" ] },
+"add": { "component_groups": [ "基础状态" ] }
+},
+"冷却时间": {
+"remove": { "component_groups": [ "狂野冲撞" ] },
+"add": { "component_groups": [ "基础状态" ] }
+},
+"狂野冲撞": {
+"sequence": [ 
+{ 
+"randomize": [ 
+{
+"weight": 1,
+"sequence": [ 
+{
+"randomize": [ 
+{
+"weight": 85,
+"remove": { "component_groups": [ "基础状态" ] }, 
+"add": { "component_groups": [ "狂野冲撞" ] }
+},
+{
+"weight": 75,
+"remove": { "component_groups": [ "狂野冲撞" ] },
+"add": { "component_groups": [ "基础状态" ] }
+}
+]
+}
+]
+}
+]
+}
+]
+}
+}
+}
+}

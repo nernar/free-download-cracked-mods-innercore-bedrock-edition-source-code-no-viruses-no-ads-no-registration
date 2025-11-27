@@ -1,0 +1,24 @@
+Including API:
+
+ModAPI.addAPICallback("primal_api", function(api){
+  const primal_core = api;
+  alert("primal_core api enabled!"); //test message
+});
+
+
+
+usage:
+
+Cauldron
+
+primal_core.Cauldron.addRecipe(input, time(ticks), result);
+primal_core.Cauldron.getRecipe(id) - returns id(result id)
+primal_core.Cauldron.removeRecipe(id)
+~~~~~~~~
+
+Drying rack
+
+primal_core.DryingRack.addRecipe(input, time(ticks), result);
+primal_core.DryingRack.getRecipe(id) - returns id(result id)
+primal_core.DryingRack.removeRecipe(id)
+~~~~~~~~~~~

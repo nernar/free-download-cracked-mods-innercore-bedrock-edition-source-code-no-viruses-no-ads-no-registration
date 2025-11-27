@@ -1,0 +1,13 @@
+{
+	"shared": {
+		"name": "aether",
+		"include": [
+			"headers"
+		]
+	},
+	"depends": [
+		"minecraftpe",
+		"innercore",
+		"nativejs"
+	]
+}

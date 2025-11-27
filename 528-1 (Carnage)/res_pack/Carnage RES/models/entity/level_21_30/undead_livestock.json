@@ -1,0 +1,172 @@
+{
+	"format_version": "1.8.0",
+	"geometry.undead_livestock": {
+		"texturewidth": 64,
+		"textureheight": 80,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 2,
+		"visible_bounds_offset": [0, 1, 0],
+		"bones": [
+			{
+				"name": "cow",
+				"pivot": [0, 0, 0],
+				"cubes": []
+			},
+			{
+				"name": "cow_body",
+				"parent": "cow",
+				"pivot": [0, 0, 0],
+				"rotation": [90, 0, 0],
+				"cubes": [
+					{"origin": [-6, -9, 12], "size": [12, 18, 10], "uv": [18, 4]},
+					{"origin": [-3, -8, 11], "size": [6, 6, 1], "uv": [24, 32]}
+				]
+			},
+			{
+				"name": "cow_head",
+				"parent": "cow",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-4, 16, -15], "size": [8, 8, 6], "uv": [0, 0]},
+					{"origin": [4, 22, -12], "size": [1, 3, 1], "uv": [22, 0]},
+					{"origin": [-5, 22, -12], "size": [1, 3, 1], "uv": [22, 0]}
+				]
+			},
+			{
+				"name": "cow_left_arm",
+				"parent": "cow",
+				"pivot": [4, 12, -7],
+				"cubes": [
+					{"origin": [2, 0, -9], "size": [4, 12, 4], "uv": [0, 16]}
+				]
+			},
+			{
+				"name": "cow_right_arm",
+				"parent": "cow",
+				"pivot": [-4, 12, -7],
+				"cubes": [
+					{"origin": [-6, 0, -9], "size": [4, 12, 4], "uv": [0, 16]}
+				]
+			},
+			{
+				"name": "cow_right_leg",
+				"parent": "cow",
+				"pivot": [-4, 12, 7],
+				"cubes": [
+					{"origin": [-6, 0, 5], "size": [4, 12, 4], "uv": [0, 16]}
+				]
+			},
+			{
+				"name": "cow_left_leg",
+				"parent": "cow",
+				"pivot": [4, 12, 7],
+				"cubes": [
+					{"origin": [2, 0, 5], "size": [4, 12, 4], "uv": [0, 16]}
+				]
+			},
+			{
+				"name": "pig",
+				"pivot": [0, 0, 0],
+				"cubes": []
+			},
+			{
+				"name": "pig_body",
+				"parent": "pig",
+				"pivot": [0, 0, 0],
+				"rotation": [90, 0, 0],
+				"cubes": [
+					{"origin": [-5, -8, 6], "size": [10, 16, 8], "uv": [28, 40]}
+				]
+			},
+			{
+				"name": "pig_head",
+				"parent": "pig",
+				"pivot": [0, 10, -8],
+				"cubes": [
+					{"origin": [-4, 8, -14], "size": [8, 8, 8], "uv": [0, 32]},
+					{"origin": [-2, 9, -15], "size": [4, 3, 1], "uv": [16, 48]}
+				]
+			},
+			{
+				"name": "pig_right_arm",
+				"parent": "pig",
+				"pivot": [-3, 6, -5],
+				"cubes": [
+					{"origin": [-5, 0, -7], "size": [4, 6, 4], "uv": [0, 48]}
+				]
+			},
+			{
+				"name": "pig_left_arm",
+				"parent": "pig",
+				"pivot": [3, 6, -5],
+				"cubes": [
+					{"origin": [1, 0, -7], "size": [4, 6, 4], "uv": [0, 48]}
+				]
+			},
+			{
+				"name": "pig_left_leg",
+				"parent": "pig",
+				"pivot": [3, 6, 7],
+				"cubes": [
+					{"origin": [1, 0, 5], "size": [4, 6, 4], "uv": [0, 48]}
+				]
+			},
+			{
+				"name": "pig_right_leg",
+				"parent": "pig",
+				"pivot": [-3, 6, 7],
+				"cubes": [
+					{"origin": [-5, 0, 5], "size": [4, 6, 4], "uv": [0, 48]}
+				]
+			},
+			{
+				"name": "chicken",
+				"pivot": [0, 0, 0],
+				"cubes": []
+			},
+			{
+				"name": "chicken_body",
+				"parent": "chicken",
+				"pivot": [0, 0, 0],
+				"rotation": [-90, 0, 0],
+				"cubes": [
+					{"origin": [-3, -4, -10], "size": [6, 8, 6], "uv": [0, 66]}
+				]
+			},
+			{
+				"name": "chicken_left_leg",
+				"parent": "chicken",
+				"pivot": [0, 5, 1],
+				"cubes": [
+					{"origin": [0, 0, -2], "size": [3, 5, 3], "uv": [52, 64]}
+				]
+			},
+			{
+				"name": "chicken_right_leg",
+				"parent": "chicken",
+				"pivot": [0, 5, 1],
+				"cubes": [
+					{"origin": [-3, 0, -2], "size": [3, 5, 3], "uv": [52, 64]}
+				]
+			},
+			{
+				"name": "wings",
+				"parent": "chicken",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-4, 6, -3], "size": [1, 4, 6], "uv": [24, 70]},
+					{"origin": [3, 6, -3], "size": [1, 4, 6], "uv": [24, 70]}
+				]
+			},
+			{
+				"name": "chicken_hed",
+				"parent": "chicken",
+				"pivot": [0, 10, -4],
+				"cubes": [
+					{"origin": [-2, 8, -6], "size": [4, 6, 3], "uv": [38, 71]},
+					{"origin": [-2, 10, -8], "size": [4, 2, 2], "uv": [0, 62]}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,17 @@
+{
+"pools": [
+{
+"rolls": 1,
+"entries": [
+{
+"type": "item",
+"name": "minecraft:item_lifedrain_scepter",
+"weight": 1,
+"functions": [
+]
+}
+]
+}
+/*此处做销毁*/
+]
+}

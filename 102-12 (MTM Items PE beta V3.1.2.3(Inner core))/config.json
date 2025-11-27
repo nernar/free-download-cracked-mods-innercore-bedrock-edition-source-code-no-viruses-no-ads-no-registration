@@ -1,0 +1,14 @@
+{
+  "enabled":true,
+  "falling meteorites":true,
+  "high-quality textures(64×64 pixels)":false,
+  "realism":true,
+  "gen":{
+    "ruby":true,
+    "anthracite":true,
+    "sulfur":true,
+    "meteorite ore":true,
+    "magma crastal":true
+  },
+  "show_resource_errors":true
+}

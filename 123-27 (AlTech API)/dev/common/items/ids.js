@@ -1,0 +1,31 @@
+//id items
+var irhum = ItemID.IronHammer;
+var irtung = ItemID.IronTungstensteel;
+var mort = ItemID.StoneMortar;
+var litst = ItemID.Stone
+var irpl = ItemID.plateIron;
+var brpl = ItemID.plateBronze;
+var gpl = ItemID.plateGold;
+var litir = ItemID.Iron
+var litcopp = ItemID.Copper
+var littin = ItemID.Tin
+var litg = ItemID.Gold
+var igbr = ItemID.ingotBronze;
+var igst = ItemID.ingotSteel;
+var duir = ItemID.dustIron;
+var dug = ItemID.dustGold;
+var ducopp = ItemID.dustCopper;
+var dutin = ItemID.dustTin;
+var dubr = ItemID.dustBronze;
+var sduir = ItemID.smallDustIron;
+var sdug = ItemID.smallDustGold;
+var sducopp = ItemID.smallDustCopper;
+var sdutin = ItemID.smallDustTin;
+var brmod = ItemID.moduleBronze;
+var brbolt = ItemID.boltBronze
+ItemID.nuggetGold = 371
+ItemID.ingotGold = 266
+ItemID.ingotIron = 265
+ItemID.coal = 263
+ 
+var lava = ItemID.itemlava;

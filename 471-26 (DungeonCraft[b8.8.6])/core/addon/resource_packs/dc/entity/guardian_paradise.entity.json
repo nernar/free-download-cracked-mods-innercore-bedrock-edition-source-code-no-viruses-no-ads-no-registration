@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+        "description": {
+			"identifier": "dungeoncraft:guardian_paradise",
+            "materials": {"default": "dungeon_entity"},
+            "render_controllers": ["controller.render.default"],
+            "geometry": {"default": "geometry.guardian_paradise"},
+            "textures": {"default": "textures/entity/guardian_paradise.png"},
+            "animations": {
+                "default": "animation.guardiam_paradise.default"
+            },
+            "animation_controllers": [
+                {"default": "controller.animation.all.unfinity"}
+            ],
+            "enable_attachables": true
+        }
+    }
+}

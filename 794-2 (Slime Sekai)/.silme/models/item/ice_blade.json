@@ -1,0 +1,7 @@
+{
+  "parent": "ttigraas:custom/ice_blade",
+  "textures": {
+    "0": "ttigraas:blocks/ice_blade_texture",
+    "particle": "ttigraas:items/mithrilsword"
+  }
+}

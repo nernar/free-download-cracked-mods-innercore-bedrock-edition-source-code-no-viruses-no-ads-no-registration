@@ -1,0 +1,2 @@
+let IDirectioned = new Interface();
+

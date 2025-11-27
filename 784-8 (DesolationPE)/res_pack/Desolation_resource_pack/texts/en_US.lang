@@ -1,0 +1,8 @@
+item.spawn_egg.entity.desolation:burned_skeleton.name=Spawn Blacked
+entity.desolation:burned_skeleton.name=Blacked
+
+item.spawn_egg.entity.desolation:ash_scuttler.name=Spawn Ash Scuttler
+entity.desolation:ash_scuttler.name=Ash Scuttler
+
+item.spawn_egg.entity.desolation:awoked_burned_skeleton.name=Spawn Awoked
+entity.desolation:awoked_burned_skeleton.name=Awoked

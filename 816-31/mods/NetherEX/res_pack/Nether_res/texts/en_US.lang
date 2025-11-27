@@ -1,0 +1,6 @@
+entity.nether:ember_normal.name=Ember
+item.spawn_egg.nether:ember_normal.name=Spawn Ember
+entity.nether:salamander_black.name=Salamander Black
+item.spawn_egg.nether:salamander_black.name=Spawn Salamander Orange
+entity.nether:salamander_orange.name=Salamander Black
+item.spawn_egg.nether:salamander_orange.name=Spawn Salamander Orange

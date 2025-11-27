@@ -1,0 +1,6 @@
+{
+    "name": "No Tree Punching",
+    "author": "Sourav Kumar",
+    "version": "1.0",
+    "description": "Blocks don't drop anything if broken without the correct tool."
+}

@@ -1,0 +1,36 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "aether:aechor_plant": {
+                "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "attack": "mob.aechor_plant.attack",
+          "hurt": "mob.aechor_plant.attack",
+          "death": "mob.aechor_plant.death",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 2.0,
+            "pitch": 2.0
+          }
+        }
+      },
+    "entity_sounds": {
+        "entities": {
+            "aether:aechor_grown": {
+                "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "attack": "mob.aechor_plant.attack",
+          "hurt": "mob.aechor_plant.attack",
+          "death": "mob.aechor_plant.death",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 2.0,
+            "pitch": 2.0
+          }
+        }
+      },   
+    }
+  }
+}

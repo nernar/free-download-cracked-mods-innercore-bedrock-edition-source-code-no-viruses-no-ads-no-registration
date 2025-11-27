@@ -1,0 +1,7 @@
+{
+  "enabled":true,
+  "vertical_sensitivity":4,
+  "invert_vertical_gyroscope":false,
+  "horizontal_sensitivity":6,
+  "invert_horizontal_gyroscope":false
+}

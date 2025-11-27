@@ -1,0 +1,158 @@
+﻿entity.raigen:blood_stone_golem.name=Blood Stone Golem
+item.spawn_egg.entity.raigen:blood_stone_golem.name=Spawn Blood Stone Golem §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:grub.name=Grub
+item.spawn_egg.entity.raigen:grub.name=Spawn Grub §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:headless.name=headless
+item.spawn_egg.entity.raigen:headless.name=Spawn Headless §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:hellraiser.name=Hellraiser
+item.spawn_egg.entity.raigen:hellraiser.name=Spawn Hellraiser §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:nether_bound.name=Nether-bound
+item.spawn_egg.entity.raigen:nether_bound.name=Spawn Nether-bound §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:nether_creep.name=Nether-creep
+item.spawn_egg.entity.raigen:nether_creep.name=Spawn Nether-creep §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:parasite.name=Parasite
+item.spawn_egg.entity.raigen:parasite.name=Spawn Parasite §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:severed.name=Severed
+item.spawn_egg.entity.raigen:severed.name=Spawn Severed §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:toxic_head.name=Toxic head
+item.spawn_egg.entity.raigen:toxic_head.name=Spawn Toxic head §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:unarmed.name=Unarmed
+item.spawn_egg.entity.raigen:unarmed.name=Spawn Unarmed §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:undead_head.name=Undead head
+item.spawn_egg.entity.raigen:undead_head.name=Spawn Undead head §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:under_crawler.name=Under-crawler
+item.spawn_egg.entity.raigen:under_crawler.name=Spawn Under-crawler §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:under_terranean.name=Under-terranean
+item.spawn_egg.entity.raigen:under_terranean.name=Spawn Under-terranean §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:vengeant_ashes.name=Vengeant ashes
+item.spawn_egg.entity.raigen:vengeant_ashes.name=Spawn Vengeant ashes §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:vengeant_soul.name=Vengeant soul
+item.spawn_egg.entity.raigen:vengeant_soul.name=Spawn Vengeant soul §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:pigman_brute.name=Brute pigman
+item.spawn_egg.entity.raigen:pigman_brute.name=Spawn Brute pigman §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:pigman_guardian.name=Guardian pigman
+item.spawn_egg.entity.raigen:pigman_guardian.name=Spawn Guardian pigman §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:pigman_civilian.name=Civilian pigman
+item.spawn_egg.entity.raigen:pigman_civilian.name=Spawn Civilian pigman §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:blaze_king.name=Blaze King
+item.spawn_egg.entity.raigen:blaze_king.name=Spawn Blaze King §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:cactus_warrior.name=Cactus warrior
+item.spawn_egg.entity.raigen:cactus_warrior.name=Spawn Cactus warrior §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:scorpion_black.name=Black scorpion
+item.spawn_egg.entity.raigen:scorpion_black.name=Spawn Black scorpion §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:scorpion_cyan.name=Cyan scorpion
+item.spawn_egg.entity.raigen:scorpion_cyan.name=Spawn Cyan scorpion §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:scorpion_green.name=Green scorpion
+item.spawn_egg.entity.raigen:scorpion_green.name=Spawn Green scorpion §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:scorpion_yellow.name=Yellow scorpion
+item.spawn_egg.entity.raigen:scorpion_yellow.name=Spawn Yellow scorpion §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:sand_shark_desert.name=Desert sand-shark
+item.spawn_egg.entity.raigen:sand_shark_desert.name=Spawn Desert sand-shark §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:cactus_warrior_big.name=Big cactus warrior
+item.spawn_egg.entity.raigen:cactus_warrior_big.name=Spawn Big cactus warrior §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:flower_trap.name=Flower trap
+item.spawn_egg.entity.raigen:flower_trap.name=Flower trap §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:skeleton_dusty.name=Dusty skeleton
+item.spawn_egg.entity.raigen:skeleton_dusty.name=Spawn Dusty skeleton §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:mummy.name=Mummy
+item.spawn_egg.entity.raigen:mummy.name=Spawn Mummy §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:undead_pharaoh.name=Undead pharaoh
+item.spawn_egg.entity.raigen:undead_pharaoh.name=Spawn Undead pharaoh §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:eagle_staff.name=Eagle staff
+item.spawn_egg.entity.raigen:eagle_staff.name=Eagle staff §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:mummy_minion.name=Mummy minion
+item.spawn_egg.entity.raigen:mummy_minion.name=Spawn Mummy minion §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:living_fossil.name=Living fossil
+item.spawn_egg.entity.raigen:living_fossil.name=Spawn Living fossil §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:sand_shark_beach.name=Beach sand-shark
+item.spawn_egg.entity.raigen:sand_shark_beach.name=Spawn Beach sand-shark §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:false_cactus.name=False cactus
+item.spawn_egg.entity.raigen:false_cactus.name=False cactus §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:crab_arctic_spider.name=Arctic spider crab
+item.spawn_egg.entity.raigen:crab_arctic_spider.name=Spawn Arctic spider crab §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:crab_japanese_spider.name=Japanese spider crab
+item.spawn_egg.entity.raigen:crab_japanese_spider.name=Spawn Japanese spider crab §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:crab_yeti.name=Yeti crab
+item.spawn_egg.entity.raigen:crab_yeti.name=Spawn Yeti crab §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:crab_coconut.name=Coconut crab
+item.spawn_egg.entity.raigen:crab_coconut.name=Spawn Coconut crab §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:crab_dungeness.name=Dungeness crab
+item.spawn_egg.entity.raigen:crab_dungeness.name=Spawn Dungeness crab §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:tree_coconut_n.name=N Coconut tree
+item.spawn_egg.entity.raigen:tree_coconut_n.name=Coconut tree (facing North) §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:tree_coconut_e.name=E Coconut tree
+item.spawn_egg.entity.raigen:tree_coconut_e.name=Coconut tree (facing East) §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:tree_coconut_s.name=S Coconut tree
+item.spawn_egg.entity.raigen:tree_coconut_s.name=Coconut tree (facing South) §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:tree_coconut_w.name=W Coconut tree
+item.spawn_egg.entity.raigen:tree_coconut_w.name=Coconut tree (facing West) §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:skeleton_pirate.name=Pirate skeleton
+item.spawn_egg.entity.raigen:skeleton_pirate.name=Spawn Pirate skeleton §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:skeleton_pirate_captain.name=Pirate skeleton captain
+item.spawn_egg.entity.raigen:skeleton_pirate_captain.name=Spawn Pirate skeleton captain §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:redstone_cutlass.name=Redstone cutlass
+item.spawn_egg.entity.raigen:redstone_cutlass.name=Redstone cutlass §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:coral_bound.name=Coral-bound
+item.spawn_egg.entity.raigen:coral_bound.name=Spawn Coral-bound §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:trench_predator.name=Trench predator
+item.spawn_egg.entity.raigen:trench_predator.name=Spawn Trench predator §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:sea_shells.name=Sea shells
+item.spawn_egg.entity.raigen:sea_shells.name=Sea shells §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:clam_warrior.name=Clam warrior
+item.spawn_egg.entity.raigen:clam_warrior.name=Spawn Clam warrior §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:nautilus.name=Nautilus
+item.spawn_egg.entity.raigen:nautilus.name=Spawn Nautilus §r§d§l§o::§r§b Biome: Project 0
+
+entity.raigen:manta_ray.name=Manta ray
+item.spawn_egg.entity.raigen:manta_ray.name=Spawn Manta ray §r§d§l§o::§r§b Biome: Project 0

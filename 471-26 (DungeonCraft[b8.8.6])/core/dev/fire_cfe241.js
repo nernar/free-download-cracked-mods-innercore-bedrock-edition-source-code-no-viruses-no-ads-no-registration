@@ -1,0 +1,21 @@
+IDRegistry.genItemID("fire_helmet");
+Item.createArmorItem("fire_helmet", "dc.item.fire_helmet", {name: "fire_helmet", meta: 0}, {type: "helmet", armor: 7, durability: 6993, texture: "armor/fire_0.png"});
+IDRegistry.genItemID("fire_chestplate");
+Item.createArmorItem("fire_chestplate", "dc.item.fire_chestplate", {name: "fire_chestplate", meta: 0}, {type: "chestplate", armor: 10, durability: 9102, texture: "armor/fire_0.png"});
+IDRegistry.genItemID("fire_leggings");
+Item.createArmorItem("fire_leggings", "dc.item.fire_leggings", {name: "fire_leggings", meta: 0}, {type: "leggings", armor: 9, durability: 8103, texture: "armor/fire_1.png"});
+IDRegistry.genItemID("fire_boots");
+Item.createArmorItem("fire_boots", "dc.item.fire_boots", {name: "fire_boots", meta: 0}, {type: "boots", armor: 6, durability: 6438, texture: "armor/fire_0.png"});
+Item.addCreativeGroup("helmet", Translation.translate("dc.tab.helmet"), [ItemID.fire_helmet]);
+Item.addCreativeGroup("chestplate", Translation.translate("dc.tab.chestplate"), [ItemID.fire_chestplate]);
+Item.addCreativeGroup("leggings", Translation.translate("dc.tab.leggings"), [ItemID.fire_leggings]);
+Item.addCreativeGroup("boots", Translation.translate("dc.tab.boots"), [ItemID.fire_boots]);
+Item.setEnchantType(ItemID.fire_helmet, Native.EnchantType.helmet, 14);
+Item.setEnchantType(ItemID.fire_chestplate, Native.EnchantType.chestplate, 14);
+Item.setEnchantType(ItemID.fire_leggings, Native.EnchantType.leggings, 14);
+Item.setEnchantType(ItemID.fire_boots, Native.EnchantType.boots, 14);
+Item.addRepairItemIds(ItemID.fire_helmet, [ItemID.fire_ingot]);
+Item.addRepairItemIds(ItemID.fire_chestplate, [ItemID.fire_ingot]);
+Item.addRepairItemIds(ItemID.fire_leggings, [ItemID.fire_ingot]);
+Item.addRepairItemIds(ItemID.fire_boots, [ItemID.fire_ingot]);
+

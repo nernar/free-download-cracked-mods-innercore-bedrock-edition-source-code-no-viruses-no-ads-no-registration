@@ -1,0 +1,97 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "raigen:sand_shark_beach",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+    "components": {
+      "minecraft:fire_immune": false,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:type_family": {
+        "family": [ "monster", "sand_shark" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.2,
+        "height": 0.4
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/biome_project_0/beach_sand_shark.json"
+      },
+      "minecraft:health": {
+        "value": 10
+      },
+      "minecraft:hurt_when_wet": {
+        "value": true
+      },
+      "minecraft:attack": {
+        "damage": 3
+	  },
+      "minecraft:movement": {
+        "value": {
+          "range_min": 0.1125, 
+          "range_max": 0.3375
+        }
+      },
+      "minecraft:navigation.walk": {
+        "can_float": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:nameable": {},
+      "minecraft:balloonable": {},
+      "minecraft:behavior.leap_at_target": {
+        "priority": 1,
+        "target_dist": 0.4,
+		"yd": 0.6,
+		"must_be_on_ground": false
+	  },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "speed_multiplier": 1.4,
+        "track_target": false
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 4,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of" : [
+                {"test" : "is_family", "subject" : "other", "value" :  "player"},
+                {"test" : "is_family", "subject" : "other", "value" :  "coral_bound"}
+              ]
+            },
+            "max_dist": 16
+          }
+        ],
+        "must_see": true
+      },
+	  "minecraft:physics": {
+      }
+    }
+  }
+}

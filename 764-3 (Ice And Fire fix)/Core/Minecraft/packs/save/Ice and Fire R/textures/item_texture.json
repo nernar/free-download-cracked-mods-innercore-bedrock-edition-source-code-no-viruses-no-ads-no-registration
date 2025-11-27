@@ -1,0 +1,461 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "egg_camel": {
+      "textures": "textures/items/egg_camel"
+    },
+    "egg_lion": {
+      "textures": "textures/items/egg_lion"
+    },
+    "egg_penguin": {
+      "textures": "textures/items/egg_penguin"
+    },
+    "egg_tiger": {
+      "textures": "textures/items/egg_tiger"
+    },
+    "egg_elephant": {
+      "textures": "textures/items/egg_elephant"
+    },
+    "egg_deer": {
+      "textures": "textures/items/egg_deer"
+    },
+    "egg_panther": {
+      "textures": "textures/items/egg_panther"
+    },
+    "egg_frog": {
+      "textures": "textures/items/egg_frog"
+    },
+    "egg_crocodile": {
+      "textures": "textures/items/egg_crocodile"
+    },
+    "egg_mouse": {
+      "textures": "textures/items/egg_mouse"
+    },
+    "gallardo": {
+      "textures": "textures/items/gallardo"
+    },
+    "bench": {
+      "textures": "textures/items/bench"
+    },
+    "christmas_tree": {
+      "textures": "textures/items/christmas_tree"
+    },
+    "tivi": {
+      "textures": "textures/items/tivi"
+    },
+    "closet": {
+      "textures": "textures/items/closet"
+    },
+    "laptop": {
+      "textures": "textures/items/laptop"
+    },
+    "piano": {
+      "textures": "textures/items/piano"
+    },
+    "armchairs": {
+      "textures": "textures/items/armchairs"
+    },
+    "chair": {
+      "textures": "textures/items/chair"
+    },
+    "big_table": {
+      "textures": "textures/items/big_table"
+    },
+    "small_table": {
+      "textures": "textures/items/small_table"
+    },
+    "drone": {
+      "textures": "textures/items/drone"
+    },
+    "colorful_gifts": {
+      "textures": "textures/items/colorful_gifts"
+    },
+    "hu_icepullet": {
+      "textures": "textures/items/pamobile/hu_icepullet"
+    },
+    "hu_firedragonhelmet": {
+      "textures": [
+        "textures/items/pamobile/hu_firedragonhelmet"
+      ]
+    },
+    "hu_firedragonchestplate": {
+      "textures": [
+        "textures/items/pamobile/hu_firedragonchestplate"
+      ]
+    },
+    "hu_firedragonlegging": {
+      "textures": [
+        "textures/items/pamobile/hu_firedragonlegging"
+      ]
+    },
+    "hu_firedragonboot": {
+      "textures": [
+        "textures/items/pamobile/hu_firedragonboot"
+      ]
+    },
+    "hu_icedragonboot": {
+      "textures": [
+        "textures/items/pamobile/hu_icedragonboot"
+      ]
+    },
+    "hu_icedragonhelmet": {
+      "textures": [
+        "textures/items/pamobile/hu_icedragonhelmet"
+      ]
+    },
+    "hu_icedragonlegging": {
+      "textures": [
+        "textures/items/pamobile/hu_icedragonlegging"
+      ]
+    },
+    "hu_lightningdragonhelmet": {
+      "textures": [
+        "textures/items/pamobile/hu_lightningdragonhelmet"
+      ]
+    },
+    "hu_lightningdragonchestplate": {
+      "textures": [
+        "textures/items/pamobile/hu_lightningdragonchestplate"
+      ]
+    },
+    "hu_lightningdragonlegging": {
+      "textures": [
+        "textures/items/pamobile/hu_lightningdragonlegging"
+      ]
+    },
+    "hu_icedragonchestplate": {
+      "textures": [
+        "textures/items/pamobile/hu_icedragonchestplate"
+      ]
+    },
+    "hu_lightningdragonboot": {
+      "textures": [
+        "textures/items/pamobile/hu_lightningdragonboot"
+      ]
+    },
+    "hu_forge": {
+      "textures": "textures/items/pamobile/hu_forge"
+    },
+    "hu_firedragonsteelhelmet": {
+      "textures": [
+        "textures/items/pamobile/hu_firedragonsteelhelmet"
+      ]
+    },
+    "hu_firedragonsteelchestplate": {
+      "textures": [
+        "textures/items/pamobile/hu_firedragonsteelchestplate"
+      ]
+    },
+    "hu_icedragonsteelhelmet": {
+      "textures": [
+        "textures/items/pamobile/hu_icedragonsteelhelmet"
+      ]
+    },
+    "hu_firedragonsteellegging": {
+      "textures": [
+        "textures/items/pamobile/hu_firedragonsteellegging"
+      ]
+    },
+    "hu_lightningdragonsteelhelmet": {
+      "textures": [
+        "textures/items/pamobile/hu_lightningdragonsteelhelmet"
+      ]
+    },
+    "hu_firedragonsteelboot": {
+      "textures": [
+        "textures/items/pamobile/hu_firedragonsteelboot"
+      ]
+    },
+    "hu_icedragonsteelchestplate": {
+      "textures": [
+        "textures/items/pamobile/hu_icedragonsteelchestplate"
+      ]
+    },
+    "hu_icedragonsteelboot": {
+      "textures": [
+        "textures/items/pamobile/hu_icedragonsteelboot"
+      ]
+    },
+    "hu_icedragonsteellegging": {
+      "textures": [
+        "textures/items/pamobile/hu_icedragonsteellegging"
+      ]
+    },
+    "hu_lightningdragonsteellegging": {
+      "textures": [
+        "textures/items/pamobile/hu_lightningdragonsteellegging"
+      ]
+    },
+    "hu_lightningdragonsteelboot": {
+      "textures": [
+        "textures/items/pamobile/hu_lightningdragonsteelboot"
+      ]
+    },
+    "hu_lightningdragonsteelchestplate": {
+      "textures": [
+        "textures/items/pamobile/hu_lightningdragonsteelchestplate"
+      ]
+    },
+    "hu_sea_b": {
+      "textures": [
+        "textures/items/pamobile/hu_sea_b"
+      ]
+    },
+    "hu_sealegging": {
+      "textures": [
+        "textures/items/pamobile/hu_sealegging"
+      ]
+    },
+    "hu_seahelmet": {
+      "textures": [
+        "textures/items/pamobile/hu_seahelmet"
+      ]
+    },
+    "hu_seachestplate": {
+      "textures": [
+        "textures/items/pamobile/hu_seachestplate"
+      ]
+    },
+    "hu:fidragon2": {
+      "textures": "textures/items/pamobile/hu_fidragon2"
+    },
+    "hu:ldragon2": {
+      "textures": "textures/items/pamobile/hu_ldragon2"
+    },
+    "hu:idragon2": {
+      "textures": "textures/items/pamobile/hu_idragon2"
+    },
+    "hu:witherbone": {
+      "textures": "textures/items/pamobile/hu_witherbone"
+    },
+    "hu:dragonbone": {
+      "textures": "textures/items/pamobile/hu_dragonbone"
+    },
+    "hu:firedragonblood": {
+      "textures": "textures/items/pamobile/hu_firedragonblood"
+    },
+    "hu:firedragonscale": {
+      "textures": "textures/items/pamobile/hu_firedragonscale"
+    },
+    "hu:icedragonscale": {
+      "textures": "textures/items/pamobile/hu_icedragonscale"
+    },
+    "hu:firedragonheart": {
+      "textures": "textures/items/pamobile/hu_firedragonheart"
+    },
+    "hu_firedragonbonesword": {
+      "textures": "textures/items/pamobile/hu_firedragonbonesword"
+    },
+    "hu:icedragonblood": {
+      "textures": "textures/items/pamobile/hu_icedragonblood"
+    },
+    "hu_dragonbonesword": {
+      "textures": "textures/items/pamobile/hu_dragonbonesword"
+    },
+    "hu:icedragonheart": {
+      "textures": "textures/items/pamobile/hu_icedragonheart"
+    },
+    "hu:lightningdragonblood": {
+      "textures": "textures/items/pamobile/hu_lightningdragonblood"
+    },
+    "hu:lightningdragonscale": {
+      "textures": "textures/items/pamobile/hu_lightningdragonscale"
+    },
+    "hu_icedragonbonesword": {
+      "textures": "textures/items/pamobile/hu_icedragonbonesword"
+    },
+    "hu:lightningheart": {
+      "textures": "textures/items/pamobile/hu_lightningheart"
+    },
+    "hu:whandle": {
+      "textures": "textures/items/pamobile/hu_whandle"
+    },
+    "hu_dragonbonerapier": {
+      "textures": "textures/items/pamobile/hu_dragonbonerapier"
+    },
+    "hu:icepaint": {
+      "textures": "textures/items/pamobile/hu_icepaint"
+    },
+    "hu_icedragonbonerapier": {
+      "textures": "textures/items/pamobile/hu_icedragonbonerapier"
+    },
+    "hu:lightningpaint": {
+      "textures": "textures/items/pamobile/hu_lightningpaint"
+    },
+    "hu:firepaint": {
+      "textures": "textures/items/pamobile/hu_firepaint"
+    },
+    "hu:firesteelingot": {
+      "textures": "textures/items/pamobile/hu_firesteelingot"
+    },
+    "hu:icesteelingot": {
+      "textures": "textures/items/pamobile/hu_icesteelingot"
+    },
+    "hu_firedragonbonerapier": {
+      "textures": "textures/items/pamobile/hu_firedragonbonerapier"
+    },
+    "hu:lightningsteelingot": {
+      "textures": "textures/items/pamobile/hu_lightningsteelingot"
+    },
+    "hu_firedragonsteelsword": {
+      "textures": "textures/items/pamobile/hu_firedragonsteelsword"
+    },
+    "hu_lightningdragonbonesword": {
+      "textures": "textures/items/pamobile/hu_lightningdragonbonesword"
+    },
+    "hu_lightningsteelsword": {
+      "textures": "textures/items/pamobile/hu_lightningsteelsword"
+    },
+    "hu_icedragonsteelsword": {
+      "textures": "textures/items/pamobile/hu_icedragonsteelsword"
+    },
+    "hu_firedragonsteelrapier": {
+      "textures": "textures/items/pamobile/hu_firedragonsteelrapier"
+    },
+    "hu_icedragonsteelrapier": {
+      "textures": "textures/items/pamobile/hu_icedragonsteelrapier"
+    },
+    "hu_icedragonbonegreatsword": {
+      "textures": "textures/items/pamobile/hu_icedragonbonegreatsword"
+    },
+    "hu_dragonbonegreatsword": {
+      "textures": "textures/items/pamobile/hu_dragonbonegreatsword"
+    },
+    "hu_firedragonsteelgreatsword": {
+      "textures": "textures/items/pamobile/hu_firedragonsteelgreatsword"
+    },
+    "hu_firedragonbonegreatsword": {
+      "textures": "textures/items/pamobile/hu_firedragonbonegreatsword"
+    },
+    "hu_firedragonbonelongsword": {
+      "textures": "textures/items/pamobile/hu_firedragonbonelongsword"
+    },
+    "hu_icedragonsteelgreatsword": {
+      "textures": "textures/items/pamobile/hu_icedragonsteelgreatsword"
+    },
+    "hu_dragonbonelongsword": {
+      "textures": "textures/items/pamobile/hu_dragonbonelongsword"
+    },
+    "hu_dragonbonesaber": {
+      "textures": "textures/items/pamobile/hu_dragonbonesaber"
+    },
+    "hu_firedragonsteellongsword": {
+      "textures": "textures/items/pamobile/hu_firedragonsteellongsword"
+    },
+    "hu_firedragonbonesaber": {
+      "textures": "textures/items/pamobile/hu_firedragonbonesaber"
+    },
+    "hu_icedragonbonelongsword": {
+      "textures": "textures/items/pamobile/hu_icedragonbonelongsword"
+    },
+    "hu_icedragonsteellongsword": {
+      "textures": "textures/items/pamobile/hu_icedragonsteellongsword"
+    },
+    "hu_icedragonsteelsaber": {
+      "textures": "textures/items/pamobile/hu_icedragonsteelsaber"
+    },
+    "hu_dragonbonekatana": {
+      "textures": "textures/items/pamobile/hu_dragonbonekatana"
+    },
+    "hu_firedragonbonekatana": {
+      "textures": "textures/items/pamobile/hu_firedragonbonekatana"
+    },
+    "hu_icedragonsteelbattleaxe": {
+      "textures": "textures/items/pamobile/hu_icedragonsteelbattleaxe"
+    },
+    "hu_icedragonbonesaber": {
+      "textures": "textures/items/pamobile/hu_icedragonbonesaber"
+    },
+    "hu_icedragonbonebattleaxe": {
+      "textures": "textures/items/pamobile/hu_icedragonbonebattleaxe"
+    },
+    "hu_dragonbonebattleaxe": {
+      "textures": "textures/items/pamobile/hu_dragonbonebattleaxe"
+    },
+    "hu_firedragonsteelkatana": {
+      "textures": "textures/items/pamobile/hu_firedragonsteelkatana"
+    },
+    "hu_icedragonbonekatana": {
+      "textures": "textures/items/pamobile/hu_icedragonbonekatana"
+    },
+    "hu_icedragonsteelkatana": {
+      "textures": "textures/items/pamobile/hu_icedragonsteelkatana"
+    },
+    "hu_firedragonsteelbattleaxe": {
+      "textures": "textures/items/pamobile/hu_firedragonsteelbattleaxe"
+    },
+    "hu:sea_serpent_scale": {
+      "textures": "textures/items/pamobile/hu_sea_serpent_scale"
+    },
+    "hu_firedragonbonebattleaxe": {
+      "textures": "textures/items/pamobile/hu_firedragonbonebattleaxe"
+    },
+    "hu_firedragonsteelsaber": {
+      "textures": "textures/items/pamobile/hu_firedragonsteelsaber"
+    },
+    "hu:shiny_scale": {
+      "textures": "textures/items/pamobile/hu_shiny_scale"
+    },
+    "hu:fdragond": {
+      "textures": "textures/items/pamobile/hu_fdragond"
+    },
+    "hu:ldragonske": {
+      "textures": "textures/items/pamobile/hu_ldragonske"
+    },
+    "hu:idragondearth": {
+      "textures": "textures/items/pamobile/hu_idragondearth"
+    },
+    "hu:fdragonske": {
+      "textures": "textures/items/pamobile/hu_fdragonske"
+    },
+    "hu:ldragond": {
+      "textures": "textures/items/pamobile/hu_ldragond"
+    },
+    "hu:idragonske": {
+      "textures": "textures/items/pamobile/hu_idragonske"
+    },
+    "hu:forgeentity": {
+      "textures": "textures/items/pamobile/hu_forgeentity"
+    },
+    "hu:pil": {
+      "textures": "textures/items/pamobile/hu_pil"
+    },
+    "hu:medusa": {
+      "textures": "textures/items/pamobile/hu_medusa"
+    },
+    "hu:troll": {
+      "textures": "textures/items/pamobile/hu_troll"
+    },
+    "hu:cyclop": {
+      "textures": "textures/items/pamobile/hu_cyclop"
+    },
+    "hu:siren": {
+      "textures": "textures/items/pamobile/hu_siren"
+    },
+    "hu:sea_serpent": {
+      "textures": "textures/items/pamobile/hu_sea_serpent"
+    },
+    "hu:fdragon": {
+      "textures": "textures/items/pamobile/hu_fdragon"
+    },
+    "hu:idragon": {
+      "textures": "textures/items/pamobile/hu_idragon"
+    },
+    "hu:ldragon": {
+      "textures": "textures/items/pamobile/hu_ldragon"
+    },
+    "hu:firedragonhelmet_black": {
+      "textures": "textures/items/pamobile/hu_firedragonhelmet_black"
+    },
+ "hu:firedragonchestplate_black": {
+      "textures": "textures/items/pamobile/hu_firedragonchestplate_black"
+    },
+"hu:firedragonlegging_black": {
+      "textures": "textures/items/pamobile/hu_firedragonlegging_black"
+    },
+"hu:firedragonboot_black": {
+      "textures": "textures/items/pamobile/hu_firedragonboot_black"
+    }
+  }
+}

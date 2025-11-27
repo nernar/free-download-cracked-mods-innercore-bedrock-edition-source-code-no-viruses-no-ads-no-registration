@@ -1,0 +1,180 @@
+{
+"format_version": "1.13.0",
+"minecraft:entity": {
+"description": {
+"identifier": "twilightforest:wild_boar",
+"is_spawnable": true,
+"is_summonable": true,
+"is_experimental": false
+},
+"component_groups": {
+"宝贝": {
+"minecraft:is_baby": {
+},
+"minecraft:scale": {
+"value": 0.5
+},
+"minecraft:ageable": {
+"duration": 1200,
+"feed_items": [ "carrot", "beetroot", "potato" ],
+"grow_up": {
+"event": "成长",
+"target": "self"
+}
+},
+"minecraft:behavior.follow_parent": {
+"priority": 6,
+"speed_multiplier": 1.1
+}
+},
+"掉落物品": {
+"minecraft:loot": {
+"table": "loot_tables/entities/pig.json"
+}
+},
+"不可描述": {
+"minecraft:behavior.breed": {
+"priority": 3,
+"speed_multiplier": 1.0
+},
+"minecraft:breedable": {
+"require_tame": false,
+"breed_items": [ "carrot", "beetroot", "potato" ],
+"breeds_with": {
+"mate_type": "twilightforest:wild_boar",
+"baby_type": "twilightforest:wild_boar"
+}
+}
+},
+"栓绳": {
+"minecraft:behavior.move_towards_restriction": {
+"priority": 2,
+"speed_multiplier": 1.0
+}
+}
+},
+"components": {
+"minecraft:nameable": {
+},
+"minecraft:type_family": {
+"family": [ "wildboar" ]
+},
+"minecraft:breathable": {
+"total_supply": 15,
+"suffocate_time": 0
+},
+"minecraft:health": {
+"value": 10,
+"max": 10
+},
+"minecraft:movement": {
+"value": 0.25
+},
+"minecraft:scale": {
+"value": 1.0
+},
+"minecraft:collision_box": {
+"width": 0.9,
+"height": 0.9
+},
+"minecraft:balloonable": {
+"mass": 0.75
+},
+"minecraft:navigation.walk": {
+"can_path_over_water": true,
+"avoid_water": true,
+"avoid_damage_blocks": true
+},
+"minecraft:movement.basic": {
+},
+"minecraft:jump.static": {
+},
+"minecraft:can_climb": {
+},
+"minecraft:behavior.random_stroll": {
+"priority": 7,
+"speed_multiplier": 1.0
+},
+"minecraft:behavior.mount_pathing": {
+"priority": 1,
+"speed_multiplier": 1.25,
+"target_dist": 0.0,
+"track_target": true
+},
+"minecraft:behavior.follow_parent": {
+"priority": 5,
+"speed_multiplier": 1.1
+},
+"minecraft:behavior.float": {
+"priority": 2
+},
+"minecraft:behavior.breed": {
+"priority": 3,
+"speed_multiplier": 1.0
+},
+"minecraft:behavior.tempt": {
+"priority": 5,
+"speed_multiplier": 1.25,
+"items": [ "carrot", "carrot", "potato" ]
+},
+"minecraft:behavior.panic": {
+"priority": 3,
+"speed_multiplier": 1.5
+},
+"minecraft:behavior.look_at_player": {
+"priority": 8,
+"look_distance": 6.0,
+"probability": 0.02
+},
+"minecraft:behavior.random_look_around": {
+"priority": 9
+},
+"minecraft:leashable": {
+"soft_distance": 4.0,
+"hard_distance": 6.0,
+"max_distance": 10.0,
+"on_leash": {
+"event": "拴住",
+"target": "self"
+},
+"on_unleash": {
+"event": "栓开",
+"target": "self"
+}
+},
+"minecraft:physics": {
+},
+"minecraft:pushable": {
+"is_pushable": true,
+"is_pushable_by_piston": true
+}
+},
+"events": {
+"minecraft:entity_spawned": {
+"randomize": [
+{
+"weight": 95,
+"remove": { },
+"add": { "component_groups": [ "掉落物品", "不可描述" ] }
+},
+{
+"weight": 25,
+"remove": { },
+"add": { "component_groups": [ "宝贝" ] }
+}
+]
+},
+"成长": {
+"remove": { "component_groups": [ "宝贝" ] },
+"add": { "component_groups": [ "不可描述", "掉落物品" ] }
+},
+"拴住": {
+"add": { "component_groups": [ "栓绳" ] }
+},
+"栓开": {
+"remove": { "component_groups": [ "栓绳" ] }
+}
+/*此处做销毁*/
+}
+}
+}

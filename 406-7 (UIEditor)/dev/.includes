@@ -1,0 +1,16 @@
+# main.js:15
+select_type.js
+select_bitmap.js
+selectFromList.js
+select_export.js
+FileAPI.js
+text.js
+Widgets.js
+Window.js
+editor.js
+export.js
+dialog.js
+animate.js
+addWidgets.js
+createPopup.js
+MainMenu.js

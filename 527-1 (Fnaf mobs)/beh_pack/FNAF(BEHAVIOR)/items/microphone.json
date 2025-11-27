@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tinfinite:microphone"
+    },
+    
+    "components": {
+      "minecraft:hand_equipped": true,
+      "minecraft:stacked_by_data": true,
+      "minecraft:use_duration": 16
+      }
+    }
+  }
+}

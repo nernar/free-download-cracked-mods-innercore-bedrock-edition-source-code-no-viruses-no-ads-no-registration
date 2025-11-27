@@ -1,0 +1,2 @@
+let IManaTooltipDisplay = new Interface();
+

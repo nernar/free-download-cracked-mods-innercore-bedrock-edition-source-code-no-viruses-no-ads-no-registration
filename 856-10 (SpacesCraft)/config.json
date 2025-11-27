@@ -1,0 +1,9 @@
+{
+  "enabled":true,
+  "GrassTopping":false,
+  "Экипировка":{
+    "coords":101,
+    "twocoords":1.1,
+    "threecoords":22.4
+  }
+}

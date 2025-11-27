@@ -1,0 +1,4 @@
+const AMMO_TYPE_MAGAZIN = 1;
+const AMMO_TYPE_BULLET = 2;
+const AMMO_TYPE_GRANADE = 3;
+

@@ -1,0 +1,81 @@
+﻿
+# 实体
+entity.twilightforest:bighorn_sheep.name=大山角羊
+entity.twilightforest:penguin.name=冰川企鹅
+entity.twilightforest:wild_boar.name=野猪
+entity.twilightforest:firefly.name=萤火虫
+
+entity.twilightforest:naga.name=娜迦
+entity.twilightforest:naga_body.name=娜迦身体
+entity.twilightforest:lich.name=巫妖
+entity.twilightforest:lich_zombie.name=巫妖
+entity.twilightforest:lich_golden.name=巫妖
+entity.twilightforest:lich_minion.name=巫妖的仆从
+entity.twilightforest:lich_phantom.name=巫妖的幻影
+entity.twilightforest:minoshroom.name=米诺陶
+entity.twilightforest:ur_ghast.name=暮色恶魂
+entity.twilightforest:hydra.name=九头蛇
+
+entity.twilightforest:minotaur.name=牛头人
+entity.twilightforest:tower_golem.name=高塔铁傀儡
+entity.twilightforest:firebeetle.name=喷火甲虫
+
+item.spawn_egg.entity.twilightforest:bighorn_sheep.name=生成 大山角羊
+item.spawn_egg.entity.twilightforest:penguin.name=生成 冰川企鹅
+item.spawn_egg.entity.twilightforest:wild_boar.name=生成 野猪
+item.spawn_egg.entity.twilightforest:firefly.name=生成 萤火虫
+
+item.spawn_egg.entity.twilightforest:naga.name=生成 娜迦
+item.spawn_egg.entity.twilightforest:lich.name=生成 巫妖
+item.spawn_egg.entity.twilightforest:minoshroom.name=生成 米诺陶
+item.spawn_egg.entity.twilightforest:ur_ghast.name=生成 暮色恶魂
+item.spawn_egg.entity.twilightforest:hydra.name=生成 九头蛇
+
+item.spawn_egg.entity.twilightforest:minotaur.name=生成 牛头人
+item.spawn_egg.entity.twilightforest:tower_golem.name=生成 高塔铁傀儡
+item.spawn_egg.entity.twilightforest:firebeetle.name=生成 喷火甲虫
+
+# 附加
+entity.twilightforest:godzilla.name=哥斯拉
+entity.crisis:ancient_beast.name=远古幻兽
+entity.projectile:evil_source.name=万恶之源
+entity.projectile:black_shell.name=黑魔弹
+entity.fatzen:cannon.name=加农炮
+entity.fatzen:cannon_projectile.name=炮弹
+entity.bikini:spongebob.name=海绵宝宝
+
+item.spawn_egg.entity.twilightforest:godzilla.name=生成 哥斯拉
+item.spawn_egg.entity.crisis:ancient_beast.name=生成 远古幻兽
+item.spawn_egg.entity.fatzen:cannon.name=生成 加农炮
+item.spawn_egg.entity.bikini:spongebob.name=生成 海绵宝宝
+
+item.bikini:burgina.name=蟹堡王
+
+# 物品
+item.twilightforest:scepter_twilight.name=黄昏权杖
+item.twilightforest:scepter_lifedrain.name=吸血权杖
+item.twilightforest:scepter_zombie.name=僵尸权杖
+item.twilightforest:scepter_shield.name=护盾权杖
+item.twilightforest:minotaur_axe.name=米诺陶战斧
+
+item.twilightforest:hydra_chop.name=九头蛇肉排
+item.twilightforest:meefraw.name=生牛头人肉
+item.twilightforest:meefsteak.name=牛头人肉排
+item.twilightforest:meefstroganoff.name=牛头人沙拉酱肉
+item.twilightforest:raw_venison.name=生鹿肉
+item.twilightforest:cooked_venison.name=鹿肉排
+
+# 方块
+tile.twilightforest:twilight_log0.name=暮色橡木
+tile.twilightforest:twilight_log1.name=苍穹木
+tile.twilightforest:twilight_log2.name=黑木
+tile.twilightforest:twilight_log3.name=红木
+tile.twilightforest:twilight_portal.name=暮色入口
+
+tile.twilightforest:blockofstorage0.name=铁树块
+tile.twilightforest:blockofstorage1.name=炽热金属块
+tile.twilightforest:blockofstorage2.name=钢叶块
+tile.twilightforest:blockofstorage3.name=极地毛皮块
+tile.twilightforest:blockofstorage4.name=砷铅铁块
+
+

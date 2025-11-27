@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.variant_moth_mother": {
+	  "arrays": {
+        "materials": {
+          "Array.materials": [ "Material.default", "Material.invisible" ]
+        },
+	    "textures": {
+		  "Array.skins": [
+		    "Texture.melee_mode",
+		    "Texture.ranged_mode"
+		  ]
+		}
+	  },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Array.materials[query.is_invisible]" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

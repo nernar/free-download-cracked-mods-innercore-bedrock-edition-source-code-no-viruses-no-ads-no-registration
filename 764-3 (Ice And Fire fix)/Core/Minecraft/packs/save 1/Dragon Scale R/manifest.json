@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "§aAdd Armor Dragon Support §bIce §fAnd §4Fire§f by XD HMDT",
+    "name": "Dragon Scale",
+    "uuid": "c805e1bc-7d26-41cb-b639-0c5d80310782",
+    "version": [
+      1,
+      16,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "§aAdd Armor Dragon Support §bIce §fAnd §4Fire§f by XD HMDT",
+      "type": "resources",
+      "uuid": "c79280d9-1fdb-436e-875f-7a105c482394",
+      "version": [
+        1,
+        16,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "1abbdc2f-eaf9-4270-8792-3240dd519a75",
+      "version": [
+        1,
+        16,
+        1
+      ]
+    }
+  ]
+}

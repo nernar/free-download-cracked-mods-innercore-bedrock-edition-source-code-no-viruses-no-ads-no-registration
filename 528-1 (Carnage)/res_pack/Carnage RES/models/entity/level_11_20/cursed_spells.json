@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"geometry.cursed_spells": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 1,
+		"visible_bounds_height": 1,
+		"visible_bounds_offset": [0, 0.5, 0],
+		"bones": [
+			{
+				"name": "book",
+				"pivot": [0, 19, 0],
+				"cubes": [
+					{"origin": [-1, 18, -6], "size": [2, 1, 12], "uv": [0, 21]}
+				]
+			},
+			{
+				"name": "left_half",
+				"parent": "book",
+				"pivot": [1, 18, 0],
+				"rotation": [0, 0, -30],
+				"cubes": [
+					{"origin": [0, 10, -5], "size": [1, 8, 10], "uv": [28, 21]},
+					{"origin": [1, 9, -6], "size": [0, 9, 12], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "right_half",
+				"parent": "book",
+				"pivot": [-1, 18, 0],
+				"rotation": [0, 0, 30],
+				"cubes": [
+					{"origin": [-1, 10, -5], "size": [1, 8, 10], "uv": [0, 39]},
+					{"origin": [-1, 9, -6], "size": [0, 9, 12], "uv": [24, 0]}
+				]
+			}
+		]
+	}
+}

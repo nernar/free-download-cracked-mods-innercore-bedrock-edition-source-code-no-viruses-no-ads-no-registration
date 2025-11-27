@@ -1,0 +1,40 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "bioplentia:duck",
+      "materials": {
+        "MaterialDefault": "entity_alphatest"
+      },
+      "textures": {
+        "TextureDefault": "textures/entity/duck"
+      },
+      "geometry": {
+        "GeometryDefault": "geometry.bioplentia.entity.duck"
+      },
+       "animations": {
+        "move": "animation.duck.move",
+        "general": "animation.duck.general",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.duck.baby_transform"
+      },
+      "scripts": {
+        "animate": [
+          "general",
+          { "move": "query.modified_move_speed" },
+          "look_at_target",
+          { "baby_transform": "query.is_baby" }
+        ]
+      },
+      "render_controllers": [ "controller.render.core.entity_default" ],
+
+      "spawn_egg": {
+        "base_color": "#0x5b331b",
+        "overlay_color": "#0xe5bba2"
+      }
+    }
+  }
+}

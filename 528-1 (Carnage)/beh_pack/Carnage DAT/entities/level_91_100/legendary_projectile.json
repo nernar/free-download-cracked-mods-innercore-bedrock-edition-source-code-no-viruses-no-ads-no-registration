@@ -1,0 +1,142 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "raigen:legendary_projectile",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+	"component_groups": {
+	  "minecraft:fly_dragon": {
+	    "minecraft:transformation": {
+		  "into": "raigen:fly_dragon"
+		}
+	  },
+	  "minecraft:lunarid": {
+	    "minecraft:transformation": {
+		  "into": "raigen:lunarid"
+		}
+	  },
+	  "minecraft:dune_maiden": {
+	    "minecraft:transformation": {
+		  "into": "raigen:dune_maiden"
+		}
+	  },
+	  "minecraft:graveraiser": {
+	    "minecraft:transformation": {
+		  "into": "raigen:graveraiser"
+		}
+	  },
+	  "minecraft:fertile_spider": {
+	    "minecraft:transformation": {
+		  "into": "raigen:fertile_spider"
+		}
+	  },
+	  "minecraft:corpse_crawler": {
+	    "minecraft:transformation": {
+		  "into": "raigen:corpse_crawler"
+		}
+	  }
+	},
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.87,
+        "height": 0.87
+      },
+	  "minecraft:scale": {
+	    "value": 0.89
+	  },
+	  "minecraft:health": {
+	    "value": 3
+	  },
+	  "minecraft:timer": {
+	    "looping": false,
+		"randomInterval": false,
+		"time": 0.01,
+		"time_down_event": {
+		  "event": "minecraft:event_ranomize"
+		}
+	  },
+      "minecraft:projectile": {
+        "onHit": {
+          "impact_damage": {
+            "damage": 0,
+            "knockback": true,
+            "shouldbounce": true
+          },
+          "mob_effect": {
+            "effect": "slowness",
+            "durationeasy": 200,
+            "durationnormal": 200,
+            "durationhard": 200,
+            "amplifier": 2
+          },
+          "remove_on_hit": {
+          },
+          "particle_on_hit": {
+            "particle_type": "snowballpoof",
+            "on_other_hit": true
+          }
+        },
+        "hitSound": "mob.slime.small",
+        "destroyOnHurt": true,
+        "critParticleOnHurt": true,
+        "power": 1.1,
+        "gravity": 0.00001,
+        "uncertaintyBase": 16,
+        "uncertaintyMultiplier": 4,
+        "anchor": 1,
+        "offset": [ 0, 0, 0 ]
+      },
+      "minecraft:physics": {
+	  }
+    },
+	
+	"events": {
+	  "minecraft:event_ranomize": {
+	    "sequence": [
+		  {
+            "randomize": [
+              {
+                "weight": 1,
+                "sequence": [
+                  {
+                    "randomize": [
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:fly_dragon" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:lunarid" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:dune_maiden" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:graveraiser" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:fertile_spider" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:corpse_crawler" ] }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+	}
+  }
+}

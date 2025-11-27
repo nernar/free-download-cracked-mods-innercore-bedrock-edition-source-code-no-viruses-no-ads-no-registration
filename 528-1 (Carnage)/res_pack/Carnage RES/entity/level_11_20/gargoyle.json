@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:gargoyle",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "mobile": "textures/level_11_20/gargoyle/mobile",
+        "static": "textures/level_11_20/gargoyle/static"
+      },
+      "geometry": {
+        "default": "geometry.gargoyle"
+      },
+      "animations": {
+        "look_at_target_default": "animation.humanoid.look_at_target.default"
+      },
+      "animation_controllers": [
+        { "look_at_target": "controller.animation.humanoid.look_at_target" }
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 75
+      },
+      "render_controllers": [ "controller.render.variant_gargoyle" ]
+    }
+  }
+}

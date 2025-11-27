@@ -1,0 +1,76 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"tinfinite:freddy": {
+				"volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "attack": "mob.animatronic.attack",
+          "hurt": "mob.animatronic.attack",
+          "death": "mob.animatronic.death",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 2.0,
+            "pitch": 2.0
+          }
+        }
+      },
+			"tinfinite:chica": {
+				"volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "attack": "mob.animatronic.attack",
+          "hurt": "mob.animatronic.attack",
+          "death": "mob.animatronic.death",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 2.0,
+            "pitch": 2.0
+          }
+        }
+      },
+			"tinfinite:bonnie": {
+				"volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "attack": "mob.animatronic.attack",
+          "hurt": "mob.animatronic.attack",
+          "death": "mob.animatronic.death",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 2.0,
+            "pitch": 2.0
+          }
+        }
+      },
+			"tinfinite:foxy": {
+				"volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "attack": "mob.animatronic.attack",
+          "hurt": "mob.animatronic.attack",
+          "death": "mob.animatronic.death",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 2.0,
+            "pitch": 2.0
+          }
+        }
+      },
+			"tinfinite:golden_freddy": {
+				"volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "attack": "mob.goldenfreddy.attack",
+          "hurt": "mob.goldenfreddy.attack",
+          "death": "mob.goldenfreddy.attack",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 1000.0,
+            "pitch": 1000.0
+          }
+        }
+      }
+    }
+  }
+}

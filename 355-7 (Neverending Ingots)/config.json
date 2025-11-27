@@ -1,0 +1,6 @@
+{
+  "enabled":true,
+  "bags":true,
+  "auto_emc_defining":false,
+  "matter_pedestal":false
+}

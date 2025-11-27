@@ -1,0 +1,29 @@
+addGlowingItemID(id, lightLevel, bool)
+id - числовое айди предмета
+lightLevel - сила света (максимум 15)
+bool - должен ли дроп этого предмета светится
+
+addGlowingArmorID(id, lightLevel, bool, bool2)
+id - числовой айди элемента брони
+lightLevel - сила света (максимум 15)
+bool - должен ли элемент брони светится в руке
+bool2 - должен ли дроп этого элемента брони светится
+
+addGlowingDroppedItemID(id, lightLevel)
+id - числовой айди дропа
+lightLevel - сила света (максимум 15)
+
+addGlowingEntity(entityName, lightLevel)
+entityName - строковый идентификатор моба (например: "minecraft:zombie")
+lightLevel - сила света (максимум 15)
+
+addGlowingFunction (func)
+func - функция возвращающая lightLevel
+в качестве параметров имеет моба "ent"
+Пример использования:
+addGlowingFunction(function (ent){
+    let tags = Entity.getCompoundTag(ent)
+	let tag = tags.getShort("Fire")
+	if(tag > 0) return 14
+})
+теперь все мобы имеющие тег Fire > 0, будут светится с силой 14

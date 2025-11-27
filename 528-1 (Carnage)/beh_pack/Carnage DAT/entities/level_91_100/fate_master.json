@@ -1,0 +1,686 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "raigen:fate_master",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+	"component_groups": {
+	  "minecraft:melee_levitation": {
+	    "minecraft:variant": {
+		  "value": 0
+		},
+	    "minecraft:collision_box": {
+		  "width": 0.6,
+		  "height": 1.8
+	    },
+		"minecraft:attack": {
+		  "damage": {
+		    "range_min": 3,
+			"range_max": 5
+		  },
+		  "effect_name": "levitation",
+		  "effect_duration": 5
+		},
+		"minecraft:movement": {
+		  "value": 0.25
+		},
+		"minecraft:behavior.melee_attack": {
+		  "priority": 1,
+		  "track_target": true
+		},
+        "minecraft:behavior.move_towards_target": {
+          "priority": 1,
+          "speed_multiplier": 0.9,
+          "within_radius": 32
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+            "max_dist": 64
+          },
+          "must_see": true
+        },
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 8.0, 15.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_ranged_roster"
+		  }
+		}
+	  },
+	  "minecraft:melee_wither": {
+	    "minecraft:variant": {
+		  "value": 1
+		},
+	    "minecraft:collision_box": {
+		  "width": 0.6,
+		  "height": 1.8
+	    },
+		"minecraft:attack": {
+		  "damage": 5,
+		  "effect_name": "wither",
+		  "effect_duration": 5
+		},
+		"minecraft:movement": {
+		  "value": 0.25
+		},
+		"minecraft:behavior.melee_attack": {
+		  "priority": 1,
+		  "track_target": true
+		},
+        "minecraft:behavior.move_towards_target": {
+          "priority": 1,
+          "speed_multiplier": 0.9,
+          "within_radius": 32
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+            "max_dist": 64
+          },
+          "must_see": true
+        },
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 8.0, 15.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_ranged_roster"
+		  }
+		}
+	  },  
+	  
+	  
+	  "minecraft:ranged_common": {
+	    "minecraft:variant": {
+		  "value": 2
+		},
+		"minecraft:movement": {
+		  "value": 0.00001
+		},
+	    "minecraft:collision_box": {
+		  "width": 0.6,
+		  "height": 10.0
+	    },
+		"minecraft:shooter": {
+		  "def": "raigen:common_projectile"
+		},
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+            "max_dist": 64
+          },
+          "must_see": false
+        },
+		"minecraft:behavior.ranged_attack": {
+		  "priority": 1,
+		  "attack_interval_min": 1,
+          "attack_interval_max": 2,
+          "charge_charged_trigger": 0.0,
+          "charge_shoot_trigger": 2.0,
+          "attack_radius": 64,
+          "burst_shots": 10,
+          "burst_interval": 0.001
+        },
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 5.0, 5.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_melee_roster"
+		  }
+		}
+	  },
+	  "minecraft:ranged_rare": {
+	    "minecraft:variant": {
+		  "value": 3
+		},
+		"minecraft:movement": {
+		  "value": 0.00001
+		},
+	    "minecraft:collision_box": {
+		  "width": 0.6,
+		  "height": 10.0
+	    },
+		"minecraft:shooter": {
+		  "def": "raigen:rare_projectile"
+		},
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+            "max_dist": 64
+          },
+          "must_see": false
+        },
+		"minecraft:behavior.ranged_attack": {
+		  "priority": 1,
+		  "attack_interval_min": 1,
+          "attack_interval_max": 2,
+          "charge_charged_trigger": 0.0,
+          "charge_shoot_trigger": 2.0,
+          "attack_radius": 64,
+          "burst_shots": 10,
+          "burst_interval": 0.001
+        },
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 5.0, 5.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_melee_roster"
+		  }
+		}
+	  },
+	  "minecraft:ranged_legendary": {
+	    "minecraft:variant": {
+		  "value": 4
+		},
+		"minecraft:movement": {
+		  "value": 0.00001
+		},
+	    "minecraft:collision_box": {
+		  "width": 0.6,
+		  "height": 10.0
+	    },
+		"minecraft:shooter": {
+		  "def": "raigen:legendary_projectile"
+		},
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+            "max_dist": 64
+          },
+          "must_see": false
+        },
+		"minecraft:behavior.ranged_attack": {
+		  "priority": 1,
+		  "attack_interval_min": 1,
+          "attack_interval_max": 2,
+          "charge_charged_trigger": 0.0,
+          "charge_shoot_trigger": 2.0,
+          "attack_radius": 64,
+          "burst_shots": 5,
+          "burst_interval": 0.001
+        },
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 5.0, 5.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_melee_roster"
+		  }
+		}
+	  },
+	  "minecraft:ranged_vained_time": {
+	    "minecraft:variant": {
+		  "value": 5
+		},
+		"minecraft:movement": {
+		  "value": 0.00001
+		},
+	    "minecraft:collision_box": {
+		  "width": 0.6,
+		  "height": 1.8
+	    },
+		"minecraft:shooter": {
+		  "def": "raigen:vained_time_projectile"
+		},
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+            "max_dist": 64
+          },
+          "must_see": false
+        },
+		"minecraft:behavior.ranged_attack": {
+		  "priority": 1,
+		  "attack_interval_min": 5,
+          "attack_interval_max": 5,
+          "attack_radius": 64
+        },
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 20.0, 25.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_melee_roster"
+		  }
+		}
+	  },
+	  "minecraft:ranged_moth_mother": {
+	    "minecraft:variant": {
+		  "value": 6
+		},
+		"minecraft:movement": {
+		  "value": 0.00001
+		},
+	    "minecraft:collision_box": {
+		  "width": 0.6,
+		  "height": 1.8
+	    },
+		"minecraft:shooter": {
+		  "def": "raigen:moth_mother_projectile"
+		},
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+            "max_dist": 64
+          },
+          "must_see": false
+        },
+		"minecraft:behavior.ranged_attack": {
+		  "priority": 1,
+		  "attack_interval_min": 5,
+          "attack_interval_max": 5,
+          "attack_radius": 64
+        },
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 20.0, 25.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_melee_roster"
+		  }
+		}
+	  },
+	  "minecraft:ranged_blitzir": {
+	    "minecraft:variant": {
+		  "value": 7
+		},
+		"minecraft:movement": {
+		  "value": 0.0000001
+		},
+	    "minecraft:collision_box": {
+		  "width": 0.0001,
+		  "height": 10.0
+	    },
+        "minecraft:shooter": {
+          "type": "largefireball",
+          "def": "minecraft:fireball"
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+            "max_dist": 64
+          },
+          "must_see": false
+        },
+		"minecraft:behavior.ranged_attack": {
+		  "priority": 1,
+		  "attack_interval_min": 1,
+          "attack_interval_max": 2,
+          "charge_charged_trigger": 0.0,
+          "charge_shoot_trigger": 2.0,
+          "attack_radius": 64,
+          "burst_shots": 10,
+          "burst_interval": 0.1
+        },
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 20.0, 25.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_melee_roster"
+		  }
+		}
+	  },
+	  "minecraft:ranged_gravitite": {
+	    "minecraft:variant": {
+		  "value": 8
+		},
+		"minecraft:movement": {
+		  "value": 0.0001
+		},
+	    "minecraft:collision_box": {
+		  "width": 0.6,
+		  "height": 1.8
+	    },
+        "minecraft:shooter": {
+          "def": "raigen:gravitite_projectile"
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+            "max_dist": 64
+          },
+          "must_see": false
+        },
+		"minecraft:behavior.ranged_attack": {
+		  "priority": 1,
+		  "attack_interval_min": 5,
+          "attack_interval_max": 5,
+          "attack_radius": 64
+        },
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 20.0, 25.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_melee_roster"
+		  }
+		}
+	  },
+	  "minecraft:ranged_flame": {
+	    "minecraft:variant": {
+		  "value": 9
+		},
+		"minecraft:movement": {
+		  "value": 0.00001
+		},
+	    "minecraft:collision_box": {
+		  "width": 0.6,
+		  "height": 1.98
+	    },
+        "minecraft:shooter": {
+          "def": "raigen:flame_projectile"
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+            "max_dist": 64
+          },
+          "must_see": false
+        },
+		"minecraft:behavior.ranged_attack": {
+		  "priority": 1,
+		  "attack_interval_min": 1,
+          "attack_interval_max": 2,
+          "charge_charged_trigger": 0.0,
+          "charge_shoot_trigger": 4.0,
+          "attack_radius": 64,
+          "burst_shots": 50,
+          "burst_interval": 0.001
+        },
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 10.0, 15.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_melee_roster"
+		  }
+		}
+	  },
+	  "minecraft:ranged_flare": {
+	    "minecraft:variant": {
+		  "value": 10
+		},
+		"minecraft:movement": {
+		  "value": 0.00001
+		},
+	    "minecraft:collision_box": {
+		  "width": 0.6,
+		  "height": 1.98
+	    },
+        "minecraft:shooter": {
+          "def": "raigen:flare_projectile"
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+            "max_dist": 64
+          },
+          "must_see": false
+        },
+		"minecraft:behavior.ranged_attack": {
+		  "priority": 1,
+		  "attack_interval_min": 5,
+          "attack_interval_max": 5,
+          "attack_radius": 64
+        },
+		"minecraft:timer": {
+		  "looping": false,
+		  "randomInterval": true,
+		  "time": [ 20.0, 25.0 ],
+		  "time_down_event": {
+		    "event": "minecraft:event_melee_roster"
+		  }
+		}
+	  }
+	},
+	
+    "components": {
+      "minecraft:fire_immune": true,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:type_family": {
+        "family": [ "monster" ]
+      },
+	  "minecraft:knockback_resistance": {
+	    "value": 1.0
+	  },
+      "minecraft:health": {
+        "value": 2000
+      },
+      "minecraft:fall_damage": {
+        "value": 0.0
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:navigation.walk": {
+        "can_float": false,
+		"is_amphibious": true,
+		"can_path_over_water": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:nameable": {},
+      "minecraft:balloonable": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 4,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+	  "minecraft:physics": {
+      }
+    },
+	
+	"events": {
+	  "minecraft:entity_spawned": {
+	    "sequence": [
+		  {
+            "randomize": [
+              {
+                "weight": 1,
+                "sequence": [
+                  {
+                    "randomize": [
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:melee_levitation" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:melee_wither" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ranged_common" ] }
+                      },
+                      {
+                        "weight": 80,
+                        "add": { "component_groups": [ "minecraft:ranged_rare" ] }
+                      },
+                      {
+                        "weight": 50,
+                        "add": { "component_groups": [ "minecraft:ranged_legendary" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ranged_vained_time" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ranged_moth_mother" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ranged_blitzir" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ranged_gravitite" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ranged_flame" ] }
+                      },
+                      {
+                        "weight": 50,
+                        "add": { "component_groups": [ "minecraft:ranged_flare" ] }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+	  "minecraft:event_ranged_roster": {
+	    "sequence": [
+		  {
+            "randomize": [
+              {
+                "weight": 1,
+                "sequence": [
+                  {
+                    "randomize": [
+                      {
+                        "weight": 50,
+                        "add": { "component_groups": [ "minecraft:ranged_common" ] },
+						"remove": { "component_groups": [ "minecraft:melee_levitation", "minecraft:melee_wither" ] }
+                      },
+                      {
+                        "weight": 30,
+                        "add": { "component_groups": [ "minecraft:ranged_rare" ] },
+						"remove": { "component_groups": [ "minecraft:melee_levitation", "minecraft:melee_wither" ] }
+                      },
+                      {
+                        "weight": 10,
+                        "add": { "component_groups": [ "minecraft:ranged_legendary" ] },
+						"remove": { "component_groups": [ "minecraft:melee_levitation", "minecraft:melee_wither" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ranged_vained_time" ] },
+						"remove": { "component_groups": [ "minecraft:melee_levitation", "minecraft:melee_wither" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ranged_moth_mother" ] },
+						"remove": { "component_groups": [ "minecraft:melee_levitation", "minecraft:melee_wither" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ranged_blitzir" ] },
+						"remove": { "component_groups": [ "minecraft:melee_levitation", "minecraft:melee_wither" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ranged_gravitite" ] },
+						"remove": { "component_groups": [ "minecraft:melee_levitation", "minecraft:melee_wither" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ranged_flame" ] },
+						"remove": { "component_groups": [ "minecraft:melee_levitation", "minecraft:melee_wither" ] }
+                      },
+                      {
+                        "weight": 50,
+                        "add": { "component_groups": [ "minecraft:ranged_flare" ] },
+						"remove": { "component_groups": [ "minecraft:melee_levitation", "minecraft:melee_wither" ] }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+	  "minecraft:event_melee_roster": {
+	    "sequence": [
+		  {
+            "randomize": [
+              {
+                "weight": 1,
+                "sequence": [
+                  {
+                    "randomize": [
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:melee_levitation" ] },
+						"remove": {
+						  "component_groups": [
+						    "minecraft:ranged_common",
+							"minecraft:ranged_rare",
+							"minecraft:ranged_legendary",
+							"minecraft:ranged_vained_time",
+							"minecraft:ranged_moth_mother",
+							"minecraft:ranged_blitzir",
+							"minecraft:ranged_gravitite",
+							"minecraft:ranged_flame",
+							"minecraft:ranged_flare"
+						  ]
+						}
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:melee_wither" ] },
+						"remove": {
+						  "component_groups": [
+						    "minecraft:ranged_common",
+							"minecraft:ranged_rare",
+							"minecraft:ranged_legendary",
+							"minecraft:ranged_vained_time",
+							"minecraft:ranged_moth_mother",
+							"minecraft:ranged_blitzir",
+							"minecraft:ranged_gravitite",
+							"minecraft:ranged_flame",
+							"minecraft:ranged_flare"
+						  ]
+						}
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+	}
+  }
+}

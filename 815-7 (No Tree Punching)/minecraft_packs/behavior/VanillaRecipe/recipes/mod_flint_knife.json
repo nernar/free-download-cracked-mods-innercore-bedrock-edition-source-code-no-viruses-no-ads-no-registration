@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "vanilla_recipe:flint_knife"
+		},
+		"pattern": [
+			"+",
+			"|"
+		],
+		"key": {
+			"+": {
+				"item": "minecraft:item_flint_shard"
+			},
+			"|": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "minecraft:item_flint_knife"
+		},
+		"tags": [
+			"crafting_table"
+		]
+	}
+}

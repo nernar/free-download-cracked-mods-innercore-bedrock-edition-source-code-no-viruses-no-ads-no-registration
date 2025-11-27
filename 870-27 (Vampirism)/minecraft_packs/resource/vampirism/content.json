@@ -1,0 +1,16 @@
+{
+    "content": [
+        {
+            "path": "manifest.json"
+        },
+        {
+            "path": "textures/ui/blood_scale_0.png"
+        },
+        {
+            "path": "textures/ui/blood_scale_1.png"
+        },
+        {
+            "path": "textures/ui/blood_scale_2.png"
+        }
+    ]
+}

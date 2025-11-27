@@ -1,0 +1,47 @@
+{
+"format_version": "1.8.0",
+"minecraft:client_entity": {
+"description": {
+"identifier": "twilightforest:lich",
+"materials": {
+"default": "lich",
+"shield1": "lich_shield",
+"shield2": "lich_shield",
+"shield3": "lich_shield",
+"shield4": "lich_shield",
+"shield5": "lich_shield"
+},
+"geometry": {
+"default": "geometry.lich"
+},
+"textures": {
+"default": "textures/model/twilightlich64"
+},
+"particle_effects": {
+"thread": "twilightforest:lich_thread"
+},
+"spawn_egg": {
+"texture": "egg_lich"
+},
+"scripts": {
+"pre_animation": [
+"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+"variable.tcos1 = -variable.tcos0;"
+]
+},
+"animations": {
+"general": "animation.lich.general",
+"shield": "animation.lich.shield",
+"shake": "animation.lich.shake",
+"move": "animation.lich.move"
+},
+"animation_controllers": [
+{ "general": "controller.animation.lich.general" },
+{ "shield": "controller.animation.lich.shield" },
+{ "shake": "controller.animation.lich.shake" },
+{ "move": "controller.animation.lich.move" }
+],
+"render_controllers": [ "controller.render.lich" ]
+}
+}
+}

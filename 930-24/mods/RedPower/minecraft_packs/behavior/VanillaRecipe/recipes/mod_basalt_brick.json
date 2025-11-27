@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "vanilla_recipe:basalt_brick"
+		},
+		"pattern": [
+			"XX",
+			"XX"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:block_rp_basalt"
+			}
+		},
+		"result": {
+			"item": "minecraft:block_basalt_brick",
+			"data": 0,
+			"count": 4
+		},
+		"tags": [
+			"crafting_table"
+		]
+	}
+}

@@ -1,0 +1,106 @@
+{
+  "resource_pack_name": "Endermare",
+  "texture_name": "atlas.items",
+  "texture_data": {
+	"copper_pickaxe":
+    {
+      "textures":"textures/items/tools/copper_pickaxe.png"
+    },
+     "old_spider_eye":
+    {
+      "textures":"textures/items/food/old_spider_eye.png"
+    },
+     "tuft_of_wool_goat":
+    {
+      "textures":"textures/items/tuft_of_wool_goat.png"
+    },
+     "wither_bone":
+    {
+      "textures":"textures/items/wither_bone.png"
+    },
+     "stray_bone":
+    {
+      "textures":"textures/items/stray_bone.png"
+    },
+     "husk_flesh":
+    {
+      "textures":"textures/items/food/husk_flesh.png"
+    },
+     "drowned_flesh":
+    {
+      "textures":"textures/items/food/drowned_flesh.png"
+    },
+     "red_rose":
+    {
+      "textures":"textures/items/red_rose.png"
+    },
+    "turtle_chestplate" :
+    {
+      "textures" : "textures/items/armor/turtle_chestplate"
+    },
+    "goat_chestplate" :
+    {
+      "textures" : "textures/items/armor/goat_chestplate"
+    },
+    "goat_boots" :
+    {
+      "textures" : "textures/items/armor/goat_boots"
+    },
+    "viking_helmet" :
+    {
+      "textures" : "textures/items/armor/viking_helmet"
+    },
+    "copper_helmet" :
+    {
+      "textures" : "textures/items/armor/copper_helmet"
+    },
+    "copper_chestplate" :
+    {
+      "textures" : "textures/items/armor/copper_chestplate"
+    },
+	"old_spider_eye_fermented":
+    {
+"textures":"textures/items/food/old_spider_eye_fermented.png"
+    },
+	"meat_crab_raw":
+    {
+      "textures":"textures/items/food/meat_crab_raw.png"
+    },
+	"hoglin_raw":
+    {
+      "textures":"textures/items/food/hoglin_raw.png"
+    },
+	"hoglin_cooked":
+    {
+      "textures":"textures/items/food/hoglin_cooked.png"
+    },
+	"salt_potato_baked":
+    {
+      "textures":"textures/items/food/salt_potato_baked.png"
+    },
+	"meat_crab_cooked":
+    {
+      "textures":"textures/items/food/meat_crab_cooked.png"
+    },
+	"honey_bread":
+    {
+      "textures":"textures/items/food/honey_bread.png"
+    },
+	"salt_bread":
+    {
+      "textures":"textures/items/food/salt_bread.png"
+    },
+	"sweet_cookie":
+    {
+      "textures":"textures/items/food/sweet_cookie.png"
+    },
+	"glow_cookie":
+    {
+      "textures":"textures/items/food/glow_cookie.png"
+    },
+	"chorus_fruit_stew":
+    {
+      "textures":"textures/items/food/chorus_fruit_stew.png"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+      "description": {
+        "identifier": "bioplentia:shattered_taiga_surface_springs_feature",
+        "places_feature": "minecraft:legacy:springs_feature"
+      },
+      "conditions": {
+        "placement_pass": "surface_pass",
+        "minecraft:biome_filter": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "shattered_taiga"
+        }
+       ]
+      },
+      "distribution": {
+        "iterations": 10,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    }
+  }
+  

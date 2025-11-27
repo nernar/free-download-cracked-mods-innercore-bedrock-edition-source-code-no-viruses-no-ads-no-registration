@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.burned_skeleton.move" : {
+            "initial_state" : "default",
+            "states" : {
+                "default" : {
+                    "animations" : [
+                        {
+                            "move" : "query.modified_move_speed",
+                            "icon" : "query.modified_move_speed"
+                        },
+                        "look_at_target"
+                    ],
+                    "transitions" : [
+                        {
+                            "attack" : "variable.attack_time > 0"
+                        }
+                    ]
+                },
+                "attack" : {
+                    "animations" : [ "attack" ],
+                    "transitions" : [
+                        {
+                            "default" : "variable.attack_time == 0"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}  

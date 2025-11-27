@@ -1,0 +1,422 @@
+
+IDRegistry.genBlockID("deco_block");
+Block.createBlock("deco_block",[{name: "Deco Block", texture: [["Deco Block", 0]], inCreative: true} ]);
+Translation.addTranslation("Deco Block",{
+ru: "Декоративный-оловянный блок"
+})
+
+
+
+
+
+
+
+IDRegistry.genBlockID("deco_block_2");
+Block.createBlock("deco_block_2",[{name: "Deco Tin Block", texture: [["Deco Block Up", 0],["Deco Block Up", 0],["Deco Block Side", 0],["Deco Block Side", 0],["Deco Block Side", 0],["Deco Block Side", 0]], inCreative: true} ]);
+Translation.addTranslation("Deco Tin Block",{
+ru: "Украшенный декоративный-оловянный блок"
+})
+
+
+IDRegistry.genBlockID("brick");
+Block.createBlock("brick",[{name: "Dungeon Brick", texture: [["Brick", 0]], inCreative: true} ]);
+Translation.addTranslation("Dungeon Brick",{
+ru: "Крепостные кирпичи"
+})
+
+IDRegistry.genBlockID("dungeon_brick_venus_1");
+Block.createBlock("dungeon_brick_venus_1",[{name: "Dungeon Brick Venus 1", texture: [["Dungeon Brick Venus 1", 0]], inCreative: true} ]);
+Translation.addTranslation("Dungeon Brick Venus 1",{
+ru: "Венерианские кирпичи 1-го типа"
+})
+
+
+
+
+IDRegistry.genBlockID("dungeon_brick_venus_2");
+BlockRegistry.createBlock("dungeon_brick_venus_2",[{name: "Dungeon Brick Venus 2", texture: [["Dungeon Brick Venus 2", 0]], inCreative: true} ]);
+Translation.addTranslation("Dungeon Brick Venus 2",{
+ru: "Венерианские кирпичи 2-го типа"
+})
+
+
+
+
+IDRegistry.genBlockID("glowstone_torch_lit");
+Block.createBlock("glowstone_torch_lit",[{name: "Torch glowtite", texture: [["glowstone_torch", 0]], inCreative: true} ], TORCH_SPACESTYPE);
+Translation.addTranslation("Torch glowtite",{
+ru: "Светокаменный факел"
+})
+
+IDRegistry.genBlockID("torch_on_lit");
+Block.createBlock("torch_on_lit",[{name: "Torch Stone On", texture: [["unlit_torch_lit_stone", 0]], inCreative: true} ], TORCH_SPACETYPE);
+Translation.addTranslation("Torch Stone On",{
+ru: "Зажжённый каменный факел"
+})
+
+
+IDRegistry.genBlockID("torch_off_lit");
+Block.createBlock("torch_off_lit",[{name: "Torch stone off", texture: [["unlit_torch_stone", 0]], inCreative: true} ], TORCH_OFFSPACETYPE);
+Translation.addTranslation("Torch stone off",{
+ru: "Потухший каменный факел"
+})
+
+IDRegistry.genBlockID("torch_off_unlit");
+Block.createBlock("torch_off_unlit",[{name: "Torch off", texture: [["unlit_torch", 0]], inCreative: true} ], TORCH_OFFSPACETYPE);
+Translation.addTranslation("Torch off",{
+ru: "Потухший факел"
+})
+
+IDRegistry.genBlockID("spaces_web");
+Block.createBlock("spaces_web",[{name: "Spaces Web", texture: [["WebGalactical", 0]], inCreative: false} ], WEB);
+Translation.addTranslation("Spaces Web",{
+ru: "Галактическая Паутина"
+})
+
+IDRegistry.genItemID("galactic_web"); 
+Item.createItem("galactic_web", "Spaces Web", {name: "WebGalactical", meta: 0}, {stack: 64, inCreative:true});
+
+Block.registerDropFunction("spaces_web", function(coords, blockID){
+    return [[ItemID.galactic_web, 1, 0]] 
+});
+
+Item.registerUseFunction("galactic_web", function(coords, item, block, player){
+	var region = BlockSource.getDefaultForActor(player);
+        var place = coords.relative;
+region.setBlock(place.x, place.y, place.z,BlockID.spaces_web); 
+Entity.setCarriedItem(player, item.id, item.count - 1 , item.data);
+});
+
+IDRegistry.genBlockID("oxygen_tile");
+Block.createBlock("oxygen_tile",[{name: "Oxygen Tile", texture: [["Oxygentile 3", 0]], inCreative: true} ]);
+Translation.addTranslation("Oxygen Tile",{
+ru: "Кислородная обвивка"
+})
+
+
+
+IDRegistry.genBlockID("oxygen_tile_stairs");
+BlockRegistry.createStairs("oxygen_tile_stairs",[{name: "Oxygen Tile Stairs", texture: [["Oxygentile 3", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("Oxygen Tile Stairs",{
+ru: "Ступеньки из кислородной обвивки"
+})
+
+IDRegistry.genBlockID("asteroid_stones_stairs");
+BlockRegistry.createStairs("asteroid_stones_stairs",[{name: "Asteroid Stone Stairs", texture: [["asteroid0", 0]], inCreative: true} ],"oxygentile_stairs");
+
+IDRegistry.genBlockID("asteroid_stones_stairs_0");
+BlockRegistry.createStairs("asteroid_stones_stairs_0",[{name: "Asteroid Stone Stairs", texture: [["asteroid1", 0]], inCreative: true} ],"oxygentile_stairs");
+
+IDRegistry.genBlockID("asteroid_stones_stairs_1");
+BlockRegistry.createStairs("asteroid_stones_stairs_1",[{name: "Asteroid Stone Stairs", texture: [["asteroid2", 0]], inCreative: true} ],"oxygentile_stairs");
+
+Translation.addTranslation("Asteroid Stone Stairs",{
+ru: "Ступеньки из камня астероидов"
+})
+
+IDRegistry.genBlockID("deco_block_stairs");
+BlockRegistry.createStairs("deco_block_stairs",[{name: "Deco Block Stairs", texture: [["Deco Block", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("Deco Block Stairs",{
+ru: "Декоративно-оловяные ступени"
+})
+
+IDRegistry.genBlockID("deco_block_2_stairs");
+BlockRegistry.createStairs("deco_block_2_stairs",[{name: "Deco Tin Stairs", texture: [["Deco Block Up", 0],["Deco Block Up", 0],["Deco Block Side", 0],["Deco Block Side", 0],["Deco Block Side", 0],["Deco Block Side", 0]], inCreative: true} ],"oxygentile_stairs");
+Translation.addTranslation("Deco Tin Stairs",{
+ru: "Резные декоративно-оловяные ступени"
+})
+
+IDRegistry.genBlockID("bricks_stairs");
+BlockRegistry.createStairs("bricks_stairs",[{name: "Dungeon Brick Stairs", texture: [["Brick", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("Dungeon Brick Stairs",{
+ru: "Крепостно-кирпичные ступени"
+})
+
+IDRegistry.genBlockID("dungeon_brick_venus_1_stairs");
+BlockRegistry.createStairs("dungeon_brick_venus_1_stairs",[{name: "Dungeon Brick Venus 1 Stairs", texture: [["Dungeon Brick Venus 1", 0]], inCreative: true} ],"oxygentile_stairs");
+Translation.addTranslation("Dungeon Brick Venus 1 Stairs",{
+ru: "Венерианские ступеньки из кирпичей 1-го типа"
+})
+
+IDRegistry.genBlockID("dungeon_brick_venus_2_stairs");
+BlockRegistry.createStairs("dungeon_brick_venus_2_stairs",[{name: "Dungeon Brick Venus 2 Stairs", texture: [["Dungeon Brick Venus 2", 0]], inCreative: true} ],"oxygentile_stairs");
+Translation.addTranslation("Dungeon Brick Venus 1 Stairs",{
+ru: "Венерианские ступеньки из кирпичей 2-го типа"
+})
+
+IDRegistry.genBlockID("dungeon_brick_venus_1_stairs");
+BlockRegistry.createStairs("dungeon_brick_venus_1_stairs",[{name: "Dungeon Brick Venus 1 Stairs", texture: [["Dungeon Brick Venus 1", 0]], inCreative: true} ],"oxygentile_stairs");
+Translation.addTranslation("Dungeon Brick Venus 1 Stairs",{
+ru: "Ступеньки Венерианских кирпичей 1-го типа"
+})
+
+IDRegistry.genBlockID("dungeon_brick_venus_2_stairs");
+BlockRegistry.createStairs("dungeon_brick_venus_2_stairs",[{name: "Dungeon Brick Venus 2 Stairs", texture: [["Dungeon Brick Venus 2", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("Dungeon Brick Venus 2 Stairs",{
+ru: "Ступеньки Венерианских кирпичей 2-го типа"
+})
+
+IDRegistry.genBlockID("mars_stone_stairs_bottom");
+BlockRegistry.createStairs("mars_stone_stairs_bottom",[{name: "The Martian Bottom Stone Stairs", texture: [["Bottom Mars", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("The Martian Bottom Stone Stairs",{
+ru: "Ступеньки из глубинного марсианского камня"
+})
+
+IDRegistry.genBlockID("mars_stone_stairs_middle");
+BlockRegistry.createStairs("mars_stone_stairs_middle",[{name: "The Martian Middle Stone Stairs", texture: [["Middle Mars", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("The Martian Middle Stone Stairs",{
+ru: "Ступеньки из среднего марсианского камня"
+})
+
+IDRegistry.genBlockID("mars_stone_stairs_top");
+BlockRegistry.createStairs("mars_stone_stairs_top",[{name: "The Martian Top Stone Stairs", texture: [["Top Mars", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("The Martian Top Stone Stairs",{
+ru: "Ступеньки из верхнего марсианского камня"
+})
+
+IDRegistry.genBlockID("cobblestone_mars_stairs");
+BlockRegistry.createStairs("cobblestone_mars_stairs",[{name: "The Martian Cobblestone Stairs", texture: [["Cobblestone Mars", 0]], inCreative: true} ],"oxygentile_stairs");
+Translation.addTranslation("The Martian Cobblestone Stairs",{
+ru: "Ступеньки из марсианского булыжника"
+})
+
+IDRegistry.genBlockID("moon_top_side_stairs");
+BlockRegistry.createStairs("moon_top_side_stairs",[{name: "Lunar Top Side Stairs", texture: [["Top Side", 0],["Top", 0],["Top Side", 0],["Top", 0],["Top Side", 0],["Top Side", 0]], inCreative: true} ],"oxygentile_stairs");
+Translation.addTranslation("Lunar Top Side Stairs",{
+ru: "Ступеньки из лунного грунта"
+})
+
+IDRegistry.genBlockID("lunar_stone_stairs");
+BlockRegistry.createStairs("lunar_stone_stairs",[{name: "Lunar Stone Stairs", texture: [["Lunar Stone", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("Lunar Stone Stairs",{
+ru: "Лунно-каменные ступеньки"
+})
+
+IDRegistry.genBlockID("lunar_middle_stairs");
+BlockRegistry.createStairs("lunar_middle_stairs",[{name: "Lunar Dirt Stairs", texture: [["Middle", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("Lunar Dirt Stairs",{
+ru: "Ступеньки из лунной почвы"
+})
+
+IDRegistry.genBlockID("venus_rock_0_stairs");
+BlockRegistry.createStairs("venus_rock_0_stairs",[{name: "Venus Rock 0 Stairs", texture: [["Venus Rock 0", 0]], inCreative: true} ],"oxygentile_stairs");
+Translation.addTranslation("Venus Rock 0 Stairs",{
+ru: "Ступеньки из горячего венерианского камня"
+})
+
+IDRegistry.genBlockID("venus_rock_1_stairs");
+BlockRegistry.createStairs("venus_rock_1_stairs",[{name: "Venus Rock 1 Stairs", texture: [["Venus Rock 1", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("Venus Rock 1 Stairs",{
+ru: "Ступеньки из твёрдого венерианского камня"
+})
+
+IDRegistry.genBlockID("venus_rock_2_stairs");
+BlockRegistry.createStairs("venus_rock_2_stairs",[{name: "Venus Rock 2 Stairs", texture: [["Venus Rock 2", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("Venus Rock 2 Stairs",{
+ru: "Ступеньки из вулканического венерианского камня"
+})
+
+IDRegistry.genBlockID("vic_a1_stone_stairs");
+BlockRegistry.createStairs("vic_a1_stone_stairs",[{name: "Red Vic Stone Stairs", texture: [["Vic Stone", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("Red Vic Stone Stairs",{
+ru: "Красно-каменные ступеньки"
+});
+
+IDRegistry.genBlockID("marble_stairs_sc");
+BlockRegistry.createStairs("marble_stairs_sc",[{name: "Marble Stairs", texture: [["Mramor", 0]], inCreative: true} ],"oxygentile_stairs");
+Translation.addTranslation("Marble Stairs",{
+ru: "Ступеньки из мрамора"
+});
+
+IDRegistry.genBlockID("vic_a2_stone_stairs");
+BlockRegistry.createStairs("vic_a2_stone_stairs",[{name: "Tantros Stone Stairs", texture: [["Tantros Stone", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("Tantros Stone Stairs",{
+ru: "Ситеневые ступеньки"
+});
+
+IDRegistry.genBlockID("turao_planks_stairs");
+BlockRegistry.createStairs("turao_planks_stairs",[{name: "Turao Planks Stairs", texture: [["Turao_planks", 0]], inCreative: true} ], "oxygentile_stairs");
+Translation.addTranslation("Turao Planks Stairs",{
+ru: "Тураоумовые ступеньки"
+});
+
+IDRegistry.genBlockID("deco_block_fence");
+Block.createBlock("deco_block_fence",[{name: "Deco Block Fence", texture: [["Deco Block", 0]], inCreative: true} ], BLOCK_TYPE_FENCE);
+Translation.addTranslation("Deco Block Fence",{
+ru: "Декоротивно-оловяный забор"
+})
+
+IDRegistry.genBlockID("deco_block_2_fence");
+Block.createBlock("deco_block_2_fence",[{name: "Deco Tin Fence", texture: [["Deco Block Up", 0],["Deco Block Up", 0],["Deco Block Side", 0],["Deco Block Side", 0],["Deco Block Side", 0],["Deco Block Side", 0]], inCreative: true} ],BLOCK_TYPE_FENCE);
+Translation.addTranslation("Deco Tin Fence",{
+ru: "Резной декоративно-оловяный забор"
+})
+
+IDRegistry.genBlockID("mars_stone_fence");
+Block.createBlock("mars_stone_fence",[{name: "The Martian Stone Fence", texture: [["Cobblestone Mars", 0]], inCreative: true} ], BLOCK_TYPE_FENCE);
+Translation.addTranslation("The Martian Stone Fence",{
+ru: "Забор из марсианского камня"
+})
+
+IDRegistry.genBlockID("mars_bottom_cobblestone_fence");
+Block.createBlock("mars_bottom_cobblestone_fence",[{name: "The Martian Bottom Cobblestone Fence", texture: [["Bottom Mars", 0]], inCreative: true} ], BLOCK_TYPE_FENCE);
+Translation.addTranslation("The Martian Bottom Cobblestone Fence",{
+ru: "Забор из глубинного марсианского камня"
+})
+
+IDRegistry.genBlockID("mars_top_stone_fence");
+Block.createBlock("mars_top_stone_fence",[{name: "The Martian Top Cobblestone Fence", texture: [["Top Mars", 0]], inCreative: true} ], BLOCK_TYPE_FENCE);
+Translation.addTranslation("The Martian Top Cobblestone Fence",{
+ru: "Забор из верхнего марсианского камея"
+})
+
+IDRegistry.genBlockID("mars_middle_stone_fence");
+Block.createBlock("mars_middle_stone_fence",[{name: "The Martian Middle Cobblestone Fence", texture: [["Middle Mars", 0]], inCreative: true} ], BLOCK_TYPE_FENCE);
+Translation.addTranslation("The Martian Middle Cobblestone Fence",{
+ru: "Забор из среднего марсианского камня"
+})
+
+IDRegistry.genBlockID("vic_a1_stone_fence");
+Block.createBlock("vic_a1_stone_fence",[{name: "Red Vic Stone Fence", texture: [["Vic Stone", 0]], inCreative: true} ], BLOCK_TYPE_FENCE);
+Translation.addTranslation("Red Vic Stone Fence",{
+ru: "Красно-каменный забор"
+});
+
+IDRegistry.genBlockID("venus_rock_0_fence");
+Block.createBlock("venus_rock_0_fence",[{name: "Venus Rock 0 Fence", texture: [["Venus Rock 0", 0]], inCreative: true} ], BLOCK_TYPE_FENCE);
+Translation.addTranslation("Venus Rock 0 Fence",{
+ru: "Забор из горячего венерианского камня"
+})
+
+IDRegistry.genBlockID("venus_rock_1_fence");
+Block.createBlock("venus_rock_1_fence",[{name: "Venus Rock 1 Fence", texture: [["Venus Rock 1", 0]], inCreative: true} ], BLOCK_TYPE_FENCE);
+Translation.addTranslation("Venus Rock 1 Fence",{
+ru: "Забор из твёрдого венерианского камня"
+})
+
+IDRegistry.genBlockID("venus_rock_2_fence");
+Block.createBlock("venus_rock_2_fence",[{name: "Venus Rock 2 Fence", texture: [["Venus Rock 2", 0]], inCreative: true} ], BLOCK_TYPE_FENCE);
+Translation.addTranslation("Venus Rock 2 Fence",{
+ru: "Забор из вулканического венерианского камня"
+})
+
+IDRegistry.genBlockID("turao_planks_fence");
+Block.createBlock("turao_planks_fence",[{name: "Turao Planks Fence", texture: [["Turao_planks", 0]], inCreative: true} ], BLOCK_TYPE_FENCE);
+Translation.addTranslation("Turao Planks Fence",{
+ru: "Тураоумовый забор"
+});
+
+IDRegistry.genBlockID("vic_a2_stone_fence");
+Block.createBlock("vic_a2_stone_fence",[{name: "Tantros Stone Fence", texture: [["Tantros Stone", 0]], inCreative: true} ], BLOCK_TYPE_FENCE);
+Translation.addTranslation("Tantros Stone Fence",{
+ru: "Ситеневый забор"
+});
+
+
+
+
+
+
+
+IDRegistry.genBlockID("deco_block_slab");
+Block.createBlock("deco_block_slab",[{name: "Deco Block Slab", texture: [["Deco Block", 0]], inCreative: true} ]);
+Translation.addTranslation("Deco Block Slab",{
+ru: "Декоративный-оловянная плита"
+})
+
+TileRenderer.makeSlab(BlockID.deco_block_slab, BlockID.deco_block);
+
+IDRegistry.genBlockID("deco_block_2_slab");
+Block.createBlock("deco_block_2_slab",[{name: "Deco Tin Block Slab", texture: [["Deco Block Up", 0],["Deco Block Up", 0],["Deco Block Side", 0],["Deco Block Side", 0],["Deco Block Side", 0],["Deco Block Side", 0]], inCreative: true} ]);
+Translation.addTranslation("Deco Tin Block Slab",{
+ru: "Украшенная декоративно-оловянная плита"
+})
+
+TileRenderer.makeSlab(BlockID.deco_block_2_slab, BlockID.deco_block_2);
+
+IDRegistry.genBlockID("venus_rock_1_slab");
+Block.createBlock("venus_rock_1_slab",[{name: "Venus Rock 1 Slab", texture: [["Venus Rock 1", 0]], inCreative: true} ]);
+Translation.addTranslation("Venus Rock 1 Slab",{
+ru: "Плита из твёрдого венерианского камня"
+})
+
+TileRenderer.makeSlab(BlockID.venus_rock_1_slab, BlockID.venus_rock_1);
+
+TileRenderer.makeSlab(BlockID.venus_rock_0_slab, BlockID.venus_rock_0);
+
+IDRegistry.genBlockID("venus_rock_2_slab");
+Block.createBlock("venus_rock_2_slab",[{name: "Venus Rock 2 Slab", texture: [["Venus Rock 2", 0]], inCreative: true} ]);
+Translation.addTranslation("Venus Rock 2 Slab",{
+ru: "Плита из твёрдого венерианского камня"
+})
+
+TileRenderer.makeSlab(BlockID.venus_rock_2_slab, BlockID.venus_rock_2);
+
+IDRegistry.genBlockID("venus_rock_0_slab");
+Block.createBlockWithRotation("venus_rock_0_slab",[{name: "Venus Rock 0 Slab", texture: [["Venus Rock 0", 0],["Venus Rock 0", 0],["Venus Rock 0", 0],["Venus Rock 0", 0],["Venus Rock 0", 0],["Venus Rock 0", 0]], inCreative: true} ]);
+Translation.addTranslation("Venus Rock 0 Slab",{
+ru: "Плита из горячего венерианского камня"
+})
+
+TileRenderer.makeSlab(BlockID.venus_rock_0_slab, BlockID.venus_rock_0);
+
+IDRegistry.genBlockID("lunar_stone_slab");
+Block.createBlock("lunar_stone_slab",[{name: "Lunar Stone Slab", texture: [["Lunar Stone", 0]], inCreative: true} ]);
+Translation.addTranslation("Lunar Stone Slab",{
+ru: "Плита из лунного камня"
+})
+
+
+TileRenderer.makeSlab(BlockID.lunar_stone_slab, BlockID.lunar_stone);
+
+IDRegistry.genBlockID("lunar_middle_slab");
+Block.createBlock("lunar_middle_slab",[{name: "Lunar Dirt Slab", texture: [["Middle", 0]], inCreative: true} ]);
+Translation.addTranslation("Lunar Dirt Slab",{
+ru: "Плита из лунной почвы"
+})
+
+TileRenderer.makeSlab(BlockID.lunar_middle_slab, BlockID.lunar_middle);
+
+IDRegistry.genBlockID("moon_top_side_slab");
+Block.createBlock("moon_top_side_slab",[{name: "Lunar Top Side Slab", texture: [["Top Side", 0],["Top", 0],["Top Side", 0],["Top", 0],["Top Side", 0],["Top Side", 0]], inCreative: true} ]);
+Translation.addTranslation("Lunar Top Side Slab",{
+ru: "Плита из лунного грунта"
+})
+
+
+TileRenderer.makeSlab(BlockID.moon_top_side_slab, BlockID.moon_top_side);
+
+IDRegistry.genBlockID("cobblestone_mars_slab");
+Block.createBlock("cobblestone_mars_slab",[{name: "The Martian Cobblestone Slab", texture: [["Cobblestone Mars", 0],["Cobblestone Mars", 0],["Cobblestone Mars", 0],["Cobblestone Mars", 0],["Cobblestone Mars", 0],["Cobblestone Mars", 0]], inCreative: true} ]);
+Translation.addTranslation("The Martian Cobblestone Slab",{
+ru: "Плита из Марсианского булыжника"
+})
+
+TileRenderer.makeSlab(BlockID.cobblestone_mars_slab, BlockID.cobblestone_mars);
+
+IDRegistry.genBlockID("mars_middle_stone_slab");
+Block.createBlock("mars_middle_stone_slab",[{name: "The Martian Middle Stone Slab", texture: [["Middle Mars", 0]], inCreative: true} ]);
+Translation.addTranslation("The Martian Middle Stone Slab",{
+ru: "Плита из среднего марсианского камня"
+})
+
+TileRenderer.makeSlab(BlockID.mars_middle_stone_slab, BlockID.mars_middle_stone);
+
+
+IDRegistry.genBlockID("mars_bottom_stone_slab");
+Block.createBlock("mars_bottom_stone_slab",[{name: "The Martian Stone Bottom Slab", texture: [["Bottom Mars", 0]], inCreative: true} ]);
+Translation.addTranslation("The Martian Stone Bottom Slab",{
+ru: "Плита из глубинного марсианского камня"
+})
+
+TileRenderer.makeSlab(BlockID.mars_bottom_stone_slab, BlockID.mars_bottom_stone);
+
+
+IDRegistry.genBlockID("mars_top_stone_slab");
+Block.createBlock("mars_top_stone_slab",[{name: "The Martian Stone Top Slab", texture: [["Top Mars", 0]], inCreative: true} ]);
+Translation.addTranslation("The Martian Stone Top Slab",{
+ru: "Плита из поверхностного марсианского камня"
+})
+
+TileRenderer.makeSlab(BlockID.mars_top_stone_slab, BlockID.mars_top_stone);
+

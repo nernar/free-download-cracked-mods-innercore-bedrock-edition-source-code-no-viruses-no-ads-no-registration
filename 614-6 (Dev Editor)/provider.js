@@ -1,0 +1,2 @@
+Callback.invokeCallback("CoreEngineLoaded", this);
+

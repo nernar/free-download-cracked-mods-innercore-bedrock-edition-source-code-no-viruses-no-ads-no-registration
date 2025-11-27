@@ -1,0 +1,2 @@
+let ITileBound = new Interface();
+

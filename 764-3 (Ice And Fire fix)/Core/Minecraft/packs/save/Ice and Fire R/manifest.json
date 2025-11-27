@@ -1,0 +1,30 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "HuskVN",
+    "name": "Ice and Fire beta",
+    "uuid": "f6556c09-f174-453d-b9ef-9518790e1819",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "HuskVN",
+      "type": "resources",
+      "uuid": "5307a79d-c460-4c77-8d3f-a0ddeaf5a665",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

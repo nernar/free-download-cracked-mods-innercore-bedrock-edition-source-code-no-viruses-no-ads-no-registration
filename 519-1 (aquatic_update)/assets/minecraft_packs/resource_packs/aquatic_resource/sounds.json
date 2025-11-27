@@ -1,0 +1,252 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "lotr:atlantic_cod": {
+                "volume": 1.5,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "hurt": "mob.fish.hurt",
+                    "hurt.in.water": "mob.fish.hurt",
+                    "attack": "mob.fox.bite",
+                    "flop": {
+                        "sound": "mob.fish.flop",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "step": {
+                        "sound": "mob.fish.step",
+                        "volume": 0.15,
+                        "pitch": 1.0
+                    }
+                }
+            },
+            "lotr:blackfish": {
+                "volume": 1.5,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "hurt": "mob.fish.hurt",
+                    "hurt.in.water": "mob.fish.hurt",
+                    "attack": "mob.fox.bite",
+                    "flop": {
+                        "sound": "mob.fish.flop",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "step": {
+                        "sound": "mob.fish.step",
+                        "volume": 0.15,
+                        "pitch": 1.0
+                    }
+                }
+            },
+            "lotr:brown_trout": {
+                "volume": 1.5,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "hurt": "mob.fish.hurt",
+                    "hurt.in.water": "mob.fish.hurt",
+                    "attack": "mob.fox.bite",
+                    "flop": {
+                        "sound": "mob.fish.flop",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "step": {
+                        "sound": "mob.fish.step",
+                        "volume": 0.15,
+                        "pitch": 1.0
+                    }
+                }
+            },
+            "lotr:capitaine": {
+                "volume": 1.5,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "hurt": "mob.fish.hurt",
+                    "hurt.in.water": "mob.fish.hurt",
+                    "attack": "mob.fox.bite",
+                    "flop": {
+                        "sound": "mob.fish.flop",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "step": {
+                        "sound": "mob.fish.step",
+                        "volume": 0.15,
+                        "pitch": 1.0
+                    }
+                }
+            },
+            "lotr:carp": {
+                "volume": 1.5,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "hurt": "mob.fish.hurt",
+                    "hurt.in.water": "mob.fish.hurt",
+                    "attack": "mob.fox.bite",
+                    "flop": {
+                        "sound": "mob.fish.flop",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "step": {
+                        "sound": "mob.fish.step",
+                        "volume": 0.15,
+                        "pitch": 1.0
+                    }
+                }
+            },
+            "lotr:pink_salmon": {
+                "volume": 1.5,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "hurt": "mob.fish.hurt",
+                    "hurt.in.water": "mob.fish.hurt",
+                    "attack": "mob.fox.bite",
+                    "flop": {
+                        "sound": "mob.fish.flop",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "step": {
+                        "sound": "mob.fish.step",
+                        "volume": 0.15,
+                        "pitch": 1.0
+                    }
+                }
+            },
+            "lotr:red_grouper": {
+                "volume": 1.5,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "hurt": "mob.fish.hurt",
+                    "hurt.in.water": "mob.fish.hurt",
+                    "attack": "mob.fox.bite",
+                    "flop": {
+                        "sound": "mob.fish.flop",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "step": {
+                        "sound": "mob.fish.step",
+                        "volume": 0.15,
+                        "pitch": 1.0
+                    }
+                }
+            },
+            "lotr:shark": {
+                "volume": 1.5,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "hurt": "mob.fish.hurt",
+                    "hurt.in.water": "mob.fish.hurt",
+                    "attack": "mob.fox.bite",
+                    "flop": {
+                        "sound": "mob.fish.flop",
+                        "volume": 1.0,
+                        "pitch": 1.0
+                    },
+                    "step": {
+                        "sound": "mob.fish.step",
+                        "volume": 0.15,
+                        "pitch": 1.0
+                    }
+                }
+            },
+            "lotr:narval": {
+                "volume": 0.1,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "ambient": "mob.dolphin.idle",
+                    "hurt": "mob.dolphin.hurt",
+                    "death": "mob.dolphin.death",
+                    "breathe": "mob.dolphin.blowhole",
+                    "attack": "mob.dolphin.attack",
+                    "splash": "mob.dolphin.splash",
+                    "swim": "mob.dolphin.swim",
+                    "ambient.in.water": "mob.dolphin.idle_water",
+                    "hurt.in.water": "mob.dolphin.hurt",
+                    "death.in.water": "mob.dolphin.death",
+                    "jump": {
+                        "sound": "mob.dolphin.jump",
+                        "volume": 0.7,
+                        "pitch": 1.0
+                    }
+                }
+            },
+            "lotr:octopus": {
+                "volume": 0.4,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "ambient": "mob.squid.ambient",
+                    "hurt": "mob.squid.hurt",
+                    "death": "mob.squid.death"
+                }
+            },
+            "lotr:nautilus": {
+                "volume": 0.4,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "ambient": "mob.squid.ambient",
+                    "hurt": "mob.squid.hurt",
+                    "death": "mob.squid.death"
+                }
+            },
+            "lotr:water_slime": {
+                "volume": 1.0,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "ambient": "",
+                    "hurt": "mob.slime.small",
+                    "death": "mob.slime.small",
+                    "squish.big": {
+                        "sound": "mob.slime.big",
+                        "pitch": [ 0.64, 0.96 ]
+                    },
+                    "squish.small": {
+                        "sound": "mob.slime.small",
+                        "pitch": [ 0.64, 0.96 ]
+                    },
+                    "attack": {
+                        "sound": "mob.attack",
+                        "pitch": [ 0.8, 1.2 ]
+                    }
+                }
+            },
+            "lotr:drowned_villager": {
+                "volume": 1.0,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "ambient": "mob.drowned.say",
+                    "hurt": "mob.drowned.hurt",
+                    "death": "mob.drowned.death",
+                    "ambient.in.water": "mob.drowned.say_water",
+                    "hurt.in.water": "mob.drowned.hurt_water",
+                    "death.in.water": "mob.drowned.death_water",
+                    "step": "mob.drowned.step"
+                }
+            },
+            "lotr:manatees": {
+                "volume": 0.1,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "ambient": "mob.dolphin.idle",
+                    "hurt": "mob.dolphin.hurt",
+                    "death": "mob.dolphin.death",
+                    "breathe": "mob.dolphin.blowhole",
+                    "attack": "mob.dolphin.attack",
+                    "splash": "mob.dolphin.splash",
+                    "swim": "mob.dolphin.swim",
+                    "ambient.in.water": "mob.dolphin.idle_water",
+                    "hurt.in.water": "mob.dolphin.hurt",
+                    "death.in.water": "mob.dolphin.death",
+                    "jump": {
+                        "sound": "mob.dolphin.jump",
+                        "volume": 0.7,
+                        "pitch": 1.0
+                    }
+                }
+            }
+        }
+    }
+}

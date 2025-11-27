@@ -1,0 +1,170 @@
+//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bioplentia.entity.glow_squid",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6, -8, -6], "size": [12, 16, 12], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "bodyLayer",
+					"parent": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6, -8, -6], "size": [12, 16, 12], "inflate": 0.2, "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "tentacle1",
+					"parent": "body",
+					"pivot": [5, -7, 0],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [4, -25, -1], "size": [2, 18, 2], "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "tentacle1Layer",
+					"parent": "tentacle1",
+					"pivot": [5, -7, 0],
+					"cubes": [
+						{"origin": [4, -25, -1], "size": [2, 18, 2], "inflate": 0.2, "uv": [48, 32]}
+					]
+				},
+				{
+					"name": "tentacle2",
+					"parent": "body",
+					"pivot": [3.5, -7, 3.5],
+					"rotation": [0, 45, 0],
+					"cubes": [
+						{"origin": [2.5, -25, 2.5], "size": [2, 18, 2], "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "tentacle2Layer",
+					"parent": "tentacle2",
+					"pivot": [3.5, -7, 3.5],
+					"cubes": [
+						{"origin": [2.5, -25, 2.5], "size": [2, 18, 2], "inflate": 0.2, "uv": [48, 32]}
+					]
+				},
+				{
+					"name": "tentacle3",
+					"parent": "body",
+					"pivot": [0, -7, 5],
+					"cubes": [
+						{"origin": [-1, -25, 4], "size": [2, 18, 2], "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "tentacle3Layer",
+					"parent": "tentacle3",
+					"pivot": [0, -7, 5],
+					"cubes": [
+						{"origin": [-1, -25, 4], "size": [2, 18, 2], "inflate": 0.2, "uv": [48, 32]}
+					]
+				},
+				{
+					"name": "tentacle4",
+					"parent": "body",
+					"pivot": [-3.5, -7, 3.5],
+					"rotation": [0, -45, 0],
+					"cubes": [
+						{"origin": [-4.5, -25, 2.5], "size": [2, 18, 2], "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "tentacle4Layer",
+					"parent": "tentacle4",
+					"pivot": [-3.5, -7, 3.5],
+					"cubes": [
+						{"origin": [-4.5, -25, 2.5], "size": [2, 18, 2], "inflate": 0.2, "uv": [48, 32]}
+					]
+				},
+				{
+					"name": "tentacle5",
+					"parent": "body",
+					"pivot": [-5, -7, 0],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{"origin": [-6, -25, -1], "size": [2, 18, 2], "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "tentacle5Layer",
+					"parent": "tentacle5",
+					"pivot": [-5, -7, 0],
+					"cubes": [
+						{"origin": [-6, -25, -1], "size": [2, 18, 2], "inflate": 0.2, "uv": [48, 32]}
+					]
+				},
+				{
+					"name": "tentacle6",
+					"parent": "body",
+					"pivot": [-3.5, -7, -3.5],
+					"rotation": [0, -135, 0],
+					"cubes": [
+						{"origin": [-4.5, -25, -4.5], "size": [2, 18, 2], "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "tentacle6Layer",
+					"parent": "tentacle6",
+					"pivot": [-3.5, -7, -3.5],
+					"cubes": [
+						{"origin": [-4.5, -25, -4.5], "size": [2, 18, 2], "inflate": 0.2, "uv": [48, 32]}
+					]
+				},
+				{
+					"name": "tentacle7",
+					"parent": "body",
+					"pivot": [0, -7, -5],
+					"rotation": [0, -180, 0],
+					"cubes": [
+						{"origin": [-1, -25, -6], "size": [2, 18, 2], "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "tentacle7Layer",
+					"parent": "tentacle7",
+					"pivot": [0, -7, -5],
+					"cubes": [
+						{"origin": [-1, -25, -6], "size": [2, 18, 2], "inflate": 0.2, "uv": [48, 32]}
+					]
+				},
+				{
+					"name": "tentacle8",
+					"parent": "body",
+					"pivot": [3.5, -7, -3.5],
+					"rotation": [0, -225, 0],
+					"cubes": [
+						{"origin": [2.5, -25, -4.5], "size": [2, 18, 2], "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "tentacle8Layer",
+					"parent": "tentacle8",
+					"pivot": [3.5, -7, -3.5],
+					"cubes": [
+						{"origin": [2.5, -25, -4.5], "size": [2, 18, 2], "inflate": 0.2, "uv": [48, 32]}
+					]
+				}
+			]
+		}
+	]
+}

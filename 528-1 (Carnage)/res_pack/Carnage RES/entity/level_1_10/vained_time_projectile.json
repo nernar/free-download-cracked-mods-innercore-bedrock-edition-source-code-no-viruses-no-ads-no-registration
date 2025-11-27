@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:vained_time_projectile",
+      "materials": {
+	    "default": "glow",
+	    "invisible": "glow_glass_blender"
+	  },
+      "textures": {
+        "default": "textures/level_1_10/projectiles/vained_time"
+      },
+      "geometry": {
+        "default": "geometry.vained_time_projectile"
+      },
+      "render_controllers": [ "controller.render.glow" ]
+    }
+  }
+}

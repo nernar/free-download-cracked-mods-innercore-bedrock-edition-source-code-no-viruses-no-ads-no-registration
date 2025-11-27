@@ -1,0 +1,7 @@
+NEW UPDATE (1.0.6)  (27/12/2021 || 17:19) 
+-build forge +(fire, ice, lightning)
+-dragon (ice, fire, lightning)
+-block sclae(blue, red, amythest, bronze, silver, copper, white, electric, green, gray, sapphire, black)
+-tools (myrmex, copper, silver)
+-armor(scale dragon, steel dragon)
+-charm

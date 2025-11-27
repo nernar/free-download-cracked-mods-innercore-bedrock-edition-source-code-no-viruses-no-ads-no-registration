@@ -1,0 +1,15 @@
+{
+	"enabled": true,
+	"search_mod_chest": true,
+	"radius": 6,
+	"skipped_tick": 20,
+	"explode": {
+		"power": 5,
+		"fire": true
+	},
+	"animation": {
+		"enabled": true,
+		"time": 120,
+		"value": 2000
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "ttigraas:custom/reinforced_anvil",
+  "textures": {
+    "all": "ttigraas:blocks/reinforced_anvil",
+    "particle": "ttigraas:blocks/reinforced_anvil",
+    "1": "ttigraas:blocks/reinforced_anvil"
+  }
+}

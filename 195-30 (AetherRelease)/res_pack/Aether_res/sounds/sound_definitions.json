@@ -1,0 +1,23 @@
+{
+    "mob.aechor_plant.attack": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/aerbunny/hurt1",
+                "volume": 0.22
+            },   
+            {
+                "name": "sonds/aerbunny/hurt2"
+            }
+        ]
+    },
+    "mob.aechor_plant.death": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/zombies/death",
+                "volume": 0.25
+            }
+        ]
+    }
+}

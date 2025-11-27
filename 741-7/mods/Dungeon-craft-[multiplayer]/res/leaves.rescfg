@@ -1,0 +1,8 @@
+{
+    "better-foliage": {
+        "leaves": [
+            {"texture": "terrain-atlas/рай/Foliage_0"},
+            {"texture": "terrain-atlas/рай/deadFoliage_0"}
+        ]
+    }
+}

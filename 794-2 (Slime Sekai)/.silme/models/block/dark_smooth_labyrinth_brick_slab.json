@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "ttigraas:blocks/darksmoothlaby",
+    "top": "ttigraas:blocks/darksmoothlaby",
+    "side": "ttigraas:blocks/darksmoothlaby"
+  }
+}

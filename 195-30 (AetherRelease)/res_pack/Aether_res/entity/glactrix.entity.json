@@ -1,0 +1,34 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aether:glactrix",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/glactrix/glactrix",
+        "armor": "textures/entity/glactrix/glactrix_crystals"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.glactrix.move"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.glactrix.general" }  
+      ],
+      "geometry": {
+        "default": "geometry.glactrix",
+        "armor": "geometry.glactrix_spikes"
+      },
+      "render_controllers": [
+        "controller.render.glactrix",
+        "controller.render.glactrix_spikes"
+      ],
+       "spawn_egg": {
+        "overlay_color": "#750130",
+        "base_color": "#255250205"
+      }
+    }
+  }
+}

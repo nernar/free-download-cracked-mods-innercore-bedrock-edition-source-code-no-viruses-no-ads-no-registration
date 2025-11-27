@@ -1,0 +1,34 @@
+{
+  "folders": {
+    "resource_packs": {
+      "folders": {
+        "resource_packs/textures": {
+          "folders": {
+            "resource_packs/textures/ui": {
+              "folders": {},
+              "files": [
+                "resource_packs/textures/ui/hunger_background.png",
+                "resource_packs/textures/ui/hunger_blink.png",
+                "resource_packs/textures/ui/hunger_effect_background.png",
+                "resource_packs/textures/ui/hunger_effect_flash_full.png",
+                "resource_packs/textures/ui/hunger_effect_flash_half.png",
+                "resource_packs/textures/ui/hunger_effect_full.png",
+                "resource_packs/textures/ui/hunger_effect_half.png",
+                "resource_packs/textures/ui/hunger_effect.png",
+                "resource_packs/textures/ui/hunger_flash_full.png",
+                "resource_packs/textures/ui/hunger_flash_half.png",
+                "resource_packs/textures/ui/hunger_full.png",
+                "resource_packs/textures/ui/hunger_half.png"
+              ]
+            }
+          },
+          "files": []
+        }
+      },
+      "files": []
+    }
+  },
+  "files": [],
+  "__parent__": "/storage/emulated/0/games/horizon/packs/Nova pasta/vanilla_extras",
+  "__parent_slash__": "/storage/emulated/0/games/horizon/packs/Nova pasta/vanilla_extras/"
+}

@@ -1,0 +1,25 @@
+{
+"format_version": "1.10.0",
+"minecraft:client_entity": {
+"description": {
+"identifier": "twilightforest:firefly",
+"materials": {
+"default": "firefly"
+},
+"geometry": {
+"default": "geometry.firefly"
+},
+"textures": {
+"default": "textures/model/firefly-tiny"
+},
+"spawn_egg": {
+"texture": "egg_firefly"
+},
+"scripts": {
+"scale": "0.5"
+},
+"render_controllers": [ "controller.render.firefly" ]
+}
+/*此处做销毁*/
+}
+}

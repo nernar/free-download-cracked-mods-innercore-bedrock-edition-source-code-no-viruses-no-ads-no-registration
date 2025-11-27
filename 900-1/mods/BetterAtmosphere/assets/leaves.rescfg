@@ -1,0 +1,13 @@
+{
+    "better-foliage": {
+        "leaves": [
+            {"texture": "terrain-atlas/maple_leaves_0.png"},
+            {"texture": "terrain-atlas/maple_leaves_autumn_0.png"},
+            {"texture": "terrain-atlas/maple_leaves_red_0.png"},
+            {"texture": "terrain-atlas/maple_leaves_whinter_0.png"},   
+            {"texture": "terrain-atlas/maple_leaves_yellow.png"},
+            {"texture": "terrain-atlas/poisoned_berry_leaves_0.png"},
+            {"texture": "terrain-atlas/poisoned_berry_leaves_e_0.png"}
+        ]
+    }
+}

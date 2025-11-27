@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "Model By Husk Vn by XD HMDT",
+    "name": "Dragon Test",
+    "uuid": "3d07af73-d888-44f9-8ec0-79e7578f28b3",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Model By Husk Vn by XD HMDT",
+      "type": "resources",
+      "uuid": "d142b19a-d8f7-43c4-9112-b61529d3dafb",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "fe01193a-227d-415f-89bf-57dbce24a744",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

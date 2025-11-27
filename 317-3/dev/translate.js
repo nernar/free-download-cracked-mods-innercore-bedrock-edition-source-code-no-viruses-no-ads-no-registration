@@ -1,0 +1,23 @@
+Translation.addTranslation("Wichitum gem", {ru: "Вичитум"});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,309 @@
+[
+	[],
+	[
+		{
+			"type": "function",
+			"args": [
+				"Update pre-release 1.6",
+				"ru",
+				"translation"
+			],
+			"value": "Обновление pre-release 1.6"
+		},
+		{
+			"type": "function",
+			"args": [
+				"title"
+			],
+			"value": "Update pre-release 1.6"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- The AdventurePlusR addon has been removed",
+				"ru",
+				"translation"
+			],
+			"value": "- Удален аддон AdventurePlusR"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- The AdventurePlusR addon has been removed"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- The AvatiaBE mod has been removed",
+				"ru",
+				"translation"
+			],
+			"value": "- Удален мод AvatiaBE"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- The AvatiaBE mod has been removed"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- The KernelExtension mod has been removed",
+				"ru",
+				"translation"
+			],
+			"value": "- Удалён мод KernelExtension"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- The KernelExtension mod has been removed"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- The AppleSkinBE mod has been removed",
+				"ru",
+				"translation"
+			],
+			"value": "- Удален мод AppleSkinBE"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- The AppleSkinBE mod has been removed"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Removed the Clumps mod",
+				"ru",
+				"translation"
+			],
+			"value": "- Удален мод Clumps"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Removed the Clumps mod"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Fixed 2 bugs when connecting to other players",
+				"ru",
+				"translation"
+			],
+			"value": "- Исправлено 2 ошибки при подключении к другим игрокам"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Fixed 2 bugs when connecting to other players"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Fixed the overlap of one quest",
+				"ru",
+				"translation"
+			],
+			"value": "- Исправлено наложение одного квеста"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Fixed the overlap of one quest"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Updated mod Industrial craft 2",
+				"ru",
+				"translation"
+			],
+			"value": "- Обновлен мод Industrial craft 2"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Updated mod Industrial craft 2"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Updated the ClassicUI mod",
+				"ru",
+				"translation"
+			],
+			"value": "- Обновлен мод ClassicUI"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Updated the ClassicUI mod"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Updated the Nuclear Reactor mod",
+				"ru",
+				"translation"
+			],
+			"value": "- Обновлен мод Nuclear Reactor"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Updated the Nuclear Reactor mod"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Fixed Extra Disk on b116",
+				"ru",
+				"translation"
+			],
+			"value": "- Исправлен Extra Disk на b116"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Fixed Extra Disk on b116"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Updated the Storage Drawers mod",
+				"ru",
+				"translation"
+			],
+			"value": "- Обновлен мод Storage Drawers"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Updated the Storage Drawers mod"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Updated Bonsai pots mod",
+				"ru",
+				"translation"
+			],
+			"value": "- Обновлен мод Bonsai pots"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Updated Bonsai pots mod"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Removed the settings of Jei mobile",
+				"ru",
+				"translation"
+			],
+			"value": "- Удалены настройки Jei mobile"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Removed the settings of Jei mobile"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Updated the Wood model update",
+				"ru",
+				"translation"
+			],
+			"value": "- Обновлен мод Wood model update"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Updated the Wood model update"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Updated the Core utility mod",
+				"ru",
+				"translation"
+			],
+			"value": "- Обновлен мод Core utility"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Updated the Core utility mod"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Updated BuildCraft mod (taken from Zote Echoes)",
+				"ru",
+				"translation"
+			],
+			"value": "- Обновлен мод BuildCraft(взят из Zote Echoes)"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Updated BuildCraft mod (taken from Zote Echoes)"
+		},
+		{
+			"type": "function",
+			"args": [
+				"- Updated the FtbQuests mod",
+				"ru",
+				"translation"
+			],
+			"value": "- Обновлен мод FtbQuests"
+		},
+		{
+			"type": "function",
+			"args": [
+				"text"
+			],
+			"value": "- Updated the FtbQuests mod"
+		}
+	]
+]

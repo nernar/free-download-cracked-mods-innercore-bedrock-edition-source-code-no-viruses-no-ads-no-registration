@@ -1,0 +1,41 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.ghost.attack":{
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {"attack": "query.is_attached_to_entity == 1.0"}
+                    ]
+                },
+                "attack": {
+                    "animations": ["attack"],
+                    "transitions": [
+                        {"default":"query.is_attached_to_entity != 1.0"}
+                    ]
+                }
+            }
+        },
+        "controller.animation.ghost.default": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        {"move":"query.modified_move_speed == 0.0"}
+                    ]
+                }
+            }
+        },
+        "controller.animation.ghost.move":{
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "animations": [
+                        {"move":"query.modified_move_speed"}
+                    ]
+                }
+            }
+        }
+    }
+}

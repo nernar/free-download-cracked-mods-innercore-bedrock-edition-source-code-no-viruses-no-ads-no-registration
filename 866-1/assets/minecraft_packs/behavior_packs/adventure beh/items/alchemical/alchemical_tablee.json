@@ -1,0 +1,22 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "pili:alchemical_tablee",
+            "category": "nature"
+        },
+        "components": {
+            
+            "minecraft:block_placer": {
+                "block": "pili:alchemical_table"
+            },
+			"minecraft:icon": {
+                "texture": "alchemical_tablee"
+            },
+            "minecraft:render_offsets": "seeds",
+            "minecraft:display_name": {
+                "value": "alchemical table"
+            }
+        }
+    }
+}

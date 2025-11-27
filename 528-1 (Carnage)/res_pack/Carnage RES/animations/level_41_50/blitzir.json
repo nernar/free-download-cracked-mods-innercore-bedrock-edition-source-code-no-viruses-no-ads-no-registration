@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.blitzir.move": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "position": [ 0.0, "Math.cos(query.life_time * 343.774) * 1.6", 0.0 ]
+        },
+		"qr3verv": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, 9000000, 4000000]
+		  }
+		},
+		"etabbbfra": {
+          "rotation": {
+		    "0.1333": [ 0, 0, 0 ],
+			"20000.0": [ 0, -9000000, -4000000]
+		  }
+		}
+      }
+    }
+  }
+}

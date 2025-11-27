@@ -1,0 +1,2 @@
+let IManaNetwork = new Interface();
+

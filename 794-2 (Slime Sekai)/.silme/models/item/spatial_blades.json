@@ -1,0 +1,7 @@
+{
+  "parent": "ttigraas:custom/spatial_blade",
+  "textures": {
+    "0": "ttigraas:blocks/spacial_sword",
+    "particle": "ttigraas:items/magic_shard"
+  }
+}

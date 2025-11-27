@@ -1,0 +1,42 @@
+//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+    "format_version": "1.13.0",
+    "minecraft:biome": {
+      "description": {
+        "identifier": "coniferous_forest"
+      },
+      "components": {
+        "minecraft:climate": {
+          "downfall": 0.9,
+          "snow_accumulation": [ 0.0, 0.125 ],
+          "temperature": 0.3
+        },
+        "minecraft:overworld_height": {
+          "noise_type": "default"
+        },
+        "minecraft:surface_parameters": {
+          "sea_floor_depth": 7,
+          "sea_floor_material": "minecraft:gravel",
+          "foundation_material": "minecraft:stone",
+          "mid_material": "minecraft:dirt",
+          "top_material": "minecraft:grass",
+          "sea_material": "minecraft:water"
+        },
+        "minecraft:overworld_generation_rules": {
+          "hills_transformation": "coniferous_forest_hills",
+          "shore_transformation": "gravel_beach",
+          "generate_for_climates": [
+            [ "cold", 1 ]
+          ]
+        },
+  
+        "animal": {},
+        "monster": {},
+        "overworld": {},
+        "coniferous_forest": {}
+      }
+    }
+  }
+  

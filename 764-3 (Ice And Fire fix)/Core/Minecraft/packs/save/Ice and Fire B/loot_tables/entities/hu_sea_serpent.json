@@ -1,0 +1,25 @@
+{
+  "id": "1629897999521",
+  "name": "sea",
+  "pools": [
+    {
+      "rolls": 13,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "hu:sea_serpent_scale",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

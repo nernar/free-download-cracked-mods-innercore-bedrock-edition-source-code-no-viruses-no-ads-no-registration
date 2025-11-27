@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "enabled": {
+      "name": {
+        "en": "«Enable modification»",
+        "ru": "«Включить мод»"
+      }
+    },
+    "sun_size": {
+      "name": {
+        "en": "«Size of sun on Mercury»",
+        "ru": "«Размер солнца на Меркурие»"
+      },
+      "description": {
+        "en": "Size can be any, if is don't smaller than 100",
+        "ru": "Размер может быть любым, если он не меньше 100"
+      }
+    },
+    "sun_distance_x": {
+      "name": {
+        "en": "«Distance of the sun from the Player»",
+        "ru": "«Расстояние солнца от игрока»"
+      }
+    },
+    "sun_distance_y": {
+      "name": {
+        "en": "«Height of the sun in sky»",
+        "ru": "«Высота солнца в небе»"
+      }
+    }
+  }
+}

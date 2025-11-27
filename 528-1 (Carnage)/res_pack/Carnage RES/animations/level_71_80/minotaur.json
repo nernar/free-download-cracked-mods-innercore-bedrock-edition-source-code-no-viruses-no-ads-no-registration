@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.minotaur.move": {
+      "loop": true,
+      "bones": {
+        "cow_right_arm": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "cow_left_arm": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] },
+        "cow_left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "cow_right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] },
+        "right_arm": { "rotation": [ "variable.tcos1", 0.0, 0.0 ] },
+        "left_arm": { "rotation": [ "variable.tcos0", 0.0, 0.0 ] }
+      }
+    }
+  }
+}

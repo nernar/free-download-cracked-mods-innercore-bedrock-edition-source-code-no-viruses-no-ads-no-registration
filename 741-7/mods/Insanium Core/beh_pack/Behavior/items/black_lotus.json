@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "about:black_lotus",
+      "category": "Items"
+    },
+    
+    "components": {
+      "minecraft:icon": {
+        "texture": "black_lotus"
+      },
+      "minecraft:display_name": {
+        "value": "tile.about:black_lotus.name"
+      },
+      "minecraft:block_placer": {
+        "block": "about:black_lotus",
+        "use_block_description": true
+      }
+    }
+  }
+}

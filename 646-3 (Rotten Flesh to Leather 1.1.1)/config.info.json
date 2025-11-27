@@ -1,0 +1,37 @@
+{
+    "description": {
+"ru":"Настройки мода:",
+        "en":"Mod settings:",
+        "es":"Configuración de mod:",
+        "pt":"Configurações do mod:",
+        "zh":"模組設置:"
+    },
+ "properties": {
+        "enabled": {
+            "name": {
+                "en":"Enable mod",                   "ru":"Включить мод",
+                "es":"Habilitar mod",
+                "pt":"Habilitar mod",
+                "zh":"啟用模組"
+            },
+            "index": 0
+        },
+                        "message": {
+            "name": {
+                "en":"Game chat message",
+                "ru":"Сообщение в чате игры",
+                "es":"Mensaje de chat del juego",
+                "pt":"Mensagem de bate-papo do jogo",
+                "zh":"遊戲聊天消息"
+            },
+            "index": 1,
+            "description": {
+                "ru":"Если «true», то в чат игры будет отправлено сообщение о разработчике мода",
+                "en":"If «true», then a message about the developer of the mod will be sent to the game chat",
+                "es":"Si es «verdadero», se enviará un mensaje sobre el desarrollador del mod al chat del juego.",
+                "pt":"Se for «verdadeiro», uma mensagem sobre o desenvolvedor do mod será enviada para o bate-papo do jogo",
+                "zh":"如果為 “true”，則會向遊戲聊天發送有關該模組開發者的消息"
+        }
+        }
+ }
+}

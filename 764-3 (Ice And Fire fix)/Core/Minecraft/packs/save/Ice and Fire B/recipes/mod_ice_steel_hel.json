@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:ice_steel_hel"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "A#A",
+      "###"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_dragon_steel_ice_ingot",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "hu:icedragonsteelhelmet",
+      "count": 1
+    }
+  }
+}

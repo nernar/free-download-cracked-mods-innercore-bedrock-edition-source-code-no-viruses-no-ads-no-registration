@@ -1,0 +1,252 @@
+ShootLib.addGun({
+    id:"akm",
+    name:"AKM",
+    ammo:"ammo7_62",
+    accuracy:7,
+    recoil:5,
+    rate:5,
+    texture:{
+        name:"AKM",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.TOUCH,
+    bullet:{
+        speed:9,
+        count:40,
+        damage:9.8
+    },
+    fov:{
+        level:10
+    },
+    sounds:{
+        shot:"AKM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/MP44Reload.ogg"
+    }
+});
+
+ShootLib.addGun({
+    id:"beril",
+    name:"Beril",
+    ammo:"ammo7_62",
+    accuracy:8,
+    recoil:7,
+    rate:30,
+    texture:{
+        name:"beril",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.TOUCH,
+    bullet:{
+        speed:9,
+        count:40,
+        damage:9.4
+    },
+    fov:{
+        level:10
+    },
+    sounds:{
+        shot:"AKM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/MP44Reload.ogg"
+    }
+});
+
+ShootLib.addGun({
+    id:"qbz",
+    name:"QBZ",
+    ammo:"ammo5_56",
+    accuracy:6,
+    recoil:5,
+    rate:6,
+    texture:{
+        name:"qbz",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.TOUCH,
+    bullet:{
+        speed:9,
+        count:40,
+        damage:8.6
+    },
+    fov:{
+        level:10
+    },
+    sounds:{
+        shot:"AKM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/MP44Reload.ogg"
+    }
+});
+
+ShootLib.addGun({
+    id:"m16a4",
+    name:"M16A4",
+    ammo:"ammo5_56",
+    accuracy:6,
+    recoil:4,
+    rate:3,
+    texture:{
+        name:"m16a4",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.CLICK,
+    bullet:{
+        speed:9,
+        count:40,
+        damage:8.6
+    },
+    fov:{
+        level:10
+    },
+    sounds:{
+        shot:"AKM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/MP44Reload.ogg"
+    }
+});
+
+ShootLib.addGun({
+    id:"mk47",
+    name:"Mk47",
+    ammo:"ammo7_62",
+    accuracy:5,
+    recoil:6,
+    rate:5,
+    texture:{
+        name:"mk47",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.CLICK,
+    bullet:{
+        speed:9,
+        count:40,
+        damage:9.8
+    },
+    fov:{
+        level:60,
+        link:"crosshair/scope4x"
+    },
+    sounds:{
+        shot:"AKM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/MP44Reload.ogg"
+    }
+});
+
+ShootLib.addGun({
+    id:"g36c",
+    name:"G36C",
+    ammo:"ammo5_56",
+    accuracy:6,
+    recoil:4.5,
+    rate:6,
+    texture:{
+        name:"g36c",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.TOUCH,
+    bullet:{
+        speed:9,
+        count:40,
+        damage:8.3
+    },
+    fov:{
+        level:10
+    },
+    sounds:{
+        shot:"AKM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/MP44Reload.ogg"
+    }
+});
+
+ShootLib.addGun({
+    id:"aug",
+    name:"AUG",
+    ammo:"ammo5_56",
+    accuracy:8.3,
+    recoil:2,
+    rate:7.2,
+    texture:{
+        name:"aug",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.TOUCH,
+    bullet:{
+        speed:13.8,
+        count:40,
+        damage:16
+    },
+    fov:{
+        level:10
+    },
+    sounds:{
+        shot:"AKM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/MP44Reload.ogg"
+    }
+});
+
+ShootLib.addGun({
+    id:"groza",
+    name:"groza",
+    ammo:"ammo7_62",
+    accuracy:6,
+    recoil:3,
+    rate:10,
+    texture:{
+        name:"groza",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.TOUCH,
+    bullet:{
+        speed:11,
+        count:40,
+        damage:9.8
+    },
+    fov:{
+        level:10
+    },
+    sounds:{
+        shot:"AKM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/MP44Reload.ogg"
+    }
+});
+
+ShootLib.addGun({
+    id:"m416",
+    name:"M416",
+    ammo:"ammo5_56",
+    accuracy:7.5,
+    recoil:2.3,
+    rate:7.5,
+    texture:{
+        name:"M416",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.TOUCH,
+    bullet:{
+        speed:13,
+        count:40,
+        damage:8.6
+    },
+    fov:{
+        level:10
+    },
+    sounds:{
+        shot:"AKM.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"reload/MP44Reload.ogg"
+    }   
+});

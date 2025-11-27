@@ -1,0 +1,52 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pili:potion6"
+		},
+		"tags": [
+			"pili_craft"
+		],
+		"pattern": [
+			"abc",
+" d ",
+""
+		],
+		"key": {
+			"a": {
+				"item": "minecraft:potion",
+"data": 0
+},
+"b": {
+"item": "pili:alchemical_dust"
+},
+"c": {
+"item": "minecraft:apple"
+},
+"d": {
+"item": "minecraft:glistering_melon_slice"
+}
+		},
+		"result": {
+			"item": "minecraft:potion",
+"data": 28
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

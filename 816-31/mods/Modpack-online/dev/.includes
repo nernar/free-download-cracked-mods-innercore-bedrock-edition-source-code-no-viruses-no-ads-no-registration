@@ -1,0 +1,10 @@
+header.js 
+
+api/FileSystem.js
+api/TranslationManager.js
+api/ParserAPI.js
+api/PathManager.js
+api/ConfigAPI.js
+api/ModPackAPI.js
+
+shared.js

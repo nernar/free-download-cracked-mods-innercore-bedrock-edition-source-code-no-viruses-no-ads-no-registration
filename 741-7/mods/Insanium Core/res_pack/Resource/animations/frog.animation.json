@@ -1,0 +1,28 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.frog.walk": {
+			"animation_length": 0.4,
+			"bones": {
+				"body": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2": [0, 8, -0.9],
+						"0.4": [0, 0, -1.8]
+					}
+				}
+			},
+        	"loop" : true
+		},
+      "animation.frog.default": {
+			"bones": {
+		     "body": {
+					"position": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

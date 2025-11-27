@@ -1,0 +1,21 @@
+Eng: 
+if you want to add cutom EMC - just write that example bellow in to custom.json :
+ {
+   id: ItemID.ingotSilver,
+   data: 0,
+   emc: 512
+ },
+ id - ID of item (you can replace it with any other ID)
+ data - durability of item
+ emc - EMC value
+ 
+Ru:
+если вы хотите установить стоимость предмету собственноручно, просто скопируйте пример ниже:
+ {
+   id: ItemID.ingotSilver,
+   data: 0,
+   emc: 512
+ },
+ id - ID предмета (в нашем случае это серебряный слиток, вы можете заменить его на любой другой)
+ data - прочность
+ emc - EMC стоимость

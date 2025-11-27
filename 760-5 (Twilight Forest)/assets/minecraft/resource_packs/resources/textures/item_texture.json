@@ -1,0 +1,87 @@
+{
+"resource_pack_name": "vanilla",
+"texture_name": "atlas.items",
+"texture_data": {
+"egg_naga": {
+"textures": "textures/items/egg_naga"
+},
+"egg_lich": {
+"textures": "textures/items/egg_lich"
+},
+"egg_minoshroom": {
+"textures": "textures/items/egg_minoshroom"
+},
+"egg_urghast": {
+"textures": "textures/items/egg_urghast"
+},
+"egg_hydra": {
+"textures": "textures/items/egg_hydra"
+},
+"egg_bighornsheep": {
+"textures": "textures/items/egg_bighornsheep"
+},
+"egg_penguin": {
+"textures": "textures/items/egg_penguin"
+},
+"egg_wildboar": {
+"textures": "textures/items/egg_wildboar"
+},
+"egg_firefly": {
+"textures": "textures/items/egg_firefly"
+},
+"egg_minotaur": {
+"textures": "textures/items/egg_minotaur"
+},
+"egg_towergolem": {
+"textures": "textures/items/egg_towergolem"
+},
+"egg_firebeetle": {
+"textures": "textures/items/egg_firebeetle"
+},
+"egg_godzilla": {
+"textures": "textures/items/egg_godzilla"
+},
+"egg_cannon": {
+"textures": "textures/items/egg_cannon"
+},
+"egg_spongebob": {
+"textures": "textures/items/egg_spongebob"
+},
+"scepter_twilight": {
+"textures": "textures/items/ggghhh"
+},
+"scepter_lifedrain": {
+"textures": "textures/items/vvhhhh"
+},
+"scepter_zombie": {
+"textures": "textures/items/ggghh"
+},
+"scepter_shielding": {
+"textures": "textures/items/bhhh"
+},
+"fiery_blood": {
+"textures": "textures/items/hhhhh"
+},
+"hydra_chop": {
+"textures": "textures/items/hydra_chop"
+},
+"meef_raw": {
+"textures": "textures/items/meef_raw"
+},
+"meef_steak": {
+"textures": "textures/items/meef_steak"
+},
+"meef_stroganoff": {
+"textures": "textures/items/meef_stroganoff"
+},
+"venison_raw": {
+"textures": "textures/items/venison_raw"
+},
+"venison_cooked": {
+"textures": "textures/items/venison_cooked"
+},
+"Burgina": {
+"textures": "textures/items/Burgina"
+}
+}
+}

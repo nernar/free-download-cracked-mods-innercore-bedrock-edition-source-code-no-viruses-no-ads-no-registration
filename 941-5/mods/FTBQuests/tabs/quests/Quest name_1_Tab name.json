@@ -1,0 +1,34 @@
+{
+	"type": "quest",
+	"item": {
+		"id": "VanillaBlockID.diamond_ore",
+		"count": 1,
+		"data": 0
+	},
+	"identifier": "Quest name_1",
+	"name": "Quest name",
+	"x": 300,
+	"y": 150,
+	"size": 70,
+	"dialog": {
+		"input": [],
+		"output": [],
+		"give_item": true,
+		"title": "Quest name",
+		"description": "Quest description"
+	},
+	"description": "Quest description",
+	"give": [
+		{
+			"type": "recipe",
+			"items": [],
+			"block": {
+				"id": "VanillaBlockID.stone",
+				"data": 0
+			}
+		}
+	],
+	"lines": [
+		"Quest name"
+	]
+}

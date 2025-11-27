@@ -1,0 +1,85 @@
+{
+  "advancementComplete_image_animation": {
+    "anim_type": "flip_book",
+    "initial_uv": [ 0, 0 ],
+    "frame_count": 2,
+    "frame_step": 25,
+    "fps": 2,
+    "reversible": false,
+    "easing": "linear"
+  },
+  
+  "advancement_animation_in": {
+    "anim_type": "offset",
+    "easing": "out_cubic",
+    "duration": 1.0,
+    "from": [ 180, 0 ],
+    "to": [ 0, 0 ],
+    "next": "@hud.advancement_animation_stay"
+  },
+  
+  "advancement_animation_stay": {
+    "anim_type": "wait",
+    "duration": 5.0,
+    "next": "@hud.advancement_animation_out"
+  },
+  
+  "advancement_animation_out": {
+    "anim_type": "offset",
+    "easing": "out_cubic",
+    "duration": 1.0,
+    "from": [ 0, 0 ],
+    "to": [ 180, 0 ],
+    "destroy_at_end": "hud_actionbar_text"
+  },
+  
+  "hud_actionbar_text": {
+    "type": "image",
+    "size": [ "1%c + 180px", "1%c + 36px" ],
+    "offset": "@hud.advancement_animation_in",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "texture": "textures/ui/advancementBorder",
+    "alpha": 1.0,
+    "propagate_alpha": true,
+    "controls": [
+      {
+        "hud_advancement_image": {
+          "type": "image",
+          "texture": "textures/ui/advancementComplete",
+          "layer": 1,
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "offset": [ "4%", 0 ],
+          "uv": "@advancementComplete_image_animation",
+          "uv_size": [ 25, 24 ],
+          "disable_anim_fast_forward": true,
+          "size": [ 25, 24 ]
+        }
+      },
+      {
+        "hud_advancement_image": {
+          "type": "image",
+          "texture": "('textures/' + $actionbar_text)",
+          "layer": 1,
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "offset": [ "4%", 0 ],
+          "size": [ 25, 24 ]
+        }
+      },
+      {
+        "actionbar_message": {
+          "type": "label",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "offset": [ "4% + 29px", 0 ],
+          "color": "$tool_tip_text",
+          "layer": 1,
+          "text": "$actionbar_text",
+          "localize": false
+        }
+      }
+    ]
+  }
+}

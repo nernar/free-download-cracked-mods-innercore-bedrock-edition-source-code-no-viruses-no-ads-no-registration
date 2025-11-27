@@ -1,0 +1,21 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "entity:scp096": {
+        "volume": 1.0,
+        "pitch": [ 0.95, 1.05 ],
+        "events": {
+          "ambient": "mob.scp096.idle",
+          "hurt": "mob.scp096.hurt",
+		  "plop": "mob.scp096.rage",
+          "death": "mob.scp096.death",
+          "step": {
+            "sound": "",
+            "volume": 0.4,
+            "pitch": 1.0
+          }
+        }
+      }
+    }
+  }
+}

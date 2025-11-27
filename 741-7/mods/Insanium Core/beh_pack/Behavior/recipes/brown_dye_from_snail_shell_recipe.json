@@ -1,0 +1,23 @@
+//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+      "description": {
+      "identifier": "minecraft:brown_dye_from_snail_shell_recipe"
+      },    
+      "tags": [ "crafting_table" ],
+      "group": "brown_dye",
+      "ingredients": [
+        {
+          "item": "bioplentia:snail_shell"
+        }
+      ],
+      "result": {
+        "item": "minecraft:dye",
+        "data": 17
+      }
+    }
+  }
+  

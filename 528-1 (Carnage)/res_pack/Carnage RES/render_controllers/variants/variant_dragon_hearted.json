@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.variant_dragon_hearted": {
+	  "arrays": {
+	    "textures": {
+		  "Array.skins": [
+		    "Texture.human_mode",
+		    "Texture.dragon_mode"
+		  ]
+		}
+	  },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

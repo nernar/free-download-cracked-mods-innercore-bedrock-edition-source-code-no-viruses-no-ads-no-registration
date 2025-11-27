@@ -1,0 +1,130 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "pili:iron_spear",
+			"category": "equipment"
+		},
+		"components": { 
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "iron_spear"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+"minecraft:enchantable": {
+				"value": 30,
+				"slot": "sword"
+			},
+			"minecraft:durability": {
+				"max_durability": 257
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"pili:iron_spear",
+							"minecraft:iron_ingot"
+						],
+						"repair_amount": 500
+					}
+				]
+			},
+	"minecraft:damage": 0,
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "pili:iron_spears"
+				}
+			},
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:allow_off_hand": false,
+			"minecraft:foil": false,
+			"minecraft:render_offsets": "tools"
+		},
+		"events": {
+			"pili:iron_spears": {
+				"randomize": [
+{
+		"weight": 100, "swing": {},		
+		"sequence":[{
+"damage": {
+"type": "magic",
+"amount": 6, 
+"target":"other"
+				       }},{
+"damage": {"type": "magic","amount": 1}     
+			}]},
+{
+		"weight": 100, "swing": {},		
+		"sequence":[{
+"damage": {
+"type": "magic",
+"amount": 7, 
+"target":"other"
+				       }},{
+"damage": {"type": "magic","amount": 1}     
+			}]},
+{
+		"weight": 100, "swing": {},		
+		"sequence":[{
+"damage": {
+"type": "magic",
+"amount": 8, 
+"target":"other"
+				       }},{
+"damage": {"type": "magic","amount": 1}     
+			}]},
+{
+		"weight": 100, "swing": {},		
+		"sequence":[{
+"damage": {
+"type": "magic",
+"amount": 9, 
+"target":"other"
+				       }},{
+"damage": {"type": "magic","amount": 1}     
+			}]},
+{
+		"weight": 100, "swing": {},		
+		"sequence":[{
+"damage": {
+"type": "magic",
+"amount": 10, 
+"target":"other"
+				       }},{
+"damage": {"type": "magic","amount": 1}     
+			}]},
+
+
+{
+		"weight": 14, "swing": {},		
+		"sequence":[{
+"damage": {
+"type": "magic",
+"amount": 100, 
+"target":"other"
+				       }},{
+"damage": {"type": "magic","amount": 1}     
+			}]}
+
+
+
+
+
+]
+			},
+
+
+
+			"s": {
+				"damage": {
+					"type": "magic",
+					"amount": 1,
+					"target": "self"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"mob.living_fossil.hit": {
+		"category": "hostile",
+		"sounds": [
+			{
+				"name": "sounds/living_fossil/hit1",
+				"volume": 0.8
+			},
+			{
+				"name": "sounds/living_fossil/hit2",
+				"volume": 0.8
+			},
+			{
+				"name": "sounds/living_fossil/hit3",
+				"volume": 0.8
+			}
+		]
+	},
+	"mob.living_fossil.say": {
+		"category": "hostile",
+		"sounds": [
+			{
+				"name": "sounds/living_fossil/say",
+				"volume": 0.8
+			}
+		]
+	},
+	"mob.living_fossil.death": {
+		"category": "hostile",
+		"sounds": [
+			{
+				"name": "sounds/living_fossil/death1",
+				"volume": 0.8
+			},
+			{
+				"name": "sounds/living_fossil/death2",
+				"volume": 0.8
+			}
+		]
+	}
+}

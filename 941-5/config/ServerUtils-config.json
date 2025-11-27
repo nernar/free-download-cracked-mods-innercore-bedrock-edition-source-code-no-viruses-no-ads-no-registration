@@ -1,0 +1,30 @@
+{
+  "warp_default_counts":3,
+  "daily":{
+    "startMoney":0,
+    "daily_reward":50,
+    "enabled":true,
+    "quests_count":6
+  },
+  "world_border":{
+    "radius":6500,
+    "enabled":true
+  },
+  "global_permission":{
+    "ADDED_ITEM_FOR_AUCTION":true,
+    "CREATE_HOME":true,
+    "CREATE_WARP":true,
+    "SPAWN_COMMAND":true,
+    "USE_WARP":true,
+    "ACCESS_COMMAND":true,
+    "USE_AUCTION":true,
+    "USE_HOME":true,
+    "WORLD_RENDER_TEXT_COMMAND":false,
+    "REMOVE_WARP_NOT_OWNER":false,
+    "CONTROL_MONEY":false,
+    "REMOVE_WARP":true,
+    "CONTROL_PERMISSION":false,
+    "AUCTION_COMMAND":true
+  },
+  "enabled":true
+}

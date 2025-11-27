@@ -1,0 +1,22 @@
+{
+"format_version" : "1.10.0",
+"animation_controllers" : {
+"controller.animation.hydra.general" : {
+"initial_state" : "default",
+"states" : {
+"default" : {
+"animations" : [ "general" ]
+}
+}
+},
+"controller.animation.hydra.action" : {
+"initial_state" : "default",
+"states" : {
+"default" : {
+"animations" : [ "action" ]
+}
+}
+}
+/*此处做销毁*/
+}
+}

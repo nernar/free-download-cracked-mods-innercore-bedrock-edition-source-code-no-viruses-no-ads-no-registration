@@ -1,0 +1,30 @@
+{
+    "thaum_crucible_item:entity_alphatest_custom": {
+        "vertexShader": "./thaum_crucible_item.vertex",
+        "fragmentShader": "./thaum_crucible_item.fragment"
+    },
+
+    "thaum_crucible_water:entity_alphatest_custom": {
+        "vertexShader": "./thaum_crucible_water.vertex",
+        "fragmentShader": "./thaum_crucible_water.fragment",
+
+        "+states": [
+            "Blending",
+            "DisableCulling",
+            "DisableDepthWrite"
+        ],
+
+        "-defines": ["ALPHA_TEST"],
+        
+        "+samplerStates": [
+            {
+                "samplerIndex": 0,
+                "textureFilter": "Bilinear"
+            }
+        ]
+    },
+
+    "thaum_crucible_water_boiling:thaum_crucible_water": {
+        "+defines": ["BOIL"]
+    }
+}

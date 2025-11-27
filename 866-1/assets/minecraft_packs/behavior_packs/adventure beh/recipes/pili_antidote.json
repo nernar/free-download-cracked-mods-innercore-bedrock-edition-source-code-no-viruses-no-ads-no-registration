@@ -1,0 +1,35 @@
+{
+  "format_version": "1.16",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "pili:pili_antidote"
+    },
+
+    "tags": [ "pili_craft" ],
+    "pattern": [
+      " a ",
+      "bcd",
+      " f "
+    ],
+    "key": {
+      "a": {
+        "item": "minecraft:gunpowder"
+      },
+"b": {
+        "item": "minecraft:dye:1"
+      },
+"d": {
+        "item": "minecraft:coal:1"
+      },
+"f": {
+        "item": "minecraft:sugar"
+      },
+"c": {
+        "item": "minecraft:potion"
+      }
+},
+    "result": {
+      "item": "pili:pili_antidote"
+    }
+  }
+}

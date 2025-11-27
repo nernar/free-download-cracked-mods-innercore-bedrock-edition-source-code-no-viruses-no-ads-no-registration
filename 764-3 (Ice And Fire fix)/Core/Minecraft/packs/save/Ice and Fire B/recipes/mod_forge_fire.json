@@ -1,0 +1,38 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:forge_fire"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "GAG",
+      "AHA",
+      "GBG"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:block_dragon_forg_fire_brick",
+        "data": 0
+      },
+      "H": {
+      "item": "minecraft:item_fire_dragon_heart",
+      "data": 0
+      },
+      "G": {
+      "item": "minecraft:block_dragon_bone_block",
+      "data": 0
+      },
+      "B": {
+      "item": "minecraft:furnace",
+      "data": 0
+      }
+    },
+    "result": {
+      "item": "minecraft:block_dragon_forg_fire_core",
+      "count": 1
+    }
+  }
+}

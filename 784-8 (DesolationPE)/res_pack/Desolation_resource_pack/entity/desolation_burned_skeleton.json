@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "desolation:burned_skeleton",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/desolation_burned_skeleton"
+      },
+      "geometry": {
+        "default": "geometry.burned_skeleton"
+      },
+      "animations": {
+        "icon": "animation.burned_skeleton.heartbeating", 
+        "move": "animation.burned_skeleton.move",  
+        "attack": "animation.burned_skeleton.attack",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.burned_skeleton.move" }
+      ],
+      "render_controllers": [ "controller.render.default" ],
+       "spawn_egg": {
+        "overlay_color": "#12800",
+        "base_color": "#101013"
+      }
+    }
+  }
+}

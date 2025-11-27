@@ -1,0 +1,306 @@
+{
+"entity_sounds": {
+"entities": {
+"twilightforest:lich": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.blaze.breathe",
+"hurt": "mob.blaze.hit",
+"death": "mob.blaze.death",
+"shoot": "mob.blaze.shoot",
+"step": {
+"sound": "mob.blaze.breathe",
+"volume": 1.0,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:lich_zombie": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.blaze.breathe",
+"hurt": "mob.blaze.hit",
+"death": "mob.blaze.death",
+"shoot": "mob.blaze.shoot",
+"step": {
+"sound": "mob.blaze.breathe",
+"volume": 1.0,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:lich_golden": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.blaze.breathe",
+"hurt": "mob.blaze.hit",
+"death": "mob.blaze.death",
+"shoot": "mob.blaze.shoot",
+"step": {
+"sound": "mob.blaze.breathe",
+"volume": 1.0,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:lich_phantom": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.blaze.breathe",
+"hurt": "mob.blaze.hit",
+"death": "mob.blaze.death",
+"shoot": "mob.blaze.shoot",
+"step": {
+"sound": "mob.blaze.breathe",
+"volume": 1.0,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:lich_minion": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.zombie.say",
+"hurt": "mob.zombie.hurt",
+"death": "mob.zombie.death",
+"step": {
+"sound": "mob.zombie.step",
+"volume": 0.15,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:minotaur": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.cow.say",
+"hurt": "mob.cow.hurt",
+"death": "mob.cow.hurt",
+"step": {
+"sound": "mob.cow.step",
+"volume": 0.15,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:minoshroom": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.cow.say",
+"hurt": "mob.cow.hurt",
+"death": "mob.cow.hurt",
+"step": {
+"sound": "mob.cow.step",
+"volume": 0.15,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:hydra": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.hydra.roar",
+"hurt": "mob.hydra.hurt",
+"death": "mob.hydra.death",
+"shoot": "mob.blaze.shoot",
+"step": {
+"sound": "mob.hydra.roar",
+"volume": 1.0,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:naga": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.naga.hiss",
+"hurt": "mob.naga.hurt",
+"death": "mob.naga.rattle",
+"step": {
+"sound": "mob.naga.hiss",
+"volume": 1.0,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:naga_body": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.naga.hiss",
+"hurt": "mob.naga.hurt",
+"death": "mob.naga.rattle",
+"step": {
+"sound": "mob.naga.hiss",
+"volume": 1.0,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:bighorn_sheep": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.sheep.say",
+"hurt": "mob.sheep.say",
+"death": "mob.sheep.say",
+"step": {
+"sound": "mob.sheep.step",
+"volume": 0.15,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:penguin": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.chicken.say",
+"hurt": "mob.chicken.hurt",
+"death": "mob.chicken.hurt",
+"step": {
+"sound": "mob.chicken.step",
+"volume": 0.15,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:wild_boar": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.pig.say",
+"hurt": "mob.pig.say",
+"death": "mob.pig.death",
+"step": {
+"sound": "mob.pig.step",
+"volume": 0.15,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:firebeetle": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.spider.say",
+"hurt": "mob.spider.say",
+"death": "mob.spider.death",
+"shoot": "mob.blaze.shoot",
+"step": {
+"sound": "mob.spider.step",
+"volume": 1.0,
+"pitch": 1.0
+}
+}
+},
+"crisis:ancient_beast": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.vex.ambient",
+"hurt": "mob.skeleton.hurt",
+"death": "mob.vex.death",
+"shoot": "mob.blaze.shoot",
+"step": {
+"sound": "mob.cow.step",
+"volume": 1.0,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:godzilla": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.enderdragon.growl",
+"hurt": "mob.enderdragon.hit",
+"death": "mob.enderdragon.death",
+"shoot": "mob.blaze.shoot",
+"step": {
+"sound": "mob.enderdragon.flap",
+"volume": 1.0,
+"pitch": 1.0
+}
+}
+},
+"bikini:spongebob": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.villager.idle",
+"hurt": "mob.villager.hit",
+"death": "mob.villager.death",
+"death.to.zombie": "mob.villager.death",
+"haggle": "mob.villager.haggle",
+"haggle.yes": "mob.villager.yes",
+"haggle.no": "mob.villager.no"
+}
+},
+"fatzen:cannon": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.irongolem.say",
+"hurt": "mob.irongolem.hit",
+"death": "mob.irongolem.death",
+"shoot": "mob.blaze.shoot",
+"step": {
+"sound": "mob.irongolem.walk",
+"volume": 1.0,
+"pitch": 1.0
+},
+"throw": {
+"sound": "mob.irongolem.throw",
+"volume": 1.0,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:tower_golem": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"ambient": "mob.irongolem.say",
+"hurt": "mob.irongolem.hit",
+"death": "mob.irongolem.death",
+"step": {
+"sound": "mob.irongolem.walk",
+"volume": 1.0,
+"pitch": 1.0
+},
+"throw": {
+"sound": "mob.irongolem.throw",
+"volume": 1.0,
+"pitch": 1.0
+}
+}
+},
+"twilightforest:ur_ghast": {
+"volume": 1.0,
+"pitch": [ 0.8, 1.2 ],
+"events": {
+"scream": "mob.ghast.affectionate_scream",
+"warn": "mob.ghast.charge",
+"shoot": {
+"sound": "mob.ghast.fireball",
+"volume": 0.7
+},
+"ambient": "mob.ghast.moan",
+"hurt": "mob.ghast.scream",
+"death": "mob.ghast.death"
+}
+}
+/*此处做销毁*/
+}
+}
+}

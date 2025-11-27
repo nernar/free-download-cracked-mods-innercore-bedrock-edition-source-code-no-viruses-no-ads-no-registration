@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"geometry.time_charge": {
+		"texturewidth": 80,
+		"textureheight": 80,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 1,
+		"visible_bounds_offset": [0, 0.5, 0],
+		"bones": [
+			{
+				"name": "clock",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-10, 1, -10], "size": [20, 0, 20], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "arm",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-2.5, 1.5, -2], "size": [5, 0, 12], "uv": [0, 20]}
+				]
+			}
+		]
+	}
+}

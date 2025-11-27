@@ -1,0 +1,149 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "raigen:shroombit",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+	"component_groups": {
+	  "minecraft:scale_1": {
+	    "minecraft:scale": {
+		  "value": 0.6
+		},
+		"minecraft:movement": {
+		  "value": 0.29
+		}
+	  },
+	  "minecraft:scale_2": {
+	    "minecraft:scale": {
+		  "value": 0.8
+		},
+		"minecraft:movement": {
+		  "value": 0.28
+		}
+	  },
+	  "minecraft:scale_3": {
+	    "minecraft:scale": {
+		  "value": 1.0
+		},
+		"minecraft:movement": {
+		  "value": 0.26
+		}
+	  }
+	},
+	
+    "components": {
+      "minecraft:fire_immune": false,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:type_family": {
+        "family": [ "monster" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.8,
+        "height": 0.8
+      },
+      "minecraft:health": {
+        "value": 10,
+		"max": 10
+      },
+      "minecraft:behavior.leap_at_target": {
+        "priority": 4,
+        "yd": 0.4,
+        "must_be_on_ground": false
+      },
+      "minecraft:attack": {
+        "damage": 2,
+        "effect_name": "nausea",
+        "effect_duration": 10
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "track_target": true
+      },
+      "minecraft:behavior.move_towards_target": {
+        "priority": 1,
+        "speed_multiplier": 0.9,
+        "within_radius": 32
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+          "max_dist": 16
+        },
+        "must_see": true
+      },
+      "minecraft:navigation.walk": {
+        "can_float": true,
+		"is_amphibious": false,
+		"can_path_over_water": true,
+        "avoid_sun": true,
+        "avoid_water": false,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:nameable": {},
+      "minecraft:balloonable": {},
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 4,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+	  "minecraft:physics": {
+      }
+    },
+	
+	"events": {
+	  "minecraft:entity_spawned": {
+	    "sequence": [
+		  {
+            "randomize": [
+              {
+                "weight": 1,
+                "sequence": [
+                  {
+                    "randomize": [
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:scale_1" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:scale_2" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:scale_3" ] }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+	}
+  }
+}

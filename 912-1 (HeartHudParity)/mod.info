@@ -1,0 +1,7 @@
+{
+    "name": "Heart HUD Parity",
+    "author": "visualstudiodan",
+    "version": "1.0",
+    "description": "The mod that replaces the heart HUD, making it look exactly the same as in Minecraft: Java Edition",
+    "clientside": true
+}

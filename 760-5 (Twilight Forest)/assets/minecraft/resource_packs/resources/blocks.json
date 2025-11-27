@@ -1,0 +1,60 @@
+{
+"format_version": [ 1, 1, 0 ],
+"twilightforest:twilight_log0": {
+"textures": {
+"up": "oak_top",
+"down": "oak_top",
+"side": "oak_side"
+},
+"sound": "wood"
+},
+"twilightforest:twilight_log1": {
+"textures": {
+"up": "canopy_top",
+"down": "canopy_top",
+"side": "canopy_side"
+},
+"sound": "wood"
+},
+"twilightforest:twilight_log2": {
+"textures": {
+"up": "darkwood_top",
+"down": "darkwood_top",
+"side": "darkwood_side"
+},
+"sound": "wood"
+},
+"twilightforest:twilight_log3": {
+"textures": {
+"up": "mangrove_top",
+"down": "mangrove_top",
+"side": "mangrove_side"
+},
+"sound": "wood"
+},
+"twilightforest:twilight_portal": { 
+"blockshape": "water",
+"textures": "portal",
+"sound": "glass"
+},
+"twilightforest:blockofstorage0": { 
+"textures": "ironwood_block",
+"sound": "metal"
+},
+"twilightforest:blockofstorage1": { 
+"textures": "fiery_block",
+"sound": "metal"
+},
+"twilightforest:blockofstorage2": { 
+"textures": "steelleaf_block",
+"sound": "metal"
+},
+"twilightforest:blockofstorage3": { 
+"textures": "arctic_fur_block",
+"sound": "metal"
+},
+"twilightforest:blockofstorage4": { 
+"textures": "carminite_block",
+"sound": "metal"
+}
+}

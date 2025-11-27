@@ -1,0 +1,6 @@
+{
+	"name":"Improved Hoes",
+	"author":"ModCompany",
+	"version": "1.0 pre-Release",
+	"description": "ru:\nМод добавляет возможность вспахивать землю в определенном радиусе:\nДеревянная мотыга:1x1\nКаменная мотыга:3x3\nЗолотая мотыга:5х5\nЖелезная мотыга: 5х5\nАлмазная мотыга: 7x7 \n\nen:\nMod improve vanilla hoes: \nWooden Hoe: 1x1\nStone Hoe: 3x3\nGold Hoe: 5x5\nIron Hoe: 5x5\nDiamond Hoe: 7x7\n" 
+}

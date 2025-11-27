@@ -1,0 +1,12 @@
+translation.js
+
+TCRcore.js
+Enchants.js
+ToolTypes.js
+
+tools/swords.js
+tools/axes.js
+tools/pickaxes.js
+tools/shovels.js
+
+machines/saltfurnace.js

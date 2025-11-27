@@ -1,0 +1,1423 @@
+//Author - Alex Fack
+
+LIBRARY({
+	name: "ATAPI",
+	version: 1.0,
+	shared: false,
+	api: "CoreEngine",
+	dependencies: [
+	    "ToolType",
+	    "SoundAPI",
+	    //"Chemistry",
+	]
+})
+
+
+
+var _ 
+
+//alert(Config.genLargeOresEarth)
+
+var CTR = {tools:[],
+    Tool(api, field, result){
+    	var toolCount
+        var toolData
+        for (var i in field){
+            if (CTR.ToolID(field[i].id)){
+            	if(field[i].count == 1){
+                    field[i].data++;
+                   //Game.message(field[i].data);
+                   if (CTR.ToolData(field[i].data, field[i].id)){
+                       field[i].id = field[i].count = field[i].data = 0;
+                   }
+               }else{
+               	toolCount = field[i].count - 1 
+                   toolData = field[i].data
+                   field[i].count = 1
+                   field[i].data++;
+                   Player.addItemToInventory (field[i].id, toolCount, toolData)
+                   //Game.message(field[i].data);
+                   if (CTR.ToolData(field[i].data, field[i].id)){
+                       field[i].id = field[i].count = field[i].data = 0;
+                   }
+               }
+           }else{api.decreaseFieldSlot(i)}
+        }
+    },
+   ToolID(id){
+       for(var key in this.tools){
+            if(id== this.tools[key][0]){
+            	for(var keys in ATMat.hammers){	
+                	if(this.tools[key][0] == ATMat.hammers[keys].id){
+                	    PlaySoundFile("HammerUse.ogg")
+                    }
+                }
+                return (id == this.tools[key][0])
+           }
+       }
+    },
+    ToolData(data, id){
+        for(var key in this.tools){
+            if(data >= this.tools[key][1] && id== this.tools[key][0]){
+                //Game.message( this.tools[key][1]);
+                return (data == this.tools[key][1])
+            }
+        }
+    },
+    addTool(i, d){
+        this.tools.push([i, d]);
+        Item.setMaxDamage(i, d);
+    },
+RegisterHammer(name, data, lvl, lvl1){
+	var id = IDRegistry.genItemID(name+"Hammer");
+    Item.createItem(name+"Hammer", name+" Hammer", {name:name+"_hammer"}, {stack:1});
+    CTR.addTool(id, data)
+    ATMat.hammers.push({id:id, mat:name, s:'h', lvl:lvl})
+    var hammer = {durability:data, level: lvl1, efficiency:5, damage: 5, enchantability:0};
+    ToolAPI.setTool(id, hammer, ToolType.pickaxe);
+},
+	
+RegisterFile(name, data, lvl){
+	var id = IDRegistry.genItemID(name+"File");
+    Item.createItem((name)+"File", (name)+" File", {name:(name)+"_file"}, {stack:1});
+    CTR.addTool(id, data)
+    ATMat.files.push({id:id, mat:(name), s:'f', lvl:lvl})
+},
+
+RegisterMortar(name, data, lvl){
+	var id = IDRegistry.genItemID((name)+"Mortar");
+    Item.createItem((name)+"Mortar", (name)+" Mortar", {name:(name)+"_mortar"}, {stack:1});
+    CTR.addTool(id, data)
+    ATMat.mortars.push({id:id, mat:(name), s:'m', lvl:lvl})
+},
+
+RegisterCutter(name, data, lvl){
+	var id = IDRegistry.genItemID((name)+"Cutter");
+    Item.createItem((name)+"Cutter", (name)+" Cutter", {name:(name)+"_cutter"}, {stack:1});
+    CTR.addTool(id, data)
+    ATMat.cutters.push({id:id, mat:(name), s:'n', lvl:lvl})
+},
+RegisterWrench(name, data, lvl){
+	var id = IDRegistry.genItemID((name)+"Wrench");
+    Item.createItem((name)+"Wrench", (name)+" Wrench", {name:(name)+"_wrench"}, {stack:1});
+    CTR.addTool(id, data)
+    ATMat.wrenchs.push({id:id, mat:(name), s:'w', lvl:lvl})
+},
+RegisterScrewdriver(name, data, lvl){
+	var id = IDRegistry.genItemID((name)+"Screwdriver");
+    Item.createItem((name)+"Screwdriver", (name)+" Screwdriver", {name:(name)+"_screwdriver"}, {stack:1});
+    CTR.addTool(id, data)
+    ATMat.screwdrivers.push({id:id, mat:(name), s:'s', lvl:lvl})
+},
+RegisterKnife(name, data, lvl){
+	var id = IDRegistry.genItemID((name)+"Knife");
+    Item.createItem((name)+"Knife", (name)+" Knife", {name:(name)+"_knife"}, {stack:1});
+    CTR.addTool(id, data)
+    ATMat.knifes.push({id:id, mat:(name), s:'k', lvl:lvl})
+},
+RegisterSoldering(name, data, lvl){
+	var id = IDRegistry.genItemID((name)+"Soldering");
+    Item.createItem((name)+"Soldering", (name)+" Soldering", {name:(name)+"_soldering"}, {stack:1});
+    CTR.addTool(id, data)
+    ATMat.solderings.push({id:id, mat:(name), s:'l', lvl:lvl})
+},
+RegisterSaw(name, data, lvl){
+	var id = IDRegistry.genItemID((name)+"Saw");
+    Item.createItem((name)+"Saw", (name)+" Saw", {name:(name)+"_saw"}, {stack:1});
+    CTR.addTool(id, data)
+    ATMat.saws.push({id:id, mat:(name), s:'s', lvl:lvl})
+    var saw = {durability:data, level:5, efficiency:5, damage: 3, enchantability:0};
+    ToolAPI.setTool(id, saw, ToolType.axe);
+},
+RegisterToolsSet(name, data, lvl, lvl1){
+	this.RegisterHammer((name), data, lvl, lvl1)
+	this.RegisterFile((name), data, lvl)
+	this.RegisterMortar((name), data, lvl)
+	this.RegisterCutter((name), data, lvl)    
+	this.RegisterWrench((name), data, lvl)   
+	this.RegisterScrewdriver((name), data, lvl)    
+    this.RegisterKnife((name), data, lvl)    
+    this.RegisterSaw((name), data, lvl)
+}
+}
+
+Recipes.ReplaceWithShaped = function(item, newRecipe, transcript, tool){
+	Recipes.deleteRecipe(item)
+	Recipes.addShaped(item, newRecipe, transcript, tool);
+}
+
+Recipes.ReplaceWithShapeless = function(item, newRecipe, transcript, tool){
+	Recipes.deleteRecipe(item)
+	Recipes.addShapeless(item, newRecipe, tool);
+}
+
+let strongIfForTools = function(lvl, i){
+	let gg = null
+	for(var a = 0; a<i; a++){
+		if(gg==null){
+			gg = "tool_arr["+a+"][keys"+(a+1)+"].lvl>=lvl"
+		}else{
+			gg = gg + " && tool_arr["+a+"][keys"+(a+1)+"].lvl>=lvl"
+		}
+	}
+    return gg
+}
+
+CreateRecipeWithTool = function(result, ing, tr, tool_arr, lvl){
+	let code
+	let i = 0
+	code = "for(var key = 0; key<tool_arr.length; key++){    "
+	for(var key = 0; key<tool_arr.length; key++){
+		code = code + "for(var keys"+(key+1)+" in tool_arr["+key+"]){    "
+		i++
+	}
+	code = code + "if("+strongIfForTools(lvl, i)+"){    "
+	for(let a = 0; a<i; a++){
+		code = code + "tr.push(tool_arr["+a+"][keys"+(a+1)+"].s);    "
+		code = code + "tr.push(tool_arr["+a+"][keys"+(a+1)+"].id);    "
+		code = code + "tr.push(-1);    "
+	}
+	code = code + "Recipes.addShaped(result, ing, tr, CTR.Tool);    "
+	for(let a = 0; a<i+2; a++){
+		code = code + "}    "
+	}
+	//alert(code)
+	eval(code)
+}
+
+ReplaceRecipeWithTool = function(result, ing, tr, tool_arr, lvl){
+	Recipes.deleteRecipe(result)
+    let code
+	let i = 0
+	code = "for(let key = 0; key<tool_arr.length; key++){    "
+	for(var key = 0; key<tool_arr.length; key++){
+		code = code + "for(let keys"+(key+1)+" in tool_arr["+key+"]){    "
+		i++
+	}
+	code = code + "if("+strongIfForTools(lvl, i)+"){    "
+	for(let a = 0; a<i; a++){
+		code = code + "tr.push(tool_arr["+a+"][keys"+(a+1)+"].s);    "
+		code = code + "tr.push(tool_arr["+a+"][keys"+(a+1)+"].id);    "
+		code = code + "tr.push(-1);    "
+	}
+	code = code + "Recipes.addShaped(result, ing, tr, CTR.Tool);    "
+	for(let a = 0; a<i+2; a++){
+		code = code + "}    "
+	}
+	//alert(code)
+	eval(code)
+}
+
+CreateShapelessRecipeWithTool = function(result, ing, tool_arr, lvl){
+	let code
+	let i = 0
+	let ingridients
+	code = "for(let key = 0; key<tool_arr.length; key++){    "
+	for(var key = 0; key<tool_arr.length; key++){
+		code = code + "for(let keys"+(key+1)+" in tool_arr["+key+"]){    "
+		i++
+	}
+	code = code + "if("+strongIfForTools(lvl, i)+"){    "
+	code = code + "ingridients = [];    "
+    code = code + "for(let k in ing){    ingridients.push(ing[k])    }"
+	code = code + "for(let l = 0; l < tool_arr.length; l++){    ingridients.push({id: tool_arr[l][eval('keys'+(l+1))].id, data: -1})    }"
+	code = code + "Recipes.addShapeless(result, ingridients, CTR.Tool);    "
+	for(let a = 0; a<i+2; a++){
+		code = code + "}    "
+	}
+	eval(code)
+}
+
+ReplaceShapelessRecipeWithTool = function(result, ing, tool_arr, lvl){
+	Recipes.deleteRecipe(result)
+    let code
+	let i = 0
+	let ingridients
+	code = "for(let key = 0; key<tool_arr.length; key++){    "
+	for(var key = 0; key<tool_arr.length; key++){
+		code = code + "for(let keys"+(key+1)+" in tool_arr["+key+"]){    "
+		i++
+	}
+	code = code + "if("+strongIfForTools(lvl, i)+"){    "
+	code = code + "ingridients = [];    "
+    code = code + "for(let k in ing){    ingridients.push(ing[k])    }"
+	code = code + "for(let l = 0; l < tool_arr.length; l++){    ingridients.push({id: tool_arr[l][eval('keys'+(l+1))].id, data: -1})    }"
+	code = code + "Recipes.addShapeless(result, ingridients, CTR.Tool);    "
+	for(let a = 0; a<i+2; a++){
+		code = code + "}    "
+	}
+	eval(code)
+}
+
+var MAPI = {multiblocks:[],
+strongIf(a, m){
+	let rt = null
+	if(a[3] == -1){
+		//alert(World.getBlockID(m.x, m.y, m.z))
+		return World.getBlockID(m.x+a[0], m.y+a[1], m.z+a[2]) != World.getBlockID(m.x, m.y, m.z)
+	}
+	for(let keys in a[3]){
+		if(rt==null){
+		    rt = World.getBlockID(m.x+a[0], m.y+a[1], m.z+a[2]) == a[3][keys]
+		}else{
+			rt = rt || World.getBlockID(m.x+a[0], m.y+a[1], m.z+a[2]) == a[3][keys]
+	    }
+	}
+	return rt
+},
+    Register(name, struc){
+    	name._tick = name.tick
+        name.tick = function(){
+        	if(World.getWorldTime()%40==0){
+                MAPI.Corpus(this)
+             }
+            this._tick()
+        }    
+        this.multiblocks.push({name:(name), struc:struc});
+    },
+    Load(){
+        for(var key in this.multiblocks){
+            this.multiblocks[key].name.defaultValues.MAPIbl=0;
+            this.multiblocks[key].name.defaultValues.MAPIact=false;
+            this.multiblocks[key].name.defaultValues.MAPIside=0;
+            this.multiblocks[key].name.defaultValues.MAPIkey=key;
+        }
+    },
+    Corpus(m){
+    //Game.message(m.x+", "+m.y+", "+m.z)
+    //Game.message(m.data.MAPIact);
+        for(var key in this.multiblocks){ 
+            if(key==m.data.MAPIkey){
+                if(m.data.MAPIact!=true){
+                    for(var side in this.multiblocks[key].struc){
+                    	m.data.MAPIbl = 0
+                        for(var keyi in this.multiblocks[key].struc[side]){ 
+                            if(this.strongIf(this.multiblocks[key].struc[side][keyi], m)){ 
+                                m.data.MAPIbl++; 
+                                //alert(m.data.MAPIbl);
+                                if(m.data.MAPIbl == this.multiblocks[key].struc[side].length){ 
+                                	//Game.message("Duck")
+                                    m.data.MAPIact=true; 
+                                    m.data.MAPIside=side;
+                                    //return true
+                                }
+                            }else{
+                            	//alert("break")
+                                break
+                            }
+                        } 
+                    } 
+                }else{
+                	m.data.MAPIbl = 0
+                    for(var keyi in this.multiblocks[key].struc[m.data.MAPIside]){ 
+                        if(this.strongIf(this.multiblocks[key].struc[m.data.MAPIside][keyi], m)){ 
+                            m.data.MAPIbl++; 
+                            if(m.data.MAPIbl == this.multiblocks[key].struc[m.data.MAPIside].length){ 
+                                m.data.MAPIact = true
+                                return
+                            }
+                        }else{
+                        	m.data.MAPIact=false
+                            return
+                        }
+                    }
+                }
+            }
+        }
+    },
+    Rotate(originalStruct){
+        for (var side = 1; side<=3; side++){
+            originalStruct[side] = []
+            for(var key in originalStruct[side-1]){
+                originalStruct[side].push([originalStruct[side-1][key][2], originalStruct[side-1][key][1], -originalStruct[side-1][key][0], originalStruct[side-1][key][3]])
+            }
+        }
+    }
+}; 
+
+
+Callback.addCallback("PostLoaded", function(){
+MAPI.Load();
+})
+
+
+var ATMech = {
+	furnaceRecipes:[], 
+	maceratorRecipes:[],
+	centrifugeRecipes:[],
+	forgeHammerRecipes:[],
+	oreWasherRecipes:[],
+OreWasherRecipe(obj){
+	this.oreWasherRecipes.push(obj)
+},
+ForgeHammerRecipe(obj){
+	this.forgeHammerRecipes.push(obj)
+},
+CentrifugeRecipe(obj){
+	if(!obj.rS1){
+        obj.rS1=[0, 0, 0];
+    }
+    if(!obj.rS2){
+        obj.rS2=[0, 0, 0];
+    }
+    if(!obj.rS3){
+        obj.rS3=[0, 0, 0];
+    }
+    if(!obj.rS4){
+        obj.rS4=[0, 0, 0];
+    }
+    this.centrifugeRecipes.push(obj)
+},
+FurnaceRecipe(obj){
+    if(!obj.rS1){
+        obj.rS1=[0, 0, 0];
+    }
+    if(!obj.rS2){
+        obj.rS2=[0, 0, 0];
+    }
+   if(!obj.sS1){
+        obj.sS1=[0, 0, 0];
+    }
+    if(!obj.sS2){
+        obj.sS2=[0, 0, 0];
+    }    
+    this.furnaceRecipes.push({sS1:obj.sS1, sS2:obj.sS2, rS1:obj.rS1, rS2:obj.rS2, long:obj.long, temp:obj.temp});
+    this.furnaceRecipes.push({sS1:obj.sS2, sS2:obj.sS1, rS1:obj.rS1, rS2:obj.rS2, long:obj.long, temp:obj.temp}); 
+}, 
+MaceratorRecipe(obj){
+	if(!obj.rS1){
+        obj.rS1=[0, 0, 0];
+    }
+    if(!obj.rS2){
+        obj.rS2=[0, 0, 0];
+    }
+    if(!obj.rS3){
+        obj.rS3=[0, 0, 0];
+    }
+    if(!obj.rS4){
+        obj.rS4=[0, 0, 0];
+    }
+    this.maceratorRecipes.push({sS:obj.sS, rS1:obj.rS1, rS2:obj.rS2, rS3:obj.rS3, rS4:obj.rS4, long:obj.long, lvl:obj.lvl});
+},
+AlloySmelterRecipe:{
+	recipe: [],
+	
+	add: function(obj){
+		if(!obj) return;
+		
+		this.recipe.push(obj);
+	},
+	get: function(id1, count1, id2, coutn2){
+		for(var rec in this.recipe){
+			if(id1 == this.recipe[rec].slot1.id && id2 == this.recipe[rec].slot2.id){
+				if(count1 >= this.recipe[rec].slot1.count && coutn2 >= this.recipe[rec].slot2.count){
+					 return this.recipe[rec];
+				}
+			}
+		}
+	}
+}
+};
+
+var ores_types = [{name:"Stone", data:0, level:1, lvl:2}, {name:"Nether", data:3, level:1, lvl:1}, {name:"End", data:4, level:1, lvl:1}]
+let genChanceForBreed = Config.genChanceForBreed
+let limit = Config.limit
+let chunkNumForGen = Config.chunkNumForGen
+var ATGen = {
+	strongIf(coords){
+		return World.getBlockID(coords.x, coords.y, coords.z) != 0 && World.getBlockID(coords.x, coords.y, coords.z) != 8 && World.getBlockID(coords.x, coords.y, coords.z) != 9 && World.getBlockID(coords.x, coords.y, coords.z) != 10 && World.getBlockID(coords.x, coords.y, coords.z) != 11 && World.getBlockID(coords.x, coords.y, coords.z) != 7 && World.getBlockID(coords.x, coords.y, coords.z) != 2
+	},
+	chunkNumber(chunkX, chunkZ, n){
+		return chunkX % n == 0 && chunkZ % n == 0
+	},
+	oresEarth:[],
+	oresNether:[],
+	oresEnd:[],
+	breeds:[],
+	oresSmall:[],
+	
+    SmallOreDeposite(){
+        //var tiles = [0]
+        return Callback.addCallback("GenerateChunk", function(chunkX, chunkZ){
+        	var minY = Config.smallOresMinY
+            var maxY = Config.smallOresMaxY
+            var count = Config.smallOresCount
+            var tiles = [1, 14, 15, 16, 56, 73, 74, 129, 21]
+            
+            for(var c = 0; c<count; c++){
+            	//alert(c)
+            	var key = random(0, ATGen.oresSmall.length-1)
+                for(var i = maxY; i > minY; i--){
+                	var coords = GenerationUtils.randomCoords(chunkX, chunkZ, minY, i);
+                	for(var keys in tiles){    	
+                        if(World.getBlockID(coords.x, coords.y, coords.y) == tiles[keys]){
+                        	//alert(c)
+                            ATGen.setOre(coords.x, coords.y, coords.z, ATGen.oresSmall[key], 0, tiles); 
+                            i = minY
+                            break
+                        }
+                    }
+                }
+            }
+        });
+    },
+    GenBreed(){
+    	return Callback.addCallback("GenerateChunk", function(chunkX, chunkZ){
+    	    var key = random(0, ATGen.breeds.length-1)
+            var arr = ATGen.breeds[key]
+            
+    	    if(rollPercentage(arr.chance)){
+            	for(var i = arr.maxY; i > arr.minY; i--){
+            	    //alert(i)
+            	   var coords = GenerationUtils.randomCoords(chunkX, chunkZ, arr.minY, i);
+                   if(arr.tiles == -1 && ATGen.strongIf(coords)){
+                   	//alert("go")
+                       var r = arr.diameter
+                         for(var x = -r; x < r; x++){
+                             for(var y = -r; y < r; y++) {
+                                 for(var z = -r; z < r; z++){
+                                    if((x * x) + (y * y) + (z * z) <= (r * r)){
+                                       ATGen.setOre(x+coords.x, y+coords.y, z+coords.z, arr.id, arr.data, arr.tiles);
+                                       //i = arr.maxY
+                                   }
+                               }
+                           }
+                       }
+                    }else if(arr.tiles != -1){
+                    	for(var keys in arr.tiles){    	
+                            if(World.getBlockID(coords.x, coords.y, coords.z) == arr.tiles[keys]){
+                               //alert("go")
+                               var r = arr.diameter
+                                 for(var x = -r; x < r; x++){
+                                     for(var y = -r; y < r; y++) {
+                                         for(var z = -r; z < r; z++){
+                                            if((x * x) + (y * y) + (z * z) <= (r * r)){
+                                               ATGen.setOre(x+coords.x, y+coords.y, z+coords.z, arr.id, arr.data, arr.tiles);
+                                               i = arr.minY
+                                           }
+                                       }
+                                   }
+                               }
+                            }
+                        }
+                    }
+                var chance = 0
+                var oresBreed = eval("ATGen.ores"+arr.name)
+                for(var keys in oresBreed){
+                	chance+=oresBreed[keys].chance
+                }
+                chance = round(genChanceForBreed / (chance / oresBreed.length) * 100, 1)
+                if(rollPercentage(chance)){
+                    eval("ATGen.GenLargeOreDepositeOn"+arr.name+"(arr, coords)")
+                    return
+                    }
+                }
+            }
+        })
+    },
+    GenLargeOreDepositeOnEarth(){
+        return Callback.addCallback("GenerateChunk", function(chunkX, chunkZ){      
+            var arr
+            var key
+            var chance = Config.chanceMultiplier
+            if(ATGen.chunkNumber(chunkX, chunkZ, chunkNumForGen)){
+            	for(var l = 0; l < limit; l++){
+            	    chance+=Config.chanceMultiplier
+                     key = random(0, ATGen.oresEarth.length-1)
+                     arr = ATGen.oresEarth[key]
+                     //alert(arr.chance * chance)
+                	if(rollPercentage(arr.chance * chance)){
+                	    //alert(arr.chance)
+                	    for(var a = 0; a<arr.count; a++){
+                    	    for(var i = arr.maxY; i > arr.minY; i--){                   	        
+                                //alert(i+", "+arr.minY)
+                                
+                                if(i==arr.minY+1){
+                                	//alert("return")
+                    	            return
+                                }
+                            	var coords = GenerationUtils.randomCoords(chunkX, chunkZ, arr.minY, i);
+                                for(var keys in arr.tiles){                             
+                                    if(World.getBlockID(coords.x, coords.y, coords.z) == arr.tiles[keys]){
+                                       ATGen.LargeOreDepositeTemplate(coords.x, coords.y, coords.z, arr.ids, arr.size, arr.density, arr.tiles)
+                                       i = arr.minY
+                                       if(a == arr.count - 1){
+                                           return
+                                        }
+                                       break                  
+                                   }/*else if(i == arr.minY){                                
+                                   	//alert(l)
+                                       key = random(0, ATGen.oresEarth.length-1)
+                                       arr = ATGen.oresEarth[key]
+                                       //alert(i)
+                                       if(rollPercentage(arr.chance)){
+                                           a = 0
+                                           break
+                                       }else{
+                                           //alert("return")
+                                           return
+                                       }
+                                   }*/
+                               }
+                           }
+                        }
+                    }
+                }
+            }          
+        })
+    },
+    GenLargeOreDepositeOnNether(){
+        return Callback.addCallback("GenerateNetherChunk", function(chunkX, chunkZ){
+        	var arr
+            var key
+            var chance = Config.chanceMultiplier
+            if(ATGen.chunkNumber(chunkX, chunkZ, chunkNumForGen)){
+            	for(var l = 0; l < limit; l++){
+            	    chance+=Config.chanceMultiplier
+                	 key = random(0, ATGen.oresNether.length-1)
+                     arr = ATGen.oresNether[key]
+                	if(rollPercentage(arr.chance * chance)){
+                	    for(var a = 0; a<arr.count; a++){
+                       	 for(var i = arr.maxY; i > arr.minY; i--){
+                       	    if(i==arr.minY+1){
+                                	//alert("return")
+                    	            return
+                                }
+                            	var coords = GenerationUtils.randomCoords(chunkX, chunkZ, arr.minY, i);
+                                for(var keys in arr.tiles){
+                                    if(World.getBlockID(coords.x, coords.y, coords.z) == arr.tiles[keys]){
+                                       ATGen.LargeOreDepositeTemplate(coords.x, coords.y, coords.z, arr.ids, arr.size, arr.density, arr.tiles)
+                                       if(a == arr.count - 1){
+                                           return
+                                       }
+                                       break      
+                                   }/*else if(i == arr.minY){
+                                       key = random(0, ATGen.oresNether.length-1)
+                                       arr = ATGen.oresNether[key]
+                                       //alert(i)
+                                       if(rollPercentage(ATGen.oresNether[key].chance)){
+                                           a = 0
+                                           break
+                                       }else{
+                                           //alert("return")
+                                           return
+                                       }
+                                   }*/
+                               }
+                           }
+                       }
+                    }
+                }
+            }               
+        })
+    },
+    GenLargeOreDepositeOnEnd(){
+        return Callback.addCallback("GenerateEndChunk", function(chunkX, chunkZ){
+        	var arr
+            var key
+            var chance = Config.chanceMultiplier
+            if(ATGen.chunkNumber(chunkX, chunkZ, chunkNumForGen)){
+            	for(var l = 0; l < limit; l++){
+            	    chance+=Config.chanceMultiplier
+                   key = random(0, ATGen.oresEnd.length-1)
+              	 arr = ATGen.oresEnd[key]
+               	if(rollPercentage(arr.chance * chance)){
+              	    for(var a = 0; a<arr.count; a++){
+                  	    for(var i = arr.maxY; i > arr.minY; i--){    
+                              if(i==arr.minY+1){
+                                 //alert("return")
+                    	          return
+                              }              	        
+                          	var coords = GenerationUtils.randomCoords(chunkX, chunkZ, arr.minY, i);
+                              for(var keys in arr.tiles){  
+                              	if(i==arr.minY){
+                    	                return
+                                    }
+                                  if(World.getBlockID(coords.x, coords.y, coords.z) == arr.tiles[keys]){
+                                      ATGen.LargeOreDepositeTemplate(coords.x, coords.y, coords.z, arr.ids, arr.size, arr.density, arr.tiles)
+                                      if(a == arr.count - 1){
+                                          return
+                                      }
+                                      break
+                                  }/*else if(i == arr.minY){
+                                      key = random(0, ATGen.oresEnd.length-1)
+                                      arr = ATGen.oresEnd[key]
+                                      //alert(i)
+                                      if(rollPercentage(ATGen.oresEnd[key].chance)){
+                                         a = 0
+                                         break
+                                      }else{
+                                         //alert("return")
+                                         return
+                                      }
+                                  }*/
+                              }
+                          }
+                      }
+                   }
+                }
+            }               
+        })
+    },
+    RegisterLargeOreDepositeOnEarth(ids, chance, tiles, minY, maxY, size, density, count){
+    	this.oresEarth.push({ids:ids, chance:chance, tiles:tiles, minY:minY, maxY:maxY, size:size, density:density, count:count})
+    },
+    RegisterLargeOreDepositeOnNether(ids, chance, tiles, minY, maxY, size, density, count){
+    	this.oresNether.push({ids:ids, chance:chance, tiles:tiles, minY:minY, maxY:maxY, size:size, density:density, count:count})
+    },
+    RegisterLargeOreDepositeOnEnd(ids, chance, tiles, minY, maxY, size, density, count){
+    	this.oresEnd.push({ids:ids, chance:chance, tiles:tiles, minY:minY, maxY:maxY, size:size, density:density, count:count})
+    },
+    RegisterBreed(id, data, diameter, chance, minY, maxY, tiles, world, name, tex, level){
+    	this.breeds.push({id:id, data:data, diameter:diameter, chance:chance, minY:minY, maxY:maxY, tiles:tiles, world:world, name:name})
+        //alert(lvl)
+        ores_types.push({name:name, data:tex, level:level})
+        eval("this.ores"+name+" = []")
+        eval("this.RegisterLargeOreDepositeOn"+name+" = function(ids, chance, density){ this.ores"+name+".push({ids:ids, chance:chance, density:density}) }")
+        eval("ATGen.GenLargeOreDepositeOn"+name+" = function(arr, coords){ var key = random(0, ATGen.ores"+name+".length-1); var ore = ATGen.ores"+name+"[key]; if(rollPercentage(ore.chance)){ return ATGen.LargeOreDepositeTemplate(coords.x, coords.y, coords.z, ore.ids, {x:arr.diameter*2, y:arr.diameter, z:arr.diameter*2}, ore.density, [arr.id])} }")
+    },
+    setOre(x, y, z, id, data, tile) {
+       //alert(id)
+        if(tile == -1 && this.strongIf({x:x, y:y, z:z})){
+        	World.setBlock(x, y, z, id, data);
+            //alert(-1)
+        }else{
+        	//alert(tile[0])
+        	for(var keys in tile){    	
+                 if(World.getBlockID(x, y, z) == tile[keys]){
+                    World.setBlock(x, y, z, id, data);
+                }
+            }
+        }
+    },
+    LargeOreDepositeTemplate(x, y, z, ids, size, density, tiles){
+    	    var rand1 = 1.5
+            var rand2 = 10
+            var rand3 = 1.5
+            var rand4 = 6
+            var rx
+            var ry = Math.floor(size.y/2)
+            var rz
+            if(rollPercentage(50)){
+                rx = size.z
+                rz = size.x
+            }else{
+            	rx = size.x
+                rz = size.z
+            }
+            var n = Math.floor(size.y/ids.length) //2
+            var code
+            var chance
+            var num 
+            var id = []
+            
+            /*for(var key1 = 0; key1 < Math.floor(size.y / n); key1++){ // < 8 / 2 = 4
+                id[key1] = []
+                for(var key2 = 0; key2 < ids.length; key2++){ // ids.length = 4
+                    num = key2 + key1
+                	if(num < ids.length-1){
+                        id[key1].push(ids[num])
+                    }else{
+                    	num = 0+key1
+                    	id[key1].push(ids[num])
+                    }
+                }
+            }*/
+            
+            for (var xx = -rx; xx <= rx; xx++) {
+                for (var yy = -ry; yy < ry; yy++) { // 2
+                    for (var zz = -rz; zz <= rz; zz++) {
+                        if(yy % n == 0){
+                        	//alert(yy)
+                        	for(var a = 0; a < n; a++){
+                        	    code = ""
+                        	    if (Math.sqrt(xx * xx + yy * yy + zz * zz) < Math.floor((size.x + size.z) / 4) && rollPercentage(density)) {
+                            	    for(var key = 0; key < ids.length; key++){
+                            	        if(code == ""){
+                            	            chance = Math.floor(ids.length-key-1)
+                            	            code = code + "if (Math.random() < 1 / "+chance+") { ATGen.setOre(x + xx, y + yy - a, z + zz, ids[key], 0, tiles); }"
+                                         }else{
+                                         	chance = Math.floor(ids.length-key-1)
+                                             code = code + "else if (Math.random() < 1 / "+chance+") { ATGen.setOre(x + xx, y + yy - a, z + zz, ids[key], 0, tiles); }"
+                                         }  
+                                         eval(code)
+                                         //break
+                                     }
+                                 }      
+                            }
+                        }
+                    }
+                }
+            }
+    },
+}
+                        
+/*                            if (yy == 1) {
+                                if (Math.random() < 1 / 7) {
+                                    ATGen.setOre(x + xx, y + yy, z + zz, id4, 0, tiles)
+                                } else {
+                                    if (Math.random() < 1 / 2) {
+                                        ATGen.setOre(x + xx, y + yy, z + zz, id2, 0, tiles);
+                                    } else {
+                                        ATGen.setOre(x + xx, y + yy, z + zz, id1, 0, tiles);
+                                    }
+                                }
+                            }
+                            if (yy == -1) {
+                                if (Math.random() < 1 / 7) {
+                                    ATGen.setOre(x + xx, y + yy, z + zz, id4, 0, tiles)
+                                } else {
+                                    if (Math.random() < 1 / 2) {
+                                        ATGen.setOre(x + xx, y + yy, z + zz, id2, 0, tiles);
+                                    } else {
+                                        ATGen.setOre(x + xx, y + yy, z + zz, id3, 0, tiles);
+                                    }
+                                }
+                            }
+                            if (yy > 1) {
+                                if (Math.random() < 1 / 7) {
+                                    ATGen.setOre(x + xx, y + yy, z + zz, id4, 0, tiles)
+                                } else {
+                                    ATGen.setOre(x + xx, y + yy, z + zz, id1, 0, tiles);
+                                }
+                            }
+                            if (yy < -1) {
+                                 if (Math.random() < 1 / 7) {
+                                    ATGen.setOre(x + xx, y + yy, z + zz, id4, 0, tiles)
+                                } else {
+                                    ATGen.setOre(x + xx, y + yy, z + zz, id3, 0, tiles);
+                                }
+                            }
+                            if (yy == 0) {
+                                if (Math.random() < 1 / 7) {
+                                    ATGen.setOre(x + xx, y + yy, z + zz, id4, 0, tiles)
+                                } else {
+                                    ATGen.setOre(x + xx, y + yy, z + zz, id2, 0, tiles);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}*/
+
+Callback.addCallback("PostLoaded", function(){
+	//Config.genSmallOres == true ? ATGen.SmallOreDeposite() : null
+	//Config.genBreeds == true ? ATGen.GenBreed() : null
+	//Config.genLargeOresEarth == true ? ATGen.GenLargeOreDepositeOnEarth() : null
+	//Config.genLargeOresNether == true ? ATGen.GenLargeOreDepositeOnNether() : null
+	//Config.genLargeOresEnd == true ? ATGen.GenLargeOreDepositeOnEnd() : null
+	ATGen.SmallOreDeposite()
+	ATGen.GenBreed()
+	ATGen.GenLargeOreDepositeOnEarth()
+	ATGen.GenLargeOreDepositeOnNether()
+	ATGen.GenLargeOreDepositeOnEnd()
+})
+
+var round = function(num, x){
+	var multiplier = Math.pow(10, x)
+	return Math.floor(num * multiplier) / multiplier
+}
+
+var vanileFurnaceTemp = Config.vanileFurnaceTemp
+var ATMat = {
+	materials:[],
+	hammers:[], files:[], mortars:[], cutters:[], wrenchs:[], screwdrivers:[], knifes:[], saws:[], solderings:[],
+	
+    ingots:[], plates:[], dusts:[], dustsSmall:[], bolts:[], nuggets:[], modules:[], littleOres:[], gems:[], rods:[], long_rods:[], rings:[], wires:[], blocks:[], ores:[], impaleDusts:[], casings:[], crusheds:[], crushedsPurified:[], crushedsCentrifuged:[], dustsImpure:[],
+    
+    GetRandomSmallDust(){
+    	let key = random(0, this.dustsSmall.length-1)
+        return this.dustsSmall[key].id
+    },
+    RetArg(type, mat, arg){
+    	for(var keys in eval("this."+type)){
+    	    var t = eval("this."+type+"[keys]")
+            if(t.mat == mat){
+            	return eval("t."+arg)
+            }
+        }
+    },
+    RetArgFromID(id, arg){
+    	for(var keys in this.nuggets){
+    	   if(this.nuggets[keys].id == id){
+    	        return eval("this.nuggets[keys]."+arg)
+    	    }
+        }
+    	for(var keys in this.dusts){
+    	   if(this.dusts[keys].id == id){
+    	        return eval("this.dusts[keys]."+arg)
+    	    }
+        }
+        for(var keys in this.ingots){
+    	    if(this.ingots[keys].id == id){
+    	        return eval("this.ingots[keys]."+arg)
+    	    }
+        }
+        for(var keys in this.plates){
+    	    if(this.plates[keys].id == id){
+    	        return eval("this.plates[keys]."+arg)
+    	    }
+        }
+        for(var keys in this.littleOres){
+    	    if(this.littleOres[keys].id == id){
+    	        return eval("this.littleOres[keys]."+arg)
+    	    }
+        }
+        for(var keys in this.ores){
+    	    if(this.ores[keys].id == id){
+    	        return eval("this.ores[keys]."+arg)
+    	    }
+        }
+        for(var keys in this.dustsSmall){
+    	    if(this.dustsSmall[keys].id == id){
+    	        return eval("this.dustsSmall[keys]."+arg)
+    	    }
+        }
+        for(var keys in this.gems){
+    	    if(this.gems[keys].id == id){
+    	        return eval("this.gems[keys]."+arg)
+    	    }
+        }
+        for(var keys in this.crusheds){
+    	    if(this.crusheds[keys].id == id){
+    	        return eval("this.crusheds[keys]."+arg)
+    	    }
+        }
+        return 0
+    },
+    RegisterImpaleDust(id, mat, lvl, n){
+    	this.impaleDusts.push({id: id, mat: mat, lvl: lvl})
+        ATMech.CentrifugeRecipe({sS:[id, 1, 0], rS:mat, lvl: lvl, long: this.RetArgFromID(id, "long")})
+        ATMech.OreWasherRecipe({sS:[id, 1, 0], rS:mat})
+		
+        if(n == true){
+        Item.registerUseFunction(id, function(coords, item, b){
+        	var c = coords.relative
+            //alert(World.getBlockID(c.x, c.y, c.z))
+            if(World.getBlockID(c.x, c.y, c.z) == 9 && rollPercentage(10)){
+            	//alert("take this")
+            	World.drop(c.x+0.5, c.y+0.1, c.z+0.5, mat[0], mat[1], 0)
+                World.setBlock(c.x, c.y, c.z, 0, 0)
+                item.count--;
+	            if(!item.count){ 
+                    item.id = 0;
+                 }
+	             Player.setCarriedItem(item.id, item.count, 0)
+	         }
+	    })
+	    }
+    },
+    SmallOreRegister(name, drop){
+    	var ID = IDRegistry.genBlockID("ore"+"Small"+(name));
+        Block.createBlock("ore"+"Small"+(name), [
+	    {name: (name)+" Small ore", texture: [[(name)+"_ore_small", 0]], inCreative: true}
+        ], "opaque");
+        ToolAPI.registerBlockMaterial(ID, "stone", 1, true);
+        Block.setDestroyLevel(ID, 1);
+        ATGen.oresSmall.push(ID)
+        
+        if(drop){
+            Block.registerDropFunction(ID, function(coords, id, data, level, enchant){
+            	if(level>=1){
+                	return drop
+                }else{
+                	return []
+                }
+            })
+        }
+    },
+    OreRegister: function(name, materials, types, generateDrop, lvl){      
+    	if(!lvl){
+    	    lvl = 0
+        }
+    	var setLoadingTip = ModAPI.requireGlobal("MCSystem.setLoadingTip");
+        for(var keys in types){
+        	for(var key in ores_types){
+        	    if(types[keys]==ores_types[key].name){
+        	        if(types[keys]=="Stone"){
+                    }
+                    var ID = IDRegistry.genBlockID("ore"+name+types[keys]);
+                    Block.createBlock("ore"+name+types[keys], [
+	                {name: this.FixName(name)+" ore", texture: [[(name)+"_ore" || "ore_"+(name), ores_types[key].data]], inCreative: true}
+                    ], "opaque");
+                    ToolAPI.registerBlockMaterial(ID, "stone", ores_types[key].level + lvl, true);
+                    Block.setDestroyLevel(ID, (ores_types[key].level + lvl));
+                    this.ores.push({id:ID, type:(name), data:0, mat: materials, lvl: ores_types[key].level + lvl})
+                    setLoadingTip("Register ore: "+(name));                    
+                    if(generateDrop==true){
+                    	
+                    	this.GenerateRecipes({ore:ID, resourses:materials, lvl:ores_types[key].level})
+                                    
+                        Block.registerDropFunction(ID, function(coords, id, data, level, enchant){
+                            	var A = ATMat
+                    	        var a = true
+                                if(level>=A.RetArgFromID(id, "lvl")){
+                            	    for(var h in A.hammers){
+                                        if(Player.getCarriedItem().id==A.hammers[h].id){
+                                	         //alert(keys)
+                                             var drop = []
+                                                                                                
+                                    	         if(materials[0][1]==0){
+                                    	             if(a == true && materials[0][0] == A.RetArg("nuggets", materials[0][0], "mat")){
+                                                         drop.push([A.RetArg("nuggets", materials[0][0], "id"), 1, 0])
+                                                         a = false
+                                                     }
+                                             	    if(a == true && materials[0][0] == A.RetArg("dustsSmall", materials[0][0], "mat")){
+                                                         drop.push([A.RetArg("dustsSmall", materials[0][0], "id"), 1, 0]) 
+                                                     }
+                                                 } 
+                                                 a = true
+                                                 if(materials[0][1]==1){
+                                                     if(a == true && materials[0][0] == A.RetArg("nuggets", materials[0][0], "mat")){
+                                                         drop.push([A.RetArg("nuggets", materials[0][0], "id"), 5, 0])
+                                                         a = false
+                                                     }
+                                             	    if(a == true && materials[0][0] == A.RetArg("dustsSmall", materials[0][0], "mat")){
+                                                         drop.push([A.RetArg("dustsSmall", materials[0][0], "id"), 5, 0]) 
+                                                     }
+                                                 } 
+                                                 a = true
+                                                 if(materials[0][1]==2){
+                                                     if(a == true && materials[0][0] == A.RetArg("littleOres", materials[0][0], "mat")){
+                                                     	drop.push([A.RetArg("littleOres", materials[0][0], "id"), 1, A.RetArg("littleOres", materials[0][0], "data")])
+                                                         a = false                                                                               
+                                                     }
+                                                 	if(a == true && materials[0][0] == A.RetArg("crusheds", materials[0][0], "mat")){
+                                                         drop.push([A.RetArg("crusheds", materials[0][0], "id"), 1, 0])
+                                                         a = false                                                                               
+                                                     }
+                                                     if(a == true && materials[0][0] == A.RetArg("dusts", materials[0][0], "mat")){
+                                                         drop.push([A.RetArg("dusts", materials[0][0], "id"), 1, 0])                 
+                                                     }                                                
+                                                 }
+                                                 a = true
+                                                 if(materials[0][1]==3 && materials[0][0] == A.RetArg("littleOres", materials[0][0], "mat")){ 
+                                                 	if(a == true){
+                                                         drop.push([A.RetArg("littleOres", materials[0][0], "id"), random(2, 3), A.RetArg("littleOres", materials[0][0], "data")])
+                                                         a = false                                                                                                                                        
+                                                     }
+                                                     if(a == true && materials[0][0] == A.RetArg("crusheds", materials[0][0], "mat")){
+                                                     	drop.push([A.RetArg("crusheds", materials[0][0], "id"), random(2, 3), 0])
+                                                         a = false                                                                                                                                        
+                                                     }
+                                                     if(a == true && materials[0][0] == A.RetArg("dusts", materials[0][0], "mat")){
+                                                         drop.push([A.RetArg("dusts", materials[0][0], "id"), random(2, 3), 0])
+                                                         ToolAPI.dropOreExp(coords, 13, 28, enchant.experience);                                                         
+                                                     }                                                
+                                                 }
+                                             //alert(drop.length)                                                                                                            
+                                             return drop
+                                         }                                        
+                                     }
+                                     return [[id, 1, data]]
+                                  }                 
+                                  return []                   
+                              })
+                          }
+                }
+            }
+        }
+    },
+    FixName(name){
+    	let w = []
+    	for(var key = 0; key < name.length; key++){
+    	    if(name[key] == "_"){
+    	        w.push(" ")
+            }else{
+                w.push(name[key])
+            }
+        }
+        let n = ""
+        for(var keys in w){
+        	n+=w[keys]
+        }
+        return n
+    },
+	MaterialRegister: function(name, obj, obj1, rad){
+		var setLoadingTip = ModAPI.requireGlobal("MCSystem.setLoadingTip");
+		this.materials.push({name:(name), ch:obj1, rad:rad})
+		setLoadingTip("Register material: "+(name));
+		if(!rad){
+			rad = false
+		}
+		var constant = 100
+		var it = {}
+		if(obj1){
+			it.temp = obj1.temp
+            it.long = obj1.long
+            it.lvl = obj1.lvl
+            it.mat = (name)
+        }
+		if(obj.isDust){
+			it.dust = IDRegistry.genItemID("dust"+(name));
+            Item.createItem("dust"+(name), this.FixName(name)+" Dust", {name:(name)+"_dust" || "dust_"+(name), data:0});
+            this.dusts.push({mat:(name), id:it.dust, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})          
+            Item.setGlint(it.dust, rad)
+        }
+        if(obj.isCrushed){
+    	it.crushed = IDRegistry.genItemID("crushed"+(name));
+        it.res1 = obj.isCrushed
+        Item.createItem("crushed"+(name), "Crushed "+this.FixName(name)+" Ore", {name:(name)+"_dust", data: 1});
+        this.crusheds.push({mat:(name), id: it.crushed, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+        Item.setGlint(it.crushed, rad)
+    }   
+    if(obj.isCrushedPurified){
+        it.crushedPurified = IDRegistry.genItemID("crushedPurified"+(name));
+        it.res2 = obj.isCrushedPurified
+        Item.createItem("crushedPurified"+(name), "Crushed Purified "+this.FixName(name)+" Ore", {name:(name)+"_dust", data: 2});
+        this.crushedsPurified.push({mat:(name), id: it.crushedPurified, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+        Item.setGlint(it.crushedPurified, rad)
+    }  
+    if(obj.isCrushedCentrifuged){
+        it.crushedCentrifuged = IDRegistry.genItemID("centrifuged"+(name));
+        Item.createItem("centrifuged"+(name), "Centrifuged "+this.FixName(name)+" Ore", {name:(name)+"_dust", data: 3});
+        this.crushedsCentrifuged.push({mat:(name), id: it.cent, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+        Item.setGlint(it.crushedCentrifuged, rad)
+    }
+	    if(obj.isIngot){
+			it.ingot = IDRegistry.genItemID("ingot"+(name));
+            Item.createItem("ingot"+(name), this.FixName(name)+" Ingot", {name:(name)+"_ingot" || "ingot_"+(name)});
+            this.ingots.push({mat:(name), id:it.ingot, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+            Item.setGlint(it.ingot, rad)
+	    }
+	    if(obj.isPlate){
+			it.plate = IDRegistry.genItemID("plate"+(name));
+            Item.createItem("plate"+(name), this.FixName(name)+" Plate", {name:(name)+"_plate" || "plate_"+(name)});
+            this.plates.push({mat:(name), id: it.plate, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+	    }
+	    if(obj.isNugget){
+			it.nugget = IDRegistry.genItemID("nugget"+(name));
+            Item.createItem("nugget"+(name), this.FixName(name)+" Nugget", {name:(name)+"_nugget" || "nugget_"+(name)});
+            this.nuggets.push({mat:(name), id: it.nugget, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+            Item.setGlint(it.nugget, rad)
+	    }
+	    if(obj.isSmallDust){
+			it.smallDust = IDRegistry.genItemID("dustSmall"+(name));
+            Item.createItem("dustSmall"+(name), "Small "+this.FixName(name)+" Dust", {name:(name)+"_small_dust"});
+            this.dustsSmall.push({mat:(name), id: it.smallDust, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+            Item.setGlint(it.smallDust, rad)
+	    }
+	    if(obj.isBolt){
+			it.bolt = IDRegistry.genItemID("bolt"+(name));
+            Item.createItem("bolt"+(name), this.FixName(name)+" Bolt", {name:(name)+"_bolt"});
+            this.bolts.push({mat:(name), id: it.bolt, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+	    }
+	    if(obj.isLittleOre){
+			it.littleOre = IDRegistry.genItemID(name);
+            Item.createItem((name), this.FixName(name), {name:"little_"+name+"_ore"});
+            this.littleOres.push({mat:(name), id: it.littleOre, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+	    }
+	    if(obj.isModule){
+			it.module = IDRegistry.genItemID("module"+(name));
+            Item.createItem("module"+(name), this.FixName(name)+" Module", {name:(name)+"_module"});
+            this.modules.push({mat:(name), id: it.module, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+	    }
+	    if(obj.isGem){
+			it.gem = IDRegistry.genItemID("gem"+(name));
+            Item.createItem("gem"+(name), this.FixName(name)+" Gem", {name:(name)+"_gem"});
+            this.gems.push({mat:(name), id: it.gem, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+            Item.setGlint(it.gem, rad)
+	    }
+	if(obj.isRods){
+		it.rod = IDRegistry.genItemID("rod"+(name));
+        Item.createItem("rod"+(name), this.FixName(name)+" Rod", {name:(name)+"_rod"});
+        this.rods.push({mat:(name), id: it.rod, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+        
+        it.long_rod = IDRegistry.genItemID("longRod"+(name));
+        Item.createItem("longRod"+(name), "Long "+this.FixName(name)+" Rod", {name:(name)+"_long_rod"});
+        this.long_rods.push({mat:(name), id: it.long_rod, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+	}
+	if(obj.isRing){
+		it.ring = IDRegistry.genItemID("ring"+(name));
+        Item.createItem("ring"+(name), this.FixName(name)+" Ring", {name:(name)+"_ring"});
+        this.rings.push({mat:(name), id: it.ring, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+    }
+    if(obj.isBlock){
+    	it.block = IDRegistry.genBlockID("block"+(name));
+        Block.createBlock("block"+(name), [
+	    {name: this.FixName(name)+" Block", texture: [[(name)+"_block", 0]], inCreative: true}], "opaque" );
+        ToolAPI.registerBlockMaterial(it.block, "stone");
+        Block.setDestroyLevel(it.block, 3);
+        this.rings.push({mat:(name), id: it.block, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+    }
+    if(obj.isWire){
+    	it.wire = IDRegistry.genItemID("cable"+(name));
+        Item.createItem("cable"+(name), this.FixName(name)+" Cable", {name:(name)+"_cable"});
+        this.wires.push({mat:(name), id: it.wire, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+    }
+    if(obj.isCasing){
+    	it.casing = IDRegistry.genItemID("casing"+(name));
+        Item.createItem("casing"+(name), this.FixName(name)+" Casing", {name:(name)+"_casing"});
+        this.casings.push({mat:(name), id: it.casing, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+    }
+    if((name) == "Redstone"){
+    	it.dust = 331
+        this.dusts.push({mat:(name), id: 331, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+    }
+    if(obj.isImpureDust){
+	    it.dustImpure = IDRegistry.genItemID("dustImpure"+(name));
+        Item.createItem("dustImpure"+(name), this.FixName(name)+" Impure Dust", {name:(name)+"_impure"});
+        this.dustsImpure.push({mat:(name), id: it.dustImpure, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})          
+        Item.setGlint(it.dustImpure, rad)
+        obj1.lvl >= 1 ? this.RegisterImpaleDust(it.dustImpure, [it.dust, 1, ItemID.dustSmallStone, 3], obj1.lvl, true) : this.RegisterImpaleDust(it.dustImpure, [it.dust, 1, ItemID.dustSmallStone, 3], obj1.lvl, false)
+    }
+    if((name) == "Iron"){
+    	it.ingot = 265
+        this.ingots.push({mat:(name), id: 265, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+        it.block = 42
+        this.blocks.push({mat:(name), id: 42, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+    }
+    if((name) == "Gold"){
+    	it.block = 41
+        this.blocks.push({mat:(name), id: 41, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+        it.nugget = 371
+        this.nuggets.push({mat:(name), id: 371, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+        it.ingot = 266
+        this.ingots.push({mat:(name), id: 266, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+    }
+    if((name) == "Coal"){
+    	it.littleOre = 263
+        this.littleOres.push({mat:(name), id: 263, data:0, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+    }
+    if((name) == "Lapis"){
+    	it.littleOre = 351
+        this.littleOres.push({mat:(name), id: 351, data:4, temp:obj1.temp, lvl:obj1.lvl, long: obj1.long})
+    }
+        
+        if(obj.generateRecipes){      
+	        this.GenerateRecipes(it)
+	    }
+	},
+	GenerateRecipes: function(obj) {
+		if(obj.ore){
+			var rS1 = [0, 0, 0]
+		    var rS2 = [0, 0, 0]
+		    var rS3 = [0, 0, 0]
+		    var rS4 = [0, 0, 0]
+		    var a
+		    var A = this
+		
+            for(var key = 0; key<obj.resourses.length; key++){
+				a = true
+				//alert(key)
+				    if(obj.resourses[key][1]==3){
+					    if(a == true && obj.resourses[key][0] == A.RetArg("littleOres", obj.resourses[key][0], "mat")){
+						    ATMech.FurnaceRecipe ({sS1:[obj.ore, 1, 0], rS1:[A.RetArg("littleOres", obj.resourses[key][0], "id"), 3, A.RetArg("littleOres", obj.resourses[key][0], "data")], rS2:[ItemID.Stone, 2, 0], long: A.RetArg("littleOres", obj.resourses[key][0], "long"), temp: A.RetArg("littleOres", obj.resourses[key][0], "temp")});
+                            if(A.RetArg("littleOres", obj.resourses[key][0], "temp") <= vanileFurnaceTemp){
+                            	Recipes.addFurnace(obj.ore, A.RetArg("littleOres", obj.resourses[key][0], "id"), A.RetArg("littleOres", obj.resourses[key][0], "data"));
+                            }
+                            eval("rS"+(key+1)+" = [A.RetArg('littleOres', obj.resourses[key][0], 'id'), 3, A.RetArg('littleOres', obj.resourses[key][0], 'data')]")
+                            a = false                       
+                        }
+                        if(a == true && obj.resourses[key][0] == A.RetArg("crusheds", obj.resourses[key][0], "mat")){
+                        	ATMech.FurnaceRecipe ({sS1:[obj.ore, 1, 0], rS1:[A.RetArg("ingots", obj.resourses[key][0], "id"), 3, 0], rS2:[ItemID.Stone, 2, 0], long: A.RetArg("ingots", obj.resourses[key][0], "long"), temp: A.RetArg("ingots", obj.resourses[key][0], "temp")});
+                            if(A.RetArg("ingots", obj.resourses[key][0], "temp") <= vanileFurnaceTemp){
+                                Recipes.addFurnace(obj.ore, A.RetArg("ingots", obj.resourses[key][0], "id"), 0);
+                            }       
+                            eval("rS"+(key+1)+" = [A.RetArg('crusheds', obj.resourses[key][0], 'id'), 3, 0]")
+                            a = false               
+                        }
+                        if(a == true && obj.resourses[key][0] == A.RetArg("dusts", obj.resourses[key][0], "mat")){
+                        	ATMech.FurnaceRecipe ({sS1:[obj.ore, 1, 0], rS1:[A.RetArg("ingots", obj.resourses[key][0], "id"), 3, 0], rS2:[ItemID.Stone, 2, 0], long: A.RetArg("ingots", obj.resourses[key][0], "long"), temp: A.RetArg("ingots", obj.resourses[key][0], "temp")});
+                            if(A.RetArg("ingots", obj.resourses[key][0], "temp") <= vanileFurnaceTemp){
+                                Recipes.addFurnace(obj.ore, A.RetArg("ingots", obj.resourses[key][0], "id"), 0);
+                            }                         
+                            eval("rS"+(key+1)+" = [A.RetArg('dusts', obj.resourses[key][0], 'id'), 3, 0]")
+                            a = false                        
+                        }
+                    }                                                
+                    a = true
+                    if(obj.resourses[key][1]==2){   
+                        if(a == true && obj.resourses[key][0] == A.RetArg("littleOres", obj.resourses[key][0], "mat")){
+                        	ATMech.FurnaceRecipe ({sS1:[obj.ore, 1, 0], rS1:[A.RetArg("littleOres", obj.resourses[key][0], "id"), 1, A.RetArg("littleOres", obj.resourses[key][0], "data")], rS2:[ItemID.Stone, 2, 0], long: A.RetArg("littleOres", obj.resourses[key][0], "long"), temp: A.RetArg("littleOres", obj.resourses[key][0], "temp")});
+                            if(A.RetArg("littleOres", obj.resourses[key][0], "temp") <= vanileFurnaceTemp){
+                               Recipes.addFurnace(obj.ore, A.RetArg("littleOres", obj.resourses[key][0], "id"), A.RetArg("littleOres", obj.resourses[key][0], "data"))
+                            }
+                            eval("rS"+(key+1)+" = [A.RetArg('littleOres', obj.resourses[key][0], 'id'), 1, A.RetArg('littleOres', obj.resourses[key][0], 'data')]")
+                            a = false                                                                               
+                        }                        
+                        if(a == true && obj.resourses[key][0] == A.RetArg("crusheds", obj.resourses[key][0], "mat")){
+                        	ATMech.FurnaceRecipe ({sS1:[obj.ore, 1, 0], rS1:[A.RetArg("ingots", obj.resourses[key][0], "id"), 1, 0], rS2:[ItemID.Stone, 2, 0], long: A.RetArg("ingots", obj.resourses[key][0], "long"), temp: A.RetArg("ingots", obj.resourses[key][0], "temp")});
+                            if(A.RetArg('ingots', obj.resourses[key][0], 'temp') <= vanileFurnaceTemp){
+                                Recipes.addFurnace(obj.ore, A.RetArg('ingots', obj.resourses[key][0], 'id'), 0);
+                            }       
+                            eval("rS"+(key+1)+" = [A.RetArg('crusheds', obj.resourses[key][0], 'id'), 1, 0]")
+                            a = false
+                        }                        
+                        if(a == true && obj.resourses[key][0] == A.RetArg("dusts", obj.resourses[key][0], "mat")){
+                        	ATMech.FurnaceRecipe ({sS1:[obj.ore, 1, 0], rS1:[A.RetArg("ingots", obj.resourses[key][0], "id"), 1, 0], rS2:[ItemID.Stone, 2, 0], long: A.RetArg("ingots", obj.resourses[key][0], "long"), temp: A.RetArg("ingots", obj.resourses[key][0], "temp")});
+                            if(A.RetArg('ingots', obj.resourses[key][0], 'temp') <= vanileFurnaceTemp){
+                                Recipes.addFurnace(obj.ore, A.RetArg('ingots', obj.resourses[key][0], 'id'), 0);
+                            }
+                           eval("rS"+(key+1)+" = [A.RetArg('dusts', obj.resourses[key][0], 'id'), 1, 0]")
+                        }                                                
+                    }
+                    a = true
+                    if(obj.resourses[key][1]==1){              
+					    if(a == true && obj.resourses[key][0] == A.RetArg("nuggets", obj.resourses[key][0], "mat")){      
+						    ATMech.FurnaceRecipe ({sS1:[obj.ore, 1, 0], rS1:[A.RetArg("nuggets", obj.resourses[key][0], "id"), 5, 0], rS2:[ItemID.Stone, 2, 0], long: A.RetArg("nuggets", obj.resourses[key][0], "long")/4, temp: A.RetArg("nuggets", obj.resourses[key][0], "temp")});
+                            eval("rS"+(key+1)+" = [A.RetArg('nuggets', obj.resourses[key][0], 'id'), 5, 0]")
+                            a = false                                                                               
+                        }
+                        if(a == true && obj.resourses[key][0] == A.RetArg("dustsSmall", obj.resourses[key][0], "mat")){
+                        	ATMech.FurnaceRecipe ({sS1:[obj.ore, 1, 0], rS1:[A.RetArg("dustsSmall", obj.resourses[key][0], "id"), 5, 0], rS2:[ItemID.Stone, 2, 0], long: A.RetArg("dustsSmall", obj.resourses[key][0], "long")/4, temp: A.RetArg("dustsSmall", obj.resourses[key][0], "temp")});
+                           eval("rS"+(key+1)+" = [A.RetArg('dustsSmall', obj.resourses[key][0], 'id'), 5, 0]")
+                        }                                                
+                    }
+                    a = true
+                    if(obj.resourses[key][1]==0){
+					    if(a == true && obj.resourses[key][0] == A.RetArg("nuggets", obj.resourses[key][0], "mat")){
+						    ATMech.FurnaceRecipe ({sS1:[obj.ore, 1, 0], rS1:[A.RetArg("nuggets", obj.resourses[key][0], "id"), 1, 0], rS2:[ItemID.Stone, 3, 0], long: A.RetArg("nuggets", obj.resourses[key][0], "long")/9, temp: A.RetArg("nuggets", obj.resourses[key][0], "temp")});
+                            eval("rS"+(key+1)+" = [A.RetArg('nuggets', obj.resourses[key][0], 'id'), 1, 0]")
+                            a = false                                                                               
+                        }
+                        ATMech.FurnaceRecipe ({sS1:[obj.ore, 1, 0], rS1:[A.RetArg("dustsSmall", obj.resourses[key][0], "id"), 1, 0], rS2:[ItemID.Stone, 3, 0], long: A.RetArg("dustsSmall", obj.resourses[key][0], "long")/9, temp: A.RetArg("dustsSmall", obj.resourses[key][0], "temp")});
+                        if(a == true && obj.resourses[key][0] == A.RetArg("dustsSmall", obj.resourses[key][0], "mat")){ 
+                           eval("rS"+(key+1)+" = [A.RetArg('dustsSmall', obj.resourses[key][0], 'id'), 1, 0]")
+                        }    
+                    }
+                }
+                //ATMech.ForgeHammerRecipe ({sS:[obj.ore, 1, 0], rS:rS1, lvl: obj.lvl})
+                ATMech.MaceratorRecipe ({sS:[obj.ore, 1, 0], rS1:rS1, rS2:rS2, rS3:rS3, rS4:rS4, long:obj.lvl*100+Math.floor(Math.random()*20), lvl:obj.lvl});
+		}
+		if(obj.dust && obj.littleOre && !obj.ingot){
+			ATMech.FurnaceRecipe({sS1:[obj.dust, 1, 0], rS1:[obj.littleOre, 1, 0], long: obj.long, temp:obj.temp}) 
+			if(obj.temp <= vanileFurnaceTemp){
+				Recipes.addFurnace(obj.dust, obj.littleOre, 0)
+		    }
+		    obj.crushed ? ATMech.FurnaceRecipe({sS1:[obj.crushed, 1, 0], rS1:[obj.littleOre, 1, 0], long: obj.long, temp:obj.temp}) : null
+	        obj.crushedPurified ? ATMech.FurnaceRecipe({sS1:[obj.crushedPurified, 1, 0], rS1:[obj.littleOre, 1, 0], long: obj.long, temp:obj.temp}) : null
+	        obj.crushedCentrifuged ? ATMech.FurnaceRecipe({sS1:[obj.crushedCentrifuged, 1, 0], rS1:[obj.littleOre, 1, 0], long: obj.long, temp:obj.temp}) : null
+	        obj.crushed && obj.temp <= vanileFurnaceTemp ? Recipes.addFurnace(obj.crushed, obj.littleOre, 0) : null
+	        obj.crushedPurified && obj.temp <= vanileFurnaceTemp ? Recipes.addFurnace(obj.crushedPurified, obj.littleOre, 0) : null
+	        obj.crushedCentrifuged && obj.temp <= vanileFurnaceTemp ? Recipes.addFurnace(obj.crushedCentrifuged, obj.littleOre, 0) : null
+	    }
+		obj.crushed && obj.crushedPurified ? ATMech.OreWasherRecipe({sS:[obj.crushed, 1, 0], rS:[obj.crushedPurified, 1, eval("ItemID.dustSmall"+obj.res1), 1, ItemID.dustStone, 1]}) : null
+	    obj.crushedPurified && obj.crushedCentrifuged ? ATMech.CentrifugeRecipe({sS:[obj.crushedPurified, 1, 0], rS:[obj.crushedCentrifuged, 1, eval("ItemID.dustSmall"+obj.res2), 1], lvl:obj.lvl, long: obj.long}) : null
+	
+	    if(obj.crushedCentrifuged && obj.dust){
+		    ATMech.MaceratorRecipe ({sS:[obj.crushedCentrifuged, 1, 0], rS1:[obj.dust, 1, 0], rS2: [eval("ItemID.dustSmall"+obj.mat), 1, 0], long:obj.lvl*100+Math.floor(Math.random()*20), lvl:obj.lvl});
+			//ATMech.ForgeHammerRecipe ({sS:[obj.crushedCentrifuged, 1, 0], rS:[obj.dust, 1, 0], lvl: obj.lvl})
+		}
+		if(obj.ingot){
+	        obj.crushed ? ATMech.FurnaceRecipe({sS1:[obj.crushed, 1, 0], rS1:[obj.ingot, 1, 0], long: obj.long, temp:obj.temp}) : null
+	        obj.crushedPurified ? ATMech.FurnaceRecipe({sS1:[obj.crushedPurified, 1, 0], rS1:[obj.ingot, 1, 0], long: obj.long, temp:obj.temp}) : null
+	        obj.crushedCentrifuged ? ATMech.FurnaceRecipe({sS1:[obj.crushedCentrifuged, 1, 0], rS1:[obj.ingot, 1, 0], long: obj.long, temp:obj.temp}) : null
+	        obj.crushed && obj.temp <= vanileFurnaceTemp ? Recipes.addFurnace(obj.crushed, obj.ingot, 0) : null
+	        obj.crushedPurified && obj.temp <= vanileFurnaceTemp ? Recipes.addFurnace(obj.crushedPurified, obj.ingot, 0) : null
+	        obj.crushedCentrifuged && obj.temp <= vanileFurnaceTemp ? Recipes.addFurnace(obj.crushedCentrifuged, obj.ingot, 0) : null
+	    }
+        
+        if(obj.gem){
+	        obj.crushed ? ATMech.FurnaceRecipe({sS1:[obj.crushed, 1, 0], rS1:[obj.gem, 1, 0], long: obj.long, temp:obj.temp}) : null
+	        obj.crushedPurified ? ATMech.FurnaceRecipe({sS1:[obj.crushedPurified, 1, 0], rS1:[obj.gem, 1, 0], long: obj.long, temp:obj.temp})  : null
+	        obj.crushedCentrifuged ? ATMech.FurnaceRecipe({sS1:[obj.crushedCentrifuged, 1, 0], rS1:[obj.gem, 1, 0], long: obj.long, temp:obj.temp}) : null
+	        obj.crushed  && obj.temp <= vanileFurnaceTemp ? Recipes.addFurnace(obj.crushed, obj.gem, 0) : null
+	        obj.crushedPurified && obj.temp <= vanileFurnaceTemp ? Recipes.addFurnace(obj.crushedPurified, obj.gem, 0) : null
+	        obj.crushedCentrifuged && obj.temp <= vanileFurnaceTemp ? Recipes.addFurnace(obj.crushedCentrifuged, obj.gem, 0) : null
+       }
+       
+	    if(obj.dustImpure){
+		    if(obj.ingot){
+		        ATMech.FurnaceRecipe({sS1:[obj.dustImpure, 1, 0], rS1:[obj.ingot, 1, 0], long: obj.long, temp:obj.temp})
+		        if(obj.temp <= vanileFurnaceTemp){
+                	Recipes.addFurnace(obj.dustImpure, obj.ingot, 0);
+                }
+		    }
+	        ATMech.CentrifugeRecipe({sS:[obj.dustImpure, 1, 0], rS:[obj.dust, 1, this.RetArg("dustsSmall", obj.mat, "id"), 1, ItemID.dustStone, 1], lvl: obj.lvl, temp: obj.temp})
+		    ATMech.OreWasherRecipe({sS:[obj.dustImpure, 1, 0], rS:[obj.dust, 1, this.RetArg("dustsSmall", obj.mat, "id"), 1, ItemID.dustStone, 1]})
+		}
+		if(obj.dust){
+			if(obj.smallDust){
+			    Recipes.addShapeless({id:obj.smallDust, count:9, data:0}, [ {id:obj.dust, data:0}]);
+			    Recipes.addShaped({id:obj.dust, count:1, data:0}, ["aaa", "aaa", "aaa"], ['a', obj.smallDust, 0])
+			}
+			if(obj.littleOre&& !obj.crushed){
+				ATMech.MaceratorRecipe ({sS:[obj.littleOre, 1, 0], rS1:[obj.dust, 1, 0], long:obj.lvl*10, lvl:obj.lvl});
+				CreateShapelessRecipeWithTool({id: obj.dust, count: 1, data: 0}, [{id: obj.littleOre, data: 0}], [this.mortars], obj.lvl)
+		    }else if(obj.littleOre&& obj.crushed){
+			    ATMech.MaceratorRecipe ({sS:[obj.littleOre, 1, 0], rS1:[obj.crushed, 1, 0], long:obj.lvl*10, lvl:obj.lvl});
+				CreateShapelessRecipeWithTool({id: obj.crushed, count: 1, data: 0}, [{id: obj.littleOre, data: 0}], [this.mortars], obj.lvl)
+		    }
+            if(obj.nugget){
+            	ATMech.MaceratorRecipe ({sS:[obj.nugget, 1, 0], rS1:[obj.smallDust, 1, 0], long:obj.lvl*10, lvl:obj.lvl});
+            	ATMech.FurnaceRecipe ({sS1:[obj.smallDust, 1, 0], rS1:[obj.nugget, 1, 0], long:round(obj.long/9, 1), temp:obj.temp});               
+        	    ReplaceShapelessRecipeWithTool({id:obj.smallDust, count:1, data:0}, [{id:obj.nugget, data:0}], [this.mortars], obj.lvl);                                                            
+                if(obj.ingot && obj.lvl <=2){
+        	        Recipes.addShapeless({id:obj.nugget, count:9, data:0}, [{id:obj.ingot, data:0}]);
+                    Recipes.addShaped({id: obj.ingot, count: 1, data: 0}, ["xxx", "xxx", "xxx"], ['x', obj.nugget, 0])
+                }
+                if(obj.ingot){
+                	ATMech.FurnaceRecipe ({sS1:[obj.nugget, 9, 0], rS1:[obj.ingot, 1, 0], long:round(obj.long, 1), temp:obj.temp});
+                    ATMech.AlloySmelterRecipe.add({slot1: {id: obj.nugget, count: 9}, slot2: {id: ItemID.MoldIngot, count: 1}, output: {id: obj.ingot, data: 0, count: 1},adv: {time: obj.long * 20, level: obj.lvl, isShape: true}});
+                	ATMech.AlloySmelterRecipe.add({slot1: {id: obj.ingot, count: 1}, slot2: {id: ItemID.MoldNuggets, count: 1}, output: {id: obj.nugget, data: 0, count: 9},adv: {time: obj.long* 20, level: obj.lvl, isShape: true}});
+                }
+            }
+            if(obj.gem){
+            	ATMech.MaceratorRecipe ({sS:[obj.gem, 1, 0], rS1:[obj.dust, 1, 0], long:obj.lvl*10, lvl:obj.lvl});
+            	ATMech.FurnaceRecipe ({sS1:[obj.dust, 1, 0], rS1:[obj.gem, 1, 0], long:round(obj.long, 1), temp:obj.temp});
+            }
+            if(obj.ingot){
+            	ATMech.FurnaceRecipe ({sS1:[obj.dust, 1, 0], rS1:[obj.ingot, 1, 0], long:obj.long, temp:obj.temp});
+                ATMech.MaceratorRecipe ({sS:[obj.ingot, 1, 0], rS1:[obj.dust, 1, 0], long:obj.long, lvl:obj.lvl});
+                if(obj.temp <= vanileFurnaceTemp){
+                	Recipes.addFurnace(obj.dust, obj.ingot, 0);
+                }else{
+                	Recipes.removeFurnaceRecipe(obj.dust, 0)
+                }
+            }
+        }
+        if(obj.ingot){
+        	if(obj.long_rod){
+                CreateRecipeWithTool({id:obj.long_rod, count:1, data:0}, ["fa"], ['a', obj.ingot, 0], [this.files], obj.lvl);
+                CreateRecipeWithTool({id:obj.rod, count:2, data:0}, ["sa"], ['a', obj.long_rod, 0], [this.saws], obj.lvl);
+                if(obj.bolt){
+                	CreateRecipeWithTool({id:obj.bolt, count:3, data:0}, ["sa"], ['a', obj.rod, 0], [this.saws], obj.lvl);
+                }
+                if(obj.ring){
+                	CreateRecipeWithTool({id:obj.ring, count:1, data:0}, ["haf"], ['a', obj.rod, 0], [this.hammers], obj.lvl);
+                }
+            }
+        	if(obj.block){
+            	Recipes.deleteRecipe({id:obj.block, count:1, data:0})
+                Recipes.addShapeless({id:obj.ingot, count:9, data:0}, [ {id:obj.block, data:0}]);
+                ATMech.AlloySmelterRecipe.add({slot1: {id: obj.ingot, count: 9}, slot2: {id: ItemID.MoldBlock, count: 1}, output: {id: obj.block, data: 0, count: 1},adv: {time: obj.long * 20, level: obj.lvl, isShape: true}});
+            }
+            if(obj.plate){   
+            	ATMech.MaceratorRecipe ({sS:[obj.ingot, 1, 0], rS1:[obj.dust, 1, 0], long:obj.lvl*10, lvl:obj.lvl});
+                //ATMech.ForgeHammerRecipe ({sS:[obj.ingot, 2, 0], rS: [obj.plate, 1, 0], lvl: obj.lvl})
+                ATMech.AlloySmelterRecipe.add({slot1: {id: obj.ingot, count: 1}, slot2: {id: ItemID.MoldPlate, count: 1},output: {id: obj.plate, data: 0, count: 1},adv: {time: obj.long * 20, level: obj.lvl, isShape: true}});    
+                ReplaceRecipeWithTool({id:obj.plate, count:1, data:0}, ["h", "a", "a"], ['a', obj.ingot, 0], [this.hammers], obj.lvl);
+                if(obj.wire){
+                	ReplaceShapelessRecipeWithTool({id:obj.wire, count:3, data:0}, [{id:obj.plate, data:0}], [this.cutters], obj.lvl)
+                }
+                if(obj.casing){
+                	ReplaceShapelessRecipeWithTool({id:obj.casing, count:3, data:0}, [{id:obj.plate, data:0}], [this.hammers], obj.lvl)
+                }
+            }
+        }
+        if(obj.bolt && obj.nugget){            
+            CreateShapelessRecipeWithTool({id:obj.bolt, count:1, data:0}, [{id:obj.nugget, data:0}], [this.files], obj.lvl);                              
+        }
+        if(obj.module){
+            if(obj.bolt){        	        
+               CreateRecipeWithTool({id:obj.module, count:1, data:0}, ["bwb", "bpb", "bsb"], ['b', obj.bolt, 0, 'p', obj.plate, 0], [this.screwdrivers, this.wrenchs], obj.lvl);
+            }else{                	                
+                CreateRecipeWithTool({id:obj.module, count:1, data:0}, ["bwb", "bpb", "bsb"], ['b', ItemID.boltSteel, 0, 'p', obj.plate, 0], [this.screwdrivers, this.wrenchs], obj.lvl);
+            }
+        }
+	}
+}
+
+EXPORT("MAPI", MAPI);
+EXPORT("ATMech", ATMech);
+EXPORT("ATGen", ATGen);
+EXPORT("ATMat", ATMat);
+EXPORT("CTR", CTR);
+EXPORT("CreateRecipeWithTool", CreateRecipeWithTool)
+EXPORT("ReplaceRecipeWithTool", ReplaceRecipeWithTool)
+EXPORT("CreateShapelessRecipeWithTool", CreateShapelessRecipeWithTool) 
+EXPORT("ReplaceShapelessRecipeWithTool", ReplaceShapelessRecipeWithTool) 
+EXPORT("Config", Config)

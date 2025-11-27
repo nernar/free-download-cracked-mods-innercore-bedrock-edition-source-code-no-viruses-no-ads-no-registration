@@ -1,0 +1,42 @@
+IDRegistry.genItemID("tu_circuit");
+IDRegistry.genItemID("tu_circuitEnc");
+IDRegistry.genItemID("tu_blank");
+IDRegistry.genItemID("tu_advCircuit");
+IDRegistry.genItemID("tu_advCircuitEnc");
+IDRegistry.genItemID("tu_advBlank");
+Item.createItem("tu_circuit", "Redstone Circuit", {name: "tu_circuit"});
+Item.createItem("tu_circuitEnc", "Enchanted Circuit", {name: "tu_circuit"});
+Item.createItem("tu_blank", "Blank Modifier", {name: "tu_blank"});
+Item.createItem("tu_advCircuit", "Advanced Circuit", {name: "tu_circuit", meta: 1});
+Item.createItem("tu_advCircuitEnc", "Enchanted Advanced Circuit", {name: "tu_circuit", meta: 1});
+Item.createItem("tu_advBlank", "Blank Advanced Modifier", {name: "tu_blank", meta: 1});
+Item.setGlint(ItemID.tu_circuitEnc, true);
+Item.setGlint(ItemID.tu_blank, true);
+Item.setGlint(ItemID.tu_advCircuitEnc, true);
+Item.setGlint(ItemID.tu_advBlank, true);
+
+const regUpg = function(name){
+  const Name = name.charAt(0).toUpperCase() + name.slice(1);
+  const paste = "tu_paste" + Name;
+  const mod = "tu_mod" + Name;
+  const adv = "tu_adv" + Name;
+  IDRegistry.genItemID(paste);
+  IDRegistry.genItemID(mod);
+  IDRegistry.genItemID(adv);
+  Item.createItem(paste, Name + " Paste", {name: "tu_" + name});
+  Item.createItem(mod, Name + " Modifier", {name: "tu_" + name, meta: 1}, {stack: 1});
+  Item.createItem(adv, "Advanced " + Name + " Modifier", {name: "tu_" + name, meta: 2}, {stack: 1});
+  Item.setGlint(ItemID[mod], true);
+  Item.setGlint(ItemID[adv], true);
+  Recipes.addShapeless({id: ItemID[mod]}, [{id: ItemID.tu_blank}, {id: ItemID[paste]}]);
+  Recipes.addShapeless({id: ItemID[adv]}, [{id: ItemID.tu_advBlank}, {id: ItemID[paste]}]);
+};
+
+regUpg("blaze");
+regUpg("growstone");
+regUpg("gunpowder");
+regUpg("sugar");
+regUpg("inc");
+regUpg("lapis");
+regUpg("clay");
+regUpg("slime");

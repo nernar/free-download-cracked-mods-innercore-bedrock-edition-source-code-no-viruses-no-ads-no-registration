@@ -1,0 +1,198 @@
+ModAPI.addAPICallback("GuideAPI", function(api){
+	let GuideAPI = api.GuideAPI
+	let GuideHelper = api.GuideHelper
+	let PageControllers = api.PageControllers
+	
+	IDRegistry.genItemID("bookGregTech")
+    Item.createItem("bookGregTech", "Greg Tech Book", {name: "book_normal"})
+    
+    let pages = {
+    	"default":{
+            nextLink: "default",
+            left: {
+            	controller: PageControllers.BASIC_PAGE,
+                elements: [
+                    {text: "Greg Tech", size: 20, bold: true},
+                    {text: "Ссылки:", size: 18},
+                    {text: "Руды", color: android.graphics.Color.BLUE, link: "ores0"},                    
+                    {text: "Советы", color: android.graphics.Color.BLUE, link: "advices"},
+                    {text: "Материалы", color: android.graphics.Color.BLUE, link: "materials0"},
+                ]
+            },
+         
+            right: {
+            	controller: PageControllers.BASIC_PAGE,
+                elements: [
+                ]
+            }
+        }
+    }
+    
+    for(let i = 0; i < ATMat.materials.length; i++){
+    	let m = ATMat.materials[i]
+        let items = []
+        
+        if(ATMat.RetArg("ingots", m.name, "id")){
+            items.push({id: ATMat.RetArg("ingots", m.name, "id"), data:ATMat.RetArg("ingots", m.name, "data")})
+        }
+        if(ATMat.RetArg("gems", m.name, "id")){
+            items.push({id: ATMat.RetArg("gems", m.name, "id"), data:ATMat.RetArg("gems", m.name, "data")})
+        }
+        if(ATMat.RetArg("littleOres", m.name, "id")){
+            items.push({id: ATMat.RetArg("littleOres", m.name, "id"), data:ATMat.RetArg("littleOres", m.name, "data")})
+        }
+        if(ATMat.RetArg("dusts", m.name, "id")){
+            items.push({id: ATMat.RetArg("dusts", m.name, "id"), data:ATMat.RetArg("dusts", m.name, "data")})
+        }
+        if(ATMat.RetArg("nuggets", m.name, "id")){
+            items.push({id: ATMat.RetArg("nuggets", m.name, "id"), data:ATMat.RetArg("nuggets", m.name, "data")})
+        }
+        if(ATMat.RetArg("plates", m.name, "id")){
+            items.push({id: ATMat.RetArg("plates", m.name, "id"), data:ATMat.RetArg("plates", m.name, "data")})
+        }
+        
+        if(i == 0){
+            pages["materials"+i] = {
+            	preLink: "materials"+i,
+        	    nextLink: "materials"+(i+1),
+                left: {
+                	controller: PageControllers.ITEM_PAGE,
+                    items: items
+                },
+                
+                right: {
+                	controller: PageControllers.BASIC_PAGE,
+                    elements: [
+                        {text: "Название: "+m.name},
+                        {text: "Уровень: "+m.ch.lvl},
+                        {text: "Длительность обработки: "+m.ch.long},
+                        {text: "Температура плавления: "+m.ch.temp}
+                    ]
+                }
+            }
+        }
+        if(i != 0 && i != ATMat.materials.length - 1){
+            pages["materials"+i] = {
+            	preLink: "materials"+(i-1),
+        	    nextLink: "materials"+(i+1),
+                left: {
+                	controller: PageControllers.ITEM_PAGE,
+                    items: items
+                },
+                
+                right: {
+                	controller: PageControllers.BASIC_PAGE,
+                    elements: [
+                        {text: "Название: "+m.name},
+                        {text: "Уровень: "+m.ch.lvl},
+                        {text: "Длительность обработки: "+m.ch.long},
+                        {text: "Температура плавления: "+m.ch.temp}
+                    ]
+                }
+            }
+        }
+        if(i == ATMat.materials.length - 1){
+            pages["materials"+i] = {
+            	preLink: "materials"+(i-1),
+        	    nextLink: "materials"+i,
+                left: {
+                	controller: PageControllers.ITEM_PAGE,
+                    items: items
+                },
+                
+                right: {
+                	controller: PageControllers.BASIC_PAGE,
+                    elements: [
+                        {text: "Название: "+m.name},
+                        {text: "Уровень: "+m.ch.lvl},
+                        {text: "Длительность обработки: "+m.ch.long},
+                        {text: "Температура плавления: "+m.ch.temp}
+                    ]
+                }
+            }
+        }
+    }
+    
+    for(let i = 0; i < ATMat.ores.length; i++){
+    	let m = ATMat.ores[i]
+        let items = []
+        
+        items.push({id: m.id, data: m.data})
+        
+        if(i == 0){
+            pages["ores"+i] = {
+            	preLink: "ores"+i,
+        	    nextLink: "ores"+(i+1),
+                left: {
+                	controller: PageControllers.ITEM_PAGE,
+                    items: items
+                },
+                
+                right: {
+                	controller: PageControllers.BASIC_PAGE,
+                    elements: [
+                        {text: "Название: "+m.type+" ore"},
+                        {text: "Уровень: "+m.lvl},
+                        {text: "Материалы: "+m.mat},
+                    ]
+                }
+            }
+        }
+        if(i != 0 && i != ATMat.materials.length - 1){
+            pages["ores"+i] = {
+            	preLink: "ores"+(i-1),
+        	    nextLink: "ores"+(i+1),
+                left: {
+                	controller: PageControllers.ITEM_PAGE,
+                    items: items
+                },
+                
+                right: {
+                	controller: PageControllers.BASIC_PAGE,
+                    elements: [
+                        {text: "Название: "+m.type+" ore"},
+                        {text: "Уровень: "+m.lvl},
+                        {text: "Материалы: "+m.mat},
+                    ]
+                }
+            }
+        }
+        if(i == ATMat.materials.length - 1){
+            pages["ores"+i] = {
+            	preLink: "ores"+(i-1),
+        	    nextLink: "ores"+i,
+                left: {
+                	controller: PageControllers.ITEM_PAGE,
+                    items: items
+                },
+                
+                right: {
+                	controller: PageControllers.BASIC_PAGE,
+                    elements: [
+                        {text: "Название: "+m.type+" ore"},
+                        {text: "Уровень: "+m.lvl},
+                        {text: "Материалы: "+m.mat},
+                    ]
+                }
+            }
+        }
+    }
+                        
+    
+    let guide = {
+    	item: ItemID.bookGregTech,
+        
+        pages: pages,
+    }
+   
+    GuideAPI.registerGuide("GregTechGuide", guide)
+    
+    Callback.addCallback("LevelLoaded", function(){
+    	let firstLoad = true
+        if(firstLoad == true){
+        	Player.addItemToInventory (ItemID.bookGregTech, 1, 0)
+            firstLoad = false
+            //Saver.addSaverScope(firstLoad)
+        }
+    })
+})

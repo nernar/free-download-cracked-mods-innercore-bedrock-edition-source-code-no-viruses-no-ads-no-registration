@@ -1,0 +1,2 @@
+ModAPI.registerAPI("TorchPlaceAPI", TorchPlace);
+

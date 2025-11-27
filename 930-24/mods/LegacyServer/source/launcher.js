@@ -1,0 +1,2 @@
+ConfigureMultiplayer({isClientOnly: true});
+

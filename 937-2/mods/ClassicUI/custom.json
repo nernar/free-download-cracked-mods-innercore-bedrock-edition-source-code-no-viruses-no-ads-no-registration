@@ -1,0 +1,60 @@
+{
+	"themes": {
+		"classic": {
+			"slot": "classic_slot",
+			"invSlot": "classic_slot",
+			"selected_slot": "_selection",
+			"selected_invSlot": "_selection",
+			"frame": "classic_frame_bg_light",
+			"frame_scale": 5,
+			"icon_scale": 0.65,
+			"color_inventory": "#000000",
+			"color_title": "#000000",
+			"frame_tab": "classic_frame_bg_light"
+		},
+		"dark": {
+			"slot": "_default_slot",
+			"invSlot": "_default_slot",
+			"selected_slot": "_selection",
+			"selected_invSlot": "_selection",
+			"frame": "workbench_frame3",
+			"frame_scale": 5,
+			"icon_scale": 0.65,
+			"color_inventory": "#ffffff",
+			"color_title": "#ffffff"
+		}
+	},
+	"configs": {
+		"machineMechanicSawmill": {
+			"x": 0,
+			"y": 0,
+			"scale": 0,
+			"theme": "super_classic_dark",
+			"icon_scale": 95,
+			"slot_padding": -3,
+			"padding": 25,
+			"padding_classic": 25
+		},
+		"ex_furnace0": {
+			"x": 0,
+			"y": 0,
+			"scale": 0,
+			"theme": "super_classic",
+			"icon_scale": 65,
+			"slot_padding": -3,
+			"padding": 25,
+			"padding_classic": 25,
+			"padding_dark": 25
+		},
+		"energyAutoSieve": {
+			"x": 0,
+			"y": 0,
+			"scale": 0,
+			"theme": "super_classic",
+			"icon_scale": 100,
+			"slot_padding": -3,
+			"padding": 25,
+			"padding_classic": 25
+		}
+	}
+}

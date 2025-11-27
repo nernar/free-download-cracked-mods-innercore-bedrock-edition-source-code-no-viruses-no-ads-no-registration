@@ -1,0 +1,44 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "about:fluorescent_tallgrass"
+    },
+    
+    "components":{
+      "minecraft:loot": "loot_tables/blocks/fluorescent_tallgrass.json",
+      "minecraft:destroy_time": 0,
+      "minecraft:explosion_resistance": 0,
+      "minecraft:block_light_absorption": 1,
+      "minecraft:block_light_emission": 0.3,
+      "minecraft:breakonpush": true,
+      "minecraft:entity_collision": false,
+      "minecraft:pick_collision": {
+        "origin": [ -7, 0, -7 ],
+        "size": [ 14, 16, 14 ]
+      },
+      "minecraft:geometry": "geometry.cross",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "fluorescent_tallgrass",
+          "render_method": "alpha_test",
+          "ambient_occlusion": false,
+          "face_dimming": true
+        }
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              {
+                "tags": "query.any_tag('grass', 'dirt', 'mossy_stone')"
+              }
+            ],
+            "allowed_faces": [ "up" ]
+          }
+        ]
+      },
+      "tag:plant": {}
+    }
+  }
+}

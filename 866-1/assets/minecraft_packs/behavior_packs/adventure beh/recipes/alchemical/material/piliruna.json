@@ -1,0 +1,40 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pili:piliruna"
+		},
+		"tags": [
+			"pili_craft"
+		],
+		"pattern": [
+			"bab",
+   "aba",
+"bab"
+		],
+		"key": {
+			"a": {
+				"item": "pili:alchemical_dust"
+},
+"b": {
+"item": "minecraft:stone:0"
+}
+		},
+		"result": {
+			"item": "pili:piliruna"
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

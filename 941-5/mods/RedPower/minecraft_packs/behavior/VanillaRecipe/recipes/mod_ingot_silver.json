@@ -1,0 +1,20 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "vanilla_recipe:ingot_silver"
+		},
+		"ingredients": [
+			{
+				"item": "minecraft:block_block_silver"
+			}
+		],
+		"result": {
+			"item": "minecraft:item_ingot_silver",
+			"count": 9
+		},
+		"tags": [
+			"crafting_table"
+		]
+	}
+}

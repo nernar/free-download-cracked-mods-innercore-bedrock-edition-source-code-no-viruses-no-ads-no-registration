@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aether:swet_blue",
+      "materials": {
+        "default": "entity_alphatest",
+        "outer": "swet_blue"
+      },
+      "textures": {
+        "default": "textures/entity/swet/swet_head_blue",
+        "armor": "textures/entity/swet/swet_jelly_blue"
+      },
+      "animations": { 
+        "scale": "animation.swet.scale",
+        "scale_armor": "animation.swet_armor.scale"
+      },
+      "animation_controllers": [  
+        { "scale": "controller.animation.swet.scale" },
+        { "scale_armor": "controller.animation.swet_armor.scale" }
+      ],
+      "geometry": {
+        "default": "geometry.swet",
+        "armor": "geometry.swet_armor"
+      },
+      "render_controllers": [
+        "controller.render.swet",
+        "controller.render.swet_armor"
+      ],
+       "spawn_egg": {
+        "overlay_color": "#750130",
+        "base_color": "#255250205"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+const ARMOR_TYPE_ARMOR = 1;
+const ARMOR_TYPE_HELMET = 2;
+const ARMOR_TYPE_FULLARMOR = 3;
+

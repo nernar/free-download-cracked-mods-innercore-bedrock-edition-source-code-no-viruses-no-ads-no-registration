@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "New mobs, New food! Created: Guardian Deep - Страж Глубин",
+        "name": "§6Adventure Plus",
+        "uuid": "fffc3676-f369-41df-b801-cb06c9f29669",
+        "version": [1, 0, 1],
+        "min_engine_version": [1, 13, 0]
+    },
+    "modules": [
+        {
+            "description": "New mobs, New food! Created: Guardian Deep - Страж Глубин",
+            "type": "resources",
+            "uuid": "d4d645b9-7f2b-4ee0-bc6b-370d66191698",
+            "version": [1, 0, 1]
+        }
+    ],
+    "subpacks": [
+   {
+      "folder_name": "Old",
+      "name": "Old name",
+      "memory_tier": 1
+      },
+   {
+      "folder_name": "New",
+      "name": "New name",
+      "memory_tier": 2
+      }
+   ]
+}

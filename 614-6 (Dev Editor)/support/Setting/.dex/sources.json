@@ -1,0 +1,14 @@
+{
+  "main.js":{
+    "links":[
+      "50b7c7c265890965336f47d228ac922"
+    ],
+    "class_name":"main.js"
+  },
+  "launcher.js":{
+    "links":[
+      "bfed9464d8a93a1f5c7dd269ec27f"
+    ],
+    "class_name":"launcher.js"
+  }
+}

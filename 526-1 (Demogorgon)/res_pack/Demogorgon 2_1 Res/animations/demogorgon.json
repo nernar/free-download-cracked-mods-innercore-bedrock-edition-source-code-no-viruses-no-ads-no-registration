@@ -1,0 +1,538 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.demogorgon.look_at_target": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "relative_to": { "rotation": "entity" },
+          "rotation": [ "query.target_x_rotation - this", "query.target_y_rotation - this", 0.0 ]
+        },
+        "head2": {
+          "relative_to": { "rotation": "entity" },
+          "rotation": [ "query.target_x_rotation - this", "query.target_y_rotation - this", 0.0 ]
+        }
+        
+      }
+    },
+    "animation.demogorgon.look_at_target_head": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "relative_to": { "rotation": "entity" },
+          "rotation": [ "query.target_x_rotation - this", "query.target_y_rotation - this", 0.0 ]
+        },
+        "head2": {
+          "relative_to": { "rotation": "entity" },
+          "rotation": [ "query.target_x_rotation - this", "query.target_y_rotation - this", 0.0 ]
+        }
+        
+      }
+    },
+    
+    "animation.demogorgon.casting": {
+      "loop": true,
+      "animation_length": 4.0,
+      "bones": {
+         "tophead1": {
+          "rotation": [ "Math.cos(query.life_time * 750) * -24", 0, 0]
+        },
+        "tophead2": {
+          "rotation": [ "Math.cos(query.life_time * 675) * -29", 0, 0]
+        },
+        "righttophead1": {
+          "rotation": [ "Math.cos(query.life_time * 700) * -24", 0, 0]
+        },
+        "righttophead2": {
+          "rotation": [ "Math.cos(query.life_time * 750) * -29", 0, 0]
+        },
+        "leftdownhead1": {
+          "rotation": [ "Math.cos(query.life_time * 675) * -24", 0, 0]
+        },
+        "leftdownhead2": {
+          "rotation": [ "Math.cos(query.life_time * 650) * -29", 0, 0]
+        },
+        "rightdownhead1": {
+          "rotation": [ "Math.cos(query.life_time * 775) * -24", 0, 0]
+        },
+        "rightdownhead2": {
+          "rotation": [ "Math.cos(query.life_time * 700) * -29", 0, 0]
+        },
+        "lefttophead1": {
+          "rotation": [ "Math.cos(query.life_time * 650) * -24", 0, 0]
+        },
+        "lefttophead2": {
+          "rotation": [ "Math.cos(query.life_time * 770) * -29", 0, 0]
+        },
+        "body": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.6": [19, 0, 0],
+            "0.7": [-30, 0, 0],
+            "2.5": [-40, 0, 0],
+             "2.8": [-10, 0, 0],
+            "3.1": [0, 0, 0]
+          },
+          "position": {
+            "0.2": [0, 0, 0],
+            "0.8": [0, 0, 0],
+            "3.0": [0, 0, 0],
+            "3.5": [0, 0, 0],
+            "4.0": [0, 0, 0]
+          }
+        },
+       "leftleg1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.6": [0, 0, 0],
+            "0.7": [0, 0, -8],
+            "2.5": [0, 0, -12],
+            "3.0": [0, 0, 0]
+          },
+          "position": {
+            "0.0": [0, 0, 0],
+            "0.1": [0, 0, 0],
+            "0.4": [0, 0, 0],
+            "0.7": [0, 0, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+           "rightleg1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.6": [0, 0, 0],
+            "0.7": [0, 0, 8],
+            "2.5": [0, 0, 12],
+            "3.0": [0, 0, 0]
+          },
+          "position": {
+            "0.0": [0, 0, 0],
+            "0.1": [0, 0, 0],
+            "0.4": [0, 0, 0],
+            "0.7": [0, 0, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+           "leftleg3": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.6": [0, 0, 0],
+            "0.7": [10, 0, 8],
+            "2.5": [20, 0, 12],
+            "3.0": [0, 0, 0]
+          },
+          "position": {
+            "0.0": [0, 0, 0],
+            "0.1": [0, 0, 0],
+            "0.4": [0, 0, 0],
+            "0.7": [0, 0, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+           "rightleg2": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.6": [0, 0, 0],
+            "0.7": [-20, 0, 0],
+            "2.5": [-20, 0, 0],
+            "3.0": [0, 0, 0]
+          },
+          "position": {
+            "0.0": [0, 0, 0],
+            "0.1": [0, 0, 0],
+            "0.4": [0, 0, 0],
+            "0.7": [0, 0, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+           "leftleg2": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.6": [0, 0, 0],
+            "0.7": [-20, 0, 0],
+            "2.5": [-20, 0, 0],
+            "3.0": [0, 0, 0]
+          },
+          "position": {
+            "0.0": [0, 0, 0],
+            "0.1": [0, 0, 0],
+            "0.4": [0, 0, 0],
+            "0.7": [0, 0, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+        
+           "rightleg3": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.6": [0, 0, 0],
+            "0.7": [10, 0, -8],
+            "2.5": [20, 0, -12],
+            "3.0": [0, 0, 0]
+          },
+          "position": {
+            "0.0": [0, 0, 0],
+            "0.1": [0, 0, 0],
+            "0.4": [0, 0, 0],
+            "0.7": [0, 0, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+        
+     
+      "head2": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.6": [50, 0, 0],
+            "0.7": [-90, 0, 0],
+            "2.9": [-88, 20, 0],
+            "3.1": [0, 0, 0]
+          },
+          "position": {
+            "0.2": [0, 0, 0],
+            "0.8": [0, 0, 0],
+            "3.0": [0, 0, 0],
+            "3.5": [0, 0, 0],
+            "4.0": [0, 0, 0]
+          }
+        },
+        "rightarm1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.6": [-19, 0, -5],
+            "0.7": [45, 0, 30],
+            "2.5": [38, 0, 25],
+            "3.0": [0, 0, 0]
+          },
+          "position": {
+            "0.0": [0, 0, 0],
+            "0.6": [0, 0, 0],
+            "0.7": [0, -1, 0],
+            "2.5": [0, -1.5, 0],
+            "3.0": [0, 0, 0]
+          }
+        },
+        "rightarm2": {
+          "rotation": {
+            "0.0": [40, 0, 0],
+            "0.6": [25, 0, 0],
+            "0.7": [25, 0, 0],
+            "2.5": [15, 0, 0],
+            "3.0": [40, 0, 0]
+          },
+          "position": {
+            "0.2": [0, 0, 0],
+            "0.8": [0, 0, 0],
+            "3.0": [0, 0, 0],
+            "3.5": [0, 0, 0],
+            "4.0": [0, 0, 0]
+          }
+        },
+        "rightarm3": {
+          "rotation": {
+            "0.0": [-50, 0, 0],
+            "0.6": [-30, 0, 0],
+            "0.7": [-30, 0, 0],
+            "2.5": [-25, 0, 0],
+            "3.0": [-50, 0, 0]
+          },
+          "position": {
+            "0.2": [0, 0, 0],
+            "0.8": [0, 0, 0],
+            "3.0": [0, 0, 0],
+            "3.5": [0, 0, 0],
+            "4.0": [0, 0, 0]
+          }
+        },
+        "leftarm1": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.6": [-15, 0, 5],
+            "0.7": [40, 0, -35],
+            "2.5": [35, 0, -25],
+            "3.0": [0, 0, 0]
+          },
+          "position": {
+            "0.0": [0, 0, 0],
+            "0.6": [0, 0, 0],
+            "0.7": [0, -1, 0],
+            "2.5": [0, -1.5, 0],
+            "3.0": [0, 0, 0]
+          }
+        },
+        
+        
+        "leftarm2": {
+          "rotation": {
+            "0.0": [40, 0, 0],
+            "0.6": [20, 0, 0],
+            "0.7": [20, 0, 0],
+            "2.5": [10, 0, 0],
+            "3.0": [40, 0, 0]
+          },
+          "position": {
+            "0.2": [0, 0, 0],
+            "0.8": [0, 0, 0],
+            "3.0": [0, 0, 0],
+            "3.5": [0, 0, 0],
+            "4.0": [0, 0, 0]
+          }
+        },
+        "leftarm3": {
+          "rotation": {
+            "0.0": [-50, 0, 0],
+            "0.6": [-30, 0, 0],
+            "0.7": [-30, 0, 0],
+            "2.5": [-25, 0, 0],
+            "3.0": [-50, 0, 0]
+          },
+          "position": {
+            "0.2": [0, 0, 0],
+            "0.8": [0, 0, 0],
+            "3.0": [0, 0, 0],
+            "3.5": [0, 0, 0],
+            "4.0": [0, 0, 0]
+          }
+        }
+      }
+    },
+    "animation.demogorgon.attack_bare_hand": {
+      "loop": true,
+      "bones": {
+        "rightArm1": {
+          "rotation": [
+            "Math.sin(1.0 - Math.pow(1.0 - variable.attack_time, -10.0) * 180.0) * (variable.is_brandishing_spear ? -1.0 : 1.0 )",
+            "variable.is_brandishing_spear ? 0.0 : variable.attack_body_rot_y * 2.0",
+            0.0
+          ]
+        },
+        "leftarm1": {
+          "rotation": [
+            "Math.sin(1.0 - Math.pow(1.0 - variable.attack_time, 10.0) * 180.0) * (variable.is_brandishing_spear ? -1.0 : 1.0 )",
+            "variable.is_brandishing_spear ? 0.0 : variable.attack_body_rot_y * -2.0",
+            0.0
+          ]
+        }
+
+      }
+    },  
+    "animation.demogorgon.general": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [ "Math.cos(query.life_time * 100) * -6", 0, 0]
+        },
+        "leftarm1": {
+          "rotation": [ "Math.cos(query.life_time * 45) * -4", 0, "Math.cos(query.life_time * 50) * -6"]
+        },
+        "leftarm2": {
+          "rotation": [ "Math.cos(query.life_time * 75) * -14", 0, 0]
+        },
+        "leftarm3": {
+          "rotation": [ "Math.cos(query.life_time * 350) * 3", 0, 0]
+        },
+        "rightarm1": {
+          "rotation": [ "Math.cos(query.life_time * 75) * -4", 0, "Math.cos(query.life_time * 45) * 6"]
+        },
+        "rightarm2": {
+          "rotation": [ "Math.cos(query.life_time * 50) * -14", 0, 0]
+        },
+        "rightarm3": {
+          "rotation": [ "Math.cos(query.life_time * 300) * 3", 0, 0]
+        },
+        "tophead1": {
+          "rotation": [ "Math.cos(query.life_time * 350) * -24", 0, 0]
+        },
+        "tophead2": {
+          "rotation": [ "Math.cos(query.life_time * 275) * -29", 0, 0]
+        },
+        "righttophead1": {
+          "rotation": [ "Math.cos(query.life_time * 300) * -24", 0, -55]
+        },
+        "righttophead2": {
+          "rotation": [ "Math.cos(query.life_time * 350) * -29", 0, 0]
+        },
+        "leftdownhead1": {
+          "rotation": [ "Math.cos(query.life_time * 275) * -24", 0, -45]
+        },
+        "leftdownhead2": {
+          "rotation": [ "Math.cos(query.life_time * 250) * -29", 0, 0]
+        },
+        "rightdownhead1": {
+          "rotation": [ "Math.cos(query.life_time * 375) * -24", 0, 45]
+        },
+        "rightdownhead2": {
+          "rotation": [ "Math.cos(query.life_time * 300) * -29", 0, 0]
+        },
+        "lefttophead1": {
+          "rotation": [ "Math.cos(query.life_time * 250) * -24", 0, 55]
+        },
+        "lefttophead2": {
+          "rotation": [ "Math.cos(query.life_time * 370) * -29", 0, 0]
+        },
+        "head2": {
+          "rotation": [ "Math.cos(query.life_time * 50) * 3", 0, 0]
+        },
+        "head": {
+          "rotation": [ "Math.cos(query.life_time * 50) * 3", 0, 0]
+        }
+      }
+    },
+    
+    "animation.demogorgon.general_legs": {
+
+      
+      "loop": true,
+  
+      "bones": {
+        "leftleg1": {
+          "rotation": [0.0,0.0,0.0],
+          "position": [0.0,0.0,0.0]
+        },
+        "leftleg2": {
+          "rotation": [20.0,0.0,0],
+          "position": [0.0,-1.0,1]
+          
+        },
+        "leftleg3": {
+          "rotation": [-20.0,0.0,0.0],
+  "scale": 1.15
+        },
+        "rightleg1": {
+          "rotation": [0.0,0.0,0.0],
+          "position": [0.0,0.0,0.0]
+        },
+        "rightleg2": {
+          "rotation": [20.0,0.0,0],
+          "position": [0.0,-1.0,1]
+        },
+        "rightleg3": {
+          "rotation": [-20.0,0.0,0.0],
+  "scale": 1.15
+    
+        }
+      }
+    },	
+    
+    "animation.demogorgon.general_2": {
+
+      
+      "loop": true,
+  
+      "bones": {
+        "leftleg1": {
+          "rotation": [0.0,0.0,0.0],
+          "position": [0.0,0.0,0.0]
+        },
+        "leftleg2": {
+          "rotation": [20.0,0.0,0],
+          "position": [0.0,-1.0,1.0]
+          
+        },
+        "leftleg3": {
+          "rotation": [-20.0,0.0,0.0],
+  "scale": 1.15
+        },
+        "rightleg1": {
+          "rotation": [0.0,0.0,0.0],
+          "position": [0.0,0.0,0.0]
+        },
+        "rightleg2": {
+          "rotation": [20.0,0.0,0],
+          "position": [0.0,-1.0,1]
+        },
+        "rightleg3": {
+          "rotation": [-20.0,0.0,0.0],
+  "scale": 1.15
+        },
+        "body": {
+          "position": [0.0,0.0,0.0]
+        },
+        
+        "leftarm2": {
+          "rotation": [40.0,0.0,1]
+        },
+        "rightarm2": {
+          "rotation": [40.0,0.0,0.0]
+        },
+        "leftarm3": {
+          "rotation": [-50.0,0.0,0.0]
+        },
+        "rightarm3": {
+          "rotation": [-50.0,0.0,0.0]
+       
+        }
+      }
+    },	
+		
+    "animation.demogorgon.move": {
+      "anim_time_update": "query.modified_distance_moved",
+
+      "loop": true,
+      "bones": {
+          "rightarm1": {
+          "rotation": ["Math.cos(query.anim_time * 40 + 70) *50.0", 0, 0]
+        },
+        "leftarm1": {
+          "rotation": ["Math.cos(query.anim_time * 40 + 70) *-50.0", 0, 0]
+        },
+        "leftarm2": {
+          "rotation": ["Math.cos(query.anim_time * 40 + 70) *-50.0", 0, 0]
+        },
+        "rightarm2": {
+          "rotation": ["Math.cos(query.anim_time * 40 + 70) *50.0", 0, 0]
+        },
+        "rightarm3": {
+          "rotation": ["Math.cos(query.anim_time * 40 + 70) *-50.0", 0, 0]
+        },
+        "leftarm3": {
+          "rotation": ["Math.cos(query.anim_time * 40 + 70) *50.0", 0, 0]
+        },
+        "leftleg1": {
+          "rotation": ["Math.cos(query.anim_time * 40 + 70) *50.0", 0, 0]
+        },
+        "rightleg1": {
+          "rotation": ["Math.cos(query.anim_time * 40 + 70) *-50.0", 0, 0]
+        },
+        "rightleg3": {
+          "rotation": ["Math.cos(query.anim_time * 40 + 70) *-50.0", 0, 0]
+        },
+        "leftleg3": {
+          "rotation": ["Math.cos(query.anim_time * 40 + 70) *50.0", 0, 0]
+        }
+      }
+    },
+
+    "animation.demogorgon.big_head": {
+      "loop": true,
+      "bones": {
+        "head": { "scale": 1.4 },
+        "head2": { "scale": 1.4 },
+        "rightleg2": { 
+        "scale": 1.05 ,
+    	"position": [0, 0, 0]  },
+    	
+        "rightleg3": { 
+        "scale": 1.15 ,
+    	"position": [0, 1, 0]  },
+    	
+        "rightleg1": { "scale": 1.05 },
+        
+        "leftleg2": { 
+        "scale": 1.05 ,
+        "position": [0, 0, 0] },
+        "leftleg3": { 
+        "scale": 1.15 ,
+        "position": [0, 1, 0] },
+        
+        "leftleg1": { "scale": 1.05  },
+        "rightarm2": { "scale": 1.05,	"position": [0, 1, 0] },
+        "rightarm3": { "scale": 1.15,	"position": [0, 0, 0] },
+        "rightarm1": { "scale": 1.05 },
+        "leftarm2": { "scale": 1.05, "position": [0, 1, 0]  },
+        "leftarm3": { "scale": 1.15, "position": [0, 0, 0]  },
+        "leftarm1": { "scale": 1.05 }
+      }
+    }
+  }
+}

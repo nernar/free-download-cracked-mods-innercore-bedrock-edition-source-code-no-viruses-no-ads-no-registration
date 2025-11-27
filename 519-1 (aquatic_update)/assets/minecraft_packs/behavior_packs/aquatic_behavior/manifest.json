@@ -1,0 +1,39 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "§6Aquatic Update [Behavior]§r",
+		"description": "§ev1.0 - By §6MeduiIthron§r, §b@MeduiIthron§r, §eBringing an aquatic update to minecraft§r\n§l§4[EXPERIMENTAL GAMEPLAY]",
+		"uuid": "87ac60ec-a73a-405e-99e1-db8700447737",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			10,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "82b5bdff-99bd-49fb-a731-3df69ccce86e",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "8a5cf5e0-335d-47ad-8d18-f94f005248e9"
+		}
+	]
+}

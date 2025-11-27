@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:brick_blue"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BAB",
+      "ABA",
+      "BAB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:stonebrick",
+        "data": 0
+      },
+      "B": {
+      "item": "minecraft:block_dragon_scale_blue",
+      "data": 0
+      }
+    },
+    "result": {
+      "item": "minecraft:block_dragon_forg_ice_brick",
+      "count": 2
+    }
+  }
+}

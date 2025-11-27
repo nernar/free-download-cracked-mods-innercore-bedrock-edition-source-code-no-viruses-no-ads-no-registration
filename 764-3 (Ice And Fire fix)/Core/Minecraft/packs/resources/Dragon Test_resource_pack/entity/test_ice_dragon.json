@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "test:ice_dragon",
+      "textures": {
+        "default": "textures/entity/pamobile/test_ice_dragon"
+      },
+      "materials": {
+        "default": "skeleton"
+      },
+      "geometry": {
+        "default": "geometry.ice_dragon"
+      },
+      "render_controllers": [
+        "controller.render.translucence"
+      ],
+      "spawn_egg": {
+        "texture": "test:ice_dragon",
+        "texture_index": 0
+      },
+      "animations": {
+        "walk": "animation.trex.walk",
+        "stand": "animation.trex.stand"
+      },
+      "scripts": {
+        "animate": [
+          "root",
+          {
+            "walk": "query.is_moving"
+          },
+          {
+            "stand": "!query.is_moving"
+          }
+        ]
+      }
+    }
+  }
+}

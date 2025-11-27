@@ -1,0 +1,8 @@
+{
+  "parent": "ttigraas:custom/spatial_pad",
+  "textures": {
+    "all": "ttigraas:blocks/spacial_pad",
+    "particle": "ttigraas:blocks/spacial_pad",
+    "1": "ttigraas:blocks/spacial_pad"
+  }
+}

@@ -1,0 +1,2 @@
+let IPhantomInkable = new Interface();
+

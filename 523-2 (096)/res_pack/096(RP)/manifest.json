@@ -1,0 +1,25 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "By BendytheDemon18",
+        "name": "SCP",
+        "uuid": "be649486-7f39-4a7c-8542-7e091dc4600a",
+        "version": [1, 8, 0],
+        "platform_locked": false,
+        "min_engine_version": [1, 8, 0],
+        "pack_scope": "world"
+    },
+    "modules": [
+        {
+            "description": "BendytheDemon18",
+            "type": "resources",
+            "uuid": "6d112c87-798b-4bd2-b74e-27a000032059",
+            "version": [1, 8, 0]
+        }
+    ],
+ 
+    "metadata": {
+        "authors": [ "BendytheDemon18" ],
+        "url": "https://mobile.twitter.com/BendytheDemon18"
+    }
+}

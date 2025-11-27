@@ -1,0 +1,5 @@
+{
+	"decor_item_storage:entity_alphatest_custom": {
+		"fragmentShader": "./decor_item_storage.fragment"
+	}
+}

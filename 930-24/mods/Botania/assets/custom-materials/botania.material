@@ -1,0 +1,17 @@
+{
+	"translucent:entity_alphatest_custom": {
+		"+states": ["Blending"],
+		"-states": ["DisableCulling"],
+		"-defines": ["ALPHA_TEST"]
+	},
+	"animated:translucent": {
+		"fragmentShader": "./animated.frag.c"
+	},
+	"animated_alpha:translucent": {
+		"fragmentShader": "./animated_alpha.frag.c"
+	},
+	"rainbow_gradient:translucent": {
+		"vertexShader": "./rainbow_gradient.vert.c",
+		"fragmentShader": "./rainbow_gradient.frag.c"
+	}
+}

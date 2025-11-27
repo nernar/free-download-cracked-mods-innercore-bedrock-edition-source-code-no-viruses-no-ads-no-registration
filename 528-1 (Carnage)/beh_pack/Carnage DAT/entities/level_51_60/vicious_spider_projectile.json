@@ -1,0 +1,57 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "raigen:vicious_spider_projectile",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.87,
+        "height": 0.87
+      },
+	  "minecraft:scale": {
+	    "value": 0.89
+	  },
+	  "minecraft:health": {
+	    "value": 3
+	  },
+      "minecraft:projectile": {
+        "onHit": {
+          "impact_damage": {
+            "damage": 0,
+            "knockback": true,
+            "shouldbounce": true
+          },
+          "mob_effect": {
+            "effect": "slowness",
+            "durationeasy": 200,
+            "durationnormal": 200,
+            "durationhard": 200,
+            "amplifier": 2
+          },
+          "remove_on_hit": {
+          },
+          "particle_on_hit": {
+            "particle_type": "snowballpoof",
+            "on_other_hit": true
+          }
+        },
+        "hitSound": "mob.slime.small",
+        "destroyOnHurt": true,
+        "critParticleOnHurt": true,
+        "power": 1.1,
+        "gravity": 0.00001,
+        "uncertaintyBase": 16,
+        "uncertaintyMultiplier": 4,
+        "anchor": 1,
+        "offset": [ 0, 0, 0 ]
+      },
+      "minecraft:physics": {
+	  }
+    }
+  }
+}

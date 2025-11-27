@@ -1,0 +1,15 @@
+{
+  "namespace": "hud",
+  "root_panel": {
+    "controls": [
+      {
+        "mob_effects_renderer@mob_effects_renderer": {
+          "size": [ "100%", "45%" ],
+          "offset": [ -5, -135 ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right"
+        }
+      }
+    ]
+  }
+}

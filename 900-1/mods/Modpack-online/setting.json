@@ -1,0 +1,13 @@
+{
+	"description": {
+		"title": "Настройки",
+		"message_update": {
+			"type": "boolean",
+			"text": "Система оповещений(вкл/выкл)"
+		}
+	},
+	"setting": {
+		"message_update": "true",
+		"undefined": 0
+	}
+}

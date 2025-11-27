@@ -1,0 +1,19 @@
+{
+  "enabled":true,
+  "fast_mode":false,
+  "CollisionShape":true,
+  "Seeds":{
+    "amethyst":{
+      "utility":"chance to obtain an amethyst ingot"
+    },
+    "titane":{
+      "utility":"small chance to obtain a titane ingot"
+    },
+    "paladium":{
+      "utility":"little chance to obtain a paladium ingot"
+    },
+    "endium":{
+      "utility":"VERY little chance to obtain an endium nugget"
+    }
+  }
+}

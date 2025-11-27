@@ -1,0 +1,479 @@
+{
+	"feature_rule": {
+		"BP/feature_rules/chunk_of_earth_feature_rule.json": {
+			"identifiers": [
+				"minecraft:chunk_of_earth_feature_rule"
+			]
+		},
+		"BP/feature_rules/tiny_rock1_feature_rule.json": {
+			"identifiers": [
+				"minecraft:tiny_rock1_feature_rule"
+			]
+		},
+		"BP/feature_rules/tiny_rock3_feature_rule.json": {
+			"identifiers": [
+				"minecraft:tiny_rock3_feature_rule"
+			]
+		},
+		"BP/feature_rules/tiny_rock2_feature_rule.json": {
+			"identifiers": [
+				"minecraft:tiny_rock2_feature_rule"
+			]
+		},
+		"BP/feature_rules/upward_rock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:upward_rock_feature_rule"
+			]
+		},
+		"BP/feature_rules/upright_rock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:upright_rock_feature_rule"
+			]
+		},
+		"BP/feature_rules/medium_rock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:medium_rock_feature_rule"
+			]
+		},
+		"BP/feature_rules/mediumrock_cluster_feature_rule.json": {
+			"identifiers": [
+				"minecraft:mediumrock_cluster_feature_rule"
+			]
+		},
+		"BP/feature_rules/rock_arch_feature_rule.json": {
+			"identifiers": [
+				"minecraft:rock_arch_feature_rule"
+			]
+		},
+		"BP/feature_rules/lotf_arch_feature_rule.json": {
+			"identifiers": [
+				"minecraft:lotf_arch_feature_rule"
+			]
+		},
+		"BP/feature_rules/rocky_ruins_feature_rule.json": {
+			"identifiers": [
+				"minecraft:rocky_ruins_feature_rule"
+			]
+		},
+		"BP/feature_rules/water_rock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:water_rock_feature_rule"
+			]
+		},
+		"BP/feature_rules/cobble_rock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:cobble_rock_feature_rule"
+			]
+		},
+		"BP/feature_rules/grassy_rock2_feature_rule.json": {
+			"identifiers": [
+				"minecraft:grassy_rock2_feature_rule"
+			]
+		},
+		"BP/feature_rules/grassy_rock1_feature_rule.json": {
+			"identifiers": [
+				"minecraft:grassy_rock1_feature_rule"
+			]
+		},
+		"BP/feature_rules/volcano_feature_rule.json": {
+			"identifiers": [
+				"minecraft:volcano_feature_rule"
+			]
+		},
+		"BP/feature_rules/meteor_crash_feature_rule.json": {
+			"identifiers": [
+				"minecraft:meteor_crash_feature_rule"
+			]
+		},
+		"BP/feature_rules/volcanic_rock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:volcanic_rock_feature_rule"
+			]
+		},
+		"BP/feature_rules/collapsed_largearch_feature_rule.json": {
+			"identifiers": [
+				"minecraft:collapsed_largearch_feature_rule"
+			]
+		},
+		"BP/feature_rules/gauntlet1_feature_rule.json": {
+			"identifiers": [
+				"minecraft:gauntlet1_feature_rule"
+			]
+		},
+		"BP/feature_rules/crimson_nether_feature_rule.json": {
+			"identifiers": [
+				"minecraft:crimson_nether_feature_rule"
+			]
+		},
+		"BP/feature_rules/end_feature_rule.json": {
+			"identifiers": [
+				"minecraft:end_feature_rule"
+			]
+		},
+		"BP/feature_rules/desert_anamoly_feature_rule.json": {
+			"identifiers": [
+				"minecraft:desert_anamoly_feature_rule"
+			]
+		},
+		"BP/feature_rules/nether_fortress_anamoly_feature_rule.json": {
+			"identifiers": [
+				"minecraft:nether_fortress_anamoly_feature_rule"
+			]
+		},
+		"BP/feature_rules/fossilhead_feature_rule.json": {
+			"identifiers": [
+				"minecraft:fossilhead_feature_rule"
+			]
+		},
+		"BP/feature_rules/fossil_spine_feature_rule.json": {
+			"identifiers": [
+				"minecraft:fossil_spine_feature_rule"
+			]
+		},
+		"BP/feature_rules/fossil2_feature_rule.json": {
+			"identifiers": [
+				"minecraft:fossil2_feature_rule"
+			]
+		},
+		"BP/feature_rules/fossil1_feature_rule.json": {
+			"identifiers": [
+				"minecraft:fossil1_feature_rule"
+			]
+		},
+		"BP/feature_rules/rocky_bees_feature_rule.json": {
+			"identifiers": [
+				"minecraft:rocky_bees_feature_rule"
+			]
+		},
+		"BP/feature_rules/large_rockarch_feature_rule.json": {
+			"identifiers": [
+				"minecraft:large_rockarch_feature_rule"
+			]
+		},
+		"BP/feature_rules/skeletonsrock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:skeletonsrock_feature_rule"
+			]
+		},
+		"BP/feature_rules/occupieddesertcave_feature_rule.json": {
+			"identifiers": [
+				"minecraft:occupieddesertcave_feature_rule"
+			]
+		},
+		"BP/feature_rules/mediumdesertrock5_feature_rule.json": {
+			"identifiers": [
+				"minecraft:mediumdesertrock5_feature_rule"
+			]
+		},
+		"BP/feature_rules/mediumdesertrock3_feature_rule.json": {
+			"identifiers": [
+				"minecraft:mediumdesertrock3_feature_rule"
+			]
+		},
+		"BP/feature_rules/mediumdesertrock2_feature_rule.json": {
+			"identifiers": [
+				"minecraft:mediumdesertrock2_feature_rule"
+			]
+		},
+		"BP/feature_rules/mediumdesertrock1_feature_rule.json": {
+			"identifiers": [
+				"minecraft:mediumdesertrock1_feature_rule"
+			]
+		},
+		"BP/feature_rules/largedesertrock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:largedesertrock_feature_rule"
+			]
+		},
+		"BP/feature_rules/emptydesertcave_feature_rule.json": {
+			"identifiers": [
+				"minecraft:emptydesertcave_feature_rule"
+			]
+		},
+		"BP/feature_rules/desertstonerock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:desertstonerock_feature_rule"
+			]
+		},
+		"BP/feature_rules/desertstonerock2_feature_rule.json": {
+			"identifiers": [
+				"minecraft:desertstonerock2_feature_rule"
+			]
+		},
+		"BP/feature_rules/underwater_structure_feature_rule.json": {
+			"identifiers": [
+				"minecraft:underwater_structure_feature_rule"
+			]
+		},
+		"BP/feature_rules/undergroundfossil_feature_rule.json": {
+			"identifiers": [
+				"minecraft:undergroundfossil_feature_rule"
+			]
+		},
+		"BP/feature_rules/sandyfossil_feature_rule.json": {
+			"identifiers": [
+				"minecraft:sandyfossil_feature_rule"
+			]
+		},
+		"BP/feature_rules/desertoasis_feature_rule.json": {
+			"identifiers": [
+				"minecraft:desertoasis_feature_rule"
+			]
+		},
+		"BP/feature_rules/fossildesert_feature_rule.json": {
+			"identifiers": [
+				"minecraft:fossildesert_feature_rule"
+			]
+		},
+		"BP/feature_rules/deadplantlife3_feature_rule.json": {
+			"identifiers": [
+				"minecraft:deadplantlife3_feature_rule"
+			]
+		},
+		"BP/feature_rules/deadplant2_feature_rule.json": {
+			"identifiers": [
+				"minecraft:deadplant2_feature_rule"
+			]
+		},
+		"BP/feature_rules/dead_plant1_feature_rule.json": {
+			"identifiers": [
+				"minecraft:dead_plant1_feature_rule"
+			]
+		},
+		"BP/feature_rules/random_mesa_cobble_feature_rule.json": {
+			"identifiers": [
+				"minecraft:random_mesa_cobble_feature_rule"
+			]
+		},
+		"BP/feature_rules/mesalife_feature_rule.json": {
+			"identifiers": [
+				"minecraft:mesalife_feature_rule"
+			]
+		},
+		"BP/feature_rules/mesa_stone_button__feature_rule.json": {
+			"identifiers": [
+				"minecraft:mesa_stone_button__feature_rule"
+			]
+		},
+		"BP/feature_rules/mesa_random_slab_feature_rule.json": {
+			"identifiers": [
+				"minecraft:mesa_random_slab_feature_rule"
+			]
+		},
+		"BP/feature_rules/collapsed_arch_feature_rule.json": {
+			"identifiers": [
+				"minecraft:collapsed_arch_feature_rule"
+			]
+		},
+		"BP/feature_rules/berry_rock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:berry_rock_feature_rule"
+			]
+		},
+		"BP/feature_rules/abovegroundfossil_feature_rule.json": {
+			"identifiers": [
+				"minecraft:abovegroundfossil_feature_rule"
+			]
+		},
+		"BP/feature_rules/clumpofdesertrock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:clumpofdesertrock_feature_rule"
+			]
+		},
+		"BP/feature_rules/desertstructure4_feature_rule.json": {
+			"identifiers": [
+				"minecraft:desertstructure4_feature_rule"
+			]
+		},
+		"BP/feature_rules/desertstructure3_feature_rule.json": {
+			"identifiers": [
+				"minecraft:desertstructure3_feature_rule"
+			]
+		},
+		"BP/feature_rules/desertstructure2_feature_rule.json": {
+			"identifiers": [
+				"minecraft:desertstructure2_feature_rule"
+			]
+		},
+		"BP/feature_rules/desertfossilhead_feature_rule.json": {
+			"identifiers": [
+				"minecraft:desertfossilhead_feature_rule"
+			]
+		},
+		"BP/feature_rules/junglerock3_feature_rule.json": {
+			"identifiers": [
+				"minecraft:junglerock3_feature_rule"
+			]
+		},
+		"BP/feature_rules/junglerock2_feature_rule.json": {
+			"identifiers": [
+				"minecraft:junglerock2_feature_rule"
+			]
+		},
+		"BP/feature_rules/junglerock1_feature_rule.json": {
+			"identifiers": [
+				"minecraft:junglerock1_feature_rule"
+			]
+		},
+		"BP/feature_rules/humandesertstructure1_feature_rule.json": {
+			"identifiers": [
+				"minecraft:humandesertstructure1_feature_rule"
+			]
+		},
+		"BP/feature_rules/grassy_rock3_feature_rule.json": {
+			"identifiers": [
+				"minecraft:grassy_rock3_feature_rule"
+			]
+		},
+		"BP/feature_rules/jungletreerock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:jungletreerock_feature_rule"
+			]
+		},
+		"BP/feature_rules/medium_rock2_feature_rule.json": {
+			"identifiers": [
+				"minecraft:medium_rock2_feature_rule"
+			]
+		},
+		"BP/feature_rules/manmadedesertstructure_feature_rule.json": {
+			"identifiers": [
+				"minecraft:manmadedesertstructure_feature_rule"
+			]
+		},
+		"BP/feature_rules/lightning_strike_glass_feature_rule.json": {
+			"identifiers": [
+				"minecraft:lightning_strike_glass_feature_rule"
+			]
+		},
+		"BP/feature_rules/leafy_rock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:leafy_rock_feature_rule"
+			]
+		},
+		"BP/feature_rules/lavarockdesert_feature_rule.json": {
+			"identifiers": [
+				"minecraft:lavarockdesert_feature_rule"
+			]
+		},
+		"BP/feature_rules/large_rock2_feature_rule.json": {
+			"identifiers": [
+				"minecraft:large_rock2_feature_rule"
+			]
+		},
+		"BP/feature_rules/large_rock1_feature_rule.json": {
+			"identifiers": [
+				"minecraft:large_rock1_feature_rule"
+			]
+		},
+		"BP/feature_rules/mushroom_rock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:mushroom_rock_feature_rule"
+			]
+		},
+		"BP/feature_rules/morestairs_feature_rule.json": {
+			"identifiers": [
+				"minecraft:morestairs_feature_rule"
+			]
+		},
+		"BP/feature_rules/minifossil_feature_rule.json": {
+			"identifiers": [
+				"minecraft:minifossil_feature_rule"
+			]
+		},
+		"BP/feature_rules/statue1_feature_rule.json": {
+			"identifiers": [
+				"minecraft:statue1_feature_rule"
+			]
+		},
+		"BP/feature_rules/stairs_feature_rule.json": {
+			"identifiers": [
+				"minecraft:stairs_feature_rule"
+			]
+		},
+		"BP/feature_rules/smallcobble_rock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:smallcobble_rock_feature_rule"
+			]
+		},
+		"BP/feature_rules/rock_cluster_feature_rule.json": {
+			"identifiers": [
+				"minecraft:rock_cluster_feature_rule"
+			]
+		},
+		"BP/feature_rules/rockyleafyundergroundcave_feature_rule.json": {
+			"identifiers": [
+				"minecraft:rockyleafyundergroundcave_feature_rule"
+			]
+		},
+		"BP/feature_rules/nether_rock1_feature_rule.json": {
+			"identifiers": [
+				"minecraft:nether_rock1_feature_rule"
+			]
+		},
+		"BP/feature_rules/basaltdeltarock3_feature_rule.json": {
+			"identifiers": [
+				"minecraft:basaltdeltarock3_feature_rule"
+			]
+		},
+		"BP/feature_rules/basaltdeltarock2_feature_rule.json": {
+			"identifiers": [
+				"minecraft:basaltdeltarock2_feature_rule"
+			]
+		},
+		"BP/feature_rules/undergroundsilverfishcave_feature_rule.json": {
+			"identifiers": [
+				"minecraft:undergroundsilverfishcave_feature_rule"
+			]
+		},
+		"BP/feature_rules/undergrounddesertcave_feature_rule.json": {
+			"identifiers": [
+				"minecraft:undergrounddesertcave_feature_rule"
+			]
+		},
+		"BP/feature_rules/undergroundcrimsonforest_feature_rule.json": {
+			"identifiers": [
+				"minecraft:undergroundcrimsonforest_feature_rule"
+			]
+		},
+		"BP/feature_rules/endrock5_feature_rule.json": {
+			"identifiers": [
+				"minecraft:endrock5_feature_rule"
+			]
+		},
+		"BP/feature_rules/endrock4_feature_rule.json": {
+			"identifiers": [
+				"minecraft:endrock4_feature_rule"
+			]
+		},
+		"BP/feature_rules/endrock3_feature_rule.json": {
+			"identifiers": [
+				"minecraft:endrock3_feature_rule"
+			]
+		},
+		"BP/feature_rules/endrock2_feature_rule.json": {
+			"identifiers": [
+				"minecraft:endrock2_feature_rule"
+			]
+		},
+		"BP/feature_rules/endrock1_feature_rule.json": {
+			"identifiers": [
+				"minecraft:endrock1_feature_rule"
+			]
+		},
+		"BP/feature_rules/miniendrock_feature_rule.json": {
+			"identifiers": [
+				"minecraft:miniendrock_feature_rule"
+			]
+		},
+		"BP/feature_rules/village_shrine_feature_rule.json": {
+			"identifiers": [
+				"minecraft:village_shrine_feature_rule"
+			]
+		},
+		"BP/feature_rules/oceanabovegroundrock_thing_feature_rule.json": {
+			"identifiers": [
+				"minecraft:oceanabovegroundrock_thing_feature_rule"
+			]
+		}
+	}
+}

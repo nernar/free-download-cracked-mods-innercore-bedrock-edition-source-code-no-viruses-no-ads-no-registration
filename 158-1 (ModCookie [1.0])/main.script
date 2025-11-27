@@ -1,0 +1,1014 @@
+/*
+BUILD INFO:
+  dir: build
+  target: main.script
+  files: 20
+*/
+
+
+
+// file: core/midlet_core/Header.js
+
+/* Импорт некоторых методов AdaptedScript*/
+
+var Level = ModAPI.requireGlobal("Level");
+
+
+
+
+// file: core/midlet_core/AssetReader.js
+
+var AssetReader={
+	readJSON:function(path){
+		return FileTools.ReadJSON(__dir__+"assets/pack/"+path);
+	}
+};
+
+
+
+
+// file: core/midlet_core/MachineRegistry.js
+
+var MachineRegistry = {
+	machineIDs: {},
+	isMachine: function(id){
+		return this.machineIDs[id];
+	},
+	registerPrototype: function(id, Prototype){
+		ICRender.getGroup("ic-wire").add(id,-1);
+		this.machineIDs[id] = true;
+		if (Prototype.defaultValues){
+			Prototype.defaultValues.energy = 0;
+		}
+		else{
+			Prototype.defaultValues = {
+				energy: 0
+			};
+		}
+		if(!Prototype.getEnergyStorage){
+			Prototype.getEnergyStorage = function(){
+				return 0;
+			};
+		}
+		ToolAPI.registerBlockMaterial(id, "stone");
+		TileEntity.registerPrototype(id, Prototype);
+		EnergyTileRegistry.addEnergyTypeForId(id, EU);
+		},
+	basic: function(type, src){
+		var energyNeed = this.getEnergyStorage() - this.data.energy;
+		this.data.energy += src.getAll(energyNeed);
+	}
+};
+
+
+
+
+// file: core/midlet_core/PlantRegistry.js
+
+var PlantRegistry={
+	
+	/*
+		PlantRegistry
+			-	модуль Midlet Core, упрощающий создание растений
+		Dump>>
+			PlantRegistry.defineCrop(parObject)
+				×	Добавляет растение, схожее по механике роста с пшеницей
+				×	parObject:
+					{
+						
+						id:integer,	//ID блока растения
+						endData:integer,	//конечная метадата блока растения, после неё рост прекращается
+						seed:integger,	//ID семян
+						drop:integer,	//дроп с растения
+						farms:array of integers,	//массив с ID блоков, на которых может расти растение
+						
+						//~необязательно~
+						
+						hooks:{
+							onDestroy:function(x,y,z){},
+							onGrowUp:function(x,y,z){},
+							onPlanted:finction(x,y,z){},
+							onRandomTick:function(x,y,z){}
+						}
+						
+					}
+				×====================================×
+				>>TODO: Get from json
+	*/
+	
+	defineCrop:function(proto){
+		/*
+			Метод добавления растения 'пшеница'
+		*/
+		Block.setRandomTickCallback(proto.id,function(x,y,z,id,data){
+			
+			/*
+				Хук рандомного тика
+			*/
+			if(proto.hooks){
+				if(proto.hooks.onRandomTick){
+					proto.hooks.onRandomTick(x,y,z);
+				}
+			}
+			
+			/*
+				Проверка 'фермы'
+			*/
+			farm=World.getBlockID(x,y-1,z);
+			value=true;
+			for(var i in proto.farms){
+				if(proto.farms[i]==farm){
+					value=false;
+				}
+			}
+			if(value){
+				World.destroyBlock(x,y,z,true);
+				
+				/*
+					Хук разрушения
+				*/
+				if(proto.hooks){
+					if(proto.hooks.onDestroy){
+						proto.hooks.onDestroy(x,y,z);
+					}
+				}
+				return
+			}
+			
+			/*
+				Рост
+			*/
+			maxData=proto.endData;
+			if(data<maxData){
+				World.setBlock(x,y,z,id,data+1);
+				
+				/*
+					Хук роста
+				*/
+				if(proto.hooks){
+					if(proto.hooks.onGrowUp){
+						proto.hooks.onGrowUp(x,y,z);
+					}
+				}
+				
+				return
+			}
+			
+		});
+		
+		/*
+			Посадка
+		*/
+		Callback.addCallback("ItemUse",function(coords,item,block){
+			if(block.id==proto.id&&item.id==351&&item.data==15){
+				World.setBlock(coords.x,coords.y,coords.z,block.id,proto.endData);
+				
+				/*
+					Хук роста
+				*/
+				if(proto.hooks){
+					if(proto.hooks.onGrowUp){
+						proto.hooks.onGrowUp(x,y,z);
+					}
+				}
+				
+			}
+		});
+		
+		/*
+			Удобрение
+		*/
+		Callback.addCallback("ItemUse",function(crd,item,block){
+			hk=crd.relative;
+			if(item.id==proto.seed){
+				farm=World.getBlockID(hk.x,hk.y-1,hk.z);
+				value=true;
+				for(var i in proto.farms){
+					if(proto.farms[i]==farm){
+						value=false;
+					}
+				}
+				if(value)return;
+				World.setBlock(hk.x,hk.y,hk.z,proto.id,0);
+				
+				/*
+					Хук посадки
+				*/
+				if(proto.hooks){
+					if(proto.hooks.onPlanted){
+						proto.hooks.onPlanted(coords.x,coords.y,coords.z);
+					}
+				}
+				
+				Player.setCarriedItem(item.id, item.count - 1, item.data);
+			}
+		});
+		ToolAPI.registerBlockMaterial(proto.id,"plant");
+		Block.registerDropFunctionForID(proto.id, function(coords, blockID, blockData, level){
+			if(blockData==proto.endData)return [[proto.seed,Math.round((Math.random()*3)+1),0],[proto.drop,Math.round((Math.random()*3)+1),0]]
+			return [[proto.seed,1,0]]
+		}, 2);
+	}
+}
+
+
+
+
+// file: core/midlet_core/Random.js
+
+var Random={
+	
+	/*
+		Random
+			- Модуль MidletCore для работы со случайными значениями
+		Dump>>
+			Random.float(min,max);
+			Random.integer(min,max);
+			Random.string();
+			Random.array(count_of_elements,type_of_elements,~min~,~max~);
+			Random.choice(array);
+		×==========================================×
+		>>TODO: random string as (min,max,code,encoding)
+	*/
+	
+	float:function(min,max){
+		a=((Math.random()*(max-min))+min);
+		return a
+	},
+	integer:function(min,max){
+		a=Math.round((Math.random()*max)+min);
+		return a
+	},
+	string:function(){
+		function gen(){
+			return Math.floor((1+Math.random())*0x10000).toString(16).substring(1);
+		}
+		return gen()+gen()+'_'+gen()+'_'+gen()+'_'+gen()+'_'+gen()+gen()+gen();
+	},
+	array:function(count,type,min,max){
+		get=[];
+		for(vari=0;i<count;i++){
+			if(type=="string"){
+				get.push(Random.string());
+			}
+			if(type=="float"){
+				get.push(Random.float(min,max));
+			}
+			if(type=="integer"){
+				get.push(Random.integer(min,max));
+			}
+		}
+		return get
+	},
+	choice:function(mass){
+		i=mass.length;
+		return mass[Random.integer(0,i)]
+	}
+};
+
+
+
+
+// file: Header.js
+
+/*
+	==============ModCookie==============
+	version 1.0
+	©SWCorp
+*/
+
+IMPORT("dimensions");
+IMPORT("ToolType2");
+IMPORT("RenderLIB");
+
+
+
+
+// file: core/CookieAPI.js
+
+var CookieAPI={};
+
+
+
+
+// file: common/block/Ore.js
+
+Translation.addTranslation("Cookie Ore", {ru: "Печенюшная руда"});
+	IDRegistry.genBlockID("cookie_ore");
+	Block.createBlock("cookie_ore", [{
+		name:"Cookie Ore",
+		texture: [["cookie_ore",0]], 
+		inCreative: true
+		}],"opaque");
+	Callback.addCallback("GenerateChunk", function(a,b){
+	for(var i = 0; i < 8; i++){
+		d=GenerationUtils.randomCoords(a,b,1,100);
+		GenerationUtils.generateOre(d.x, d.y, d.z, BlockID.cookie_ore, 0, 13);
+	}
+	});
+	ToolAPI.registerBlockMaterial(BlockID.cookie_ore,"stone");
+		Block.registerDropFunction("cookie_ore", function(coords, blockID, blockData, level){
+		if (level > 1){
+			return [[BlockID.cookie_ore,1,0]]
+		}
+		return [];
+	}, 2);
+	
+Translation.addTranslation("Cookie Block", {ru: "Печенюшный блок"});
+	IDRegistry.genBlockID("cookie_block");
+	Block.createBlock("cookie_block", [{
+		name:"Cookie Block",
+		texture: [["cookie_block",0]], 
+		inCreative: true
+		}],"opaque");
+
+
+
+
+// file: common/block/Dirt.js
+
+Translation.addTranslation("Cookie Dirt Grass", {ru: "Печенюшная земля с травой"});
+	IDRegistry.genBlockID("cookie_grass");
+	Block.createBlock("cookie_grass", [{
+		name: "Cookie Dirt Grass",
+		texture: [
+			["dirt_cookie",0],["grass_cookie",0],
+			["grass_cookie",1],["grass_cookie",1],
+			["grass_cookie",1],["grass_cookie",1]
+		], 
+		inCreative: true
+		}],"opaque");
+	ToolAPI.registerBlockMaterial(BlockID.cookie_grass,"dirt");
+		Block.registerDropFunction("cookie_grass", function(coords, blockID, blockData, level){
+			return [[BlockID.cookie_dirt,1,0]]
+		}, 2);
+
+Translation.addTranslation("Cookie Dirt", {ru: "Печенюшная земля"});
+	IDRegistry.genBlockID("cookie_dirt");
+	Block.createBlock("cookie_dirt", [{
+		name: "Cookie Dirt",
+		texture: [
+			["dirt_cookie",0]
+		], 
+		inCreative: true
+		}],"opaque");
+	ToolAPI.registerBlockMaterial(BlockID.cookie_dirt,"dirt");
+
+IDRegistry.genBlockID("cookie_farmland");
+	Block.createBlock("cookie_farmland", [
+		{
+		name: "Cookie Dirt",
+		texture: [
+			["dirt_cookie",0],["cookie_farmland",1],
+			["dirt_cookie",0],["dirt_cookie",0],
+			["dirt_cookie",0],["dirt_cookie",0],
+		], 
+		inCreative: false
+		}
+		]);
+	ToolAPI.registerBlockMaterial(BlockID.cookie_farmland,"dirt");
+		Block.registerDropFunction("cookie_farmland", function(coords, blockID, blockData, level){
+			return [[BlockID.cookie_dirt,1,0]]
+		}, 2);
+	ToolAPI.registerHoeBlock(BlockID.cookie_grass,function(){
+		return BlockID.cookie_farmland
+	});
+	Block.setBlockShape(BlockID.cookie_farmland, {x: 0, y: 0, z: 0}, {x: 1, y: 15/16, z: 1});
+	
+	Block.setRandomTickCallback(BlockID.cookie_farmland,function(x,y,z,id,data){
+		value=false;
+		for(var xx=-4;xx<9;xx++){
+			for(var zz=-4;zz<9;zz++){
+				id=World.getBlockID(x+xx,y,z+zz);
+				if(id==8||id==9)value=true;
+			}
+		}
+		if(!value)World.setBlock(x,y,z,BlockID.cookie_grass,0);
+	});
+
+
+
+
+// file: common/block/Tree.js
+
+Translation.addTranslation("Cookie Wood", {ru: "Печенюшный дуб"});
+	IDRegistry.genBlockID("cookie_oak");
+	Block.createBlock("cookie_oak", [{
+		name: "Cookie Wood",
+		texture: [
+			["log_cookie",0],["log_cookie",0],
+			["log_cookie",1],["log_cookie",1],
+			["log_cookie",1],["log_cookie",1]
+		], 
+		inCreative: true
+		}],"opaque");
+Translation.addTranslation("Cookie Leaves", {ru: "Печенюшные листья"});
+	IDRegistry.genBlockID("cookie_leaves");
+	Block.createBlock("cookie_leaves", [{
+		name: "Cookie Leaves",
+		texture: [
+			["leaves_cookie",0]
+		], 
+		inCreative: true
+		}]);
+Block.registerDropFunction("cookie_leaves", function(){
+	if(Math.random() < .075){
+		return [[ItemID.cookie_sapling, 1, 0]]
+	}
+	else {
+		return [];
+	}
+});
+ToolAPI.registerBlockMaterial(BlockID.cookie_leaves, "plant");
+
+Translation.addTranslation("Cookie Sapling", {ru: "Печенюшный саженец"});
+IDRegistry.genItemID("cookie_sapling");
+Item.createItem("cookie_sapling", "Cookie Sapling", {name: "cookie_sapling", data: 0});
+IDRegistry.genBlockID("cookie_sapling_b");
+	Block.createBlock("cookie_sapling_b", [{
+		name: "Cookie Leaves",
+		texture: [
+			["cookie_sapling",0]
+		], 
+		inCreative: false
+		}]);
+Block.registerDropFunction("cookie_sapling_b", function(){
+	return [[ItemID.cookie_sapling, 1, 0]]
+});
+ToolAPI.registerBlockMaterial(BlockID.cookie_sapling_b, "plant");
+Renderer.setSaplingRender(BlockID.cookie_sapling_b,0);
+function cookieTree(x,y,z){
+	for(var i=0;i<5;i++){
+		for(var b=0;b<3;b++){
+			for(var k=0;k<5;k++){
+				if(World.getBlockID(x-2+i,y+2+b,z-2+k)==0)World.setBlock(x-2+i,y+2+b,z-2+k,BlockID.cookie_leaves,0);
+			}
+		}
+	}
+	for(var i=0;i<5;i++){
+		if(World.getBlockID(x,y+i,z)==0||World.getBlockID(x,y+i,z)==BlockID.cookie_leaves)World.setBlock(x,y+i,z,BlockID.cookie_oak,0);
+	}
+	if(World.getBlockID(x+1,y+5,z)==0)World.setBlock(x+1,y+5,z,BlockID.cookie_leaves,0);
+	if(World.getBlockID(x+1,y+6,z)==0)World.setBlock(x+1,y+6,z,BlockID.cookie_leaves,0);
+	if(World.getBlockID(x-1,y+5,z)==0)World.setBlock(x-1,y+5,z,BlockID.cookie_leaves,0);
+	if(World.getBlockID(x-1,y+6,z)==0)World.setBlock(x-1,y+6,z,BlockID.cookie_leaves,0);
+	if(World.getBlockID(x,y+5,z)==0)World.setBlock(x,y+5,z,BlockID.cookie_leaves,0);
+	if(World.getBlockID(x,y+6,z)==0)World.setBlock(x,y+6,z,BlockID.cookie_leaves,0);
+	if(World.getBlockID(x,y+5,z+1)==0)World.setBlock(x,y+5,z+1,BlockID.cookie_leaves,0);
+	if(World.getBlockID(x,y+6,z+1)==0)World.setBlock(x,y+6,z+1,BlockID.cookie_leaves,0);
+	if(World.getBlockID(x,y+5,z-1)==0)World.setBlock(x,y+5,z-1,BlockID.cookie_leaves,0);
+	if(World.getBlockID(x,y+6,z-1)==0)World.setBlock(x,y+6,z-1,BlockID.cookie_leaves,0);
+}
+Callback.addCallback("ItemUse",function(crd,item){
+	pl=crd.relative;
+	if(item.id==ItemID.cookie_sapling&&World.getBlockID(pl.x,pl.y-1,pl.z)==BlockID.cookie_grass){
+		World.setBlock(pl.x,pl.y,pl.z,BlockID.cookie_sapling_b,0);
+		World.addTileEntity(pl.x,pl.y,pl.z);
+		Player.setCarriedItem(item.id, item.count - 1, item.data);
+	}
+});
+Callback.addCallback("GenerateChunk", function(a,b){
+	for(var i = 0; i < 60; i++){
+		d=GenerationUtils.randomCoords(a,b,1,100);
+		for(var k=60;k<256;k++){
+		if(World.getBlockID(d.x,k,d.z)==BlockID.cookie_grass){
+for(var q=1;q<10;q++){
+if(World.getBlockID(d.x,k+q,d.z)!=0){
+return
+}
+}cookieTree(d.x,k+1,d.z);return}
+		}
+	}
+	});
+	
+/*==Перенести на рандом тик==*/
+
+TileEntity.registerPrototype(BlockID.cookie_sapling_b,{
+	defaultValues:{
+		age:0
+	},
+	tick: function(){
+			if(!this.data.age)this.data.age=0;
+			this.data.age++;
+				if (World.getBlockID(this.x, this.y - 1, this.z)!=BlockID.cookie_grass){
+					World.destroyBlock(this.x, this.y, this.z, true);
+				}
+				if (this.data.age>1000&&Math.random()<0.3){
+						World.destroyBlock(this.x,this.y,this.z,false);
+						cookieTree(this.x,this.y,this.z);
+					}
+			},	
+			click: function(id, count, data){
+				if (id == 351 && data == 15){
+					World.destroyBlock(this.x,this.y,this.z,false);
+					cookieTree(this.x,this.y,this.z);
+					Player.setCarriedItem(id, count - 1, data);
+				}
+			}
+	});
+
+
+
+
+// file: common/block/Plank.js
+
+Translation.addTranslation("Cookie Planks", {ru: "Печенюшные "});
+IDRegistry.genBlockID("cookie_planks");
+Block.createBlock("cookie_planks", [{
+name: "Cookie Planks",
+	texture: [
+	["cookie_planks",0]
+	], 
+	inCreative: true
+}],"opaque");
+Recipes.addShapeless({id: BlockID.cookie_planks, count: 4, data: 0}, [{id: BlockID.cookie_oak, data: 0}]);
+
+
+
+
+// file: common/block/Grass.js
+
+Translation.addTranslation("Cookie Grass", {ru: "Печенюшная трава"});
+IDRegistry.genItemID("cookie_tallGrass");
+Item.createItem("cookie_tallGrass", "Cookie Grass", {name: "cookie_tallGrass", data: 0});
+
+IDRegistry.genBlockID("cookie_tallGrass_b");
+	Block.createBlock("cookie_tallGrass_b", [{
+		name: "Cookie Grass",
+		texture: [
+			["cookie_tallGrass",0]
+		], 
+		inCreative: false
+		}]);
+Block.registerDropFunction("cookie_tallGrass_b", function(){
+	if(Math.random()<0.2)return [[ItemID.cookie_rye_seeds, 1, 0]]
+	return []
+});
+ToolAPI.registerBlockMaterial(BlockID.cookie_tallGrass_b, "plant");
+Renderer.setSaplingRender(BlockID.cookie_tallGrass_b,0);
+
+Callback.addCallback("ItemUse",function(crd,item){
+	hk=crd.relative;
+	if(item.id==ItemID.cookie_tallGrass&&World.getBlockID(hk.x,hk.y-1,hk.z)==BlockID.cookie_grass){
+		World.setBlock(hk.x,hk.y,hk.z,BlockID.cookie_tallGrass_b,0);
+		Player.setCarriedItem(item.id, item.count - 1, item.data);
+	}
+});
+
+Callback.addCallback("GenerateChunk", function(a,b){
+	for(var i = 0; i < 60; i++){
+		d=GenerationUtils.randomCoords(a,b,1,100);
+		for(var k=60;k<256;k++){
+			if(World.getBlockID(d.x,k,d.z)==BlockID.cookie_grass){
+				if(World.getBlockID(d.x,k+1,d.z)!=0)return
+				World.setBlock(d.x,k+1,d.z,BlockID.cookie_tallGrass_b,0);
+			}
+		}
+	}
+});
+
+
+Translation.addTranslation("Cookie Flower", {ru: "Печенюшный цветок"});
+IDRegistry.genItemID("cookie_flower");
+Item.createItem("cookie_flower", "Cookie Flower", {name: "cookie_flower", data: 0});
+
+IDRegistry.genBlockID("cookie_flower_b");
+	Block.createBlock("cookie_flower_b", [{
+		name: "Cookie Flower",
+		texture: [
+			["cookie_flower",0]
+		], 
+		inCreative: false
+		}]);
+Block.registerDropFunction("cookie_flower_b", function(){
+	return [[ItemID.cookie_flower, 1, 0]]
+});
+ToolAPI.registerBlockMaterial(BlockID.cookie_flower_b, "plant");
+Renderer.setSaplingRender(BlockID.cookie_flower_b,0);
+
+Callback.addCallback("ItemUse",function(crd,item){
+	pl=crd.relative;
+	if(item.id==ItemID.cookie_flower&&World.getBlockID(pl.x,pl.y-1,pl.z)==BlockID.cookie_grass){
+		World.setBlock(pl.x,pl.y,pl.z,BlockID.cookie_flower_b,0);
+		Player.setCarriedItem(item.id, item.count - 1, item.data);
+	}
+});
+Callback.addCallback("GenerateChunk", function(a,b){
+	for(var i = 0; i < 60; i++){
+		d=GenerationUtils.randomCoords(a,b,1,100);
+		for(var k=60;k<256;k++){
+			if(World.getBlockID(d.x,k,d.z)==BlockID.cookie_grass){
+				if(World.getBlockID(d.x,k+1,d.z)!=0)return
+				World.setBlock(d.x,k+1,d.z,BlockID.cookie_flower_b,0);
+			}
+		}
+	}
+});
+
+
+
+
+// file: common/block/Rye.js
+
+IDRegistry.genBlockID("cookie_rye");
+Block.createBlock("cookie_rye", [
+	{name: "RYE",texture: [["rye_wheat_stage",0]],inCreative: false},
+	{name: "RYE",texture: [["rye_wheat_stage",1]],inCreative: false},
+	{name: "RYE",texture: [["rye_wheat_stage",2]],inCreative: false},
+	{name: "RYE",texture: [["rye_wheat_stage",3]],inCreative: false},
+	{name: "RYE",texture: [["rye_wheat_stage",4]],inCreative: false},
+	{name: "RYE",texture: [["rye_wheat_stage",5]],inCreative: false},
+	{name: "RYE",texture: [["rye_wheat_stage",6]],inCreative: false},
+	{name: "RYE",texture: [["rye_wheat_stage",7]],inCreative: false}
+	]);
+	Renderer.setCropRender(BlockID.cookie_rye);
+Translation.addTranslation("Cookie Seeds", {ru: "Печенюшные семена"});
+	IDRegistry.genItemID("cookie_rye_seeds");
+	Item.createItem("cookie_rye_seeds", "Cookie Seeds", {
+			name: "cookie_rye_seeds",
+			meta: 0
+		}, {stack:64});
+	Translation.addTranslation("Cookie Rye", {ru: "Печенюшная пшеница"});
+	IDRegistry.genItemID("cookie_rye");
+	Item.createItem("cookie_rye", "Cookie Rye", {
+			name: "cookie_rye",
+			meta: 0
+		}, {stack:64});
+var cookie_rye_proto={
+	id:BlockID["cookie_rye"],
+	endData:7,
+	seed:ItemID["cookie_rye_seeds"],
+	drop:ItemID["cookie_rye"],
+	farms:[BlockID.cookie_farmland]
+};
+PlantRegistry.defineCrop(cookie_rye_proto);
+
+
+
+
+// file: common/item/Ingot.js
+
+Translation.addTranslation("Cookie Ingot", {ru: "Печенюшный слиток"});
+IDRegistry.genItemID("cookie_ingot");
+	Item.createItem("cookie_ingot", "Cookie Ingot", {
+			name: "cookie_ingot",
+			meta: 0
+		}, {stack:64});
+	Recipes.addFurnace(BlockID.cookie_ore, ItemID.cookie_ingot, 0);
+
+Translation.addTranslation("Cookie Stick", {ru: "Печенюшная палка"});
+IDRegistry.genItemID("cookie_stick");
+	Item.createItem("cookie_stick", "Cookie Stick", {
+			name: "cookie_stick",
+			meta: 0
+		}, {stack:64});
+	Recipes.addShaped({id: ItemID.cookie_stick, count: 4, data: 0}, [
+		"a","a"
+	], ['a', BlockID.cookie_planks,0]);
+	Recipes.addShaped({id: BlockID.cookie_block, count: 1, data: 0}, [
+		"aaa",
+		"aaa",
+		"aaa"
+	], ['a', ItemID.cookie_ingot,0]);
+	Recipes.addShaped({id: ItemID.cookie_ingot, count: 9, data: 0}, [
+		"a"
+	], ['a', BlockID.cookie_block,0]);
+
+
+
+
+// file: common/item/Tool.js
+
+Translation.addTranslation("Cookie Axe", {ru: "Печенюшный топор"});
+IDRegistry.genItemID("cookie_axe");
+	Item.createItem("cookie_axe", "Cookie Axe", {
+			name: "cookie_axe",
+			meta: 0
+		}, {stack:1});
+	Recipes.addShaped({id: ItemID.cookie_axe, count: 1, data: 0}, [
+		"aa ","ab "," b "
+	], ['a', ItemID.cookie_ingot, 0,'b',ItemID.cookie_stick,0]);
+	ToolAPI.setTool(ItemID.cookie_axe,"iron",ToolType.axe);
+
+Translation.addTranslation("Cookie Pickaxe", {ru: "Печенюшная кирка"});
+IDRegistry.genItemID("cookie_pickaxe");
+	Item.createItem("cookie_pickaxe", "Cookie Pickaxe", {
+			name: "cookie_pickaxe",
+			meta: 0
+		}, {stack:1});
+	Recipes.addShaped({id: ItemID.cookie_pickaxe, count: 1, data: 0}, [
+		"aaa"," b "," b "
+	], ['a', ItemID.cookie_ingot, 0,'b',ItemID.cookie_stick,0]);
+	ToolAPI.setTool(ItemID.cookie_pickaxe,"iron",ToolType.pickaxe);
+
+Translation.addTranslation("Cookie Shovel", {ru: "Печенюшная лопата"});
+IDRegistry.genItemID("cookie_shovel");
+	Item.createItem("cookie_shovel", "Cookie Shovel", {
+			name: "cookie_shovel",
+			meta: 0
+		}, {stack:1});
+	Recipes.addShaped({id: ItemID.cookie_shovel, count: 1, data: 0}, [
+		" a ",
+		" b ",
+		" b "
+	], ['a', ItemID.cookie_ingot, 0,'b',ItemID.cookie_stick,0]);
+	ToolAPI.setTool(ItemID.cookie_shovel,"iron",ToolType.shovel);
+
+Translation.addTranslation("Cookie Hoe", {ru: "Печенюшная мотыга"});
+IDRegistry.genItemID("cookie_hoe");
+	Item.createItem("cookie_hoe", "Cookie Hoe", {
+			name: "cookie_hoe",
+			meta: 0
+		}, {stack:1});
+	Recipes.addShaped({id: ItemID.cookie_hoe, count: 1, data: 0}, [
+		"aa ",
+		" b ",
+		" b "
+	], ['a', ItemID.cookie_ingot, 0,'b',ItemID.cookie_stick,0]);
+	ToolAPI.setTool(ItemID.cookie_hoe,"iron",ToolType.hoe);
+
+Translation.addTranslation("Cookie Sword", {ru: "Печенюшный меч"});
+IDRegistry.genItemID("cookie_sword");
+	Item.createItem("cookie_sword", "Cookie Sword", {
+			name: "cookie_sword",
+			meta: 0
+		}, {stack:1});
+	Recipes.addShaped({id: ItemID.cookie_sword, count: 1, data: 0}, [
+		" a ",
+		" a ",
+		" b "
+	], ['a', ItemID.cookie_ingot, 0,'b',ItemID.cookie_stick,0]);
+	ToolAPI.setTool(ItemID.cookie_sword,"iron",ToolType.sword);
+
+
+
+
+// file: common/item/Cake.js
+
+Translation.addTranslation("Cookie Cake", {ru: "Печенюшный торт"});
+IDRegistry.genBlockID("cookie_cake_b");
+Block.createBlock("cookie_cake_b", [
+	{name: "Cookie Cake", texture: [
+["cookie_cake", 1], ["cookie_cake", 0],
+["cookie_cake", 2], ["cookie_cake", 2],
+["cookie_cake", 2], ["cookie_cake", 2]
+], inCreative: false}
+]);
+Block.setBlockShape(BlockID.cookie_cake_b, {x: 1/16, y: 0, z: 1/16}, {x: 15/16, y: 8/16, z: 15/16});
+IDRegistry.genItemID("cookie_cake");
+Item.createFoodItem("cookie_cake", "Cookie Cake",{
+	name:"cookie_cake_item",meta:0
+	},{
+	stack: 16,
+	food: 12,
+});
+Block.registerDropFunction("cookie_cake_b", function(){
+	return [[ItemID.cookie_cake, 1, 0]]
+});
+ToolAPI.registerBlockMaterial(BlockID.cookie_cake_b, "plant");
+Callback.addCallback("ItemUse",function(crd,item){
+	hk=crd.relative;
+	if(item.id==ItemID.cookie_cake&&World.getBlockID(hk.x,hk.y-1,hk.z)!=0){
+		World.setBlock(hk.x,hk.y,hk.z,BlockID.cookie_cake_b,0);
+		Player.setCarriedItem(item.id, item.count - 1, item.data);
+	}
+});
+Recipes.addShaped({id: ItemID.cookie_cake, count:1, data: 0}, [
+	"aaa",
+	"bcb",
+	"ddd"
+	], ['a', ItemID.cookie_rye,0,'b',353,0,'c',344,-1,'d',325,1]);
+
+
+
+
+// file: common/item/Key.js
+
+Translation.addTranslation("Cookie Stack", {ru: "Печенюшный посох"});
+IDRegistry.genItemID("cookie_key");
+	Item.createItem("cookie_key", "Cookie Stack", {
+			name: "cookie_key",
+			meta: 0
+		}, {stack:1});
+	Recipes.addShaped({id: ItemID.cookie_key, count: 1, data: 0}, [
+		" b "," a "," a "
+	], ['a', 280, 0,'b',357,0]);
+
+
+
+
+// file: common/item/Armor.js
+
+Translation.addTranslation("Cookie Helmet", {ru: "Печенюшный шлем"});
+IDRegistry.genItemID("cookie_armorHelmet");
+	Item.createArmorItem("cookie_armorHelmet", "Cookie Helmet", {name:"cookie_helmet",meta:0},{
+		armor: 3,
+		type:"helmet",
+		texture:"armor/cookie_1.png",
+		durability:165
+	});
+	Recipes.addShaped({id: ItemID.cookie_armorHelmet, count: 1, data: 0}, [
+		"aaa",
+		"a a"
+	], ['a', ItemID.cookie_ingot, 0]);
+
+Translation.addTranslation("Cookie Chestplate", {ru: "Печенюшный нагрудник"});
+IDRegistry.genItemID("cookie_armorBody");
+	Item.createArmorItem("cookie_armorBody", "Cookie Chestplate", {name:"cookie_body",meta:0},{
+		armor: 6,
+		type:"chestplate",
+		texture:"armor/cookie_1.png",
+		durability: 240
+	});
+	Recipes.addShaped({id: ItemID.cookie_armorBody, count: 1, data: 0}, [
+		"a a",
+		"aaa",
+		"aaa"
+	], ['a', ItemID.cookie_ingot, 0]);
+
+Translation.addTranslation("Cookie Leggings", {ru: "Печенюшные поножи"});
+IDRegistry.genItemID("cookie_armorLeggings");
+	Item.createArmorItem("cookie_armorLeggings", "Cookie Leggings", {name:"cookie_leggings",meta:0},{
+		armor: 5,
+		type:"leggings",
+		texture:"armor/cookie_2.png",
+		durability: 225
+	});
+	Recipes.addShaped({id: ItemID.cookie_armorLeggings, count: 1, data: 0}, [
+		"aaa",
+		"a a",
+		"a a"
+	], ['a', ItemID.cookie_ingot, 0]);
+
+Translation.addTranslation("Cookie Boots", {ru: "Печенюшные сапоги"});
+IDRegistry.genItemID("cookie_armorBoots");
+	Item.createArmorItem("cookie_armorBoots", "Cookie Boots", {name:"cookie_boots",meta:0},{
+		armor: 2,
+		type:"boots",
+		texture:"armor/cookie_1.png",
+		durability: 195
+	});
+	Recipes.addShaped({id: ItemID.cookie_armorBoots, count: 1, data: 0}, [
+		"a a",
+		"a a"
+	], ['a', ItemID.cookie_ingot, 0]);
+
+
+
+
+// file: common/item/Food.js
+
+Translation.addTranslation("Cookie Bread", {ru: "Печенюшный хлеб"});
+IDRegistry.genItemID("cookie_bread");
+Item.createFoodItem("cookie_bread", "Cookie Bread",{
+	name:"cookie_bread",meta:0
+	},{
+	stack: 16,
+	food: 12,
+});
+Recipes.addShaped({id: ItemID.cookie_bread, count:1, data: 0}, [
+	"aaa",
+	], ['a', ItemID.cookie_rye,0]);
+
+
+
+
+// file: common/dimension/Cookie.js
+
+var Cookie_World = new Dimension({
+	name: "Cookie_World",
+	generation: { 
+	layers: [
+		
+		{
+			range: [1,2],
+			noise:{
+				octaves:{
+					count:8,
+					weight: 0.4,
+					scale: [.01,.02,.04,.08]
+				}
+			},
+			gradient:[
+				[0,1],
+				[1,-1],
+				[0.05,.4],
+				[.2,-.8]
+			],
+			terrain:{
+				base:7
+			}
+		},
+		
+		{
+			range: [0, 90], 
+			noise: { 
+				octaves: { 
+					count: 8, 
+					weight: [0.51,0.51/2,0.51/4,0.51/8,0.51/16],
+					scale: [0.01, 0.02, 0.04,0.08,0.16]
+				}
+			},
+			gradient: [
+				[.1,1],[.4,1],[1, -1]
+			], 
+			
+			terrain: {
+				base: 1,
+				cover:{
+					height:4,
+					top:BlockID.cookie_grass,
+					block:BlockID.cookie_dirt
+				}
+			},
+		},
+		
+		
+		{
+			 range: [0, 90], 
+			 noise: { 
+			 	octaves: { 
+					count: 3, 
+					weight: [0.55,0.55/2,0.55/4],
+					scale: [0.005, 0.01, 0.02] 
+				} 
+			}, 
+			gradient: [
+				[.2,.3],[.4,5],[.6,.7],[1, -1]
+			], 
+			
+			terrain: {
+				base: 4,
+				cover:{
+					height:4,
+					top:BlockID.cookie_grass,
+					block:BlockID.cookie_dirt
+				}
+			},
+		},
+		
+		
+		]
+},
+environment: {
+},
+callbacks: {
+tick: function() { 
+},
+generateChunk: function(chunkX, chunkZ) { 
+Callback.invokeCallback("CookieChunk",chunkX,chunkZ);
+},
+loaded: function() {
+},
+unloaded: function() {
+}
+	}
+});
+
+
+var CookieTP = new TransferSequence(Cookie_World);
+CookieTP.setPortalTimeout(40);
+
+CookieTP.setPortalOverlay(new PortalOverlayWindow({
+    frames: 32, 
+    rate: 20, 
+    fade: 1, 
+    texture: "aether_portal_overlay_animation"
+}));
+
+CookieTP.setLoadingScreenParams({
+    texture: "default_dimension_loading_screen"
+});
+
+PortalRegistry.newPortalBlock("cookiePortal", ["aether_portal", 0], CookieTP.getPortal(), {type: "u-plane", frameId: 24}, true);
+CookieTP.setPortalTiles(BlockID.cookiePortal);
+
+
+
+
+
+var shape = new PortalShape();
+shape.setPortalId(BlockID.cookiePortal);
+shape.setFrameIds(24);
+shape.setMinSize(2, 3);
+
+CookieTP.setPortalBuilder(shape.getBuilder());
+
+Callback.addCallback("ItemUse", function(coords, item) {
+    if (item.id == ItemID.cookie_key) {
+        var rect = shape.findPortal(coords.relative.x, coords.relative.y, coords.relative.z);
+        if (rect) {
+            shape.buildPortal(rect, false);
+        }
+    }
+});
+
+Callback.addCallback("DestroyBlock", function(pos, block){
+    if (block.id == 24 || block.id == BlockID.cookiePortal) {
+        DimensionHelper.eliminateIncorrectPlacedPortals(pos, BlockID.cookiePortal, [4]);
+    }
+});
+
+
+
+

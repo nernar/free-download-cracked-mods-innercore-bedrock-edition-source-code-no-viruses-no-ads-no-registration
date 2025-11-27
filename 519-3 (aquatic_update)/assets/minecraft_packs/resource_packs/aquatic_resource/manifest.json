@@ -1,0 +1,29 @@
+{
+	"format_version": 1,
+	"header": {
+		"name": "§6Aquatic Update [Resource]§r",
+		"description": "§ev1.0 - By §6MeduiIthron§r, §b@MeduiIthron§r, §eBringing an aquatic update to minecraft§r\n§l§4[EXPERIMENTAL GAMEPLAY]",
+		"uuid": "8a5cf5e0-335d-47ad-8d18-f94f005248e9",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			10,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "80cff32b-45e9-40d7-abb8-78dee432d86c",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

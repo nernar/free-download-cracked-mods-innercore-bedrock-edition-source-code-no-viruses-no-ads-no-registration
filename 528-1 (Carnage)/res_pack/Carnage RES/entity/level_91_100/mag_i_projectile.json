@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:mag_i_projectile",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/level_91_100/projectiles/mag_i"
+      },
+      "geometry": {
+        "default": "geometry.mag_i_projectile"
+      },
+      "animations": {
+        "move": "animation.mag_i_projectile.move"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.mover.move" }
+      ],
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

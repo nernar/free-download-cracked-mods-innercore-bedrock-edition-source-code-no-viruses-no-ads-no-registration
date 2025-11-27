@@ -1,0 +1,52 @@
+{
+	"format_version": "1.8.0",
+	"geometry.inferno": {
+		"texturewidth": 176,
+		"textureheight": 176,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 2,
+		"visible_bounds_offset": [0, 1, 0],
+		"bones": [
+			{
+				"name": "body",
+				"pivot": [0, 34, 0],
+				"rotation": [15, 0, 0],
+				"cubes": [
+					{"origin": [-4, 22, -2], "size": [8, 12, 4], "uv": [64, 80]}
+				]
+			},
+			{
+				"name": "head",
+				"parent": "body",
+				"pivot": [0, 34, 0],
+				"rotation": [-10, 0, 0],
+				"cubes": [
+					{"origin": [-4, 34, -4], "size": [8, 8, 8], "uv": [0, 80]}
+				]
+			},
+			{
+				"name": "outer_ring",
+				"pivot": [0, 32, 0],
+				"cubes": [
+					{"origin": [-12, 20, -12], "size": [24, 24, 24], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "center_ring",
+				"parent": "outer_ring",
+				"pivot": [0, 32, 0],
+				"cubes": [
+					{"origin": [-14, 24, -8], "size": [28, 16, 16], "uv": [0, 48]}
+				]
+			},
+			{
+				"name": "inner_ring",
+				"parent": "center_ring",
+				"pivot": [0, 32, 0],
+				"cubes": [
+					{"origin": [-16, 28, -4], "size": [32, 8, 8], "uv": [88, 48]}
+				]
+			}
+		]
+	}
+}

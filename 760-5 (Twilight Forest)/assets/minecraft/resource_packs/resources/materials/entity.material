@@ -1,0 +1,23 @@
+{
+"materials": {
+"version": "1.0.0",
+"naga:entity": {},
+"hydra:entity": {},
+"cannon:entity": {},
+"penguin:entity": {},
+"bighorn:entity": {},
+"minotaur:entity": {},
+"wildboar:entity": {},
+"spongebob:entity": {},
+"minoshroom:entity": {},
+"lich:entity_alphatest": {},
+"firefly:entity_alphatest": {},
+"towergolem:entity_alphatest": {},
+"projectile:entity_alphatest": {},
+"ancientbeast:entity_alphatest": {},
+"bighornsheep:entity_change_color": {},
+"lich_minion:entity_alphatest_change_color": {},
+"lich_phantom:entity_alphatest_change_color": {},
+"lich_shield:entity_emissive_alpha": { "+states": [ "Blending" ] }
+}
+}

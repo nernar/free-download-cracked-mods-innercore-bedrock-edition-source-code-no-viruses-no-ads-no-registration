@@ -1,0 +1,8 @@
+{
+    "better-foliage": {
+        "leaves": [
+            {"texture": "terrain-atlas/ash_bramble_0.png"},
+            {"texture": "terrain-atlas/charred_branches_0.png"}
+        ]
+    }
+}

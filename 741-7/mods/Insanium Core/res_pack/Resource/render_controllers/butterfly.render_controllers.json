@@ -1,0 +1,26 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.bioplentia.butterfly": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [ 
+            "Texture.Texture0", 
+            "Texture.Texture1", 
+            "Texture.Texture2", 
+            "Texture.Texture3", 
+            "Texture.Texture4",
+            "Texture.Texture5", 
+            "Texture.Texture6"
+          ]
+        }
+      },
+      "geometry": "Geometry.GeometryDefault",
+      "materials": [ { "*": "Material.MaterialDefault" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

@@ -1,0 +1,121 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+   "format_version": [ 1, 1, 0 ],
+   
+   "bioplentia:acacia_paper_lantern": {
+       "sound": "wood"
+   }, 
+ "about:black_lotus": {
+    "sound": "grass"
+  },
+  "about:blue_lavender": {
+    "sound": "grass"
+  },
+  "about:dried_vines": {
+    "sound": "vines"
+  },
+  "about:fluorescent_tallgrass": {
+    "sound": "grass"
+  },
+  "about:lush_mossy_stone": {
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "lush_mossy_stone_top",
+      "down": "stone",
+      "side": "lush_mossy_stone_side"
+    },
+    "sound": "grass"
+  },
+  "about:mossy_stone": {
+    "isotropic": {
+      "up": true
+    },
+    "textures": {
+      "up": "mossy_stone_top",
+      "down": "stone",
+      "side": "mossy_stone_side"
+    },
+    "sound": "grass"
+  },
+   "bioplentia:aloe_vera": {
+      "sound": "grass"
+   },
+   "bioplentia:birch_paper_lantern": {
+      "sound": "wood"
+   },
+   "bioplentia:bluebells": {
+      "sound": "grass"
+   },
+   "bioplentia:cattail": {
+       "sound": "grass"
+   },
+   "bioplentia:cherry_paper_lantern": {
+      "sound": "wood"
+   },
+   "bioplentia:cherry_log": {
+      "sound": "wood"
+   },
+   "bioplentia:cherry_planks": {
+      "sound": "wood"
+   },
+   "bioplentia:cherry_wood": {
+      "sound": "wood"
+   },
+   "bioplentia:dark_oak_paper_lantern": {
+       "sound": "wood"
+   },
+   "bioplentia:dead_grass": {
+      "sound": "grass"
+   },
+   "bioplentia:jungle_paper_lantern": {
+       "sound": "wood"
+   },
+   "bioplentia:mistletoe": {
+       "sound": "grass"
+   },
+   "bioplentia:oak_paper_lantern": {
+       "textures": "oak_paper_lantern",
+       "sound": "wood"
+   },
+   "bioplentia:pink_cherry_leaves": {
+      "sound": "grass"
+   },
+   "bioplentia:red_daisy": {
+       "sound": "grass"
+   },
+   "bioplentia:roots": {
+       "sound": "roots"
+   },
+   "bioplentia:scoria": {
+       "sound": "stone"
+   },
+   "bioplentia:spruce_paper_lantern": {
+      "textures": "spruce_paper_lantern",
+      "sound": "wood"
+   },
+   "bioplentia:stripped_cherry_log": {
+      "sound": "wood"
+   },
+   "bioplentia:stripped_cherry_wood": {
+      "sound": "wood"
+   },
+   "bioplentia:tiny_cactus": {
+      "sound": "cloth"
+   },
+   "bioplentia:tiny_waterlily": {
+      "sound": "grass"
+   },
+   "bioplentia:vanilla_vine": {
+       "sound": "vines"
+   },
+   "bioplentia:white_cherry_leaves": {
+      "sound": "grass"
+  },
+  "bioplentia:white_daisy": {
+       "sound": "grass"
+   }
+}

@@ -1,0 +1,426 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "entity:demogorgon",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "minecraft:roar": {
+      
+        "minecraft:on_target_acquired": {},
+        "minecraft:behavior.summon_entity": {
+          "priority": 0,
+          "probability": 100.0,
+          "summon_choices": [
+            {
+              "weight": 1,
+              "cooldown_time": 15.0,
+              "cast_duration": 3.18,
+              "start_sound_event": "plop",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 0.0,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 0,
+                  "entity_type": "",
+                  "entity_lifespan": 10.0,
+                  "size": 10.0,
+                  "sound_event": ""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "minecraft:baby_roar": {
+        "minecraft:on_target_acquired": {},
+        "minecraft:behavior.summon_entity": {
+          "priority": 0,
+          "probability": 100.0,
+          "summon_choices": [
+            {
+              "weight": 1,
+              "cooldown_time": 15.0,
+              "cast_duration": 0.05,
+              "start_sound_event": "shoot",
+              "sequence": [
+                {
+                  "shape": "circle",
+                  "target": "self",
+                  "base_delay": 0.0,
+                  "delay_per_summon": 0.0,
+                  "num_entities_spawned": 0,
+                  "entity_type": "",
+                  "entity_lifespan": 10.0,
+                  "size": 10.0,
+                  "sound_event": ""
+                }
+              ]
+            }
+          ]
+        }
+      },
+      
+      "minecraft:demogorgon_adult": {
+      "minecraft:attack": {
+        "damage": 8
+      },
+           "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        }
+      },
+      "minecraft:demogorgon_baby": {
+        "minecraft:is_baby": {},
+      "minecraft:movement": {
+        "value": 0.29
+      },
+      "minecraft:attack": {
+        "damage": 5
+      },
+        "minecraft:scale": {
+          "value": 0.5
+        },
+           "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry_baby",
+          "target": "self"
+        }
+      },
+      
+      "minecraft:demogorgon_angry": {
+            "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:angry": {
+    
+          "duration": 120,
+          "broadcastAnger": true,
+          "broadcastRange": 20,
+    
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
+        },
+           "minecraft:on_target_acquired": {  }
+      },
+      
+      "minecraft:demogorgon_angry_baby": {
+            "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:angry": {
+    
+          "duration": 120,
+          "broadcastAnger": true,
+          "broadcastRange": 20,
+    
+          "calm_event": {
+            "event": "minecraft:on_calm_baby",
+            "target": "self"
+          }
+        },
+        
+           "minecraft:on_target_acquired": {  }
+      },
+          "minecraft:demogorgon_closed": {
+              "minecraft:variant": {
+          "value": 0
+        }
+      },
+      
+          "minecraft:demogorgon_closed_baby": {
+              "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "minecraft:demogorgon_calm": {
+              "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        }
+      },
+      "minecraft:demogorgon_calm_baby": {
+              "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry_baby",
+          "target": "self"
+        }
+      }
+    },
+    
+    "components": {
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": -1,
+        "breathesWater": false
+      },
+          "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "within_radius": 56,
+             "attack_interval": 1,
+          "entity_types": [
+            {
+              "filters": { "other_with_families": [ "villager", "chicken", "pig", "mushroomcow", "player", "cow", "sheep", "donkey", "horse", "llama", "mule", "polar_bear", "ocelot","cat", "wolf", "iron_golem" ] },
+              "max_dist": 56
+            }
+          ],
+          "must_see": true
+        },
+        "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.8,
+        "height": 2.25
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:follow_range": {
+        "value": 56,
+        "max": 56
+      },
+      
+      "minecraft:behavior.pickup_items": {
+        "priority": 9,
+        "max_dist": 64,
+        "goal_radius": 1,
+        "speed_multiplier": 1.5
+      },
+       "minecraft:shareables": {
+          "items": [
+            {
+              "item": "minecraft:porkchop",
+              "want_amount": 128,
+              "surplus_amount": 256
+            },
+            {
+              "item": "minecraft:rotten_flesh",
+              "want_amount": 128,
+              "surplus_amount": 256
+            },
+            {
+              "item": "minecraft:beef",
+              "want_amount": 128,
+              "surplus_amount": 256
+            },
+            {
+              "item":"minecraft:rabbit",
+              "want_amount": 128,
+              "surplus_amount": 256
+            },
+            {
+              "item":"minecraft:chicken",
+              "want_amount": 128,
+              "surplus_amount": 256
+            },
+            {
+              "item":"minecraft:muttonRaw",
+              "want_amount": 128,
+              "surplus_amount": 256
+            },
+            {
+              "item": "minecraft:cooked_porkchop",
+              "want_amount": 128,
+              "surplus_amount": 256
+            },
+            {
+              "item": "minecraft:cooked_beef",
+              "want_amount": 128,
+              "surplus_amount": 256
+            },
+            {
+              "item":"minecraft:cooked_rabbit",
+              "want_amount": 128,
+              "surplus_amount": 256
+            },
+            {
+              "item":"minecraft:cooked_chicken",
+              "want_amount": 128,
+              "surplus_amount": 256
+            },
+            {
+              "item":"minecraft:muttonCooked",
+              "want_amount": 128,
+              "surplus_amount": 256
+            }
+          ]
+        },
+      "minecraft:inventory": {
+  
+        "inventory_size": 256,
+        "private": true,
+        "can_be_siphoned_from": true
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_open_doors": true,
+        "avoid_water": true,
+        "avoid_portals": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+  
+      "minecraft:type_family": {
+        "family": [ "demogorgon", "monster" ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/demoloot.json"
+      },
+     
+      "minecraft:health": {
+        "value": 80,
+        "max": 80
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+
+      "minecraft:behavior.break_door": {
+        "priority": 1
+      },
+   
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "speed_multiplier": 1.5,
+        "track_target": false
+      },
+     "minecraft:behavior.move_towards_restriction": {
+        "priority": 5
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:physics": {
+      }
+
+    },
+
+
+    "events": {
+  
+     "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 85,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:demogorgon_adult",
+                "minecraft:demogorgon_calm"
+                      
+              ]
+            }
+          },
+          {
+            "weight": 15,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:demogorgon_baby",
+                "minecraft:demogorgon_calm_baby"
+                      
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:on_calm": {
+        "remove": {
+          "component_groups": [
+            "minecraft:demogorgon_angry",
+                  "minecraft:roar"  
+   
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:demogorgon_calm",
+                "minecraft:demogorgon_closed"
+          ]
+        }
+      },
+      "minecraft:become_angry": {
+        "remove": {
+          "component_groups": [
+            "minecraft:demogorgon_calm",
+                "minecraft:demogorgon_closed"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:demogorgon_angry",
+                  "minecraft:roar"  
+        
+               
+   
+          ]
+        }
+      },
+      "minecraft:on_calm_baby": {
+        "remove": {
+          "component_groups": [
+            "minecraft:demogorgon_angry_baby",
+                  "minecraft:baby_roar"  
+   
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:demogorgon_calm_baby",
+                "minecraft:demogorgon_closed_baby"
+          ]
+        }
+      },
+      "minecraft:become_angry_baby": {
+        "remove": {
+          "component_groups": [
+            "minecraft:demogorgon_calm_baby",
+                "minecraft:demogorgon_closed_baby"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:demogorgon_angry_baby",
+                  "minecraft:baby_roar"  
+        
+               
+   
+          ]
+        }
+      }
+      
+    }
+  }
+}
+    

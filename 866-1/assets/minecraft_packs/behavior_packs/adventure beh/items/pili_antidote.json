@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "pili:pili_antidote"
+    },
+    
+    "components": {
+"minecraft:icon": {
+				"texture": "pili_antidote"
+			},
+
+"minecraft:use_animation": "drink",
+      "minecraft:hand_equipped": false,
+      "minecraft:stacked_by_data": true,
+      "minecraft:use_duration": 15,
+      "minecraft:foil": true,
+
+      "minecraft:food": {
+
+"using_converts_to": "glass_bottle",
+        "nutrition": 0,
+        "saturation_modifier": "supernatural",
+        "can_always_eat": true,
+        
+"remove_effects": [
+          "slowness",
+          "mining_fatigue",
+          "instant_damage",
+          "nausea",
+          "blindness",
+          "hunger",
+          "weakness",
+          "poison",
+          "wither",
+          "levitation",
+          "fatal_poison",
+"bad_omen"
+        ]
+
+      }
+    }
+  }
+}

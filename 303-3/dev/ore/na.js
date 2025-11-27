@@ -1,0 +1,9 @@
+/*
+IDRegistry.genBlockID("coffeeworkshop$oreSoda");
+Block.createBlock("coffeeworkshop$oreSoda", [
+	{name: "碳酸氢钠矿", texture: [["ore_soda", 0]], inCreative: true}
+], "opaque");
+ToolAPI.registerBlockMaterial(BlockID.coffeeworkshop$oreSoda, "stone", 2, true);
+Block.setDestroyTime(BlockID.coffeeworkshop$oreSoda, 3);
+Block.setDestroyLevel("coffeeworkshop$oreSoda", 2);
+*/

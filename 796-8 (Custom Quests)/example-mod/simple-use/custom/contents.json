@@ -1,0 +1,21 @@
+{
+    "name": {
+        "en": "name",
+        "zh": "名称"
+    },
+    "main": [{
+        "id": "chapter1",
+        "name": {
+            "en": "Chapter 1",
+            "zh": "第1章"
+        },
+        "icon": {
+            "id": "vitem:stick"
+        },
+        "quest": []
+    }],
+    "config": {
+        "textMessage": true,
+        "guiMessage": true
+    }
+}

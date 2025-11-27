@@ -1,0 +1,8 @@
+{
+  "enabled":true,
+  "transfer":{
+    "first":320,
+    "second":3200,
+    "last":320000
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"type": "main",
+	"identifier": "test_ui",
+	"save": true,
+	"debug": true,
+	"item": {
+		"createItem": {
+			"id": "ftb_book",
+			"name": "Quest book",
+			"texture": {
+				"name": "ftb_book",
+				"meta": 0
+			}
+		},
+		"ui_item": "ItemID.ftb_book"
+	},
+	"translations": [
+		"ru.lang"
+	],
+	"tabs": [
+		"tabs/Tab name.json"
+	]
+}

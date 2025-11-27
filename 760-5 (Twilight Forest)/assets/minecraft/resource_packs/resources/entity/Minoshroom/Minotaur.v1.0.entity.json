@@ -1,0 +1,35 @@
+{
+"format_version": "1.8.0",
+"minecraft:client_entity": {
+"description": {
+"identifier": "twilightforest:minotaur",
+"materials": {
+"default": "minotaur"
+},
+"geometry": {
+"default": "geometry.minotaur"
+},
+"textures": {
+"default": "textures/model/minotaur"
+},
+"spawn_egg": {
+"texture": "egg_minotaur"
+},
+"scripts": {
+"pre_animation": [
+"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+"variable.tcos1 = -variable.tcos0;"
+]
+},
+"animations": {
+"general": "animation.minotaur.general",
+"move": "animation.minotaur.move"
+},
+"animation_controllers": [
+{ "general": "controller.animation.minotaur.general" },
+{ "move": "controller.animation.minotaur.move" }
+],
+"render_controllers": [ "controller.render.minotaur" ]
+}
+}
+}

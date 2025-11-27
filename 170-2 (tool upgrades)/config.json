@@ -1,0 +1,27 @@
+{
+  "enabled":true,
+  "support":{
+    "armor":[
+      "bronzeHelmet",
+      "bronzeChestplate",
+      "bronzeLeggings",
+      "bronzeBoots",
+      "compositeHelmet",
+      "compositeChestplate",
+      "compositeLeggings",
+      "compositeBoots"
+    ],
+    "sword":[
+      "bronzeSword"
+    ],
+    "tool":[
+      "bronzeShovel",
+      "bronzePickaxe",
+      "bronzeAxe",
+      "bronzeHoe"
+    ],
+    "shear":[],
+    "bow":[],
+    "fish":[]
+  }
+}

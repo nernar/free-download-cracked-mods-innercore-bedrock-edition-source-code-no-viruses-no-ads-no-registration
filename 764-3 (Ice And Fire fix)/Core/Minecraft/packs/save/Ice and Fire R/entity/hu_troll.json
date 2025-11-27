@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "hu:troll",
+      "materials": {
+        "default": "zoglin"
+      },
+      "textures": {
+        "default": "textures/entity/pamobile/hu_troll"
+      },
+      "geometry": {
+        "default": "geometry.hu_troll"
+      },
+      "spawn_egg": {
+        "texture": "hu:troll",
+        "texture_index": 0
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.tcos_right_side = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+          "variable.tcos_left_side = -variable.tcos_right_side;",
+          "variable.attack_head_rot =  Math.sin(variable.attack_time * 180.0) * -37.3;"
+        ],
+        "animate": [
+          "walk",
+          "look_at_target",
+          {
+            "attack": "variable.has_target && variable.attack_time >= 0.0"
+          }
+        ]
+      },
+      "animations": {
+        "walk": "animation.hu_troll.walk",
+        "look_at_target": "animation.hu_troll.look_at_target",
+        "attack": "animation.hu_troll.attack"
+      },
+      "render_controllers": [
+        "controller.render.zoglin"
+      ]
+    }
+  }
+}

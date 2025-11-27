@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "atmosphere:mice",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/mice"
+      },
+      "geometry": {
+        "default": "geometry.mice"
+      },
+      "animations": {
+        "move": "animation.dragonfly.move",    
+        "look_at_target": "animation.common.look_at_target"
+      }, 
+      "animation_controllers": [
+        { "move": "controller.animation.dragonfly.move" }
+      ],
+      "render_controllers": [ "controller.render.default" ],
+       "spawn_egg": {
+        "overlay_color": "#750130",
+        "base_color": "#0128128"
+      }
+    }
+  }
+}

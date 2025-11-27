@@ -1,0 +1,16 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "bioplentia:furnace_log_cherry_recipe"
+    },
+
+    "tags": ["furnace"],
+    "input": "bioplentia:cherry_log",
+    "output": "minecraft:coal:1"
+  }
+  
+}

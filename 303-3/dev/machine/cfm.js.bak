@@ -1,0 +1,170 @@
+//IDRegistry.genBlockID("coffeeworkshop$cfm");
+//Block.createBlock("coffeeworkshop$cfm", [
+//{name: "咖啡机", texture: [["wood", 0],["wood", 0],["anvil_base", 0]], inCreative: false}]);
+
+IDRegistry.genItemID("coffeeworkshop$cfm");
+Item.createItem("coffeeworkshop$cfm", "咖啡机", {name:"cfm"}, {inTech: true,stack: 64});
+
+//bundBlockToItem(ItemID.coffeeworkshop$cfm,BlockID.coffeeworkshop$cfm,true);
+
+Recipes.addShaped({id: ItemID.coffeeworkshop$cfm, count: 1, data: 0}, [
+"xxx",
+"bcb",
+"xex"
+], [ 'x', 152, 0, 'b',265,0,'c',1,0,'d',ItemID.coffeeworkshop$cream_milk,0,'e',325,8]);
+
+function coffeeworkshop$cfmModel(id){
+var render = new ICRender.Model();
+ var model =   BlockRenderer.createModel();
+    
+ model.addBox (0,12/16,0,1,16/16,1,[["wool_black", 0], ["wool_black", 0],
+["wool_black", 0], ["wool_black", 0],
+["wool_black", 0], ["wool_black", 0]]);
+model.addBox (0, 0, 0, 1,4/16, 1,[["wool_black", 0], ["wool_black", 0],
+["wool_black", 0], ["wool_black", 0],
+["wool_black", 0], ["wool_black", 0]]);
+model.addBox (0/16, 4/16, 8/16, 16/16,12/16, 16/16,[["iron_block", 0], ["iron_block", 0],
+["iron_block", 0], ["iron_block", 0],
+["iron_block", 0], ["iron_block", 0]]);
+model.addBox (10/16, 10/16, 3/16, 14/16,11/16, 5/16,[["wool_black", 0], ["wool_black", 0],
+["wool_black", 0], ["wool_black", 0],
+["wool_black", 0], ["wool_black", 0]]);
+model.addBox (7/16, 9/16, 3/16, 9/16,10/16,5/16,[["iron_block", 0], ["iron_block", 0],
+["iron_block", 0], ["iron_block", 0],
+["iron_block", 0], ["iron_block", 0]]);
+model.addBox (6/16, 10/16, 2/16, 10/16,12/16, 6/16,[["iron_block", 0], ["iron_block", 0],
+["iron_block", 0], ["iron_block", 0],
+["iron_block", 0], ["iron_block", 0]]);
+render.addEntry(model);
+
+BlockRenderer.setStaticICRender(id, -1, render);
+ }
+  //coffeeworkshop$cfmModel(BlockID.coffeeworkshop$cfm);
+  var cfmfunc = function (a,b){
+if(a===ItemID.coffeeworkshop$coffeepowder){return ItemID.coffeeworkshop$espresso;}
+//else if(a===ItemID.coffeeworkshop$cream_chocolate){return ItemID.coffeeworkshop$icecream_chocolate;}
+//else if(a===ItemID.coffeeworkshop$cream_apple){return ItemID.coffeeworkshop$icecream_apple;}
+//else if(a===ItemID.coffeeworkshop$cream_berry){return ItemID.coffeeworkshop$icecream_berry;}
+//else if(a===ItemID.coffeeworkshop$cream_coffee){return ItemID.coffeeworkshop$icecream_coffee;}
+//else if(a===ItemID.coffeeworkshop$cream_lemon){return ItemID.coffeeworkshop$icecream_lemon;}
+//else if(a===ItemID.coffeeworkshop$cream_melon){return ItemID.coffeeworkshop$icecream_melon;}
+else if(a===325 && b === 1){return ItemID.coffeeworkshop$milk_foam;}
+else{return false;}
+};
+var cfmModelArray = [
+[0,12/16,0,1,16/16,1,[["wool_black", 0], ["wool_black", 0],
+["wool_black", 0], ["wool_black", 0],
+["wool_black", 0], ["wool_black", 0]]],
+[0, 0, 0, 1,4/16, 1,[["wool_black", 0], ["wool_black", 0],
+["wool_black", 0], ["wool_black", 0],
+["wool_black", 0], ["wool_black", 0]]],
+[0/16, 4/16, 8/16, 16/16,12/16, 16/16,[["iron_block", 0], ["iron_block", 0],
+["iron_block", 0], ["iron_block", 0],
+["iron_block", 0], ["iron_block", 0]]],
+[10/16, 10/16, 3/16, 14/16,11/16, 5/16,[["wool_black", 0], ["wool_black", 0],
+["wool_black", 0], ["wool_black", 0],
+["wool_black", 0], ["wool_black", 0]]],
+[7/16, 9/16, 3/16, 9/16,10/16,5/16,[["iron_block", 0], ["iron_block", 0],
+["iron_block", 0], ["iron_block", 0],
+["iron_block", 0], ["iron_block", 0]]],
+[6/16, 10/16, 2/16, 10/16,12/16, 6/16,[["iron_block", 0], ["iron_block", 0],
+["iron_block", 0], ["iron_block", 0],
+["iron_block", 0], ["iron_block", 0]]]
+];
+directionBlockAPI.creatBlock("coffeeworkshop$cfm","冰淇淋机",false);
+directionBlockAPI.createModel("coffeeworkshop$cfm",cfmModelArray);
+directionBlockAPI.bundItem(ItemID.coffeeworkshop$cfm,"coffeeworkshop$cfm",true);
+for ( var cfmi = 0 ; cfmi < 4 ; cfmi += 1 ){
+  TileEntity.registerPrototype(BlockID["coffeeworkshop$cfm" + cfmi] , {
+
+     defaultValues: {
+         progress:0,
+		burn:100,
+		burnmax:0
+},
+     tick:function(){
+        var that = this;
+     var slotFuel = that.container.getSlot("slotFuel");
+     var slotSource = that.container.getSlot("slotSource");
+         var slotResult= that.container.getSlot("slotResult");
+         var burn = machine.icecreamMachine.getRecipeFuel(slotFuel.id);
+ //  this.container.setScale("burningScale", this.data.burn / this.data.burnmax || 0);
+		this.container.setScale("progressScale", this.data.progress / 160);
+   if(slotFuel.count < 1)
+{
+that.container.clearSlot("slotFuel");
+}
+if(slotSource.count < 1)
+{
+that.container.clearSlot("slotSource");
+}
+     if ( that.data.burn === 0){
+        if(burn && slotFuel.count >= 1){
+               that.data.burn += burn;
+           that.data.burnmax = burn;
+            if(LiquidRegistry.getItemLiquid(slotFuel.id, slotFuel.data)){
+					var empty = LiquidRegistry.getEmptyItem(slotFuel.id, slotFuel.data);
+					slotFuel.id = empty.id;
+					slotFuel.data = empty.data;
+              }
+           else{ that.container.setSlot("slotFuel", slotFuel.id, slotFuel.count-1, 0);
+        }
+           }
+       }
+       else if (that.data.burn >= 1){
+         //  that.data.burn -= 1;
+           if(!cfmfunc(slotSource.id,slotSource.data)){
+              if(that.data.progress >= 1){
+                  that.data.progress -= 1;
+               }
+            }
+            else{
+                 if(that.data.progress <= 159){
+                     that.data.progress += 1
+                     }
+                 else if(that.data.progress === 160){
+                     that.changeItem();
+                     }
+           }
+           }
+           if(that.data.burn === 0 && that.data.progress >= 1){
+               that.data.progress -= 1;
+               }
+   
+     },
+     changeItem :function(){
+         var that = this;
+     var slotFuel = that.container.getSlot("slotFuel");
+     var slotSource = that.container.getSlot("slotSource");
+     var slotResult= that.container.getSlot("slotResult");
+      if(!slotResult.id){
+          that.container.setSlot("slotResult", cfmfunc(slotSource.id,slotSource.data), 1, 0);
+          if(LiquidRegistry.getItemLiquid(slotSource.id, slotSource.data)){
+					var empty = LiquidRegistry.getEmptyItem(slotSource.id, slotSource.data);
+					slotSource.id = empty.id;
+					slotSource.data = empty.data;
+              }
+        else{ that.container.setSlot("slotSource", slotSource.id, slotSource.count-1, 0);}
+         
+         that.data.progress = 0;
+         }
+         else if(slotResult.id === cfmfunc(slotSource.id,slotSource.data)){
+             that.container.setSlot("slotResult", slotResult.id, slotResult.count+1, 0);
+             if(LiquidRegistry.getItemLiquid(slotSource.id, slotSource.data)){
+					var empty = LiquidRegistry.getEmptyItem(slotSource.id, slotSource.data);
+					slotSource.id = empty.id;
+					slotSource.data = empty.data;
+              }
+        else{ that.container.setSlot("slotSource", slotSource.id, slotSource.count-1, 0);}
+             
+             that.data.progress = 0;
+             }
+     },
+     click:function(){
+//Game.message(World.getBlockData(this.x, this.y, this.z));
+    },
+    getGuiScreen: function(){
+    return cfmGui; 
+}
+});
+}

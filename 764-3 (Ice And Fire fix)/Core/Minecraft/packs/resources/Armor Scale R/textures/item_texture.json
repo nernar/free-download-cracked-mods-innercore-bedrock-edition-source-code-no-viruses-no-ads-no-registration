@@ -1,0 +1,355 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "egg_camel": {
+      "textures": "textures/items/egg_camel"
+    },
+    "egg_lion": {
+      "textures": "textures/items/egg_lion"
+    },
+    "egg_penguin": {
+      "textures": "textures/items/egg_penguin"
+    },
+    "egg_tiger": {
+      "textures": "textures/items/egg_tiger"
+    },
+    "egg_elephant": {
+      "textures": "textures/items/egg_elephant"
+    },
+    "egg_deer": {
+      "textures": "textures/items/egg_deer"
+    },
+    "egg_panther": {
+      "textures": "textures/items/egg_panther"
+    },
+    "egg_frog": {
+      "textures": "textures/items/egg_frog"
+    },
+    "egg_crocodile": {
+      "textures": "textures/items/egg_crocodile"
+    },
+    "egg_mouse": {
+      "textures": "textures/items/egg_mouse"
+    },
+    "gallardo": {
+      "textures": "textures/items/gallardo"
+    },
+    "bench": {
+      "textures": "textures/items/bench"
+    },
+    "christmas_tree": {
+      "textures": "textures/items/christmas_tree"
+    },
+    "tivi": {
+      "textures": "textures/items/tivi"
+    },
+    "closet": {
+      "textures": "textures/items/closet"
+    },
+    "laptop": {
+      "textures": "textures/items/laptop"
+    },
+    "piano": {
+      "textures": "textures/items/piano"
+    },
+    "armchairs": {
+      "textures": "textures/items/armchairs"
+    },
+    "chair": {
+      "textures": "textures/items/chair"
+    },
+    "big_table": {
+      "textures": "textures/items/big_table"
+    },
+    "small_table": {
+      "textures": "textures/items/small_table"
+    },
+    "drone": {
+      "textures": "textures/items/drone"
+    },
+    "colorful_gifts": {
+      "textures": "textures/items/colorful_gifts"
+    },
+    "iaf_black_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_black_helmet"
+      ]
+    },
+    "iaf_black_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_black_chestplate"
+      ]
+    },
+    "iaf_black_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_black_boot"
+      ]
+    },
+    "iaf_amythest_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_amythest_helmet"
+      ]
+    },
+    "iaf_amythest_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_amythest_chestplate"
+      ]
+    },
+    "iaf_black_leggings": {
+      "textures": [
+        "textures/items/pamobile/iaf_black_leggings"
+      ]
+    },
+    "iaf_amythest_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_amythest_boot"
+      ]
+    },
+    "iaf_amythest_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_amythest_legging"
+      ]
+    },
+    "iaf_blue_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_blue_chestplate"
+      ]
+    },
+    "iaf_blue_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_blue_helmet"
+      ]
+    },
+    "iaf_blue_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_blue_legging"
+      ]
+    },
+    "iaf_blue_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_blue_boot"
+      ]
+    },
+    "iaf_green_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_green_helmet"
+      ]
+    },
+    "iaf_green_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_green_chestplate"
+      ]
+    },
+    "iaf_green_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_green_legging"
+      ]
+    },
+    "iaf_green_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_green_boot"
+      ]
+    },
+    "iaf_bronze_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_bronze_helmet"
+      ]
+    },
+    "iaf_bronze_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_bronze_chestplate"
+      ]
+    },
+    "iaf_bronze_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_bronze_legging"
+      ]
+    },
+    "iaf_bronze_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_bronze_boot"
+      ]
+    },
+    "iaf_copper_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_copper_legging"
+      ]
+    },
+    "iaf_copper_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_copper_helmet"
+      ]
+    },
+    "iaf_copper_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_copper_chestplate"
+      ]
+    },
+    "iaf_copper_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_copper_boot"
+      ]
+    },
+    "iaf_electric_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_electric_helmet"
+      ]
+    },
+    "iaf_electric_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_electric_chestplate"
+      ]
+    },
+    "iaf_electric_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_electric_legging"
+      ]
+    },
+    "iaf_electric_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_electric_boot"
+      ]
+    },
+    "iaf_gray_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_gray_chestplate"
+      ]
+    },
+    "iaf_gray_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_gray_helmet"
+      ]
+    },
+    "iaf_gray_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_gray_legging"
+      ]
+    },
+    "iaf_gray_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_gray_boot"
+      ]
+    },
+    "iaf_red_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_red_boot"
+      ]
+    },
+    "iaf_red_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_red_chestplate"
+      ]
+    },
+    "iaf_red_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_red_helmet"
+      ]
+    },
+    "iaf_red_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_red_legging"
+      ]
+    },
+    "iaf_silver_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_silver_chestplate"
+      ]
+    },
+    "iaf_sapphire_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_sapphire_boot"
+      ]
+    },
+    "iaf_silver_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_silver_helmet"
+      ]
+    },
+    "iaf_sapphire_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_sapphire_helmet"
+      ]
+    },
+    "iaf_silver_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_silver_legging"
+      ]
+    },
+    "iaf_silver_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_silver_boot"
+      ]
+    },
+    "iaf_sapphire_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_sapphire_legging"
+      ]
+    },
+    "iaf_sapphire_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_sapphire_chestplate"
+      ]
+    },
+    "iaf_white_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_white_helmet"
+      ]
+    },
+    "iaf_white_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_white_chestplate"
+      ]
+    },
+    "iaf_white_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_white_boot"
+      ]
+    },
+    "iaf_white_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_white_legging"
+      ]
+    },
+    "iaf_myrmex_desert_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_myrmex_desert_helmet"
+      ]
+    },
+    "iaf_myrmex_desert_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_myrmex_desert_legging"
+      ]
+    },
+    "iaf_myrmex_desert_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_myrmex_desert_chestplate"
+      ]
+    },
+    "iaf_myrmex_desert_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_myrmex_desert_boot"
+      ]
+    },
+    "iaf_myrmex_jungle_chestplate": {
+      "textures": [
+        "textures/items/pamobile/iaf_myrmex_jungle_chestplate"
+      ]
+    },
+    "iaf_myrmex_jungle_helmet": {
+      "textures": [
+        "textures/items/pamobile/iaf_myrmex_jungle_helmet"
+      ]
+    },
+    "iaf_myrmex_jungle_legging": {
+      "textures": [
+        "textures/items/pamobile/iaf_myrmex_jungle_legging"
+      ]
+    },
+    "iaf_myrmex_jungle_boot": {
+      "textures": [
+        "textures/items/pamobile/iaf_myrmex_jungle_boot"
+      ]
+    }
+  }
+}

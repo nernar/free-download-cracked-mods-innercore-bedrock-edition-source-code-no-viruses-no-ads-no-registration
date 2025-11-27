@@ -1,0 +1,57 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bioplentia:cattail"
+    },
+    "components": {
+    "minecraft:material_instances": {
+      "*": {
+       "texture": "cattail",
+       "render_method": "alpha_test",
+	     "ambient_occlusion": false,
+		   "face_dimming": true
+      }
+    },
+		"minecraft:placement_filter": {
+		  "conditions": [
+			{
+				"block_filter": [
+				 "minecraft:grass",
+				 "minecraft:dirt"
+				],
+			   "allowed_faces": [
+				  "up"
+				]
+			 }
+		  ]
+		},
+    "minecraft:pick_collision": {
+      "size": [ 12, 10, 12 ],
+      "origin": [ -6, 0, -6 ]
+    },
+		"minecraft:breakonpush": true,
+		"minecraft:breathability": "air",
+	   "minecraft:entity_collision": false,
+      "minecraft:geometry": "geometry.core.block.crop",
+      "minecraft:destroy_time": 0.05,
+      "minecraft:immovable": false,
+      "minecraft:explosion_resistance": 1,
+      "minecraft:loot": "loot_tables/blocks/cattail.json",
+      "minecraft:rotation": [ 0, 0, 0 ],
+      "minecraft:block_light_absorption": 0.2,
+      "minecraft:block_light_emission": 0.1,
+      "minecraft:map_color": "#265A25",
+      "minecraft:flammable": {
+        "flame_odds": 100,
+        "burn_odds": 60
+      },
+      "tag:plants": {}
+    },
+    "events": {
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "Add armor Ice And Fire by §aXD HMDT",
+    "name": "§1§9Armor Scale",
+    "uuid": "eb27004f-029e-4e8a-a835-a4c8118b2738",
+    "version": [
+      1,
+      16,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Add armor Ice And Fire by §aXD HMDT",
+      "type": "resources",
+      "uuid": "f3a8e473-2810-4119-a9e3-ea843b54a382",
+      "version": [
+        1,
+        16,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "bd7739eb-23df-4047-be9c-6e9f44e68c9f",
+      "version": [
+        1,
+        16,
+        1
+      ]
+    }
+  ]
+}

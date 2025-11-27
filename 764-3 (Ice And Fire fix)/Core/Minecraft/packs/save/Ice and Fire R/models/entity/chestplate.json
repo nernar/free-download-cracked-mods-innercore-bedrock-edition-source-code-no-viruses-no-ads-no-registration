@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"geometry.chestplate": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 3,
+		"visible_bounds_offset": [0, 1.5, 0],
+		"bones": [
+			{
+				"name": "body",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [16, 16], "inflate": 1}
+				]
+			},
+			{
+				"name": "leftArm",
+				"pivot": [5, 22, 0],
+				"cubes": [
+					{"origin": [5, 12, -2], "size": [4, 12, 4], "uv": [48, 16], "inflate": 0.75}
+				]
+			},
+			{
+				"name": "rightArm",
+				"parent": "leftArm",
+				"pivot": [-5, 22, 0],
+				"cubes": [
+					{"origin": [-9, 12, -2], "size": [4, 12, 4], "uv": [40, 16], "inflate": 0.75}
+				]
+			},
+			{
+				"name": "bone",
+				"parent": "rightArm",
+				"pivot": [1, 23, 0],
+				"rotation": [180, 0, 165],
+				"cubes": [
+					{"origin": [6.88528, 23.46638, -2], "size": [4, 3, 4], "uv": [13, 49], "inflate": 0.75}
+				]
+			},
+			{
+				"name": "bone2",
+				"parent": "leftArm",
+				"pivot": [1, 22, 0],
+				"rotation": [0, 0, 15],
+				"cubes": [
+					{"origin": [4.63816, 23.05212, -2], "size": [4, 3, 4], "uv": [13, 49], "inflate": 0.75}
+				]
+			}
+		]
+	}
+}

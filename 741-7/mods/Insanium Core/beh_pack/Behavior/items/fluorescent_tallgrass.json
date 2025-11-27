@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "about:fluorescent_tallgrass",
+      "category": "Items"
+    },
+    
+    "components": {
+      "minecraft:icon": {
+        "texture": "fluorescent_tallgrass"
+      },
+      "minecraft:display_name": {
+        "value": "tile.about:fluorescent_tallgrass.name"
+      },
+      "minecraft:block_placer": {
+        "block": "about:fluorescent_tallgrass",
+        "use_block_description": true
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:slab_combination",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/map/blocks/slab_combination"
+      },
+      "geometry": {
+        "default": "geometry.block"
+      },
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 158
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

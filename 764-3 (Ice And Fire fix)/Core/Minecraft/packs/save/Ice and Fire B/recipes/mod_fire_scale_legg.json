@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:fire_scale_legg"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "A#A",
+      "A#A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_scale_red",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "hu:firedragonlegging",
+      "count": 1
+    }
+  }
+}

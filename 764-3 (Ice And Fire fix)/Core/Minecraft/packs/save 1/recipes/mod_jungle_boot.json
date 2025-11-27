@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:jungle_boot"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_myrmex_jungle_chitin",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "iaf:myrmex_jungle_boot",
+      "count": 1
+    }
+  }
+}

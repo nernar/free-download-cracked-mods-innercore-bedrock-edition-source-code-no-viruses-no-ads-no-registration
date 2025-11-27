@@ -1,0 +1,31 @@
+{
+"format_version": "1.8.0",
+"minecraft:client_entity": {
+"description": {
+"identifier": "twilightforest:flame",
+"materials": {
+"default": "projectile"
+},
+"geometry": {
+"default": "geometry.humanoid"
+},
+"textures": {
+"default": "textures/model/hydra"
+},
+"particle_effects": {
+"default": "twilightforest:hydra_flame"
+},
+"scripts": {
+"scale": "0.001"
+},
+"animations": {
+"look_at_target": "animation.common.look_at_target"
+},
+"animation_controllers": [
+{ "flame": "controller.animation.hydra.flame" }
+],
+"render_controllers": [ "controller.render.projectile" ]
+}
+}
+}
+

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.hu_icedragonboot": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walking": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/function hu_icedragonboot"
+          ]
+        },
+        "walking": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name=='icedragonboot' && query.is_using_item"
+            }
+          ],
+          "on_entry": [
+            "/function hu_icedragonboot"
+          ]
+        }
+      }
+    }
+  }
+}

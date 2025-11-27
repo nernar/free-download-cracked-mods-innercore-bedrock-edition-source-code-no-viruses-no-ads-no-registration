@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+        "description": {
+			"identifier": "dungeoncraft:undead",
+            "materials": {"default": "dungeon_entity"},
+            "textures": {"default": "textures/entity/undead.png", "attack": "textures/entity/undead_attack.png"},
+            "render_controllers": ["controller.render.default"],
+            "geometry": {"default": "geometry.boss_undead"},
+            "animations": {
+                "move": "animation.boss_undead.move",
+                "attack": "animation.boss_undead.attack"
+            },
+            "animation_controllers": [
+                {"move": "controller.animation.undead.move"},
+                {"attack": "controller.animation.undead.attack"}
+            ],
+            "enable_attachables": true
+        }
+    }
+}

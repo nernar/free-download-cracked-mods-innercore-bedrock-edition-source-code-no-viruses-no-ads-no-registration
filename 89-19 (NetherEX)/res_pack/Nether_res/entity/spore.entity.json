@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "nether:spore",
+      "materials": { "default": "salamander_black" },
+      "textures": { "default": "textures/entity/spore" },
+      "geometry": { "default": "geometry.spore_old" },
+      "animations": {    
+        "move": "animation.mogus.move",  
+      },
+      "animation_controllers": [  
+        { "move": "controller.animation.mogus.move" },  
+      ],  
+      "render_controllers": [ "controller.render.default" ], 
+       "spawn_egg": {
+        "spawn_egg": {
+        "overlay_color": "#2551650",
+        "base_color": "#255255224"
+      }
+    }
+  }
+}

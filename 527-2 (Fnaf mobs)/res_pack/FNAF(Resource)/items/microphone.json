@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tinfinite:microphone",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "microphone",
+      "minecraft:render_offsets": "cookie"
+    }
+  }
+}

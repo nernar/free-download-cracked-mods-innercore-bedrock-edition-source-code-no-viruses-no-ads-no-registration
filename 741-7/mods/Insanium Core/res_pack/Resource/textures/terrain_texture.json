@@ -1,0 +1,258 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "resource_pack_name": "bioplentia",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "acacia_paper_lantern": {
+      "textures": "textures/blocks/acacia_paper_lantern"
+    },
+    "bookshelf": {
+          "variations": [
+            {
+              "path": "textures/blocks/bookshelf/bookshelf0",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/bookshelf/bookshelf1",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/bookshelf/bookshelf2",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/bookshelf/bookshelf3",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/bookshelf/bookshelf4",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/bookshelf/bookshelf5",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/bookshelf/bookshelf6",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/bookshelf/bookshelf7",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/bookshelf/bookshelf8",
+              "weight": 1
+            }
+         ]
+    },
+    "brick": {
+          "variations": [
+            {
+              "path": "textures/blocks/brick/brick0",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/brick/brick1",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/brick/brick2",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/brick/brick3",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/brick/brick4",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/brick/brick5",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/brick/brick6",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/brick/brick7",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/brick/brick8",
+              "weight": 2
+            },
+            {
+              "path": "textures/blocks/brick/brick9",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/brick/brick10",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/brick/brick11",
+              "weight": 1
+            }
+          ]
+    },
+    "cobblestone": {
+          "variations": [
+            {
+              "path": "textures/blocks/cobblestone/cobblestone0",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/cobblestone/cobblestone1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/cobblestone/cobblestone2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/cobblestone/cobblestone3",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/cobblestone/cobblestone4",
+              "weight": 1
+            }
+          ]
+    },
+    "cobblestone_mossy": {
+          "variations": [
+            {
+              "path": "textures/blocks/mossy_cobble/mossy_cobblestone0",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/mossy_cobble/mossy_cobblestone1",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/mossy_cobble/mossy_cobblestone2",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/mossy_cobble/mossy_cobblestone3",
+              "weight": 1
+            },
+            {
+              "path": "textures/blocks/mossy_cobble/mossy_cobblestone4",
+              "weight": 1
+            }
+          ]
+    },
+    "aloe_vera": {
+      "textures": "textures/blocks/aloe_vera"
+    },
+        "black_lotus": {
+      "textures": "textures/blocks/black_lotus"
+    },
+    "blue_lavender": {
+      "textures": "textures/blocks/blue_lavender"
+    },
+    "dried_vines": {
+      "textures": "textures/blocks/dried_vines"
+    },
+    "fluorescent_tallgrass": {
+      "textures": "textures/blocks/fluorescent_tallgrass"
+    },
+    "lush_mossy_stone_side": {
+      "textures": "textures/blocks/lush_mossy_stone_side"
+    },
+    "lush_mossy_stone_top": {
+      "textures": "textures/blocks/lush_mossy_stone_top"
+    },
+    "mossy_stone_side": {
+      "textures": "textures/blocks/mossy_stone_side"
+    },
+    "mossy_stone_top": {
+      "textures": "textures/blocks/mossy_stone_top"
+    },
+    "birch_paper_lantern": {
+      "textures": "textures/blocks/birch_paper_lantern"
+    },
+    "bluebells": {
+      "textures": "textures/blocks/bluebells"
+    },
+    "cattail": {
+      "textures": "textures/blocks/cattail"
+    },
+    "cherry_paper_lantern": {
+      "textures": "textures/blocks/cherry_paper_lantern"
+    },
+    "cherry_planks": {
+      "textures": "textures/blocks/cherry_planks"
+    },
+    "cherry_log_top": {
+      "textures": "textures/blocks/log_cherry_top"
+    },
+    "cherry_log_side": {
+      "textures": "textures/blocks/log_cherry"
+    },
+    "daisy_red": {
+      "textures": "textures/blocks/daisy_red"
+    },
+    "daisy_white": {
+      "textures": "textures/blocks/daisy_white"
+    },
+    "dark_oak_paper_lantern": {
+      "textures": "textures/blocks/dark_oak_paper_lantern"
+    },
+    "dead_grass": {
+      "textures": "textures/blocks/dead_grass"
+    },
+    "jungle_paper_lantern": {
+      "textures": "textures/blocks/jungle_paper_lantern"
+    },
+    "mistletoe": {
+      "textures": "textures/blocks/mistletoe"
+    },
+    "oak_paper_lantern": {
+      "textures": "textures/blocks/oak_paper_lantern"
+    },
+    "pink_cherry_leaves": {
+      "textures": "textures/blocks/pink_cherry_leaves"
+    },
+    "roots": {
+      "textures": "textures/blocks/roots"
+    },
+    "scoria": {
+      "textures": "textures/blocks/scoria"
+    },
+    "spruce_paper_lantern": {
+      "textures": "textures/blocks/spruce_paper_lantern"
+    },
+    "stripped_cherry_log_top": {
+      "textures": "textures/blocks/stripped_cherry_log_top"
+    },
+    "stripped_cherry_log_side": {
+      "textures": "textures/blocks/stripped_cherry_log"
+    },
+    "tiny_cactus": {
+      "textures": "textures/blocks/tiny_cactus"
+    },
+    "tiny_waterlily": {
+      "textures": [
+        {
+          "path": "textures/blocks/tiny_waterlily",
+          "tint_color": "#208030"
+        }
+      ]
+    },
+    "vanilla_vine": {
+      "textures": "textures/blocks/vanilla_vine"
+    },
+    "white_cherry_leaves": {
+      "textures": "textures/blocks/white_cherry_leaves"
+    }
+  }
+}

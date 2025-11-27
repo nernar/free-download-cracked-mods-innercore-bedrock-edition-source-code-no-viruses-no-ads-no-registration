@@ -1,0 +1,25 @@
+{
+  "id": "1629342910934",
+  "name": "pu",
+  "pools": [
+    {
+      "rolls": 33,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:sugar",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

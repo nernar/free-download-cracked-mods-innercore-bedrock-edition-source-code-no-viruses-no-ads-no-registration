@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "jfifigkdhdjfkgkgig by pppppppppppppp",
+    "name": "usifohigiffif",
+    "uuid": "c3b5ff6d-9f89-4991-af44-5596894f99ca",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "jfifigkdhdjfkgkgig by pppppppppppppp",
+      "type": "data",
+      "uuid": "e18a7184-1e57-47b6-9b99-4d1a1a42a186",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "5e8c78b8-02ea-4710-80d7-8745a82a89b3",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

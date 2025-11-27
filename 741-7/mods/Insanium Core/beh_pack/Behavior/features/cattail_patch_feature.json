@@ -1,0 +1,27 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+	"format_version": "1.13.0",
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "bioplentia:cattail_patch_feature"
+		},
+		"iterations": 24,
+		"x": {
+			"distribution": "gaussian",
+			"extent": [ -8, 8 ]
+		},
+		"y": {
+			"distribution": "gaussian",
+			"extent": [ 0, 1 ]
+		},
+		"z": {
+			"distribution": "gaussian",
+			"extent": [ -8, 8 ]
+		},
+		"coordinate_eval_order": "zyx",
+		"places_feature": "bioplentia:cattail_plant_feature",
+		"project_input_to_floor": true
+	}
+}

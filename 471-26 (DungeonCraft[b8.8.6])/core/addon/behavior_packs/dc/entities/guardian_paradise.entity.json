@@ -1,0 +1,105 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "dungeoncraft:guardian_paradise",
+        "is_spawnable": false,
+        "is_summonable": true,
+        "is_experimental": false
+      },
+      "component_groups": {
+        
+      },
+  
+      "components": {
+        "minecraft:type_family": {
+          "family": [ "bat", "paradise" ]
+        },
+        "minecraft:breathable": {
+          
+        },
+        "minecraft:collision_box": {
+          "width": 1,
+          "height": 1
+        },
+        "minecraft:fall_damage": {
+          "value": 0.0
+        },
+  
+        "minecraft:movement": {
+          "value": 0.04
+        },
+        
+        "minecraft:navigation.float": {
+          "can_path_over_water": true
+        },
+        "minecraft:jump.static": {
+        },
+        "minecraft:behavior.float": {
+          "priority": 0
+        },
+        "minecraft:behavior.float_wander": {
+          "xz_dist": 10,
+          "y_dist": 7,
+          "y_offset": -2.0,
+          "random_reselect": true,
+          "float_duration": [ 0.1, 0.35 ]
+        },
+        "minecraft:can_fly": {
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:health": {
+          "value": 50,
+          "max": 50
+        },
+        "minecraft:nameable": {
+        },
+        "minecraft:physics": {
+        },
+        
+        "minecraft:attack": {
+          "damage": 10
+        },
+        "minecraft:behavior.melee_attack": {
+          "priority": 1,
+          "speed_multiplier": 1,
+          "track_target": true
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "monster"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "snowgolem"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  }
+                ]
+              },
+              "max_dist": 8,
+              "attack_interval": 10
+            }
+          ],
+          "attack_interval": 1,
+          "scan_interval": 5
+        }
+      },
+      
+      "events": {
+       
+      }
+    }
+  }
+  

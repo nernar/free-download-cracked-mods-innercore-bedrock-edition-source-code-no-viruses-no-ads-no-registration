@@ -1,0 +1,43 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+"acher": {
+      "textures": "textures/items/acher"
+    },
+    "warlock": {
+      "textures": "textures/items/warlock"
+    },
+    "boss": {
+      "textures": "textures/items/boss"
+    },
+"colorful": {
+      "textures": "textures/items/colorful"
+    },
+"crescente": {
+      "textures": "textures/items/crescente"
+    },
+"evocator": {
+      "textures": "textures/items/evocator"
+    },
+    "fire": {
+      "textures": "textures/items/fire"
+    },
+ "explosive": {
+      "textures": "textures/items/explosive"
+    },
+     "guy": {
+      "textures": "textures/items/guy"
+    },
+     "invisible": {
+      "textures": "textures/items/invisible"
+    },
+     "lady": {
+      "textures": "textures/items/lady"
+    },
+   "teleport": {
+      "textures": "textures/items/teleport"
+
+      }
+   }
+}

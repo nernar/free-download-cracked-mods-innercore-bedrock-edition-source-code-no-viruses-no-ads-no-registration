@@ -1,0 +1,82 @@
+{
+    "description": {
+        "ru": "    Настройки мода",
+        "en": "    Mod settings"
+    },
+    "properties": {
+        "enabled": {
+            "index": 0
+        },
+        "debug": {
+            "index": 2,
+            "displayIf": "enabled"
+        },
+        "game": {
+            "index": 1,
+            "displayIf": "enabled"
+        },
+        "debug.enabled": {
+            "name": {
+                "ru": "включен",
+                "en": "enabled"
+            },
+            "description": {
+                "ru": "    Если включён то будут доступны следующие настройки",
+                "en": "    If enabled, the following settings will be available"
+            }
+        },
+        "debug.command": {
+            "name": {
+                "ru": "команды",
+                "en": "command"
+            },
+            "description": {
+                "ru": "    Если включено то будут доступны команды",
+                "en": "    If enabled then commands will be available"
+            },
+            "displayIf": "debug.enabled"
+        },
+        "game.particles": {
+            "name": {
+                "ru": "партиклы",
+                "en": "particles"
+            },
+            "description": {
+                "ru": "    Если включёно то партиклы будут спавнится",
+                "en": "    If enabled, particles will spawn"
+            }
+        },
+        "game.particlesCount": {
+            "name": {
+                "ru": "количество партиклов",
+                "en": "number of particles"
+            },
+            "description": {
+                "ru": "    Шанс с которым будут спавнится частицы",
+                "en": "    The chance with which particles will spawn"
+            },
+            "displayIf": "game.particles",
+            "type": "SeekBar",
+            "max":100,
+            "min": 1
+        },
+        "game.tickUpdate": {
+            "name": {
+                "ru": "количество обновлений в секунду",
+                "en": "number of updates per second"
+            },
+            "type": "SeekBar",
+            "max":20,
+            "min": 1
+        },
+        "game.radius": {
+            "name": {
+                "ru": "радиус поиска мобов для протатипа",
+                "en": "Search radius mobs for prototype"
+            },
+            "type": "SeekBar",
+            "max":100,
+            "min": 1
+        }
+    }
+}

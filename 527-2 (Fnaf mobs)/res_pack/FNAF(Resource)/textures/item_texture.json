@@ -1,0 +1,36 @@
+{
+  "resource_pack_name": "domestic_moba",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "cheese": {
+      "textures": "textures/items/cheese"
+    },
+    "pizza": {
+      "textures": "textures/items/pizza"
+    },
+
+    "microphone": {
+      "textures": "textures/items/microphone"
+    },
+    "gaff": {
+      "textures": "textures/items/gaff"
+    },
+   "egg_goldenfreddy": {
+      "textures": "textures/items/egg_goldenfreddy"
+    },
+   "egg_foxy": {
+      "textures": "textures/items/egg_foxy"
+    },
+   "egg_chica": {
+      "textures": "textures/items/egg_chica"
+    },
+   "egg_bonnie": {
+      "textures": "textures/items/egg_bonnie"
+    },
+    "egg_freddy": {
+      "textures": [
+        "textures/items/egg_freddy"
+      ]
+    }
+  }
+}

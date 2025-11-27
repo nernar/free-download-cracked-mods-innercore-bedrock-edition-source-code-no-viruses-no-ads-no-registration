@@ -1,0 +1,53 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "pili:rpgbook3"
+		},
+		"tags": [
+			"pili_craft"
+		],
+		"pattern": [
+			"aba",
+   "bcb",
+"aba"
+		],
+		"key": {
+			"b": {
+				"item": "pili:alchemical_dust"
+},
+"c": {
+"item": "minecraft:enchanted_book"
+},
+"a": {
+"item": "minecraft:coal_block"
+}
+		},
+		"result": {
+			"item": "pili:rpgbook3"
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

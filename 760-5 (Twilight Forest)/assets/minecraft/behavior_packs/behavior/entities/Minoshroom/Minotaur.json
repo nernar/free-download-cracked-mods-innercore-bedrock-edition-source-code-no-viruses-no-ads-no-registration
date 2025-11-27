@@ -1,0 +1,111 @@
+{
+"format_version": "1.13.0",
+"minecraft:entity": {
+"description": {
+"identifier": "twilightforest:minotaur",
+"is_spawnable": true,
+"is_summonable": true,
+"is_experimental": false
+},
+"components": {
+"minecraft:nameable": {
+},
+"minecraft:type_family": {
+"family": [ "minotaur", "monster" ]
+},
+"minecraft:breathable": {
+"total_supply": 15,
+"suffocate_time": 0
+},
+"minecraft:health": {
+"value": 30,
+"max": 30
+},
+"minecraft:movement": {
+"value": 0.25
+},
+"minecraft:collision_box": {
+"width": 0.7,
+"height": 1.9
+},
+"minecraft:follow_range": {
+"value": 48,
+"max": 48
+},
+"minecraft:attack": {
+"damage": [ 1, 3 ]
+},
+"minecraft:behavior.melee_attack": {
+"priority": 3,
+"speed_multiplier": 1.0,
+"track_target": true
+},
+"minecraft:loot": {
+"table": "loot_tables/entities/minotaur.json"
+},
+"minecraft:equipment": {
+"table": "loot_tables/entities/minotaur_gear.json"
+},
+"minecraft:navigation.generic": {
+"can_path_over_water": true,
+"avoid_water": true,
+"avoid_damage_blocks": true,
+"can_walk": true
+},
+"minecraft:movement.basic": {
+},
+"minecraft:jump.static": {
+},
+"minecraft:can_climb": {
+},
+"minecraft:behavior.random_stroll": {
+"priority": 5,
+"speed_multiplier": 1.0
+},
+"minecraft:behavior.hurt_by_target": {
+"priority": 2
+},
+"minecraft:behavior.look_at_target": {
+"priority": 5
+},
+"minecraft:behavior.look_at_player": {
+"priority": 6,
+"look_distance": 8
+},
+"minecraft:behavior.random_look_around": {
+"priority": 7
+},
+"minecraft:behavior.nearest_attackable_target": {
+"priority": 3,
+"entity_types": [
+{
+"filters": { "test": "is_family", "subject": "other", "value": "player" },
+"max_dist": 48
+},
+{
+"filters": { 
+"all_of": [ 
+{ "test": "is_family", "subject": "other", "operator": "!=", "value": "minotaur" },
+{ "test": "is_family", "subject": "other", "value": "player" }
+]
+},
+"max_dist": 48
+}
+],
+"must_see": true
+},
+"minecraft:physics": {
+},
+"minecraft:pushable": {
+"is_pushable": true,
+"is_pushable_by_piston": true
+}
+},
+"events": {
+"minecraft:entity_spawned": {
+"remove": { "component_groups": [ "不可思议" ] },
+"add": { "component_groups": [ "不可思议" ] }
+}
+}
+}
+}

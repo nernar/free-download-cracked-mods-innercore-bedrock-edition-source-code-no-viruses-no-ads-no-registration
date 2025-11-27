@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:desert_helmet"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_myrmex_desert_chitin",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "iaf:myrmex_desert_helmet",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,24 @@
+header.js
+commands.js
+other.js
+translate.js
+
+
+// items/angelRing.js
+// items/craftingItems.js
+
+
+mechanics/breeding.js
+
+
+blocks/chute.js
+blocks/feedingTrough.js
+
+
+// vanilla_blocks/dispenser.js
+
+
+vanilla_items/item_breeder.js
+
+
+shared.js

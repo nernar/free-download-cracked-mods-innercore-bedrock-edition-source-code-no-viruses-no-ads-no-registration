@@ -1,0 +1,84 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "raigen:fire_maiden",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+    "components": {
+      "minecraft:fire_immune": true,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:type_family": {
+        "family": [ "monster", "blaze" ]
+      },
+	  "minecraft:hurt_when_wet": {
+	    "value": true
+	  },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 2.3
+      },
+      "minecraft:shooter": {
+        "type": "smallfireball",
+        "def": "minecraft:small_fireball"
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+          "max_dist": 16
+        },
+        "must_see": false
+      },
+      "minecraft:fall_damage": {
+        "value": 0.0
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+	  "minecraft:behavior.ranged_attack": {
+	    "priority": 1,
+		"attack_interval_min": 1,
+        "attack_interval_max": 5,
+        "charge_charged_trigger": 0.0,
+        "charge_shoot_trigger": 4.0,
+        "burst_shots": 5,
+        "burst_interval": 0.2,
+        "attack_radius": 80
+      },
+	  "minecraft:movement": {
+		"value": 0.19
+	  },
+      "minecraft:navigation.walk": {
+        "can_float": false,
+        "avoid_water": true,
+        "is_amphibious": false,
+        "avoid_damage_blocks": false
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:health": {
+        "value": 46
+      },
+	  "minecraft:attack": {
+		"damage": 1
+	  },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+	  "minecraft:physics": {
+      }
+    }	
+  }
+}

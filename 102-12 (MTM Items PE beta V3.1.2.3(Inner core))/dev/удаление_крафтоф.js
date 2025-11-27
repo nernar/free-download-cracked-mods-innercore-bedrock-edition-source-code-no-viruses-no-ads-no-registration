@@ -1,0 +1,15 @@
+Callback.addCallback("PostLoaded", function () {
+Recipes.deleteRecipe({id: 416, count: 1, data: 0})
+Recipes.deleteRecipe({id: 298, count: 1, data: 0})
+Recipes.deleteRecipe({id: 299, count: 1, data: 0})
+Recipes.deleteRecipe({id: 300, count: 1, data: 0})
+Recipes.deleteRecipe({id: 301, count: 1, data: 0})
+Recipes.deleteRecipe({id: 334, count: 1, data: 0})
+Recipes.deleteRecipe({id: 35, count: 1, data: 0})
+Recipes.deleteRecipe({id: 340, count: 1, data: 0})
+Recipes.deleteRecipe({id: 420, count: 2, data: 0})
+Recipes.deleteRecipe({id: 321, count: 1, data: 0})
+Recipes.deleteRecipe({id: 355, count: 1, data: 0})
+Recipes.deleteRecipe({id: 389, count: 1, data: 0})
+Recipes.deleteRecipe({id: 171, count: 3, data: -1})
+});

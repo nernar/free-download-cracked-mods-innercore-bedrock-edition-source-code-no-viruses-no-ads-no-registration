@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "lib": [
+            "ESNext"
+        ],
+        "strict": false,
+        "skipLibCheck": true,
+        "outFile": "../main.js",
+        "newLine": "LF"
+    },
+    "include": [
+        "logic.ts",
+        "rod.ts",
+        "obelisk.ts"
+      ],
+    "files": [
+        "../../../_MODULE_/android-declarations.d.ts",
+        "../../../_MODULE_/android.d.ts",
+        "../../../_MODULE_/core-engine.d.ts",
+        "../../../_MODULE_/additional.d.ts"
+    ]
+}

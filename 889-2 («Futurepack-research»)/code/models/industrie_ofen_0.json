@@ -1,0 +1,23 @@
+{
+  "type": "futurepack:research_shaped",
+  "group": "futurepack",
+  "pattern": [
+    "TIT",
+    "FFF",
+    "ITI"
+  ],
+  "key": {
+    "T": {
+      "item": "futurepack:lack_tank_empty"
+    },
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "futurepack:industrial_furnace"
+  }
+}

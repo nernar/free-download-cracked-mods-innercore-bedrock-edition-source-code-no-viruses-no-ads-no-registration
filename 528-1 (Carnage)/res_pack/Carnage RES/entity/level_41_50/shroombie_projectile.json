@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:shroombie_projectile",
+      "materials": {
+	    "default": "glow"
+	  },
+      "textures": {
+        "default": "textures/level_41_50/projectiles/shroombie"
+      },
+      "geometry": {
+        "default": "geometry.shroombie_projectile"
+      },
+      "render_controllers": [ "controller.render.glow" ]
+    }
+  }
+}

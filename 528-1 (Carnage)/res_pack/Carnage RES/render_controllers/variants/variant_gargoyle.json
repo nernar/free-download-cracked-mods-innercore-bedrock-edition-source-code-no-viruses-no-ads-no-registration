@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.variant_gargoyle": {
+	  "arrays": {
+	    "textures": {
+		  "Array.skins": [
+		    "Texture.mobile",
+		    "Texture.static"
+		  ]
+		}
+	  },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

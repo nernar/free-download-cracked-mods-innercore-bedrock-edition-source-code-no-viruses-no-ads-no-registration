@@ -1,0 +1,12 @@
+{
+	"inventory_screen": {
+		"name": "inventory_screen",
+		"x": 550,
+		"line": 7,
+		"icon_scale": 0.95,
+		"search": "reliable",
+		"isClose": true,
+		"isTouch": true,
+		"size_title": 115
+	}
+}

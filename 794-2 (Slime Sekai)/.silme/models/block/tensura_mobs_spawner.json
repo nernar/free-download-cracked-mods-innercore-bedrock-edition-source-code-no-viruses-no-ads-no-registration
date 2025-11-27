@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ttigraas:blocks/tensura_mob_spawner",
+    "up": "ttigraas:blocks/tensura_mob_spawner",
+    "north": "ttigraas:blocks/tensura_mob_spawner",
+    "east": "ttigraas:blocks/tensura_mob_spawner",
+    "south": "ttigraas:blocks/tensura_mob_spawner",
+    "west": "ttigraas:blocks/tensura_mob_spawner",
+    "particle": "ttigraas:blocks/tensura_mob_spawner"
+  }
+}

@@ -1,0 +1,9 @@
+[
+	{
+		"symbol":"_ZNK9Dimension5isDayEv",
+		"callback":"Dimension.isDay",
+		"args":[],
+		"priority":"pre",
+		"return":"bool"
+	}
+]

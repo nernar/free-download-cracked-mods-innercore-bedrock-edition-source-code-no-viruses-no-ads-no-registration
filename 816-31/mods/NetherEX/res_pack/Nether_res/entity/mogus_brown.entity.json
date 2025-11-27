@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "nether:mogus_brown",
+      "materials": { "default": "salamander_black" },
+      "textures": { "default": "textures/entity/mogus/brown_mogus" },
+      "geometry": { "default": "geometry.mogus_old" },
+      "animations": {    
+        "move": "animation.mogus.move",  
+      },
+      "animation_controllers": [  
+        { "move": "controller.animation.mogus.move" },  
+      ],  
+      "render_controllers": [ "controller.render.default" ], 
+       "spawn_egg": {
+        "overlay_color": "#1396919",
+        "base_color": "#255255224"
+      }
+    }
+  }
+}

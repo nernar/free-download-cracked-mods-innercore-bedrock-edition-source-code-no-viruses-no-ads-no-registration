@@ -1,0 +1,28 @@
+// __multiversion__
+
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+precision highp float;
+
+#include "fragmentVersionCentroidUV.h"
+#include "uniformEntityConstants.h"
+#include "uniformShaderConstants.h"
+#include "util.h"
+
+LAYOUT_BINDING(0) uniform sampler2D texture;
+
+uniform float tick;
+
+void main() {
+	//Блять да как же получить размер области рендеринга
+	float x = gl_FragCoord.x / 800.0;
+	float y = gl_FragCoord.y / 800.0;
+	float time = tick * .1;
+	vec4 color = vec4(texture2D(texture, uv));
+	gl_FragColor.rgba = color.rgba;
+	float blue = ((sqrt(sin(x-time)) - sqrt(cos(x-time)))+(sqrt(sin(y-time)) - sqrt(cos(y-time))))/1.2;
+	if(blue > 0.0)
+		gl_FragColor.b += blue;
+	else
+		gl_FragColor.b += 0.1;
+}

@@ -1,0 +1,23 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "§cBy §aCodanRaigen21§r, §o§b@real_cr21§r. §eSupport and follow me on twitter for more great add-ons!",
+        "name": "Biome: Project 0 §a§l§o::§r§c DAT",
+        "uuid": "33d16c39-4ea6-4227-88f5-39af8acc34ef",
+        "version": [1, 0, 0]
+    },
+    "modules": [
+        {
+            "description": "§cBy §aCodanRaigen21§r, §o§b@real_cr21§r. §eSupport and follow me on twitter for more great add-ons!",
+            "type": "data",
+            "uuid": "b2cb321d-de33-4bb0-a561-fc2622bddfcb",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "2cc875e0-1759-4d41-902b-f39ef85d9548",
+            "version": [1, 0, 0]
+        }
+    ]
+}

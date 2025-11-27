@@ -1,0 +1,7 @@
+{
+	"name": "ICSTD",
+	"author": "Koshak_Mine & Reider745",
+	"version": "1.0",
+	"description": "InnerCore Standard Library for modding using Java",
+	"clientOnly": true
+}

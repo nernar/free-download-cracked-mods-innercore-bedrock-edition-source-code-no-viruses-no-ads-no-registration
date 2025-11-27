@@ -1,0 +1,14 @@
+IDRegistry.genItemID("napkin");
+Item.createItem("napkin", "Napkin holder", {name: "napkinHolder", meta: 0}, {stack: 64});
+Translation.addTranslation("Napkin holder", {ru: "Салфетница"});
+Recipes.addShaped({id: ItemID.napkin, count: 1, data: 0}, ["vvv", "bpb", "vvv"], ["b",159,-1, "p",339,0]);
+var napkinModel = ModelAPI.newArray();
+napkinModel.addBoxByID("bottom", 5/16, 0/16, 7/16, 11/16, 0.5/16, 9/16, 159,9);
+napkinModel.addBoxByID("frontBorder0", 5/16, 0.5/16, 8.5/16, 11/16, 1.5/16, 9/16, 159,9);
+napkinModel.addBoxByID("frontBorder1", 6/16, 1.5/16, 8.5/16, 10/16, 2.5/16, 9/16, 159,9);
+napkinModel.addBoxByID("frontBorder2", 7/16, 2.5/16, 8.5/16, 9/16, 3.5/16, 9/16, 159,9);
+napkinModel.addBoxByID("backBorder0", 5/16, 0.5/16, 7/16, 11/16, 1.5/16, 7.5/16, 159,9);
+napkinModel.addBoxByID("backBorder1", 6/16, 1.5/16, 7/16, 10/16, 2.5/16, 7.5/16, 159,9);
+napkinModel.addBoxByID("backBorder2", 7/16, 2.5/16, 7/16, 9/16, 3.5/16, 7.5/16, 159,9);
+napkinModel.addBoxByID("napkin", 4.5/16, 0.5/16, 7.5/16, 11.5/16, 4/16, 8.5/16, 159,0);
+Furniture.placeUnifiedEntity(BlockID.stoneFurniture, ItemID.napkin,napkinModel,{});

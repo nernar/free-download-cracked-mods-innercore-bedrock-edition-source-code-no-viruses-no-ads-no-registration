@@ -1,0 +1,15 @@
+XLRegistry.Items("seaweed", "Seaweed");
+XLRegistry.Items("bowl", "Bowl");
+XLRegistry.Items("coffee_cup", "Coffee Cup");
+XLRegistry.Items("glass_mug", "Glass Mug");
+XLRegistry.Items("chocolate_ice_cream_ball", "Chocolate Ice Cream Ball");
+XLRegistry.Items("vanilla_ice_cream_ball", "Vanilla Ice Cream Ball");
+XLRegistry.Items("strawberry_ice_cream_ball", "Strawberry Ice Cream Ball");
+XLRegistry.Items("tomato_sauce", "Tomato Sauce");
+XLRegistry.Items("hot_sauce", "Hot Sauce");
+XLRegistry.Items("chocolate_syrup", "Chocolate Syrup");
+XLRegistry.Items("vanilla_extract", "Vanilla Extract");
+XLRegistry.Items("vanilla_cream", "Vanilla Cream");
+XLRegistry.Items("empty_can", "Empty Can");
+XLRegistry.Items("pie_shell", "Pie Shell");
+XLRegistry.Items("paper_cup", "Paper Cup");

@@ -1,0 +1,22 @@
+{
+"pools": [
+{
+"rolls": 1,
+"entries": [
+{
+"type": "item",
+"name": "minecraft:item_ghast_m",
+"functions": [
+{
+"function": "set_count",
+"count": {
+"min": 2,
+"max": 5
+}
+}
+]
+}
+]
+}
+]
+}

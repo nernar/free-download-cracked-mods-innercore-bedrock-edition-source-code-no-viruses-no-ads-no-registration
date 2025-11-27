@@ -1,0 +1,53 @@
+Item.registerSetTools = function(mid){
+IDRegistry.genItemID(mid + "Sword");
+IDRegistry.genItemID(mid + "Shovel");
+IDRegistry.genItemID(mid + "Pickaxe");
+IDRegistry.genItemID(mid + "Axe");
+IDRegistry.genItemID(mid + "Hoe");
+Item.createItem(mid + "Sword", mid + "Sword", {name: mid + "Sword", meta: 0}, {stack: 1});
+Item.createItem(mid + "Shovel", mid + "shovel", {name: mid + "Shovel", meta: 0}, {stack: 1});
+Item.createItem(mid + "Pickaxe", mid + "pickaxe", {name: mid + "Pickaxe", meta: 0}, {stack: 1});
+Item.createItem(mid + "Axe", mid + "axe", {name: mid + "Axe", meta: 0}, {stack: 1});
+Item.createItem(mid + "Hoe", mid + "hoe", {name: mid + "Hoe", meta: 0}, {stack: 1});
+}
+
+Item.registerSetTools(ruby);
+
+/*
+ToolAPI.addToolMaterial("bronze", {durability: 225, level: 3, efficiency: 6, damage: 2, enchantability: 14});
+ToolAPI.setTool(ItemID.bronzeSword, "bronze", ToolType.sword);
+ToolAPI.setTool(ItemID.bronzeShovel, "bronze", ToolType.shovel);
+ToolAPI.setTool(ItemID.bronzePickaxe, "bronze", ToolType.pickaxe);
+ToolAPI.setTool(ItemID.bronzeAxe, "bronze", ToolType.axe);
+ToolAPI.setTool(ItemID.bronzeHoe, "bronze", ToolType.hoe);
+
+
+Recipes.addShaped({id: ItemID.bronzeSword, count: 1, data: 0}, [
+	"a",
+	"a",
+	"b"
+], ['a', ItemID.ingotBronze, 0, 'b', 280, 0]);
+
+Recipes.addShaped({id: ItemID.bronzeShovel, count: 1, data: 0}, [
+	"a",
+	"b",
+	"b"
+], ['a', ItemID.ingotBronze, 0, 'b', 280, 0]);
+
+Recipes.addShaped({id: ItemID.bronzePickaxe, count: 1, data: 0}, [
+	"aaa",
+	" b ",
+	" b "
+], ['a', ItemID.ingotBronze, 0, 'b', 280, 0]);
+
+Recipes.addShaped({id: ItemID.bronzeAxe, count: 1, data: 0}, [
+	"aa",
+	"ab",
+	" b"
+], ['a', ItemID.ingotBronze, 0, 'b', 280, 0]);
+
+Recipes.addShaped({id: ItemID.bronzeHoe, count: 1, data: 0}, [
+	"aa",
+	" b",
+	" b"
+], ['a', ItemID.ingotBronze, 0, 'b', 280, 0]);*/

@@ -1,0 +1,53 @@
+{
+    "description": {
+        "ru":"Настройки мода:",
+        "en":"Mod settings:",
+        "es":"Configuración de mod:",
+        "pt":"Configurações do mod:",
+        "zh":"模組設置:"
+    },
+ "properties": {
+        "enabled": {
+            "name": {
+                "en":"Enable mod",                   "ru":"Включить мод",
+                "es":"Habilitar mod",
+                "pt":"Habilitar mod",
+                "zh":"啟用模組"
+            },
+            "index": 0
+        },
+        "particles": {
+            "name": {
+                "en":"particles",                    "ru":"Частицы",
+                "es":"partículas",
+                "pt":"partículas",
+                "zh":"粒子"
+            },
+            "index": 1,
+            "description": {
+                "ru":"Если «true», вокруг игрока будут спавниться частицы эффектов (Спаун частиц может снизить производительность устройства)",
+                "en":"If «true», effect particles will spawn around the player (Particle spawning can reduce device performance)",
+                "es":"Si es «verdadero», las partículas de efectos aparecerán alrededor del jugador (Las partículas de generación pueden reducir el rendimiento del dispositivo)",
+                "pt":"Se for «verdadeiro», partículas de efeitos irão se espalhar ao redor do jogador (Partículas de spawn podem reduzir o desempenho do dispositivo)",
+                "zh":"如果 “true”，效果粒子會在玩家周圍產生（產生粒子會降低設備的性能)"
+        }
+        },
+                "message": {
+            "name": {
+                "en":"Game chat message",
+                "ru":"Сообщение в чате игры",
+                "es":"Mensaje de chat del juego",
+                "pt":"Mensagem de bate-papo do jogo",
+                "zh":"遊戲聊天消息"
+            },
+            "index": 2,
+            "description": {
+                "ru":"Если «true», то в чат игры будет отправлено сообщение о разработчике мода",
+                "en":"If «true», then a message about the developer of the mod will be sent to the game chat",
+                "es":"Si es «verdadero», se enviará un mensaje sobre el desarrollador del mod al chat del juego.",
+                "pt":"Se for «verdadeiro», uma mensagem sobre o desenvolvedor do mod será enviada para o bate-papo do jogo",
+                "zh":"如果為 “true”，則會向遊戲聊天發送有關該模組開發者的消息"
+        }
+        }
+ }
+}

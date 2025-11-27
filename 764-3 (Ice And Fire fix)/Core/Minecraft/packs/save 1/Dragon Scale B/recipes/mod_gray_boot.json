@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:gray_boot"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_scale_gray",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "iaf:gray_boot",
+      "count": 1
+    }
+  }
+}

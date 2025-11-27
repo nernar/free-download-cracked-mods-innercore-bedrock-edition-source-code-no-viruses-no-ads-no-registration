@@ -1,0 +1,27 @@
+IDRegistry.genItemID("appleMini");
+Item.createItem("appleMini", " Apple", {name: "appleBlock", meta: 0}, {});
+Harvest.setFood("apricot", "Apricot", 1);
+Harvest.setFood("cherry", "Cherry", 1);
+Harvest.setFood("avocado", "Avocado", 1);
+Harvest.setFood("banana", "Banana", 1);
+Harvest.setFood("date", "Date", 1);
+Harvest.setFood("dragonfruit", "Dragonfruit", 1);
+Harvest.setFood("fig", "Fig", 1);
+Harvest.setFood("grapefruit", "Grapefruit", 1);
+Harvest.setFood("gooseberry", "Gooseberry", 1);
+Harvest.setFood("lemon", "Lemon", 1);
+Harvest.setFood("lime", "Lime", 1);
+Harvest.setFood("mango", "Mango", 1);
+Harvest.setFood("olive", "Olive", 1);
+Harvest.setFood("orange", "Orange", 1);
+Harvest.setFood("papaya", "Papaya", 1);
+Harvest.setFood("peach", "Peach", 1);
+Harvest.setFood("pear", "Pear", 1);
+Harvest.setFood("persimmon", "Persimmon", 1);
+Harvest.setFood("plum", "Plum", 1);
+Harvest.setFood("pomegranate", "Pomegranate", 1);
+Harvest.setFood("starfruit", "Starfruit", 1);
+Harvest.setFood("almond", "Almond", 1);
+Harvest.setFood("cashew", "Cashew", 1);
+Harvest.setFood("coconut", "Coconut", 1);
+

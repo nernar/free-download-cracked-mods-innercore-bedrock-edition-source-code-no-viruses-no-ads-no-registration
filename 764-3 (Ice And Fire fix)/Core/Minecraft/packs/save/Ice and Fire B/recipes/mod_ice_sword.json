@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "vanilla_recipe:ice_sword"
+		},
+		"pattern": [
+			"+#",
+			""
+		],
+		"key": {
+			"+": {
+				"item": "minecraft:item_dragon_sword"
+			},
+			"#": {
+				"item": "minecraft:item_ice_dragon_blood"
+			}
+		},
+		"result": {
+			"item": "minecraft:item_dragon_ice_sword"
+		},
+		"tags": [
+			"crafting_table"
+		]
+	}
+}

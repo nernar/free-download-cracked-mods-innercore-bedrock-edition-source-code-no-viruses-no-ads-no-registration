@@ -1,0 +1,36 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.glidering.fly": {
+            "loop": true,
+            "animation_length": 0.68,
+            "bones": {
+                "wing_1": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "0.32": [0, 0, 57.5],
+                        "0.64": [0, 0, 0]
+                    }
+                },
+                "wing_2": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "0.32": [0, 0, -57.5],
+                        "0.64": [0, 0, 0]
+                    }
+                }
+            },
+            "animation.glidering.scale": {
+            "loop": true,
+            "bones": {
+                "body": {
+                    "scale": 0.3
+                },
+                "wing_2": {
+                    "scale": 0.3
+                }      
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.16.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bioplentia:stripped_cherry_log",
+	   "properties":{
+
+        	"bioplentia:rotation": [ 0, 1, 2 ]
+  	   }
+    },
+    "components": {
+		"minecraft:material_instances": {
+			"*": {
+				"texture": "stripped_cherry_log_side",
+				"render_method": "opaque",
+	        "ambient_occlusion": true
+			},
+			"up": {
+			  "texture": "stripped_cherry_log_top",
+			  "render_method": "opaque",
+	        "ambient_occlusion": true
+			},
+			"down": {
+		     "texture": "stripped_cherry_log_top",
+			  "render_method": "opaque",
+	        "ambient_occlusion": true
+		  }
+   	},
+     "minecraft:geometry": "geometry.core.block.cube",
+      "minecraft:destroy_time": 3,
+      "minecraft:immovable": false,
+      "minecraft:explosion_resistance": 1,
+      "minecraft:loot": "loot_tables/blocks/stripped_cherry_log.json",
+      "minecraft:rotation": [ 0, 0, 0 ],
+      "minecraft:block_light_emission": 0,
+      "minecraft:map_color": "#a2534b",
+      "minecraft:flammable": {
+        "flame_odds": 5,
+        "burn_odds": 5
+      },
+      "minecraft:on_player_placing": {
+        "event": "bioplentia:placing"
+      },
+  	   "tag:wood": {}
+    },
+    "events": {
+      "bioplentia:placing": {
+        "set_block_property": {
+          "bioplentia:rotation": "math.floor(query.cardinal_block_face_placed_on/2)"
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "query.block_property('bioplentia:rotation') == 0",
+        "components": {
+          "minecraft:rotation": [0, 0, 0]
+        }
+      },
+      {
+        "condition": "query.block_property('bioplentia:rotation') == 1",
+        "components": {
+           "minecraft:rotation": [ 90, 0, 0 ]
+        }
+      },
+      {
+        "condition": "query.block_property('bioplentia:rotation') == 2",
+        "components": {
+          "minecraft:rotation": [ 0, 0, 90 ]
+        }
+      }
+    ]
+  }
+}

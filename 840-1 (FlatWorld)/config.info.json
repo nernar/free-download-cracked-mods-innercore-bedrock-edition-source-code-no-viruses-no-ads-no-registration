@@ -1,0 +1,20 @@
+{
+    "properties": {
+        "enabled": {
+            "name": {"en": "Enable Mod", "zh": "启用模组"},
+            "index": 0
+        },
+        "cave": {
+            "name": {"en": "Enable Cave", "zh": "保留洞穴"},
+            "index": 1
+        },
+        "desert": {
+            "name": {"en": "Desert Mode", "zh": "沙漠模式"},
+            "index": 2
+        },
+        "extreme": {
+            "name": {"en": "Extreme Mode", "zh": "极端模式"},
+            "index": 3
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "Add-On by JujuStyle7",
+        "name": "Demogorgon V2.1",
+        "uuid": "daf15afd-3a1f-417a-45ac-0b2564119d89",
+        "version": [1, 8, 0],
+        "platform_locked": false,
+        "min_engine_version": [1, 8, 0],
+        "pack_scope": "world"
+    },
+    "modules": [
+        {
+            "description": "JujuStyle7",
+            "type": "resources",
+            "uuid": "941c9b5b-65b6-a20f-c621-34284b14473a",
+            "version": [1, 8, 0]
+        }
+    ],
+ 
+    "metadata": {
+        "authors": [ "JujuStyle7" ],
+        "url": "https://mobile.twitter.com/jujustep_julien"
+    }
+}

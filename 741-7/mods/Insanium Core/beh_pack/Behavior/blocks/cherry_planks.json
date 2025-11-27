@@ -1,0 +1,35 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bioplentia:cherry_planks"
+    },
+    "components": {
+		"minecraft:material_instances": {
+			"*": {
+				"texture": "cherry_planks",
+				"render_method": "opaque",
+	        "ambient_occlusion": true
+			}
+   	},
+     "minecraft:geometry": "geometry.core.block.cube",
+      "minecraft:destroy_time": 3,
+      "minecraft:immovable": false,
+      "minecraft:explosion_resistance": 1,
+      "minecraft:loot": "loot_tables/blocks/cherry_planks.json",
+      "minecraft:rotation": [ 0, 0, 0 ],
+      "minecraft:block_light_emission": 0,
+      "minecraft:map_color": "#9f5a4d",
+      "minecraft:flammable": {
+        "flame_odds": 20,
+        "burn_odds": 5
+      },
+  	   "tag:wood": {}
+    },
+    "events": {
+    }
+  }
+}

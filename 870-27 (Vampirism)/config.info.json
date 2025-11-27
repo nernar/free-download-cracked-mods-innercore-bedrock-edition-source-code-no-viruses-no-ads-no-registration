@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "enabled": {
+            "name": {
+                "en": "Enable mod",
+                "ru": "Включить мод"
+            }
+        },
+        "left_bar_position": {
+            "name": {
+                "en": "Position the blood scale on the left",
+                "ru": "Расположить шкалу крови слева"
+            }
+        },
+        "hunger_scale_disabled": {
+            "name": {
+                "en": "Disable the hunger scale in vampire mode",
+                "ru": "Отключить шкалу голода в режиме вампира"
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "bioplentia:frog_foot",
+      "category": "nature"
+    },
+
+    "components": {
+	  "minecraft:icon": {
+	    "texture": "frog_foot_raw"
+	   },
+      "minecraft:display_name": {
+        "value": "item.bioplentia:frog_foot.name"
+      },
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.rawFood"
+      },
+      "minecraft:stacked_by_data": true,
+      "minecraft:use_duration": 32,
+
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation_modifier": "low",
+        "effects": [
+          {
+            "name": "poison",
+            "chance": 0.6,
+            "duration": 15,
+            "amplifier": 0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "main.js":{
+    "links":[
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "class_name":"main.js"
+  },
+  "launcher.js":{
+    "links":[
+      "7"
+    ],
+    "class_name":"launcher.js"
+  },
+  "lib/BootsEffect.js":{
+    "links":[
+      "8"
+    ],
+    "class_name":"BootsEffect.js"
+  }
+}

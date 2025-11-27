@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "atmosphere:bird_blue",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/birds/bird_blue"
+      },
+      "geometry": {
+        "default": "geometry.bird"
+      }, 
+      "animations": {
+        "move": "animation.bird.move"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.bird.move" }
+      ],
+      "render_controllers": [ "controller.render.default" ],
+       "spawn_egg": {
+        "overlay_color": "#750130",
+        "base_color": "#0128128"
+      }
+    }
+  }
+}

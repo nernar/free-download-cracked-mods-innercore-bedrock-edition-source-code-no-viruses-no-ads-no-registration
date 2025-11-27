@@ -1,0 +1,29 @@
+{
+   "format_version" : 1,
+   "header" : {
+      "description" : "§b§lYoutube: MineAge\n§fOptifine for MCPE/Bedrock Edition",
+      "name" : "§lOptimizer+",
+      "uuid" : "3b2dfc95-d48d-42a0-ab12-0383b22d9256",
+      "version" : [ 1, 0, 0 ]
+   },
+   "modules" : [
+      {
+         "description" : "§b§lYoutube: MineAge",
+         "type" : "resources",
+         "uuid" : "f90d4689-c535-4b92-a259-31affe376a4b",
+         "version" : [ 1, 0, 0 ]
+      }
+],
+    "subpacks": [
+    	{
+    		"folder_name": "02_OPTIMIZER_HIDE",
+    		"name": "§eHide Dpad, chat & menu button.",
+    		"memory_tier": 2
+    	},
+    	{
+    		"folder_name": "01_OPTIMIZER_DEFAULT",
+    		"name": "§aDefault" ,
+    		"memory_tier": 1
+    	}
+    ]
+}

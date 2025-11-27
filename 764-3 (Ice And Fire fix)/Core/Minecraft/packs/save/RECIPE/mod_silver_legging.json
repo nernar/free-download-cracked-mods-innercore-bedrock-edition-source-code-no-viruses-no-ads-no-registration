@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:silver_legging"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "A A",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_scale_silver",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "iaf:silver_legging",
+      "count": 1
+    }
+  }
+}

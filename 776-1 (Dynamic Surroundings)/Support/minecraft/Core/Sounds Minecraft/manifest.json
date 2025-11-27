@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "test",
+        "name": "§bDynamic §bSurroundings",
+        "uuid": "6d7ae558-0d3f-4e68-beed-725cb7b67def",
+        "version": [
+            1,
+            0,
+            3
+        ],
+        "min_engine_version": [
+            1,
+            13,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "XD HMDT.",
+            "type": "resources",
+            "uuid": "cc973d5b-381a-4af7-9e79-3e14bc74b2d0",
+            "version": [
+                1,
+                0,
+                3
+            ]
+        }
+    ]
+}

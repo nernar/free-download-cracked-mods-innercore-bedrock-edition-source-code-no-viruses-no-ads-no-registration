@@ -1,0 +1,15 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "bioplentia:vanilla_vine_feature"
+    },
+    "features": [
+      [ "bioplentia:fixup_vanilla_vine_position_feature", 1 ],
+      [ "bioplentia:vanilla_vine_lower_feature", 1 ]
+    ]
+  }
+}

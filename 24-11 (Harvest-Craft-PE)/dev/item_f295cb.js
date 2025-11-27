@@ -1,0 +1,3 @@
+IDRegistry.genItemID("tropicalGardenITEM");
+Item.createItem("tropicalGardenITEM", "Tropical garden", {name: "tropicalgarden", meta: 0}, {isTech: false});
+

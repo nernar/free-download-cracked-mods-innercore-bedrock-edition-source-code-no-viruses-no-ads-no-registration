@@ -1,0 +1,42 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "entity_sounds": {
+   "defaults": {
+      "volume": 1.0,
+      "pitch": [ 0.8, 1.2 ],
+      "events": {
+        "ambient.in.water": "ambient.underwater"
+      }
+   },
+   "entities": {
+     "bioplentia:dragonfly": {
+        "volume": 1.0,
+        "pitch": [ 1.0, 1.2 ],
+        "events": {
+          "ambient": "mob.dragonfly.ambient"
+        }
+      },
+      "bioplentia:frog": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.frog.idle",
+          "hurt": "mob.frog.hurt",
+          "death": "mob.frog.death"
+        }
+      },
+      "bioplentia:duck": {
+        "volume": 0.8,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.duck.idle",
+          "hurt": "mob.duck.hurt",
+          "death": "mob.duck.hurt",
+          "plop": "mob.duck.plop"
+        }
+      }
+    }
+  }
+}

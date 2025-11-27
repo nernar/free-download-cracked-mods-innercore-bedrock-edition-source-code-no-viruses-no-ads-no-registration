@@ -1,0 +1,10 @@
+Recipes.deleteRecipe({id: 268, count: 1, data: 0});
+Recipes.deleteRecipe({id: 269, count: 1, data: 0});
+Recipes.deleteRecipe({id: 270, count: 1, data: 0});
+Recipes.deleteRecipe({id: 271, count: 1, data: 0});
+Recipes.deleteRecipe({id: 272, count: 1, data: 0});
+Recipes.deleteRecipe({id: 273, count: 1, data: 0});
+Recipes.deleteRecipe({id: 274, count: 1, data: 0});
+Recipes.deleteRecipe({id: 275, count: 1, data: 0});
+Recipes.deleteRecipe({id: 290, count: 1, data: 0});
+Recipes.deleteRecipe({id: 291, count: 1, data: 0});

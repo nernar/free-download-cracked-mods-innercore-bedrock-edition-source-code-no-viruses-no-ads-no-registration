@@ -1,0 +1,28 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "lotr:manatees",
+            "materials": {
+                "default": "salmon"
+            },
+            "textures": {
+                "default": "textures/entity/manatees"
+            },
+            "geometry": {
+                "default": "geometry.manatees"
+            },
+            "animations": {
+                "move": "animation.manatees.move"
+            },
+            "animation_controllers": [
+                { "general": "controller.animation.dolphin.general" }
+            ],
+            "render_controllers": [ "controller.render.dolphin" ],
+            "spawn_egg": {
+                "base_color": "#FAF0E6",
+                "overlay_color": "#CD853F"
+            }
+        }
+    }
+}

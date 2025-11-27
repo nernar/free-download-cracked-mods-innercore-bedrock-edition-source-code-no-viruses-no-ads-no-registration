@@ -1,0 +1,54 @@
+{
+	"format_version": "1.8.0",
+	"geometry.dead_vele": {
+		"texturewidth": 48,
+		"textureheight": 48,
+		"visible_bounds_width": 1,
+		"visible_bounds_height": 2,
+		"visible_bounds_offset": [0, 1, 0],
+		"bones": [
+			{
+				"name": "head",
+				"pivot": [0, 12, 0],
+				"cubes": [
+					{"origin": [-4, 12, -4], "size": [8, 8, 8], "uv": [0, 0]},
+					{"origin": [4, 14, 0], "size": [4, 4, 0], "uv": [8, 34]},
+					{"origin": [-8, 14, 0], "size": [4, 4, 0], "uv": [16, 34]}
+				]
+			},
+			{
+				"name": "right_leg",
+				"pivot": [-2, 6, 0],
+				"cubes": [
+					{"origin": [-2, 0, -1], "size": [2, 6, 2], "uv": [24, 16]}
+				]
+			},
+			{
+				"name": "left_leg",
+				"pivot": [2, 6, 0],
+				"mirror": true,
+				"cubes": [
+					{"origin": [0, 0, -1], "size": [2, 6, 2], "uv": [0, 26]}
+				]
+			},
+			{
+				"name": "body",
+				"pivot": [0, 12, 0],
+				"cubes": [
+					{"origin": [-2, 6, -1], "size": [4, 6, 2], "uv": [12, 16]},
+					{"origin": [-2, 4, -1], "size": [4, 8, 2], "uv": [0, 16], "inflate": 0.25}
+				]
+			},
+			{
+				"name": "arms",
+				"pivot": [0, 11, 0],
+				"rotation": [-35, 0, 0],
+				"cubes": [
+					{"origin": [-4, 8, -1], "size": [2, 4, 2], "uv": [20, 26]},
+					{"origin": [2, 8, -1], "size": [2, 4, 2], "uv": [0, 34]},
+					{"origin": [-2, 8, -1], "size": [4, 2, 2], "uv": [8, 26]}
+				]
+			}
+		]
+	}
+}

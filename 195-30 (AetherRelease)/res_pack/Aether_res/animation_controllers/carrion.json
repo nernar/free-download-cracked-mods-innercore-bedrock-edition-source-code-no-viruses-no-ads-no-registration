@@ -1,0 +1,21 @@
+{
+    "format_version" : "1.10.0",
+    "animation_controllers" : {  
+        "controller.animation.carrion_sprout.idle" : {
+            "initial_state" : "default",
+            "states" : {
+                "default" : {
+                    "animations" : [ "move", "look_at_target" ]
+                }
+            }
+        },
+        "controller.animation.carrion_sprout.attack" : {
+            "initial_state" : "default",
+            "states" : {
+                "default" : {
+                    "animations" : [ "attack" ]
+                }
+            }
+        }
+    }
+}

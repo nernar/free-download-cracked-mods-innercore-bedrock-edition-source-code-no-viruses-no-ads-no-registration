@@ -1,0 +1,25 @@
+{
+  "id": "1628261042741",
+  "name": "c",
+  "pools": [
+    {
+      "rolls": 29,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:beef",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

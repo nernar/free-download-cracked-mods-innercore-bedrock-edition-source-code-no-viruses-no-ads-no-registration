@@ -1,0 +1,6 @@
+﻿entity.ayrtown:steve.name=Steve
+item.spawn_egg.entity.ayrtown:steve.name=Invocar Steve
+entity.ayrtown:alex.name=Alex
+item.spawn_egg.entity.ayrtown:alex.name=Invocar Alex
+entity.ayrtown:alex_zombie.name=Alex Zombie
+item.spawn_egg.entity.ayrtown:alex_zombie.name=Invocar Alex Zombie

@@ -1,0 +1,6 @@
+{
+  "enabled":true,
+  "MaxRange":128,
+  "ErrorRange":4,
+  "Delay":1
+}

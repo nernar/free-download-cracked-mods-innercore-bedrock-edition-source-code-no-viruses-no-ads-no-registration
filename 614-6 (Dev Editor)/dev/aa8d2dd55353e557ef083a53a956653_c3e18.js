@@ -1,0 +1,166 @@
+MCSystem.setLoadingTip("Injecting Callbacks");
+const resetSettingIfNeeded = function (key, value, minOrIteratorOrValue, maxOrValues, filter, exclude) {
+    if (minOrIteratorOrValue === undefined) {
+        return value;
+    }
+    let base = value;
+    if (minOrIteratorOrValue instanceof Function) {
+        value = minOrIteratorOrValue(value);
+        let tech = filter;
+        filter = maxOrValues;
+        exclude = tech;
+    } else {
+        if (Array.isArray(maxOrValues)) {
+            if (maxOrValues.indexOf(value) == -1) {
+                value = minOrIteratorOrValue;
+            }
+        } else {
+            if (typeof minOrIteratorOrValue == "number") {
+                if (value < minOrIteratorOrValue) {
+                    value = minOrIteratorOrValue;
+                } else {
+                    if (value > maxOrValues) {
+                        value = maxOrValues;
+                    }
+                }
+            } else {
+                if (value !== minOrIteratorOrValue) {
+                    value = minOrIteratorOrValue;
+                    let tech = filter;
+                    filter = maxOrValues;
+                    exclude = tech;
+                }
+            }
+        }
+    }
+    if (filter instanceof Function) {
+        value = filter(value);
+    } else {
+        if (Array.isArray(filter)) {
+            let index = filter.indexOf(value);
+            if (!exclude && index == -1) {
+                value = minOrIteratorOrValue;
+            } else {
+                if (exclude && index != -1) {
+                    value = minOrIteratorOrValue;
+                }
+            }
+        }
+    }
+    if (base !== value) {
+        __config__.set(key, value);
+    }
+    return value;
+};
+const loadSetting = function (key, type) {
+    let args = Array.prototype.slice.call(arguments);
+    switch (type) {
+      case "bool":
+      case "boolean":
+        args[1] = Boolean(__config__.getBool(key));
+        break;
+      case "number":
+        args[1] = Number(__config__.getNumber(key));
+        break;
+      case "string":
+        args[1] = String(__config__.getString(key));
+        break;
+      default:
+        args[1] = __config__.get(key);
+    }
+    return resetSettingIfNeeded.apply(this, args);
+};
+const updateSettings = function () {
+    tryout(function () {
+        uiScaler = loadSetting("interface.interface_scale", "number", 0.5, 2);
+        fontScale = loadSetting("interface.font_scale", "number", 0.5, 2);
+        maxWindows = loadSetting("interface.max_windows", "number", 1, 10);
+        menuDividers = loadSetting("interface.show_dividers", "boolean");
+        projectHeaderBackground = loadSetting("interface.header_background", "boolean");
+        maximumHints = loadSetting("performance.maximum_hints", "number", 1, 100);
+        hintStackableDenied = !loadSetting("performance.hint_stackable", "boolean");
+        showProcesses = loadSetting("performance.show_processes", "boolean");
+        safetyProcesses = loadSetting("performance.safety_processes", "boolean");
+        autosave = loadSetting("autosave.enabled", "boolean");
+        loadSetting("autosave.with_interface", "boolean", false);
+        autosavePeriod = loadSetting("autosave.between_period", "number", 0, 300, [1, 2, 3, 4], true);
+        autosaveProjectable = __config__.getBool("autosave.as_projectable");
+        loadSetting("autosave.maximum_count", "number", 1, 50);
+        connectCurrentlyLocation = loadSetting("network.default_location", "number", 0, 1);
+        connectSafetyProtocol = loadSetting("network.safe_connection", "boolean");
+        connectLocationLocked = loadSetting("network.switch_locked", "boolean");
+        entityBoxType = loadSetting("render.use_box_sizes", "boolean");
+        drawSelection = loadSetting("render.draw_selection", "boolean");
+        injectBorder = loadSetting("render.inject_border", "boolean");
+        transparentBoxes = loadSetting("render.transparent_boxes", "boolean", function (value) {
+            return value && isHorizon;
+        });
+        ignoreKeyDeprecation = loadSetting("user_login.ignore_deprecation", "boolean");
+        noImportedScripts = !loadSetting("user_login.imported_script", "boolean");
+        loadSetting("user_login.send_analytics", "boolean", true);
+        importAutoselect = loadSetting("other.import_autoselect", "boolean");
+        saveCoords = loadSetting("other.autosave_mapping", "boolean");
+        __config__.save();
+    });
+};
+let selectMode = 0;
+Callback.addCallback("ItemUse", function (coords, item, block) {
+    handle(function () {
+        if (selectMode == 1) {
+            let render = new ICRender.Model();
+            render.addEntry(new BlockRenderer.Model(block.id, block.data));
+            BlockRenderer.enableCoordMapping(block.id, block.data, render);
+            BlockEditor.data.worker.Define.addMapping(coords.x, coords.y, coords.z);
+            selectMode = 0;
+            BlockEditor.create();
+        } else {
+            if (selectMode == 6) {
+                let position = coords.relative;
+                (position.x += 0.5, position.y += 0.5, position.z += 0.5);
+                let custom = Entity.spawnCustomAtCoords("__editorEntity__", position);
+                Entity.setMobile(custom.entity, false);
+                EntityEditor.data.worker.Define.addEntity(custom.entity);
+                showHint(translate("Entity summoned"));
+                selectMode = 0;
+                EntityEditor.create();
+            }
+        }
+    });
+});
+let needTransitionReset = false;
+Callback.addCallback("LevelPreLoaded", function () {
+    tryout(function () {
+        if (ProjectProvider.getCurrentType() == "transition" && TransitionEditor.data.worker.Define.getEntity() == -1) {
+            TransitionEditor.data.worker.Define.setEntity(getPlayerEnt());
+            needTransitionReset = true;
+        }
+    });
+});
+Callback.addCallback("LevelLoaded", function () {
+    handle(function () {
+        if (needTransitionReset) {
+            TransitionEditor.data.worker.Define.resetStarting();
+            Popups.closeAllByTag("transition");
+            needTransitionReset = false;
+        }
+    });
+});
+Callback.addCallback("EntityHurt", function (attacker, victim) {
+    handle(function () {
+        if (selectMode == 2 && attacker == getPlayerEnt()) {
+            TransitionEditor.data.worker.Define.setEntity(victim);
+            showHint(translate("Entity selected"));
+            selectMode = 0, TransitionEditor.create();
+        }
+    });
+});
+Callback.addCallback("tick", function () {
+    tryout(function () {
+        if (Updatable.getSyncTime() % 5 == 0) {
+            if (ProjectProvider.getCurrentType() == "transition") {
+                drawTransitionPoints(TransitionEditor.data.worker);
+            }
+        }
+    });
+});
+

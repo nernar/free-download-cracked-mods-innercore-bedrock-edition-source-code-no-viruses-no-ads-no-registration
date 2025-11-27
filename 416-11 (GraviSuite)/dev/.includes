@@ -1,0 +1,14 @@
+header.js
+translation.js
+energy_level.js
+components.js
+
+armor/ultimate_lappack.js
+armor/advanced_jetpack.js
+armor/advanced_nano.js
+armor/gravi_chestplate.js
+
+tool/adv_drill.js
+tool/adv_chainsaw.js
+tool/gravi_tool.js
+tool/vajra.js

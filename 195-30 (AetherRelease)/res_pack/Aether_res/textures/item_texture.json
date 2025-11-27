@@ -1,0 +1,11 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "aether_airbunny": {
+      "textures": [
+        "textures/items/eggs/aether_airbunny"
+      ]
+    } 
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+
+
+ "pili:alchemical_table": {
+         "textures": {
+      "up": "alchemical_table_top",
+      "down": "alchemical_table_down",
+      "side": "alchemical_table_side"
+    },
+"sound": "stone"
+}
+}

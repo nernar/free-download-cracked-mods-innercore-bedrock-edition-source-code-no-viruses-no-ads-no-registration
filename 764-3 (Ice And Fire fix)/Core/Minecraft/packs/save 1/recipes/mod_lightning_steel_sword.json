@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:lightning_steel_sword"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "#A#",
+      "#A#",
+      "#B#"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_dragon_steel_lightning_ingot",
+        "data": 0
+      },
+      "B": {
+      "item": "minecraft:item_wither_bone",
+      "data": 0
+      }
+    },
+    "result": {
+      "item": "minecraft:item_dragon_sword_steel_lightning",
+      "count": 1
+    }
+  }
+}

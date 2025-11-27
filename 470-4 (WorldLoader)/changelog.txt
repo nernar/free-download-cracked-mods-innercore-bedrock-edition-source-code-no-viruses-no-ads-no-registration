@@ -1,0 +1,31 @@
+EN:
+Version 1.3
+- The icon when creating a world now changes to the world icon.
+Version 1.2
+- The name of the world at creation is set as the name of the world itself.
+- Added a gamemode field to set the game mode by the author of the world.
+- Added the ability to select a game mode if the author has not set the standard.
+- If there is no access to the Internet, worlds requiring downloads are not available.
+Version 1.1
+- Fixed a bug creating a world without a name.
+- Fixed bug creating the world with the same name.
+- When closing the window for creating the world, the field with the name is cleaned.
+- Worlds with "broken" level.dat are no longer displayed. (Beta)
+- Worlds can be stored on a remote server by adding a link field with a direct download link to world.info.
+- Translation.
+
+RU:
+Версия 1.3
+- Иконка при создании мира теперь меняется на иконку мира.
+Версия 1.2
+- Имя мира при создании задается как имя самого мира.
+- Добавлено поле gamemode, для задания режима игры автором мира.
+- Добавлена возможность выбирать режим игры, если автор не установил стандартный.
+- Если нет доступа к интернету, миры, требующие загрузки недоступны.
+Версия 1.1
+- Исправлен баг создания мира без имени.
+- Исправлен баг создания мира с одинаковым именем.
+- При закрытии окна создания мира, поле с именем чистится.
+- Миры с "ломаным" level.dat больше не отображаются. (Бета)
+- Миры можно хранить на удаленном сервере, добавив в world.info поле link с прямой ссылкой на скачивание.
+- Перевод.

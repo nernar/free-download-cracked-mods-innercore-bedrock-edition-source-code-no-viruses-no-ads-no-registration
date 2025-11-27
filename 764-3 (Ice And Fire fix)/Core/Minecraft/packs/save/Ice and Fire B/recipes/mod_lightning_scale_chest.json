@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:lightning_scale_chest"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A#A",
+      "AAA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_scale_lightning",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "hu:lightningdragonchestplate",
+      "count": 1
+    }
+  }
+}

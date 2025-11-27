@@ -1,0 +1,22 @@
+const APPLE = {id: 260, hunger: 4};
+const BREAD = {id: 297, hunger: 5};
+const MELON = {id: 360, hunger: 2};
+const CARROT = {id: 391, hunger: 3};
+const POTATO = {id: 393, hunger: 5};
+const PUMPKIN_PIE = {id: 400, hunger: 8};
+const SOUP = {id: 282, hunger: 6};
+const BORSCHT = {id: 459, hunger: 6};
+const RAGU = {id: 413, hunger: 10};
+const FISH_1 = {id: 350, hunger: 6};
+const FISH_2 = {id: 463, hunger: 6};
+const COOKIE = {id: 357, hunger: 2};
+const MEAT_1 = {id: 320, hunger: 8};
+const MEAT_2 = {id: 364, hunger: 8};
+const MEAT_3 = {id: 366, hunger: 6};
+const MEAT_4 = {id: 424, hunger: 6};
+const MEAT_5 = {id: 412, hunger: 5};
+const MED_1 = {id: "medkit_1", name: "\u0410\u043f\u0442\u0435\u0447\u043a\u0430", texture: {name: "med", meta: 1}, health: 5};
+const MED_2 = {id: "medkit_2", name: "\u0410\u0440\u043c\u0435\u0439\u0441\u043a\u0430\u044f \u0430\u043f\u0442\u0435\u0447\u043a\u0430", texture: {name: "med", meta: 2}, health: 10};
+const MED_3 = {id: "medkit_3", name: "\u041d\u0430\u0443\u0447\u043d\u0430\u044f \u0430\u043f\u0442\u0435\u0447\u043a\u0430", texture: {name: "med", meta: 3}, health: 20};
+var CONSUMABLES = [APPLE, BREAD, CARROT, BORSCHT, COOKIE, FISH_1, FISH_2, MEAT_1, MEAT_2, MEAT_3, MEAT_4, MEAT_5, MELON, POTATO, PUMPKIN_PIE, RAGU, SOUP, MED_1, MED_2, MED_3];
+

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.variant_cursed_armor": {
+	  "arrays": {
+	    "textures": {
+		  "Array.skins": [
+		    "Texture.variant_0",
+		    "Texture.variant_1",
+		    "Texture.variant_2",
+		    "Texture.variant_3"
+		  ]
+		}
+	  },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

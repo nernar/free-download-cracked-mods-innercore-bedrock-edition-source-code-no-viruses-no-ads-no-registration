@@ -1,0 +1,15 @@
+{
+	"init": "init.js",
+	"translations": [
+		"lang/ru.lang"
+	],
+	"patcheds": {
+		
+	},
+	"information": {
+		"version": "test",
+		"change_logs": {
+			"test": "logs/test.txt"
+		}
+	}
+}

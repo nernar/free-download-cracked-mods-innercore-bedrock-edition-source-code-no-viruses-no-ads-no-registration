@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"geometry.golden_helmet_mob": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 3.5,
+		"visible_bounds_offset": [0, 1.25, 0],
+		"bones": [
+			{
+				"name": "waist",
+				"pivot": [0, 12, 0]
+			},
+			{
+				"name": "body",
+				"parent": "waist",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "head",
+				"parent": "body",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 0], "inflate": 1.05}
+				]
+			},
+			{
+				"name": "hat",
+				"parent": "head",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [32, 0], "inflate": 0.5}
+				]
+			},
+			{
+				"name": "3d",
+				"parent": "head",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-1.15, 25.6, 4.5], "size": [2.3, 7.6, 1.1], "uv": [1, 20]},
+					{"origin": [-1.15, 32.5, -5], "size": [2.3, 1.2, 10], "uv": [2, 17]},
+					{"origin": [-1.15, 27.58, -5.5], "size": [2.3, 5.6, 1.1], "uv": [0, 21]}
+				]
+			}
+		]
+	}
+}

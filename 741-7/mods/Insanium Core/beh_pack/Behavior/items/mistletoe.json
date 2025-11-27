@@ -1,0 +1,27 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bioplentia:mistletoe",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:stacked_by_data": true,
+			"minecraft:block_placer": {
+				"block": "bioplentia:mistletoe"
+		   },
+ 			"minecraft:creative_category": {
+				"parent": "itemGroup.name.flower"
+			},
+        "minecraft:display_name": {
+          "value": "tile.bioplentia:mistletoe.name"
+         },
+		   "minecraft:icon": {
+				"texture": "mistletoe"
+			} 
+		}
+	}
+}

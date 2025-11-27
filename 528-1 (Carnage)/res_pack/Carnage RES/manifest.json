@@ -1,0 +1,17 @@
+{
+    "format_version" : 1,
+    "header" : {
+       "description" : "§cBy §aCodanRaigen21§r, §o§b@real_cr21§r. §eSupport and follow me on twitter for more great add-ons!",
+       "name" : "§4Carnage §a§l§o::§r§b RES",
+       "uuid" : "af779c52-1eb9-462f-a3b2-735ecf719196",
+       "version" : [ 1, 0, 0 ]
+    },
+    "modules" : [
+       {
+          "description" : "§bBy CodanRaigen21, @real_cr21. §9Support and follow me on twitter for more great add-ons!",
+          "type" : "resources",
+          "uuid" : "6ecdbefe-4a28-4c92-b8c5-8d10d405496d",
+          "version" : [ 1, 0, 0 ]
+       }
+    ]
+}

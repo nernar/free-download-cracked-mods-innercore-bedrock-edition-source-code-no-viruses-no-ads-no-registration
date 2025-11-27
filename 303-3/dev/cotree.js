@@ -1,0 +1,183 @@
+IDRegistry.genBlockID("coffeeworkshop$Cotree");
+Block.createBlock("coffeeworkshop$Cotree", [{name: "\u5496\u5561\u6811", texture: [["oak", 1], ["cl", 0]], inCreative: true}]);
+IDRegistry.genBlockID("coffeeworkshop$Cotree1");
+Block.createBlock("coffeeworkshop$Cotree1", [{name: "\u5496\u5561\u68111", texture: [["oak", 1], ["cl1", 0]], inCreative: true}]);
+Block.setBlockShape(BlockID.coffeeworkshop$Cotree, {x: 2.16 / 16, y: 0, z: 2.16 / 16}, {x: 13.84 / 16, y: 13.84 / 16, z: 13.84 / 16});
+Block.setBlockShape(BlockID.coffeeworkshop$Cotree1, {x: 2.16 / 16, y: 0, z: 2.16 / 16}, {x: 13.84 / 16, y: 13.84 / 16, z: 13.84 / 16});
+function tree(id) {
+    var render = new ICRender.Model();
+    var model = BlockRenderer.createModel();
+    model.addBox(2.16 / 16, 2.16 / 16, 2.16 / 16, 13.84 / 16, 13.84 / 16, 13.84 / 16, [["cl", 0], ["cl", 0], ["cl", 0], ["cl", 0], ["cl", 0], ["cl", 0]]);
+    model.addBox(6 / 16, 0, 6 / 16, 10 / 16, 4 / 16, 10 / 16, [["ok", 1], ["ok", 1], ["ok", 0], ["ok", 0], ["ok", 0], ["ok", 0]]);
+    render.addEntry(model);
+    BlockRenderer.setStaticICRender(id, -1, render);
+}
+function tree1(id) {
+    var render = new ICRender.Model();
+    var model = BlockRenderer.createTexturedBox(2.16 / 16, 2.16 / 16, 2.16 / 16, 13.84 / 16, 13.84 / 16, 13.84 / 16, [["cl1", 0], ["cl1", 0], ["cl1", 0], ["cl1", 0], ["cl1", 0], ["cl1", 0]]);
+    var model1 = BlockRenderer.createTexturedBox(6 / 16, 0, 6 / 16, 10 / 16, 4 / 16, 10 / 16, [["ok", 1], ["ok", 1], ["ok", 0], ["ok", 0], ["ok", 0], ["ok", 0]]);
+    render.addEntry(model);
+    render.addEntry(model1);
+    BlockRenderer.setStaticICRender(id, -1, render);
+}
+function tree2(id, cl) {
+    var render = new ICRender.Model();
+    var model = BlockRenderer.createTexturedBox(6 / 16, 2 / 16, 6 / 16, 10 / 16, 6 / 16, 10 / 16, [[cl, 0], [cl, 0], [cl, 1]]);
+    var model1 = BlockRenderer.createTexturedBox(7 / 16, 0, 7 / 16, 9 / 16, 4 / 16, 9 / 16, [["ok2", 1], ["ok2", 1], ["ok2", 0], ["ok2", 0], ["ok2", 0], ["ok2", 0]]);
+    render.addEntry(model);
+    render.addEntry(model1);
+    BlockRenderer.setStaticICRender(id, -1, render);
+}
+function tree3(id, cl) {
+    var render = new ICRender.Model();
+    var model = BlockRenderer.createTexturedBox(4 / 16, 4 / 16, 4 / 16, 12 / 16, 12 / 16, 12 / 16, [[cl, 0][cl, 0], [cl, 1]]);
+    var model1 = BlockRenderer.createTexturedBox(6 / 16, 0, 6 / 16, 10 / 16, 4 / 16, 10 / 16, [["ok", 1], ["ok", 1], ["ok", 0], ["ok", 0], ["ok", 0], ["ok", 0]]);
+    render.addEntry(model);
+    render.addEntry(model1);
+    BlockRenderer.setStaticICRender(id, -1, render);
+}
+tree(BlockID.coffeeworkshop$Cotree);
+tree1(BlockID.coffeeworkshop$Cotree1);
+IDRegistry.genBlockID("coffeeworkshop$Cotree2");
+Block.createBlock("coffeeworkshop$Cotree2", [{name: "\u5496\u5561\u68112", texture: [["oak", 1], ["cl4", 0]], inCreative: true}]);
+Block.setBlockShape(BlockID.coffeeworkshop$Cotree2, {x: 6 / 16, y: 0, z: 6 / 16}, {x: 10 / 16, y: 6 / 16, z: 10 / 16});
+tree2(BlockID.coffeeworkshop$Cotree2, "cl4");
+IDRegistry.genBlockID("coffeeworkshop$Cotree3");
+Block.createBlock("coffeeworkshop$Cotree3", [{name: "\u5496\u5561\u68113", texture: [["oak", 1], ["cl3", 0], ["cl3", 1]], inCreative: true}]);
+Block.setBlockShape(BlockID.coffeeworkshop$Cotree3, {x: 4 / 16, y: 0, z: 4 / 16}, {x: 12 / 16, y: 12 / 16, z: 12 / 16});
+tree3(BlockID.coffeeworkshop$Cotree3, "cl3");
+Block.registerDropFunction("coffeeworkshop$Cotree1", function (c, d, e, a, b) {
+    return [[ItemID.coffeeworkshop$Sc, 1, 0]];
+});
+Block.registerDropFunction("coffeeworkshop$Cotree", function (c, d, e, a, b) {
+    return [[]];
+});
+Block.registerDropFunction("coffeeworkshop$Cotree2", function (c, d, e, a, b) {
+    return [[]];
+});
+Block.registerDropFunction("coffeeworkshop$Cotree3", function (c, d, e, a, b) {
+    return [[]];
+});
+IDRegistry.genItemID("coffeeworkshop$Sc");
+Item.createItem("coffeeworkshop$Sc", "\u5496\u5561\u79cd\u5b50", {name: "sc"}, {inTech: true, stack: 64});
+Item.registerUseFunction("coffeeworkshop$Sc", function (coords, item, tile) {
+    var place = coords.relative;
+    var tile1 = World.getBlock(place.x, place.y, place.z);
+    var tile2 = World.getBlock(place.x, place.y - 1, place.z);
+    if (GenerationUtils.isTransparentBlock(tile1.id) && GROUND_TILES[tile2.id]) {
+        World.setBlock(place.x, place.y, place.z, BlockID.coffeeworkshop$Cotree2);
+        World.addTileEntity(place.x, place.y, place.z);
+        Player.setCarriedItem(item.id, item.count - 1, item.data);
+    }
+});
+TileEntity.registerPrototype(BlockID.coffeeworkshop$Cotree2, {tick: function () {
+    if (!GROUND_TILES[World.getBlockID(this.x, this.y - 1, this.z)]) {
+        World.destroyBlock(this.x, this.y, this.z, true);
+        this.selfDestroy();
+    }
+}, checkFarmland: function () {
+    if (World.getBlockID(this.x, this.y - 1, this.z) == 0) {
+    } else {
+        return true;
+    }
+}, click: function (id, count, data) {
+    if (id == 351 && data == 15) {
+        Game.prevent();
+        this.selfDestroy();
+        World.setBlock(this.x, this.y, this.z, BlockID.coffeeworkshop$Cotree3);
+        World.addTileEntity(this.x, this.y, this.z);
+        Debug.addParticle(this.x, this.y, this.z, 31, 1, 1, 1);
+        Player.setCarriedItem(id, count - 1, data);
+    }
+}});
+TileEntity.registerPrototype(BlockID.coffeeworkshop$Cotree, {tick: function () {
+    if (!GROUND_TILES[World.getBlockID(this.x, this.y - 1, this.z)]) {
+        World.destroyBlock(this.x, this.y, this.z, false);
+        this.selfDestroy();
+    }
+}, checkFarmland: function () {
+    if (World.getBlockID(this.x, this.y - 1, this.z) == 0) {
+    } else {
+        return true;
+    }
+}, click: function (id, count, data) {
+    Debug.message(id);
+    if (id == 351 && data == 15) {
+        Game.prevent();
+        this.selfDestroy();
+        World.setBlock(this.x, this.y, this.z, BlockID.coffeeworkshop$Cotree1);
+        World.addTileEntity(this.x, this.y, this.z);
+        Debug.addParticle(this.x, this.y, this.z, 31, 1, 1, 1);
+        Player.setCarriedItem(id, count - 1, data);
+    }
+}});
+TileEntity.registerPrototype(BlockID.coffeeworkshop$Cotree1, {tick: function () {
+    if (!GROUND_TILES[World.getBlockID(this.x, this.y - 1, this.z)]) {
+        World.destroyBlock(this.x, this.y, this.z, true);
+        this.selfDestroy();
+    }
+}, checkFarmland: function () {
+    if (World.getBlockID(this.x, this.y - 1, this.z) == 0) {
+    } else {
+        return true;
+    }
+}, click: function (id, count, data) {
+    Game.prevent();
+    World.drop(this.x, this.y, this.z, ItemID.coffeeworkshop$Sc, 1);
+    this.selfDestroy();
+    World.setBlock(this.x, this.y, this.z, BlockID.coffeeworkshop$Cotree);
+    World.addTileEntity(this.x, this.y, this.z);
+    Debug.addParticle(this.x, this.y, this.z, 31, 1, 1, 1);
+}});
+TileEntity.registerPrototype(BlockID.coffeeworkshop$Cotree3, {tick: function (id, count, data) {
+    if (!GROUND_TILES[World.getBlockID(this.x, this.y - 1, this.z)]) {
+        World.destroyBlock(this.x, this.y, this.z, true);
+        this.selfDestroy();
+    }
+}, click: function (id, count, data) {
+    if (id == 351 && data == 15) {
+        Game.prevent();
+        this.selfDestroy();
+        World.setBlock(this.x, this.y, this.z, BlockID.coffeeworkshop$Cotree);
+        World.addTileEntity(this.x, this.y, this.z);
+        Debug.addParticle(this.x, this.y, this.z, 31, 1, 1, 1);
+        Player.setCarriedItem(id, count - 1, data);
+    }
+}});
+Block.setRandomTickCallback(BlockID.coffeeworkshop$Cotree3, function (x, y, z, id, data) {
+    var a = Math.random();
+    if (a < 0.3) {
+        World.removeTileEntity(x, y, z);
+        World.setBlock(x, y, z, BlockID.coffeeworkshop$Cotree);
+        World.addTileEntity(x, y, z);
+    }
+});
+Block.setRandomTickCallback(BlockID.coffeeworkshop$Cotree, function (x, y, z, id, data) {
+    var a = Math.random();
+    if (a < 0.3) {
+        World.removeTileEntity(x, y, z);
+        World.setBlock(x, y, z, BlockID.coffeeworkshop$Cotree1);
+        World.addTileEntity(x, y, z);
+    }
+});
+Block.setRandomTickCallback(BlockID.coffeeworkshop$Cotree2, function (x, y, z, id, data) {
+    var a = Math.random();
+    if (a < 0.3) {
+        World.removeTileEntity(x, y, z);
+        World.setBlock(x, y, z, BlockID.coffeeworkshop$Cotree3);
+        World.addTileEntity(x, y, z);
+    }
+});
+Callback.addCallback("GenerateChunk", function (chunkX, chunkZ) {
+    if (Math.random() < 0.04) {
+        for (var i = 0; i < 1 + Math.random() * 6; i++) {
+            var coords = GenerationUtils.randomCoords(chunkX, chunkZ, 64, 128);
+            coords = GenerationUtils.findSurface(coords.x, coords.y, coords.z);
+            if (World.getBlockID(coords.x, coords.y, coords.z) == 2) {
+                World.setBlock(coords.x, coords.y + 1, coords.z, BlockID.coffeeworkshop$Cotree1);
+                World.addTileEntity(coords.x, coords.y + 1, coords.z);
+            }
+        }
+    }
+});
+

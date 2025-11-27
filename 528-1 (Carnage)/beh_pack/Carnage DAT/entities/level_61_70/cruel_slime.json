@@ -1,0 +1,156 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+	"description": {
+      "identifier": "raigen:cruel_slime",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "runtime_identifier": "minecraft:slime"
+    },
+	
+	"component_groups": {
+	  "minecraft:slime_small": {
+	    "minecraft:scale": {
+		  "value": 0.9
+		},
+		"minecraft:movement": {
+		  "value": 0.6
+		},
+		"minecraf:health": {
+		  "value": 2
+		},
+        "minecraft:attack": {
+          "damage": 5
+        }
+	  },
+	  "minecraft:slime_medium": {
+	    "minecraft:scale": {
+		  "value": 1.4
+		},
+		"minecraft:movement": {
+		  "value": 0.6
+		},
+		"minecraf:health": {
+		  "value": 14
+		},
+        "minecraft:attack": {
+          "damage": 8
+        }
+	  },
+	  "minecraft:slime_large": {
+	    "minecraft:scale": {
+		  "value": 2.1
+		},
+		"minecraft:movement": {
+		  "value": 0.6
+		},
+		"minecraf:health": {
+		  "value": 26
+		},
+        "minecraft:attack": {
+          "damage": 12
+        }
+	  }
+	},
+	
+    "components": {
+      "minecraft:fire_immune": false,
+      "minecraft:burns_in_daylight": false,
+      "minecraft:type_family": {
+        "family": [ "monster", "slime" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.2
+      },
+      "minecraft:fall_damage": {
+        "value": 0.0
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 1,
+        "track_target": true
+      },
+      "minecraft:behavior.move_towards_target": {
+        "priority": 1,
+        "speed_multiplier": 0.9,
+        "within_radius": 32
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player"},
+          "max_dist": 20
+        },
+        "must_see": true
+      },
+      "minecraft:navigation.walk": {
+        "can_float": true,
+		"is_amphibious": false,
+		"can_path_over_water": true
+      },
+      "minecraft:movement.jump": {
+        "jump_delay": [ 0.5, 1.5 ]
+      },
+      "minecraft:jump.static": {},
+      "minecraft:nameable": {},
+      "minecraft:balloonable": {},
+	  "minecraft:behavior.slime_random_direction": {
+        "priority": 4
+	  },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 4,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.7
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+	  "minecraft:physics": {
+      }
+    },
+	
+	"events": {
+	  "minecraft:entity_spawned": {
+	    "sequence": [
+		  {
+            "randomize": [
+              {
+                "weight": 1,
+                "sequence": [
+                  {
+                    "randomize": [
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:slime_small" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:slime_medium" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:slime_large" ] }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+	}
+  }
+}

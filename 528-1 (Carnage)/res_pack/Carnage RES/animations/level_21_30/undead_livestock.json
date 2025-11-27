@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.undead_livestock.move": {
+      "loop": true,
+      "bones": {
+        "cow_right_arm": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "cow_left_arm": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] },
+        "cow_left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "cow_right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] },
+        "pig_right_arm": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "pig_left_arm": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] },
+        "pig_left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "pig_right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] },
+        "chicken_left_leg": { "rotation": [ "variable.tcos1 * 1.4", 0.0, 0.0 ] },
+        "chicken_right_leg": { "rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ] }
+      }
+    }
+  }
+}

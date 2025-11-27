@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:steel_ice_block"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "AAA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_dragon_steel_ice_ingot",
+        "data": 0
+      
+      }
+    },
+    "result": {
+      "item": "minecraft:block_steel_ice_block",
+      "count": 1
+    }
+  }
+}

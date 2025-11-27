@@ -1,0 +1,11 @@
+[
+{
+"symbol":"",
+"callback":"",
+"isController":true,
+"args":["controller", "ptr"],
+"return":"void",
+"type":"pre",
+"priority":1
+}
+]

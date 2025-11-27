@@ -1,0 +1,208 @@
+{
+  "identifier": "geometry.crucible",
+  "customCollision": true,
+  "boxes": [
+    {
+      "position": {
+        "x": 0,
+        "y": 3,
+        "z": 0
+      },
+      "size": {
+        "x": 16,
+        "y": 13,
+        "z": 2
+      },
+      "texture": {
+        "textures": [
+          [ "crucible_bottom", 0 ],
+          [ "crucible_top", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_inner", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_side", 0 ]
+        ]
+      },
+      "shape": true
+    },
+    {
+      "position": {
+        "x": 0,
+        "y": 3,
+        "z": 14
+      },
+      "size": {
+        "x": 16,
+        "y": 13,
+        "z": 2
+      },
+      "texture": {
+        "textures": [
+          [ "crucible_bottom", 0 ],
+          [ "crucible_top", 0 ],
+          [ "crucible_inner", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_side", 0 ]
+        ]
+      },
+      "shape": true
+    },
+    {
+      "position": {
+        "x": 0,
+        "y": 3,
+        "z": 2
+      },
+      "size": {
+        "x": 2,
+        "y": 13,
+        "z": 12
+      },
+      "texture": {
+        "textures": [
+          [ "crucible_bottom", 0 ],
+          [ "crucible_top", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_inner", 0 ]
+        ]
+      },
+      "shape": true
+    },
+    {
+      "position": {
+        "x": 14,
+        "y": 3,
+        "z": 2
+      },
+      "size": {
+        "x": 2,
+        "y": 13,
+        "z": 12
+      },
+      "texture": {
+        "textures": [
+          [ "crucible_bottom", 0 ],
+          [ "crucible_top", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_inner", 0 ],
+          [ "crucible_side", 0 ]
+        ]
+      },
+      "shape": true
+    },
+    {
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 2
+      },
+      "size": {
+        "x": 12,
+        "y": 1,
+        "z": 12
+      },
+      "texture": {
+        "textures": [
+          [ "crucible_bottom", 0 ]
+        ]
+      },
+      "shape": true
+    },
+    {
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "size": {
+        "x": 3,
+        "y": 3,
+        "z": 3
+      },
+      "texture": {
+        "textures": [
+          [ "crucible_bottom", 0 ],
+          [ "crucible_top", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_inner", 0 ],
+          [ "crucible_inner", 0 ],
+          [ "crucible_side", 0 ]
+        ]
+      },
+      "shape": true
+    },
+    {
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 13
+      },
+      "size": {
+        "x": 3,
+        "y": 3,
+        "z": 3
+      },
+      "texture": {
+        "textures": [
+          [ "crucible_bottom", 0 ],
+          [ "crucible_top", 0 ],
+          [ "crucible_inner", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_inner", 0 ],
+          [ "crucible_side", 0 ]
+        ]
+      },
+      "shape": true
+    },
+    {
+      "position": {
+        "x": 13,
+        "y": 0,
+        "z": 0
+      },
+      "size": {
+        "x": 3,
+        "y": 3,
+        "z": 3
+      },
+      "texture": {
+        "textures": [
+          [ "crucible_bottom", 0 ],
+          [ "crucible_top", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_inner", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_inner", 0 ]
+        ]
+      },
+      "shape": true
+    },
+    {
+      "position": {
+        "x": 13,
+        "y": 0,
+        "z": 13
+      },
+      "size": {
+        "x": 3,
+        "y": 3,
+        "z": 3
+      },
+      "texture": {
+        "textures": [
+          [ "crucible_bottom", 0 ],
+          [ "crucible_top", 0 ],
+          [ "crucible_inner", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_side", 0 ],
+          [ "crucible_inner", 0 ]
+        ]
+      },
+      "shape": true
+    }
+  ]
+}

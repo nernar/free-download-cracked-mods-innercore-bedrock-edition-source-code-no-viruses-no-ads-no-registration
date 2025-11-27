@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vanilla_recipe:steel_lightning_block"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "AAA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:item_dragon_steel_lightning_ingot",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "minecraft:block_steel_lightning_block",
+      "count": 1
+    }
+  }
+}

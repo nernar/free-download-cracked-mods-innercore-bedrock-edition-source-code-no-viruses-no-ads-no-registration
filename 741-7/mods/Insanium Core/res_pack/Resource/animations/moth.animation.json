@@ -1,0 +1,28 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.moth.flying": {
+			"animation_length": 0.4,
+       	"loop" : true,
+			"bones": {
+				"rightwing": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2": [0, 0, 70],
+						"0.4": [0, 0, -10]
+					}
+				},
+				"leftwing": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2": [0, 0, -70],
+						"0.4": [0, 0, 10]
+					}
+				}
+			}
+		}
+	}
+}

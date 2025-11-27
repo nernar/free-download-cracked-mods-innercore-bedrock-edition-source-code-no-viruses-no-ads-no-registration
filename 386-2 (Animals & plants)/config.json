@@ -1,0 +1,20 @@
+{
+  "enabled":true,
+  "Bat":true,
+  "Cat":true,
+  "Chicken":true,
+  "Cow":true,
+  "Creeper":true,
+  "Horse":true,
+  "Minecart":true,
+  "Pig":true,
+  "Rabbit":true,
+  "Shulker":true,
+  "Silverfish":true,
+  "Skeleton":true,
+  "Slime":false,
+  "Snow_golems":false,
+  "Squid":false,
+  "Wolf":false,
+  "Zombie":false
+}

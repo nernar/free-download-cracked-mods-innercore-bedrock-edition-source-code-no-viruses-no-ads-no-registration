@@ -1,0 +1,68 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "outback"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.2,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 1.8
+      },
+      "minecraft:overworld_height": {
+        "noise_params": [ 0.05, 0.05 ]
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:stone",
+        "top_material": {
+          "name": "minecraft:sand",
+          "states": {
+            "sand_type": "red"
+          }
+        },
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "top_material": {
+                "name": "minecraft:sand",
+                "states": {
+                  "sand_type": "red"
+                }
+              }
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ 0.212, 1.0 ]
+          },
+          {
+            "materials": {
+              "top_material": "minecraft:grass"
+            },
+            "noise_frequency_scale": 0.0625,
+            "noise_range": [ -0.110, 0.212 ]
+          }
+        ]
+      },
+      "minecraft:overworld_generation_rules": {
+        "shore_transformation": "gravel_beach",
+        "generate_for_climates": [
+          [ "warm", 2 ]
+        ]
+      },
+
+
+      "monster": {},
+      "overworld": {},
+      "outback": {}
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# Exported by Open Cascade CAD Assistant [www.opencascade.com]
+newmtl 1
+Ka 0.100000 0.100000 0.100000
+Kd 0.800000 0.800000 0.800000
+Ks 0.200000 0.200000 0.200000
+Ns 1000.000000
+map_Kd Bottle_textures/glass.png
+newmtl 0
+Ka 0.100000 0.100000 0.100000
+Kd 0.800000 0.800000 0.800000
+Ks 0.200000 0.200000 0.200000
+Ns 1000.000000
+map_Kd Bottle_textures/bottletext.png

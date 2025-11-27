@@ -1,0 +1,342 @@
+{
+    "pools": [
+     {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:salmon",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              },
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:carrot",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              },
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:bread",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              },
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+              "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:porkchop_cooked",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              },
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+              "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:muttonCooked",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              },
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:baked_potato",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              },
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:cooked_rabbit",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              },
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:cooked_chicken",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              },
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:fish",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 2
+                }
+              },
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:beef",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 2
+                }
+              },
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:appleEnchanted",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 2
+                }
+              },
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:steak",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 2
+                }
+              },
+              {
+                "function": "looting_enchant",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+      "rolls": 1,
+        "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:potato",
+                    "weight": 3,
+                  "functions": [
+                    {
+                      "function": "set_count",
+                      "count": {
+                        "min": 0,
+                        "max": 2
+                      }
+                    },
+                    {
+                      "function": "looting_enchant",
+                      "count": {
+                        "min": 0,
+                        "max": 1
+                      }
+                    }
+                  ]
+                }
+            ]
+        }
+    ]
+}

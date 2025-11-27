@@ -1,0 +1,294 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ayrtown:mini",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+        "become_boss": {
+        "minecraft:transformation": {
+          "into": "ayrtown:boss",
+          "delay": 0.5
+        }
+      },
+      "minecraft:mini_zombie": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.53125
+        },
+        "minecraft:movement": {
+          "value": 0.36
+      },
+      "minecraft:attack": {
+        "damage": 3,
+        "effect_name": "blindness",
+        "effect_duration": 3
+        }
+      },
+      "minecraft:mini_zombie2": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.53125
+        },
+        "minecraft:movement": {
+          "value": 0.36
+      },
+      "minecraft:attack": {
+        "damage": 3,
+        "effect_name": "hunger",
+        "effect_duration": 30
+        }
+      },
+      "minecraft:mini_zombie_jockey": {
+        "minecraft:behavior.find_mount": {
+          "priority": 1,
+          "within_radius": 16
+        }
+      }
+    },
+
+    "components": {
+        "minecraft:damage_sensor": {
+        "on_damage": {
+          "filters": { "test" :  "is_family", "subject" : "other", "value" :  "lightning"},
+          "event": "become_boss"
+        },
+        "deals_damage": false
+      },
+      "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:nameable": {
+      },
+
+      // mini_zombie Components
+      "minecraft:type_family": {
+        "family": [ "mini", "zombie", "undead", "monster" ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/zombie.json"
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/entities/zombie_equipment.json"
+      },
+
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_break_doors": true,
+        "avoid_portals": false
+      },
+      "minecraft:annotation.break_door": {
+      },
+      "minecraft:movement.basic": {
+
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:environment_sensor": [
+        {
+          "filters": {
+            "test": "is_underwater",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          },
+          "event": "minecraft:start_transforming"
+        }
+      ],
+
+      // mini_zombie Behaviors
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "speed_multiplier": 1,
+        "track_target": false
+      },
+      "minecraft:behavior.stomp_turtle_egg": {
+        "priority": 4,
+        "speed_multiplier": 1,
+        "search_range": 10,
+        "search_height": 3,
+        "goal_radius": 1.14,
+        "search_count": 4,
+        "interval": 20
+      },
+      "minecraft:behavior.move_towards_restriction": {
+        "priority": 5,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test": "is_family", "subject": "other", "operator": "!=", "value": "boss" }
+        }
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "within_radius": 25,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                { "test": "is_family", "subject": "other", "value": "snowgolem" },
+                { "test": "is_family", "subject": "other", "value": "irongolem" }
+              ]
+            },
+            "max_dist": 35
+          },
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "villager" },
+                { "test": "is_family", "subject": "other", "value": "wandering_trader" }
+              ]
+            },
+            "max_dist": 35,
+            "must_see": false
+          },
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "baby_turtle" },
+                { "test": "in_water", "subject": "other", "operator": "!=", "value": true }
+              ]
+            },
+            "max_dist": 35
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:physics": {
+      }
+    },
+
+    "events": {
+        "become_boss": {
+        "remove": {
+        },
+        "add": {
+          "component_groups": [
+            "become_boss"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 500,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:mini_zombie2"
+              ]
+            }
+          },
+          {
+            "weight": 500,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:mini_zombie"
+              ]
+
+            }
+          },
+          {
+            "weight": 75,
+            "remove": {
+            },
+            "add": {
+              "component_groups": [
+                "minecraft:mini_zombie",
+                "minecraft:mini_zombie_jockey"
+              ]
+
+            }
+          }
+        ]
+      },
+      "minecraft:start_transforming": {
+        "add": {
+          "component_groups": [
+            "minecraft:start_zombie_transformation"
+          ]
+        },
+        "remove": {
+          "component_groups": [ "minecraft:look_to_start_zombie_transformation" ]
+        }
+      },
+      "minecraft:stop_transforming": {
+        "add": {
+          "component_groups": [
+            "minecraft:look_to_start_zombie_transformation"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "minecraft:start_zombie_transformation"
+          ]
+        }
+      },
+      "minecraft:convert_to_zombie": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "has_component",
+              "operator": "!=",
+              "value": "minecraft:is_baby"
+            },
+            "add": {
+              "component_groups": [ "minecraft:convert_to_zombie" ]
+            },
+            "remove": {
+              "component_groups": [ "minecraft:start_zombie_transformation" ]
+            }
+          },
+          {
+            "filters": {
+              "test": "has_component",
+              "value": "minecraft:is_baby"
+            },
+            "add": {
+              "component_groups": [ "minecraft:convert_to_baby_zombie" ]
+            },
+            "remove": {
+              "component_groups": [ "minecraft:start_zombie_transformation" ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

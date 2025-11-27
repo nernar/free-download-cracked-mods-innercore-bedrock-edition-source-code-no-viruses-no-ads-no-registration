@@ -1,0 +1,17 @@
+{
+    "description": "豆腐工艺配置文件",
+    "properties": {
+        "debug": {
+            "name": {
+                "en": "Debug",
+                "zh": "调试模式"
+            }
+        },
+        "enabled": {
+            "name": {
+                "en": "enabled",
+                "zh": "打开模组"
+            }
+        }
+    }
+}

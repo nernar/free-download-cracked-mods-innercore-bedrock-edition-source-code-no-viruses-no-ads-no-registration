@@ -1,0 +1,155 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "salamander_orange": {
+                "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "attack": "mob.salamander_orange.attack",
+          "hurt": "mob.salamander_orange.attack",
+          "death": "mob.salamander_orange.death",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 2.0,
+            "pitch": 2.0
+          }
+        }
+      },
+            "salamander_black": {
+                "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "attack": "mob.salamander_black.attack",
+          "hurt": "mob.salamander_black.attack",
+          "death": "mob.salamander_black.death",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 2.0,
+            "pitch": 2.0
+          }
+        }
+      },
+            ":ember_normal": {
+                "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {  
+          "death": "mob.ember_normal.death",
+          "hurt": "mob.ember_normal.hurt",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 2.0,
+            "pitch": 2.0
+          }
+        }
+      },
+            "mogus_brown": {
+                "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {  
+          "death": "mob.mogus_brown.death",
+          "hurt": "mob.mogus_brown.hurt",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 2.0,
+            "pitch": 2.0
+          }
+        }
+      },
+            "mogus_white": {
+                "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {  
+          "death": "mob.mogus_white.death",
+          "hurt": "mob.mogus_white.hurt",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 2.0,
+            "pitch": 2.0
+          }
+        }
+      },
+            "mogus_red": {
+                "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {  
+          "death": "mob.mogus_red.death",
+          "hurt": "mob.mogus_red.hurt",
+           "step": {
+            "sound": "mob.snake.step",
+            "volume": 2.0,
+            "pitch": 2.0
+          }
+        }
+      },
+      "wither_skeleton": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.skeleton.say",
+          "hurt": {
+            "sound": "mob.skeleton.hurt",
+            "volume": 0.7
+          },
+          "death": "mob.skeleton.death",
+          "step": {
+            "sound": "mob.skeleton.step",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "ghastling": {
+        "volume": 1000.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "scream": "mob.ghast.affectionate_scream",
+          "warn": "mob.ghast.charge",
+          "shoot": {
+            "sound": "mob.ghast.fireball",
+            "volume": 0.7
+          },
+          "ambient": "mob.ghast.moan",
+          "hurt": "mob.ghast.scream",
+          "death": "mob.ghast.death"
+        }
+      },
+      "spore_creeper": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "hurt": "mob.creeper.say",
+          "death": "mob.creeper.death",
+          "fuse": {
+            "sound": "random.fuse",
+            "volume": 1.0,
+            "pitch": 0.5
+          }
+        }
+      },
+      "cool_blaze": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.blaze.breathe",
+          "hurt": "mob.blaze.hit",
+          "death": "mob.blaze.death",
+          "shoot": "mob.blaze.shoot"
+        }
+      },
+      "cool_spider": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "mob.spider.say",
+          "hurt": "mob.spider.say",
+          "death": "mob.spider.death",
+          "step": {
+            "sound": "mob.spider.step",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "about:fallen_amenia_tree_feature"
+    },
+    "fallen_trunk": {
+      "log_length": {
+        "range_min": 4,
+        "range_max": 7
+      },
+      "trunk_block": {
+        "name": "minecraft:log",
+        "states": {
+          "old_log_type": "oak"
+        }
+      },
+      "log_decoration_feature": "minecraft:optional_log_mushrooms_feature",
+      "trunk_decoration": {
+        "decoration_block": "minecraft:vine",
+        "decoration_chance": 75.0
+      }
+    },
+    "base_block": [
+      "minecraft:stone"
+    ],
+    "may_grow_on": [
+      "about:mossy_stone"
+    ],
+    "may_replace": [
+      "minecraft:air",
+      "minecraft:leaves",
+      "minecraft:leaves2"
+    ],
+    "may_grow_through": [
+      "minecraft:dirt",
+      "minecraft:grass",
+      {
+        "tags": "query.any_tag('plant', 'mossy_stone')"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "dungeoncraft:mummy",
+      "materials": {"default": "dungeon_entity"},
+      "textures": {"default": "textures/entity/mummy.png"},
+      "render_controllers": ["controller.render.default"],
+      "geometry": {"default": "geometry.mummy"},
+      "animations": {
+        "default": "animation.mummy.default",
+        "move": "animation.mummy.move",
+        "attack": "animation.mummy.attack"
+      },
+      "animation_controllers": [
+        {"default": "controller.animation.mummy.default"},
+        {"move": "controller.animation.mummy.move"},
+        {"attack": "controller.animation.mummy.attack"}
+      ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "base_color": "#ada192",
+        "overlay_color": "#38332d"
+      }
+    }
+  }
+}

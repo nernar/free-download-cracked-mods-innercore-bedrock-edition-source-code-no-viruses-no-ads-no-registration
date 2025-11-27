@@ -1,0 +1,96 @@
+/* {
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "entity:scp096",
+      "materials": {
+        "default": "scp096"
+      },
+      "textures": {
+        "default": "textures/entity/scp096/scp096d",
+        "open": "textures/entity/scp096/scp096open"
+      },
+      "geometry": {
+        "default": "geometry.scp096"
+     },
+      "animations": {
+        "scp096_base_pose": "animation.scp096.base_pose",
+        "scp096_rageing": "animation.scp096.rageing",
+        "scp096_look_at_target": "animation.scp096.look_at_target",
+        "scp096_walking": "animation.scp096.walking",
+        "scp096_attacking": "animation.scp096.attacking"
+      },
+      "animation_controllers": [
+        { "scp096_base_pose": "controller.animation.scp096.base_pose" },
+        { "scp096_walking": "controller.animation.scp096.walking" },
+        { "scp096_attacking": "controller.animation.scp096.attacking" }
+      ],
+      "render_controllers": [ "controller.render.scp096" ],
+      "locators": {
+        "lead": { "head": [ 0.0, 0.0, 0.0 ] }
+      },
+      "spawn_egg": {
+        "base_color": "#FF694343",
+        "overlay_color": "#FF8E6A6A"
+      }
+    }
+  }
+} */
+
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "entity:scp096",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "scp096"
+      },
+      "textures": {
+        "default": "textures/entity/scp096/scp096d",
+        "open": "textures/entity/scp096/scp096open"
+      },
+      "geometry": {
+        "default": "geometry.scp096"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+          "variable.tcos1 = -variable.tcos0;",
+          "variable.attack_body_rot_y = Math.sin(Math.sqrt(variable.attack_time) * 360.0) * 11.46;",
+          "variable.cos_attack_body_rot_y = Math.cos(variable.attack_body_rot_y);",
+          "variable.sin_attack_body_rot_y = Math.sin(variable.attack_body_rot_y);",
+          "variable.internal_swim_pos = Math.mod(query.modified_distance_moved, 26.0);",
+          "variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3;",
+          "variable.attack2 = Math.sin(variable.attack_time * 180.0) * 57.3;",
+          "variable.z_bob = Math.cos(query.life_time * 103.13244) * 2.865 + 2.865;",
+          "variable.x_bob = Math.sin(query.life_time * 76.776372) * 2.865;"
+        ]
+      },
+      "animations": {
+          
+        "scp096_general": "animation.scp096.general",
+        
+        "scp096_general_2": "animation.scp096.general_2",
+        "scp096_general_legs": "animation.scp096.general_legs",
+        
+        "look_at_target": "animation.scp096.look_at_target",
+        "move": "animation.scp096.move",
+        "sitting": "animation.scp096.sitting",
+        "look_at_target": "animation.scp096.look_at_target",
+        "casting": "animation.scp096.casting",
+        "attack_bare_hand": "animation.scp096.attack_bare_hand"
+},
+      "animation_controllers": [
+        { "general": "controller.animation.scp096.general" },
+        { "move": "controller.animation.scp096.move" },
+        { "zombie_attack_bare_hand": "controller.animation.scp096.attack_bare_hand" }
+      ],
+      "render_controllers": [ "controller.render.scp096" ],
+      "spawn_egg": {
+        "base_color": "#f0e7c4",
+	    "overlay_color": "#e8d385"
+      }
+    }
+  }
+}

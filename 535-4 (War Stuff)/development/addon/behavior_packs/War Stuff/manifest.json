@@ -1,0 +1,23 @@
+{
+    "format_version": 1,
+    "header": {
+        "name": "§lWar Stuff§r",
+        "description": "By §6NILTER§r",
+        "uuid": "65073596-d7cc-4b38-b827-2ef1c1c7733c",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 10, 0]
+    },
+    "modules": [
+        {
+            "uuid": "fd3d0731-0445-4050-a1d2-f8b056d903c4",
+            "version": [1, 0, 0],
+            "type": "data"
+        }
+    ],
+	"dependencies": [
+		{
+			"version": [1, 0, 0],
+			"uuid": "f97d3914-6b6d-4067-9087-7a838013bf01"
+		}
+	]
+}

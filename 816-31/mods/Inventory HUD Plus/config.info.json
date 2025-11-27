@@ -1,0 +1,96 @@
+{
+  "properties": {
+    "clientOnly": {
+      "description": {
+        "en": "If true, it'll have less functions, but can work without server.",
+        "ru": "Если включено, то мод станет чисто клиентским, но будет иметь ограниченный функционал",
+        "zh": "如果 true，它将有更少功能，但可以不依赖服务端工作。"
+      }
+    },
+    "stableMode": {
+      "description": {
+        "en": "If true, it will be more stable, but will have the similar bugs about NBT as most of the mods.",
+        "ru": "Если включено, то подверженные сбоям NBT модули, будут заменены более стабильными модулями, но появятся некоторое проблемы с миром, данные которого хранились до замены модулей в NBT формате",
+        "zh": "如果 true，它将更加稳定，但和大多模组一样，有关于 NBT 的 bug。"
+      },
+      "displayIf": "!clientOnly"
+    },
+    "opacity": {
+      "description": {
+        "en": "Determine the transparency of InventoryGUI. 1 is completely opaque.",
+        "ru": "Прозрачность интерфейса. 1 - полностью непрозрачен.",
+        "zh": "决定 InventoryGUI 的透明度。1 为完全不透明。"
+      }
+    },
+    "sortId": {
+      "displayIf": false
+    },
+    "information.alwaysOpen": {
+      "description": {
+        "en": "Make the GUI not easy to close",
+        "ru": "Сделать так, чтобы интерфейс был незакрываемым",
+        "zh": "使 GUI 不容易关闭"
+      }
+    },
+    "information.x": {
+      "description": {
+        "en": "Distance from the left side of the GUI to the left side of the screen.",
+        "ru": "Расстояние от левой части интерфейса до левого края экрана.",
+        "zh": "GUI 的左侧到屏幕左侧距离。"
+      },
+      "type": "SeekBar",
+      "min": 0,
+      "max": 1000
+    },
+    "information.y": {
+      "description": {
+        "en": "Distance from the top of the GUI to the top of the screen.",
+        "ru": "Расстояние от верхней части интерфейса до верхного края экрана.",
+        "zh": "GUI 的顶部到屏幕顶部距离。"
+      },
+      "type": "SeekBar",
+      "min": 0,
+      "max": 600
+    },
+    "information.width": {
+      "description": {
+        "en": "Width of the GUI.",
+        "ru": "Ширина интерфейса.",
+        "zh": "GUI 的宽度。"
+      },
+      "type": "SeekBar",
+      "min": 10,
+      "max": 200
+    },
+    "inventory.x": {
+      "description": {
+        "en": "Distance from the left side of the GUI to the left side of the screen.",
+        "ru": "Расстояние от левой части интерфейса до левого края экрана.",
+        "zh": "GUI 的左侧到屏幕左侧距离。"
+      },
+      "type": "SeekBar",
+      "min": 0,
+      "max": 1000
+    },
+    "inventory.y": {
+      "description": {
+        "en": "Distance from the top of the GUI to the top of the screen.",
+        "ru": "Расстояние от верхней части интерфейса до верхного края экрана.",
+        "zh": "GUI 的顶部到屏幕顶部距离。"
+      },
+      "type": "SeekBar",
+      "min": 0,
+      "max": 600
+    },
+    "inventory.width": {
+      "description": {
+        "en": "Width of the GUI.",
+        "ru": "Ширина интерфейса.",
+        "zh": "GUI 的宽度。"
+      },
+      "type": "SeekBar",
+      "min": 100,
+      "max": 800
+    }
+  }
+}

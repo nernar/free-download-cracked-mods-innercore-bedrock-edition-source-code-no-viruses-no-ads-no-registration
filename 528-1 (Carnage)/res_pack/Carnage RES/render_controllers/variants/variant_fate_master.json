@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.variant_fate_master": {
+	  "arrays": {
+        "materials": {
+          "Array.materials": [ "Material.default", "Material.invisible" ]
+        },
+	    "textures": {
+		  "Array.skins": [
+		    "Texture.melee_levitation",
+		    "Texture.melee_wither",
+		    "Texture.ranged_common",
+		    "Texture.ranged_rare",
+		    "Texture.ranged_legendary",
+		    "Texture.ranged_vained_time",
+		    "Texture.ranged_moth_mother",
+		    "Texture.ranged_blitzir",
+		    "Texture.ranged_gravitite",
+		    "Texture.ranged_flame",
+		    "Texture.ranged_flare"
+		  ]
+		}
+	  },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Array.materials[query.is_invisible]" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

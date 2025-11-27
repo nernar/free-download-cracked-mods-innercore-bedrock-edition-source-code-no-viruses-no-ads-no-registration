@@ -1,0 +1,7 @@
+{
+  "parent": "ttigraas:custom/body_armor_hand",
+  "textures": {
+    "0": "ttigraas:blocks/body_armor_arm",
+    "particle": "ttigraas:items/armorsaurus_scale"
+  }
+}

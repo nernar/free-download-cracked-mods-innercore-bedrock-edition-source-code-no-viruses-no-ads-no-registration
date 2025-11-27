@@ -1,0 +1,322 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "raigen:common_projectile",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+	
+	"component_groups": {
+	  "minecraft:goblin": {
+	    "minecraft:transformation": {
+		  "into": "raigen:goblin"
+		}
+	  },
+	  "minecraft:ramwolf": {
+	    "minecraft:transformation": {
+		  "into": "raigen:ramwolf"
+		}
+	  },
+	  "minecraft:bloodshed": {
+	    "minecraft:transformation": {
+		  "into": "raigen:bloodshed"
+		}
+	  },
+	  "minecraft:shroombit": {
+	    "minecraft:transformation": {
+		  "into": "raigen:shroombit"
+		}
+	  },
+	  "minecraft:hobgoblin": {
+	    "minecraft:transformation": {
+		  "into": "raigen:hobgoblin"
+		}
+	  },
+	  "minecraft:black_water": {
+	    "minecraft:transformation": {
+		  "into": "raigen:black_water"
+		}
+	  },
+	  "minecraft:cursed_spells": {
+	    "minecraft:transformation": {
+		  "into": "raigen:cursed_spells"
+		}
+	  },
+	  "minecraft:phantas": {
+	    "minecraft:transformation": {
+		  "into": "raigen:phantas"
+		}
+	  },
+	  "minecraft:riptide": {
+	    "minecraft:transformation": {
+		  "into": "raigen:riptide"
+		}
+	  },
+	  "minecraft:rotscade": {
+	    "minecraft:transformation": {
+		  "into": "raigen:rotscade"
+		}
+	  },
+	  "minecraft:rootling": {
+	    "minecraft:transformation": {
+		  "into": "raigen:rootling"
+		}
+	  },
+	  "minecraft:land_leech": {
+	    "minecraft:transformation": {
+		  "into": "raigen:land_leech"
+		}
+	  },
+	  "minecraft:blood_stained": {
+	    "minecraft:transformation": {
+		  "into": "raigen:blood_stained"
+		}
+	  },
+	  "minecraft:giant_scorpion": {
+	    "minecraft:transformation": {
+		  "into": "raigen:giant_scorpion"
+		}
+	  },
+	  "minecraft:morgue_man": {
+	    "minecraft:transformation": {
+		  "into": "raigen:morgue_man"
+		}
+	  },
+	  "minecraft:cursed_armor": {
+	    "minecraft:transformation": {
+		  "into": "raigen:cursed_armor"
+		}
+	  },
+	  "minecraft:vile_zombie": {
+	    "minecraft:transformation": {
+		  "into": "raigen:vile_zombie"
+		}
+	  },
+	  "minecraft:vicious_spider": {
+	    "minecraft:transformation": {
+		  "into": "raigen:vicious_spider"
+		}
+	  },
+	  "minecraft:solar_warrior": {
+	    "minecraft:transformation": {
+		  "into": "raigen:solar_warrior"
+		}
+	  },
+	  "minecraft:dullahan": {
+	    "minecraft:transformation": {
+		  "into": "raigen:dullahan"
+		}
+	  },
+	  "minecraft:dreadman": {
+	    "minecraft:transformation": {
+		  "into": "raigen:dreadman"
+		}
+	  },
+	  "minecraft:ivywake": {
+	    "minecraft:transformation": {
+		  "into": "raigen:ivywake"
+		}
+	  },
+	  "minecraft:wood_crab": {
+	    "minecraft:transformation": {
+		  "into": "raigen:wood_crab"
+		}
+	  },
+	  "minecraft:cannibal": {
+	    "minecraft:transformation": {
+		  "into": "raigen:cannibal"
+		}
+	  },
+	  "minecraft:stone_ram": {
+	    "minecraft:transformation": {
+		  "into": "raigen:stone_ram"
+		}
+	  },
+	  "minecraft:black_ice": {
+	    "minecraft:transformation": {
+		  "into": "raigen:black_ice"
+		}
+	  }
+	},
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.87,
+        "height": 0.87
+      },
+	  "minecraft:scale": {
+	    "value": 0.89
+	  },
+	  "minecraft:health": {
+	    "value": 3
+	  },
+	  "minecraft:timer": {
+	    "looping": false,
+		"randomInterval": false,
+		"time": 0.01,
+		"time_down_event": {
+		  "event": "minecraft:event_ranomize"
+		}
+	  },
+      "minecraft:projectile": {
+        "onHit": {
+          "impact_damage": {
+            "damage": 0,
+            "knockback": true,
+            "shouldbounce": true
+          },
+          "mob_effect": {
+            "effect": "slowness",
+            "durationeasy": 200,
+            "durationnormal": 200,
+            "durationhard": 200,
+            "amplifier": 2
+          },
+          "remove_on_hit": {
+          },
+          "particle_on_hit": {
+            "particle_type": "snowballpoof",
+            "on_other_hit": true
+          }
+        },
+        "hitSound": "mob.slime.small",
+        "destroyOnHurt": true,
+        "critParticleOnHurt": true,
+        "power": 1.1,
+        "gravity": 0.00001,
+        "uncertaintyBase": 16,
+        "uncertaintyMultiplier": 4,
+        "anchor": 1,
+        "offset": [ 0, 0, 0 ]
+      },
+      "minecraft:physics": {
+	  }
+    },
+	
+	"events": {
+	  "minecraft:event_ranomize": {
+	    "sequence": [
+		  {
+            "randomize": [
+              {
+                "weight": 1,
+                "sequence": [
+                  {
+                    "randomize": [
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:goblin" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ramwolf" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:bloodshed" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:shroombit" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:hobgoblin" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:black_water" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:cursed_spells" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:phantas" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:riptide" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:rotscade" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:rootling" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:land_leech" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:blood_stained" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:giant_scorpion" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:morgue_man" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:cursed_armor" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:vile_zombie" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:vicious_spider" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:solar_warrior" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:dullahan" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:dreadman" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:ivywake" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:wood_crab" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:cannibal" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:stone_ram" ] }
+                      },
+                      {
+                        "weight": 85,
+                        "add": { "component_groups": [ "minecraft:black_ice" ] }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+	}
+  }
+}

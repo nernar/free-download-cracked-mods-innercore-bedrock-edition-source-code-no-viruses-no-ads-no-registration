@@ -1,0 +1,85 @@
+/*var RECIPE_FUNC_TRANSPORT_ENERGY = function(api, field, result){
+	var energy = 0;
+	for(var i in field){
+		if(!ChargeItemRegistry.isFlashStorage(field[i].id)){
+			energy += ChargeItemRegistry.getEnergyFrom(field[i], 10000000, 3, true);
+		}
+		api.decreaseFieldSlot(i);
+	}
+	ChargeItemRegistry.addEnergyTo(result, energy, energy, 3);
+};
+*/
+Recipes.addShaped({id: ItemID.coffeeworkshop$mixing_bowl, count: 1, data: 0}, [
+"x x",
+" a "
+], [ 'x', 265, 0, 'a',148 , 0]);
+
+Recipes.addShaped({id: ItemID.coffeeworkshop$dough, count: 1, data: 0}, [
+"ab",
+"cd"
+], [ 'a', ItemID.coffeeworkshop$mixing_bowl, 0, 'b',ItemID.coffeeworkshop$flour, 0,'c',325,8,'d',ItemID.coffeeworkshop$yeast,0],function(api, field, result){for(var i in field){
+		//if(field[i].id){
+			//energy += ChargeItemRegistry.getEnergyFrom(field[i], 10000000, 3, true);
+		//}
+		api.decreaseFieldSlot(i);
+	}
+   Player.addItemToInventory(ItemID.coffeeworkshop$mixing_bowl, 1);
+Player.addItemToInventory(325, 0);
+});
+
+Recipes.addShaped({id: ItemID.coffeeworkshop$yeast, count: 4, data: 0}, [
+"cc",
+"ab"
+], [ 'a', 353, 0, 'b',ItemID.coffeeworkshop$flour, 0,'c',39,0],function(api, field, result){for(var i in field){
+		//if(field[i].id){
+			//energy += ChargeItemRegistry.getEnergyFrom(field[i], 10000000, 3, true);
+		//}
+		api.decreaseFieldSlot(i);
+	}
+   Player.addItemToInventory(ItemID.coffeeworkshop$mixing_bowl, 1);
+//Player.addItemToInventory(325, 0);
+});
+
+Recipes.addShaped({id: ItemID.coffeeworkshop$Cheese, count: 1, data: 0}, [
+"ab",
+"c"
+], [ 'a', ItemID.coffeeworkshop$mixing_bowl, 0, 'b',ItemID.coffeeworkshop$yeast, 0,'c',325,1],function(api, field, result){for(var i in field){
+		//if(field[i].id){
+			//energy += ChargeItemRegistry.getEnergyFrom(field[i], 10000000, 3, true);
+		//}
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(ItemID.coffeeworkshop$mixing_bowl, 1);
+Player.addItemToInventory(325, 1);
+});
+
+Recipes.addShaped({id: ItemID.coffeeworkshop$Butter, count: 1, data: 0}, [
+"ab"
+], [ 'a', ItemID.coffeeworkshop$mixing_bowl, 0, 'b',ItemID.coffeeworkshop$cream_milk, 0],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(ItemID.coffeeworkshop$mixing_bowl, 1);
+//Player.addItemToInventory(325, 1);
+});
+
+Recipes.addShaped({id: ItemID.coffeeworkshop$muffin_chocolate_raw, count: 4, data: 0}, [
+"abc",
+"deb"
+], [ 'a', ItemID.coffeeworkshop$mixing_bowl, 0, 'b',344, 0,'c',353,0,'d',ItemID.coffeeworkshop$Butter,0,'e',ItemID.coffeeworkshop$Cocoapowder,0],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(ItemID.coffeeworkshop$mixing_bowl, 1);
+//Player.addItemToInventory(325, 1);
+});
+
+Recipes.addShaped({id: ItemID.coffeeworkshop$muffin_berry_raw, count: 4, data: 0}, [
+"abc",
+"def"
+], [ 'a', ItemID.coffeeworkshop$mixing_bowl, 0, 'b',ItemID.coffeeworkshop$flour, 0,'c',353,0,'d',ItemID.coffeeworkshop$Butter,0,'e',ItemID.coffeeworkshop$cream_berry,0,'f',344,0],function(api, field, result){for(var i in field){
+		api.decreaseFieldSlot(i);
+	}
+Player.addItemToInventory(ItemID.coffeeworkshop$mixing_bowl, 1);
+//Player.addItemToInventory(325, 1);
+});
+
+//??????????? 2018.10.26

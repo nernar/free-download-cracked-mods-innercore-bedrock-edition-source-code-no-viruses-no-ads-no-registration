@@ -1,0 +1,11 @@
+main.js
+fma_api.js
+blocks.js
+items.js
+tools.js
+worldgeneration.js
+machinery/grindstone.js
+machinery/template_creator.js
+machinery/kiln.js
+recipes.js
+armor.js

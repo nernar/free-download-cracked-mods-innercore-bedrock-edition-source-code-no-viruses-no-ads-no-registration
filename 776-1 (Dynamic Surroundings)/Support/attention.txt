@@ -1,0 +1,1 @@
+you can't delete the core inside the support folder because it contains all the sounds in it so you can't delete it

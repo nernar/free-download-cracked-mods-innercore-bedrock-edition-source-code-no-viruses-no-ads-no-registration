@@ -1,0 +1,32 @@
+{
+"pools": [
+{
+"rolls": 1,
+"entries": [
+{
+"type": "item",
+"name": "twilightforest:meefraw",
+"functions": [
+{ "function": "set_count", "count": { "min": 0, "max": 1 } },
+{ "function": "looting_enchant", "count": { "min": 0, "max": 3 } }
+]
+}
+]
+},
+/*此处做区域*/
+{
+"rolls": 1,
+"entries": [
+{
+"type": "item",
+"name": "twilightforest:meefraw",
+"functions": [
+{ "function": "set_count", "count": { "min": 0, "max": 1 } },
+{ "function": "looting_enchant", "count": { "min": 0, "max": 3 } }
+]
+}
+]
+}
+/*此处做销毁*/
+]
+}

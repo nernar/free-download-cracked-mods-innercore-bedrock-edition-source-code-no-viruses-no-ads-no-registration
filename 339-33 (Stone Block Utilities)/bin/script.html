@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<body> <script>
+ (function () {
+/*
+BUILD INFO:
+  dir: dev
+  target: main.js
+  files: 4
+*/
+
+
+
+// file: item.js
+
+IMPORT("ToolType"); 
+
+
+var Random = {
+    Float:function(min,max){
+        var result = ((Math.random()*max)+min);
+        return result;
+    },
+    Int:function(min,max){
+        var result = Math.round((Math.random()*max)+min);
+        return result;
+    }
+};
+
+
+IDRegistry.genItemID("stonepebble");
+Item.createItem("stonepebble", "камушек", {name: "stone_tablee", meta: 0}, {stack: 64});
+Recipes.addShaped({id: 4, count: 1, data: 0}, 
+["aao",
+ "aao",
+ "ooo"
+], ['a', ItemID.stonepebble, 0]);
+
+Block.setDestroyTime(1, 0.5); 
+Block.registerDropFunction(1, function (coords, id, data, diggingLevel) {
+if(diggingLevel == 0){return[[ItemID.stonepebble,
+Random.Int(1,3), 0]];}else{return;} 
+});
+Callback.addCallback("DestroyBlockStart", function(coords, block, player){
+if(Player.getCarriedItem ().id == 0 && (block.id == 1)){
+Block.setDestroyTime (block.id, 1); // new time
+}
+else if(block.id == 1){
+Block.setDestroyTime (block.id, 5); // default time
+}
+});
+
+
+IDRegistry.genItemID("stonehook");
+Item.createItem("stonehook", "каменный крюк", 
+{name: "stonehook", meta: 0}, 
+{stack: 1});
+Recipes.addShaped({id: ItemID.stonehook, count: 1, data: 0}, 
+["aao",
+ "aoo",
+ "aoo"
+], ['a', ItemID.stonestick, 0]);
+Item.setMaxDamage(ItemID.stonehook,200);
+ToolAPI.addToolMaterial("stone", {durability: 280, level: 3, efficiency: 5, damage: 3, enchantability: 14});
+ToolAPI.setTool(ItemID["stonehook"], "stone", ToolType.shovel);
+Callback.addCallback("DestroyBlock", function(c,id){
+    
+        var it = Player.getCarriedItem();
+        if(id.id==18&&
+            (Player.getCarriedItem().id==ItemID.stonehook)
+            ){
+        if(Math.random()*100<10
+                ){
+                    World.drop(c.x,c.y,c.z,6,1);    
+                }else if(
+                Math.random()*100<6
+                )
+                    World.drop(c.x,c.y,c.z,280,1);  
+                }else if(
+                Math.random()*100<5
+                ){
+                    World.drop(c.x,c.y,c.z,260,1);  
+                }
+         if(it.data>=Item.getMaxDamage(it.id)
+            ){
+                Player.setCarriedItem(0, 0, 0);
+            };
+        
+}); 
+
+
+IDRegistry.genItemID("stonehamme"); Item.createItem("stonehamme", "полностью каменный молот", 
+{name: "stonehamme", meta: 0}, 
+ {stack: 1});
+ Recipes.addShaped({id: ItemID.stonehamme, count: 1, data: 1}, 
+["oao",
+ "oba",
+ "boo"
+], ['a', 4, 0, 'b', ItemID.stonestick, 0]);    
+Item.setMaxDamage(ItemID.stonehamme, 475);      
+ToolAPI.setTool(ItemID.stonehamme, "stone", ToolType.shovel);       
+ToolAPI.setTool(ItemID.stonehamme, "stone", ToolType.pickaxe);
+Block.registerDropFunctionForID(1, function(coords, id, data, level){ 
+if(Player.getCarriedItem().id==ItemID.stonehamme||
+Player.getCarriedItem().id==ItemID.stonehammer||
+Player.getCarriedItem().id==ItemID.woodenhammer||
+Player.getCarriedItem().id==ItemID.ironhammer||
+Player.getCarriedItem().id==ItemID.goldhammer||
+Player.getCarriedItem().id==ItemID.diamondhammer||
+Player.getCarriedItem().id==ItemID.obsidianhammer
+){ 
+return [[4, 1, 0]]; 
+}else if(level == 0){ 
+return[[ItemID.stonepebble, Random.Int(1,4), 0]]; 
+}else{ 
+return [[id, 1, data]]; 
+} 
+});
+
+
+            
+         Block.registerDropFunctionForID(4, function(coords, id, data, level){ 
+            if(Player.getCarriedItem().id==ItemID.stonehamme){
+		     return [[13, 1, 0]];  }else if(level > 1){
+				 return [[id, 1, data]];
+				 } 
+				 });
+         Block.registerDropFunctionForID(13, function(coords, id, data, level){  
+		    if(Player.getCarriedItem().id==ItemID.stonehamme){
+			 return [[3, 1, 0]];  }else if(Math.random()*100<8){  return [[318,1,0]];  }else{
+			     return [[id, 1, data]];
+				 } 
+				 });
+         Block.registerDropFunctionForID(2, function(coords, id, data, level){  
+            if(Player.getCarriedItem().id==ItemID.stonehamme){
+	         return [[3, 1, 0]];  }else if(level > 1){
+				 return [[id, 1, data]];
+				 } 
+				 });
+       /*Block.registerDropFunctionForID(12, function(coords, id, data, level){
+	        if(Player.getCarriedItem().id==ItemID.stonehamme){
+			 return [[BlockID.dust, 1, 0]];  }else if(level > 1){
+				 return [[id, 1, data]];  }
+				 });*/
+
+
+
+
+
+
+// file: translation.js
+
+
+
+
+
+// file: workbench.js
+
+IMPORT("RecipeTileEntityLib");
+
+
+IDRegistry.genBlockID("craftingtable");
+Block.createBlockWithRotation("craftingtable", [{name: "каменный верстак", texture: [
+    ["craftbotton", 0], 
+    ["crafttop", 0], 
+    ["craftside", 0], 
+    ["craftfront", 0], 
+    ["craftside", 0], 
+    ["craftside", 0]
+], inCreative: true}], "opaque");
+ Recipes.addShaped({id: BlockID.craftingtable, count: 1, data: 0}, [
+  "aa",
+  "aa"],
+   ['a', 4, 0]);  
+   ToolAPI.registerBlockMaterial(BlockID.craftingtable, "stone");
+   
+   
+var craftingtable = new UI.StandartWindow({
+    standart: {
+        header: {text: {text: "craftingtable"}},
+        inventory: {standart:true},
+        background: {standart: true}
+    },
+    drawing: [{
+        type: "bitmap",
+        bitmap: "arrow",
+        x: 600,
+        y: 170, scale: 4
+    }],
+    elements:{
+        "inputSlot0":{x:350, y:80, type:"slot"},
+        "inputSlot1":{x:410, y:80, type:"slot"},
+        "inputSlot2":{x:470, y:80, type:"slot"},
+      /*  "inputSlot3":{x:530, y:80, type:"slot"},*/
+
+        "inputSlot4":{x:350, y:140, type:"slot"},
+        "inputSlot5":{x:410, y:140, type:"slot"},
+        "inputSlot6":{x:470, y:140, type:"slot"},
+      /*  "inputSlot7":{x:530, y:140, type:"slot"},*/
+
+        "inputSlot8":{x:350, y:200, type:"slot"},
+        "inputSlot9":{x:410, y:200, type:"slot"},
+        "inputSlot10":{x:470, y:200, type:"slot"},
+      /*  "inputSlot11":{x:530, y:200, type:"slot"},*/
+
+      /*  "inputSlot12":{x:350, y:260, type:"slot"},
+        "inputSlot13":{x:410, y:260, type:"slot"},
+        "inputSlot14":{x:470, y:260, type:"slot"},
+        "inputSlot15":{x:530, y:260, type:"slot"},*/
+
+        "outputSlot":{x:698, y:170, type:"slot", isValid:RecipeTE.outputSlotValid }
+    }
+});
+
+RecipeTE.registerGridCraftTable({
+    name:"craftingtable",
+    rows:3,
+    cols:3
+});
+
+TileEntity.registerPrototype(BlockID["craftingtable"], {
+    getGuiScreen: function(){
+        return craftingtable;
+    },
+    
+    tick:function(){
+        RecipeTE.getTickResipes("craftingtable", this);
+    }  
+});
+RecipeTE.addGridRecipe("craftingtable", {
+    id:280,
+    count:1
+	},
+[   "aa",
+    "aa"
+], {
+    a:{
+        id:5
+    }
+});
+
+RecipeTE.addGridRecipe("craftingtable", {
+    id: 281,
+    count: 1
+},
+[   "aaa",
+    "a a",
+    "aaa"
+], {
+    a: {
+        id: 1,
+        data:0
+    }
+});
+
+
+
+
+// file: miniworkbench.js
+
+var SBInventory = {
+    isEnabled: false,
+    container: new UI.Container(),
+    windowContainer: new UI.Container(),
+    buttonWindow: new UI.Window({
+        location: {
+            x: 5,
+            y: 185,
+            width: 50,
+            height: 50
+        },
+        drawing:[
+            {type: "background", color: 0}
+        ],
+        elements:{
+            "fuckButton":{type: "button", scale: 34, bitmap: "knopka", clicker:{onClick:function(){
+                SBInventory.windowContainer.openAs(SBInventory.Window);
+            }}}
+        }
+    }), 
+    Window: new UI.StandartWindow({
+        standart:{
+            header:{
+                text: {text: "sb"}
+            },
+            backgroud:{
+                standart: true
+            },
+            inventory:{
+                standart: true
+            }
+        },
+        elements:{
+            "inputSlot0":{type: "slot", x: 512, y: 150, size: 50},
+            "inputSlot1":{type: "slot", x: 572, y: 150, size: 50},
+            "inputSlot2":{type: "slot", x: 512, y: 210, size: 50},
+            "inputSlot3":{type: "slot", x: 572, y: 210, size: 50},
+            "outputSlot":{type: "slot", x: 632, y: 180, size: 50, isValid:RecipeTE.outputSlotValid}
+        } 
+    }),
+    open:function(){
+        if(!this.isEnabled){
+            this.container.openAs(this.buttonWindow);
+            this.isEnabled = true;
+        }
+    },
+    close:function(){
+        if(this.isEnabled){
+            this.container.close();
+            this.isEnabled = false;
+        }
+    }
+};
+
+SBInventory.buttonWindow.setAsGameOverlay(true);
+
+Callback.addCallback("NativeGuiChanged", function (screenName) {
+    if(screenName == "survival_inventory_screen") {
+        SBInventory.open();
+    }else if(SBInventory.isEnabled){
+        SBInventory.close();
+    }
+});
+
+
+
+
+
+})();alert('$$$FINISHED$$$');
+</script> </body>

@@ -1,0 +1,103 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+  "ambient.underwater": {
+    "category": "ambient",
+    "sounds": [
+      "sounds/ambient/underwater/bubbles/bubbles1",
+      "sounds/ambient/underwater/bubbles/bubbles2",
+      "sounds/ambient/underwater/bubbles/bubbles3",
+      "sounds/ambient/underwater/bubbles/bubbles4",
+      "sounds/ambient/underwater/bubbles/bubbles5",
+      "sounds/ambient/underwater/bubbles/bubbles6"
+    ]
+  },
+    "ui.challenge_complete": {
+    "category": "ui",
+    "sounds": [
+     {
+        "name": "sounds/ui/toast/challenge_complete",
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "ui.toast.in": {
+    "category": "ui",
+    "sounds": [
+     {
+        "name": "sounds/ui/toast/in",
+        "load_on_low_memory": false
+      }
+    ]
+  },
+  "ui.toast.out": {
+    "category": "ui",
+    "sounds": [
+     {
+        "name": "sounds/ui/toast/out",
+        "load_on_low_memory": false
+      }
+    ]
+  },
+  "mob.duck.hurt": {
+	 "category": "neutral",
+    "sounds": [
+      "sounds/mob/duck/hurt0",
+      "sounds/mob/duck/hurt1"
+    ]
+  },
+  "mob.duck.idle": {
+	 "category": "neutral",
+    "sounds": [
+      "sounds/mob/duck/idle0",
+      "sounds/mob/duck/idle1",
+      "sounds/mob/duck/idle2"
+    ]
+  },
+  "mob.duck.plop": {
+	 "category": "neutral",
+    "sounds": [
+      "sounds/mob/duck/plop"
+    ]
+  },
+  "mob.frog.idle": {
+	 "category": "neutral",
+    "sounds": [
+      "sounds/mob/frog/idle1",
+      "sounds/mob/frog/idle2",
+      "sounds/mob/frog/idle3",
+      "sounds/mob/frog/idle4"
+    ]
+  },
+  "mob.frog.hurt": {
+	 "category": "neutral",
+    "sounds": [
+      "sounds/mob/frog/hurt1",
+      "sounds/mob/frog/hurt2",
+      "sounds/mob/frog/hurt3",
+      "sounds/mob/frog/hurt4"
+    ]
+  },
+  "mob.frog.death": {
+	 "category": "neutral",
+    "sounds": [
+      "sounds/mob/frog/death"
+    ]
+  },
+  "mob.dragonfly.ambient": {
+	 "category": "neutral",
+    "sounds": [
+      "sounds/mob/dragonfly/ambient"
+      ]
+    },
+    "scoria.ambient": {
+      "category": "block",
+      "sounds": [
+       "sounds/block/scoria/ambient"
+      ]
+    }
+  }
+}

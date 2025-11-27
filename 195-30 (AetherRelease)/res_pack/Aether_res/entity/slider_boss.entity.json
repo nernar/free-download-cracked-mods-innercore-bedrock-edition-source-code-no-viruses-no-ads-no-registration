@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aether:slider_boss",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/slider/slider_asleep"
+      }, 
+      "geometry": {
+        "default": "geometry.slider"
+      }, 
+      "render_controllers": [ "controller.render.base" ],
+       "spawn_egg": {
+        "overlay_color": "#750130",
+        "base_color": "#255250205"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "raigen:corrupt_villager_projectile",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.2,
+        "height": 0.2
+      },
+      "minecraft:projectile": {
+        "onHit": {
+          "impact_damage": {
+            "damage": 5
+          },
+          "remove_on_hit": {
+          },
+          "particle_on_hit": {
+            "particle_type": "evaporation",
+            "on_other_hit": true
+          }
+        },
+        "hitSound": "random.glass",
+        "destroyOnHurt": true,
+        "power": 1.5,
+        "gravity": 0.0,
+        "uncertaintyBase": 16,
+        "uncertaintyMultiplier": 4,
+        "anchor": 1,
+        "offset": [ 0, 0, 0 ]
+      },
+      "minecraft:physics": {
+        "has_collision": false
+      }
+    }
+  }
+}

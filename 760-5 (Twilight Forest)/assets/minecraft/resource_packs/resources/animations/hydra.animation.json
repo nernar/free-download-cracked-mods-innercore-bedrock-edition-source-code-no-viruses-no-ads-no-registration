@@ -1,0 +1,63 @@
+{
+"format_version": "1.8.0",
+"animations": {
+"animation.hydra.general": {
+"loop": true,
+"bones": {
+"headx" : {
+"rotation" : [ "query.head_x_rotation(0) - this", "query.head_y_rotation(0) - this", "-this" ]
+},
+"heady" : {
+"rotation" : [ "query.head_x_rotation(0) - this", "query.head_y_rotation(0) - this", "-this" ]
+},
+"headz" : {
+"rotation" : [ "query.head_x_rotation(0) - this", "query.head_y_rotation(0) - this", "-this" ]
+},
+"leg1": {
+"rotation": ["variable.tcos1 * 1.4", 0, 0]
+},
+"leg2": {
+"rotation": ["variable.tcos0 * 1.4", 0, 0]
+}
+}
+},
+"animation.hydra.action": {
+"loop": true,
+"bones": {
+"jaw2": {
+"rotation": {
+"0.0": [0, 0, 0],
+"0.3": [5, 0, 0],
+"0.6": [10, 0, 0],
+"0.9": [15, 0, 0],
+"1.2": [20, 0, 0],
+"1.5": [25, 0, 0],
+"1.8": [30, 0, 0]
+}
+},
+"jaw4": {
+"rotation": {
+"0.0": [0, 0, 0],
+"0.3": [5, 0, 0],
+"0.6": [10, 0, 0],
+"0.9": [15, 0, 0],
+"1.2": [20, 0, 0],
+"1.5": [25, 0, 0],
+"1.8": [30, 0, 0]
+}
+},
+"jaw8": {
+"rotation": {
+"0.0": [0, 0, 0],
+"0.3": [5, 0, 0],
+"0.6": [10, 0, 0],
+"0.9": [15, 0, 0],
+"1.2": [20, 0, 0],
+"1.5": [25, 0, 0],
+"1.8": [30, 0, 0]
+}
+}
+}
+}
+}
+}

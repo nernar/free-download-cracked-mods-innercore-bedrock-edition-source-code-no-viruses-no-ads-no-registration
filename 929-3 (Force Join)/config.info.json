@@ -1,0 +1,32 @@
+{
+	"description": {
+		"en": "Here you can find all settings for this modification.",
+		"ru": "Тут можно найти все настройки этой модификации."
+	},
+
+	"properties": {
+		"enabled": {
+			"name": {
+				"en": "Launch",
+				"ru": "Запуск"
+			},
+			"description": {
+				"en": "Changes launch state of modification; if disabled, mod willn't be launched.",
+				"ru": "Меняет состояния запускаемости мода, если отключено - мод запущен не будет."
+			},
+			"index": 0
+		},
+
+		"override_pack": {
+			"name": {
+				"en": "Adjust pack version as well",
+				"ru": "Перезаписывать еще и версию пака"
+			},
+			"description": {
+				"en": "If pack version does not matches server one, it will be re-sent along with list of mods.",
+				"ru": "Если версия пака не совпадает с серверной, она будет переотправлена как и список модов."
+			},
+			"index": 1
+		}
+	}
+}

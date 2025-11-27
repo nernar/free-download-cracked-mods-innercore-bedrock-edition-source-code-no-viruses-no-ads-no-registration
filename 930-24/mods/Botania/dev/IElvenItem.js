@@ -1,0 +1,2 @@
+let IElvenItem = new Interface();
+

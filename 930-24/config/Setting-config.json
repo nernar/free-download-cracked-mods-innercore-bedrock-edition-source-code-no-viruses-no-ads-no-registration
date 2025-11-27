@@ -1,0 +1,16 @@
+{
+  "enabled":true,
+  "blocks_per_tick":0,
+  "window_transparent":1,
+  "window_dynamic":true,
+  "window_length":0.33999999999999997,
+  "hints_via_overlay":false,
+  "operation_direction":2,
+  "cover_opaque_blocks":true,
+  "beautify_json":true,
+  "place_air_before_paste":false,
+  "cover_transparent_blocks":false,
+  "integrity":1,
+  "remote_connections":true,
+  "operator_required":true
+}

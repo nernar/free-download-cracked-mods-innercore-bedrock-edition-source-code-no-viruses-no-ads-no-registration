@@ -1,0 +1,39 @@
+{
+"format_version": "1.10.0",
+"minecraft:client_entity": {
+"description": {
+"identifier": "twilightforest:bighorn_sheep",
+"materials": { 
+"default": "bighornsheep",
+"righthorn": "bighorn",
+"lefthorn": "bighorn"
+},
+"geometry": {
+"default": "geometry.bighornsheep",
+"sheared": "geometry.bighornsheep.sheared"
+},
+"textures": {
+"default": "textures/model/bighorn"
+},
+"particle_emitters": {
+"flame": "animation.blaze.flame"
+},
+"spawn_egg": {
+"texture": "egg_bighornsheep"
+},
+"animations": {
+"baby_transform": "animation.bighornsheep.baby_transform",
+"look_at_target": "animation.common.look_at_target",
+"move": "controller.animation.bighornsheep.move",
+"grazing": "animation.bighornsheep.grazing",
+"setup": "animation.bighornsheep.setup",
+"walk": "animation.quadruped.walk"
+},
+"scripts": {
+"animate": [ "setup", "look_at_target", "move", { "baby_transform": "query.is_baby" } ]
+},
+"render_controllers": [ "controller.render.bighornsheep" ]
+}
+}
+}
+

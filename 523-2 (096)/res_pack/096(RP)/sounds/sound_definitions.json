@@ -1,0 +1,46 @@
+{
+  "mob.scp096.idle": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/scp096/idle1",
+      "sounds/mob/scp096/idle2",
+      "sounds/mob/scp096/idle3",
+      "sounds/mob/scp096/idle4"
+    ]
+  },
+  "big.step": {
+    "category": "neutral",
+	"max_distance": 100.0,
+    "sounds": [
+      "sounds/mob/scp096/step1",
+	  "sounds/mob/scp096/step2",
+	  "sounds/mob/scp096/step3"
+    ]
+  },
+  "mob.scp096.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/scp096/hurt1",
+      "sounds/mob/scp096/hurt2"
+      
+    ]
+  },
+   "mob.scp096.death": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/mob/scp096/death"
+
+    ]
+  },
+  "mob.scp096.rage": {
+    "category": "hostile",
+    "min_distance": 100.0,
+    "sounds": [
+      {
+        "name": "sounds/mob/scp096/rage",
+        "volume": 0.75
+      
+      }
+    ]
+  }
+}

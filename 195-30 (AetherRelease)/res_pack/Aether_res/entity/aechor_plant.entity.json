@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aether:aechor_plant",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/aechor_plant/aechor_plant"
+      }, 
+      "geometry": {
+        "default": "geometry.aechor"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.aechor.idle"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.aechor.idle" }  
+      ],
+      "render_controllers": [ "controller.render.base" ],
+       "spawn_egg": {
+        "overlay_color": "#750130",
+        "base_color": "#255250205"
+      }
+    }
+  }
+}

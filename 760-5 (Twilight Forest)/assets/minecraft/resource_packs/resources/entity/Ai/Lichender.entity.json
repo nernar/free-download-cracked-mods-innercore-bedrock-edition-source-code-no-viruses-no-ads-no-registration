@@ -1,0 +1,22 @@
+{
+"format_version": "1.8.0",
+"minecraft:client_entity": {
+"description": {
+"identifier": "twilightforest:lich_ender",
+"materials": {
+"default": "projectile"
+},
+"geometry": {
+"default": "geometry.projectile"
+},
+"textures": {
+"default": "textures/items/ender_pearl"
+},
+"scripts": {
+"scale": "1.0"
+},
+"render_controllers": [ "controller.render.projectile" ]
+}
+/*此处做销毁*/
+}
+}

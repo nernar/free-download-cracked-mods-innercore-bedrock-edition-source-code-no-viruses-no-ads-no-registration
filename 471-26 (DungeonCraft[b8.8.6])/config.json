@@ -1,0 +1,13 @@
+{
+  "enabled":true,
+  "debug":{
+    "enabled":false,
+    "command":false
+  },
+  "game":{
+    "particles":true,
+    "particlesCount":100,
+    "tickUpdate":5,
+    "radius":40
+  }
+}

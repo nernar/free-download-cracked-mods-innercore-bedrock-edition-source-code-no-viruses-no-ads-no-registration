@@ -1,0 +1,47 @@
+const translate = function (str) {
+    var args = Array.prototype.slice.call(arguments);
+    args.shift();
+    if (typeof args[0] == "object") {
+        args = args[0];
+    }
+    str = java.lang.String(Translation.translate(str));
+    return args ? java.lang.String.format(str, args) : str;
+};
+Translation.addTranslation("WARNING!", {ru: "\u0412\u041d\u0418\u041c\u0410\u041d\u0418\u0415!"});
+Translation.addTranslation("This game contains flashing lights, loud\nnoises, and lots of jumscares!", {ru: "\u042d\u0442\u0430 \u0438\u0433\u0440\u0430 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u0442 \u043c\u0438\u0433\u0430\u044e\u0449\u0438\u0439 \u0441\u0432\u0435\u0442, \u0433\u0440\u043e\u043c\u043a\u0438\u0435\n\u0437\u0432\u0443\u043a\u0438 \u0438 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u043e \u0441\u043a\u0440\u0438\u043c\u0435\u0440\u043e\u0432!"});
+Translation.addTranslation("Contact developer, if you have\ncompress world safety!", {ru: "\u041d\u0430\u043f\u0438\u0448\u0438 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0443, \u0435\u0441\u043b\u0438 \u0442\u044b\n\u0445\u043e\u0447\u0435\u0448\u044c \u0441\u0436\u0430\u0442\u044c \u043c\u0438\u0440 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e."});
+Translation.addTranslation("It's a time for create the best\ncontent, users are waiting!", {ru: "\u041f\u0440\u0438\u0448\u043b\u043e \u0432\u0440\u0435\u043c\u044f \u0434\u043b\u044f \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u044f \u043b\u0443\u0447\u0448\u0435\u0433\u043e\n\u043a\u043e\u043d\u0442\u0435\u043d\u0442\u0430, \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0438 \u0436\u0434\u0443\u0442!"});
+Translation.addTranslation("Thanks for playing the preview!", {ru: "\u0421\u043f\u0430\u0441\u0438\u0431\u043e \u0437\u0430 \u0438\u0433\u0440\u0443 \u0432 \u0430\u043d\u043e\u043d\u0441!"});
+Translation.addTranslation("Preview completed, progress has been saved.\nWait the release, they add 5-day experience\nplus two unlockable modes of gameplay!\n\nFreddy and his friends are waiting!", {ru: "\u0410\u043d\u043e\u043d\u0441 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d, \u043f\u0440\u043e\u0433\u0440\u0435\u0441\u0441 \u0431\u044b\u043b \u0441\u043e\u0445\u0440\u0430\u043d\u0435\u043d.\n\u041e\u0436\u0438\u0434\u0430\u0439\u0442\u0435 \u0440\u0435\u043b\u0438\u0437\u0430, \u043e\u043d \u0434\u043e\u0431\u0430\u0432\u0438\u0442 5-\u0434\u043d\u0435\u0432\u043d\u043e\u0435 \u0432\u043f\u0435\u0447\u0430\u0442\u043b\u0435\u043d\u0438\u0435,\n\u0430 \u0442\u0430\u043a\u0436\u0435 \u0434\u0432\u0430 \u043e\u0442\u043a\u0440\u044b\u0432\u0430\u0435\u043c\u044b\u0445 \u0440\u0435\u0436\u0438\u043c\u0430 \u0438\u0433\u0440\u044b!\n\n\u0424\u0440\u0435\u0434\u0434\u0438 \u0438 \u0435\u0433\u043e \u0434\u0440\u0443\u0437\u044c\u044f \u0436\u0434\u0443\u0442!"});
+Translation.addTranslation("Five Nights at Freddy's", {ru: "\u041f\u044f\u0442\u044c \u041d\u043e\u0447\u0435\u0439 \u0441 \u0424\u0440\u0435\u0434\u0434\u0438"});
+Translation.addTranslation("New Game", {ru: "\u041d\u043e\u0432\u0430\u044f \u0438\u0433\u0440\u0430"});
+Translation.addTranslation("Continue", {ru: "\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0438\u0442\u044c"});
+Translation.addTranslation("Custom Night", {ru: "\u0421\u0432\u043e\u044f \u043d\u043e\u0447\u044c"});
+Translation.addTranslation("Lives", {ru: "\u0416\u0438\u0437\u043d\u0438"});
+Translation.addTranslation("%s AM", {ru: "%s AM"});
+Translation.addTranslation("12:00 AM", {ru: "12:00 AM"});
+Translation.addTranslation("1st Night", {ru: "1\u0430\u044f \u041d\u043e\u0447\u044c"});
+Translation.addTranslation("2nd Night", {ru: "2\u0430\u044f \u041d\u043e\u0447\u044c"});
+Translation.addTranslation("3rd Night", {ru: "3\u044c\u044f \u041d\u043e\u0447\u044c"});
+Translation.addTranslation("4th Night", {ru: "4\u0430\u044f \u041d\u043e\u0447\u044c"});
+Translation.addTranslation("5th Night", {ru: "5\u0430\u044f \u041d\u043e\u0447\u044c"});
+Translation.addTranslation("6th Night", {ru: "6\u0430\u044f \u041d\u043e\u0447\u044c"});
+Translation.addTranslation("7th Night", {ru: "7\u0430\u044f \u041d\u043e\u0447\u044c"});
+Translation.addTranslation("Night %s", {ru: "\u041d\u043e\u0447\u044c %s"});
+Translation.addTranslation("Power left: %s", {ru: "\u041e\u0441\u0442\u0430\u043b\u043e\u0441\u044c: %s"});
+Translation.addTranslation("Usage: %s", {ru: "\u0417\u0430\u0442\u0440\u0430\u0442\u044b: %s"});
+Translation.addTranslation("- SIGNAL LOST -", {ru: "- \u0421\u0418\u0413\u041d\u0410\u041b \u041f\u041e\u0422\u0415\u0420\u042f\u041d -"});
+Translation.addTranslation("- CAMERA DISABLED -\nAUDIO ONLY", {ru: "- \u041a\u0410\u041c\u0415\u0420\u0410 \u041e\u0422\u041a\u041b\u042e\u0427\u0415\u041d\u0410 -\n\u0422\u041e\u041b\u042c\u041a\u041e \u0417\u0412\u0423\u041a"});
+Translation.addTranslation("Show Stage", {ru: "\u0421\u0446\u0435\u043d\u0430"});
+Translation.addTranslation("Dining Area", {ru: "\u0421\u0442\u043e\u043b\u043e\u0432\u0430\u044f"});
+Translation.addTranslation("Pirate Cove", {ru: "\u041f\u0438\u0440\u0430\u0442\u0441\u043a\u0430\u044f \u0431\u0443\u0445\u0442\u0430"});
+Translation.addTranslation("West Hall", {ru: "\u0417\u0430\u043f\u0430\u0434\u043d\u044b\u0439 \u0437\u0430\u043b"});
+Translation.addTranslation("W. Hall Corner", {ru: "\u0423\u0433\u043e\u043b \u0417. \u0437\u0430\u043b\u0430"});
+Translation.addTranslation("Supply Closet", {ru: "\u041a\u043b\u0430\u0434\u043e\u0432\u0430\u044f"});
+Translation.addTranslation("East Hall", {ru: "\u0412\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0439 \u0437\u0430\u043b"});
+Translation.addTranslation("E. Hall Corner", {ru: "\u0423\u0433\u043e\u043b \u0412. \u0437\u0430\u043b\u0430"});
+Translation.addTranslation("Backstage", {ru: "\u041c\u0430\u0441\u0442\u0435\u0440\u0441\u043a\u0430\u044f"});
+Translation.addTranslation("Kitchen", {ru: "\u041a\u0443\u0445\u043d\u044f"});
+Translation.addTranslation("Restrooms", {ru: "\u0423\u0431\u043e\u0440\u043d\u044b\u0435"});
+Translation.addTranslation("Game Over", {ru: "\u0418\u0433\u0440\u0430 \u043e\u043a\u043e\u043d\u0447\u0435\u043d\u0430"});
+

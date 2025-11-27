@@ -1,0 +1,15 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_mix": {
+    "description": {
+      "identifier": "bioplentia:brew_water_frog_foot_recipe"
+    },
+    "tags": [ "brewing_stand" ],
+    "input": "minecraft:potion_type:water",
+    "reagent": "bioplentia:frog_foot",
+    "output": "minecraft:potion_type:poison"
+  }
+}

@@ -1,0 +1,43 @@
+ {
+    "properties": {
+        "enabled": {
+            "name": {
+                "en": "«Enable space adventure»",
+                "ru": "«Включить модификацию»"
+            }
+          },
+          "GrassTopping": {
+            "name": {
+                "en": "«The growth of alien grass»",
+                "ru": "«Рост инопланетной травы»"
+            },
+                 "description": {
+                "en": "If enabled, grass can grow on Vic A 2 - Tantros",
+                "ru": "Если включена эта функция,то на Vic A 2 - Tantros из небольшой травы начинает вырастать большая."
+            }
+          },
+              "Экипировка.coords": {
+              	"name": {
+              		"en":"Equipment coords",
+              		"ru":"Координаты смещения космического оборудования по x"
+              		
+              	},
+      "description": {
+        "en": "Shifts the interface for oxygen equipment by x to the left or right",
+        "ru": "Смещает интерфейс для кислородного оборудования по координате x влево или вправо."
+      },
+      "type": "SeekBar",
+      "min": 10,
+      "max": 1500 
+    }
+     /*"Экипировка.twocoords": {
+      "description": {
+        "en": "The second x coordinate for the interface offset.",
+        "ru": "Вторая дополнительная координата x для смещения интерфейса для космического оборудования."
+      },
+      "type": "SeekBar",
+      "min": 0.0,
+      "max": 25
+    }*/}}
+ 
+    

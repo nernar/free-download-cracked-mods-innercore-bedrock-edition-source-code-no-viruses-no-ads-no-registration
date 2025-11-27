@@ -1,0 +1,13 @@
+config.js
+header.js
+localization.js
+
+api/debug.js
+api/base.js
+api/ores.js
+api/generation.js
+
+common/ores.js
+
+integration/IndustrialCraft.js
+integration/Forestry.js

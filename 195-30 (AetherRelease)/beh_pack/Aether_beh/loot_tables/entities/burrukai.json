@@ -1,0 +1,35 @@
+{
+"pools": [
+{
+"rolls": 2,
+"entries": [
+{
+"type": "item",
+"name": "minecraft:item_burrukai_skin",
+"functions": [
+{
+"function": "set_count",
+"count": {
+"min": 2,
+"max": 4
+}
+}
+]
+},
+{
+"type": "item",
+"name": "minecraft:item_burrukai_ribs",
+"functions": [
+{
+"function": "set_count",
+"count": {
+"min": 1,
+"max": 3
+}
+}
+]
+}
+]
+}
+]
+}

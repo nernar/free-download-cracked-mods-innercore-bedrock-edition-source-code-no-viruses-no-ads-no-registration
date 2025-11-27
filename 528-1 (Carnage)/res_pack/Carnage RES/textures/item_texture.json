@@ -1,0 +1,196 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "spawn_egg": {
+      "textures": [
+        "textures/items/egg_chicken",
+        "textures/items/egg_cow",
+        "textures/items/egg_pig",
+        "textures/items/egg_sheep",
+        "textures/items/egg_wolf",
+        "textures/items/egg_mushroomcow",
+        "textures/items/egg_creeper",
+        "textures/items/egg_enderman",
+        "textures/items/egg_silverfish",
+        "textures/items/egg_skeleton",
+        "textures/items/egg_slime",
+        "textures/items/egg_spider",
+        "textures/items/egg_zombie",
+        "textures/items/egg_pigzombie",
+        "textures/items/egg_villager",
+        "textures/items/egg_squid",
+        "textures/items/egg_ocelot",
+        "textures/items/egg_witch",
+        "textures/items/egg_bat",
+        "textures/items/egg_ghast",
+        "textures/items/egg_lava_slime",
+        "textures/items/egg_blaze",
+        "textures/items/egg_cave_spider",
+        "textures/items/egg_horse",
+        "textures/items/egg_rabbit",
+        "textures/items/egg_endermite",
+        "textures/items/egg_guardian",
+        "textures/items/egg_stray",
+        "textures/items/egg_husk",
+        "textures/items/egg_wither",
+        "textures/items/egg_donkey",
+        "textures/items/egg_mule",
+        "textures/items/egg_skeletonhorse",
+        "textures/items/egg_zombiehorse",
+        "textures/items/egg_shulker",
+        "textures/items/egg_npc",
+        "textures/items/egg_elderguardian",
+        "textures/items/egg_polarbear",
+        "textures/items/egg_llama",
+        "textures/items/egg_vindicator",
+        "textures/items/egg_evoker",
+        "textures/items/egg_vex",
+        "textures/items/egg_zombievillager",
+        "textures/items/egg_parrot",
+        "textures/items/egg_clownfish",
+        "textures/items/egg_cod",
+        "textures/items/egg_pufferfish",
+        "textures/items/egg_salmon",
+        "textures/items/egg_drowned",
+        "textures/items/egg_dolphin",
+        "textures/items/egg_turtle",
+        "textures/items/egg_phantom",
+        "textures/items/egg_agent",
+        "textures/items/egg_cat",
+        "textures/items/egg_panda",
+        "textures/items/egg_null",
+        "textures/items/egg_mask",
+		
+        "textures/level_1_10/spawn/goblin", //57
+        "textures/level_1_10/spawn/shroombit",//58
+        "textures/level_1_10/spawn/wraith", //59
+        "textures/level_1_10/spawn/ramwolf", //60
+        "textures/level_1_10/spawn/bloodshed", //61
+        "textures/level_1_10/spawn/black_slime", //62
+        "textures/level_1_10/spawn/blood_slime", //63
+        "textures/level_1_10/spawn/crawler", //64
+        "textures/level_1_10/spawn/hobgoblin", //65
+        "textures/level_1_10/spawn/vained_time", //66
+		
+        "textures/level_11_20/spawn/noir", //67
+        "textures/level_11_20/spawn/cursed_spell", //68
+        "textures/level_11_20/spawn/riptide", //69
+        "textures/level_11_20/spawn/black_water", //70
+        "textures/level_11_20/spawn/rotscade", //71
+        "textures/level_11_20/spawn/dead_vele", //72
+        "textures/level_11_20/spawn/parakyte", //73
+        "textures/level_11_20/spawn/phantas", //74
+        "textures/level_11_20/spawn/gargoyle", //75
+        "textures/level_11_20/spawn/hivale", //76
+		
+        "textures/level_21_30/spawn/dead_adventurers", //77
+        "textures/level_21_30/spawn/spitter", //78
+        "textures/level_21_30/spawn/hollow_ent", //79
+        "textures/level_21_30/spawn/rotten_pumpkin", //80
+        "textures/level_21_30/spawn/black_snowman", //81
+        "textures/level_21_30/spawn/shadow", //82
+        "textures/level_21_30/spawn/undead_livestock", //83
+        "textures/level_21_30/spawn/molt_zlato", //84
+        "textures/level_21_30/spawn/solid_slime", //85
+        "textures/level_21_30/spawn/goblin_champion", //86
+		
+        "textures/level_31_40/spawn/blood_stained", //87
+        "textures/level_31_40/spawn/land_leech", //88
+        "textures/level_31_40/spawn/fire_maiden", //89
+        "textures/level_31_40/spawn/fly_dragon", //90
+        "textures/level_31_40/spawn/morgue_man", //91
+        "textures/level_31_40/spawn/biserpent", //92
+        "textures/level_31_40/spawn/rootling", //93
+        "textures/level_31_40/spawn/lunarid", //94
+        "textures/level_31_40/spawn/giant_scorpion", //95
+        "textures/level_31_40/spawn/moth_mother", //96
+		
+        "textures/level_41_50/spawn/moving_fungi", //97
+        "textures/level_41_50/spawn/shellbit", //98
+        "textures/level_41_50/spawn/terra_terror", //99
+        "textures/level_41_50/spawn/shroombie", //100
+        "textures/level_41_50/spawn/white_lady", //101
+        "textures/level_41_50/spawn/dusty_paladin", //102
+        "textures/level_41_50/spawn/shulker_warrior", //103
+        "textures/level_41_50/spawn/cursed_armor", //104
+        "textures/level_41_50/spawn/vile_zombie", //105
+        "textures/level_41_50/spawn/blitzir", //106
+		
+        "textures/level_51_60/spawn/bloody_zombie", //107
+        "textures/level_51_60/spawn/corrupt_villager", //108.
+        "textures/level_51_60/spawn/solar_warrior", //109
+        "textures/level_51_60/spawn/dune_maiden", //110
+        "textures/level_51_60/spawn/reverse_body", //111
+        "textures/level_51_60/spawn/vicious_spider", //112
+        "textures/level_51_60/spawn/bone_eater", //113
+        "textures/level_51_60/spawn/land_shark", //114
+        "textures/level_51_60/spawn/scarecrow", //115
+        "textures/level_51_60/spawn/grimstone_golem", //116
+		
+        "textures/level_61_70/spawn/graveraiser", //117
+        "textures/level_61_70/spawn/dullahan", //118
+        "textures/level_61_70/spawn/deadhound", //119
+        "textures/level_61_70/spawn/ivywake", //120
+        "textures/level_61_70/spawn/shadow_maiden", //121
+        "textures/level_61_70/spawn/brutal_zombie", //122
+        "textures/level_61_70/spawn/cruel_slime", //123
+        "textures/level_61_70/spawn/dreadman", //124
+        "textures/level_61_70/spawn/irican", //125
+        "textures/level_61_70/spawn/gravitite", //126
+		
+        "textures/level_71_80/spawn/wood_crab", //127
+        "textures/level_71_80/spawn/moving_poison", //128
+        "textures/level_71_80/spawn/bird_brain", //129
+        "textures/level_71_80/spawn/headless_chicken", //130
+        "textures/level_71_80/spawn/headless_horse", //131
+        "textures/level_71_80/spawn/minotaur", //132
+        "textures/level_71_80/spawn/skinless_hand", //133
+        "textures/level_71_80/spawn/stone_warrior", //134
+        "textures/level_71_80/spawn/inferno", //135
+        "textures/level_71_80/spawn/wyvern_warrior", //136
+		
+        "textures/level_81_90/spawn/cannibal", //137
+        "textures/level_81_90/spawn/vanta_ray", //138
+        "textures/level_81_90/spawn/stud_bark", //139
+        "textures/level_81_90/spawn/grass_chomper", //140
+        "textures/level_81_90/spawn/tetrapede", //141
+        "textures/level_81_90/spawn/sentient_mucus", //142
+        "textures/level_81_90/spawn/iriditite", //143
+        "textures/level_81_90/spawn/stone_ram", //144
+        "textures/level_81_90/spawn/trauerr", //145
+        "textures/level_81_90/spawn/dragon_hearted", //146
+        "textures/level_81_90/spawn/maximum_dragon", //147
+		
+        "textures/level_91_100/spawn/skeleton_child", //148
+        "textures/level_91_100/spawn/undead_barbarian", //149
+        "textures/level_91_100/spawn/shadow_ghast", //150
+        "textures/level_91_100/spawn/fertile_spider", //151
+        "textures/level_91_100/spawn/bender", //152
+        "textures/level_91_100/spawn/mother_crawler", //153
+        "textures/level_91_100/spawn/corpse_crawler", //154
+        "textures/level_91_100/spawn/black_ice", //155
+        "textures/level_91_100/spawn/mag_i", //156
+        "textures/level_91_100/spawn/fate_master", //157
+		
+        "textures/map/blocks/spawn/slab_combination", //158
+        "textures/map/npc/spawn/npc_male", //159
+        "textures/map/npc/spawn/npc_female", //160
+        "textures/map/npc/spawn/npc_male_child", //161
+        "textures/map/npc/spawn/npc_female_child", //162
+        "textures/map/npc/spawn/guard", //163
+        "textures/map/decor/spawn/statue", //164
+        "textures/map/decor/spawn/horse_wagon", //165
+        "textures/map/decor/spawn/burner", //166
+		
+        "textures/weapons/spawn/time_charge", //167
+        "textures/weapons/spawn/crimson_staff", //168
+        "textures/weapons/spawn/astral_axe", //169
+        "textures/weapons/spawn/tempest_wand", //170
+		
+        "textures/map/decor/spawn/tentacle", //171
+        "textures/map/decor/spawn/blitzir_ring" //172
+      ]
+    }
+  }
+}

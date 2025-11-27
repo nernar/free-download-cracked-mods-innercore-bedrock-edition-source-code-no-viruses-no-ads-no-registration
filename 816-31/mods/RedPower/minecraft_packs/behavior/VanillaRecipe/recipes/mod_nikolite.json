@@ -1,0 +1,20 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "vanilla_recipe:nikolite"
+		},
+		"ingredients": [
+			{
+				"item": "minecraft:block_block_nikolite"
+			}
+		],
+		"result": {
+			"item": "minecraft:item_nikolite",
+			"count": 9
+		},
+		"tags": [
+			"crafting_table"
+		]
+	}
+}

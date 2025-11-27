@@ -1,0 +1,31 @@
+ShootLib.addGun({
+    id:"m9",
+    name:"M9",
+    ammo:"ammohandgun",
+    accuracy:6,
+    recoil:4,
+    rate:10,
+    texture:{
+        name:"m9",
+        meta:0
+    },
+    shotType:ShotType.NORMAL,
+    buttonType:ButtonType.CLICK,
+    bullet:{
+        speed:10,
+        count:15,
+        damage:5
+    },
+    fov:{
+        level:2
+    },
+    sounds:{
+        shot:"m9/shot.ogg",
+        empty:"EmptyGun.mp3",
+        reload:"pm/reload.ogg"
+    }
+});
+
+Callback.addCallback("GunsDefined", function(){
+    RecipeTE.addGridRecipe("guns_workbench", "m9", ["i", "p"], {i:{id:265}, "p":{id:ItemID["pistol_base"]}}, GUN_PRODUCTION_TIME);
+});

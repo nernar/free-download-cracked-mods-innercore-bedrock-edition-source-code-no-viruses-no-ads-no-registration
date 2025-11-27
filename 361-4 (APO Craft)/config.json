@@ -1,0 +1,11 @@
+{
+  "enabled":true,
+  "late_recipes_registration":true,
+  "mobs":true,
+  "split_on_start":false,
+  "fog_density":7,
+  "visual_effects":true,
+  "weather":true,
+  "debug_mode":false,
+  "caching":false
+}

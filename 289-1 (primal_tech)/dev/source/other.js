@@ -1,0 +1,1 @@
+//Game.message("Мод сделан при поддержке DevEditor.");

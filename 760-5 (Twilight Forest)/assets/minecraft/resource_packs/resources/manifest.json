@@ -1,0 +1,17 @@
+{
+"format_version": 1,
+"header": {
+"description": "§cThe Twilight Forest.",
+"name": "§eTwilight Forest².",
+"uuid": "C2020BC0-CE88-CE66-CE99-ABC888CED888",
+"version": [0, 0, 1]
+},
+"modules": [
+{
+"description": "§cThe Twilight Forest.",
+"type": "resources",
+"uuid": "D2020BC0-CE88-CE66-CE99-ABC888CED888",
+"version": [0, 0, 1]
+}
+]
+}

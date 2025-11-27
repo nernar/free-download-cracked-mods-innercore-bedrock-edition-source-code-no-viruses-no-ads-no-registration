@@ -1,0 +1,58 @@
+﻿//en-us: Personal use and editing are prohibited. All rights reserved!
+//ru-ru: Личное использование и правка запрещены. Все права защищены!
+//cn-zh: 禁止个人使用和编辑。版权所有！
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bioplentia:scoria"
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "scoria",
+          "render_method": "opaque",
+	       "ambient_occlusion": true
+        }
+      },
+      "minecraft:geometry": "geometry.core.block.cube",
+      "minecraft:destroy_time": 1.0,
+      "minecraft:immovable": false,
+      "minecraft:explosion_resistance": 1,
+      "minecraft:loot": "loot_tables/blocks/scoria.json",
+      "minecraft:rotation": [ 0, 0, 0 ],
+      "minecraft:block_light_absorption": 0.0,
+      "minecraft:block_light_emission": 0.0,
+      "minecraft:map_color": "#797f7f",
+      "minecraft:flammable": {
+        "flame_odds": 0,
+        "burn_odds": 0
+      },
+   	"minecraft:random_ticking": {
+			"on_tick": {
+			 "event": "bioplentia:underwater",
+			 "target": "self"
+		  }
+	   },
+      "tag:stone": {}
+    },
+    "events": {
+		"bioplentia:underwater": {
+        "randomize": [
+         {
+           "play_sound": {
+             "sound": "scoria.ambient"
+           }
+         },
+			{
+			  "run_command": {
+			 	 "command": [
+				    "particle bioplentia:bubble_particle ~ ~1 ~"
+				  ]
+			   }
+		 	 }
+	 	  ]
+		}	
+    }
+  }
+}

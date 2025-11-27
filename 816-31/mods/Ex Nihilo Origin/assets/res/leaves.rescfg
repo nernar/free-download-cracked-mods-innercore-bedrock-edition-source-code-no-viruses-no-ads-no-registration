@@ -1,0 +1,19 @@
+{
+    "better-foliage": {
+        "leaves": [
+            {"texture": "terrain-atlas/Infested_Leaves/enr_InfestedLeaves_0.png"},
+            {"texture": "terrain-atlas/Infested_Leaves/enr_InfestedLeaves_1.png"},
+            {"texture": "terrain-atlas/Infested_Leaves/enr_InfestedLeaves_2.png"},
+            {"texture": "terrain-atlas/Infested_Leaves/enr_InfestedLeaves0_0.png"},
+            {"texture": "terrain-atlas/Infested_Leaves/enr_InfestedLeaves1_0.png"},
+            {"texture": "terrain-atlas/Infested_Leaves/enr_InfestedLeaves2_0.png"},
+
+            {"texture": "terrain-atlas/Infested_Leaves/enr_RawInfestedLeaves_0.png"},
+            {"texture": "terrain-atlas/Infested_Leaves/enr_RawInfestedLeaves_1.png"},
+            {"texture": "terrain-atlas/Infested_Leaves/enr_RawInfestedLeaves_2.png"},
+            {"texture": "terrain-atlas/Infested_Leaves/enr_RawInfestedLeaves0_0.png"},
+            {"texture": "terrain-atlas/Infested_Leaves/enr_RawInfestedLeaves1_0.png"},
+            {"texture": "terrain-atlas/Infested_Leaves/enr_RawInfestedLeaves2_0.png"}
+        ]
+    }
+}

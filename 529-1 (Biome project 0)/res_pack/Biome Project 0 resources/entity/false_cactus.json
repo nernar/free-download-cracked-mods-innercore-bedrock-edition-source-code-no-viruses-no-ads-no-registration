@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "raigen:false_cactus",
+      "materials": {
+	    "default": "translucence"
+	  },
+      "textures": {
+        "default": "textures/biome_project_0/false_cactus"
+      },
+      "geometry": {
+        "default": "geometry.false_cactus"
+      },
+      "spawn_egg": {
+        "texture": "biome_project_0",
+        "texture_index": 12
+      },
+      "render_controllers": [ "controller.render.translucence" ]
+    }
+  }
+}

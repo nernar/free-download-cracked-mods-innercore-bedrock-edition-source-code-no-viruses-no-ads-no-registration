@@ -1,0 +1,6 @@
+{
+	"verbose": true,
+	"source-dirs": ["src/main/java"],
+	"boot-classes": ["com.nernar.rats.RatsSetup"],
+	"options": ["-cp", "/sdcard/games/horizon/packs/boot.jar"]
+}
